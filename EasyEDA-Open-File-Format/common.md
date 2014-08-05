@@ -52,4 +52,4 @@ Union the characters **#@$** as a supper mark, you can take it as a line break, 
 ### Canvas Coordinates
 The canvas is a two-dimensional grid.  
 The upper-left corner of the canvas has coordinate (0,0)
-![](./image/coor.png)
+![](./images/coor.png)

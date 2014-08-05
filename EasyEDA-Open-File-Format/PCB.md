@@ -1,2 +1,3 @@
 #EasyEDA PCB File Format
-new PCB
+Note: PCB and PCB Library are used the same file format.
+ 

@@ -1,0 +1,10 @@
+
+####help file don't need php
+*.php
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
