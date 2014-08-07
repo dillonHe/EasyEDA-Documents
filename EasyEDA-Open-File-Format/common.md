@@ -12,7 +12,7 @@ Ok, let's explain them with examples.
 ![](./images/schematic-example.png)
 
 
-## Schematic JSON File Source 
+## Schematic JSON File Source <a name="schematicJson"></a>
 
 <script src="https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3.js"></script>
 
@@ -36,24 +36,30 @@ From the above JSON source, you can find there are lots of **`**, **~**, **^^** 
 <script src="https://gist.github.com/dillonHe/55151fae7c36785cdc31.js"></script>. 
 So EasyEDA's source is small in file size and will trans from internet more faster.
 
-#### `(Back quote)
+#### `(Back quote)<a name="backQuote"></a>
   **`** is used to separate the custom attributes. 
 
 **package`LED3MM** stands package:LED3MM 
 
-#### ^^(Double circumflex)
+#### ^^(Double circumflex) <a name="doubleCircumflex"></a>
 **^^** is used to join segments, just used in *netFlag* , *Pin* and *pAD*.
 
-#### #@$(Octothorpe Ampersat Dollar)
-Union the characters **#@$** as a supper mark, you can take it as a line break, it just be used in *Schlib* and *PCBLIB*.
+#### #@$(Octothorpe Ampersat Dollar) <a name="octothorpeAmpersatDollar"></a>
+Union the characters **#@$** as a supper mark, it will be used to implode the [shapes](./schematic.htm#shapes) to a string, it just be used in *Schlib* and *PCBLIB*.
 
 
 
-###Document Type <a name="documentType"></a>
+##Document Type <a name="documentType"></a>
 <script src="https://gist.github.com/dillonHe/8c1a0e599540980bf7ab.js"></script>
 
-### Canvas Coordinates
+## Canvas Coordinates
 The canvas is a two-dimensional grid.  
 The upper-left corner of the canvas has coordinate (0,0)
 ![](./images/coor.png)
 
+## SVG
+ EasyEDA uses [Scalable Vector Graphics (SVG)](http://en.wikipedia.org/wiki/SVG) which is an XML-based vector image format for two-dimensional graphics to realize the shapes.
+
+##Q&A
+### 1. How to check the json file format
+ Check the [EasyEDA source dialog](http://easyeda.com/EasyEDAtutorial/introductiontoEasyEDA.html#h.c9qmiqe5x8jv) out, copy the text to text area, then click the `Apply` button. That is all.
