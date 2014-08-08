@@ -34,8 +34,10 @@ From the above JSON source, you can find there are lots of **`**, **~**, **^^** 
 #### ~ (Tilde)
  `~` is used to separate the attributes of the shapes. Taking rectangle as an example.  `R~170~100~10~10~200~130~#99FF00~1~0~none~gge36~`, when use pure JSON file, it should be look like below,
 check it via github gist [rect json](https://gist.github.com/dillonHe/55151fae7c36785cdc31#file-rect-json).
-<script src="https://gist.github.com/dillonHe/55151fae7c36785cdc31.js"></script>. 
+<script src="https://gist.github.com/dillonHe/55151fae7c36785cdc31.js"></script>.
+ 
 So EasyEDA's source is small in file size and will trans from internet more faster.
+
 
 #### `(Back quote)<a name="backQuote"></a>
   **`** is used to separate the custom attributes. 
