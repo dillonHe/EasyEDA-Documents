@@ -1,7 +1,8 @@
 
 ####help file don't need php
 *.php
-
+*.htm
+*.tmp
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

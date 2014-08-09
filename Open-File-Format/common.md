@@ -12,7 +12,7 @@ Ok, let's explain them with examples.
 ![](./images/schematic-example.png)
 
 
-## Schematic JSON File Source <a name="schematicJson"></a>
+### Schematic JSON File Source <a name="schematicJson"></a>
 check it via github gist [Schematic json](https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3#file-schematic-json)
 <script src="https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3.js"></script>
 
