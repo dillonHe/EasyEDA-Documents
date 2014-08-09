@@ -1,0 +1,27 @@
+html {text-align:center;}
+body {max-width:900px;text-align:left;margin:0 auto;}
+body {background-color:#E5E7EA;}
+a {text-decoration:none;}
+.content-wrapper a {color:blue;text-decoration:underline;}
+.directory-list-wrapper{color:red}
+ol.directory-list a, ol.directory-list span {text-decoration:none;}
+ol.directory-list a:hover {color:red;text-decoration:underline;}
+
+.header {position: relative; height:79px; background-color:#222;}
+.header .header-logo { display:block; position: absolute; z-index:2; left:10px; width:271px; height:105px; background:url(images/logo.png) no-repeat; color:transparent; }
+.header h1 { margin: 0px 0px 0px 280px; color: white; padding: 0px; line-height: 78px; font-size:24px; }
+.header h1 a { color: white; text-decoration: none; padding:4px 8px; }
+.header h1 a:hover{
+    background-color: #3588C8;
+    color: #FFF;
+}
+
+.header2 {position: relative; height:50px; background-color:#398CCC;}
+.header2 div{padding:25px 0 0 20px;}
+.header2 a{color:#fff;text-decoration:none;}
+.header2 a:hover{color:#FDD14A;}
+.header2 .nav-prev {display:block;position:absolute;left:10px;top:23px;padding-left:18px; background:url(images/arrow-left-white.png) no-repeat left center;}
+.header2 .nav-next {display:block;position:absolute;right:10px;top:23px;padding-right:18px; background:url(images/arrow-right-white.png) no-repeat right center;}
+
+.footer {padding:10px;background-color:#333;color:#ccc;text-align:right;font-family: Arial;}
+.footer * {color:#ddd;font-size:12px;}

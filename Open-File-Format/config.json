@@ -1,11 +1,14 @@
 [
 	{
-		"file": "common.md"
+		"fileName": "common.md",
+		"title": "Common Information"
 	},
 	{
-		"file": "schematic.md"
+		"fileName": "schematic.md",
+		"title": "Schematic File Format"
 	},
 	{
-		"file": "PCB.md"
+		"fileName": "PCB.md",
+		"title": "PCB File Format"
 	}
 ]
