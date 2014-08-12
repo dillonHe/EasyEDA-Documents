@@ -1,5 +1,6 @@
 # Creating the Schematic Libs
 
+<iframe width="920" height="540" src="http://www.youtube.com/embed/U3MQKcKEV9s" frameborder="0" allowfullscreen></iframe>
 Using **Symbol Wizard** and **Group/Ungroup...** are a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
 
 Start a new Schematic Lib as shown below or by doing:
