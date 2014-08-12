@@ -1,11 +1,45 @@
 [
 	{
-		"file": "common.md"
+		"fileName": "introduction.md",
+		"title": "Introduction to EasyEDA"
 	},
 	{
-		"file": "schematic.md"
+		"fileName": "schematic.md",
+		"title": "Creating The Schematic"
 	},
 	{
-		"file": "PCB.md"
+		"fileName": "schematicLibs.md",
+		"title": "Creating the Schematic Libs"
+	},
+	{
+		"fileName": "spiceSimulation.md",
+		"title": "Spice Simulation"
+	},
+	{
+		"fileName": "convert.md",
+		"title": "Converting Your Schematics To PCB"
+	},
+	{
+		"fileName": "PCB.md",
+		"title": "PCB Design Editor"
+	},
+	{
+		"fileName": "PCBLib.md",
+		"title": "Creating The PCB Libs"
+	},{
+		"fileName": "import.md",
+		"title": "Import"
+	},
+	{
+		"fileName": "export.md",
+		"title": "Export"
+	},
+	{
+		"fileName": "share.md",
+		"title": "Sharing"
+	},
+	{
+		"fileName": "prefix.md",
+		"title": "Schematic symbols: prefixes and pin numbers"
 	}
 ]
