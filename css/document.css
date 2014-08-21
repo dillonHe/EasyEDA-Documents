@@ -3,9 +3,10 @@ body {max-width:900px;text-align:left;margin:0 auto;}
 body {background-color:#E5E7EA;}
 a {text-decoration:none;}
 .content-wrapper a {color:blue;text-decoration:underline;}
-.directory-list-wrapper{color:red}
+.content-wrapper a:hover {color:red;}
 ol.directory-list a, ol.directory-list span {text-decoration:none;}
 ol.directory-list a:hover {color:red;text-decoration:underline;}
+.content-wrapper .github {text-align: right;}
 
 .header {position: relative; height:79px; background-color:#222;}
 .header .header-logo { display:block; position: absolute; z-index:2; left:10px; width:271px; height:105px; background:url(images/logo.png) no-repeat; color:transparent; }
@@ -25,3 +26,19 @@ ol.directory-list a:hover {color:red;text-decoration:underline;}
 
 .footer {padding:10px;background-color:#333;color:#ccc;text-align:right;font-family: Arial;}
 .footer * {color:#ddd;font-size:12px;}
+
+
+.directory-list-wrapper h2 {padding:0;margin:0;}
+.directory-list-wrapper > ul {margin:0 0 4px 0;padding-left:0;}
+.directory-list-wrapper > ul ul,.content-wrapper ul {margin:0 0 4px 24px;padding-left:0;}
+.directory-list-wrapper li {margin-left: 24px;line-height:150%;}
+.directory-list-wrapper a {color:#00f;}
+.directory-list-wrapper a:hover {color:#f00;}
+.directory-list-wrapper.sidebar {position:fixed;z-index:4;top:0;left:0;background: rgba(200,200,200,.8); width:36px; overflow:hidden; padding-right:8px;}
+.directory-list-wrapper.sidebar:hover {height:100%; width:auto;overflow:auto;max-width:400px;}
+.directory-list-wrapper.sidebar:not(:hover) {background: rgba(200,200,200,.8) url(images/table-of-contents.png) no-repeat center 8px;}
+.directory-list-wrapper.sidebar:not(:hover) > * {visibility:hidden;}
+.directory-list-wrapper.sidebar a.active {background-color:darksalmon;}
+.directory-list, .directory-list-placeholder, .content-wrapper {margin-bottom:40px;}
+.directory-list-placeholder {display:none;}
+

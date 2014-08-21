@@ -214,7 +214,7 @@ It is quite possible to call one subcircuit from within another subcircuit but l
 	.endc
 	.END 
 
-### Whoa! I thought this was supposed to be easy?
+ Whoa! I thought this was supposed to be easy?
 
 At this stage you might be forgiven for feeling a sense of panic at the sudden complexity of what should be a simple job of checking that all the symbols in your simulation schematic have the necessary and correct models associated with them.
 

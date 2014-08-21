@@ -1146,8 +1146,13 @@ Please note that EasyEDA team may not have the time or resources to help you fix
 [[1]](#ftnt_ref1) Please note that although some browsers or plug-ins allow you to use gestures, EasyEDA does not work with gestures, so you should disable this function.
 
 [[2]](#ftnt_ref2) Simultaneous editing is not yet fully supported: care must be taken because the last save by any collaborator overwrites all previous saves.
+
 [[3]](#ftnt_ref3) It can also find the value text but it cannot step through multiple components with the same value.
+
 [[4]](#ftnt_ref4) Take a few moments to think about your username because this is the name that other users will see on your designs and posts if you choose to share them or make them public. Once you have created an account, you cannot change your username.
+
 [[5]](#ftnt_ref5) You can use upper and lower case letters, numbers and symbols to make a strong password but don’t forget that the password entry is case sensitive.
+
 [[6]](#ftnt_ref6) except ordering of PCBs directly from EasyEDA.
+
 [[7]](#ftnt_ref7) If you always open EasyEDA in the same browser on the same machine, your Anonymous files will appear under the Anonymous Files folder in the left hand panel but you should not rely on this as a way of keeping track of Anonymous files.
