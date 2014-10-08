@@ -67,4 +67,4 @@ The upper-left corner of the canvas has coordinate (0,0)
 
 ##Q&A
 ### 1. How to check the json file format
- Check the [EasyEDA source dialog](http://easyeda.com/EasyEDAtutorial/introductiontoEasyEDA.html#h.c9qmiqe5x8jv) out, copy the text to text area, then click the `Apply` button. That is all.
+ Check the [EasyEDA source dialog](http://easyeda.com/Doc/Tutorial/introduction.htm# EasyEDASource) out, copy the text to text area, then click the `Apply` button. That is all.

@@ -28,7 +28,8 @@ Note: PCB and PCB Library are used the same file format. Please check [PCB JSON 
 5. custom attributes: **key: value** pairs, separate with **`**, added via **Add new parameter**.   
   
 *pre*:*U?* , when place to PCB, will be marked as U1, U2.  
-*Contributor*:*Dillon* 
+*Contributor*:*Dillon*  
+*sourceId*:*xxxxxxxxx* (just for PCB lib)
  
 ##Parameters Dimensions
 

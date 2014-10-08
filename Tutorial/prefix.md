@@ -55,7 +55,8 @@ MOSFET
 then even though both have the same PCB Prefix of **Q**: Q1 must have a Spice Prefix of M and **Q2** must have a Spice Prefix of **X**.
 
 A list of Spice Prefixes and their associated circuit elements is given in the table below.
-![](images/spicePrefix.png)
+![](images/SpicePrefix.png)
+
 For more information on circuit elements in Ngspice, please refer to:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)

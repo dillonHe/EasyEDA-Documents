@@ -10,7 +10,7 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 **Format:**
 
 1. [document type](./common.htm#documentType) :`1`
-2. document version: `1.7.5`
+2. document version: `1.7.5`h
 3. custom attributes: **key: value** pairs, separate with **`**, added via **Add new parameter**  
   ![](./images/customAttributes.png)
 4. spice simulation configure store, Now can set four types `tran`, `AC`, `DC`, `TF`, every type split with `{`. When opening the simulation dialog, these information will be listed in like below image
@@ -32,7 +32,8 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 *nameAlias*: *Model*   
 *name*:*555*  
 *pre*:*U?* , when place to schematic, will be marked as U1, U2. subpart will be set as *U?.1*, *U?.2* etc.  
-*spicePre*:*X*, *X* stands for a subckt.
+*spicePre*:*X*, *X* stands for a subckt.  
+*sourceId*:*xxxxxxxxx* (just for schematic Lib and spice symbol)
  
 Place it to schematic canvas, it's attributes will be looked like below image. The name field is alias as Model and it is invisible. 
 ![](./images/schematicLibAttr.png)
@@ -133,7 +134,7 @@ Path's attributes and image looks like bellow image:
 
 1. command: A
 2. pathString:M670 300 C830 370 850 230 920 300 920 300 920 300 920 300
-3. helper dots: the four green dots
+3. helperDots: the four green dots
 4. strokeColor: #FF0000
 5. strokeWidth: 3 //pixel
 6. [strokeStyle](#strokeStyle): 0 
@@ -151,7 +152,7 @@ ARC's attributes and image looks like bellow image:
 
 1. command: PI
 2. pathString:M 970 40 L 1189.9 34.4509 A 220 180 0 0 1 923.103 215.863 Z
-3. helper dots: the four green dots
+3. helperDots: the four green dots
 4. strokeColor: #FF0000
 5. strokeWidth: 3 //pixel
 6. [strokeStyle](#strokeStyle): 0 
@@ -169,12 +170,13 @@ Pie's attributes and image looks like bellow image:
 **Format:** 
 
 1. command: BE
-2. start x1: 660
-3. start y1: 150
-4. end x1: 670
-5. end y1: 140 
-8. id: gge15
-9. locked:null
+2. rotation:0
+3. start x1: 660
+4. start y1: 150
+5. end x1: 670
+6. end y1: 140 
+7. id: gge15
+8. locked:null
 
 Bus Entry's attributes and image looks like bellow image:
 ![](./images/busentry.png)	
@@ -263,7 +265,7 @@ A Pin has seven segments, join these segments with [^^double Circumflex ](./comm
 
 1. **Pin configure** `P~show~0~1~670~30~~gge23`  
 	1. command: P
-	2. display: show/none
+	2. display: show/'' (*bad design, should use yes/none*)
 	3. electric: 0, can be  ['Undefined', 'Input','Output','I/O','Power']
 	4. spice pin number: 1
 	5. position x: 670
@@ -338,9 +340,10 @@ Ellipse's attributes and image looks like bellow image:
 3. x:1060
 4. y:120
 5. id:gge23
-6. rotation: M 1060 120 L 1063 126 L 1055 120 L 1063 114 Z
-7. fillColor: #FF0000
-8. locked:null
+6. rotation: 180
+7. path String: M 1060 120 L 1063 126 L 1055 120 L 1063 114 Z
+9. fillColor: #FF0000
+9. locked:null
 
 Arrow head's attributes and image looks like bellow image:
 ![](./images/arrow.png)
