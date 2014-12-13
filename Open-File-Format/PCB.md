@@ -136,6 +136,7 @@ layers is an array, each layer is an item of the layers.
 This is a simple DRC, more later.
   
 ##Shapes <a name="shapes"></a>
+
 The shape is an array. EasyEDA store various shape in this field, they are different with a command which locate at the begin of the string. 
 
 	"shape":[
@@ -145,6 +146,9 @@ The shape is an array. EasyEDA store various shape in this field, they are diffe
 	    "COPPERAREA~2px~1~GND~349 247 492 261 457 314 339 329~1~solid~gge27~spoke~none~[]",
 	    "SOLIDREGION~1~~350 146 483 146 447 228 371 220~solid~gge26"
 	]
+
+### Unit
+ EasyEDA takes **10 mil** as a basic factor, when a stroke width is 1, we can take it as 1\*10mil = 10mil, is 2, we can take it as 2\*10mil = 20mil
 
 
 ###TRACK  
@@ -353,15 +357,10 @@ DIMENSION's attributes and image looks like bellow image:
 ![](./images/DIMENSION.png)  
 DIMENSION just allows to change it layer id, if you don't accept this DIMENSION, delete it and redraw again.
 
-##PCBlib <a name="PCBlib"></a>
-
-PCBlib is an array, EasyEDA saves all of the PCBlibs in this array.
-
- 	"PCBlib":[
-    "LIB~245~240~package`CK17-B`~~~gge15~1#@$TEXT~P~295~219.5~0.7~0~~3~~4.5~C1~M 298.07 218.07L297.86 217.66 L297.45 217.25 L297.05 217.05 L296.23 217.05 L295.82 217.25 L295.41 217.66 L295.2 218.07 L295 218.68 L295 219.7 L295.2 220.32 L295.41 220.73 L295.82 221.14 L296.23 221.34 L297.05 221.34 L297.45 221.14 L297.86 220.73 L298.07 220.32 M 299.42 217.86L299.83 217.66 L300.44 217.05 L300.44 221.34 ~~gge16#@$TRACK~0.9~3~~257.5 224.5 332.5 224.5 332.5 255.5 257.5 255.5 257.5 224.5~gge17#@$PAD~ELLIPSE~245~240~9.4~9.4~11~~1~2.25~~0~gge18#@$PAD~ELLIPSE~345~240~9.4~9.4~11~~2~2.25~~0~gge19",
-    "LIB~261~279~package`DO-7`~~~gge53~1#@$TEXT~P~281~268.6~0.7~0~~3~~4.5~D1~M 281 266.15L281 270.44 M 281 266.15L282.43 266.15 L283.05 266.35 L283.45 266.76 L283.66 267.17 L283.86 267.78 L283.86 268.8 L283.66 269.42 L283.45 269.83 L283.05 270.24 L282.43 270.44 L281 270.44 M 285.21 266.96L285.62 266.76 L286.24 266.15 L286.24 270.44 ~~gge54#@$TRACK~0.9~3~~266 273.6 296 273.6 296 284.4 266 284.4 266 273.6~gge55#@$TRACK~0.9~3~~293.5 273.6 293.5 284.4~gge56#@$PAD~ELLIPSE~261~279~7.5~7.5~11~~1~1.4~~0~gge57#@$PAD~ELLIPSE~301~279~7.5~7.5~11~~2~1.4~~0~gge58",
-    "LIB~403~321~package`TO-3`~~~gge80~1#@$TEXT~P~381~229.7~0.7~0~~3~~4.5~Q1~M 382.23 227.25L381.82 227.45 L381.41 227.86 L381.2 228.27 L381 228.88 L381 229.9 L381.2 230.52 L381.41 230.93 L381.82 231.34 L382.23 231.54 L383.05 231.54 L383.45 231.34 L383.86 230.93 L384.07 230.52 L384.27 229.9 L384.27 228.88 L384.07 228.27 L383.86 227.86 L383.45 227.45 L383.05 227.25 L382.23 227.25 M 382.84 230.72L384.07 231.95 M 385.62 228.06L386.03 227.86 L386.65 227.25 L386.65 231.54 ~~gge81#@$TRACK~0.9~3~~364.9 234.7 397.1 234.7~gge82#@$TRACK~0.9~3~~365 392 397.1 392~gge83#@$TRACK~0.9~3~~397.1 234.7 422 281~gge84#@$TRACK~0.9~3~~364.9 234.7 340 281~gge85#@$TRACK~0.9~3~~397.1 392 419 349~gge86#@$TRACK~0.9~3~~364.9 392 342.5 349~gge87#@$PAD~RECT~359~321~10.5~10.5~11~~1~2.25~353.75 315.75 364.25 315.75 364.25 326.25 353.75 326.25~0~gge88#@$PAD~ELLIPSE~403~321~9.5~9.5~11~~2~2.25~~0~gge89#@$PAD~ELLIPSE~381~252.5~30~30~11~~3~7.5~~0~gge90#@$PAD~ELLIPSE~381~374.2~30~30~11~~4~7.5~~0~gge91#@$CIRCLE~381~313.4~52.5~0.9~3~gge92"
-	]
+###PCBlib <a name="PCBlib"></a>
+  
+    "LIB~245~240~package`CK17-B`~~~gge15~1#@$TEXT~P~295~219.5~0.7~0~~3~~4.5~C1~M 298.07 218.07L297.86 217.66 L297.45 217.25 L297.05 217.05 L296.23 217.05 L295.82 217.25 L295.41 217.66 L295.2 218.07 L295 218.68 L295 219.7 L295.2 220.32 L295.41 220.73 L295.82 221.14 L296.23 221.34 L297.05 221.34 L297.45 221.14 L297.86 220.73 L298.07 220.32 M 299.42 217.86L299.83 217.66 L300.44 217.05 L300.44 221.34 ~~gge16#@$TRACK~0.9~3~~257.5 224.5 332.5 224.5 332.5 255.5 257.5 255.5 257.5 224.5~gge17#@$PAD~ELLIPSE~245~240~9.4~9.4~11~~1~2.25~~0~gge18#@$PAD~ELLIPSE~345~240~9.4~9.4~11~~2~2.25~~0~gge19"
+ 
 
 A PCBlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Dollar) ](./common.htm#octothorpeAmpersatDollar)as a string like above.
 

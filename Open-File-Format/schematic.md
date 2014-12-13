@@ -348,13 +348,11 @@ Ellipse's attributes and image looks like bellow image:
 Arrow head's attributes and image looks like bellow image:
 ![](./images/arrow.png)
 
-##Annotations
-	"annotation":[
-    "T~L~540~60~0~#0000FF~~9pt~bold~normal~~comment~Text~1~start~gge26",
-    "T~L~540~80~0~#000000~~9pt~bold~italic~~spice~spice~1~start~gge28"
-	]
+###Annotations
+    "T~L~540~60~0~#0000FF~~9pt~bold~normal~~comment~Text~1~start~gge26"
+     
 
-annotation is an array, EasyEDA saves all of the annotations in this array.
+
 Check [Text  element of SVG](http://www.w3.org/TR/SVG11/text.html#TextElement) out.
 **Format:**  
   
@@ -380,14 +378,10 @@ Text's attributes and image looks like bellow image:
 ![](./images/text.png)
 
  
-##Netlabels
-`netlabel` is an array, EasyEDA saves all of the `netlabels` in this array.
+###Netlabels
 
-	"netlabel":[
 	    "N~360~100~0~#FF0000~VCC~gge32~start~362~100~Times New Roman~",
-	    "N~360~120~0~#000000~GND~gge35~start~362~120~Times New Roman~",
-	    "N~360~140~0~#000080~IO1~gge38~start~362~140~Times New Roman~"
-	]
+
 
 **Format:**  
   
@@ -409,14 +403,11 @@ Text's attributes and image looks like bellow image:
 netlabel's attributes and image looks like bellow image:
 ![](./images/netlabel.png)
 
-##Netflags
+###Netflags
 Netflag is very similar with netlabel
 
-	"netflag":[
     "F~part_netLabel_gnD~330~110~~gge41^^330~110^^GND~#000080~319~97~0~start~0~Times New Roman~9pt^^PL~330 120 330 110~#000000~1~0~none~gge44^^PL~320 120 339 120~#000000~1~0~none~gge45^^PL~324 122 337 122~#000000~1~0~none~gge46^^PL~326 124 333 124~#000000~1~0~none~gge47^^PL~329 126 331 126~#000000~1~0~none~gge48",
-    "F~part_netLabel_volProbe~330~140~~gge49^^330~140^^volProbe1~#0000FF~346~150~0~start~1~Times New Roman~9pt^^PL~330.5 140.5 339.75 150 339.75 155 340.5 149.75 344.75 147.75~#000000~1~0~none~gge52",
-    "F~part_netLabel_VCC~330~100~~gge53^^330~100^^VCC~#FF0000~320~88~0~start~1~Times New Roman~9pt^^PL~330 90 330 100~#FF0000~1~0~none~gge56^^PL~325 90 335 90~#FF0000~1~0~none~gge57"
-	]
+
 A Netflag  has several segments, join these segments with [^^double Circumflex ](./common.htm#doubleCircumflex)as a string like above.
 
 1. **configure** `P~show~0~1~670~30~~gge23`  
@@ -450,27 +441,17 @@ A Netflag  has several segments, join these segments with [^^double Circumflex ]
 netflag's attributes and image looks like bellow image:
 ![](./images/netflag.png)
 
-##Wire
-Wire is an array, EasyEDA saves all of the wires in this array.
+###Wire
 
-	"wire":[
-		"W~570 130 680 130 680 210~#008800~2~0~none~gge19",
-	    "W~270 120 390 120~#008800~2~0~none~gge30",
-	    "W~270 140 420 140~#008800~2~0~none~gge31"
-	
-	]
+		"W~570 130 680 130 680 210~#008800~2~0~none~gge19"
 	
 
 `Wire` is similar with [Polyline](#polyline), `Wire` is start with `W`, [polyline](#polyline) start with `PL`.
 
-##Junctions
-Junction is an array, EasyEDA saves all of the junctions in this array.
+###Junctions
 
-	"junction":[
 	    "J~420~140~2.5~#CC0000~gge18",
-	    "J~350~140~2.5~#CC0000~gge20",
-	    "J~290~140~2.5~#CC0000~gge22"
-	]
+
 
 **Format:**  
   
@@ -486,15 +467,10 @@ Junction is an array, EasyEDA saves all of the junctions in this array.
 Junction's attributes and image looks like bellow image:
 ![](./images/junction.png)
 
-##SchLib <a name="schlib"></a>
+###SchLib <a name="schlib"></a>
 
-SchLib is an array, EasyEDA saves all of the schLibs in this array.
 
-	"schlib":[
-    "LIB~220~140~package`C1`nameAlias`Value(F)`Value(F)`1u`spicePre`C`spiceSymbolName`Capacitor`~~0~gge66#@$T~N~214~129~0~#000080~Arial~~~~~comment~1u~1~start~gge68#@$T~P~214~120~0~#000080~Arial~~~~~comment~C1~1~start~gge69#@$PL~218 148 218 132~#A00000~1~0~none~gge70#@$P~show~0~1~200~120~180~gge71^^200~140^^M 210 140 h -10~#800^^0~214~140~0~1~start~~^^0~206~136~0~1~end~~^^^^#@$PL~230 140 222 140~#A00000~1~0~none~gge72#@$PL~222 132 222 148~#A00000~1~0~none~gge73#@$P~show~0~2~210~120~0~gge74^^240~140^^M 230 140 h 10~#800^^0~226~140~0~2~end~~^^0~234~136~0~2~start~~^^^^#@$PL~218 140 210 140~#A00000~1~0~none~gge75",
-    "LIB~220~180~package`DO35-7`nameAlias`Model`Model`1N4001`spicePre`D`spiceSymbolName`Diode`~~0~gge108#@$T~N~214~169~0~#000080~Arial~~~~~comment~1N4001~1~start~gge110#@$T~P~214~160~0~#000080~Arial~~~~~comment~D1~1~start~gge111#@$P~show~0~1~200~180~180~gge112^^200~180^^M 200 180 h 15~#800^^0~219~180~0~A~start~~^^0~211~176~0~A~end~~^^^^#@$P~show~0~2~240~180~0~gge113^^240~180^^M 240 180 h -15~#800^^0~221~180~0~C~end~~^^0~229~176~0~C~start~~^^^^#@$PL~225 172 225 188~#880000~1~0~none~gge114#@$PT~M 215 186 L 225 180 L 215 173 Z~#880000~1~0~#880000~gge115",
-    "LIB~270~140~package`DO35-7`nameAlias`Model`Model`1N4001`spicePre`D`spiceSymbolName`Diode`~~0~gge116#@$T~N~264~129~0~#000080~Arial~~~~~comment~1N4001~1~start~gge118#@$T~P~264~120~0~#000080~Arial~~~~~comment~D2~1~start~gge119#@$P~show~0~1~250~140~180~gge120^^250~140^^M 250 140 h 15~#800^^0~269~140~0~A~start~~^^0~261~136~0~A~end~~^^^^#@$P~show~0~2~290~140~0~gge121^^290~140^^M 290 140 h -15~#800^^0~271~140~0~C~end~~^^0~279~136~0~C~start~~^^^^#@$PL~275 132 275 148~#880000~1~0~none~gge122#@$PT~M 265 146 L 275 140 L 265 133 Z~#880000~1~0~#880000~gge123"
-	]
+    "LIB~220~140~package`C1`nameAlias`Value(F)`Value(F)`1u`spicePre`C`spiceSymbolName`Capacitor`~~0~gge66#@$T~N~214~129~0~#000080~Arial~~~~~comment~1u~1~start~gge68#@$T~P~214~120~0~#000080~Arial~~~~~comment~C1~1~start~gge69#@$PL~218 148 218 132~#A00000~1~0~none~gge70#@$P~show~0~1~200~120~180~gge71^^200~140^^M 210 140 h -10~#800^^0~214~140~0~1~start~~^^0~206~136~0~1~end~~^^^^#@$PL~230 140 222 140~#A00000~1~0~none~gge72#@$PL~222 132 222 148~#A00000~1~0~none~gge73#@$P~show~0~2~210~120~0~gge74^^240~140^^M 230 140 h 10~#800^^0~226~140~0~2~end~~^^0~234~136~0~2~start~~^^^^#@$PL~218 140 210 140~#A00000~1~0~none~gge75"
 
 A schlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Dollar) ](./common.htm#octothorpeAmpersatDollar)as a string like above.
 

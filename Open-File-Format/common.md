@@ -3,7 +3,8 @@ EasyEDA is a free, zero-install, Web and cloud-based EDA tool suite, integrating
 
 EasyEDA team try to make our users happy, we provide a open ASCII file format. with these file format, you can create a schematic or PCB some codes, even a Notepad. When you try to add hundreds LEDs to schematic or PCB batch, you will find out to use codes to create an EasyEDA file, then import to EasyEDA. It is funny and quickly.
 
-EasyEDA's file is a JSON file, but we compress all of the shape's attributes to a simply string, which will make the file size is small and save to server faster, more important, with this solution You can create some very big designs. Most of the browser will crash when try to decode the big JSON files.
+EasyEDA's file is a JSON file, but we compress all of the shape's attributes to a simply string, which will make the file size is small and save to server faster, more important, with this solution You can create some very big designs. Most of the browser will crash when try to decode the big JSON files. But EasyEDA will provide **API** to let you to access the EasyEDA friendly JSON object, you can hack the designs in EasyEDA editor.
+
 
 Ok, let's explain them with examples.
 ## Example
