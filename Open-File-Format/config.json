@@ -10,5 +10,13 @@
 	{
 		"fileName": "PCB.md",
 		"title": "PCB File Format"
+	},
+	{
+		"fileName": "schematicFileObject.md",
+		"title": "Schematic File Object"
+	},
+	{
+		"fileName": "PCBFileObject.md",
+		"title": "PCB File Object"
 	}
 ]
