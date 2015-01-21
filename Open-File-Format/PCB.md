@@ -339,6 +339,21 @@ PAD's attributes and image looks like bellow image:
 VIA's attributes and image looks like bellow image:
 ![](./images/VIA.png)
 
+###HOLE
+	"HOLE~284~255~4~gge5"
+
+**Format:**   
+
+1. command: HOLE
+2. center x: 284
+3. center y: 255
+4. diameter: 4 
+5. id: gge5
+6. locked:null
+
+
+HOLE's attributes and image looks like bellow image:
+![](./images/HOLE.png) 
 
 ###DIMENSION
 

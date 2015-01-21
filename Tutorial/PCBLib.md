@@ -38,3 +38,6 @@ Width and Height: When the shape is set to Round, Width will equal Height.
 2.  Keep all other shapes such as component outlines and any associated pin identiifcation marks or text on the TopSilkLayer. EasyEDA will automatically take care of the actual layer assignment when you place the footprint on the PCB.
 
 3.  CTRL+S to save your footprint design and you will find them saved into the My Parts section of the Navigation List. 
+
+4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`
+![](images/ring.png)

@@ -393,6 +393,17 @@ It may be tempting to backup a schematic into the same project as the original
 
 In the above image, you can find the two identical copies of the same schematic, which when you Convert Project to PCB, EasyEDA will try to merge into a single schematic, so every item will have 2 copies. To fix this, you just need to create a backup project and remove - or better still - save backup copies of your schematics to that project.
 
+## Net Name Conflict Error
+
+
+Sometime, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
+
+![](images/netNameConflict.png)
+
+In this schematic, you will find four net label/net flag(EasyEDA takes volprobe, GND VCC as netlabel too) in the same wire, So you must remove the others.
+
+If you would like to probe a GND, you can use [Probe command](./spiceSimulation.htm#Probe)
+
 ## Hotkeys
 
 

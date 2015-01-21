@@ -301,9 +301,18 @@ A more detailed description of PCB and Spice Prefixes and pin numbers is given i
 
 ## Hierarchy
 
-EasyEDA does not support true hierarchical designs but it does support multi-sheet designs. You can put several schematics in one project with connections between made by netlabels. All nets in EasyEDA are global so if you create a netlabel DATA0 in schematic A and then create a netlabel DATA0 in schematic B, when Schematic A and schematic B are in the same project, they will be connected.
+EasyEDA does not support true hierarchical designs but it does support **multi-sheet designs**. You can put several schematics in one project with connections between made by netlabels. All nets in EasyEDA are global so if you create a netlabel DATA0 in schematic A and then create a netlabel DATA0 in schematic B, when Schematic A and schematic B are in the same project, they will be connected.
 
 ![](images/image23.png)
+
+**Multi-sheet designs**(equivalent to a circuit spread over several pieces of
+paper), all schematics under the same project will be merged into one when be converted to PCB connecting in **netlabe**, **netflag**. 
+![](images/multi-sheet.png)
+
+Note: please make all of the prefixs unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](http://easyeda.com/Doc/Tutorial/introduction.htm#PrefixConflictError)
+Tip: Every schematic's prefix will start from 1, such as R1, C1, U1 etc, 
+1. you can use [Annotate](http://easyeda.com/Doc/Tutorial/schematic.htm#Annotate) to fix prefix
+2. You can set the prefix start to 100, then your components will start from R100, C100. ![](images/prefixStart.png) 
 
 ## Export BOM
 

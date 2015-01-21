@@ -467,6 +467,26 @@ netflag's attributes and image looks like bellow image:
 Junction's attributes and image looks like bellow image:
 ![](./images/junction.png)
 
+###No Connect Flag
+
+	    "O~960~410~gge5~M956,406 L964,414 M964,406 L956,414~#FF0000"
+
+
+**Format:**  
+  
+1. command: O
+2. pin dot x: 960
+3. pin dot y: 410
+4. id: gge5
+5. pathStr: M956,406 L964,414 M964,406 L956,414
+6. color: #FF0000
+7. locked:null
+
+
+No Connect Flag's attributes and image looks like bellow image:
+![](./images/No-Connect-Flag.png)
+
+
 ###SchLib <a name="schlib"></a>
 
 
