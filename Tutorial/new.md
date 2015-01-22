@@ -3,9 +3,9 @@
  
 The new sandbox version is V2.1.1. EasyEDA has lots of new features in the version. Try it via [http://sandbox.easyeda.com/editor](http://sandbox.easyeda.com/editor).
 
-**Warn:Sandbox version is newer than released version[http://easyeda.com/editor](http://easyeda.com/editor), it can open your old files, but [http://easyeda.com/editor](http://easyeda.com/editor) can not open the files which are created by sandbox version before we release it a few weeks later.** 
+**Warn:Sandbox version is newer than released version http://easyeda.com/editor, it can open your old files, but http://easyeda.com/editor can not open the files which are created by sandbox version before we release it a few weeks later.** 
 
-
+![](./images/V2.1.1.png)
 ## Open File Format
 
  If you want to hack EasyEDA's EDA files, you can check [http://easyeda.com/Doc/Open-File-Format/](http://easyeda.com/Doc/Open-File-Format/) out.  
@@ -26,6 +26,8 @@ If you enable the **Theme Colors** Extension, you will find a button on the tool
 ![](./images/Theme-Colors.png) 
 if you click the **Black On White**, you will find your schematic changes like bellow image, this is useful when you would like to print your design on a paper.
 ![](./images/blackOnWhite.png).
+You can check our **github** codes of this API via [https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme), check the **manifest.json** and **main.js** out, you will find out how to create an extension.
+
 
 ### Scripts
 If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.
@@ -44,7 +46,7 @@ You can open an empty schematic and copy [this example javascript codes](https:/
 You can open a **PCB** and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js) to the text box to run a test. After that, All tracks will be 10mil.
 
 ##Improved Design Manager
-In the schematic and PCB file, there is toggle button [Design Manager <-> Properties] on the top right, when you switch to Design Manager, you will see bellow image
+Old `Design Manager` is a pop up dialog, it is a bit litter annoying.Now, In the schematic and PCB file, there is toggle button [Design Manager <-> Properties] on the top right, when you switch to Design Manager, you will see bellow image
 ![](./images/DesignManager.png)
 
 You can highlight the components and net, at the same time, you can check the ** DRC Errors**.
@@ -70,3 +72,46 @@ Some Russian, German users' language is long, so they can addjust the width.
 ![](./images/rightPanelWidth.png) 
 
 ## New Pad shapes
+EasyEDA supports two new shapes, `OVAL` and `POLYGON`, `OVAL` PAD will give your more space. `POLYGON` PAD will let you to create some strange pad, like bellow image, you can edit the PAD'S points when you select a `POLYGON` PAD
+![](./images/New-PAD-SHAPE.png) 
+
+## Real Time DRC
+This is a big feature of EasyEDA. It is hard to fix DRC errors after layout the PCB. Now EasyEDA will let you know the error in routing. You will find a `X` flag to mark the error, such as Track to Track or Track to PAD like bellow image
+![](./images/RealTimeDRC.png).
+TIP: When you convert a schematic to PCB, the real time DRC is open. In the old PCB, the real time DRC is closed. you can open it via Supper menu-> Miscellaneous->Design Rule Setting, like bellow image.
+
+![](./images/configRealtimeDRC.png). 
+
+
+##Track and Net length
+when select a track, you can find it's Length attribute in the right panel.
+![](./images/track-length.png)
+When select a track, then press `H` key, EasyEDA will highligh the whole net and pop a message box to tell you the whole net's length. like bellow image
+![](./images/netLength.png)
+
+## New `CTRL+V`
+If you need to paste a part of objects from one schematic to another schematic, just need to press `CTRL+V`, not need to use `SHIFT+CTRL+V`.
+
+##NO Connect Flag
+You can find the `NO Connect Flag` via wiring tool, 
+![](./images/no-connect-flag-tool.png), in the bellow schematic, if you don't add a `NO Connect Flag`, there is a error flag in the nets collection.
+![](./images/No-connect-flag.png) 
+After add a `NO Connect Flag`
+![](./images/add-no-connect-flag.png)
+##HOLE
+There are lots of users don't know using PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA add a HOLE TOOL in the PCB toolbar.
+![](./images/HOLE.png)
+
+##Photo View
+EasyEDA has not a 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like bellow image.
+![](./images/PhotoView-button.png).
+
+After convert PCB to Photo View, you can see bellow image.
+![](./images/Photview.png).
+
+In this view, you can find some components are too closest and silk layer on the Pad, bad Footprint etc.
+
+Bellow image is a blue and purple board.
+![](./images/blue-purple.png).
+
+Enjoy it, if you have any questions, do let us know.

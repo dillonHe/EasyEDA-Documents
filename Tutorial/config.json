@@ -41,5 +41,8 @@
 	{
 		"fileName": "prefix.md",
 		"title": "Schematic symbols: prefixes and pin numbers"
+	},{
+		"fileName": "new.md",
+		"title": "New Sandbox version V2.1.1"
 	}
 ]
