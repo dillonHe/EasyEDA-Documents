@@ -1,0 +1,13 @@
+{
+	"name": "Theme Colors",
+	"description": "Change the theme colors of your design",
+	"version": "1.0",
+	"icons": {
+		"default": "icon.svg",
+		"16": "icon16.png",
+		"24": "icon24.png",
+		"32": "icon32.png"
+	},
+	"locale": "locale.txt",
+	"scripts": [ "main.js" ]
+}

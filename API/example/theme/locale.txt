@@ -1,0 +1,6 @@
+﻿[zh-cn]
+Theme Colors = 主题颜色
+Change the theme colors of your design = 修改设计图的主题颜色。
+White on Black = 黑底白图
+Black on White = 白底黑图
+Custom Colors... = 自定义颜色...
