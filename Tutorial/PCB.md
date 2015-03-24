@@ -187,7 +187,7 @@ In this dialog, you can:
 
 6.  Double click the net to remove all of the track and via with the net name. If you want to reroute a net, this is the recommended method to use to unroute it first.
 
-![](images/image156.png)
+![](./images/DesignManager.png)
 
 ## Import Changes 
 
@@ -220,7 +220,7 @@ From the error message, you will find that the symbol’s PIN number is differen
 From the image, we can get the PIN number in the schematic symbol is marked as C, but the PAD Number in the PCB Footprint is mark as K. Now you have know the problem, how to fix this? 
 
  Solution one, Change the schematic symbol.
- Using [PinMap function](./creatingTheSchematic.html#h.x3qg65pf7dnh). Change the PCB PIN from C to K. And save your schematic again.
+ Using [PinMap function](./schematic.htm#PinmapModifysymbolinformation). Change the PCB PIN from C to K. And save your schematic again.
 
  Solution Two, Modify the Footprint.
  Edit the Footprint, change the PAD from **K** to **C**. 
@@ -273,11 +273,11 @@ Lastly, don’t forget to click the button Rebuild CopperArea to **rebuild** 
 
 to open the **DRC** setting dialog:
 
-![](images/image94.png)
+![](./images/configRealtimeDRC.png). 
 
 After clicking the Check button, if errors are found, the following dialog will open:
 
-![](images/image31.png)
+![](./images/RealTimeDRC.png).
 
 You can locate the error on the PCB by clicking on the errors mark in the dialog.
 

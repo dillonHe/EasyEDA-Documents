@@ -165,8 +165,9 @@ You can find it via
 Super menu > Miscellaneous > Design Manager **
 
 or just press the `CTRL+D` hotkey to open the Design Manager dialog.
-
-![](images/image99.png)
+or click it via 
+![](images/designManagerSCH2.png)
+ 
 
 1.  **Filter**: You can find your components or netname easily: for example, if you want to find all capacitances, you just need to type C;
 2.  **Components**: lists all the components in this schematic. Clicking on a Component item highlights that component and pans it to the centre of the window: D1 in this example.
@@ -289,7 +290,7 @@ So what does Ungroup do? Try selecting a symbol and then click the Group/ungrou
 
 Note that the pin numbers and names cannot be moved independently of the pin.
 
-## Pinmap (Modify symbol information)
+## Pinmap Modify symbol information
 
 When you select a component, you can do:
 

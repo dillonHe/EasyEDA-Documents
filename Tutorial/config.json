@@ -1,5 +1,9 @@
 [
 	{
+		"fileName": "new.md",
+		"title": "New version V2.X.X"
+	},
+	{
 		"fileName": "introduction.md",
 		"title": "Introduction to EasyEDA"
 	},
@@ -41,8 +45,9 @@
 	{
 		"fileName": "prefix.md",
 		"title": "Schematic symbols: prefixes and pin numbers"
-	},{
-		"fileName": "new.md",
-		"title": "New Sandbox version V2.1.1"
-	}
+	},
+	{
+		"fileName": "API.md",
+		"title": "EasyEDA API Plug"
+	},
 ]

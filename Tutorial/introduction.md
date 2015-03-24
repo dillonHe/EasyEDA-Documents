@@ -322,7 +322,9 @@ You can then enter the username or email and the password that you used to creat
 
 At this dialog, you can also login via a Google , Facebook, or Yahoo account.
 
-
+### Reset Your Password
+Your password is encrypted, so EasyEDA team doesn't know it. but you can reset it via your email. Click the **Lost Password** menu and type your email. If you can't get the email after 10 minutes, please send an email to us.
+![](images/resetPassword.png)
 
 ### User Preferences
 

@@ -1,9 +1,9 @@
  
-# New Sandbox Version.
- 
-The new sandbox version is V2.1.1. EasyEDA has lots of new features in the version. Try it via [http://sandbox.easyeda.com/editor](http://sandbox.easyeda.com/editor).
+# New  Version V2.x.x.
+ **NOTE: Please check the About dialog, the Version should be V2.3.x, and the built date should be later than 01/22/2015, if your version is V1.x.x, please close EasyEDA and open the editor again. ** 
 
-**Warn:Sandbox version is newer than released version http://easyeda.com/editor, it can open your old files, but http://easyeda.com/editor can not open the files which are created by sandbox version before we release it a few weeks later.** 
+The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [http://easyeda.com/editor](http://easyeda.com/editor).
+
 
 ![](./images/V2.1.1.png)
 ## Open File Format
@@ -14,7 +14,7 @@ The new sandbox version is V2.1.1. EasyEDA has lots of new features in the versi
 
 ## API Plug 
 
-We spent months to realize this, maybe we need a full document to elaborate this function. Before we provide this, you can try to play.
+We spent months to realize this, maybe we need a full document to elaborate this function. Check the [API document](./API.htm)
 ### How to find the plug entance
 ![](./images/API-entance.png)
 
@@ -103,7 +103,7 @@ There are lots of users don't know using PAD or VIA as a HOLE, they asked EasyED
 ![](./images/HOLE.png)
 
 ##Photo View
-EasyEDA has not a 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like bellow image.
+EasyEDA has not a 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like bellow image. If you can't see this button, try to **reload** again.
 ![](./images/PhotoView-button.png).
 
 After convert PCB to Photo View, you can see bellow image.
@@ -113,5 +113,18 @@ In this view, you can find some components are too closest and silk layer on the
 
 Bellow image is a blue and purple board.
 ![](./images/blue-purple.png).
+
+##Zoom in and zoom out
+Try to scroll your mouse, you will find out EasyEDA provide almost Stepless zoom. and the must factor is 10000%.
+
+##Default Text Style
+Some users like the text size keep at 9pt, now change you change the font style, we will keep it as default. 
+
+##Place a Via On a Track
+When placing a `via` on a track, the track will be cuted to two segments.  Place two vias on a tracks, you will get three segments, then you can change one segment to other layer id, or remove one of them. 
+![](./images/placeVIAToTrack.png). 
+
+##New Language Translate Tool
+ With our users help, EasyEDA now provides lots of languages. Now you can help use to improve this function easier via [http://easyeda.com/language.php](http://easyeda.com/language.php). There are lots of sentences should be translated, don't forget to click **save** button which is at the end of page. BTW, you don't need to finish this job one time, you can do it when you have time after you save.  
 
 Enjoy it, if you have any questions, do let us know.
