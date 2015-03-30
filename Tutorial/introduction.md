@@ -46,26 +46,7 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 -   Schematic symbol, spice model and PCB footprint library management
 -   Online sharing of - and collaborative working on - schematics, simulations, PCB layouts, designs and projects
 
-## How to  upgrade to the latest version of EasyEDA
 
-You really don’t need to know how to upgrade EasyEDA, because EasyEDA can seamlessly upgrade itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/) which may delay the automatic upgrading process.  Therefore, if you want toupgrade to the latest version immediately, you can follow bellow two simply steps.
-
-## How to check your current version of EasyEDA.
-
-Check the About... dialog;
-
- ![](images/latest-upgrade/image00.png)  
-
-If the Built Date is older than 05/24/2014:
-
-Close your browser open EasyEDA again.
-
-If the Built Date is still showing older than 05/24/2014:
-
-Close your browser and open EasyEDA again.
-
-If the Built Date is at or newer than 05/24/2014, you don’t need to do anything.
-Note **05/24/2014** is just an example
 
 ## Schematics 
 

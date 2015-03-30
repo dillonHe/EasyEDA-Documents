@@ -6,6 +6,42 @@ The new version is V2.x.x. EasyEDA has lots of new features in the version. Try 
 
 
 ![](./images/V2.1.1.png)
+
+ ## How to upgrade to the latest version of EasyEDA 
+
+You really don’t need to know how to upgrade EasyEDA, because EasyEDA can seamlessly upgrade itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/) which may delay the automatic upgrading process.  Therefore, if you want toupgrade to the latest version immediately, you can follow bellow two simply steps.
+ 
+
+1. Check the About... dialog; 
+
+2. If the Built Date is older than 03/25/2015:
+
+Close your browser open EasyEDA again.
+
+If the Built Date is still showing older than 03/25/2015:
+
+Close your browser and open EasyEDA again.
+
+If the Built Date is at or newer than 03/25/2015, you don’t need to do anything.
+Note **03/25/2015** is just an example
+If those two steps can't work, you may need to .
+
+**1.Mozilla Firefox**
+-  Go to “Preferences… > Advanced > Network > Offline Storage”
+-  Click on “Clear now”
+-  reload easyeda again.
+    
+![](images/remove_firefox_cache.png)  
+
+
+**2.Chrome**
+-   Open the following URL: chrome://appcache-internals/ 
+-  Look for easyeda.com and click “Remove”
+-  reload easyeda again.
+    
+![](images/remove_chrome_cache.png)  
+
+Please email to ![](http://easyeda.com/edaImg/blog//2013/03/email.png) when you need any help.
 ## Open File Format
 
  If you want to hack EasyEDA's EDA files, you can check [http://easyeda.com/Doc/Open-File-Format/](http://easyeda.com/Doc/Open-File-Format/) out.  
