@@ -7,7 +7,7 @@ The new version is V2.x.x. EasyEDA has lots of new features in the version. Try 
 
 ![](./images/V2.1.1.png)
 
- ## How to upgrade to the latest version of EasyEDA 
+# How to upgrade to the latest version of EasyEDA 
 
 You really don’t need to know how to upgrade EasyEDA, because EasyEDA can seamlessly upgrade itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/) which may delay the automatic upgrading process.  Therefore, if you want toupgrade to the latest version immediately, you can follow bellow two simply steps.
  
