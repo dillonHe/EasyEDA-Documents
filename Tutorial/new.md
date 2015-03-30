@@ -1,11 +1,4 @@
  
-# New  Version V2.x.x.
- **NOTE: Please check the About dialog, the Version should be V2.3.x, and the built date should be later than 01/22/2015, if your version is V1.x.x, please close EasyEDA and open the editor again. ** 
-
-The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [http://easyeda.com/editor](http://easyeda.com/editor).
-
-
-![](./images/V2.1.1.png)
 
 # How to upgrade to the latest version of EasyEDA 
 
@@ -42,6 +35,15 @@ If those two steps can't work, you may need to .
 ![](images/remove_chrome_cache.png)  
 
 Please email to ![](http://easyeda.com/edaImg/blog//2013/03/email.png) when you need any help.
+
+# New  Version V2.x.x.
+ **NOTE: Please check the About dialog, the Version should be V2.3.x, and the built date should be later than 01/22/2015, if your version is V1.x.x, please close EasyEDA and open the editor again. ** 
+
+The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [http://easyeda.com/editor](http://easyeda.com/editor).
+
+
+![](./images/V2.1.1.png)
+
 ## Open File Format
 
  If you want to hack EasyEDA's EDA files, you can check [http://easyeda.com/Doc/Open-File-Format/](http://easyeda.com/Doc/Open-File-Format/) out.  
