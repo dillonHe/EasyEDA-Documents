@@ -1,4 +1,3 @@
- 
 # Sharing 
 <iframe width="920" height="540" src="http://www.youtube.com/embed/nBbwtPmOUj4" frameborder="0" allowfullscreen></iframe>
 Sharing your work with others is a big feature of web based EDA tools and EasyEDA is no exception in offering you some nice features.

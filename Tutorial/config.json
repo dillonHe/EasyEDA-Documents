@@ -49,5 +49,13 @@
 	{
 		"fileName": "API.md",
 		"title": "EasyEDA API Plug"
+	},
+	{
+		"fileName": "PCBOrder.md",
+		"title": "Order PCB From EasyEDA"
+	},{
+		"fileName": "FAQ.md",
+		"title": "Frequently Asked Questions"
 	}
+
 ]
