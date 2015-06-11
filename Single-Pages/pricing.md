@@ -1,28 +1,28 @@
 
 # Plans and Pricing
 
-There are no abosulte free bussiness models, EasyEDA should support the team too.
+There are no absolutely free business models; EasyEDA has to support itself and so it has to support the team too.
 
-Trying to provide a disruptive innovation, we provide a great free web based EDA tool, but we try to make money from other services, such as provide PCB order, PCB assembly,advertising and special project review by our professional electronics engineers.
+Trying to provide a disruptive innovation, we provide a great free web based EDA tool, but we try to make money from other services, such as providing PCB orders, PCB assembly, advertising and special project reviews by our professional electronics engineers.
 
-Feel free to use EasyEDA, we promise EasyEDAs' core features are absolutely free to every one.
+Feel free to use EasyEDA, we promise EasyEDA's core features are absolutely free to every one.
 
 |                       |  Standard          |  Professional               |  Enterprise
 :-----------------------| :----------------: | :-------------------------: | :---------------:
 Price                   |  Free Forever      |  No more than $5/Month      |  contact
-OK for Commercial       |  Y                 |  Y                          |  Y
+Commercial use          |  Y                 |  Y                          |  Y
 Public projects         |  Unlimited         |  Unlimited                  |  Unlimited
 Private Projects(?)     |  From 2 to Unlimited  |  Unlimited               |  Unlimited
-Output Gerber Files     |  Y                 |  Y                          |  Y
+Free download Gerber Files   |  Y                 |  Y                          |  Y
 Collaboration           |  Y                 |  Y                          |  Y
 Forum Support           |  Y                 |  Y                          |  Y
 Email Support           |  Y(48hours)        |  Y(24hours)                 |  Y(12 hours)
 Phone Support           |  N                 |  N                          |  Y
 PCB order discount      |  N                 |  95%                        |  80%
 Advertisement(?)        |  Y                 |  N                          |  N
-Cloud Auto router(Coming soon)  |  Unknow    |  Unknow                     |  Unknow
+Cloud Auto router (Coming soon)  |  Unknown    |  Unknown                     |  Unknown
 Cloud spice simulation  |  Y                 |  Y                          |  Y
-On-Premise Hosting      |  N                 |  N                          |  Y
+On-Premises Hosting      |  N                 |  N                          |  Y
 
 
 
@@ -30,33 +30,33 @@ On-Premise Hosting      |  N                 |  N                          |  Y
 
 ### Can I change my plan at any time?
 
-Yes, Now Every one can enjoy the free Professional plan.</dd>
+Yes, Now everyone can enjoy the free Professional plan.</dd>
 
-### EDA tools are quite expensive to build, Why you can free the core features?
-Yes, more that 5 years to build EasyEDA and will spent another X years. 
+### EDA tools are quite expensive to build, Why you can supply the core features for free?
+Yes, it has taken more than 5 years to build EasyEDA to this point and we will spent another X years developing it. 
 
-We will be unique, we will make money from services, maybe some time you would like to donate or give us some tip :)
+We will be unique, making money from our services such as PCB orders, PCB assembly, advertising and special project reviews but even so, maybe some time you would like to make a donation or give us some tip with your payment :)
 
 ### Do you offer special nonprofit and educational pricing?
-We think the free Standard plan is enough, if you need more, just email to us.
+We think the free Standard plan is enough but if you need more, just email us.
 
-### Will we be prevented to download the Gerber and drill files?
-Never like some desktop free EDA, you just can order PCB from them. We hope you can order PCB from us, but you are welcome to use the other PCB house. EasyEDA file format is open source, you can the gerber files in your own codes, and we will open source our gerber produces program soon, may be you can improve it.
+### Will we be prevented from downloading the Gerber and drill files?
+Unlike some other some free EDA tools, where you can order your PCB only from them, we hope that you will order your PCB from us but you are welcome to download the Gerber and Drill files and to use any other PCB house. The EasyEDA file format is open source, you can read the Gerber files in a number of open source viewers and we will open source our gerber generation program soon: maybe you can improve it!
 
-### What will happen when my private projects more than 2 in Standard plan.
-The easy way is upgrade to Professional, and you can make the private projects to public, or back the private projects to locally and remove them from your accout.
+### What will happen if I want more than 2 private projects in the Standard plan?
+Maybe you can make your private projects into public ones or backup the private projects to local storage and then remove them from your account. The easy way is upgrade to the Professional plan which, although not free, is still a very low cost option.
 
-But you can get more via 
->   1. Contibute awesome public projects, If we feature your one public project, you will get one more private project.
->   2. Create Nice symbols and Footprints. Every 15 nice componts will be reward a private projects.
->   3. Invite your friends to EasyEDA, Every two join will be reward a private projects.
->   4. more coming soon.
+However, you can earn more private project space via: 
+>   1. Contibute awesome public projects, For every one of your public projects that we feature, we will give you one more private project;
+>   2. Create nice symbols and footprints. Every 15 nice components will be rewarded by a private project;
+>   3. Invite your friends to EasyEDA. For every two people who then join will be reward an extra private project;
+>   4. More options coming soon.
 
-### What about the terrible Advertisement?
-We hate terrible advertisement also, this is why you can't see any Ads in the clean EasyEDA. But some time, if we can find some tasteful Ads, you can get lots of knowlage from them.
+### What about terrible Advertisements?
+We hate terrible advertisements too: this is why you can't see any Ads in the clean EasyEDA but at some time, if we can find some tasteful and helpful Ads, you can get lots of useful information from them.
 
-Maybe EasyEDA will be advertisement free forever.
+If not, then maybe EasyEDA will be advertisement free forever :)
 
-### Why the Cloud Auto router is unkown?
-The supper fast Auto router will cost lots of CPU resource, we will to evaluate this, and this function is under development. But we can confirm almost all of the greate hardward projects are manually router.
+### Why is the status of a Cloud Auto router shown as `Unknown`?
+This function is under development but a really effective, efficient and super fast Auto router will cost lots of CPU resource, so we will have to evaluate this. That said, we can confirm that almost all of the great hardware projects are actually manually routed.
 
