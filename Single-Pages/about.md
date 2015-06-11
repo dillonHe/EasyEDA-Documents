@@ -3,17 +3,17 @@
 
 ##EasyEDA is Passionate About Innovation
 
-We are makers and hackers. When we wanted to design and build some hardware stuff three years ago, we spent weeks trying to find the right tools. We needed schematic capture, spice simulation and PCB layout but we wanted it to not be Windows only and we didn't like the idea of having to pay lots of money to buy a huge software suite and then spend weeks learning how to use it.
+We are makers, hackers and engineers. When we wanted to design and build some hardware stuff three years ago, we spent weeks trying to find the right tools. We needed schematic capture, spice simulation and PCB layout but we wanted it to not be Windows only and we didn't like the idea of having to pay lots of money to buy a huge software suite and then spend weeks learning how to use it.
 
-Our mission is to help designers move from idea to manufactured prototype faster by providing comprehensive data and collaboration tools for electronic design. Whether it's a seasoned engineer looking for a productivity boost. our goal is to abstract away the tedium in bringing a design to life. We would love to hear what you're working on, or any ideas on how we can help you. Please email us.
+Our mission is to help designers move from idea to manufactured prototype faster by providing comprehensive data and collaboration tools for electronic design. Whether you're a hobbyist eager to try out your first project or a seasoned engineer looking for a productivity boost, our goal is to take away the tedium in bringing a design to life. We would love to hear what you're working on or any ideas on how we can help you, so please feel free to email us.
 
-In shortly, EasyEDA will get you an easier EDA experience, let you enjoy from an idea to a product.
+In short, EasyEDA will bring you an easier EDA experience, letting you enjoy more of the journey from an idea to a product.
 
 <a name="team"></a>
 
 ## Team
 
-This is a pure engineer team.
+This is a pure engineering team.
 
 <div class="ui cards">
 	<div class="card">
@@ -59,7 +59,7 @@ This is a pure engineer team.
 		<div class="content">
 			<a class="header">Andy</a>
 			<div class="description">
-				Electronics engineer.
+				Electronics engineer and simulation junkie.
 			</div>
 		</div>
 	</div>
