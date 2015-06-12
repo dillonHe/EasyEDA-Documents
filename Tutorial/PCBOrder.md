@@ -1,43 +1,43 @@
 
 # PCB Order 
- After layout your PCB,  you may need to order some **PCBs**. For save your time and money , you can order the PCB from EasyEDA. It is **easy** , cheap withe good **quantity**, **awesome service**. More important, if the **PCBs** don't work as your expect, EasyEDA provide full money back.
+  After laying out your PCB, you probably want to order some **PCBs**. We have made it easy for you to save time and money by using our **awesome service** to order **low cost**, **high quality** PCBs *directly* from EasyEDA. More importantly, if you are not satisfied with the quality of our PCBs, EasyEDA will refund your money in full.
 
- EasyEDA makes it easy to order PCBs for your projects and offers an exceptionally low PCB Manufacturing fee however, you are free to download the Gerber files and order your PCBs from any other vendors. If you like EasyEDA, please give us a chance to fab. the PCB for you.
+  Although EasyEDA makes it easy to order PCBs for your projects and offers an exceptionally low PCB Manufacturing fee, you are free to download the Gerber files and order your PCBs from any other vendor. However, if you like EasyEDA, please give us a chance to fab. the PCB for you. We think you won't be disappointed.
 
 
-##PCB Quality
-   We have spent more than 5 years to build the EasyEDA, we are artisans. If you like our EDA editor, we are sure you will like our PCB. We provide 100% E-test.
+## PCB Quality
+   As engineers, we have spent more than 5 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
 
-   EasyEDA's PCB are in group buy model, the price is great, and the quality is good enough. We have shipped thousands of PCB to our users, all of them like our PCBs. 
+   EasyEDA's PCB are in a group buy model and all PCBs are given 100% E-test This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
 
- No matter we talk how better it is, Maybe you will double. The easy way it is to try it out.  We provide full money back for our products, Please check the [Warranty and Return](#WarrantyandReturn)
+ No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn).
  
 
-
 ## Order Button
-Click the **Fabrication Output...** button like below image, you will be redirect to an order page, In that page you can place an order quickly. At the same time, you  download your Gerber and drill files and open them in a Gerber Viewer. Honestly, we hope you can try to order PCB form EasyEDA to support EasyEDA, but you are welcome to download the PCB and send them to your favorite ** PCB house**.
+To order PCBs from us, just click the **Fabrication Output...** button, like image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, you can download your Gerber and drill files (and open them in a 3rd party Gerber Viewer to check them!). Honestly, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
 ![](images/pcbFabrication.png)
 
-## PCB Order From EasyEDA Editor
-   Because you come from EasyEDA editor, so you don't need to input
-**Layers**, **Width** and **Height**, EasyEDA has inputted for you. In this page, you will find a real time price. Most time the price is the last cost. If you change the Layers to 4 or 6. you will find the  price field is **Quote**. just click the the `Save to Cart` button, we will quote the price for you soon. 
+## PCB Order from EasyEDA Editor
+   When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 
+   
+   On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price for you ASAP. 
 
- **Note.** After you add your PCB to cart, we will save a copy of Gerber Files at the same time. So if you change your PCB in EasyEDA editor, we don't synchronous your gerber File. The only way is delete  it  from your Cart and add a new item.
-
+ **Note.** When you add your PCB to the cart, EasyEDA saves a copy of Gerber files *at that time*. If you then change your PCB back in then PCB editor, *EasyEDA does not synchronize your Gerber files to the updated PCB design*. The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.
  
 ![](images/PCBOrderPage1.png) 
 
-## PCB Order From Order Link
-  You may  would like to upload your own Gerber files, or the Gerber files are come from Eagle, Pads, Altium Design. You just need to click this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your Gerber Files.
+
+## PCB Order from Order Link
+  You maybe would like to upload your own Gerber files or Gerber files from Eagle, Pads, or Altium Design. To do this, just click this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
  
 ![](images/PCBOrderPage2.png) 
 
-## PCB Capabilities 
 
+## PCB Capabilities 
 <table>
 <tbody>
 <tr>
-<td width="200">Number of Copper Layers</td>
+<td width="200">Number of Copper Layers*</td>
 <td width="400">1-6</td>
 </tr>
 <tr>
@@ -45,11 +45,11 @@ Click the **Fabrication Output...** button like below image, you will be redirec
 <td>FR-4</td>
 </tr>
 <tr>
-<td>Available Color</td>
+<td>Available Solder Mask Colors</td>
 <td>Green, Red, Yellow, Blue, White, Black</td>
 </tr>
 <tr>
-<td>Silk Screen Color</td>
+<td>Silk Screen Colors</td>
 <td>White, Black (For White Solder Mask only)</td>
 </tr>
 <tr>
@@ -57,48 +57,19 @@ Click the **Fabrication Output...** button like below image, you will be redirec
 <td>5</td>
 </tr>
 <tr>
+<td>Minimum dimensions*</td>
+<td>2cm x 2cm</td>
+</tr>
+<tr>
 <td>Maximum dimensions*</td>
-<td>2cm x 2cm up to&nbsp;30cm x 30cm</td>
+<td>30cm x 30cm</td>
 </tr>
 </tbody>
 </table>
 
-If your PCB requires 8 layers or larger dimensions, please contact us before placing your order.
+* If your PCB requires 8 layers or larger dimensions, please contact us before placing your order.
 
-## Manufacturing Specifications
 
-<table border="1" cellpadding="1" cellspacing="1">
-<tbody>
-<tr>
-<td width="200">Number of Copper Layers</td>
-<td width="400">1-4</td>
-</tr>
-<tr>
-<td>PCB Material</td>
-<td>FR-4</td>
-</tr>
-<tr>
-<td>Available Color</td>
-<td>Green, Red, Yellow, Blue, White, Black</td>
-</tr>
-<tr>
-<td>Silk Screen Color</td>
-<td>White, Black (For White Solder Mask only)</td>
-</tr>
-<tr>
-<td>Minimum Quantity</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Maximum dimensions*</td>
-<td>5cm x 5cm up to&nbsp;30cm x 30cm</td>
-</tr>
-</tbody>
-</table>
-<p></p>
-<p>If your PCB requires&nbsp;6 layers or larger dimensions, please contact us before placing your order.</p>
-<p></p>
-<h1></h1>
 <h1>Manufacturing Specifications:</h1>
 <table border="1" cellpadding="2" cellspacing="2">
 <tbody>
@@ -161,7 +132,7 @@ If your PCB requires 8 layers or larger dimensions, please contact us before pla
 <td>32</td>
 </tr>
 <tr>
-<td>Out Layer Copper Thickness</td>
+<td>Outer Layer Copper Thickness</td>
 <td>&gt; 0.03</td>
 <td>&gt; 1.18</td>
 </tr>
@@ -171,12 +142,12 @@ If your PCB requires 8 layers or larger dimensions, please contact us before pla
 <td>0.39 - 0.71</td>
 </tr>
 <tr>
-<td>Drilling Hole (Mechanical)</td>
+<td>Drilled Hole Diameter (Mechanical)</td>
 <td>0.3 - 6.35</td>
 <td>11.81 - 250.00</td>
 </tr>
 <tr>
-<td>Finish Hole (Mechanical)</td>
+<td>Finished (Plated) Hole Diameter (Mechanical)</td>
 <td>0.8 - 6.35</td>
 <td>31.50 - 250.00</td>
 </tr>
@@ -197,14 +168,17 @@ If your PCB requires 8 layers or larger dimensions, please contact us before pla
 </tbody>
 </table>
 
-If your PCB requires some special , please contact us before placing your order. We can help you find the best PCB house.
+If you have any special PCB requirements, please contact us before placing your order. We can help you find the best PCB house for your specialised needs.
+
+
 ## Price
- All Prices stated are FOB Shenzhen. It does not include transportation costs which shall be borne by customers.
+ All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne the customer.
+ 
+ 
 ### Manufacturing Price
+Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions. 
 
-Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimension. 
-
-EasyEDA uses a group buy business model, We are sure you can hardly find a better PCB suppler than EasyEDA with the same price and quality.
+EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB suppler than EasyEDA offering the same price and quality.
 
 EasyEDA needs 4~5 days to manufacture the PCBs after you submit payment.
 
@@ -221,46 +195,43 @@ EasyEDA needs 4~5 days to manufacture the PCBs after you submit payment.
 <tr>
 <td><strong>&nbsp;Air Mail</strong></td>
 <td>&nbsp;Delivery Time: 8-35 days. Most of our users receive their PCBs in two weeks.</td>
-<td>Start $6</td>
+<td>From $6</td>
 <td >Usually  http://www.singpost.com/ </td>
 </tr>
 <tr>
 <td>&nbsp;<strong>Express</strong></td>
 <td>&nbsp;Delivery Time: 3-7 days</td>
-<td>Start $24</td>
-<td >Usually http://www.DHL.com/ </td>
+<td>From $24</td>
+<td >Usually delivered by http://www.DHL.com/ </td>
 </tr>
 <tr>
 </tbody>
 </table>
  
-Note: The shipping cost is just Estimate. EasyEDA will try to find the better shipping way.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp). We will ask you to pay for more or change some other express service such as Fedex, UPS. Some time, We will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for Airmail.
+Note: The shipping cost is estimated. EasyEDA will always try to find the best shipping option.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp), we will ask you to pay for more or change to some other express service such as Fedex, UPS. Sometimes, we will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for delivery by Airmail.
 
 
 ## Payment
 We accept the PayPal, Credit Card and Wire Transfers. 
 
 ### PayPal and Credit Card
-We use Paypal as our payment, It is safe and easy. If you don't have Paypal account, you can use your Pay with a debit or credit card.
+We use Paypal as our payment; it is safe and easy. If you don't have a Paypal account, you can still use Paypal to pay with a debit or credit card.
 
 ![](images/paycard.png) 
 
 ### Wire Transfers
-
-Wire Transfers can only be used on orders with a grand total (subtotal plus all additions and deductions and shipping fees excluded) of at least $600.
-For order > $2000, Wire Transfers is preferred. In this circumstance, 3.5% extra discount will be applied for the grand total (subtotal plus all additions and deductions, shipping fees excluded).
-Wire transfer payments usually take 3-5 business days to clear. We will not ship your order until your payment is verified by our bank. Please send a copy of the Wire transfers receipt to our customer service, it is not sufficient to release an order, but will help to push the delivery date. 
+Wire Transfers can only be used on orders with a grand total (subtotal plus all additions and deductions but excluding shipping fees excluded) of at least $600.
+For orders > $2000, payment by Wire Transfer is preferred. In this circumstance, 3.5% extra discount will be applied for the grand total (subtotal plus all additions and deductions, shipping fees excluded).
+Wire Transfer payments usually take 3-5 business days to clear. We will not ship your order until your payment is verified by our bank. Please send a copy of the Wire Transfer receipt to our customer service because although it is not sufficient to release an order, it will help us to push the delivery date. 
 
 ## Customs, Duties and Taxes
-
-You should expect to pay any amount charged by the government in your respective country. This includes, and is not limited to, duties, taxes and any extra fees charged by the courier company. We will not hold responsible for any extra charges once the original package has been shipped. If the customer refuses to pay these extra charges, the return shipping and any additional fees will be taken out of the cost of the order, with any remaining funds being refunded to the customer.
-Customs are quite different in each country. please comment while you are placing order about the requirements, we will support as much as possible. 
+You should expect to pay any amount charged by the government in your respective country. This includes but is not limited to: duties, taxes and any extra fees charged by the courier company. We will not be held responsible for any extra charges once the original package has been shipped. If the customer refuses to pay these extra charges, the return shipping and any additional fees will be taken out of the cost of the order, with any remaining funds being refunded to the customer.
+Customs are quite different in each country. Please include information about particular Customs requirements as necessary, while you are placing your order: we will support you as much as possible. 
 
 ## Warranty and Return
-If you layout your PCB in **EasyEDA**, For your first order, we have the top return policy in the plant. If you don't like them, just send an email to 
+For your first order for a PCB laid out in **EasyEDA**, we have the top return policy on the planet! If you don't like them, just send an email to 
 
-![](images/supoort_email.png), no reason need. We provide full money back in one work day, include product + shipping cost.
+![](images/support_email.png), no reason needed. We will provide your full money back - including product + shipping costs - in one working day.
 
-Next order, because you have known what the level of our PCB.
-If you are not satisfied with a product you bought, for whatever reason. You just need to take some pictures of products, and explain why you don't like them. Then we will return the full money of products. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
+For subsequent orders, because you now know the quality level of our PCBs, if you are not satisfied with a product you bought from us for whatever reason, you just need to email us some pictures of the product and explain why you don't like it. We will then refund the full money of the product. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
 
