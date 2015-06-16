@@ -1,6 +1,6 @@
 #EasyEDA Schematic File Format
 
-Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used the same file format. Please check [Schematic JSON File Source](./common.htm#schematicJson) out before keeping read.
+Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt all use the same file format. Please check [Schematic JSON File Source](./common.htm#schematicJson) out before reading this section.
 
 ##Head <a name="head"></a>
 ###Head information for schematic and subckt.  
@@ -11,7 +11,7 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 
 1. [document type](./common.htm#documentType) :`1`
 2. document version: `1.7.5`h
-3. custom attributes: **key: value** pairs, separate with **`**, added via **Add new parameter**  
+3. custom attributes: **key: value** pairs, separated with **`**, added via **Add new parameter**  
   ![](./images/customAttributes.png)
 4. spice simulation configure store, Now can set four types `tran`, `AC`, `DC`, `TF`, every type split with `{`. When opening the simulation dialog, these information will be listed in like below image
 ![](./images/simulation.png)
@@ -24,18 +24,18 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 
 1. [document type](./common.htm#documentType) :`7`
 2. document version: `1.7.5`
-3. origin x position. **Reserved field, can't be changeded** 
-4. origin y position. **Reserved field, can't be changeded** 
+3. origin x position. **Reserved field, can't be changed** 
+4. origin y position. **Reserved field, can't be changed** 
 5. custom attributes: **key: value** pairs, separate with **`**, added via **Add new parameter**.   
 *package*: *DIP08*  
-*nameDispaly*: *0* (hide it is name when placed to schematic)  
+*nameDispaly*: *0* (hide the name when placed into the schematic)  
 *nameAlias*: *Model*   
 *name*:*555*  
-*pre*:*U?* , when place to schematic, will be marked as U1, U2. subpart will be set as *U?.1*, *U?.2* etc.  
+*pre*:*U?* , when placed into the schematic, will be marked as U1, U2. subpart will be set as *U?.1*, *U?.2* etc.  
 *spicePre*:*X*, *X* stands for a subckt.  
 *sourceId*:*xxxxxxxxx* (just for schematic Lib and spice symbol)
  
-Place it to schematic canvas, it's attributes will be looked like below image. The name field is alias as Model and it is invisible. 
+When placed into the schematic canvas, it's attributes will look like the image below. The name field is aliased as Model and it is invisible. 
 ![](./images/schematicLibAttr.png)
 
 ##Canvas <a name="canvas"></a>
@@ -59,7 +59,7 @@ Canvas setting image
 ![](./images/SchematicCanvas.png)
 
 ##Shapes <a name="shapes"></a>
-The shape is an array. EasyEDA store various shape in this field, they are different with a command which locate at the begin of the string. 
+The shape is an array. EasyEDA stores various shapes in this field, they are differentiated with a command located at the beginning of the string. 
 
 	"shape":[
 	    "PL~210 100 260 100~#000000~2~0~none~gge58",
@@ -89,7 +89,7 @@ Check [ Rect element of SVG](http://www.w3.org/TR/SVG11/shapes.html#RectElement)
 11. fillColor: #9966FF
 12. id: gge36
 13. locked:null
-Rect's attributes and image looks like bellow image:
+Rect's attributes and image looks like the image below:
 ![](./images/rect.png)
 
 ###Polyline <a name="polyline"></a>
@@ -106,7 +106,7 @@ Check [ Polyline element of SVG](http://www.w3.org/TR/SVG11/shapes.html#Polyline
 6. fillColor: none
 7. id: gge6
 8. locked:null
-Polyline's attributes and image looks like bellow image:
+Polyline's attributes and image looks like the image below:
 ![](./images/polyline.png)
 
 ###Path
@@ -122,7 +122,7 @@ Check [Path element of SVG](http://www.w3.org/TR/SVG11/paths.html#PathElement) o
 6. fillColor: none
 7. id: gge6
 8. locked:null
-Path's attributes and image looks like bellow image:
+Path's attributes and image looks like the image below:
 ![](./images/path.png)
 **bezier** is a **path** too.
 ###Arc
@@ -143,7 +143,7 @@ Path's attributes and image looks like bellow image:
 9. locked:null
 
 
-ARC's attributes and image looks like bellow image:
+ARC's attributes and image looks like the image below:
 ![](./images/arc.png)
 
 ###Pie
@@ -161,7 +161,7 @@ ARC's attributes and image looks like bellow image:
 9. locked:null
 
 
-Pie's attributes and image looks like bellow image:
+Pie's attributes and image looks like the image below:
 ![](./images/pie.png)
 
 ###Bus Entry
@@ -178,7 +178,7 @@ Pie's attributes and image looks like bellow image:
 7. id: gge15
 8. locked:null
 
-Bus Entry's attributes and image looks like bellow image:
+Bus Entry's attributes and image like the image below:
 ![](./images/busentry.png)	
 
 ###Image
@@ -196,7 +196,7 @@ Check [ Image element of SVG](http://www.w3.org/TR/SVG11/struct.html#ImageElemen
 7. href:http://easyeda.com/images/img_media/logo.png
 8. id: gge12
 9. locked:null
-Image's attributes and image looks like bellow image:
+Image's attributes and image looks like the image below:
 ![](./images/image.png)	
 
 
@@ -214,7 +214,7 @@ Check [ Polygon element of SVG](http://www.w3.org/TR/SVG11/shapes.html#PolygonEl
 6. fillColor: #00FF00
 7. id: gge10
 8. locked:null
-Polygon's attributes and image looks like bellow image:
+Polygon's attributes and image looks like the image below:
 ![](./images/polygon.png)
 
 
@@ -256,7 +256,7 @@ Check [ Circle  element of SVG](http://www.w3.org/TR/SVG11/shapes.html#CircleEle
 ###Bus
 	"B~570 130 680 130 680 210~#008800~2~0~none~gge19"
 
-Bus is similar with [Polyline](#polyline), Bus is start with `B`, polyline start with `PL`.
+Bus is similar with [Polyline](#polyline), Bus is started with `B`, polyline starts with `PL`.
 
 ###Pin
 	"P~show~0~1~670~30~~gge23^^670~30^^M 670 30 h -20~#880000^^1~648~33~0~1~end~~11pt^^1~655~29~0~1~start~~11pt^^0~653~30^^0~M 650 27 L 647 30 L 650 33"
@@ -274,7 +274,7 @@ A Pin has seven segments, join these segments with [^^double Circumflex ](./comm
 	8. id: gge23
 	9. locked: null
 2. **pin dot** `670~30`  
-	The gray dot at the end of the Pin, it is important.
+	The gray dot at the end of the Pin is important to identify where wires are snapped to.
 	1. pin dot x: 670
 	2. pin dot y: 30
 	 
@@ -304,7 +304,7 @@ A Pin has seven segments, join these segments with [^^double Circumflex ](./comm
 	1. visible: 0/1 hide / show
 	2. clock path: M 650 27 L 647 30 L 650 33
 
-Pin's attributes and image looks like bellow image:
+Pin's attributes and image looks like the image below:
 ![](./images/pin.png)
 
 
@@ -326,7 +326,7 @@ Check [ Ellipse  element of SVG](http://www.w3.org/TR/SVG11/shapes.html#EllipseE
 10. id: gge12
 11. locked:null
 
-Ellipse's attributes and image looks like bellow image:
+Ellipse's attributes and image looks like the image below:
 ![](./images/ellipse.png)
 
 ###Arrowhead
@@ -345,7 +345,7 @@ Ellipse's attributes and image looks like bellow image:
 9. fillColor: #FF0000
 9. locked:null
 
-Arrow head's attributes and image looks like bellow image:
+Arrow head's attributes and image looks like the image below:
 ![](./images/arrow.png)
 
 ###Annotations
@@ -374,7 +374,7 @@ Check [Text  element of SVG](http://www.w3.org/TR/SVG11/text.html#TextElement) o
 16. id:gge26
 17. locked:null
 
-Text's attributes and image looks like bellow image:
+Text's attributes and image looks like the image below:
 ![](./images/text.png)
 
  
@@ -400,7 +400,7 @@ Text's attributes and image looks like bellow image:
 13. locked:null
 
 
-netlabel's attributes and image looks like bellow image:
+netlabel's attributes and image looks like the image below:
 ![](./images/netlabel.png)
 
 ###Netflags
@@ -420,7 +420,7 @@ A Netflag  has several segments, join these segments with [^^double Circumflex ]
 	7. locked: null
 
 2. **pin dot** `670~30`  
-	The gray dot at the end of the Pin, it is important.
+	The gray dot at the end of the Pin is important to identify where wires are snapped to.
 	1. pin dot x: 330
 	2. pin dot y: 140
 	
@@ -438,7 +438,7 @@ A Netflag  has several segments, join these segments with [^^double Circumflex ]
 
 	All other items are [shapes](#shapes).
 
-netflag's attributes and image looks like bellow image:
+netflag's attributes and image looks like the image below:
 ![](./images/netflag.png)
 
 ###Wire
@@ -446,7 +446,7 @@ netflag's attributes and image looks like bellow image:
 		"W~570 130 680 130 680 210~#008800~2~0~none~gge19"
 	
 
-`Wire` is similar with [Polyline](#polyline), `Wire` is start with `W`, [polyline](#polyline) start with `PL`.
+`Wire` is similar with [Polyline](#polyline), `Wire` is started with `W`, [polyline](#polyline) starts with `PL`.
 
 ###Junctions
 
@@ -464,7 +464,7 @@ netflag's attributes and image looks like bellow image:
 7. locked:null
 
 
-Junction's attributes and image looks like bellow image:
+Junction's attributes and image looks like the image below:
 ![](./images/junction.png)
 
 ###No Connect Flag
@@ -483,7 +483,7 @@ Junction's attributes and image looks like bellow image:
 7. locked:null
 
 
-No Connect Flag's attributes and image looks like bellow image:
+No Connect Flag's attributes and image looks like the image below:
 ![](./images/No-Connect-Flag.png)
 
 
@@ -518,5 +518,5 @@ A schlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Do
 ##Q&A
 
 
-###1. Why don't save the Wire, Annotion, netlabel, netflag to Shape field.
-These items will be used to create netlist, save them to separate field will make you spent more less time to do this. We don't need to traversal all the shapes.
+###1. Why aren't Wire, Annotion, netlabel, netflag saved to the Shape field?
+These items will be used to create the netlist. Saving them to separate fields takes less time to generate this netlist because we don't need to traverse all the shapes.
