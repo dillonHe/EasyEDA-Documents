@@ -11,4 +11,4 @@ For now, you can reach us via email.
 
 ** All other inquiries: **
 
-![](/Doc/Tutorial/images/supoort_email.png)
+![](/Doc/Tutorial/images/suport_email.png)

@@ -42,7 +42,7 @@ This is a pure engineering team.
 
 	<div class="card">
 		<div class="image">
-			<img src="/assets/static/images/team/dillon.jpg">
+			<img src="/assets/static/images/team/shizhou.jpg">
 		</div>
 		<div class="content">
 			<a class="header">shizhou</a>

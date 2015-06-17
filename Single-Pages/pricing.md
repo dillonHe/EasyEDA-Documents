@@ -9,7 +9,7 @@ Feel free to use EasyEDA, we promise EasyEDA's core features are absolutely free
 
 |                       |  Standard          |  Professional               |  Enterprise
 :-----------------------| :----------------: | :-------------------------: | :---------------:
-Price                   |  Free Forever      |  No more than $5/Month      |  contact
+Price                   |  Free Forever      |  No more than $20/Month      |  contact
 Commercial use          |  Y                 |  Y                          |  Y
 Public projects         |  Unlimited         |  Unlimited                  |  Unlimited
 Private Projects(?)     |  From 2 to Unlimited  |  Unlimited               |  Unlimited
@@ -18,10 +18,11 @@ Collaboration           |  Y                 |  Y                          |  Y
 Forum Support           |  Y                 |  Y                          |  Y
 Email Support           |  Y(48hours)        |  Y(24hours)                 |  Y(12 hours)
 Phone Support           |  N                 |  N                          |  Y
-PCB order discount      |  N                 |  95%                        |  80%
+PCB order discount      |  N                 |  90%                        |  80%
 Advertisement(?)        |  Y                 |  N                          |  N
 Cloud Auto router (Coming soon)  |  Unknown    |  Unknown                     |  Unknown
 Cloud spice simulation  |  Y                 |  Y                          |  Y
+API  |  Y                 |  Y                          |  Y
 On-Premises Hosting      |  N                 |  N                          |  Y
 
 
@@ -30,7 +31,9 @@ On-Premises Hosting      |  N                 |  N                          |  Y
 
 ### Can I change my plan at any time?
 
-Yes, Now everyone can enjoy the free Professional plan.</dd>
+Yes. For now, everyone can enjoy all the features of the Professional plan for free but at some time in the future there will be a small monthly fee of no more than $20/month for the Professional plan.
+
+From that time there will continue to be a completely free Standard plan allowing only 2 private projects but with the possibility of earning additional private projects as described further down the page. 
 
 ### EDA tools are quite expensive to build, Why you can supply the core features for free?
 Yes, it has taken more than 5 years to build EasyEDA to this point and we will spent another X years developing it. 
@@ -59,4 +62,3 @@ If not, then maybe EasyEDA will be advertisement free forever :)
 
 ### Why is the status of a Cloud Auto router shown as `Unknown`?
 This function is under development but a really effective, efficient and super fast Auto router will cost lots of CPU resource, so we will have to evaluate this. That said, we can confirm that almost all of the great hardware projects are actually manually routed.
-
