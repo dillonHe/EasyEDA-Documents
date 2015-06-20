@@ -24,7 +24,7 @@ check it via github gist [Schematic json](https://gist.github.com/dillonHe/0b62b
 ### PCB JSON File Source <a name="PCBJson"></a>
 check it via github gist [PCB json](https://gist.github.com/dillonHe/279c55659bb7065258b6#file-pcb-json)
 <script src="https://gist.github.com/dillonHe/279c55659bb7065258b6.js"></script>
-##General File Struck
+##General File Structure
 ###Delimiter Mark
 From the above JSON source, you can find there are lots of **`**, **~**, **^^** and **#@$**  
  characters. These characters are used as **delimiter mark**. These characters are not used frequently in design.
