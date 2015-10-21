@@ -139,29 +139,29 @@ and registering to get a copy of:
 
 *More information about ngpsice is available from here:*
 
-[http://ngspice.sourceforge.net/presentation.html](http://ngspice.sourceforge.net/presentation.html)
+[*http://ngspice.sourceforge.net/presentation.html*](http://ngspice.sourceforge.net/presentation.html)
 
 *More information about Larry Nagel and SPICE is available from here:*
 
-[http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html](http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html)
+[*http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html*](http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html)
 
 *Larry&#8217;s PhD dissertation Dissertation:*
 
-Laurence W. Nagel., &#8220;SPICE2: A Computer Program to Simulate Semiconductor Circuits,&#8221;
+*Laurence W. Nagel., &#8220;SPICE2: A Computer Program to Simulate Semiconductor Circuits,&#8221;*
 
-Memorandum No. ERL-M520, University of California, Berkeley, May 1975.
+*Memorandum No. ERL-M520, University of California, Berkeley, May 1975.
 
-[http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf](http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf)
+[*http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf*](http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf)
 
 *is actually very readable and instructive.*
 
 *For more information about electronic circuit simulation and spice in particular, see:*
 
-[http://en.wikipedia.org/wiki/Electronic_circuit_simulation](http://en.wikipedia.org/wiki/Electronic_circuit_simulation)
+[*http://en.wikipedia.org/wiki/Electronic_circuit_simulation*](http://en.wikipedia.org/wiki/Electronic_circuit_simulation)
 
-and:
+*and:*
 
-[http://en.wikipedia.org/wiki/SPICE](http://en.wikipedia.org/wiki/SPICE)
+[*http://en.wikipedia.org/wiki/SPICE*](http://en.wikipedia.org/wiki/SPICE)
 
 ## The relationship between spice models and real world behaviour
 
