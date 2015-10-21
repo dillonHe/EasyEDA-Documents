@@ -1,10 +1,10 @@
-# <a name="Schematic_symbols_prefixes_and_pin_numbers"></a>Schematic symbols: prefixes and pin numbers 
+# Schematic symbols: prefixes and pin numbers 
 
 **Please note that before attempting to edit device models, it is *essential* that the user is familiar with and understands the relationship between spice pin names and numbering, described in this section.**
 
 Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a Spice Prefix. They also have two sets of pin numbers: PCB pins and Spice pins.
 
-## <a name="PCB_and_Spice_Prefix"></a>PCB and Spice Prefix
+## PCB and Spice Prefix
 
 The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user's preferences. Depending on how a device is graphically represented by it's schematic symbol it may have a different PCB Prefix or reference designator. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.
 
@@ -337,7 +337,7 @@ For more information on circuit elements in Ngspice, please refer to:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)  
 
-## <a name="PCB_and_Spice_pin_numbers"></a>PCB and Spice pin numbers
+## PCB and Spice pin numbers
 
 The two sets of pin numbers are:
 
@@ -659,7 +659,7 @@ In cases where the subcircuit is built by the user as opposed to where it is sup
 
 Although as described earlier, built-in spice models usually have defined spice pin orders, not all subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!
 
-### <a name="For_MODEL_defined_models"></a>For .MODEL defined models
+### For .MODEL defined models
 
 1.  Find a spice .model for your target device;
 2.  Copy and paste it into a text placeholder (the `T` hotkey) in your schematic (but please respect the EULA and copyright of commercial files);
@@ -704,7 +704,7 @@ This process is illustrated in the following example:
 
 [N channel depletion mode MOSFET using a .model statement](https://easyeda.com/editor#id=NnhztL2kC)
 
-### <a name="For_SUBCKT_defined_models."></a>For .SUBCKT defined models
+### For .SUBCKT defined models
 
 The process described above works fine for simple .model defined models but for .subckt defined models it is a little more complicated because you need to tell EasyEDA that the model is a .subckt and not a simple .model.
 
@@ -795,7 +795,7 @@ Another example of the process described above to change the Spice Prefix of a s
 
 [An N-channel depletion mode MOSFET using an EasyEDA .subckt](https://easyeda.com/editor#id=sHBTNtZhz)
 
-### <a name="Attaching_models_to_custom_symbols"></a>Attaching models to custom symbols
+### Attaching models to custom symbols
 
 This is basically the same as attaching a model to any of the predefined symbols from the EasyEDA Libs except that the symbol is one that has been created from scratch or by editing an existing symbol. The rules for assigning and checking that the spice prefix matches the type of model to be attached ('M' for .model or 'X' for .subckt) and checking that the spice pin numbering matches that of the type of device defined by the .model statement or by the pin sequence of a .subckt defined model.
   
