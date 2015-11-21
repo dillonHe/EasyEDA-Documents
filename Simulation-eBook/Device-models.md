@@ -11,15 +11,15 @@ Although the equations themselves are hidden deep in the source code for a simul
 
 This list of coefficients is called a  **model** .
 
-The individual coefficients in a model are called the <span style="font-weight:bold">model parameters</span>.
+The individual coefficients in a model are called the **model parameters**.
 
-A device model written in this way is called a <span style="font-weight:bold">.model</span> statement.
+A device model written in this way is called a **.model** statement.
 
 Some devices such as Thyristors, opamps, linear regulators and switch mode supply chips are made up from a number of other devices connected together to form subcircuits.
 
-A spice netlist of a device defined by a subcircuit is also referred to as a <span style="font-weight:bold">model</span>.
+A spice netlist of a device defined by a subcircuit is also referred to as a **model**.
 
-A device model written in this way is called a <span style="font-weight:bold">.subckt</span>.
+A device model written in this way is called a **.subckt**.
 
 Subcircuit models may themselves contain .model statements.
 
@@ -59,11 +59,11 @@ Although it is beyond the scope of this document to go into detail there are som
 
 Not all devices are described by .model statements.
 
-Models of more complex devices such as Thyristors (SCRs, Triacs and also Diacs), Insulated Gate Bipolar Transistors (IGBTs), operational amplifiers (opamps) and even many MOSFETs are often made up by connecting lower level devices to make a circuit that behaves like the desired device. This is called a <span style="font-weight:bold">subcircuit</span>. The spice netlist of this subcircuit is then used to create a type of device model defined by what is called a <span style="font-weight:bold">.subckt</span>. The low level components in subcircuits are described by the same sort of models (those lists of parameters or coefficients) as for the basic diodes etc., already referred to so a .subckt will often contain a list of .model statements describing the devices that are used to build the .subckt itself. Complex .subckts may even call other .subckts.
+Models of more complex devices such as Thyristors (SCRs, Triacs and also Diacs), Insulated Gate Bipolar Transistors (IGBTs), operational amplifiers (opamps) and even many MOSFETs are often made up by connecting lower level devices to make a circuit that behaves like the desired device. This is called a **subcircuit**. The spice netlist of this subcircuit is then used to create a type of device model defined by what is called a **.subckt**. The low level components in subcircuits are described by the same sort of models (those lists of parameters or coefficients) as for the basic diodes etc., already referred to so a .subckt will often contain a list of .model statements describing the devices that are used to build the .subckt itself. Complex .subckts may even call other .subckts.
 
 ## Behavioural models
 
-Using Behavioural Voltage and Current Sources and expressions it is possible to create what are called <span style="font-weight:bold">behavioural models</span> of components. These are models that behave like a device but which have little of the actual underlying realistic circuit defined and are mostly - or perhaps completely - described by explicitly defined expressions (equations). The models for most devices internally comprising more than one active component, i.e. ICs, are largely behavioural. This is a way of hiding the detailed information about the manufacturer's process technology that low level spice modelling reveals.
+Using Behavioural Voltage and Current Sources and expressions it is possible to create what are called **behavioural models** of components. These are models that behave like a device but which have little of the actual underlying realistic circuit defined and are mostly - or perhaps completely - described by explicitly defined expressions (equations). The models for most devices internally comprising more than one active component, i.e. ICs, are largely behavioural. This is a way of hiding the detailed information about the manufacturer's process technology that low level spice modelling reveals.
 
 The use of expressions and behavioural sources in EasyEDA is explained later in the book.
 
@@ -135,39 +135,35 @@ Another excellent (and free) book about transistor modelling, is available by go
 
 and registering to get a copy of:
 
-[<span style="font-style:italic">Definitive Handbook of Transistor Modeling</span>](http://www.aeng.com/pdf/RGVmaW5pdGl2ZSBIYW5kYm9vayBvZiBUcmFuc2lzdG9yIE1vZGVsaW5n.pdf)
+[*Definitive Handbook of Transistor Modeling*](http://www.aeng.com/pdf/RGVmaW5pdGl2ZSBIYW5kYm9vayBvZiBUcmFuc2lzdG9yIE1vZGVsaW5n.pdf)
 
-<span style="font-style:italic">More information about ngpsice is available from here:</span>
+*More information about ngpsice is available from here:*
 
-[http://ngspice.sourceforge.net/presentation.html](http://ngspice.sourceforge.net/presentation.html)<span style="font-style:italic"><span style="text-decoration:underline"></span></span>
+[*http://ngspice.sourceforge.net/presentation.html*](http://ngspice.sourceforge.net/presentation.html)
 
-<span style="font-style:italic"><span style="text-decoration:underline"></span></span>
+*More information about Larry Nagel and SPICE is available from here:*
 
-<span style="font-style:italic"><span style="text-decoration:underline"></span></span><span style="font-style:italic">More information about</span><span style="font-style:italic">Larry Nagel and SPICE</span><span style="font-style:italic">is available from here:</span><span style="font-style:italic"></span>
+[*http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html*](http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html)
 
-[http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html](http://www.omega-enterprises.net/The%20Origins%20of%20SPICE.html)<span style="text-decoration:underline"></span>
+*Larry&#8217;s PhD dissertation Dissertation:*
 
-<span style="font-style:italic"><span style="text-decoration:underline"></span></span><span style="font-family:Ubuntu;font-style:italic"><span style="text-decoration:underline"></span></span>
+*Laurence W. Nagel., &#8220;SPICE2: A Computer Program to Simulate Semiconductor Circuits,&#8221;*
 
-<span style="font-style:italic"><span style="text-decoration:underline"><span style="font-style:italic">Larry&#8217;s PhD dissertation Dissertation:</span></span></span>
+*Memorandum No. ERL-M520, University of California, Berkeley, May 1975.
 
-Laurence W. Nagel., &#8220;SPICE2: A Computer Program to Simulate Semiconductor Circuits,&#8221;
+[*http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf*](http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf)
 
-Memorandum No. ERL-M520, University of California, Berkeley, May 1975.
+*is actually very readable and instructive.*
 
-[<span style="font-style:italic">http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf</span>](http://www.eecs.berkeley.edu/Pubs/TechRpts/1975/ERL-520.pdf)
+*For more information about electronic circuit simulation and spice in particular, see:*
 
-<span style="font-style:italic">is actually very readable and instructive.</span>
+[*http://en.wikipedia.org/wiki/Electronic_circuit_simulation*](http://en.wikipedia.org/wiki/Electronic_circuit_simulation)
 
-<span style="font-style:italic">For more information about electronic circuit simulation and spice in particular, see:</span>
+*and:*
 
-[http://en.wikipedia.org/wiki/Electronic_circuit_simulation](http://en.wikipedia.org/wiki/Electronic_circuit_simulation)
+[*http://en.wikipedia.org/wiki/SPICE*](http://en.wikipedia.org/wiki/SPICE)
 
-and:
-
-[http://en.wikipedia.org/wiki/SPICE](http://en.wikipedia.org/wiki/SPICE)
-
-## <a name="The_relationship_between_models_and_real_devices"></a>The relationship between spice models and real world behaviour
+## The relationship between spice models and real world behaviour
 
 Not all spice models are created equal. Here are just some of the things to be aware of.
 
@@ -189,7 +185,7 @@ As far as possible, the EasyEDA in-house Thyristor and Triac models model almost
 
 Metal Oxide Varistors (MOVs) are a nightmare to model and are best avoided! Even the commercially available models sometimes do not run reliably in all conditions.
 
-Some opamp models are hugely detailed and can be very accurate but care must be taken to check that they are written using a syntax that is compatible with ngspice. Devices tailored for some of the commercial simulators will not run in ngspice without some syntax changes. Some may require special <span style="font-weight:bold">.option</span>s to be invoked for the simulator.
+Some opamp models are hugely detailed and can be very accurate but care must be taken to check that they are written using a syntax that is compatible with ngspice. Devices tailored for some of the commercial simulators will not run in ngspice without some syntax changes. Some may require special **.option**s to be invoked for the simulator.
 
 Beware that even some quite complex opamp models do not simulate supply current drains even as simple DC quiescent currents let alone the dynamic behaviour with load currents added in. This can be an advantage since it reduces the signal currents that have to be simulated. It also means that there is absolutely no point in including any supply rail decoupling for those device that are known to not model supply current drains since they do not draw any current: they only use the supply voltage to define things like common mode range or output swing.
 
@@ -221,16 +217,18 @@ For all of the in-house EasyEDA models, more information about them can be found
 
 ## How to change the model attached to a symbol
 
-<span style="font-weight:bold">Please note that before attempting to edit device models, it is <span style="font-style:italic">essential</span> that the user is familiar with and understands the relationship between spice pin names and numbering, described in the section on 'Schematic symbols: prefixes and pin numbers'.</span>
+**Please note that before attempting to edit device models, it is *essential* that the user is familiar with and understands the relationship between spice pin names and numbering, described in the section on 'Schematic symbols: prefixes and pin numbers'.**
 
-<span style="font-weight:bold">We are working to provide a search function for the device simulation models available in EasyEDA.</span>
+**We are working to provide a search function for the device simulation models available in EasyEDA.**
 
 Right now there are a couple of ways to change the model for a device.
 
-1.  Place a device from the EasyEDA Libs and then edit the device model name either in place in the schematic or in the right hand properties panel.
+1) Place a device from the EasyEDA Libs and then edit the device model name either in place in the schematic or in the right hand properties panel.
 
 For instance, when an NPN bjt is placed in a schematic, it comes in with a default name of editing the model name of 2DC2412R. This name pulls the associated default 2DC2412R model into the spice netlist. Editing the device name from 2DC2412R to 2N2222 will pull the 2N2222 model from EasyEDA's spice model library into the netlist.
 
 The problem here is that until a model search function is up and running this approach is obviously too hit and miss for an arbitrary choice because there no way to see which models are available to choose from.
 
-2.  The second option is a bit more fiddly but it allows almost any unencrypted device model to be run in a simulation. The process is similar for both .model and .subckt defined models.
+2) The second option is a bit more fiddly but it allows almost any unencrypted device model to be run in a simulation. The process is similar for both .model and .subckt defined models.
+
+**These processes are described in detail after the following section on 'Schematic symbols: prefixes and pin numbers'.**
