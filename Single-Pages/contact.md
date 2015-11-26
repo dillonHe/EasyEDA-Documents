@@ -7,7 +7,7 @@ For now, you can reach us via email.
 
 **Business development/cooperation:**
 
-![](/Doc/Tutorial/images/dillonemail.png)
+![](/Doc/Tutorial/images/support_email.png)
 
 ** All other inquiries: **
 
