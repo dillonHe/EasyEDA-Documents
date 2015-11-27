@@ -1,0 +1,14 @@
+{
+	"title" : "EasyEDA",
+	"files" : [
+		"about.md",
+		"faq.md",
+		"contact.md",
+		"contribute.md",
+		"language.md",
+		"pricing.md",
+		"legal.md",
+		"privacy.md",
+		"thanks.md"
+	]
+}

@@ -4,14 +4,14 @@ Note: PCB and Package are used the same format.
 
 *EasyEDA PCB File Object* is a JSON Object which allows you to hack your designs via other language, such as Javascript, Python, PHP, C, C++. The funny thing is that your can control/modify your design in EasyEDA editor via Javascript language. So you can use codes to create your own outline.
 
-##Rules <a name="rules"></a>
+##Rules
 ### JSON Keys
  Every EasyEDA graph unit has an unique key, such as  "TRACK", "PAD", "VIA", "TEXT", "DIMENSION", "FOOTPRINT", "ARC", "RECT", "CIRCLE", "HOLE", "COPPERAREA", "SOLIDREGION", "DRCRULE", "FABRICATION"
 
 ### itemOrder key
    Becuase of an object in EasyEDA  is an unordered set of name/value pairs in [JSON format](http://json.org/), but EasyEDA's graphs are ordered. We need an array to store the order of these objects. Every package has an itemOrder key and the whole JSON object has an itemOrder key.
 
-##Example <a name="example"></a>
+##Example
 ### File
 
 ![](./images/filePCBJson.png)  

@@ -65,7 +65,7 @@ More information about ngpsice is available from here:
 
 <span style="font-style:italic">[http://ngspice.sourceforge.net/presentation.html](http://ngspice.sourceforge.net/presentation.html)</span>
 
-## <a name="Who_this_book_is_for"></a>Who this book is for
+## Who this book is for
 
 All simulation tools and how they interact with schematic capture tools are different so even for people with experience of using simulation tools, it is worth at least skimming through the sections of this book to get an idea of where to find information if things don't seem to go quite as planned.
 

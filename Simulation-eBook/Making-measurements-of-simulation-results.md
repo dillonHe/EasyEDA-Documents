@@ -15,7 +15,7 @@ The cursor placement and results produced are volatile, meaning that they cannot
 
 Note that the screenshot utility must have a user definable time delay to allow cursor placement to be carried out between initiating the screenshot and the screenshot actually being taken.
 
-For more information on displaying simulation results in Waveform, please refer to [WaveForm](http://easyeda.com/Doc/Tutorial/spiceSimulation.htm#WaveForm) in the EasyEDA Tutorial.
+For more information on displaying simulation results in Waveform, please refer to [WaveForm](/Doc/Tutorial/spiceSimulation.htm#WaveForm) in the EasyEDA Tutorial.
 
 ### Using the meas command
 

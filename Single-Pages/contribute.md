@@ -1,7 +1,7 @@
 
 # Contribute
 
- You can help drive us to design an awesome tool for everyone. There are lots of  little things that you can do.
+ You can help drive us to design an awesome tool for everyone. There are lots of little things that you can do.
 ## Translate EasyEDA into your language
 Would you like to have EasyEDA in your language?  [Translate language](/language) .
 

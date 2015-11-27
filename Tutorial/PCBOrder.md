@@ -70,7 +70,7 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 * If your PCB requires 8 layers or larger dimensions, please contact us before placing your order.
 
 
-<h1>Manufacturing Specifications:</h1>
+## Manufacturing Specifications:
 <table border="1" cellpadding="2" cellspacing="2">
 <tbody>
 <tr bgcolor="#ccc">

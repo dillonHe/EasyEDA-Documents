@@ -60,7 +60,7 @@ For more help in reconciling the differences between LTspice and Ngspice please 
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf)
 
- Please also see the section on: [How to get help?](./introduction.htm#Howtogethelp)
+ Please also see the section on: [How to get help?](./introduction.htm#How-to-get-help)
 
 ## Import Kicad Libs 
 

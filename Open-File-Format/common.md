@@ -13,7 +13,7 @@ Ok, let's explain them with examples.
 ![](./images/schematic-example.png)
 
 
-### Schematic JSON File Source <a name="schematicJson"></a>
+### Schematic JSON File Source
 check it via github gist [Schematic json](https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3#file-schematic-json)
 <script src="https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3.js"></script>
 
@@ -21,7 +21,7 @@ check it via github gist [Schematic json](https://gist.github.com/dillonHe/0b62b
 [PCB Example](http://easyeda.com/file_view_Simply-PCB_K4gCYjhDB.htm)  
 ![](./images/PCB-examle.png)
 
-### PCB JSON File Source <a name="PCBJson"></a>
+### PCB JSON File Source
 check it via github gist [PCB json](https://gist.github.com/dillonHe/279c55659bb7065258b6#file-pcb-json)
 <script src="https://gist.github.com/dillonHe/279c55659bb7065258b6.js"></script>
 ##General File Struck
@@ -41,20 +41,20 @@ check it via github gist [rect json](https://gist.github.com/dillonHe/55151fae7c
 So EasyEDA's source is small in file size and will trans from internet more faster.
 
 
-#### `(Back quote)<a name="backQuote"></a>
+#### `(Back Quote)
   **`** is used to separate the custom attributes. 
 
 **package`LED3MM** stands package:LED3MM 
 
-#### ^^(Double circumflex) <a name="doubleCircumflex"></a>
+#### ^^(Double Circumflex)
 **^^** is used to join segments, just used in *netFlag* , *Pin* and *pAD*.
 
-#### #@$(Octothorpe Ampersat Dollar) <a name="octothorpeAmpersatDollar"></a>
-Union the characters **#@$** as a supper mark, it will be used to implode the [shapes](./schematic.htm#shapes) to a string, it just be used in *Schlib* and *PCBLIB*.
+#### #@$(Octothorpe Ampersat Dollar)
+Union the characters **#@$** as a supper mark, it will be used to implode the [shapes](./schematic.htm#Shapes) to a string, it just be used in *Schlib* and *PCBLIB*.
 
 
 
-##Document Type <a name="documentType"></a>
+##Document Type
 check it via github gist [document type](https://gist.github.com/dillonHe/8c1a0e599540980bf7ab#file-document-type-js)
 <script src="https://gist.github.com/dillonHe/8c1a0e599540980bf7ab.js"></script>
 
@@ -68,4 +68,4 @@ The upper-left corner of the canvas has coordinate (0,0)
 
 ##Q&A
 ### 1. How to check the json file format
- Check the [EasyEDA source dialog](http://easyeda.com/Doc/Tutorial/introduction.htm# EasyEDASource) out, copy the text to text area, then click the `Apply` button. That is all.
+ Check the [EasyEDA source dialog](http://easyeda.com/Doc/Tutorial/introduction.htm#EasyEDA-Source) out, copy the text to text area, then click the `Apply` button. That is all.

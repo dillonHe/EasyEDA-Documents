@@ -148,7 +148,7 @@ When the Gerber files are generated, an area defined by a Solid Region set to a
 
 ![](images/latest-upgrade/image03.png)
 
-## Board outline
+## Board Outline
 
 Before placing footprint we need to create a board outline. The board outline must be drawn on the **BoardOutLine** layer. So first, set **BoardOutLine** as the active layer, then draw the board outline using **Track** and **Arc** from the PCB Tools palette.
 ![](images/image09.png)
@@ -220,7 +220,7 @@ From the error message, you will find that the symbol’s PIN number is differen
 From the image, we can get the PIN number in the schematic symbol is marked as C, but the PAD Number in the PCB Footprint is mark as K. Now you have know the problem, how to fix this? 
 
  Solution one, Change the schematic symbol.
- Using [PinMap function](./schematic.htm#PinmapModifysymbolinformation). Change the PCB PIN from C to K. And save your schematic again.
+ Using [PinMap function](./schematic.htm#Pinmap-Modify-symbol-information). Change the PCB PIN from C to K. And save your schematic again.
 
  Solution Two, Modify the Footprint.
  Edit the Footprint, change the PAD from **K** to **C**. 

@@ -302,7 +302,7 @@ and 1, 0 for x &lt;= 0.</td>
   </tbody>
 </table>
 
-## <a name="User_defined_functions"></a>User defined functions
+## User defined functions
 
 There may be occasions where a function is required that maybe has to be used in several places in a schematic or it is useful in several different schematics. To save having to copy and paste a complicated expression as a block of text each time it is needed, the <span style="font-weight:bold">.func</span> statement makes it is possible to create a user defined function.
 

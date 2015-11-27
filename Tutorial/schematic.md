@@ -310,9 +310,9 @@ EasyEDA does not support true hierarchical designs but it does support **mult
 paper), all schematics under the same project will be merged into one when be converted to PCB connecting in **netlabe**, **netflag**. 
 ![](images/multi-sheet.png)
 
-Note: please make all of the prefixs unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](http://easyeda.com/Doc/Tutorial/introduction.htm#PrefixConflictError)
+Note: please make all of the prefixs unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error)
 Tip: Every schematic's prefix will start from 1, such as R1, C1, U1 etc, 
-1. you can use [Annotate](http://easyeda.com/Doc/Tutorial/schematic.htm#Annotate) to fix prefix
+1. you can use [Annotate](/Doc/Tutorial/schematic.htm#Annotate) to fix prefix
 2. You can set the prefix start to 100, then your components will start from R100, C100. ![](images/prefixStart.png) 
 
 ## Export BOM

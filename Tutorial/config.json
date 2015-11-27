@@ -1,61 +1,20 @@
-[
-	{
-		"fileName": "new.md",
-		"title": "New version V2.X.X"
-	},
-	{
-		"fileName": "introduction.md",
-		"title": "Introduction to EasyEDA"
-	},
-	{
-		"fileName": "schematic.md",
-		"title": "Creating The Schematic"
-	},
-	{
-		"fileName": "creatingtheSchematicLibs.md",
-		"title": "Creating the Schematic Libs"
-	},
-	{
-		"fileName": "spiceSimulation.md",
-		"title": "Spice Simulation"
-	},
-	{
-		"fileName": "convert.md",
-		"title": "Converting Your Schematics To PCB"
-	},
-	{
-		"fileName": "PCB.md",
-		"title": "PCB Design Editor"
-	},
-	{
-		"fileName": "PCBLib.md",
-		"title": "Creating The PCB Libs"
-	},{
-		"fileName": "import.md",
-		"title": "Import"
-	},
-	{
-		"fileName": "export.md",
-		"title": "Export"
-	},
-	{
-		"fileName": "share.md",
-		"title": "Sharing"
-	},
-	{
-		"fileName": "prefix.md",
-		"title": "Schematic symbols: prefixes and pin numbers"
-	},
-	{
-		"fileName": "API.md",
-		"title": "EasyEDA API Plug"
-	},
-	{
-		"fileName": "PCBOrder.md",
-		"title": "Order PCB From EasyEDA"
-	},{
-		"fileName": "FAQ.md",
-		"title": "Frequently Asked Questions"
-	}
-
-]
+{
+	"title" : "Tutorial",
+	"files" : [
+		"new.md",
+		"introduction.md",
+		"schematic.md",
+		"creatingtheSchematicLibs.md",
+		"spiceSimulation.md",
+		"convert.md",
+		"PCB.md",
+		"PCBLib.md",
+		"import.md",
+		"export.md",
+		"share.md",
+		"prefix.md",
+		"API.md",
+		"PCBOrder.md",
+		"FAQ.md"
+	]
+}

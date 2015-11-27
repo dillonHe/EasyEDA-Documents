@@ -1119,7 +1119,7 @@ This where it all happens! This the area where you create and edit your schemati
 ![](images/image36.png)
 
 
-## How to get help?  <a name ="Howtogethelp"></a>
+## How to get help?
 
 It is easy to ask for help for any aspect of EasyEDA: just click on Asking for help then complete and Submit the Support request:
 

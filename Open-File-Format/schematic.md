@@ -1,15 +1,15 @@
 #EasyEDA Schematic File Format
 
-Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used the same file format. Please check [Schematic JSON File Source](./common.htm#schematicJson) out before keeping read.
+Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used the same file format. Please check [Schematic JSON File Source](./common.htm#Schematic-JSON-File-Source) out before keeping read.
 
-##Head <a name="head"></a>
+##Head
 ###Head information for schematic and subckt.  
 
 	"head":"1~1.7.5~Author`Dillon`~TRAN`2u`2m`0`{AC`dec``0`0`{DC`0``0`0`{TF```"
 
 **Format:**
 
-1. [document type](./common.htm#documentType) :`1`
+1. [document type](./common.htm#Document-Type) :`1`
 2. document version: `1.7.5`h
 3. custom attributes: **key: value** pairs, separate with **`**, added via **Add new parameter**  
   ![](./images/customAttributes.png)
@@ -17,12 +17,12 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 ![](./images/simulation.png)
 
 
-###Head information for  Schematic Library, Spice Symbol and Subpart
+###Head information for Schematic Library, Spice Symbol and Subpart
 	"head":"7~1.7.5~400~300~package`DIP08`nameDisplay`0`nameAlias`Model`Model`555`name`555`pre`U?`spicePre``Contributor`Dillon"
 
 **Format:**
 
-1. [document type](./common.htm#documentType) :`7`
+1. [document type](./common.htm#Document-Type) :`7`
 2. document version: `1.7.5`
 3. origin x position. **Reserved field, can't be changeded** 
 4. origin y position. **Reserved field, can't be changeded** 
@@ -38,7 +38,7 @@ Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used th
 Place it to schematic canvas, it's attributes will be looked like below image. The name field is alias as Model and it is invisible. 
 ![](./images/schematicLibAttr.png)
 
-##Canvas <a name="canvas"></a>
+##Canvas
 	"canvas":"CA~1200~1200~#FFFFFF~yes~#CCCCCC~10~1200~1200~line~10~pixel~5"
 **Format:**  
 1. command: CA
@@ -58,7 +58,7 @@ Place it to schematic canvas, it's attributes will be looked like below image. T
 Canvas setting image  
 ![](./images/SchematicCanvas.png)
 
-##Shapes <a name="shapes"></a>
+##Shapes
 The shape is an array. EasyEDA store various shape in this field, they are different with a command which locate at the begin of the string. 
 
 	"shape":[
@@ -69,7 +69,7 @@ The shape is an array. EasyEDA store various shape in this field, they are diffe
 	    "PT~M230 170 C270 200 270 170 240 150 240 150 240 150 240 150~#000000~2~0~none~gge65"
 	]
 
-###Rectangle <a name="rect"></a>
+###Rectangle
 	"R~650~0~20~20~230~160~#FF0000~2~1~#9966FF~gge5"
 
 **Format:**  
@@ -92,7 +92,7 @@ Check [ Rect element of SVG](http://www.w3.org/TR/SVG11/shapes.html#RectElement)
 Rect's attributes and image looks like bellow image:
 ![](./images/rect.png)
 
-###Polyline <a name="polyline"></a>
+###Polyline
 	"PL~610 130 780 130~#FF0000~5~0~none~gge6"
 
 **Format:**  
@@ -261,7 +261,7 @@ Bus is similar with [Polyline](#polyline), Bus is start with `B`, polyline start
 ###Pin
 	"P~show~0~1~670~30~~gge23^^670~30^^M 670 30 h -20~#880000^^1~648~33~0~1~end~~11pt^^1~655~29~0~1~start~~11pt^^0~653~30^^0~M 650 27 L 647 30 L 650 33"
 
-A Pin has seven segments, join these segments with [^^double Circumflex ](./common.htm#doubleCircumflex)as a string like above.
+A Pin has seven segments, join these segments with [^^ (Double Circumflex)](./common.htm#Double-Circumflex) as a string like above.
 
 1. **Pin configure** `P~show~0~1~670~30~~gge23`  
 	1. command: P
@@ -408,7 +408,7 @@ Netflag is very similar with netlabel
 
     "F~part_netLabel_gnD~330~110~~gge41^^330~110^^GND~#000080~319~97~0~start~0~Times New Roman~9pt^^PL~330 120 330 110~#000000~1~0~none~gge44^^PL~320 120 339 120~#000000~1~0~none~gge45^^PL~324 122 337 122~#000000~1~0~none~gge46^^PL~326 124 333 124~#000000~1~0~none~gge47^^PL~329 126 331 126~#000000~1~0~none~gge48",
 
-A Netflag  has several segments, join these segments with [^^double Circumflex ](./common.htm#doubleCircumflex)as a string like above.
+A Netflag  has several segments, join these segments with [^^(Double Circumflex)](./common.htm#Double-Circumflex) as a string like above.
 
 1. **configure** `P~show~0~1~670~30~~gge23`  
 	1. command: F
@@ -487,19 +487,19 @@ No Connect Flag's attributes and image looks like bellow image:
 ![](./images/No-Connect-Flag.png)
 
 
-###SchLib <a name="schlib"></a>
+###SchLib
 
 
     "LIB~220~140~package`C1`nameAlias`Value(F)`Value(F)`1u`spicePre`C`spiceSymbolName`Capacitor`~~0~gge66#@$T~N~214~129~0~#000080~Arial~~~~~comment~1u~1~start~gge68#@$T~P~214~120~0~#000080~Arial~~~~~comment~C1~1~start~gge69#@$PL~218 148 218 132~#A00000~1~0~none~gge70#@$P~show~0~1~200~120~180~gge71^^200~140^^M 210 140 h -10~#800^^0~214~140~0~1~start~~^^0~206~136~0~1~end~~^^^^#@$PL~230 140 222 140~#A00000~1~0~none~gge72#@$PL~222 132 222 148~#A00000~1~0~none~gge73#@$P~show~0~2~210~120~0~gge74^^240~140^^M 230 140 h 10~#800^^0~226~140~0~2~end~~^^0~234~136~0~2~start~~^^^^#@$PL~218 140 210 140~#A00000~1~0~none~gge75"
 
-A schlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Dollar) ](./common.htm#octothorpeAmpersatDollar)as a string like above.
+A schlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Dollar) ](./common.htm#Octothorpe-Ampersat-Dollar) as a string like above.
 
 1. **configure** <code>LIB~270~140~package\`DO35-7\`nameAlias\`Model\`Model\`1N4001\`spicePre\`D\`spiceSymbolName\`Diode\`~~0~gge116</code>  
 
 	1. command: LIB
 	2. position x: 270
 	3. position y: 140
-	4. [custom attributes](common.htm#backQuote): *package\`DO35-7\`nameAlias\`Model\`Model\`1N4001\`spicePre\`D\`spiceSymbolName\`Diode\`*
+	4. [custom attributes](common.htm#Back-Quote): *package\`DO35-7\`nameAlias\`Model\`Model\`1N4001\`spicePre\`D\`spiceSymbolName\`Diode\`*
 	5. rotation: 0, can be ['null' or 0, '90', '180', '270']
 	6. import flag: 0 just  used in import from eagle
 	7. id: gge116
@@ -510,7 +510,7 @@ A schlib  has several shapes, join these shapes with [#@$(Octothorpe Ampersat Do
 	All other items are [shapes](#shapes).
 
 
-##strokeStyle <a name="strokeStyle"></a>
+##strokeStyle
 - 0 : solid
 - 1 : dashed
 - 2: dotted

@@ -132,7 +132,7 @@ This section is about the values of - and DC paths through - resistors, inductor
 
     At this point it is worth noting that if it is important that the simulation results are as close as possible to those expected to be observed when probing a real circuit using real test equipment, it is sometimes useful to place a realistic load on wires (nets) in the simulation schematic where voltage measurements are to be made in the real circuit. Similarly for current measurements, realistic ammeter insertion impedances should be connected in series with the wire. To avoid unnecessary loading of the simulated circuit however, only place such loads in the locations where external measurement devices are to be connected to the real circuit and only in the same numbers as there are measurement instruments being used at the same time. For example, if there are two oscilloscope probes connected to a circuit but one of them is moved around, only connect loads representing simulated oscilloscope probes to two places in the simulated circuit. If different places need to be probed then move the simulated probes and rerun the simulation.
 
-    #### <a name="DC_paths_through_Voltage_and_Current_Sources"></a>DC paths through Voltage and Current Sources
+    #### DC paths through Voltage and Current Sources
 
     This section is about the DC paths through Voltage and Current Sources.
 

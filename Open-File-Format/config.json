@@ -1,22 +1,10 @@
-[
-	{
-		"fileName": "common.md",
-		"title": "Common Information"
-	},
-	{
-		"fileName": "schematic.md",
-		"title": "Schematic File Format"
-	},
-	{
-		"fileName": "PCB.md",
-		"title": "PCB File Format"
-	},
-	{
-		"fileName": "schematicFileObject.md",
-		"title": "Schematic File Object"
-	},
-	{
-		"fileName": "PCBFileObject.md",
-		"title": "PCB File Object"
-	}
-]
+{
+	"title" : "Open File Format",
+	"files" : [
+		"common.md",
+		"schematic.md",
+		"PCB.md",
+		"schematicFileObject.md",
+		"PCBFileObject.md"
+	]
+}

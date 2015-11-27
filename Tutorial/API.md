@@ -70,11 +70,11 @@ For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 ##API List
 ###Get EasyEDA Source
-1. get EasyEDA JSON objects, type is `json`, you can check  [PCB Json object](http://easyeda.com/Doc/Open-File-Format/PCBFileObject.htm#EasyEDAPCBFileObject) out to know more.
+1. get EasyEDA JSON objects, type is `json`, you can check  [PCB Json object](/Doc/Open-File-Format/PCBFileObject.htm) out to know more.
 
        var result = api('getSource', {type:'json'});
 
-2. get [EasyEDA compress string](http://easyeda.com/Doc/Open-File-Format/PCB.htm#EasyEDAPCBFileFormat), EasyEDA save this string to our database, it is a bit little hard to read and understand, but it is small in size. EasyEDA save this string to our database. 
+2. get [EasyEDA compress string](/Doc/Open-File-Format/PCB.htm), EasyEDA save this string to our database, it is a bit little hard to read and understand, but it is small in size. EasyEDA save this string to our database. 
     
        var result = api('getSource', {type:'compress'});
 
@@ -104,7 +104,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 ###Update Shape
  If you want to modify an EasyEDA object, you can use this API.
 
-	//Change the net to GND and the shape to  ELLIPSE
+	//Change the net to GND and the shape to ELLIPSE
 	 api('updateShape', {
 	  	"shapeType": "PAD",
 	 	"jsonCache": {

@@ -9,8 +9,6 @@ Our mission is to help designers move from idea to manufactured prototype faster
 
 In short, EasyEDA will bring you an easier EDA experience, letting you enjoy more of the journey from an idea to a product.
 
-<a name="team"></a>
-
 ## Team
 
 This is a pure engineering team.
