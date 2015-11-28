@@ -1,7 +1,7 @@
 
 # Creating The PCB Libs
 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/-SDbxVLjhNk" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/-SDbxVLjhNk" frameborder="0" allowfullscreen></iframe>
 There will be times when you will need a PCB footprint that is not already in the EasyEDA libraries. The process of creating your own PCB Libs is very similar to how you make symbols for your own Schematic Libs.
 
 You can start a new PCB lib as shown below:

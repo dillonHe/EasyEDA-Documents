@@ -1,6 +1,6 @@
 
 # Export 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/nTQtx8UZ0fM" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/nTQtx8UZ0fM" frameborder="0" allowfullscreen></iframe>
 For documentation and other purposes, you can export your Schematic and PCB designs to the following formats:
 
 -   EasyEDA Source 

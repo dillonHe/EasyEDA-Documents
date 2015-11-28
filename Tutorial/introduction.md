@@ -5,7 +5,7 @@
 
 ## What's EasyEDA
 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/fhGYMZgFtho" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/fhGYMZgFtho" frameborder="0" allowfullscreen></iframe>
 Welcome to EasyEDA, a great web based EDA tool for electronics engineers, educators, students, makers and enthusiasts.
 
 There’s no need to install any software. Just open EasyEDA in any HTML5 capable, standards compliant web browser.

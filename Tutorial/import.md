@@ -1,6 +1,6 @@
 
 # Import 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/rl3EMkRp5t8" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/rl3EMkRp5t8" frameborder="0" allowfullscreen></iframe>
 EasyEDA provides importing from:
 
 -   Altium/ProtelDXP Ascii Schematic/PCB

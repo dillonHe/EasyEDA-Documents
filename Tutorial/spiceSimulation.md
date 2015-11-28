@@ -1,7 +1,7 @@
 
 # Spice Simulation
 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/wsAQO7X4diU" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/wsAQO7X4diU" frameborder="0" allowfullscreen></iframe>
 ## Build the circuit 
 
 To simulate your circuit, at least until you become more familiar with the idea and concepts of simulation, first you should build a circuit as described in the chapter on **Creating The Schematic.**

@@ -1,7 +1,7 @@
 
 # PCB Design Editor 
 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/EoT2D2PLzVE" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/EoT2D2PLzVE" frameborder="0" allowfullscreen></iframe>
 After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA’s PCB Design Editor.
 
 ## Canvas 

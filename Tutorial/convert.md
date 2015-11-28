@@ -1,6 +1,6 @@
 # Converting Your Schematics To PCB
 
-<iframe width="920" height="540" src="http://www.youtube.com/embed/JOiT7KA5wRw" frameborder="0" allowfullscreen></iframe>
+<iframe width="920" height="540" src="//www.youtube.com/embed/JOiT7KA5wRw" frameborder="0" allowfullscreen></iframe>
 Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? The first step you need to take is to click the PCB icon on the toolbar with the title Convert project to PCB
 
 ![](images/image132.png)
