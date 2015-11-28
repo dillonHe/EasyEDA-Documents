@@ -289,10 +289,10 @@ Please note that meas {DC|AC|TRAN|SP} result DERIV&lt;ATIVE&gt; ... is not yet a
 
 The following examples illustrate some of the measurements that can be made this way.
 
-[Measuring WaveForm parameters 01](http://easyeda.com/editor#id=CAuM4XfxP)
+[Measuring WaveForm parameters 01](https://easyeda.com/editor#id=CAuM4XfxP)
 
-[Measuring WaveForm parameters 02](http://easyeda.com/editor#id=USM4YgyQK)
+[Measuring WaveForm parameters 02](https://easyeda.com/editor#id=USM4YgyQK)
 
-[Measuring settling time](http://easyeda.com/editor#id=qoiAt9rlD)
+[Measuring settling time](https://easyeda.com/editor#id=qoiAt9rlD)
 
-[Find gain and bandwidth](http://easyeda.com/editor#id=8GE0KRFDn)
+[Find gain and bandwidth](https://easyeda.com/editor#id=8GE0KRFDn)

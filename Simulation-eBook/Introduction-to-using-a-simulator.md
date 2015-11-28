@@ -60,11 +60,11 @@ This is illustrated in the following two examples:
 
 With no ground symbol, the simulation will not run:
 
-[All simulation schematics MUST have a ground 01](http://easyeda.com/editor#id=y20YWvRPp)
+[All simulation schematics MUST have a ground 01](https://easyeda.com/editor#id=y20YWvRPp)
 
 Once any of the available ground symbols is added, the simulation will run:
 
-[All simulation schematics MUST have a ground 02](http://easyeda.com/editor#id=4WUSQNLJ5)
+[All simulation schematics MUST have a ground 02](https://easyeda.com/editor#id=4WUSQNLJ5)
 
 ### All simulation circuits MUST have a power and/or signal source
 
@@ -74,7 +74,7 @@ Power supplies can be built from ideal zero series resistance voltage sources. S
 
 EasyEDA provides a wide range of signal sources. These will be covered in detail in their own section on Sources but the basic use of some of these sources to provide power to a circuit is illustrated below:
 ![](./images/Spice-power-supply.png)
-[All simulation schematics MUST have a power supply too](http://easyeda.com/editor#id=4ke8qIZTb)
+[All simulation schematics MUST have a power supply too](https://easyeda.com/editor#id=4ke8qIZTb)
 
 ###Every point in a simulation schematic MUST have a DC path to ground
 
@@ -120,13 +120,13 @@ This section is about the values of - and DC paths through - resistors, inductor
     Note that if a load resistance of 1GΩ were to be connected from the Output node to ground, then there would be a clear ON/OFF state difference.
     This is illustrated in the following simulation:
 
-    [EasyEDA switches are not ideal](http://easyeda.com/editor#id=0MEe2PNZp)
+    [EasyEDA switches are not ideal](https://easyeda.com/editor#id=0MEe2PNZp)
     Some further examples of the effects of
     
 
     finite switch resistances are illustrated in this next simulation:
 
-    [Effects of finite switch resistances](http://easyeda.com/editor#id=Ba4mEWewq)
+    [Effects of finite switch resistances](https://easyeda.com/editor#id=Ba4mEWewq)
 
     Note that, in ngspice, the Ron and Roff values used in switches can be set such that Ron > Roff. This is a useful way to invert the logic sense of a switch.
 
@@ -158,7 +158,7 @@ This section is about creating DC paths and some of the effects they can have.
 
 The following simple example will not run because there is no DC path to ground from the common node B, between the two capacitors:
 
-[Capacitors in series 01](http://easyeda.com/editor#id=b3btnFXQ8)
+[Capacitors in series 01](https://easyeda.com/editor#id=b3btnFXQ8)
 
 *   Resistors placed across capacitors to provide a DC path can be scaled so that the R_C time constant that they will create with the capacitors is very large compared to the time interval over which a Transient simulation is to be run. Another way to look at this for an AC Analysis is that the 1/(2_pi_R_C) frequency that they form is far outside the frequency range of interest.
 
@@ -176,15 +176,15 @@ In many transformer coupled circuits, the simplest solution is to ground one sid
 
 Some examples of this use of the ground return path resistor can be seen in the following collection of examples of transformers and coupled inductors, including a simpleexample of an open loop flyback converter:
 
-[Transformers and coupled inductors](http://easyeda.com/editor#id=QHBTb5nFX|Uf3DByUS4|cQKEWe7pH|BEeOM8tPb)
+[Transformers and coupled inductors](https://easyeda.com/editor#id=QHBTb5nFX|Uf3DByUS4|cQKEWe7pH|BEeOM8tPb)
 
-[Transformers and coupled inductors 1](http://easyeda.com/editor#id=QHBTb5nFX)
+[Transformers and coupled inductors 1](https://easyeda.com/editor#id=QHBTb5nFX)
 
-[Transformers and coupled inductors 2](http://easyeda.com/editor#id=Uf3DByUS4)
+[Transformers and coupled inductors 2](https://easyeda.com/editor#id=Uf3DByUS4)
 
-[Transformers and coupled inductors 3](http://easyeda.com/editor#id=cQKEWe7pH)
+[Transformers and coupled inductors 3](https://easyeda.com/editor#id=cQKEWe7pH)
 
-[Open loop flyback converter](http://easyeda.com/editor#id=BEeOM8tPb)
+[Open loop flyback converter](https://easyeda.com/editor#id=BEeOM8tPb)
 
 *   To avoid confusion between passive schematics intended to be passed to PCB layout and simulation schematics that may have had DC path resistors added, it is a good idea to clearly identify any resistors added to a schematic soley to provide a DC path to ground. This can be done using resistor names such as <span style="font-style:italic">RDCPATH1</span> or by labelling them for example as <span style="font-style:italic">For simulation only</span>.
 
@@ -201,7 +201,7 @@ A DC path to ground is often provided by the rest of the circuit but here are so
 
 This is illustrated by the placement of the RDC_PATH_TO_GROUND 1kresistor connected to output side of the CCCS, F1, and input side of thecurrent controlled switch W1 in the example below:
 
-[Controlling EasyEDA switches](http://easyeda.com/editor#id=hRL3WewOI)
+[Controlling EasyEDA switches](https://easyeda.com/editor#id=hRL3WewOI)
 
 *   Capacitors (unless using the more advanced options in ngspice) are ideal: they have no parasitic (leakage) DC resistance in parallel with them. This is why both ends of a capacitor must have a DC path to ground either through the external circuit or explicitly by adding a resistor;
 
@@ -215,13 +215,13 @@ This problem often occurs when driving a transformer from a voltage source. Addi
 
 It is important to understand that although components in a schematic can be shown joined by wires or by netlabels, in a spice netlist they are joined by purely by the net names given to them either automatically by EasyEDA or manually by the user placing netlabels. This includes nets joined by any of the three NetFlag GND ground symbols. It also includes nets joined by the Net Port, NetFlag VCC and NetFlag +5 symbols as illustrated below:
 
-[Nets can be joined by netnames 01](http://easyeda.com/editor#id=hnXVTQOMK)
+[Nets can be joined by netnames 01](https://easyeda.com/editor#id=hnXVTQOMK)
 
 It is equally important to understand that when a wire between two components in a schematic is broken then - unless the wire on both sides of the break is explicitly given the same netname by manually placing netlabels with the same name - then <span style="font-style:italic">the wires on each side of the break will have different netnames</span> because even though one side may already have a manually assigned netname, the other side will automatically have a new and arbitrary netname assigned to it by EasyEDA.
 
 The significance of manually assigning net names will become apparent a little later when looking at how to probe voltages and using the voltage on nets in expressions for B sources.
 
-[Nets can be joined by netnames 02](http://easyeda.com/editor#id=9XR92kewO)
+[Nets can be joined by netnames 02](https://easyeda.com/editor#id=9XR92kewO)
 
 As just illustrated, breaking a wire creates two segments of wire that are no longer connected to each other. This is because EasyEDA automatically assigns different netlabels to each end of a broken wire.
 
@@ -229,7 +229,7 @@ To rejoin the connection, add netlabels with the same name to each segment of th
 
 To avoid accidentally connecting nets together that are not intended to be connected when manually assigning netlabels, take care to ensure the netnames assigned are unique to each net. For instance, in the following example, using the name 'mid' instead of 'ammeterneg' would connect the negative side of A1 to the 'mid' net and would short out R1.
 
-[Nets can be joined by netnames 03](http://easyeda.com/editor#id=sqkBTN5nF)
+[Nets can be joined by netnames 03](https://easyeda.com/editor#id=sqkBTN5nF)
 
 ### Probing signals
 
@@ -259,7 +259,7 @@ Note that in simulations, voltage probes present an infinite resistance and have
 
 The following example illustrates some of the probing techniques decribed above:
 
-[Probing voltages 01](http://easyeda.com/editor#id=Il5nTDx3z)
+[Probing voltages 01](https://easyeda.com/editor#id=Il5nTDx3z)
 
 The following example shows a number of ways to measure voltages with respect to ground or differentially using;
 
@@ -275,7 +275,7 @@ The schematic also demonstrates the importance of:
 
 2.  Naming all nets in a schematic;
 
-[Probing voltages 02](http://easyeda.com/editor#id=PYWwIiSPN)
+[Probing voltages 02](https://easyeda.com/editor#id=PYWwIiSPN)
 
 #### Probing currents
 
@@ -297,4 +297,4 @@ The following example shows a number of ways to measure currents with respect to
 
 Note however, that although a 0V source can be used to <span style="font-style:italic">monitor</span> a current, it cannot be used to <span style="font-style:italic">measure</span> a current so that it can be directly displayed in the Simulation Results... window or plotted in Waveform.
 
-[Probing currents 01](http://easyeda.com/editor#id=ZzsK2Wewq)
+[Probing currents 01](https://easyeda.com/editor#id=ZzsK2Wewq)

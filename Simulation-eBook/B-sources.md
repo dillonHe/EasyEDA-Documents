@@ -63,13 +63,13 @@ Note that curly brackets are not used in expressions for B Sources.
 
 There are several examples of the uses of B Sources in the following simulations.
 
-1. [B Sources 01 example->](http://easyeda.com/editor#id=gQKEWevpH)
+1. [B Sources 01 example->](https://easyeda.com/editor#id=gQKEWevpH)
 
  ![](./images/Spice-simulation-B-source-example.png)
 
-2. [limit-x-L-U](http://easyeda.com/editor#id=tX9JjgeOC)
+2. [limit-x-L-U](https://easyeda.com/editor#id=tX9JjgeOC)
 
-3. [Parameters, expressions, functions and B Sources](http://easyeda.com/editor#id=8MhztnFXf)
+3. [Parameters, expressions, functions and B Sources](https://easyeda.com/editor#id=8MhztnFXf)
 
 Note that when entered directly in a B Source value 
 field in a schematic, expressions MUST be on a single line. When used like this, 

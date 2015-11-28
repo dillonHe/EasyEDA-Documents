@@ -12,7 +12,7 @@ There’s no need to install any software. Just open EasyEDA in any HTML5 capabl
 
 Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safari. EasyEDA has all the features you expect and need to rapidly and easily take your design from conception through to production.
 
-[EasyEDA](http://easyeda.com/editor) provides:
+[EasyEDA](https://easyeda.com/editor) provides:
 
 -   Schematic capture
 -   [ngpice-based](http://ngspice.sourceforge.net/) simulation
@@ -1054,11 +1054,11 @@ The Preview Dialog has a resizing handle in the bottom right corner.
 
 The Preview Dialog can’t be closed but double clicking on the top banner will roll up the panel. Double clicking again toggles it back to the selected size.  
 
-[](http://easyeda.com/bbs_view_830.htm)
+[](https://easyeda.com/bbs_view_830.htm)
 
 ![](images/image159.png)
 
-[](http://easyeda.com/bbs_view_830.htm)
+[](https://easyeda.com/bbs_view_830.htm)
 
 Clicking on the little green pencil edit tool opens the item in the preview for editing. Clicking on the blue arrow place tool in the top right corner of the preview dialog places the item onto the canvas. Placement is document type sensitive and will warn you if, for example, you try to place PCB footprint into a schematic.
 
@@ -1127,7 +1127,7 @@ It is easy to ask for help for any aspect of EasyEDA: just click on Asking for h
 
 Please ask your questions in English or Chinese and don’t worry if your English is not good! (Or your Chinese!)
 
-1.  You can also ask your questions directly in the [EasyEDA forum](http://easyeda.com/bbs_lists_2.htm). We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a quite bit busy, so you may need to wait for a while.
+1.  You can also ask your questions directly in the [EasyEDA forum](https://easyeda.com/bbs_lists_2.htm). We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a quite bit busy, so you may need to wait for a while.
 2.  If you don’t want your help requests to be public then you can drop us an email to [support@easyeda.com](mailto:support@easyeda.com)
 3.  If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
 

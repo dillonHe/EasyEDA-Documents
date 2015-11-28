@@ -34,19 +34,19 @@ If those two steps can't work, you may need to .
     
 ![](images/remove_chrome_cache.png)  
 
-Please email to ![](http://easyeda.com/edaImg/blog//2013/03/email.png) when you need any help.
+Please email to ![](https://easyeda.com/edaImg/blog/2013/03/email.png) when you need any help.
 
 # New Version V2.x.x.
  **NOTE: Please check the About dialog, the Version should be V2.3.x, and the built date should be later than 01/22/2015, if your version is V1.x.x, please close EasyEDA and open the editor again. ** 
 
-The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [http://easyeda.com/editor](http://easyeda.com/editor).
+The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
 
 ![](./images/V2.1.1.png)
 
 ## Open File Format
 
- If you want to hack EasyEDA's EDA files, you can check [http://easyeda.com/Doc/Open-File-Format/](http://easyeda.com/Doc/Open-File-Format/) out.  
+ If you want to hack EasyEDA's EDA files, you can check [https://easyeda.com/Doc/Open-File-Format/](https://easyeda.com/Doc/Open-File-Format/) out.  
 1. You can use some codes or notepad to create an EasyEDA file. Cool!
 2. You can adjust your designs with EasyEDA's API.
 
@@ -163,6 +163,6 @@ When placing a `via` on a track, the track will be cuted to two segments.  Place
 ![](./images/placeVIAToTrack.png). 
 
 ##New Language Translate Tool
- With our users help, EasyEDA now provides lots of languages. Now you can help use to improve this function easier via [http://easyeda.com/language.php](http://easyeda.com/language.php). There are lots of sentences should be translated, don't forget to click **save** button which is at the end of page. BTW, you don't need to finish this job one time, you can do it when you have time after you save.  
+ With our users help, EasyEDA now provides lots of languages. Now you can help use to improve this function easier via [https://easyeda.com/language.php](https://easyeda.com/language.php). There are lots of sentences should be translated, don't forget to click **save** button which is at the end of page. BTW, you don't need to finish this job one time, you can do it when you have time after you save.  
 
 Enjoy it, if you have any questions, do let us know.

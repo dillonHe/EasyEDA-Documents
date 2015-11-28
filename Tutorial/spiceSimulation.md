@@ -629,7 +629,7 @@ Measure the gain and 3dB bandwidth of an amplifier.
 
 This prints the gain and bandwidth values of this x1 and x10 amplifier example:
 
-[http://easyeda.com/file_view_Find-gain-and-bandwidth_8GE0KRFDn.htm](http://easyeda.com/file_view_Find-gain-and-bandwidth_8GE0KRFDn.htm)
+[https://easyeda.com/file_view_Find-gain-and-bandwidth_8GE0KRFDn.htm](https://easyeda.com/file_view_Find-gain-and-bandwidth_8GE0KRFDn.htm)
 
  in the Simulation Results… window:
 

@@ -36,12 +36,6 @@ In the Import file from your computer dialog to the right of File Operation; ti
 
 Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
 
-To see an example of a schematic imported from Eagle have a look at:
-
-[http://easyeda.com/oiAR9rlDjd](http://easyeda.com/oiAR9rlDjd)
-
-[](http://easyeda.com/oiAR9rlDjd)
-
 ## Import LTspice 
 
 EasyEDA has all of the standard symbols of LTspice built in so if your LTspice schematic includes only LTspice native symbols (i.e. no symbols which have been created by any third party) then you can import them directly into EasyEDA. If your schematic does contain third party symbols then you should import the symbol (.asy) files first and then import the schematic (.asc) file.

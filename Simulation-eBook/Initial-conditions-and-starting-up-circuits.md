@@ -36,7 +36,7 @@ The technique used in the XTALfast subckt is to include a PULSE source internal 
 
 The start up time of the example below using the XTALfast subckt can be compared with the same crystal model but with an unassisted start simply by editing the name of the crystal model from XTALfast to XTALnofast.
 
-[Crystal oscillator using the EasyEDA quick starting crystal model](http://easyeda.com/editor#id=a71jBTb5n)
+[Crystal oscillator using the EasyEDA quick starting crystal model](https://easyeda.com/editor#id=a71jBTb5n)
 
 The EXP and PWL sources can also be used as kick-starter supply sources.
 
@@ -44,11 +44,11 @@ Most relaxation oscillators such as the classic two transistor astable multivibr
 
 This is an example of a simple RC relaxation oscillator that does not start up by itself:
 
-[Relaxation oscillator startup 01](http://easyeda.com/editor#id=FeKga4mgy)
+[Relaxation oscillator startup 01](https://easyeda.com/editor#id=FeKga4mgy)
 
 This type of circuit may need a rather more vigorous kick to get it started. This can be done using a PULSE source but instead of introducing a small step, the supply is ramped up to the desired supply voltage from 0. So, for example, by setting an initial level of 0 and a pulse level of 9 with zero delay time, with a risetime of 200us the circuit starts up cleanly up from all internal nodes being at zero:
 
-[Relaxation oscillator startup 03](http://easyeda.com/editor#id=53XfxrI0i)
+[Relaxation oscillator startup 03](https://easyeda.com/editor#id=53XfxrI0i)
 
 Another possibility - which will be explained in more detail later - is to use an expression that is a function of time in a B source.
 
@@ -58,7 +58,7 @@ For example, this expression in a B source:
 
 generates a voltage that starts at zero and rises exponentially to a final value of 9V with a time constant of 100us:
 
-[Relaxation oscillator startup 04](http://easyeda.com/editor#id=SKEyQ8qkB)
+[Relaxation oscillator startup 04](https://easyeda.com/editor#id=SKEyQ8qkB)
 
 With symmetrical circuits such as the two transistor astable multivibrator, even this may not be enough to disturb the equilibrium enough to get them oscillating. It may be necessary to introduce some delibrate asymmetry or imbalance into the circuit, for example by making a one base pullup resistor or a timing capacitor a fraction different from the other. Even changes of less than the expected real component tolerance can be enough to tip the circuit into self sustained oscillation with a zero to rated voltage ramped supply start-up.
 
@@ -86,37 +86,37 @@ Using the `.ic` spice directive to set an initial voltage condition on a net
 
 For more information about the .ic spice directive see:
 
-[About-spice-analyses-in-EasyEDA](http://easyeda.com/file_view_About-spice-analyses-in-EasyEDA_CNHZFztL3.htm)
+[About-spice-analyses-in-EasyEDA](https://easyeda.com/file_view_About-spice-analyses-in-EasyEDA_CNHZFztL3.htm)
 
 Use of the '.ic' spice directive is illustrated in these two examples:
 
-[Setting initial circuit conditions 01](http://easyeda.com/editor#id=hZXjgCYWU)
+[Setting initial circuit conditions 01](https://easyeda.com/editor#id=hZXjgCYWU)
 
-[Relaxation oscillator startup 02](http://easyeda.com/editor#id=yUOHZhztL)
+[Relaxation oscillator startup 02](https://easyeda.com/editor#id=yUOHZhztL)
 
 These next examples show two ways to use append the 'uic' option to a Transient Analysis but for the reasons already given in the description of the 'uic' option in the section on 'IC: Set Initial Conditions' in 'Setting up Analyses', care should be taken in using this option.
 
-[Relaxation oscillator startup 05](http://easyeda.com/editor#id=6smEWP7pH)
+[Relaxation oscillator startup 05](https://easyeda.com/editor#id=6smEWP7pH)
 
-[Relaxation oscillator startup 06](http://easyeda.com/editor#id=IOMK531Zl)
+[Relaxation oscillator startup 06](https://easyeda.com/editor#id=IOMK531Zl)
 
 ### Using a current source to set an initial current through an inductor
 
 The `.ic` spice directive can only be used to set initial voltage conditions on one or more nets. It cannot be used to set an initial current through a component. This example illustrates a simple way to use a current source to set an initial current through a component.
 
-[Setting initial circuit conditions 02](http://easyeda.com/editor#id=Emy7tPbxv)
+[Setting initial circuit conditions 02](https://easyeda.com/editor#id=Emy7tPbxv)
 
 ### Setting a capacitor voltage using an XSPICE capacitor model
 
 An alternative to using the '.ic': setting the initial voltage across a capacitor using an XSPICE capacitor model in place of the default EasyEDA capacitor.
 
-[Setting initial circuit conditions 03](http://easyeda.com/editor#id=bBJe82kCw)
+[Setting initial circuit conditions 03](https://easyeda.com/editor#id=bBJe82kCw)
 
 ### Setting an inductor current using an XSPICE inductor model
 
 An alternative to using a current source in parallel with an inductor: setting the initial current through an inductor using an XSPICE inductor model in place of the default EasyEDA inductor.
 
-[Setting initial circuit conditions 04](http://easyeda.com/editor#id=SKSMic60h)
+[Setting initial circuit conditions 04](https://easyeda.com/editor#id=SKSMic60h)
 
 Some circuits may start up on their own but simply changing a component model may cause it to fail to start-up. Don't be afraid to try these techniques before spending ages trying to find some other obscure cause.
 
@@ -164,7 +164,7 @@ This band-limiting technique should generally not be applied around any existing
 
 Although not an example of start-up or initialisation problem, the Ideal and Thevein to Norton Source conversion is demonstrated in steps (i), (ii) and (iii) of this simulation:
 
-[Parameters, expressions, functions and B Sources](http://easyeda.com/editor#id=8MhztnFXf)
+[Parameters, expressions, functions and B Sources](https://easyeda.com/editor#id=8MhztnFXf)
 
 ## Using the 'OFF' option to help start-up
 

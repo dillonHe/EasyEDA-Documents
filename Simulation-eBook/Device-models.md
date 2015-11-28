@@ -191,7 +191,7 @@ Beware that even some quite complex opamp models do not simulate supply current 
 
 Here is an example of a third party opamp model that does not model supply or output currents:
 
-[LM108 test jig](http://easyeda.com/editor#id=htnFzR9OI)
+[LM108 test jig](https://easyeda.com/editor#id=htnFzR9OI)
 
 Some opamp models may make no attempt to accurately simulate the output stage behaviour versus load current. Similarly, many device models do not simulate the behaviour of inputs and outputs when they are taken above or below the supply rails.
 

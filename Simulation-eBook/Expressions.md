@@ -107,4 +107,4 @@ To use an expression in a source, simply enter it in place of the value you wish
 
 The use of expressions is illustrated in the following example:
 
-[Using expressions 01](http://easyeda.com/editor#id=MAIB71VP7)
+[Using expressions 01](https://easyeda.com/editor#id=MAIB71VP7)

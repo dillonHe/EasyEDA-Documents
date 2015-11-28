@@ -107,10 +107,10 @@ Note, however, that parameters in expressions used in B Sources must should not 
 
 The basic use of parameters is illustrated below:
 
-[Using parameters 01](http://easyeda.com/editor#id=OKVvtr1Ay)
+[Using parameters 01](https://easyeda.com/editor#id=OKVvtr1Ay)
 
 ## Using parameters in expressions
 
 Expressions and parameters can be combined to simplify and automate the calculation of component and source configuration values, as illustrated in the following example:
 
-[Using parameters in expressions 01](http://easyeda.com/editor#id=GQ5F1BzVu)
+[Using parameters in expressions 01](https://easyeda.com/editor#id=GQ5F1BzVu)

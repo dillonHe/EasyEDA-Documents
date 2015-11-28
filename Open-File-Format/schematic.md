@@ -64,7 +64,7 @@ The shape is an array. EasyEDA store various shape in this field, they are diffe
 	"shape":[
 	    "PL~210 100 260 100~#000000~2~0~none~gge58",
 	    "R~210~110~~~50~30~#000000~1~0~none~gge61",
-	    "I~90~90~271~105~0~http://easyeda.com/images/img_media/logo.png~gge62",
+	    "I~90~90~271~105~0~https://easyeda.com/assets/static/images/logo-140x39.png~gge62",
 	    "PG~310 100 350 130 300 150 290 150 270 120~#000000~2~0~none~gge64",
 	    "PT~M230 170 C270 200 270 170 240 150 240 150 240 150 240 150~#000000~2~0~none~gge65"
 	]
@@ -182,7 +182,7 @@ Bus Entry's attributes and image looks like bellow image:
 ![](./images/busentry.png)	
 
 ###Image
-	"I~610~10~271~105~0~http://easyeda.com/images/img_media/logo.png~gge12"
+	"I~610~10~271~105~0~https://easyeda.com/assets/static/images/logo-140x39.png~gge12"
 
 **Format:**  
 Check [ Image element of SVG](http://www.w3.org/TR/SVG11/struct.html#ImageElement) out.
@@ -193,7 +193,7 @@ Check [ Image element of SVG](http://www.w3.org/TR/SVG11/struct.html#ImageElemen
 4. width: 271
 5. height: 105 
 6. rotation: 0
-7. href:http://easyeda.com/images/img_media/logo.png
+7. href:https://easyeda.com/assets/static/images/logo-140x39.png
 8. id: gge12
 9. locked:null
 Image's attributes and image looks like bellow image:

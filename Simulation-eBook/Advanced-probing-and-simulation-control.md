@@ -103,7 +103,7 @@ The examples, 'Probing voltages 01', 'Probing voltages 02' and 'Probing currents
 
 This next example introduces the 'probe' spice directive which can be used to measure voltages, currents, powers and more in a circuit.
 
-[Using the probe command](http://easyeda.com/editor#id=db5mgyQ8q)
+[Using the probe command](https://easyeda.com/editor#id=db5mgyQ8q)
 
 ### Probing instantaneous power
 
@@ -113,7 +113,7 @@ So, for example, the total power in a device such as a bipolar transistor, is gi
 
 The expressions in the example below probe the power dissipation in R1, total power drain from V1 and the sum of the powers in R1, R2 and R3.
 
-[Probing instantaneous power](http://easyeda.com/editor#id=pLFyQ8qkC)
+[Probing instantaneous power](https://easyeda.com/editor#id=pLFyQ8qkC)
 
 ### Probing resistances and conductances
 
@@ -123,7 +123,7 @@ Conductance is measured by probing the the voltage difference across a device an
 
 The expressions in the example below probe the resistance and the conductance of R1.
 
-[Probing resistance and conductance](http://easyeda.com/editor#id=9oiASM4mE)
+[Probing resistance and conductance](https://easyeda.com/editor#id=9oiASM4mE)
 
 ## Using CTRL+R to run a simulation directly
 
@@ -153,7 +153,7 @@ Note that one and only one simulation directive can be active for any one simula
 
 The example below illustrates how to do this:
 
-[Using CTRL+R to run a simulation directly](http://easyeda.com/editor#id=wuohbtLFX)
+[Using CTRL+R to run a simulation directly](https://easyeda.com/editor#id=wuohbtLFX)
 
 ## The 'let' command
 
@@ -177,4 +177,4 @@ Then the 'let' command must be typed into the schematic in a text box which is t
 
 as illustrated below:
 
-[Using the let command](http://easyeda.com/editor#id=HTNHZhWQ8)
+[Using the let command](https://easyeda.com/editor#id=HTNHZhWQ8)

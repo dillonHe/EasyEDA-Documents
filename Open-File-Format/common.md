@@ -9,7 +9,7 @@ EasyEDA's file is a JSON file, but we compress all of the shape's attributes to 
 Ok, let's explain them with examples.
 ## Example
 ### Schematic Example
-[Schematic Example ](http://easyeda.com/file_view_simply-schematic_puoGYgasK.htm)
+[Schematic Example ](https://easyeda.com/file_view_simply-schematic_puoGYgasK.htm)
 ![](./images/schematic-example.png)
 
 
@@ -18,7 +18,7 @@ check it via github gist [Schematic json](https://gist.github.com/dillonHe/0b62b
 <script src="https://gist.github.com/dillonHe/0b62babdb8ab3d2ad7d3.js"></script>
 
 ### PCB Example
-[PCB Example](http://easyeda.com/file_view_Simply-PCB_K4gCYjhDB.htm)  
+[PCB Example](https://easyeda.com/file_view_Simply-PCB_K4gCYjhDB.htm)  
 ![](./images/PCB-examle.png)
 
 ### PCB JSON File Source
@@ -68,4 +68,4 @@ The upper-left corner of the canvas has coordinate (0,0)
 
 ##Q&A
 ### 1. How to check the json file format
- Check the [EasyEDA source dialog](http://easyeda.com/Doc/Tutorial/introduction.htm#EasyEDA-Source) out, copy the text to text area, then click the `Apply` button. That is all.
+ Check the [EasyEDA source dialog](https://easyeda.com/Doc/Tutorial/introduction.htm#EasyEDA-Source) out, copy the text to text area, then click the `Apply` button. That is all.

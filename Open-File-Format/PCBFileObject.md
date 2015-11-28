@@ -15,7 +15,7 @@ Note: PCB and Package are used the same format.
 ### File
 
 ![](./images/filePCBJson.png)  
-Open [PCB Example ](http://easyeda.com/file_view_PCB-File-Object_T97H30mki.htm)
+Open [PCB Example ](https://easyeda.com/file_view_PCB-File-Object_T97H30mki.htm)
 
 ### TRACK
     "TRACK":{

@@ -27,46 +27,46 @@ Although the examples in this section only illustrate how to configure Dependent
 
 Configuring the SINE option to create an unmodulated, single frequency sinusoidal signal source.
 
-[Spice Sinusoidal Source example](http://easyeda.com/editor#id=cw641ZlxT)
+[Spice Sinusoidal Source example](https://easyeda.com/editor#id=cw641ZlxT)
 
 ![](./images/Spice-Sinusoidal-Source.png)
 ## More ways to use the SIN (or SINE) option
 
-[Spice Sinusoidal Source: more examples](http://easyeda.com/editor#id=vLFyQ82kC)
+[Spice Sinusoidal Source: more examples](https://easyeda.com/editor#id=vLFyQ82kC)
 
 ## Configuring the PULSE option
 
 Configuring the PULSE option to create a pulse signal source.
 
-[Spice PULSE Source](http://easyeda.com/editor#id=XPJDUcuoG)
+[Spice PULSE Source](https://easyeda.com/editor#id=XPJDUcuoG)
 ![](./images/Spice-PULSE-Source.png)
 ## More ways to use the PULSE option
 
-[Spice PULSE Source: more examples](http://easyeda.com/editor#id=oOICUcun3)
+[Spice PULSE Source: more examples](https://easyeda.com/editor#id=oOICUcun3)
 
 ## Configuring the EXP option
 
 Configuring the EXP option to create a single pulse source with exponential rising and falling edges.
 
-[Spice EXP Source](http://easyeda.com/editor#id=cewqI0hzR)
+[Spice EXP Source](https://easyeda.com/editor#id=cewqI0hzR)
 
 ## Configuring the SFFM option
 
 Configuring the SFFM option to create a simple, single frequency, frequency modulated sinusoidal signal source.
 
-[Spice SFFM Source](http://easyeda.com/editor#id=SwqI0izRL)
+[Spice SFFM Source](https://easyeda.com/editor#id=SwqI0izRL)
 
 ## Configuring the AM option
 
 Configuring the AM option to create a simple, single frequency, amplitude modulated sinusoidal signal source.
 
-[Spice AM Source](http://easyeda.com/editor#id=KGZNnJtdX)
+[Spice AM Source](https://easyeda.com/editor#id=KGZNnJtdX)
 
 ## Configuring the PWL option
 
 Configuring the PWL option to create an arbitrary piecewise linear waveform signal source.
 
-[Spice PWL Source](http://easyeda.com/editor#id=wxhbHBvN5)
+[Spice PWL Source](https://easyeda.com/editor#id=wxhbHBvN5)
 
 ## Configuring the AC source option
 
@@ -76,7 +76,7 @@ The first example shows how more than one AC Source can be configured in a circu
 
 In this example both AC Sources are set to the same amplitude of 1. They could be set to different amplitudes: try it and compare the results with the same amplitude changes in the time domain part of the signal sources.
 
-[Configuring AC Sources 01](http://easyeda.com/editor#id=JPlfL2kew)
+[Configuring AC Sources 01](https://easyeda.com/editor#id=JPlfL2kew)
 
 Note, however, that the AC Analysis assumes that the circuit is perfectly linear so even if an AC Source amplitude 100 were to be specified, the output would still look as if it came from a perfectly linear circuit. Compare that with what happens if the time domain parts of the sources are set to 100!
 
@@ -98,4 +98,4 @@ Another example of this might be that the frequency response of an amplifier fro
 
 The second simulation also shows how more than one AC Source can be configured in a circuit to represent different signal sources at the same frequency but this time with different amplitudes and phases. This example also shows how the amplitude and phase settings relate to the same signals in the time domain.
 
-[Configuring AC Sources 02](http://easyeda.com/editor#id=PDxrJDjAu)
+[Configuring AC Sources 02](https://easyeda.com/editor#id=PDxrJDjAu)

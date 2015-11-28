@@ -118,15 +118,15 @@ The following simulations illustrate sweeping:
 
 *   a voltage source;
 
-[Plot and compare diode forward currents vs. voltage](http://easyeda.com/editor#id=HFzR8qkCU)
+[Plot and compare diode forward currents vs. voltage](https://easyeda.com/editor#id=HFzR8qkCU)
 
 *   a resistor value;
 
-[Sweep a resistor value](http://easyeda.com/editor#id=ikGqM8RdX)
+[Sweep a resistor value](https://easyeda.com/editor#id=ikGqM8RdX)
 
 *   the ambient temperature applied to every component in the simulation:
 
-[Sweep the ambient temperature](http://easyeda.com/editor#id=P0UO6oGAS)
+[Sweep the ambient temperature](https://easyeda.com/editor#id=P0UO6oGAS)
 
 #### 4) AC: Perform a Small-Signal AC (frequency domain) Analysis
 
