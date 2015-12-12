@@ -659,6 +659,8 @@ In cases where the subcircuit is built by the user as opposed to where it is sup
 
 Although as described earlier, built-in spice models usually have defined spice pin orders, not all subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!
 
+## Associating spice models to schematic symbols
+
 ### For .MODEL defined models
 
 1.  Find a spice .model for your target device;
@@ -748,9 +750,9 @@ The detailed steps to associate a new .subckt model to the symbol are:
 
     [Attaching a .subckt to a symbol 01](https://easyeda.com/editor#id=808qkCTN5)
 
-Some of the EasyEDA symbols such as bjts and all the MOSFETs have a Spice Prefix of 'M' and so are expecting to call a .model statement. To associate a .subckt to a symbol with a Spice Prefix of 'M' there are four stages.
+Some of the EasyEDA symbols from the EasyEDA Libs have a Spice Prefix that is expecting to call a .model statement (i.e. any symbol with a Spice Prefix other than 'X'!). For example, the bjts symbols have a Spice Prefix of 'Q' whilst the MOSFET symbols have a Spice Prefix of 'M'. There are some diodes, for example some zener diodes, which some are defined by .models and others by .subckts. Even the humble 1N4148 may have a .model from one manufacturer and a .subckt from another. Some bjt models are defined by .subckts such as most Darlington transistors and some Avalanche transistors. Apart from some low power MOSFETs and those used in IC design, most MOSFET models are defined by .subckts. Therefore it is quite common to have to associate a .subckt to a symbol with a Spice Prefix that is expecting to call a .model statement. 
 
-So, in the following example, the NMOS_E symbol placed into the schematic from the EasyEDA Libs palette must be edited to change the 'Spice Prefix' of the symbol from 'M' (for a .model defined part) to 'X' (for a .subckt defined part).
+This can be done in four stages as illustrated in the following example, the NMOS_E symbol placed into the schematic from the EasyEDA Libs palette must be edited to change the 'Spice Prefix' of the symbol from 'M' (for a .model defined part) to 'X' (for a .subckt defined part).
 
 *   Place the .subckt text into the schematic and activate it;
 *   Place the symbol in the schematic;
@@ -797,5 +799,5 @@ Another example of the process described above to change the Spice Prefix of a s
 
 ### Attaching models to custom symbols
 
-This is basically the same as attaching a model to any of the predefined symbols from the EasyEDA Libs except that the symbol is one that has been created from scratch or by editing an existing symbol. The rules for assigning and checking that the spice prefix matches the type of model to be attached ('M' for .model or 'X' for .subckt) and checking that the spice pin numbering matches that of the type of device defined by the .model statement or by the pin sequence of a .subckt defined model.
+This is basically the same as attaching a model to any of the predefined symbols from the EasyEDA Libs except that the symbol is one that has been created from scratch or by editing an existing symbol. The rules for assigning and checking that the spice prefix matches the type of model to be attached (i.e. 'X' for .subckt or any Spice Prefix other than 'X' for .model) and checking that the spice pin numbering matches that of the type of device defined by the .model statement or by the pin sequence of a .subckt defined model.
   
