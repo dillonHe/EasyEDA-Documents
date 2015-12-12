@@ -231,4 +231,4 @@ The problem here is that until a model search function is up and running this ap
 
 2) The second option is a bit more fiddly but it allows almost any unencrypted device model to be run in a simulation. The process is similar for both .model and .subckt defined models.
 
-**These processes are described in detail after the following section on 'Schematic symbols: prefixes and pin numbers'.**
+**These processes are described in detail in 'Associating spice models with schematic symbols' as part of the following section on 'Schematic symbols: prefixes and pin numbers' but it is strongly recommended that the whole of that section is read in order, to make sense of the detailed descriptions.** 
