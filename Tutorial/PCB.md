@@ -267,95 +267,49 @@ Lastly, don’t forget to click the button Rebuild CopperArea to **rebuild** 
 1.  Hotkey `Shift+B` to build all of the copper areas.
 2.  Hotkey `Shift+M` to clear all of the copper areas.
 
-## DRC (Design Rule Check) 
+ 
+
+
+## Real Time DRC
 
 **Super menu > Miscellaneous > Design Rule Check **
 
 to open the **DRC** setting dialog:
 
+This is a big feature of EasyEDA. It is hard to fix DRC errors after layout the PCB. Now EasyEDA will let you know the error in routing. You will find a `X` flag to mark the error, such as Track to Track or Track to PAD like bellow image
+![](./images/RealTimeDRC.png).
+TIP: When you convert a schematic to PCB, the real time DRC is open. In the old PCB, the real time DRC is closed. you can open it via Supper menu-> Miscellaneous->Design Rule Setting, like bellow image.
+
 ![](./images/configRealtimeDRC.png). 
 
-After clicking the Check button, if errors are found, the following dialog will open:
 
-![](./images/RealTimeDRC.png).
+##Track and Net length
+when select a track, you can find it's Length attribute in the right panel.
+![](./images/track-length.png)
+When select a track, then press `H` key, EasyEDA will highligh the whole net and pop a message box to tell you the whole net's length. like bellow image
+![](./images/netLength.png)
 
-You can locate the error on the PCB by clicking on the errors mark in the dialog.
-
-## Getting Fabrication Files 
-
-Up to now everything you have done is EasyEDA has been, we hope, good fun. However it is important that you understand that the **final two stages** in producing a PCB will result in the very slightly less enjoyable activity of spending some money. 
-
-This is where it gets serious, so it is important that you take a little time to:
-
-1.  go back and check your work so far;
-2.  read and be sure you understand everything in the following sections.
-
-	and finally:
-
-3.  Do not forget to set
-
-	Properties > CopperArea Properties > Fill Style = Solid
-	
-	and press the Rebuild Copper Area button for all layers before generating any manufacturing output.
-
-4.  Do not forget to save the PCB layout before before generating any manufacturing output.
-
-To generate the files that will be used to fabricate your PCB, click the **Fabrication Output...** button on the toolbar:
-
-![](images/image12.png)
-
-This opens the Generate Gerber and Drill files dialog:
-
-![](images/image08.png)
-
-Clicking the Create Files button downloads a Gerber_Drill.zip archive which contains your Gerber files and the Drill files.
-
-You are strongly recommended to check your Gerber and Drill files using a Gerber viewer.
-
-Failure to check the Gerbers for your project can result in an unusable PCB.
-
-EasyEDA does not have a built in Gerber Viewer but we have given you a link to a Free and Open Source Software package that is easy to install on most operating systems and is simple to use.
-
-Note that Linux users should be able to find a copy of gerbv in the repositories of their distribution^[[8]](#ftnt8)^.
-
-Mac OSX users can find a port of gerbv here:
-
-[http://www.ghz.cc/charles/fink/#gerbv](http://www.ghz.cc/charles/fink/#gerbv)
-
-You can find out more about gerbv here:
-
-[http://gerbv.geda-project.org/](http://gerbv.geda-project.org/)
-
-Opening files from Gerber_Drill.zip in gerbv using:
-**File > Open Layer(s)… (Ctrl+O) **
-
-will give you a display that looks something like this:
-
- 
-
-![](images/image122.png)
-
-Once Gerber file checking is completed, you can go back to the Generate Gerber and Drill Files dialog in the EasyEDA window and click Cancel.
-
-All the design stages are complete and it is time to order some physical PCBs.
-
-## Order PCBs 
-
-Ordering the PCB could not be easier!
-
-To place the order click on the Order... icon (the shopping trolley/cart) on the top toolbar. This will open the Order your PCB from EasyEDA dialog:
-
-![](images/image26.png)
-
-and then fill in the details.
-
-Don’t forget to select the required number of layers and the PCB thickness.
-
-Note that on receipt of the fabrication files, which are automatically sent directly with the order, EasyEDA carries out a final detailed Design Rules Check to be absolutely sure that the PCB is manufacturable.
-
-Note also that PCBs supplied into the EU - and many other countries - must select the Hasl(Lead Free) or ENIG (Electroplated Nickel Gold) surface finish option.
-
-Then just click the Order button and there it is, done.
-
-An easy EDA experience: the EasyEDA way!
  
+
+
+##HOLE
+There are lots of users don't know using PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA add a HOLE TOOL in the PCB toolbar.
+![](./images/HOLE.png)
+
+##Photo View
+EasyEDA has not a 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like bellow image. If you can't see this button, try to **reload** again.
+![](./images/PhotoView-button.png).
+
+After convert PCB to Photo View, you can see bellow image.
+![](./images/Photview.png).
+
+In this view, you can find some components are too closest and silk layer on the Pad, bad Footprint etc.
+
+Bellow image is a blue and purple board.
+![](./images/blue-purple.png).
+
+
+
+##Place a Via On a Track
+When placing a `via` on a track, the track will be cuted to two segments.  Place two vias on a tracks, you will get three segments, then you can change one segment to other layer id, or remove one of them. 
+![](./images/placeVIAToTrack.png). 

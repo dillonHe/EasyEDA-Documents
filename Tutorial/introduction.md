@@ -46,7 +46,32 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 -   Schematic symbol, spice model and PCB footprint library management
 -   Online sharing of - and collaborative working on - schematics, simulations, PCB layouts, designs and projects
 
+## Open File Format
 
+ If you want to hack EasyEDA's EDA files, you can check [https://easyeda.com/Doc/Open-File-Format/](https://easyeda.com/Doc/Open-File-Format/) out.  
+1. You can use some codes or notepad to create an EasyEDA file. Cool!
+2. You can adjust your designs with EasyEDA's API.
+
+##Allow to adjust the right panel width
+
+![](./images/rightPanelWidth.png) 
+
+##Zoom in and zoom out
+Try to scroll your mouse, you will find out EasyEDA provide almost Stepless zoom. and the must factor is 10000%.
+
+ 
+##Improved Design Manager
+Old `Design Manager` is a pop up dialog, it is a bit litter annoying.Now, In the schematic and PCB file, there is toggle button [Design Manager <-> Properties] on the top right, when you switch to Design Manager, you will see bellow image
+![](./images/DesignManager.png)
+
+You can highlight the components and net, at the same time, you can check the ** DRC Errors**.
+
+Schematic has design manager too, and you can filter and highlight the components, such as type a `R`, you will find all resistors.
+![](./images/DesignManager-schematic.png)
+
+##SVG Preview
+![](./images/SVG-Preview.png)
+After click the `SVG Preview` button, you will see a nice SVG image and you can save the SVG file to your hard drive. This operation will be faster than export, because you don't need to send the file to EasyEDA server, and it is safe.
 
 ## Schematics 
 
@@ -1118,7 +1143,41 @@ This where it all happens! This the area where you create and edit your schemati
 
 ![](images/image36.png)
 
+## How to upgrade to the latest version of EasyEDA 
 
+You really don’t need to know how to upgrade EasyEDA, because EasyEDA can seamlessly upgrade itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/) which may delay the automatic upgrading process.  Therefore, if you want toupgrade to the latest version immediately, you can follow bellow two simply steps.
+ 
+
+1. Check the About... dialog; 
+
+2. If the Built Date is older than 03/25/2015:
+
+Close your browser open EasyEDA again.
+
+If the Built Date is still showing older than 03/25/2015:
+
+Close your browser and open EasyEDA again.
+
+If the Built Date is at or newer than 03/25/2015, you don’t need to do anything.
+Note **03/25/2015** is just an example
+If those two steps can't work, you may need to .
+
+**1.Mozilla Firefox**
+-  Go to “Preferences… > Advanced > Network > Offline Storage”
+-  Click on “Clear now”
+-  reload easyeda again.
+    
+![](images/remove_firefox_cache.png)  
+
+
+**2.Chrome**
+-   Open the following URL: chrome://appcache-internals/ 
+-  Look for easyeda.com and click “Remove”
+-  reload easyeda again.
+    
+![](images/remove_chrome_cache.png)  
+
+Please email to ![](https://easyeda.com/edaImg/blog/2013/03/email.png) when you need any help.
 ## How to get help?
 
 It is easy to ask for help for any aspect of EasyEDA: just click on Asking for help then complete and Submit the Support request:

@@ -101,6 +101,8 @@ You can:
 
 ![](images/image41.png)
 
+
+
 ## How To Wire
  
 
@@ -117,6 +119,9 @@ EasyEDA automatically enters **Wire** mode.
 Here is a screen shot of the **Astable Multivibrator LED project schematic** after wiring:
 
 ![](images/image110.png)
+
+
+
 
 ### About moving components and wires
 
@@ -142,6 +147,14 @@ The screen shot below is after adding NetLabels - indicated by the little **egg 
 
 ![](images/image06.png)
 
+
+###NO Connect Flag
+You can find the `NO Connect Flag` via wiring tool, 
+![](./images/no-connect-flag-tool.png), in the bellow schematic, if you don't add a `NO Connect Flag`, there is a error flag in the nets collection.
+![](./images/No-connect-flag.png) 
+After add a `NO Connect Flag`
+![](./images/add-no-connect-flag.png)
+
 ## Multi-part Components
 
 The number of pins on some components can be quite large. That's why it's easier to divide such component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
@@ -149,6 +162,15 @@ The number of pins on some components can be quite large. That's why it's easi
 When placing the 74HC04 on a schematic, it will look like the screenshot below. Note: the component Prefix will be in form of: U?.1, U?.2 etc.
 
 ![](images/image67.png)
+
+##User Defined BOM Parameters
+After select a schematic lib, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this in CSV file.
+![](./images/UserDefineBOM.png)
+
+##Prefix Start
+Every **new** schematic file has a `Prefix Start` custom paarameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
+![](./images/Prefix-Start.png)
+
 
 ## Design Manager
 

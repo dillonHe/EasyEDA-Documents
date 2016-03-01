@@ -1,168 +1,168 @@
+# What is new in the V3.2.X  
  
 
-# How to upgrade to the latest version of EasyEDA 
+The new version is V3.2.x. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
-You really don’t need to know how to upgrade EasyEDA, because EasyEDA can seamlessly upgrade itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/) which may delay the automatic upgrading process.  Therefore, if you want toupgrade to the latest version immediately, you can follow bellow two simply steps.
+
+![](./images/V3.2.x.png)
+
+##Invite Friends to Win a Gift
+If you like to help your friends to use this nice web based EDA tool, you can invite him/her to join EasyEDA. At the same time, you and your friends will get a $5 coupon to order PCB from EasyEDA. Why not to give this feature a try?
+
+![](./images/invite.png)  
+Click this link  [invite your friends now](https://easyeda.com/account/invitation)
+ 
+##Version History
+It is easy to get this fundtion, right click the document which you need to find it's version like bellow image
+![](./images/versionHistory.png)
+
  
 
-1. Check the About... dialog; 
+After clicking the history version link, you will get a list of all of the versions  like bellow image.
+![](./images/Versions.png),
+ click the version number, you can open the saved file on the editor, if this is what you need, you can save it to your project and delete your bad file.
 
-2. If the Built Date is older than 03/25/2015:
+Note:
 
-Close your browser open EasyEDA again.
-
-If the Built Date is still showing older than 03/25/2015:
-
-Close your browser and open EasyEDA again.
-
-If the Built Date is at or newer than 03/25/2015, you don’t need to do anything.
-Note **03/25/2015** is just an example
-If those two steps can't work, you may need to .
-
-**1.Mozilla Firefox**
--  Go to “Preferences… > Advanced > Network > Offline Storage”
--  Click on “Clear now”
--  reload easyeda again.
-    
-![](images/remove_firefox_cache.png)  
+1. Now all of the versions are marked as number, we will allow you to add a tag soon.
+2. Don't save your files too frequently, or you will get lots of versions and hardly to find the exact one.
 
 
-**2.Chrome**
--   Open the following URL: chrome://appcache-internals/ 
--  Look for easyeda.com and click “Remove”
--  reload easyeda again.
-    
-![](images/remove_chrome_cache.png)  
-
-Please email to ![](https://easyeda.com/edaImg/blog/2013/03/email.png) when you need any help.
-
-# New Version V2.x.x.
- **NOTE: Please check the About dialog, the Version should be V2.3.x, and the built date should be later than 01/22/2015, if your version is V1.x.x, please close EasyEDA and open the editor again. ** 
-
-The new version is V2.x.x. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
 
-![](./images/V2.1.1.png)
+##Auto Router
 
-## Open File Format
+For some simply or prototype PCBs, you may want to use the auto router function to save time. Layout is a time cost and dull job. EasyEDA spends lots of time to provide such feature and loved by our users.
+Steps:
 
- If you want to hack EasyEDA's EDA files, you can check [https://easyeda.com/Doc/Open-File-Format/](https://easyeda.com/Doc/Open-File-Format/) out.  
-1. You can use some codes or notepad to create an EasyEDA file. Cool!
-2. You can adjust your designs with EasyEDA's API.
+**1 Click the the auto router button from the toolbar**
 
-## API Plug 
+![](./images/autoRouter1.png)
 
-We spent months to realize this, maybe we need a full document to elaborate this function. Check the [API document](./API.htm)
-### How to find the plug entance
-![](./images/API-entance.png)
+**2 Config the auto router**
 
-### Extensions Setting
-You can enable or disable the default extensions, after enable, please **reload** the EasyEDA editor. We will give you a file about how to create an extensions soon. 
-![](./images/Extensions-Setting.png)
+ After you click that button, you will get a config dialog like bellow image.
+![](./images/autorouter-config.png)
+In the config dialog, you can set some rules to make the auto router profession.
+
+If you want to keep the routed tracks, you need unchecked the `Ripup Nets`
+
+The real time check box will let you see how it is going, but it will make the process a bit litter slow. 
+
+If you like to keep the a net no route, you can skip it. For example, if you want to use copper area to connect `GND` net, you can skip the `GND` net. 
+
+For the power supply track, you may want it to bigger, then you can add some specail rules. 
+
+**3 Run it**
+
+Click the run button, waiting for  a few seconds, after add bottom and top copper area, you will get a finished PCB board like bellow image.
+
+![](./images/routed.png) 
  
-If you enable the **Theme Colors** Extension, you will find a button on the tool bar like bellow image
-![](./images/Theme-Colors.png) 
-if you click the **Black On White**, you will find your schematic changes like bellow image, this is useful when you would like to print your design on a paper.
-![](./images/blackOnWhite.png).
-You can check our **github** codes of this API via [https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme), check the **manifest.json** and **main.js** out, you will find out how to create an extension.
+Some time, if you can't get it done, try bellow tips.
+
+1. Skip the GND nets, add copper area to GND net.
+2. use small tracks and small clearance, but make sure the value is more than 6mil.
+3. Routing some key tracks manual before auto router. 
+4. Add more layers, 4 layers or 6 layers
+
+Some profession guys don't like the auto router, because they think auto router is not profession, but you can the auto router to check your placement. to check the density of your PCB. 
 
 
-### Scripts
-If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.
-![](./images/scripts.png).
-1. You can select the `Hello World`, then click the `Run` button.
-2. You can select some items, then try `Move Selected Objects`.
+##Insert Image/Logo to PCB
+On PCB and PCB Lib editor, there is a new feature on the PCB Tool bar like the bellow image.
 
-### Run Script code
-In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
-![](./images/script.png).
-**example 1 Art **
-You can open an empty schematic and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/schematicShapes.js) to the text box to run a test. After clicking the `Run` button, you will see bellow art image.
-![](./images/api-example-art.png)
+![](./images/new-pcb-tools.png)
 
-**example 2 Change track width and via hole size **
-You can open a **PCB** and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js) to the text box to run a test. After that, All tracks will be 10mil.
+After click it and select the image, you will goto bellow image.
 
-##Improved Design Manager
-Old `Design Manager` is a pop up dialog, it is a bit litter annoying.Now, In the schematic and PCB file, there is toggle button [Design Manager <-> Properties] on the top right, when you switch to Design Manager, you will see bellow image
-![](./images/DesignManager.png)
+![](./images/pcb-image.png)
+In this dialog, you can choose your favorite image, EasyEDA support `jpg`, `BMP`, 'PNG`, 'GIF`, and `SVG`.  not likes some other EDA tools, they just support a Monochrome Bitmap image, EasyEDA support full color. but Monochrome Bitmap is welcome.
 
-You can highlight the components and net, at the same time, you can check the ** DRC Errors**.
+You can adjust the tolerance and reset the image size at there. 
 
-Schematic has design manager too, and you can filter and highlight the components, such as type a `R`, you will find all resistors.
-![](./images/DesignManager-schematic.png)
+The image will be inserted to the active layer, if it is not right, you can change the attribute of it. Such as TopSilkLayer.
 
-##SVG Preview
-![](./images/SVG-Preview.png)
-After click the `SVG Preview` button, you will see a nice SVG image and you can save the SVG file to your hard drive. This operation will be faster than export, because you don't need to send the file to EasyEDA server, and it is safe.
-
-##User Defined BOM Parameters
-After select a schematic lib, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this in CSV file.
-![](./images/UserDefineBOM.png)
-
-##Prefix Start
-Every **new** schematic file has a `Prefix Start` custom paarameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
-![](./images/Prefix-Start.png)
-
-##Allow to adjust the right panel width
-Some Russian, German users' language is long, so they can addjust the width.
-
-![](./images/rightPanelWidth.png) 
-
-## New Pad shapes
-EasyEDA supports two new shapes, `OVAL` and `POLYGON`, `OVAL` PAD will give your more space. `POLYGON` PAD will let you to create some strange pad, like bellow image, you can edit the PAD'S points when you select a `POLYGON` PAD
-![](./images/New-PAD-SHAPE.png) 
-
-## Real Time DRC
-This is a big feature of EasyEDA. It is hard to fix DRC errors after layout the PCB. Now EasyEDA will let you know the error in routing. You will find a `X` flag to mark the error, such as Track to Track or Track to PAD like bellow image
-![](./images/RealTimeDRC.png).
-TIP: When you convert a schematic to PCB, the real time DRC is open. In the old PCB, the real time DRC is closed. you can open it via Supper menu-> Miscellaneous->Design Rule Setting, like bellow image.
-
-![](./images/configRealtimeDRC.png). 
+![](./images/setImage.png)
 
 
-##Track and Net length
-when select a track, you can find it's Length attribute in the right panel.
-![](./images/track-length.png)
-When select a track, then press `H` key, EasyEDA will highligh the whole net and pop a message box to tell you the whole net's length. like bellow image
-![](./images/netLength.png)
 
-## New `CTRL+V`
-If you need to paste a part of objects from one schematic to another schematic, just need to press `CTRL+V`, not need to use `SHIFT+CTRL+V`.
 
-##NO Connect Flag
-You can find the `NO Connect Flag` via wiring tool, 
-![](./images/no-connect-flag-tool.png), in the bellow schematic, if you don't add a `NO Connect Flag`, there is a error flag in the nets collection.
-![](./images/No-connect-flag.png) 
-After add a `NO Connect Flag`
-![](./images/add-no-connect-flag.png)
-##HOLE
-There are lots of users don't know using PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA add a HOLE TOOL in the PCB toolbar.
-![](./images/HOLE.png)
+##More Fonts  for PCB
+From V3.2.x, You can add more fonts from your computer or download some [free fonts](http://www.1001freefonts.com/) .
 
-##Photo View
-EasyEDA has not a 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like bellow image. If you can't see this button, try to **reload** again.
-![](./images/PhotoView-button.png).
+Select the text, then you can find a Font-family attribute on the right panel like bellow image.
+![](./images/font-choosePCB.png)
+Click the add button, then choose the font, the font file must be `ttf` or `otf`.
+![](./images/fonts.png)
 
-After convert PCB to Photo View, you can see bellow image.
-![](./images/Photview.png).
+So you can add any fonts by your self. EasyEDA desn't cache the font on our server, so if you close the editor, you need to add the font again by your self.
 
-In this view, you can find some components are too closest and silk layer on the Pad, bad Footprint etc.
+Note:  
+If you use the other font, the 	`LineWidth` attribute is useless, because it will be auo by change the `Height`.
 
-Bellow image is a blue and purple board.
-![](./images/blue-purple.png).
 
-##Zoom in and zoom out
-Try to scroll your mouse, you will find out EasyEDA provide almost Stepless zoom. and the must factor is 10000%.
+ 
 
-##Default Text Style
-Some users like the text size keep at 9pt, now change you change the font style, we will keep it as default. 
+##Change Attributes in Batch on PCB Editor
+Some times, we need to change some attributes in the same together, such as the track width, hole size and font size.  
+Now, you can select them and do some changes. Taking the track for an example. If you select 3 tracks, now you can change their `Width`, `Layer`, `Net` together.
+![](./images/tracksBatch.png)
 
-##Place a Via On a Track
-When placing a `via` on a track, the track will be cuted to two segments.  Place two vias on a tracks, you will get three segments, then you can change one segment to other layer id, or remove one of them. 
-![](./images/placeVIAToTrack.png). 
+Other items such as `Pad`, `Via`, and  `TEXT`, you can try to play this feature.
 
-##New Language Translate Tool
- With our users help, EasyEDA now provides lots of languages. Now you can help use to improve this function easier via [https://easyeda.com/language.php](https://easyeda.com/language.php). There are lots of sentences should be translated, don't forget to click **save** button which is at the end of page. BTW, you don't need to finish this job one time, you can do it when you have time after you save.  
+
+
+##New Track Style
+When routing, some time we need to add an Arc segment, or change the inflection direction. Now we can do this easily.
+1. Change to Arc style, You can use Hot key `L` to toggle from 45 degree to Arc.
+![](./images/routeAngle.png)
+
+You can change  inflection direction when router, from A to B, we have two ways.
+When you router from A to B, the default track is 1, but if you press `Space bar` key, the track will be changed to 2.
+![](./images/corn.png)
+ 
+
+
+##Modules
+Copying codes is an easy job for coders, now copy and reuse a schematic or PCB are easy now.
+Take a power supply unit for example, you can save this unit as a schematic module.
+
+![](./images/schematicModule.png) 
+
+After saving, you can find it at the module section. And you can place the whole block to your schematic.
+
+![](./images/LM2569-ALL.png)  
+
+
+##Get a Invoice After PCB Order
+For company users, after order PCB, they may need an invoice, you can find it at .
+[History orders](https://easyeda.com/my-order). There is an invoice link, you can open it and save it as pdf or html file.
+![](./images/invoice.png)   
+
+
+
+##Contribute Your Symbols and Package to EasyEDA
+Right click your parts, you can share symbols and package to EasyEDA system libs, then, every one can use them as their own parts. 
+![](./images/contriubteLibs.png)   
+
+
+##Delete a Segment from a Track
+ In lots of other EDA tools, the track is segment line, but in EasyEDA, the track is polyline. some time, if we want to delete a segment, we must delete the whole track and router again. Now we provide a not bad way to do this. Moving your mouse to the segment which you want to delete, click it, then hold the `SHIFT` and **double click it**. the segment will be removed.
+
+![](./images/deleteSegment.png)
+
+
 
 Enjoy it, if you have any questions, do let us know.
+
+
+
+ 
+ 
+
+
+
+
+
+ 

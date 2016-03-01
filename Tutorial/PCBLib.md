@@ -30,7 +30,9 @@ Width and Height: When the shape is set to Round, Width will equal Height.
 
 **Center-X and Center-Y:** using these two attributes, you can set the pad’s position with more precison, compared to using the mouse.
  
-
+### New Pad shapes
+EasyEDA supports two new shapes, `OVAL` and `POLYGON`, `OVAL` PAD will give your more space. `POLYGON` PAD will let you to create some strange pad, like bellow image, you can edit the PAD'S points when you select a `POLYGON` PAD
+![](./images/New-PAD-SHAPE.png) 
 ## Others 
 
 1.  It is important to set the right Snap and Grid sizes to ensure that the pads on the finished footprint snap exactly to the grid and so connect the nets. For example, if you are creating a DIP package, set the Grid size to 100mil.
