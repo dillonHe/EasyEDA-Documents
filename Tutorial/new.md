@@ -152,7 +152,10 @@ Right click your parts, you can share symbols and package to EasyEDA system libs
 
 ![](./images/deleteSegment.png)
 
+## Change Cursor Style
+ Some users don't like the cross cursor, so you can change it to arrow cursor like bellow image.
 
+![](./images/curson-style.png)
 
 Enjoy it, if you have any questions, do let us know.
 
