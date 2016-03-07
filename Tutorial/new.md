@@ -157,6 +157,12 @@ Right click your parts, you can share symbols and package to EasyEDA system libs
 
 ![](./images/curson-style.png)
 
+## Better Navigation Bar for Components.
+ On [How To Find The Schematic Libraries](/Doc/Tutorial/schematic.htm#How-To-Find-The-Schematic-Libraries), you can find a way to use many many components and package, now EasyEDA provide a great navigation bar on the top. You can use some open source parts and [Pololu Module](https://easyeda.com/component/pololu) , like bellow image.
+![](./images/Pololu-modules.png)
+
+
+
 Enjoy it, if you have any questions, do let us know.
 
 
