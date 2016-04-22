@@ -38,7 +38,7 @@ EasyEDA support millimeter, inch and millimeter, but when these items are stored
 
 
 ##Canvas
-	"CA~2400~2400~#000000~yes~#FFFFFF~10~1200~1200~line~1~mil~1~45~visible~0.5"
+	"CA~2400~2400~#000000~yes~#FFFFFF~10~1200~1200~line~1~mil~1~45~visible~0.5~400~300"
 
 **Format:**
 
@@ -58,6 +58,8 @@ EasyEDA support millimeter, inch and millimeter, but when these items are stored
 14. routing angle: 45 degree( 45 90 free)
 15. copper area: visible/invisible
 16. ALT snap size: 0.5 ( 5 mil Snap Size when pressing the `ALT` Key)
+17. origin x position
+18. origin y position
 
 Canvas setting image
 ![](./images/PCBCanvas.png)

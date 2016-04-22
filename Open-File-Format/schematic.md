@@ -39,7 +39,7 @@ Place it to schematic canvas, it's attributes will be looked like below image. T
 ![](./images/schematicLibAttr.png)
 
 ##Canvas
-	"canvas":"CA~1200~1200~#FFFFFF~yes~#CCCCCC~10~1200~1200~line~10~pixel~5"
+	"canvas":"CA~1200~1200~#FFFFFF~yes~#CCCCCC~10~1200~1200~line~10~pixel~5~400~300"
 **Format:**  
 1. command: CA
 2. view box width: 1200, View Box Width / Canvas width = scaleX
@@ -54,6 +54,8 @@ Place it to schematic canvas, it's attributes will be looked like below image. T
 11. snap size: 10 pixel
 12. unit: pixel(Always pixel)
 13. ALT snap size:5 (Snap Size when pressing the `ALT` Key)
+14. origin x position
+15. origin y position
 
 Canvas setting image  
 ![](./images/SchematicCanvas.png)
