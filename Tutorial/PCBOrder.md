@@ -6,11 +6,11 @@
 
 
 ## PCB Quality
-   As engineers, we have spent more than 5 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
+   As engineers, we have spent more than 6 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
 
    EasyEDA's PCB are in a group buy model and all PCBs are given 100% E-test This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
 
- No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn).
+ No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn). 
  
 
 ## Order Button
@@ -34,15 +34,16 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 
 
 ## PCB Capabilities 
+
 <table>
 <tbody>
 <tr>
 <td width="200">Number of Copper Layers*</td>
-<td width="400">1-6</td>
+<td width="400">1-16</td>
 </tr>
 <tr>
 <td>PCB Material</td>
-<td>FR-4</td>
+<td>FR-4, FR4-Tg, FR4-High Tg</td>
 </tr>
 <tr>
 <td>Available Solder Mask Colors</td>
@@ -58,16 +59,17 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 </tr>
 <tr>
 <td>Minimum dimensions*</td>
-<td>2cm x 2cm</td>
+<td>0.4cm x 0.4cm</td>
 </tr>
 <tr>
 <td>Maximum dimensions*</td>
-<td>30cm x 30cm</td>
+<td>100cm x 100cm</td>
 </tr>
 </tbody>
 </table>
 
-* If your PCB requires 8 layers or larger dimensions, please contact us before placing your order.
+* If your PCB requires 16 layers or larger dimensions, please contact us before placing your order
+ 
 
 
 ## Manufacturing Specifications:
@@ -83,8 +85,8 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 </tr>
 <tr>
 <td>Available Board Thickness</td>
-<td>0.6 (except 4 layer), 0.8, 1.0, 1.2, 1.6, 2.0</td>
-<td>23.6 (except 4 layer), 31.5, 39.4, 47.2, 63.0, 78.7</td>
+<td>0.4, 0.6 (except 4 layer), 0.8, 1.0, 1.2, 1.6, 2.0</td>
+<td>15.7, 23.6 (except 4 layer), 31.5, 39.4, 47.2, 63.0, 78.7</td>
 </tr>
 <tr>
 <td>Thickness Tolerance</td>
@@ -103,23 +105,23 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 </tr>
 <tr>
 <td>Minimum trace width</td>
-<td>0.1524</td>
-<td>6</td>
+<td>0.089</td>
+<td>3.5</td>
 </tr>
 <tr>
-<td>Minimum inner trace width (for 4 layer)</td>
-<td>0.203</td>
-<td>8</td>
+<td>Minimum inner trace width </td>
+<td>0.127</td>
+<td>5</td>
 </tr>
 <tr>
 <td>Minimum trace/vias/pads space</td>
-<td>0.1524</td>
-<td>6</td>
+<td>0.102</td>
+<td>4</td>
 </tr>
 <tr>
-<td>Minimum inner trace/vias/pads space (for 4 layer)</td>
-<td>0.203</td>
-<td>8</td>
+<td>Minimum inner trace/vias/pads space </td>
+<td>0.102</td>
+<td>4</td>
 </tr>
 <tr>
 <td>Minimum silkscreen width</td>
@@ -145,6 +147,10 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 <td>Drilled Hole Diameter (Mechanical)</td>
 <td>0.3 - 6.35</td>
 <td>11.81 - 250.00</td>
+<tr>
+<td>Drilled Hole Diameter (Laser)</td>
+<td>0.2 - 0.3</td>
+<td>7.87 - 11.81</td>
 </tr>
 <tr>
 <td>Finished (Plated) Hole Diameter (Mechanical)</td>
@@ -155,6 +161,11 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 <td>Diameter Tolerance (Mechanical)</td>
 <td>± 0.2</td>
 <td>± 7.87</td>
+
+<tr>
+<td>Solder Mask Bridges</td>
+<td>0.1</td>
+<td>3.94</td>
 </tr>
 
 <tr>
@@ -168,19 +179,19 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 </tbody>
 </table>
 
-If you have any special PCB requirements, please contact us before placing your order. We can help you find the best PCB house for your specialised needs.
+If you have any special PCB requirements, please contact us before placing your order. 
 
 
 ## Price
- All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne the customer.
+ All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne the customer. 
  
  
 ### Manufacturing Price
-Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions. 
+Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
 
 EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB suppler than EasyEDA offering the same price and quality.
 
-EasyEDA needs 4~5 days to manufacture the PCBs after you submit payment.
+EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
 
 
 ###Shipping Costs
@@ -231,7 +242,7 @@ Customs are quite different in each country. Please include information about pa
 ## Warranty and Return
 For your first order for a PCB laid out in **EasyEDA**, we have the top return policy on the planet! If you don't like them, just send an email to 
 
-![](images/support_email.png), no reason needed. We will provide your full money back - including product + shipping costs - in one working day.
+![](images/support_email.png), no reason needed. We will provide your full money back - including product + shipping costs - in one working day. 
 
 For subsequent orders, because you now know the quality level of our PCBs, if you are not satisfied with a product you bought from us for whatever reason, you just need to email us some pictures of the product and explain why you don't like it. We will then refund the full money of the product. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
 
