@@ -199,6 +199,9 @@ Go to the **PCB Editor**,
 
 **Super menu > Miscellaneous > Import Changes**
 
+Or click that button at the tool bar
+![](./images/PCBimportChange.png)
+
 If you change the schematic, you will get a Confirm Importing changes information dialog:
 
 ![](images/image77.png)

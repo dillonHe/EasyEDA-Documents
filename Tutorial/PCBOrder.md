@@ -138,11 +138,7 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 <td>&gt; 0.03</td>
 <td>&gt; 1.18</td>
 </tr>
-<tr>
-<td>Inner Layer Copper Thickness</td>
-<td>0.01 - 0.018</td>
-<td>0.39 - 0.71</td>
-</tr>
+
 <tr>
 <td>Drilled Hole Diameter (Mechanical)</td>
 <td>0.3 - 6.35</td>
@@ -152,20 +148,32 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 <td>0.2 - 0.3</td>
 <td>7.87 - 11.81</td>
 </tr>
-<tr>
-<td>Finished (Plated) Hole Diameter (Mechanical)</td>
-<td>0.8 - 6.35</td>
-<td>31.50 - 250.00</td>
-</tr>
+
 <tr>
 <td>Diameter Tolerance (Mechanical)</td>
-<td>± 0.2</td>
-<td>± 7.87</td>
+<td>	±0.08 </td>
+<td>	± 3.148</td>
 
 <tr>
 <td>Solder Mask Bridges</td>
 <td>0.1</td>
 <td>3.94</td>
+</tr>
+
+<tr>
+<td>Circuit to edge</td>
+<td>≥0.3</td>
+<td>≥11.8</td>
+</tr>
+<tr>
+<td>Slot</td>
+<td>≥0.6</td>
+<td>≥23.6</td>
+</tr>
+<tr>
+<td>Slot Tolerance(Mechanical)</td>
+<td>±0.15</td>
+<td>±6</td>
 </tr>
 
 <tr>
@@ -221,6 +229,23 @@ EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
  
 Note: The shipping cost is estimated. EasyEDA will always try to find the best shipping option.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp), we will ask you to pay for more or change to some other express service such as Fedex, UPS. Sometimes, we will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for delivery by Airmail.
 
+## File Name
+  If your gerber files name are good, this will save us lots of time to check your design. 
+  There are lots of PCB design software, so there are lots of gerber file name and filename extension. 
+
+Gerber Type
+![](images/Gerber_File_name.png) 
+ 
+If you don't know how to map your files, please don't need to change the file name, we will help you to map.
+
+You can use our Free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber before place an order.
+
+##E-Test
+
+All PCBs are getting a 100% AOI (Automated Optical Inspection) to make sure that all tracks and pads are connected.
+In addition to this the PCBs can be tested by a flying probe to make sure that all vias are connected, because this is not visible by the AOI.
+1-layer PCBs don't need this tests because there are no vias.
+More than 2 layers will be tested always 100% with a flying probe.
 
 ## Payment
 We accept the PayPal, Credit Card and Wire Transfers. 
