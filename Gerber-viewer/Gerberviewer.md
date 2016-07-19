@@ -24,7 +24,7 @@ There are two standards defining Gerber files: An old one called RS-274D, and a 
      ![](images/Gerber-viewer-analysis-results.png)
   
 4. Share the gerber viewer image
-   You can click the export image button to get the an image link or just share the web site of your gerber link.
+   You can click the export image button to get the an image link or just share the web site of your gerber link.  
   ![](images/ShareImage.png) 
 
 5. zoom in and out.
@@ -41,12 +41,12 @@ There are two standards defining Gerber files: An old one called RS-274D, and a 
 #EasyEDA Gerber Viewer FAQ
 
 Q1: How can share my Gerber image with my friends?
- After you upload your gerber, you will get a url link, just need to copy the link to your friends.
+ After you upload your gerber, you will get a url link, just need to copy the link to your friends.  
 ![](images/gerber-sharelink.png) 
 
 
 Q2: Is my gerber safe?
-  All of your gerber are unlist, if you don't share to any one, we don't share it to any one. If you are care about this, you can remove your gerber from our server.
+  All of your gerber are unlist, if you don't share to any one, we don't share it to any one. If you are care about this, you can remove your gerber from our server.  
   ![](images/Destory-Gerber.png) 
 
 Q3: Why I can't see the right photo viewer.
@@ -65,16 +65,18 @@ Q6: What gerber file names are expected?
 
  
 Q6: How to get a blue PCB viewer.
-Drop down the `Theme` menu.
+Drop down the `Theme` menu.  
 ![](images/Change-BLUE-GERBER-VIEWER.png) 
 
 Q7: How to change from gerber viewr, Top photo viewer and Bottom photo viewer
 
-  There are three buttons at the top right.
+  There are three buttons at the top right.  
 ![](images/gerber-viewer-top-bottom.png)
 
 Q8: How to submit a bug?
- Just email to ![](https://easyeda.com/Doc/Tutorial/images/support_email.png)
+
+ Just email to  
+![](https://easyeda.com/Doc/Tutorial/images/support_email.png)
 
 
 Q9: What are the common errors for gerber.
@@ -90,5 +92,6 @@ There are some Common Errors we may happen.
 
 Q10: Why the EasyEDA gerber viewer stop.
 Because EasyEDA gerber viewer integrated a DFM, so we don't allow the same gerber file name, such as two NPTH holes file, tow Top solder mask layer files. etc. If you see some message like bellow image, you may need to change the gerber file name and remove some bad files before you upload the gerber to EasyEDA gerber viewer.
+
   ![](images/gerber-viewer-error.png) 
 
