@@ -61,7 +61,7 @@ If you just in prototype, and want to save money, you can use bellow ways, use s
      
 
 ##Material Details
-  EasyEDA supports FR4-Standard Tg 140C, FR4-Tg 150C, FR4-High Tg 170C. The FR4 TG's lead time should be more than 6 days.
+  EasyEDA supports FR4-Standard Tg 140C, FR4-Tg 150C, FR4-High Tg 170C. The FR4 TG's lead time should be more than 6 days. 90% of EasyEDA orders use FR4-Standard, you can check the [FR4 Material pdf](images/FR4-material.pdf "FR4 material")
 
 ##Smallest Holes Diameter
    0.3mm for mechanical drill, 0.2mm for the laster drill. Please use 0.3mm to save money.
