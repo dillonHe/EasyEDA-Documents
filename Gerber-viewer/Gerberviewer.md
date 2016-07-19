@@ -4,7 +4,7 @@
  EasyEDA **Gerber Viewer** is a viewer for Gerber RS-274X files, Excellon drill files online, 
  After you upload your gerber file, we will render it as images, and with top photo viewer and bottom photo viewer. At the same time, EasyEDA runs a simply DFM test, you can see the board size,   holes size, track size, clearance of the objects.
 
-  ![](images/gerber-viewer-error.png) 
+  ![](images/Gerber-viewer-screen.png) 
 
 
 
