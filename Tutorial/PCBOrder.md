@@ -14,21 +14,22 @@
  
 
 ## Order Button
-To order PCBs from us, just click the **Fabrication Output...** button, like image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, you can download your Gerber and drill files (and open them in a 3rd party Gerber Viewer to check them!). Honestly, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
+To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the clcik of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
+
 ![](images/pcbFabrication.png)
 
 ## PCB Order from EasyEDA Editor
    When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 
    
-   On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price for you ASAP. 
+   On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price to you ASAP. 
 
- **Note.** When you add your PCB to the cart, EasyEDA saves a copy of Gerber files *at that time*. If you then change your PCB back in then PCB editor, *EasyEDA does not synchronize your Gerber files to the updated PCB design*. The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.
+ **Note.** When you add your PCB to the cart, EasyEDA saves a copy of Gerber files *at that time*. If you then change your PCB back in the PCB editor, *EasyEDA does not synchronize your Gerber files to the updated PCB design*. The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.
  
 ![](images/PCBOrderPage1.png) 
 
 
 ## PCB Order from Order Link
-  You maybe would like to upload your own Gerber files or Gerber files from Eagle, Pads, or Altium Design. To do this, just click this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
+  If you would like to upload your own Gerber files from a third party PCB tool such as Eagle, Pads, or Altium Design. To do this, just click this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
  
 ![](images/PCBOrderPage2.png) 
 
@@ -68,7 +69,7 @@ To order PCBs from us, just click the **Fabrication Output...** button, like ima
 </tbody>
 </table>
 
-* If your PCB requires 16 layers or larger dimensions, please contact us before placing your order
+* If your PCB requires more than the default maximum of 6 layers (up to a maximum of 16) or larger dimensions, please contact us before placing your order
  
 
 
@@ -191,10 +192,12 @@ If you have any special PCB requirements, please contact us before placing your 
 
 
 ## Price
- All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne the customer. 
+
+ All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne by the customer. 
  
  
 ### Manufacturing Price
+
 Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
 
 EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB suppler than EasyEDA offering the same price and quality.
@@ -202,7 +205,7 @@ EasyEDA uses a group buy business model and we are sure it will be hard to find 
 EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
 
 
-###Shipping Costs
+### Shipping Costs
 <table>
 <tbody>
 <tr bgcolor="#ccc">
@@ -230,22 +233,20 @@ EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
 Note: The shipping cost is estimated. EasyEDA will always try to find the best shipping option.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp), we will ask you to pay for more or change to some other express service such as Fedex, UPS. Sometimes, we will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for delivery by Airmail.
 
 ## File Name
-  If your gerber files name are good, this will save us lots of time to check your design. 
-  There are lots of PCB design software, so there are lots of gerber file name and filename extension. 
+If your gerber files name are good, this will save us a lot of time in checking your design. 
+There are many different PCB design software packages so there are many variations of gerber file names and filename extensions. 
 
 Gerber Type
+
 ![](images/Gerber_File_name.png) 
  
-If you don't know how to map your files, please don't need to change the file name, we will help you to map.
+If you don't know how to map your files, don't worry about changing the file names please contact support for help.
 
-You can use our Free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber before place an order.
+**We encourage you to use our free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber files before place an order.**
 
-##E-Test
-
-All PCBs are getting a 100% AOI (Automated Optical Inspection) to make sure that all tracks and pads are connected.
-In addition to this the PCBs can be tested by a flying probe to make sure that all vias are connected, because this is not visible by the AOI.
-1-layer PCBs don't need this tests because there are no vias.
-More than 2 layers will be tested always 100% with a flying probe.
+## E-Test
+All PCBs undergo a 100% AOI (Automated Optical Inspection) to make sure that all tracks and pads are connected.
+In addition to this the PCBs can be tested by a flying probe to make sure that all vias are connected, because this is not visible by the AOI. Single layer PCBs do not require this test because there are no vias but boards with 2 layers and above will always be 100% tested with a flying probe.
 
 ## Payment
 We accept the PayPal, Credit Card and Wire Transfers. 
@@ -256,9 +257,7 @@ We use Paypal as our payment; it is safe and easy. If you don't have a Paypal ac
 ![](images/paycard.png) 
 
 ### Wire Transfers
-Wire Transfers can only be used on orders with a grand total (subtotal plus all additions and deductions but excluding shipping fees excluded) of at least $600.
-For orders > $2000, payment by Wire Transfer is preferred. In this circumstance, 3.5% extra discount will be applied for the grand total (subtotal plus all additions and deductions, shipping fees excluded).
-Wire Transfer payments usually take 3-5 business days to clear. We will not ship your order until your payment is verified by our bank. Please send a copy of the Wire Transfer receipt to our customer service because although it is not sufficient to release an order, it will help us to push the delivery date. 
+Wire Transfers can only be used on orders with a grand total (subtotal plus all additions and deductions but excluding shipping fees) of at least $600. For orders > $2000, payment by Wire Transfer is preferred. In this circumstance, 3.5% extra discount will be applied for the grand total (subtotal plus all additions and deductions but excluding shipping fees). Wire Transfer payments usually take 3-5 business days to clear. We will not ship your order until your payment is verified by our bank. Please send a copy of the Wire Transfer receipt to our customer service because although it is not sufficient to release an order, it will help us to push the delivery date. 
 
 ## Customs, Duties and Taxes
 You should expect to pay any amount charged by the government in your respective country. This includes but is not limited to: duties, taxes and any extra fees charged by the courier company. We will not be held responsible for any extra charges once the original package has been shipped. If the customer refuses to pay these extra charges, the return shipping and any additional fees will be taken out of the cost of the order, with any remaining funds being refunded to the customer.
@@ -269,5 +268,5 @@ For your first order for a PCB laid out in **EasyEDA**, we have the top return p
 
 ![](images/support_email.png), no reason needed. We will provide your full money back - including product + shipping costs - in one working day. 
 
-For subsequent orders, because you now know the quality level of our PCBs, if you are not satisfied with a product you bought from us for whatever reason, you just need to email us some pictures of the product and explain why you don't like it. We will then refund the full money of the product. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
+For subsequent orders, because you now know the quality level of our PCBs, if you are not satisfied with a product you bought from us for whatever reason, you just need to email us some pictures of the product and explain why you are not happy with it. We will then refund the full money of the product. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
 
