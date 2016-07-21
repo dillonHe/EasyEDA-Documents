@@ -71,6 +71,7 @@ To order PCBs from us, just click the **Fabrication Output...** button in the PC
 
 * If your PCB requires more than the default maximum of 6 layers (up to a maximum of 16) or larger dimensions, please contact us before placing your order
  
+* If your PCB dimensions are bigger than 45cm * 45cm, maybe add a few addition cost  
 
 
 ## Manufacturing Specifications:

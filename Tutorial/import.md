@@ -69,3 +69,24 @@ The image below illustrates some imported Kicad Schematic and Footprint libs:
 ![](images/image20.png)
  
                     
+
+## Import DXF File 
+How to create irregular board outlines or complex board outline in EasyEDA?   This is sometimes needed when you are designing a PCB for an enclosure that may have a curved profile, or other unavoidable mechanical features for which one must design.  
+
+Find the import DXF menu under the file menu.
+![](images/ImportDXF-1.png) 
+
+After select the *.DXF file, you will find a dialog like bellow image
+![](images/Import-DXF-2.png)
+
+EasyEDA provides two parameters, unit(mm or inch), the shapes will be applied to which layer.
+
+After click the import button, you will find them on your PCB canvas.
+
+![](images/import-dxf-3.png)
+
+ You can try this to import this example by your self. [DXF example](/Doc/Tutorial/images/test.dxf)
+Please note:
+1. The file must be a *.dxf filename extension
+2. the circles will be convert to holes if you choose the layer as board outline.
+3. there are some items are not supported.
