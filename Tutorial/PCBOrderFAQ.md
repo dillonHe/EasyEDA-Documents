@@ -1,8 +1,10 @@
 
 # PCB Parameter Description
 ##PCB Dimension
-EasyEDA supports the design of PCBs up to 100cm * 100cm however we suggest our customers try to limit the design to a PCB size of no larger than 40cm * 40cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
-
+EasyEDA supports the design of PCBs up to 100cm * 100cm however we suggest our customers try to limit the design to a PCB size of no larger than 45cm * 45cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
+* If the size is larger than 45cm, you just need to order any pay, we will contact you if you need to charge more via email
+* If the size is smaller than 2cm, you need to penalize them to big size, or we can't help you to do the E-test.
+ 
 
 ##PCB Quantity
  EasyEDA uses a group buy model, so the price is very low, but the minimum number of PCBs should be 5 pcs. So for example, if you need 2 pcs, you need to order 5 pcs and similarly, if you need 7 pcs you need to order 10 pcs. 
