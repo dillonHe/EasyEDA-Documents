@@ -18,7 +18,7 @@ Collaboration           |  Y                 |  Y                          |  Y
 Forum Support           |  Y                 |  Y                          |  Y
 Email Support           |  Y(48hours)        |  Y(24hours)                 |  Y(12 hours)
 Phone Support           |  N                 |  N                          |  Y
-PCB order discount      |  N                 |  90%                        |  80%
+PCB order discount      |  N                 |  10%                        |  20%
 Advertisement(?)        |  Y                 |  N                          |  N
 Cloud Auto router (Coming soon)  |  Unknown    |  Unknown                     |  Unknown
 Cloud spice simulation  |  Y                 |  Y                          |  Y
