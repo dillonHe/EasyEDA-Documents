@@ -114,4 +114,29 @@ The right hand image below shows a frameless stencil. Frameless stencils are che
 
  
 
+# Order FAQ
+
+## How to check the Shipping Cost?
+
+Shiping cost depends on the weight of the boards, different countries, and shipping method. Before you pay, you can see the shipping cost and select the shipping method.
+
+![](images/shippingcost.png)
+
+
+## How to order lots of PCB together?
+
+EasyEDA allows you to order many different PCB together,  just add the PCB to cart one by one , at last to pay for together.
+
+
+## How to remove the customer id on the PCB?
+EasyEDA uses a group buy model to save the cost of production, for picking up your PCB easier, we need to add a very small string to your PCB, the string maybe under some IC, if you solder the PCB, the string will be hidden. For you don't like it. There are two ways.
+
+1. Email to us, we will fabricate your PCB in another way, but the cost  will be higher.
+
+2. When you order, you can use https://easyeda.com/Doc/Tutorial/PCBOrderFAQ#Panel-by-EasyEDA and keep the edge, we will add the string at the dirty edge, so there is no string on your product PCB.
+
+
+
+
+
 
