@@ -2,7 +2,7 @@
 # PCB Parameter Description
 ##PCB Dimension
 EasyEDA supports the design of PCBs up to 100cm * 100cm however we suggest our customers try to limit the design to a PCB size of no larger than 45cm * 45cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
-* If the size is larger than 45cm, you just need to order any pay, we will contact you if you need to charge more via email
+ 
 * If the size is smaller than 2cm, you need to penalize them to big size, or we can't help you to do the E-test.
  
 
@@ -36,9 +36,16 @@ For other numbers of layers or for a different layer stack up, please email us b
 
 ##Copper Weight
   You can select 1oz, 2oz, 3oz in our order page. For other copper weights, please ask us for a quote via email: we can help you to fabricate PCBs with copper weights from 0.5oz to 16oz.
+   
+  1. For 2Oz, please make sure the clearance is bigger than 8mil. If the clearance is [5mil, 7.9mil], we will change a bit litter more. bellow 5mil, we can't do for 2Oz, just 1Oz 
+
+  2. For 3Oz, please make sure the clearance is bigger than 15mil. If the clearance is [7.5mil, 15mil], we will change a bit litter more. bellow 7.4mil, we can't do for 3Oz .
+
+
+
 
 ##Different Design in Panel 
-Some customers would like to merge more than 1 PCB in the same gerber. We know you want to save money but this may make it **hard to cut the board outline** and more importantly this will take a lot more time to pick up and package the PCB. Although by doing this, you just have the one order, this complicates the fabrication of the panel and separation of the individual PCBs, so we will usually charge more for this. Similarly, using holes or slots as breakoff sections between boards are treated the same way as putting more than one design on a panel, each with its' own board outline. 
+Some customers would like to merge more than 1 PCB in the same gerber. We know you want to save money but this may make it **hard to cut the board outline** and more importantly this will take a lot more time to pick up and package the PCB. Although by ,doing this, you just have the one order, this complicates the fabrication of the panel and separation of the individual PCBs, so we will usually charge more for this. Similarly, using holes or slots as breakoff sections between boards are treated the same way as putting more than one design on a panel, each with its' own board outline. 
  
 Note: This additional charge only applies if the PCBs on a panel are different. Boards such as in the left hand image below will not incur an additional charge because they are easy to pick up but boards such as in the right hand image would incur an additional charge.
  
@@ -86,6 +93,9 @@ If you are just in the prototype phase and want to save money, then you can use 
 ##Gold Fingers
 If you wish to built PCBs that plug directly into edge connectors, such as memory cards, please choose **Gold Fingers** as shown in the image below:
 ![](images/Gold-Fingers.png)  
+
+## Special PCB
+  If you need to order the PCB which you can't find the Manufacturing Specifications, such as blind via, 4oz to 12oz copper. You can send an email to support@easyeda.com
 
 ##Half-cut/Castellated Holes
 If you need to build some PCBs as shown in the image below, please choose **Half-cut** holes.
