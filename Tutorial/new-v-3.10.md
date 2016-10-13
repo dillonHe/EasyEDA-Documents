@@ -70,7 +70,9 @@ There are some other categories, you can try to explore.
   ![](./images/sy-sch-pcb.png) 
 
 
+
  ## Add Frame
+
  You can add some design notes at the frame, the good point is it is good to print your schematic if you set the right frame, such as A4 . 
  ![](./images/frames.png) , the right bottom zone can be drag and select, you can drag and delete the frame.
 
