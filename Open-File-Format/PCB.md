@@ -298,16 +298,16 @@ ARC's attributes and image looks like bellow image:
 
 ###PAD
 
-	"PAD~ELLIPSE~275~275~6~6~11~~1~1.8~~0~gge52"
+	"PAD~OVAL~814~371~6~16~11~~1~1.8~814 366 814 376~0~gge5~11~814 374.7 814 367.3~N"
 
 **Format:**
 
 1. command: PAD
-2. shape: ELLIPSE/RECT
-3. center x: 275
-4. center y: 275
+2. shape: ELLIPSE/RECT/OVAL/POLYGON
+3. center x: 814
+4. center y: 371
 5. width: 6 (60 mil)
-6. height: 6 (60 mil)
+6. height: 16 (160 mil)
 7. layer id: 11 (All)
 8. net: ''
 9. number: 1
@@ -315,8 +315,10 @@ ARC's attributes and image looks like bellow image:
 11. points: '' (ELLIPSE = '', RECT = outline points)
 12. rotation: 0 [0 - 360]
 13. id: gge19
+14. Hole(Length): 11 (110mil)
+15. Hole Points: 814 374.7 814 367.3 // slot hole from to point
+16. Plated:Y/N 
 14. locked:null
-
 
 PAD's attributes and image looks like bellow image:
 ![](./images/PAD.png)

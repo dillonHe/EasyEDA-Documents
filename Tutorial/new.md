@@ -88,7 +88,7 @@ The image will be inserted to the active layer, if it is not right, you can chan
 
 
 
-##More Fonts  for PCB
+## More Fonts  for PCB
 From V3.2.x, You can add more fonts from your computer or download some [free fonts](http://www.1001freefonts.com/) .
 
 Select the text, then you can find a Font-family attribute on the right panel like bellow image.
@@ -148,6 +148,7 @@ Right click your parts, you can share symbols and package to EasyEDA system libs
 
 
 ##Delete a Segment from a Track
+
  In lots of other EDA tools, the track is segment line, but in EasyEDA, the track is polyline. some time, if we want to delete a segment, we must delete the whole track and router again. Now we provide a not bad way to do this. Moving your mouse to the segment which you want to delete, click it, then hold the `SHIFT` and **double click it**. the segment will be removed.
 
 ![](./images/deleteSegment.png)

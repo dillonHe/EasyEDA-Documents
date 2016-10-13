@@ -18,7 +18,7 @@ Selecting one of the pads, you can view and adjust it’s attributes in the rig
 
 **Number:** Remembering the pin numbers you set in the schematic symbol in your Schematic Lib: to connect those schematic symbol pins to the pads in your PCB footprint, the pad numbers you set here in the PCB Lib footprint must be the same.
 
-**Shape:** Round or Rectanglular
+**Shape:** Round , Rectanglular and  OVAL
 
 **Layer:** If the pads are part of a **SMD** footprint, you can set it to **Top layer** or **Bottom layer**. For through hole components you should set it to **All**.
 
