@@ -1,7 +1,7 @@
 # What is new in the V3.10.X  
  
 
-The new version is V3.10.x. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
+The new version EasyEDA, V3.10.x. introduces lots of new features. Try it at [https://easyeda.com/editor](https://easyeda.com/editor).
 
 
 ![](./images/V3.10.x.png)
@@ -10,83 +10,112 @@ The new version is V3.10.x. EasyEDA has lots of new features in the version. Try
 
 
 ##Better Mac User Experience 
-Mac users can use Chrome, EasyEDA works better under Chrome than Safari.
+*Please note that when running EasyEDA on a Mac, for the best user experience, we recommend using Chrome instead of Safari.*
 
 **1. Pan**
  
- **When Using Mouse**
-Hold down  the right click and move your mouse, the canvas will be panned.
-If you use the Magic Mouse, You need to enable the right click at first via this video. https://www.youtube.com/watch?v=ekzIoAxXSHE,
+ **When Using the Mouse**
+Hold down the right click and move your mouse and the canvas will pan with the cursor.
 
-**When Using Touchpad **
- Hold down the `SHIFT` key, then move your one finger, the canvas will pan in horizontal direction.
+Before using the Magic Mouse, you need to enable the right click function via this video. https://www.youtube.com/watch?v=ekzIoAxXSHE,
+
+**When Using the Touchpad **
+Hold down the `SHIFT` key then move a single finger: the canvas will pan horizontally.
  
-Hold down the `Control` key, then move your one finger, the canvas will pan in  Vertical  direction. 
+Hold down the `CONTROL` key then move a single finger: the canvas will pan vertically. 
 
-**2. Zoom in and zoom out**
+**2. Zoom**
 
- **When Using Mouse**
-Scroll your middle button of mouser or Magic mouse.
+ **When Using the Mouse**
+Scroll the middle button of the mouse (or Magic mouse).
 
- **When Using Touchpad **
-Sliding your finger up  zoom in, and sliding down  zoom out.
+ **When Using the Touchpad **
+Sliding a single finger up zooms in and sliding down zooms out.
 
 ## New Pad attribute.
-add `Slot ` and `Plated` attributes for pad's hole like bellow image
+New `Slot` and `Plated` attributes have been added for the hole in a pad as illustrated in the image below
+
 ![](images/image51.png)
 
 
 ## Components 
-The new components will save your lots of time. Press hot key `SHIFT+F`  or click it via toolbar ![](./images/components-button.png) 
-In the new components dialog, it is easy to select the right components via tags, and you can set tags for your components.
+The component search function has been significantly improved to make finding part symbols and footprints quicker and easier. Press hot key `SHIFT+F` or click it via toolbar ![](./images/components-button.png) 
+In the new components dialog, it is easy to select the right components via tags and you can set tags for your own components.
 
 ### New Dialog
-   When creating a schematic lib, there is an input dialog, you would better to set the sourcing information, such as how to buy it and datasheet. If you don't like to add these information, you can skip this and add these later.
+When creating a schematic lib, there is an input dialog for entering sourcing information, such as supplier information, supplier part number and datasheet. Information can be added at the time the schematic lib is created or these steps can be skipped at this stage and add these later.
 
 ![](./images/newComponent.png) 
 
 
 ### New Component attribute
-  EasyEDA adds a `Mounted` attribute at the component, if you don't want to assembly that components, you can set it to `NO` like bellow image. If set `Mounted` to `NO`, we don't list it to the BOM.
+  The new version of EasyEDA adds a `Mounted` attribute at the component, to simplify the identification and kitting of optional components which may be fitted in one assembly but not in another. This attribute  can be set to `YES` to list the part in the BoM. If the `Mounted` attribute is set to `NO` as illustrated in the image below then the part will not be listed in the BOM.
+  
 ![](./images/mounted.png) 
 
 ### Components search dialog
-If you selected the `EasyEDA Components`, you will find a dialog like bellow image.
+If the `EasyEDA Components` option is selected, then a dialog opens as illustrated in the image below.
+
  ![](./images/componentsDialog.png) 
-EasyEDA team spend lots of time to build these components/packages, we recommend you to use these components, because we have sent the right packages for you and you can order the components from EasyEDA.  More important, we can solder these components too.
-There are some other categories, you can try to explore. 
+ 
+EasyEDA team has spent a lot of time to build these `EasyEDA Components` components and packages and we recommend them as preferred components, because the packages have been carefully checked and verified, the footprints have been designed for reliable soldering by our PCB manufacturing and because these components can all be ordered directly from EasyEDA.
+
+There are several other categories to explore but these components may need more carefully checking or may be a little harder to source.
+
   ![](./images/Component-cat.png) 
 
 
 ## New search filter
- When updating a package, you may want to just  search package/footprint, so you can use the filter. `AXIAL doctype:pcb` the filter doctype:pcb will just search PCB package with the name AXIAL. 
-  `doctype:sch` will help you to just search components without package.
+When updating a package, using new filter terms, it is now possible to search only for a symbol or only for a package/footprint. For example in the filter entry below: 
+
+`AXIAL doctype:pcb` 
+
+the filter term:
+
+`doctype:pcb` 
+
+will just search for a PCB package with the name AXIAL.
+
+Similarly, the filter term:
+
+  `doctype:sch` 
+  
+ will just search for components (symbols) without listing packages.
 
  ![](./images/setpackage.png) 
  
  
 ## Synchronous schematic and PCB
- You can convert schematic to PCB bellow toolbar, if you modify the schematics and want to update the PCB again, you can click the `update PCB` button. 
+Converting a schematic to PCB can be done using the `Convert Project to PCB...` button as illustrated in the toolbar below but a new `update PCB` button has been added so that modifications to the schematic can immediately be passed forward to update the a selected PCB without having the PCB editor window already open. 
   ![](./images/sy-sch-pcb.png) 
 
 
 
  ## Add Frame
 
- You can add some design notes at the frame, the good point is it is good to print your schematic if you set the right frame, such as A4 . 
- ![](./images/frames.png) , the right bottom zone can be drag and select, you can drag and delete the frame.
+It is now possible to add design notes to the frame and the frame selection, for example A4, can assist in aligning and improve the look of printed schematics and PCB designs. 
+
+As illustrated in the image below:
+
+ ![](./images/frames.png)
+ 
+ the bottom right zone can be selected and dragged or the frame can be dragged and deleted.
 
 
 ## Hide the simulation button
-EasyEDA's simulation function is powerful, but it is not easy to use. Lot of users run a schematic which can't simulate, such as Wifi modules, MCU, DSP schematics, they never get the right results, then get disappointed, at the same time, waster lots of CPU resource.
-So we hide the simulation button to avoid this, but you can use CTRL+R to run the simulation.
+EasyEDA's simulation function is powerful but it is not easy to use. Many of our users run a schematic which, for example, may include symbols or blocks - such Wifi modules, MCU, DSP and ADC devices - for which no simulation models exist. This can be very discouraging and frustrating, especially for users that are new to simulation and - because it is a CPU intensive task - at the same time can also waste lots of CPU resource at the expense of other tasks such as autorouting and rendering on larger PCBs.
 
-##Desktop version coming soon
-  EasyEDA will provide a desktop version for offline use. 
+To reduce the casual use of simulaton we have taken the decision, not to remove it but to simply hide the simulation button from the tool bar. Simulations can still be constructed and saved exactly as before but they can now only be run using the CTRL+R to run the simulation and we strongly recommend first studying - and trying out the many examples in - the EasyEDA Simulation eBook. 
+
+## Desktop version coming soon
+
+EasyEDA will provide a desktop version for offline use. 
 
 
 
-Enjoy it, if you have any questions, do let us know.
+We hope you enjoy the new version! 
+
+And as always, if you have any questions or suggestions, do let us know.
 
 
 
