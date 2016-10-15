@@ -116,6 +116,13 @@ For this image, we will merge 10 small PCBs to 1 big panel. If you order 5 pcs, 
 If you select the **Edge Rails**, we will add a 5mm board edge as shown in the image below:
 This is 2 rows and 5 cols panel PCB.
 
+
+ Note:    
+ 1. Make sure the one single PCB's size bigger than 2cm*2cm, or we will charge $20 for the v-cut cost. Small PCB is hard to v-cut.
+  
+ 2. Make sure the board outline is simply, for complex board outline, you need to panelized by your self. Or you can pay us $15 to do that, we will send the panelized gerber to you to confirm.
+      
+
 ![](images/V-cut-v-groove.png) 
 
 # Stencil Parameter Description

@@ -92,8 +92,10 @@ Converting a schematic to PCB can be done using the `Convert Project to PCB...` 
 
 
  ## Add Frame
-
 It is now possible to add design notes to the frame and the frame selection, for example A4, can assist in aligning and improve the look of printed schematics and PCB designs. 
+
+click the frame button like bellow image
+![](./images/addFrmae.png)
 
 As illustrated in the image below:
 
