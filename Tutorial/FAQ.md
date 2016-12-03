@@ -76,6 +76,10 @@ Or you can import change via PCB https://easyeda.com/Doc/Tutorial/PCB.htm#Import
 The component search function has been significantly improved to make finding part symbols and footprints quicker and easier. Press hot key `SHIFT+F` or click it via toolbar ![](./images/components-button.png) 
 In the new components dialog, it is easy to select the right components via tags and you can set tags for your own components.
 
+###How to add sub part to schematic
+ You can add the sub part one by one on schematic, please note, the sub parts prefix is U1.1 U1.2 etc, not U1.A U1.B
+![](./images/addsubpart.png)
+
 
 ###What is the unit of the  schematic sheet.
   It is pixel, 1 pixel is about 10mil, schematic's unit is just for reference.
@@ -130,6 +134,14 @@ https://easyeda.com/Doc/Tutorial/PCB.htm#Measure
  Click the layer options button, then there is a dialog.
  ![](./images/Layersetting.png) 
  
+### How to add solder mask.
+   It is possible to get boards with the copper exposed so that you can apply a layer of solder over those tracks to further increase their current carrying capacity. In this case, you need to add solder mask over a copper( copper area, track, solid regin) 
+  EasyEDA will add solder mask for pads automatic, some time, you can add some solder mask to let the copper expose.
+  1. add solder mask layer. top or bottom.
+   ![](./images/soldermask.png) 
+  2. draw a solder mask over a copper item like bellow image. then that track will be not cover with green oil. 
+   ![](./images/soldermask2.png)  
+ Lots of users make a mistake, they just draw a solder mask, without a cooper area. like the yellow arrow point track. That is incorrect.
 
 
 ##PCB package 
