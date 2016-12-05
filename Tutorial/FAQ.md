@@ -133,6 +133,16 @@ In PCB canvas attributes, there is an option for that
 ### Can I create a PCB without to create schematic?
   Yes!
 
+### How to add more fonts for PCB?
+https://easyeda.com/Doc/Tutorial/new.htm#More-Fonts-for-PCB
+
+### How to Insert Image/Logo to PCB
+https://easyeda.com/Doc/Tutorial/new.htm#Insert-Image-Logo-to-PCB
+
+### How to insert a DXF board outline?
+https://easyeda.com/dillon/EasyEDA_provides_new_PCB_order_system_and_DXF_import-5bjd7pjcu
+
+
 ##Measure 
 
 https://easyeda.com/Doc/Tutorial/PCB.htm#Measure
