@@ -1,63 +1,82 @@
 # FAQ
 
- ## Do spend a few minutes to read this FAQ, this will save you lots of time.
+ ## Please spend a few minutes reading this FAQ, it will save you lots of time getting started with EasyEDA.
  
 ##Keep in Mind
 
-  1. Don't need to back up your schematics and PCBs manually, EasyEDA will backup your files automatic after you save them as[ Version History](https://easyeda.com/Doc/Tutorial/new.htm#Version-History). If you want to backup, try to backup them to locally.
+  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/new.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual project files in a projects in EasyEDA Source (JSON) format:
   
-  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our support forum, we  will response ASAP.
+  INSERT IMAGE OF RIGHT CLICK DOWNLOAD PROJECT
+  
+  and
+  
+  Document > EasyEDA Source > Download
+  
+ 
+  
+  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our support forum; we  will respond ASAP.
    
   
-##TOP errors on EasyEDA.
-  1. Backup schematics on the same project! When convert to PCB, EasyEDA will merge all of the schematics under the same project. So with backup schematics will be problems. If you are newbie, just keep one schematic on one project. 
-  2. Save schematic and PCB on different project! If you need to Synchronous schematic and PCB, please keep the schematics and PCB under the same project.
-  3. Bad packages.
-  4. Use polyline to connect with pins, you need to use wires.
+##Most Common Errors on EasyEDA.
+  1. Manually creating backup schematics into the same project. When a project is converted to PCB, EasyEDA will merge all of the schematics under the same project into a single PCB. If there are multiple copies of the same schematic in a project then this will create errors such as duplicate part prefixes. Especially if you are new to EasyEDA, just keep one copy of each unique schematic in any one project. 
+  2. Saving schematic and PCB into different projects. Unless you are absolutely sure that you will not need to update (Synchronise) your PCB from changes made to your schematic then please keep the schematics and PCB under the same project.
+  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorite** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
+  4. Using the polyline from the Drawing Tools Palette to connect symbol pins. To connect components together, you must use Wires from the Wiring Tools Palette.
   
    
 ##Concept
-### How to find the hotkeys?
+### How to find the list of hotkeys?
 https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys
 
-### Where is my files?
-   Your files are stored at EasyEDA server, so you can access them any where, and share them with your praters.
+### Where are my files?
+   Your files are stored on EasyEDA servers, so you can access them anywhere and share them with your partners.
  
-###Why EasyEDA focus on Cloud based EDA?
-  EasyEDA is built for who like to work any where, who like to build projects together with team member, who like to share their projects, who like a hardware design github. To meet these, this only way is build a Cloud version EDA.
+###Why does EasyEDA focus on Cloud based EDA?
+  EasyEDA is built for people who like to work anywhere, who like to build projects together with other team members, who like to share their projects, who like something that operates like a github for hardware design. The only way to meet these needs is to build a Cloud version EDA.
 
-###How can I do if there is no internet?
+###How can I work if there is no internet?
+
+NEED TO CLARIFY THIS:
+
++++++++++++++++++++++++++
+
   The internet will be very easy and cheap to get. If you don't have a very such low possible to happen to this, maybe you need to have rest.  For the google time, if no internet, we maybe don't know to how to design and code, so just have a short rest. and EasyEDA will provide a desktop client soon.
+  
++++++++++++++++++++++++++
+  
 ### Does EasyEDA has a desktop version?
-   No, but will provide Soon. The windows version will be provided at end of this year. Mac and Linux will be provided at begin of next year. And it is under test. 
+   At present, no but EasyEDA is developing and testing a desktop version soon. A Windows version will be available at the end of this year. Mac and Linux versions will be available early next year. 
 
 ### Which Browser is best for EasyEDA?
-  **Chrome**. Firefox and safari are OK too. If you used other browsers, you would better to download EasyEDA desktop client later.
+  **Chrome**. Firefox and Safari are OK too. If you are restricted to using other browsers, you would be better to download the EasyEDA desktop client when it becomes available (see above).
 
-###How to go to dashboard?
- At [dashboard](https://easyeda.com/projects/mylists), you can check all your designs and orders. There are two ways to arrive there.
-   1. From Editor, you can click the logo
-     
+###How to go to your dashboard?
+ In the [dashboard](https://easyeda.com/projects/mylists), you can check all your Projects, Modules, Components and Favorites, projects others have shared with you, forum posts and orders. 
+ 
+ There are two ways to arrive there.
+   1. From the Editor, you can click on the logo:     
       ![](./images/dashboard-logo.png). 
-   2. From homepage
+      
+   2. From the homepage:   
       ![](./images/dashboard-homepage.png). 
 
 
-## File and Project
-### Where can I find my projects and files.
-   1. From Editor, you can find them via My project drop down menu.
+## Projects and Files
+### Where can I find my projects and files?
+   1. From the Editor, you can find them via **My projects** from the drop down menu in the left hand Navigation panel.
       ![](./images/myprojects.png)
 
-   2. From dashboard 
+   2. From the dashboard 
       [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists)
  
   
-### How to delete a project.
-   Select it and right click to open a context menu, like bellow image.
+### How to delete a project?
+   Select it and right click to open a context menu, like the image below.
+   
 ![](./images/DeleteProject.png)
  
 ### How to delete a schematic or PCB?
- Select it and right click to open a context menu, like bellow image.
+ Select it and right click to open a context menu, like the image below.
 ![](./images/deleteSchematic.png) 
 
 ### How to share a project with others.
@@ -72,7 +91,7 @@ https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys
   
        
 ### How to find  history version of the schematics and PCBs
-  For schematics and PCBs, EasyEDA provide version history, you can find them via bellow 
+  For schematics and PCBs, EasyEDA provide version history, you can find them as shown in the image below: 
  ![](./images/versionHistory2.png)  
 
 ## Schematic
