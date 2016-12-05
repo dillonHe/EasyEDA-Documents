@@ -98,7 +98,10 @@ select the blue zone of sheet, you can change it paper size.  Double click the t
 Right click then Modify it. 
 ![](./images/ModifyRename.png)  
 
- 
+###How to change the US resistor to EU resistor style?
+Right click or click the drop down list to change. If you change, EasyEDA will keep the style.
+
+ ![](./images/US-resitor.png) 
 
 ##Schematic library
 ###How to create schematic library.
@@ -122,6 +125,10 @@ Right click the part, there is a menu, **Add Sub Part**
 In PCB canvas attributes, there is an option for that
 ![](./images/PCBunit.png) 
  
+### How to pick and move the components on the PCB canvas quickly?
+ Before routing the PCB, we need to place the the components on the right place. On PCB, it is a bit litter hard to select them, we need to click the edge  or pads of the components. If you you want to move them quickly, please use drag model(Hot Key `D`) or click the toolbar.
+ ![](./images/dragPlace.png)
+     
 
 ### Can I create a PCB without to create schematic?
   Yes!
