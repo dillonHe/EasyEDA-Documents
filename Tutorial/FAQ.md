@@ -174,7 +174,6 @@ https://easyeda.com/Doc/Tutorial/PCB.htm#Measure
   2. draw a solder mask over a copper item like bellow image. then that track will be not cover with green oil. 
    ![](./images/soldermask2.png)  
  Lots of users make a mistake, they just draw a solder mask, without a cooper area. like the yellow arrow point track. That is incorrect.
-
 ###How do I set the dimensions of my PCB in the layout?
  PCB's dimension/size depends on the board outline, you can create your board outline, like bellow image.
 ![](./images/boardoutline.png)  
@@ -185,6 +184,19 @@ https://easyeda.com/Doc/Tutorial/PCB.htm#Measure
 
 ### I need to layout again, how to remove all of the tracks?
 ![](./images/Unrouted.png) 
+
+###How to put a component on the bottom layer?
+ There are two ways.
+1. If your active layer is bottom layer, every component you place, will be set as bottom layer automatic.
+2. You can select it and change it attribute to bottom layer too.
+
+
+![](./images/bottomlayercomponent.png) 
+
+### I can't convert schematic to PCB, what are the problems?
+ 1. You don't set the right packages for your components. 
+ 2. https://easyeda.com/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error
+ 3. https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages
 
 
 ##PCB package 
