@@ -7,9 +7,19 @@
   1. Don't need to back up your schematics and PCBs manually, EasyEDA will backup your files automatic after you save them as[ Version History](https://easyeda.com/Doc/Tutorial/new.htm#Version-History). If you want to backup, try to backup them to locally.
   
   2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our support forum, we  will response ASAP.
+   
+  
+##TOP errors on EasyEDA.
+  1. Backup schematics on the same project! When convert to PCB, EasyEDA will merge all of the schematics under the same project. So with backup schematics will be problems. If you are newbie, just keep one schematic on one project. 
+  2. Save schematic and PCB on different project! If you need to Synchronous schematic and PCB, please keep the schematics and PCB under the same project.
+  3. Bad packages.
+  4. Use polyline to connect with pins, you need to use wires.
   
    
 ##Concept
+### How to find the hotkeys?
+https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys
+
 ### Where is my files?
    Your files are stored at EasyEDA server, so you can access them any where, and share them with your praters.
  
