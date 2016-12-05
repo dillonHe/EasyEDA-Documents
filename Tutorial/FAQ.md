@@ -129,6 +129,8 @@ Right click or click the drop down list to change. If you change, EasyEDA will k
 Right click the part, there is a menu, **Add Sub Part**
   ![](./images/Subparts.png) 
 
+###  I like SMD package. How to change Package for my components.
+https://easyeda.com/Doc/Tutorial/schematic.htm#Update-Package
 
 ##PCB
 ### How to change the Units of PCB from mil to mm or Inch.
@@ -152,6 +154,9 @@ https://easyeda.com/Doc/Tutorial/new.htm#Insert-Image-Logo-to-PCB
 ### How to insert a DXF board outline?
 https://easyeda.com/dillon/EasyEDA_provides_new_PCB_order_system_and_DXF_import-5bjd7pjcu
 
+### How to add  slot and cut out?
+https://easyeda.com/Doc/Tutorial/new-v-3.10.htm#New-Pad-attribute
+and https://easyeda.com/Doc/Tutorial/PCB.htm#Solid-Region-in-PCB
 
 ##Measure 
 
@@ -170,7 +175,23 @@ https://easyeda.com/Doc/Tutorial/PCB.htm#Measure
    ![](./images/soldermask2.png)  
  Lots of users make a mistake, they just draw a solder mask, without a cooper area. like the yellow arrow point track. That is incorrect.
 
+###How do I set the dimensions of my PCB in the layout?
+ PCB's dimension/size depends on the board outline, you can create your board outline, like bellow image.
+![](./images/boardoutline.png)  
+
+###My PCB is complex, how to know if I have routed all of the tracks?
+ Please use https://easyeda.com/Doc/Tutorial/introduction.htm#Improved-Design-Manager, in the net section, if you find a red 	`X`, that means you have not completed  that net 
+![](./images/routedOK.png) , in this image, The `GND` is not finished, but `J1_2` is OK.
+
+### I need to layout again, how to remove all of the tracks?
+![](./images/Unrouted.png) 
+
 
 ##PCB package 
 ###How to create a PCB package/library
  ![](./images/PCBpacakge.png)  
+
+## Others.
+### Is EasyEDA cavnas Cartesian coordinate system ?
+ No.  We think our coordinate system is not very good, but it is hard to change. 
+![](./images/coorsystem.png)  
