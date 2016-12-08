@@ -138,7 +138,7 @@ The right hand image below shows a frameless stencil. Frameless stencils are che
 
 ## How to check the Shipping Cost?
 
-We can ship the PCB to any country/countries. Shiping cost depends on the weight of the boards, different countries, and shipping method. Before you pay, you can see the shipping cost and select the shipping method. So you just need to add it to your cart, you will see some options like bellow image
+We can ship the PCBs to any country/countries. Shiping cost depends on the weight of the boards, different countries, and shipping method. Before you pay, you can see the shipping cost and select the shipping method. So you just need to add it to your cart, you will see some options like bellow image
 
 ![](images/shippingcost.png)
 
