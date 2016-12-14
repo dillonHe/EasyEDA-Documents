@@ -2,29 +2,7 @@
 
  ## Please spend a few minutes reading this FAQ, it will save you lots of time getting started with EasyEDA.
  
-##Keep in Mind
 
-  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/new.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
-  
-   ![](./images/download_project.png).
-  
-  and;
-  
-  Document > EasyEDA Source > Download
-  
-   ![](./images/easyeda_source.png).
- 
-  
-  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our support forum; we  will respond ASAP.
-   
-  
-##Most Common Errors on EasyEDA.
-  1. Manually creating backup schematics into the same project. When a project is converted to PCB, EasyEDA will merge all of the schematics under the same project into a single PCB. If there are multiple copies of the same schematic in a project then this will create errors such as duplicate part prefixes. Especially if you are new to EasyEDA, just keep one copy of each unique schematic in any one project. 
-  2. Saving schematic and PCB into different projects. Unless you are absolutely sure that you will not need to update (Synchronise) your PCB from changes made to your schematic then please keep the schematics and PCB under the same project.
-  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorite** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
-  4. Using the polyline from the Drawing Tools Palette to connect symbol pins. To connect components together, you must use Wires from the Wiring Tools Palette.
-  
-   
 ##Concept
 ### How to find the list of hotkeys.
 https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys
@@ -77,6 +55,7 @@ Although most of the time there are ways to access the internet easily and cheap
  
 ![](./images/deleteSchematic.png) 
 
+
 ### How to share a project with others.
    1. Make your project public.
   Open https://easyeda.com/projects/mylists, then click the red `No entry' icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
@@ -109,6 +88,10 @@ The initial conversion of a schematic to PCB is done from within the Schematic E
 Alternatively, you can import changes from the schematic from within the PCB Editor:
 
 https://easyeda.com/Doc/Tutorial/PCB.htm#Import-Changes
+
+### How to rename a Sheet/Document.
+In this menu, there is a `Modify`, so you can rename your files.
+![](./images/versionHistory2.png)  
 
 ### How to find components
 
@@ -200,7 +183,12 @@ https://easyeda.com/Doc/Tutorial/new.htm#Insert-Image-Logo-to-PCB
 ### How to insert a DXF board outline.
 https://easyeda.com/dillon/EasyEDA_provides_new_PCB_order_system_and_DXF_import-5bjd7pjcu
 
-### How to add a slot and cut out.
+###How to create non rectangular pcb outline such as round? 
+  You can import a DXF file for board outline, For round board outline, you can use a arc to do that, you need to change to board outline layer. the draw 1 arc like bellow image(need to adjust a bit litter), use this skill, you can use lines and arcs to create any complex board outlines.
+![](./images/Boardoutline2.png) 
+
+
+### How to add a slot and cut out. 
 https://easyeda.com/Doc/Tutorial/new-v-3.10.htm#New-Pad-attribute
 and https://easyeda.com/Doc/Tutorial/PCB.htm#Solid-Region-in-PCB
 
@@ -254,6 +242,40 @@ in this image, The `GND` is not finished, but `J1_2` is OK.
 ## PCB package.
 ### How to create a PCB package/library.
  ![](./images/PCBpacakge.png)  
+
+
+##Keep in Mind
+
+  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/new.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
+  
+   ![](./images/download_project.png).
+  
+  and;
+  
+  Document > EasyEDA Source > Download
+  
+   ![](./images/easyeda_source.png).
+ 
+  
+  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our support forum; we  will respond ASAP.
+   
+  
+##Most Common Errors on EasyEDA.
+  1. Manually creating backup schematics into the same project. When a project is converted to PCB, EasyEDA will merge all of the schematics under the same project into a single PCB. If there are multiple copies of the same schematic in a project then this will create errors such as duplicate part prefixes. Especially if you are new to EasyEDA, just keep one copy of each unique schematic in any one project. 
+  2. Saving schematic and PCB into different projects. Unless you are absolutely sure that you will not need to update (Synchronise) your PCB from changes made to your schematic then please keep the schematics and PCB under the same project.
+  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorite** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
+  4. Using the polyline from the Drawing Tools Palette to connect symbol pins. To connect components together, you must use Wires from the Wiring Tools Palette.
+  
+ 
+##SPice Simulation FAQ
+EasyEDA's mainly target is schematic and PCB, not for simulation. EasyEDA just support simple schematics simulation.
+
+###Where Can I found the Probe?
+  Voltage probe, 
+   ![](./images/Probe.png)
+### Why I can't simulate my schematic
+   EasyEDA just has very few simulation models, EasyEDA is powered by http://ngspice.sourceforge.net/ please check Ngspice to know what can be simulated.
+
 
 ## Others.
 ### Does EasyEDA canvas use the Cartesian coordinate system?
