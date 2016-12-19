@@ -90,6 +90,14 @@ If you are just in the prototype phase and want to save money, then you can use 
  We support down to 4mil but to save money, please use 6mil. 
 ![](images/clearance.png)  
 
+##Grid size
+Make sure the Grid filled size is bigger than 8mil/8mil ( track/space), if less that, we will change to 8mil/8mil .
+
+![](images/gridSize.png)
+
+
+
+
 ##Impedance Control
  We support 5% and 10% precision. Please add enough information about your impedance control requirements to help us to fabricate your PCB.
 
@@ -138,7 +146,7 @@ The right hand image below shows a frameless stencil. Frameless stencils are che
 
 ## How to check the Shipping Cost?
 
-We can ship the PCBs to any country/countries. Shiping cost depends on the weight of the boards, different countries, and shipping method. Before you pay, you can see the shipping cost and select the shipping method. So you just need to add it to your cart, you will see some options like bellow image
+We can ship the PCBs to any country/countries. Shiping cost depends on the weight of the boards, different countries, and shipping method. Before you pay, you can see the shipping cost and select the shipping method. So you just need to add it to your cart you will see some options like bellow image. 
 
 ![](images/shippingcost.png)
 
