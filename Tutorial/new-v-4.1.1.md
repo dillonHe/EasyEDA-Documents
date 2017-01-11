@@ -1,7 +1,7 @@
 # What is new in the V4.1.1.X  
  
 
-The new version EasyEDA, V4.1.1, now EasyEDA is 7 years old. introduces lots of new features.   Try it at [https://easyeda.com/editor](https://easyeda.com/editor).
+After 7 years of development, EasyEDA are pleased to announce the new version: V4.1.1. which introduces many new features.   Try it at [https://easyeda.com/editor](https://easyeda.com/editor).
 
 
 ![](./images/NewV4.1.png)
@@ -9,80 +9,97 @@ The new version EasyEDA, V4.1.1, now EasyEDA is 7 years old. introduces lots of 
  
 
 ## EasyEDA ambitions in 2017
-**1. Provide components order with your PCB.**
-   We will ship the component with your PCB, so for lots of common components, you can order from us, no need to buy from digikey or mouser. you will save lots of time and money. w
+**1. Provide components ordering with your PCB.**
+   So you can not only order your PCB from us; you will also be able to order many common components directly from us. We will ship the components with your PCB so saving you lots of time and money because there's no need to hunt for components and compare pricing from big name suppliers.
 
 **2. Provide PCB assembly service.**
-  EasyEDA always provides PCB assembly service, just a few customers who chat via email know that. In 2017, we will make this service public. So after you design the PCB, we will help you to sourcing the components and assembly them. You just need to focus the design and debug.
+  For a long time, EasyEDA has been able to provide a PCB assembly service but up to now just a few customers who chat with us via email know about this service. In 2017, we will make this service public. So after you design the PCB, we will not only help you to source the components but we will kit and assemble them onto your PCB before shipping the completed PCBs to you. That way, you can focus more of your time and effort into the design and debug tasks.
 
 ##New EasyEDA libs
- Form this version, EasyEDA libs try to help you to convert to PCB easier and order components easier.  For Resistor, Capacitor, Inductor EasyEDA provides the components with package selection and  provides ** US styles** and **IEC styles**
+ From this version, we have changed the EasyEDA Libs to try make it easier to find, place and order components and to make schematic conversion to PCB simpler. Placing any component from the EasyEDA Libs into a schematic will therefore also automatically complete the PCB package and all the required BoM information fields.
+ 
+ For Resistor, Capacitor, Inductor symbols, EasyEDA now provides the components with package selection and provides dedicated **US styles** and **IEC styles**
+ 
  ![](./images/easyedalib1.png) 
 
-For other common IC, we try to provide with  components which can be ordered from EasyEDA.
+For other common parts such as discretes and ICs, we now provide symbols for components with specific packages and which can be ordered from EasyEDA.
+
 ![](./images/easyedalib2.png) 
 
-For Connector section,
- EasyEDA provides Header-Male, Header-Female, Screw Terminal, IDC box, rj45, RJ11, USB, audio interface. All of these components can be ordered from EasyEDA with your PCB
+For the Connector section,
+ EasyEDA now provides Header-Male, Header-Female, Screw Terminal, IDC box, RJ45, RJ11, USB and audio interface. All of these components can be ordered straight from EasyEDA with your PCB.
+ 
+* Note however that this is a big change from the earlier versions of the EasyEDA Libs because from V4.1.1 most of the non-passive components in the EasyEDA Libs will no longer have spice models attached to them.
 
-So, you do need to spend some time to explore.
+Schematic symbols with spice simulation models attached to them can now be found using the **More Libraries...** button (or SHIFT+F) under **System Components > Spice Simulation**
+
+So, you do need to spend some time to explore these changes.
 
 
-##  Components images for EasyEDA components.
-Some time, it is a bit hard to see how the components real looks like from package or schematic symbols, now we provide real products image, the grid is 1mm, 
+##  Images for EasyEDA components.
+Sometimes, it can be hard to visualise what a component really looks like just from package or schematic symbols, so now we provide real product images, photographed against a 1mm grid for reference, 
+
 ![](./images/EasyEDA-components.png)  
 
 
 ## Work as a team 
-Before EasyEDA version V4, if you want to work together with your partners, you must to use [Access Control](https://easyeda.com/Doc/Tutorial/share.htm#Access-Control) function 
-. Access control has lots of limit, you can create projects, schematic and PCB, and more important, when you try to convert your schematics to PCB, you may find the packages are errors.
+Before EasyEDA version V4, if you wanted to work together with your partners, you had to use the [Access Control](https://easyeda.com/Doc/Tutorial/share.htm#Access-Control) function. 
 
-Now EasyEDA provide a team feature, you can work seamless with your partners. You can work like under the same account, all components, schematics, PCBs and Projects.
+Access Control has lots of limitations on who can create projects, schematics and PCBs and more importantly, when you try to convert your schematics to PCB, you may find that some packages create error messages which can be hard to track down.
+
+Now EasyEDA provides a new team feature with which you can work seamlessly with your partners. You can work as if everyone is logged in under the same account, with full access to all components, Schematics, PCBs and Projects.
 
 ### How to find the team function.
- under the [dashboard](https://beta.easyeda.com/projects/mylists) , there is a team section.
+ Under the [dashboard](https://beta.easyeda.com/projects/mylists) , there is a team section.
+ 
  ![](./images/team.png)   
 
 
 ### How to create a team.
-   There is a link at above image, or click[ this link](https://beta.easyeda.com/teams/create) after you login.
+   There is a link as shown in the image above, or click[ this link](https://beta.easyeda.com/teams/create) after you login.
 
 ### How to switch to team model.
-1. switch at the dashboard.
-  After you created a team, you can click the team name and switch to team.
+
+1) switch in the dashboard.
+  After you have created a team, click the team name and the dashboard will switch to showing only the team projects, files and components.
+  
 ![](./images/switchteam.png)  
  
-After switched to a team, there is team manage section, in this section, you can manage your team members, invite team members, ever delete the team.
+After switching to a team, there is a team management section where you can manage your team members, invite new team members and even delete the team.
 
-2. switch at editor.
-  Under your person menu, there is a sub menu, you can switch to a team or switch to your person account.
+2) switch in the editor.
+  Under your personal menu, there is a sub menu allowing you to switch to a team or to your personal account.
+  
  ![](./images/switcheditor.png)  
 
-### How to Upgrade to team
- If you want to contribute all of your designs to a team, you can use this function. First you need to create a team, then click bellow link under dashboard. Note, after you do that, all of your components, projects will be moved to your team.
+### How to Upgrade to a team
+ If you want to contribute all of your designs to a team, you can use this function. First you need to create a team, then click the link, shown below, under dashboard. 
+ 
+ * Be careful with this function because after you do that, **all** of your components, projects will be moved to your team.
 
 ![](./images/Upgradeteam.png)  
 
 ### Tips about the team function.
-  1. If you switch to a team, you can't use the package/Footprint which are created under your person account automatic. You need to favorite your person package/componments at first. 
+  1. If you switch to a team, you can't automatically use any Packages/Footprints which you have created under your personal account. You need to **Favorite** your personal package/componments first. 
   
-  2. You need to know your team and your person account are the different account, you can't use them at the same time.  
+  2. You need to be aware that your team and your personal accounts are the different, separate accountsand that you can't use them both at the same time.  
   
-  3. After own a team, you would better to create  Components and packages under the team.
+  3. After making yourself the owner of a team, it is best to create any Components and Packages needed by the team under that team.
   
-  4. Maybe you can add your accountant to your team,  and let the accountant to pay for your billing.
+  4. If you add a member, nominated to be your accountant, to your team then they can deal the team billing and invoices.
   
 
 
 ## Warning 
- After modify the PCB, do remember to rebuild the copper area before place an PCB order.
- EasyEDA will force you to rebuild the copper area before order a few weeks later. Now you need to remember, easyeda doesn't rebuild the copper area automatic.
+ After you modify a PCB, please remember to rebuild the copper area before placing the final PCB order.
+ 
+ In a few weeks time, we will introduce the feature that EasyEDA will force you to rebuild the copper area before placing the final PCB order but for now you need to remember: Easyeda does not rebuild the copper area automatically for you before placing your order.
  
 ## 2017 Spring Festival Notification
  Please check this link  [2017 Spring Festival Notification](https://easyeda.com/support/2017_Spring_Festival_Notification-fd4f25a28c864b51851ddccc69375b92)
 
 ## Desktop Version beta version 
-  The download link will be available in 48 hours.
+  A download link for this will be available in 48 hours.
 
 
 
