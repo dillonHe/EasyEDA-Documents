@@ -263,12 +263,17 @@ in this image, The `GND` is not finished, but `J1_2` is OK.
 ##Most Common Errors on EasyEDA.
   1. Manually creating backup schematics into the same project. When a project is converted to PCB, EasyEDA will merge all of the schematics under the same project into a single PCB. If there are multiple copies of the same schematic in a project then this will create errors such as duplicate part prefixes. Especially if you are new to EasyEDA, just keep one copy of each unique schematic in any one project. 
   2. Saving schematic and PCB into different projects. Unless you are absolutely sure that you will not need to update (Synchronise) your PCB from changes made to your schematic then please keep the schematics and PCB under the same project.
-  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorite** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
+  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorit e** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
   4. Using the polyline from the Drawing Tools Palette to connect symbol pins. To connect components together, you must use Wires from the Wiring Tools Palette.
   
  
 ##SPice Simulation FAQ
 EasyEDA's mainly target is schematic and PCB, not for simulation. EasyEDA just support simple schematics simulation.
+###How to set the resistance to a resistor 
+   You can use the name attribute. Just set the name or double click the value text.
+
+![](./images/Image224.png) 
+
 
 ###Where Can I found the Probe?
   Voltage probe, 
