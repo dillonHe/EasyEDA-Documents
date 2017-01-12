@@ -8,6 +8,9 @@ After 7 years of development, EasyEDA are pleased to announce the new version: V
  
  
 
+## 2017 Spring Festival Notification
+ Please check this link  [2017 Spring Festival Notification](https://easyeda.com/support/2017_Spring_Festival_Notification-fd4f25a28c864b51851ddccc69375b92)
+
 ## EasyEDA ambitions in 2017
 **1. Provide components ordering with your PCB.**
    So you can not only order your PCB from us; you will also be able to order many common components directly from us. We will ship the components with your PCB so saving you lots of time and money because there's no need to hunt for components and compare pricing from big name suppliers.
@@ -95,8 +98,6 @@ After switching to a team, there is a team management section where you can mana
  
  In a few weeks time, we will introduce the feature that EasyEDA will force you to rebuild the copper area before placing the final PCB order but for now you need to remember: Easyeda does not rebuild the copper area automatically for you before placing your order.
  
-## 2017 Spring Festival Notification
- Please check this link  [2017 Spring Festival Notification](https://easyeda.com/support/2017_Spring_Festival_Notification-fd4f25a28c864b51851ddccc69375b92)
 
 ## Desktop Version beta version 
   A download link for this will be available  soon.
