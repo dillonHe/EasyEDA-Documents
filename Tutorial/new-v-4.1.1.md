@@ -99,7 +99,7 @@ After switching to a team, there is a team management section where you can mana
  Please check this link  [2017 Spring Festival Notification](https://easyeda.com/support/2017_Spring_Festival_Notification-fd4f25a28c864b51851ddccc69375b92)
 
 ## Desktop Version beta version 
-  A download link for this will be available in 48 hours.
+  A download link for this will be available  soon.
 
 
 
