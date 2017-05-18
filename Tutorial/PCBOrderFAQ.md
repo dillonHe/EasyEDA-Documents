@@ -1,7 +1,7 @@
 
 # PCB Parameter Description
 ##PCB Dimension
-EasyEDA supports the design of PCBs up to 100cm * 100cm however we suggest our customers try to limit the design to a PCB size of no larger than 45cm * 45cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
+EasyEDA supports the design of PCBs up to 50cm * 50cm however we suggest our customers try to limit the design to a PCB size of no larger than 45cm * 45cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
  
 * If the size is smaller than 2cm, you need to penalize them to big size, or we can't help you to do the E-test.
  
@@ -35,14 +35,12 @@ For other numbers of layers or for a different layer stack up, please email us b
 
 
 ##Copper Weight
-  You can select 1oz, 2oz, 3oz in our order page. For other copper weights, please ask us for a quote via email: we can help you to fabricate PCBs with copper weights from 0.5oz to 16oz.
+  You can select 1oz, 2oz in our order page. For other copper weights, please ask us for a quote via email: we can help you to fabricate PCBs with copper weights from 0.5oz to 16oz.
   
   1. For 1Oz, the track width and clearance can be 3mil. 
    
-  2. For 2Oz, please make sure the clearance is bigger than 8mil. If the clearance is [5mil, 7.9mil], we will charge a bit litter more. bellow 5mil, we can't do for 2Oz, just 1Oz 
-
-  3. For 3Oz, please make sure the clearance is bigger than 15mil. If the clearance is [7.5mil, 15mil], we will charge a bit litter more. bellow 7.4mil, we can't do for 3Oz .
-  4. Other copper Weight, please quote before paying.
+  2. For 2Oz, please make sure the clearance is bigger than 8mil. 
+ 
 
 
 
@@ -105,8 +103,7 @@ Make sure the Grid filled size is bigger than 8mil/8mil ( track/space), if less 
 If you wish to built PCBs that plug directly into edge connectors, such as memory cards, please choose **Gold Fingers** as shown in the image below:
 ![](images/Gold-Fingers.png)  
 
-## Special PCB
-  If you need to order the PCB which you can't find the Manufacturing Specifications, such as blind via, 4oz to 12oz copper. You can send an email to support@easyeda.com
+ 
 
 ##Half-cut/Castellated Holes
 If you need to build some PCBs as shown in the image below, please choose **Half-cut** holes.
