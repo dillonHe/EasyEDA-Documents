@@ -35,7 +35,7 @@ For other numbers of layers or for a different layer stack up, please email us b
 
 
 ##Copper Weight
-  You can select 1oz, 2oz in our order page. For other copper weights, please ask us for a quote via email: we can help you to fabricate PCBs with copper weights from 0.5oz to 16oz.
+  You can select 1oz, 2oz in our order page. 
   
   1. For 1Oz, the track width and clearance can be 3mil. 
    
