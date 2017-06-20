@@ -292,3 +292,14 @@ EasyEDA's mainly target is schematic and PCB, not for simulation. EasyEDA just s
  Actually, we think our coordinate system is not very good but it is hard to change. 
  
 ![](./images/coorsystem.png)  
+
+### Does EasyEDA provide assembly service?
+   Yes, this service just under test at China region, but will release to all the world soon.  Please note, our assembly service is just for **SMD components** from https://lcsc.com/ , which is our components mall  site.
+  The price and lead time are unbeatable.
+**Setup cost is about $10, **(others maybe need $100）
+E**very pad is about $0.003/pad ** （ others maybe need $0.1/pad) 
+No stencils cost, no any other cost.
+Time is supper fast, all most the same time of PCB LEAD TIME. (12 hours after PCB ready)  
+(others need 2weeks or months)
+   
+ At present, you can order PCB and stencils from us. to assembly via hands very quickly 
