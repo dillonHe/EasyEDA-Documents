@@ -186,6 +186,8 @@ Or you can setting these two pads with the same net name at the right panel Pad 
 
 ![](images/120_PCB_PCBTool-ConnectPadToPad_2.gif)  
 
+The more information about Ratline you can refer to [Ratline](./PCB.htm#Ratline) section.
+
 
 ### Copper Area 
 
@@ -282,6 +284,11 @@ If you still draw a track in `+12V` after deselect, canvas will not display this
 ![](images/223_PCB_UnShownRatline.png)
 
 Base on this skill， you don't need lay GND net before copper area in the PCB.
+
+If you want to check the ratlines with highlight, you can click the pencil on the Ratlines Layer as below, and you can change the ratline's color.
+
+![](images/278_PCB_LayersTool_Ratlines.png)
+
 
 ## PCB Net
 
