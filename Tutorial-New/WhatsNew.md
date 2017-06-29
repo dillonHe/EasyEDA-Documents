@@ -1,6 +1,6 @@
-# What is new in V4.5.10 
+# What is new in V4.6.4 
  
-The new version is V4.5.10. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
+The new version is V4.6.4. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
 
 # New Footprint Manager
@@ -52,3 +52,12 @@ Editor provide more align options as below,
 you can try to play it , it will make your design become more convenient.
 
 ![](images/275_Introduction_Align.png)
+
+
+# Import enhance
+
+**New Altium Design Import**  
+  It is faster and better, and we support big file. Please make sure save it as Ascii before import  
+
+**Better DXF Import** 
+ Importing DXF file to PCB is better 
