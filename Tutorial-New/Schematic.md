@@ -168,7 +168,7 @@ When you create a new symbol in schematic and schematic lib, you must use `Pin` 
 
 ![](images/230_Schematic_WiringTools_Pin.png)
 
-The more information please refer to [Shematic Lib: Pin](./SchematicLibs.htm#Pins) section.
+The more information please refer to [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
 
 ### Group/Ungroup
 
@@ -918,7 +918,7 @@ After saving, you can find it at the **Parts > My Modules** section. And you can
 
 ## BOM/Netlist
 
-EasyEDA provide export the BOM file and netlist of the schematic, you can check this function via [Export](./export.htm#Export).
+EasyEDA provide export the BOM file and netlist of the schematic, you can check this function via [Export](./Export.htm#Export).
 
 
 

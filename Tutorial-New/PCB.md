@@ -459,7 +459,7 @@ From the error message, you will find that the symbol’s PIN number is differen
 From the image, we can get the PIN number in the schematic symbol is setting as `3`, but the PAD Number in the PCB Footprint is setting as `2`. Now you have know the problem, how to fix this? 
 
 - Solution One: Change the schematic symbol.
- Using [PinMap function](./schematic.htm#Pinmap-Modify-symbol-information). Change the PCB PIN from `3` to `2`. And save your schematic , and update PCB.
+ Using [PinMap function](./Schematic.htm#Pinmap-Modify-symbol-information). Change the PCB PIN from `3` to `2`. And save your schematic , and update PCB.
 
 - Solution Two: Modify the Footprint.
  Edit the Footprint, change the PAD from `2` to `3`. And set this PAD net name as same as LED2 net name of schematic.  
@@ -535,7 +535,7 @@ After convert PCB to Photo View, you can see bellow image.
   
 ## Getting Fabrication Files
 
-You can check via [Export Fabrication Files](./export.htm#Export-Fabrication-Files)
+You can check via [Exporting Fabrication Files](./Export.htm#Exporting-Fabrication-Files)
 
 
 

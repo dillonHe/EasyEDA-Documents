@@ -105,7 +105,7 @@ Contain schematic symbols and PCB footprints for many readily available componen
 
 About this module, if your partner shared his private project to you by using **Access Control** option, and then the project will show on here.  
 
-More information you can refer to [Access Control](./share.htm#Access-Control) section.
+More information you can refer to [Access Control](./Share.htm#Access-Control) section.
 
 **LCSC**
 
@@ -244,7 +244,7 @@ From here, your can change the Visibility, allow other people to comment on your
 
 
 ### Version History
-It is easy to get this fundtion, right click the document which you need to find it's version like bellow image
+It is easy to get this function, right click the document which you need to find it's version like bellow image
 ![](./images/188_Introduction_VersionHistory.png)
 
  
@@ -1060,7 +1060,7 @@ or select the ellipse and then use:
 
 Although EasyEDA saves all your files on our Server, sometimes you may want to save your work locally and EasyEDA provides a hack way to do this.
 
-More detail you can view at [Export EasyEDA Source](./export.htm#Export-EasyEDA-Source) section.
+More detail you can view at [Export EasyEDA Source](./Export.htm#Export-EasyEDA-Source) section.
 
 
 ## About upgrade 
@@ -1109,7 +1109,7 @@ If those two steps can't work, you may need to clear your browser's cache:
 -  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.
 ![](images/005_Introduction_Upgrade_RemoveChromeCache_2.png) 
 
-## How to get help?
+## How to get help
 
 It is easy to ask for help for any problem of EasyEDA, just click on **Let's Chat** then complete and Submit the Support request:
 

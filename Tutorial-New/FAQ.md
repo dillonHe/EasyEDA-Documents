@@ -244,7 +244,7 @@ You can refer to [Image](./PCB.htm#Image) of PCB section.
 
 ### How to insert a DXF board outline.
 
-You can refer to [Import DXF File](./import.htm#Import-DXF-File) of Import section.
+You can refer to [Import DXF File](./Import.htm#Import-DXF-File) of Import section.
 
 ### How to create non rectangular pcb outline such as round? 
   You can import a DXF file for board outline, For round board outline, you can use a arc to do that, you need to change to board outline layer. the draw 1 arc like bellow image(need to adjust a bit litter), use this skill, you can use lines and arcs to create any complex board outlines.

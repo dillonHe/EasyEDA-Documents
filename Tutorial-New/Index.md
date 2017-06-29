@@ -85,7 +85,7 @@
     - [Component Attributes](./schematic.htm#Component-Attributes)
 		- [Define BOM Parameters](./schematic.htm#Define-BOM-Parameters)
     - [Annotate](./schematic.htm#Annotate)
-	- [Global Delete]
+	- [Global Delete](./schematic.htm#Global-Delete)
     - [Symbol Wizard](./schematic.htm#Symbol-Wizard)
     - [Pinmap Modify symbol information](./schematic.htm#Pinmap-Modify-symbol-information)
     - [Prefix Start](./schematic.htm#Prefix-Start)

@@ -52,7 +52,7 @@ Note that you can use alphanumeric identifiers such as; A1, B1, C1, A2, B2 and s
 
 **Spice Pin order**: These are the pin numbers used to connect your symbol to the corresponding pins defined by the .model or .subckt used to simulate your device. The pin numbers of the simulation model may be different from the physical package pin numbers and - unless the model is specifically created to model multiple devices in a single package - do not change for different instances of a device in a multi-device package. The Spice Pin order must be **numerals** only.
 
-For more information about Spice Pin order please see the section on [Schematic symbols: prefixes and pin numbers](#h.6wq6zcyvmxud).
+For more information about Spice Pin order please see the section on [Prefixes And Pin Numbers](./Schematic.htm#Prefixes-And-Pin-Numbers).
 
 **Name Display**: If you don’t want to show *VCC*, switch it to NO.
 

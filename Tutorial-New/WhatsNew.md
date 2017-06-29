@@ -6,7 +6,7 @@ The new version is V4.5.10. EasyEDA has lots of new features in the version. Try
 # New Footprint Manager
 
 In this version we provide a powerful footprint manager tool.
-It support batch modify components' packages. The more detail please refer to [Footprint Manager](./schematic.htm#Footprint-Manager) section.
+It support batch modify components' packages. The more detail please refer to [Footprint Manager](./Schematic.htm#Footprint-Manager) section.
 
 ![](images/264_Schematic_FootprintManager.png)
 

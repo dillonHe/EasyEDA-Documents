@@ -232,7 +232,7 @@ If you still haven’t pulled in a .model or a .subckt then it probably means th
 
 If you’re desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
 
-If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./introduction.html#Howtogethelp)
+If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
 
 Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation but don’t worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It’s just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
 
