@@ -14,7 +14,8 @@ EasyEDA supports the design of PCBs up to 50cm * 50cm however we suggest our cus
 
 
 ##PCB Stack up
-  ###2 Layer PCB stackup 1Oz
+
+###2 Layer PCB stackup 1Oz
 ![](images/2layerStackupPCB.png)  
  
 
@@ -22,7 +23,7 @@ EasyEDA supports the design of PCBs up to 50cm * 50cm however we suggest our cus
 ![](images/2layerStackupPCB2oz.png)  
 
 
- ###4 Layer PCB stackup 1Oz
+###4 Layer PCB stackup 1Oz
 ![](images/4layerStackupPCB1oz.png) 
 
 ###4 Layer PCB stackup 2Oz
@@ -46,7 +47,7 @@ For other numbers of layers or for a different layer stack up, please email us b
 
 
 ##Different Design in Panel 
-Some customers would like to merge more than 1 PCB in the same gerber. We know you want to save money but this may make it **hard to cut the board outline** and more importantly this will take a lot more time to pick up and package the PCB. Although by ,doing this, you just have the one order, this complicates the fabrication of the panel and separation of the individual PCBs, so we will usually charge more for this. Similarly, using holes or slots as breakoff sections between boards are treated the same way as putting more than one design on a panel, each with its' own board outline. 
+Some customers would like to merge more than 1 PCB in the same gerber. We know you want to save money but this may make it **hard to cut the board outline** and more importantly this will take a lot more time to pick up and package the PCB. Although by ,doing this, you just have the one order, this complicates the fabrication of the panel and separation of the individual PCBs, so we will usually charge more for this. Similarly, using holes or slots as break off sections between boards are treated the same way as putting more than one design on a panel, each with its' own board outline. 
  
 Note: This additional charge only applies if the PCBs on a panel are different. Boards such as in the left hand image below will not incur an additional charge because they are easy to pick up but boards such as in the right hand image would incur an additional charge.
  
@@ -85,7 +86,7 @@ If you are just in the prototype phase and want to save money, then you can use 
 
 
 ##Min. Tracing/Spacing
- We support down to 4mil but to save money, please use 6mil. 
+ We support down to 4mil but to save money, please use 6mil.   
 ![](images/clearance.png)  
 
 ##Grid size
@@ -100,7 +101,7 @@ Make sure the Grid filled size is bigger than 8mil/8mil ( track/space), if less 
  We support 5% and 10% precision. Please add enough information about your impedance control requirements to help us to fabricate your PCB.
 
 ##Gold Fingers
-If you wish to built PCBs that plug directly into edge connectors, such as memory cards, please choose **Gold Fingers** as shown in the image below:
+If you wish to built PCBs that plug directly into edge connectors, such as memory cards, please choose **Gold Fingers** as shown in the image below:  
 ![](images/Gold-Fingers.png)  
 
  
@@ -121,14 +122,13 @@ For this image, we will merge 10 small PCBs to 1 big panel. If you order 5 pcs, 
 If you select the **Edge Rails**, we will add a 5mm board edge as shown in the image below:
 This is 2 rows and 5 cols panel PCB.
 
-![](images/V-cut-v-groove.png) 
- Note:    
- 1. Make sure the one single PCB's size bigger than 2cm*2cm, or we will charge $20 for the v-cut cost. Small PCB is hard to v-cut.
-  
- 2. Make sure the board outline is simply, for complex board outline, you need to panelized by your self. Or you can pay us $15 to do that, we will send the panelized gerber to you to confirm.
+![](images/V-cut-v-groove.png)   
+
+**Note:**   
+
+1. *Make sure the one single PCB's size bigger than 2cm x 2cm, or we will charge $20 for the v-cut cost. Small PCB is hard to v-cut.* 
+2. *Make sure the board outline is simply, for complex board outline, you need to panelized by your self. Or you can pay us $15 to do that, we will send the panelized gerber to you to confirm.*
       
-
-
 
 # Stencil Parameter Description
 A Stencil can help you to solder the PCB quickly. For efficient and reliable SMT assembly a Stencil is a must.

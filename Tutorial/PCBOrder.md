@@ -14,16 +14,22 @@
  
 
 ## Order Button
-To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the clcik of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
+To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the click of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
 
-![](images/pcbFabrication.png)
+![](images/142_PCB_FabricationOutput.png)
 
 ## PCB Order from EasyEDA Editor
    When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 
    
    On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price to you ASAP. 
 
- **Note.** When you add your PCB to the cart, EasyEDA saves a copy of Gerber files *at that time*. If you then change your PCB back in the PCB editor, *EasyEDA does not synchronize your Gerber files to the updated PCB design*. The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.
+ **Note:**   
+
+- *When you add your PCB to the cart, EasyEDA saves a copy of Gerber files at that time.*   
+
+- *If you then change your PCB back in the PCB editor, **EasyEDA does not synchronize your Gerber files to the updated PCB design**.*  
+
+- *The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.*
  
 ![](images/PCBOrderPage1.png) 
 
@@ -199,7 +205,7 @@ If you have any special PCB requirements, please contact us before placing your 
  
 ### Manufacturing Price
 
-Price is dependant on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
+Price is dependent on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
 
 EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB suppler than EasyEDA offering the same price and quality.
 

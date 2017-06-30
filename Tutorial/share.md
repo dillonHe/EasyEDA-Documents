@@ -1,46 +1,56 @@
 # Sharing 
-<iframe width="920" height="540" src="//www.youtube.com/embed/nBbwtPmOUj4" frameborder="0" allowfullscreen></iframe>
+
 Sharing your work with others is a big feature of web based EDA tools and EasyEDA is no exception in offering you some nice features.
 
 ## Share to Public 
 
-All projects in EasyEDA are set to private by default, to share your project with anyone, i.e. make it public, then should create your new project or right click and modify your existing project to be a Public project:
+All projects in EasyEDA are set to private by default, your private project can not to share with anyone.  
+i.e. make it public, then you should create a new project or right click and edit your existing project to be a Public project:  
 
-![](images/image34.png)
+**Create New Project：**
+![](images/164_Share_NewPublicProject.png)  
+
+**Edit Existing Project:**    
+
+When you click **Edit Project**, it will open a website to allow to set your project to be public.
+
+![](images/165_Share_EditProjectToPublic.png)  
 
 After setting as a public project, you will see that the Project folder Icon is now shown with a hand holding the folder.
 
-![](images/image140.png)
+![](images/166_Share_SharedProjectIcon.png)
 
-If you then open one of the documents in the folder, you can then click the Share icon on the toolbar to open the Share my works dialog.
+If you then open one of the documents in this share folder, you can then click the Share icon on the toolbar to open the Share my works dialog.
 
-![](images/image150.png)
+![](images/167_Share_SharedProjectShareIcon.png)
 
 ## Access Control 
 
-What about sharing with selected people?
+How about to share with selected people?
 
 Can you share a private project to your partner? Can your partner modify your designs?
 
 Yes, you can use **Access control** to do this.
 
-Right click the project and you will see the Access Control on the context menu; clicking on it will open the Access Control dialog.
+Right click the project and you will see the Access Control on the context menu; clicking on it will open the Access Control dialog.  
+After adding a user, a user icon will show up beside the project folder icon as below.
 
-![](images/image142.png)
+![](images/168_Share_AccessControl.png)
 
 So if you want to share a project with someone,
 
-1.  you just need to know their email address
+1.  You just need to know their emails address which are they have created an account in EasyEDA with these email.
 
-	and
+2.  You can share your project as **read** only or **read/write**.
 
-2.  they must have created an account in EasyEDA.
+After setting up **Access Control** and Permissions, your partner will find your project in the **Shared** section from the left hang **Navigation Panel** when they login.
 
-You can share your project as **read** only or **read/write**.
+If you partners doesn’t wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then click the Reject menu;
 
-After setting up **Access Control** and Permissions, your partner will find your project in the **Shared with Me** section from the **Navigation List** when they login.
+![](images/169_Share_SharedWithMe.png) 
 
-If you partner doesn’t wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then click the Reject menu;
+And you also can check the project of your partner shared with you in the account dashboard:  
 
-![](images/image56.png) 
+![](images/179_Share_SharedWithMe_Dashboard.png) 
+
                     

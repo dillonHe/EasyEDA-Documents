@@ -1,14 +1,14 @@
 
 # Spice Simulation
 
-<iframe width="920" height="540" src="//www.youtube.com/embed/wsAQO7X4diU" frameborder="0" allowfullscreen></iframe>
+
 ## Build the circuit 
 
 To simulate your circuit, at least until you become more familiar with the idea and concepts of simulation, first you should build a circuit as described in the chapter on **Creating The Schematic.**
 
 The circuit below is the **simulation schematic** for the **Astable Multivibrator LED project**:
 
-![](images/image37.png)
+![](images/098_SpiceSimulation_BuildTheCircuit.png)
 
 Now, to make your circuit simulatable, you should note that:
 
@@ -48,11 +48,13 @@ To probe the current in a wire you can place an instance of the Ammeter componen
 
 For an alternative method of probing voltages on nets and currents through the EasyEDA Ammeter component, see [Probe](#h.tqz4ifmtwxqz).
 
+
+
 ## Checking models and subckts
 
 You then need to check that all the devices in the simulation schematic have the necessary and the correct spice models and/or subckts.
 
-Missing spice models and subckts will be indicated in the Simulation Results… dialog after attempting to run a simulation but it is much easier to do this before uyou try to run a simulation.
+Missing spice models and subckts will be indicated in the Simulation Results… dialog after attempting to run a simulation but it is much easier to do this before you try to run a simulation.
 
 Simple components such as resistors, capacitors and inductors do not pull models into the netlist because their models are built-in to Ngspice at a very low level but almost all other components will pull in either a .model statement or a set of line enclosed in the .subckt … .ends spice keywords.
 
@@ -230,21 +232,21 @@ If you still haven’t pulled in a .model or a .subckt then it probably means th
 
 If you’re desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
 
-If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./introduction.html#Howtogethelp)
+If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
 
 Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation but don’t worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It’s just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
 
 ## Run Simulation
 
-Your schematic is ready, so now you can run it.
+Your schematic is ready, so now you can run it. **SuperMenu > Miscellaneous > Simulation > Run The...**
 
-![](images/image72.png)
+![](images/099_SpiceSimulation_RunSimulation.png)
 
 **Run the Document**: Just for the active schematic, you can also open this dialog using the `CTRL+R` hotkeys.
 
 **Run the Project**: EasyEDA will merge all the schematics in the project to one, and simulate them.
 
-![](images/image124.png)
+![](images/100_SpiceSimulation_RunSimulationConfig.png)
 
 EasyEDA provides the following simulation analyses:
 
@@ -278,11 +280,11 @@ Transient, AC Analysis and DC Sweep simulation results are shown in the WaveForm
 
 After you run a spice simulation which should plot some traces, EasyEDA will automatically open a WaveForm tab like the image below.
 
-![](images/image50.png)
+![](images/101_SpiceSimulation_WaveTab.png)
 
 The Waveform window width and height, trace, grid and background colours and the placement of traces in up to three panes can all be configured using the WaveForm Config dialog. To open the WaveForm Config dialog, click the Config button on the toolbar above the Waveform window.
 
-![](images/image162.png)
+![](images/102_SpiceSimulation_WaveformConfig.png)
 
 WaveForm allows the display of traces in any selection of up to three vertically stacked plot panes. The Y axes automatically scale to fit the units and the range of the traces being displayed. Traces can be hidden but at least one trace must be visible.
 
@@ -290,7 +292,7 @@ X and Y trace data can be seen on-screen just by moving the mouse cursor around 
 
 Delta X and delta Y trace data can be seen on-screen using a Left-Click and Drag select box, with the readout adapting to the Y axes in each pane. Returning the cursor to within a small radius of the starting point of the select box -without releasing the Left-Click - returns the readout to X and Y trace data.
 
-![](images/image98.png)
+![](images/103_SpiceSimulation_WaveformView.gif)
 
 Left-Click, Drag and then releasing the Left-Click zooms all plots, synchronised across all panes, horizontally. Double clicking anywhere in the WaveForm window resets the zoom.
 
@@ -298,7 +300,9 @@ Vertical plot zoom is not supported but traces are dynamically autoscaled to fit
 
 The window can moved around within the EasyEDA window using the horizontal and vertical scroll bars or using Right-Click and Drag.
 
-WaveForm plot data can be exported in CSV format for further analysis and manipulation in external programs such as LibreOffice Calc, Scilab or Excel, however a particular feature of EasyEDA is that the WaveForm window can not only be saved in an EasyEDA Project but that the plots in a saved WaveForm window can be viewed and manipulated in exactly the same way as when they first appear as a result of a simulation. This makes it easy to compare the results from several simulations.
+WaveForm plot data can be exported in CSV format for further analysis and manipulation in external programs such as LibreOffice Calc, Scilab or Excel, however a particular feature of EasyEDA is that the WaveForm window can not only be saved in an EasyEDA Project but that the plots in a saved WaveForm window can be viewed and manipulated in exactly the same way as when they first appear as a result of a simulation. This makes it easy to compare the results from several simulations.  
+
+![](images/104_SpiceSimulation_WaveformCSV.png)
 
 Once saved in a Project, a WaveForm window can be exported as a .pdf, .png or .svg file into your browser window. This can then be saved to your device so it is easy to create professional quality documentation.
 
@@ -318,80 +322,76 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 2.  First make a note of the exact name given in the .subckt line. Spice names are case insensitive but can only be made up from alphabetical, numeric and underscore characters.
 
-	So for example: LM741EE_demo would be a valid name and would be seen as identical to lm741ee_Demo but **LM741EE-demo** and LM741EE~demo are invalid names because they contain invalid characters.
+	For example: LM741EE_demo would be a valid name and would be seen as identical to lm741ee\_Demo but **LM741EE-demo** and **LM741EE~demo** are **invalid** names because they contain invalid characters.
 	
-	In this example we shall assume that you have a .subckt with the name: MyDIYLib
+	In this example we shall assume that you have a .subckt with the name: *Demo\_Spice\_Symbol*
 
 3.  Next, create your symbol.
 
-You need to do this using:
+	You need to do this using:
 
-**Document > New > Spice Symbol...**
+	**Document > New > Spice Symbol...** instead of: **Document > New > Schematic Lib...**
 
-instead of:
+	because that option does not support attaching a spice model to a schematic symbol.
 
-**Document > New > Schematic Lib...**
+	Using **Document > New > Spice Symbol…** also automatically sets the Spice Prefix of the symbol to X which is essential for a .subckt definition to attach to your symbol.
 
-because that option does not support attaching a spice model to a schematic symbol.
+	Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don’t have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
 
-Using **Document > New > Spice Symbol… **also automatically sets the Spice Prefix of the symbol to X which is essential for a .subckt definition to attach to your symbol.
+	![](images/105_SpiceSimulation_NewSipceSymbol.png)  
 
-Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don’t have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
+4.	You are now ready to attach your subcircuit to the symbol by opening the attached this spice symbol with subckt dialog using:
 
-![](images/spiceModelT.png)
-![](images/image86.png)   
+	**Super menu > Miscellaneous > Edit Subckt...**
 
-4.  You are now ready to attach your subcircuit to the symbol by opening the attached this spice symbol with subckt dialog using:
+	and then pasting the .subckt definition that you wish to use into the Subckt string: text area.
 
-**Super menu > Miscellaneous > Edit Subckt...**
-
-and then pasting the .subckt definition that you wish to use into the Subckt string: text area.
-
-![](images/image59.png) 
+	![](images/106_SpiceSimulation_EditSubckt.png) 
 
 5.  Click OK and save the symbol but remember: the symbol name must be identical to the name of the subckt:
 
-**.SUBCKT MyDIYLib A B C D**
+	**.SUBCKT Demo\_Spice\_Symbol A B C D**
 
 6.  Lastly, add your new spice symbol to a schematic and run a simulation.
 
-![](images/image121.png) 
+	![](images/107_SpiceSimulation_FromTextSubckt.png) 
 
 7.  If you run a DC op simulation on this example, the result, shown in the Simulation Results... window, should be 2.5V
 
- 
-
 ### 2.From a subcircuit in schematic form
 
-1.  Create a spice symbol and subckt circuit.
 
-1.  The same as (1) above, create a spice symbol and save it as “xxx”. We will use MyDIYLib in this example.
+1. Create a spice symbol and subckt circuit.
 
-2.  Next create a spice subckt as a schematic:
 
-**Document > New > Spice Subckt...**
+2. The same as (1) above, create a spice symbol.
 
-![](images/image137.png) 
 
-Draw the schematic that you want EasyEDA to turn into a subckt and attach to your symbol.
+3. Next create a spice subckt as a schematic:
 
-To connect your simulation schematic to your symbol there must be a net in the circuit that is to be attached to each pin of the symbol. Each of these connecting nets in your circuit must have the same name as that of the symbol pin to which it connects. For example if your symbol has four pins called A, B, C and D then your simulation schematic must have exactly four connecting nets; one called A, one called B, one called C and one called D.
+	**Document > New > Spice Subckt...**
 
-To attach these nets in the schematic to the pins in the symbol you must name them using NetPort from the Wiring Tools palette.
+	![](images/240_SpiceSimulation_NewSpiceSubckt.png) 
 
-Do not use NetLabel or NetFlag.
+	Draw the schematic that you want EasyEDA to turn into a subckt and attach to your symbol.
 
-NetPort is used to distinguish those subckt nets that are to connect to symbol pins from all other nets named using EasyEDA default net names and those added using NetLabel or NetFlag.
+	To connect your simulation schematic to your symbol there must be a net in the circuit that is to be attached to each pin of the symbol. Each of these connecting nets in your circuit must have the same name as that of the symbol pin to which it connects. For example if your symbol has four pins called A, B, C and D then your simulation schematic must have exactly four connecting nets; one called A, one called B, one called C and one called D.
 
-2.  Save your spice subckt with exactly the same name as your spice symbol.
+	To attach these nets in the schematic to the pins in the symbol you must name them using NetPort from the Wiring Tools palette.
 
-![](images/image129.png) 
+	**Do not use NetLabel or NetFlag.**
 
-3.  Lastly, add your new spice symbol to a schematic the same as in (1) above and run a simulation.
+	NetPort is used to distinguish those subckt nets that are to connect to symbol pins from all other nets named using EasyEDA default net names and those added using NetLabel or NetFlag.  
 
-  ![](images/image121.png)
+4. Save your spice subckt with exactly the same name as your spice symbol.
 
-4.  If you run a DC op simulation on this example, the result, shown in the Simulation Results... window, should be 2.5V
+	![](images/241_SpiceSimulation_SaveAsSpiceSubckt.png)   
+
+5. Lastly, add your new spice symbol to a schematic the same as in (1) above and run a simulation.  
+
+
+
+6. If you run a DC op simulation on this example, the result, shown in the Simulation Results... window, should be 2.5V.  
 
  
 
@@ -401,12 +401,12 @@ NetPort is used to distinguish those subckt nets that are to connect to symbol p
 
 2.  Paste your .subckt text into the schematic.
 
-3. Next, select the pasted text and, in the right hand Properties panel, change the Text type from comment to spice. This will create a spice directive which the simulator will then incorporate into the spice netlist.
-4. Next, select the symbol and, either directly in the symbol or in the right hand Properties panel, edit the Model text to exactly the same name as in your pasted subckt.
-5. Check that the Spice pin order of the symbol matches that of the pasted .subckt and edit it if necessary (not all subckts for a given type of device use the same Spice Pin order!).
-6. Save your schematic and then you can run your simulation.
+3.  Next, select the pasted text and, in the right hand Properties panel, change the Text type from comment to spice. This will create a spice directive which the simulator will then incorporate into the spice netlist.
+4.  Next, select the symbol and, either directly in the symbol or in the right hand Properties panel, edit the Model text to exactly the same name as in your pasted subckt.
+5.  Check that the Spice pin order of the symbol matches that of the pasted .subckt and edit it if necessary (not all subckts for a given type of device use the same Spice Pin order!).
+6.  Save your schematic and then you can run your simulation.
 
-![](images/image103.png)
+	![](images/image103.png)
 
 ### 4.Using .models instead of .subckts
 
@@ -419,13 +419,11 @@ NetPort is used to distinguish those subckt nets that are to connect to symbol p
 
 	The Spice Prefixes and Spice Pin names and orders for the most commonly used devices for which you may want to use different models are listed below:
 
-![](images/modelPrefix.png)
+	![](images/modelPrefix.png)
 
 Actually there is a way to save the symbol with the required Spice Prefix so that you don’t have to edit it every time you place a new instance of the symbol into a schematic … but that needs a bit more insight into editing the EasyEDA Source for the symbol so will be left for the moment.
 
-We did say that EasyEDA Source enables some powerful ways to manipulate schematic and spice files and symbols!
-
-:)
+We did say that EasyEDA Source enables some powerful ways to manipulate schematic and spice files and symbols! :)
 
 ## Advance Tips
 
@@ -612,6 +610,7 @@ then type:
 For more information on **FFT** in Ngspice, see:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.17.5.25](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.17.5.25)
+
 ----------------------------------------
 Run a DC op pnt analysis and Print the power in the load into the Simulation results window:
 

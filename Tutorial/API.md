@@ -1,53 +1,74 @@
-#EasyEDA API Plug
+# EasyEDA API Plug
+
  Before reading this capture, please check [Open EasyEDA File Format](/Doc/Open-File-Format/) first.
-##Why Need API
+
+## Why Need API
+
 After route the PCB, you found out that you need to enlarge all tracks size a bit little, How?
 After route the PCB, you found out that all Vias' hole size is too small, How to fix this?
 How to create a board outline using code? 
 EasyEDA API will let you control your designs in an easy way.
-##How to use API
 
-### How to find the plug entance
-![](./images/API-entance.png)
+## How to use API
+
+### How to find the plug entrance
+
+You can click **Config Icon > Extensions Setting** on the top toolbar image as below.
 
 ### Extensions Setting
-You can enable or disable the default extensions, after enable, please **reload** the EasyEDA editor. We will give you a file about how to create an extensions soon. 
-![](./images/Extensions-Setting.png)
+
+You can enable or disable the default extensions, after enable, please **reload** the EasyEDA editor. We will give you a file about how to create an extensions soon.   
+![](./images/171_API_ExtensionsSetting.png)
  
-If you enable the **Theme Colors** Extension, you will find a button on the tool bar like bellow image
-![](./images/Theme-Colors.png) 
-if you click the **Black On White**, you will find your schematic changes like bellow image, this is useful when you would like to print your design on a paper.
-![](./images/blackOnWhite.png).
-You can check our **github** codes of this API via [https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme), check the **manifest.json** and **main.js** out, you will find out how to create an extension.
-#### How to install an extension
+If you enable the **Theme Colors** Extension, you will find a button on the tool bar like bellow image:  
+![](./images/172_API_Extensions_ThemeColors.png)   
+
+If you click the **Black On White**, you will find your schematic changes like bellow image, this is useful when you would like to print your design on a paper.  
+![](./images/173_API_Extensions_ThemeColors_BlackOnWhite.png).  
+
+You can check our **github** codes of this API via [https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme), check the **manifest.json** and **main.js** out, you will find out how to create an extension.  
+
+**How to install an extension**
  
 1. Click the Load Extension button
 2. Click the select file button 
 3. Select **All** the files.
 4. Type a name
 5. Click the load button.
-6. **Close** EasyEDA editor and open it again.
-![](./images/installExtension.png).
+6. **Close** EasyEDA editor and open it again.  
+![](./images/174_API_Extensions_InstallExtension.png).  
+
 ### Scripts
-If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.
-![](./images/scripts.png).
-1. You can select the `Hello World`, then click the `Run` button.
+
+If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.  
+
+1. You can select the `Hello World`, then click the `Run` button, the response as below image.
 2. You can select some items, then try `Move Selected Objects`.
+3. You can install your own scripts, then they will show on **User Scripts**.
+![](./images/175_API_Scripts_RunHelloWorld.png).  
 
 ### Run Script code
-In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
-![](./images/script.png).
-**example 1 Art **
-You can open an empty schematic and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/schematicShapes.js) to the text box to run a test. After clicking the `Run` button, you will see bellow art image.
-![](./images/api-example-art.png)
 
-**example 2 Change track width and via hole size **
+In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
+![](./images/176_API_ScriptSample.png).  
+
+**example 1 Art**  
+You can open an empty schematic and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/schematicShapes.js) to the text box to run a test. After clicking the `Run` button, you will see bellow art image.  
+![](./images/177_API_ScriptSample_Art.png)
+
+**example 2 Change track width and via hole size**  
 You can open a **PCB** and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js) to the text box to run a test. After that, All tracks will be 10mil.
-##EasyEDA Coordinate System 
+
+
+## EasyEDA Coordinate System 
+
 EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.
-![](./images/coordinate.png). 
-Be careful this, they are different from **Cartesian coordinate system**
-##Unit
+![](./images/178_API_Coordinate.png).   
+
+Be careful this, they are different from **Cartesian coordinate system**  
+
+## Unit
+
 There are two kinds of unit in our editor, SVG Canvas unit and real world EasyEDA unit. SVG Canvas unit is **Pixel**. The real world EasyEDA unit in schematic is also **Pixel**, but in PCB, there are **mm**, **mil** and **inch**. We use bellow map to convert Canvas to real world.
 - 1 pixel = 10 mil
 - 1 pixel = 0.254mm
@@ -67,41 +88,51 @@ There are other convert method, such as `inch2pixel`, `pixel2mm`, `pixel2mil` an
 For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 
+## API List
 
-##API List
-###Get EasyEDA Source
+### Get EasyEDA Source
+
 1. get EasyEDA JSON objects, type is `json`, you can check  [PCB Json object](/Doc/Open-File-Format/PCBFileObject.htm) out to know more.
 
-       var result = api('getSource', {type:'json'});
+		var result = api('getSource', {type:'json'});
 
 2. get [EasyEDA compress string](/Doc/Open-File-Format/PCB.htm), EasyEDA save this string to our database, it is a bit little hard to read and understand, but it is small in size. EasyEDA save this string to our database. 
     
-       var result = api('getSource', {type:'compress'});
+		var result = api('getSource', {type:'compress'});
 
-3. Get SVG string
-       var result = api('getSource', {type:'svg'});     
+3. Get SVG string  
+
+		var result = api('getSource', {type:'svg'});     
 
 Check the [Get EasyEDA source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
-###Apply Source
- After you can use your codes to hack EasyEDA's source, then you need to apply the source to EasyEDA's editor. You can 
+
+### Apply Source
+
+ After you can use your codes to hack EasyEDA's source, then you need to apply the source to EasyEDA's editor. You can  
+ 
 1. Apply as compress string
       
-       //will open a new editor and convert compressStr to EasyEDA file.
-       api('applySource', {source:'compressStr', createNew: true});
+		//will open a new editor and convert compressStr to EasyEDA file.
+		api('applySource', {source:'compressStr', createNew: true});
 2. Apply as Json object.
 
-       //will modify the active file and convert json object to EasyEDA file.
-       api('applySource', {source: json, createNew: !true});
+		//will modify the active file and convert json object to EasyEDA file.
+		api('applySource', {source: json, createNew: !true});
 
 Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
-###Get Shape
+
+### Get Shape
+
  If you want to get an EasyEDA json object by **id**, you can try to use bellow code.
 
           var obj = api('getShape', {id:'gge13'})
-###Delete Shapes
+
+### Delete Shapes
+
   Removing shapes by follow code
    
-###Update Shape
+### Update Shape
+
  If you want to modify an EasyEDA object, you can use this API.
 
 	//Change the net to GND and the shape to ELLIPSE
@@ -112,15 +143,17 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 	"net": "GND"
 	 	"shape": "ELLIPSE"
 		});
- shapeType and gId are must provided.
-1. Schematic `shapeType`
-  `schlib`, `rect`, `polyline`, `polygon`, `wire`, `bus`, `image`, `circle`, `ellipse`, `line`, `path`, `arc`, `annotation`, `junction`, `netlabel`, `busentry`, `arrowhead`, `noconnectflag`, `pin`, `netflag`
-2. PCB `shapeType`
-  `FOOTPRINT`, `TRACK`, `COPPERAREA`, `SOLIDREGION`, `RECT`, `CIRCLE`, `TEXT`, `ARC`, `DIMENSION`, `PAD`, `VIA`, `HOLE`
+ shapeType and gId are must provided.  
+1. Schematic   
+`shapeType`, `schlib`, `rect`, `polyline`, `polygon`, `wire`, `bus`, `image`, `circle`, `ellipse`, `line`, `path`, `arc`, `annotation`, `junction`, `netlabel`, `busentry`, `arrowhead`, `noconnectflag`, `pin`, `netflag`  
+2. PCB   
+`shapeType`, `FOOTPRINT`, `TRACK`, `COPPERAREA`, `SOLIDREGION`, `RECT`, `CIRCLE`, `TEXT`, `ARC`, `DIMENSION`, `PAD`, `VIA`, `HOLE`
  
 
-###Create Shape
- If you want to create EasyEDA shape by codes, you can try. We will provide more information about this API soon, now we just provide examples. You will find out how to do. 
+### Create Shape
+
+ If you want to create EasyEDA shape by codes, you can try. We will provide more information about this API soon, now we just provide examples. You will find out how to do.   
+
 		/** with shortUrl
 		 * @example
 		 * api('createShape', {shapeType:'schlib', shortUrl:'nxlVIGgQO', from:'system', title:'556_DIL14', x:400, y:300});
@@ -239,9 +272,12 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 		 *     ])
 		 * });
 		**/ 
+
 ### UI
-   If you want to create an extension, not just a run one time script, maybe need toolbar buttoon. You can check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) before you read.
-####Create Toolbar Button
+
+   If you want to create an extension, not just a run one time script, maybe need toolbar button. You can check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) before you read.
+
+#### Create Toolbar Button
 
 
 	 //@example create a button 
@@ -264,7 +300,8 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 *  ]
 	 * });
 
-####Create Extension Menu
+#### Create Extension Menu
+
 	/**
 	 * @example  
 	 * api('createExtensionMenu', [
@@ -275,51 +312,84 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 *  }
 	 * ]);
 	 */
-###Create Dialog
-  check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) 
-###Command List
 
-####Clone
+### Create Dialog
+  check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) 
+
+### Command List
+
+#### Clone
+
       // clone gge2 gge3 and return their new ids.
       var newIds = api('clone', {ids:["gge2","gge3"]})
-####Delete
+
+#### Delete
+
 	  api('delete', {ids:["gge2","gge3"]});
-####Rotate
+
+#### Rotate
+
     // rotate ids to 90 degree
     api('rotate', {ids:["gge2","gge3"],degree:90});
-####Rotate Left
+
+#### Rotate Left
+
     //anticlockwise
     api('rotate_left', {ids:["gge2","gge3"]});
-####Rotate Right
+
+#### Rotate Right
 
     //clockwise
     api('rotate_right', {ids:["gge2","gge3"]});
-####Fliph
+
+#### Fliph
+
     api('fliph', {ids:["gge2","gge3"]});
-####Flipv
+
+#### Flipv
+
     api('flipv', {ids:["gge2","gge3"]});
-####Align Left
+
+#### Align Left
+
     api('align_left', {ids:["gge2","gge3"]});
-####Align Right
+
+#### Align Right
+
     api('align_right', {ids:["gge2","gge3"]});
-####Align Top
+
+#### Align Top
+
     api('align_top', {ids:["gge2","gge3"]});
-####Align Bottom 
+
+#### Align Bottom 
+
     api('align_bottom', {ids:["gge2","gge3"]});
-###Selection
+
+### Selection
+
  Change or get selection states of EasyEDA objects in editor.
-####Select
+
+#### Select
 
       // gge2 and gge3 will be marked as selected.
       api('select', {ids:["gge2","gge3"]});
-####Select None
+
+#### Select None
+
       //no objects will be selected.
       api('selectNone');
-####Get Selected Ids
+
+#### Get Selected Ids
+
      var ids = api('getSelectedIds');
-###Move
+
+### Move
+
 You can use [Update Shape](#UpdateShape) to change the shapes position, but the Move method is better in this case.
-####Move Objects
+
+#### Move Objects
+
 Move shapes in relative coordinates, like move the shapes in arrow keys.
 
 	//Move gge2 and gge3 from left to right in 20pixel or 200mil step
@@ -332,7 +402,8 @@ Move shapes in relative coordinates, like move the shapes in arrow keys.
 	//Move selected objects from left to right in 20pixel or 200mil step
 	api('moveObjs', {addX:20});
 
-####Move Objects To
+#### Move Objects To
+
 How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move shapes to absolute coordinates.
 	
 	 //Move gge2 and gge3 to Canvas postion 20,20, the real coordinates are dedpend the origin.
@@ -345,22 +416,28 @@ How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move s
 	 api('moveObjsTo', {x:20, y:20});
 It is very easy to understand to move a PAD, VIA, Junction to absolution coordinates. But what are the effects of moving TRACK, FOOTPRINT, netlabel to some where. Just try to play the codes, you will find out the regular pattern.
 
-###SetOriginXY
-EasyEDA's canvas origin is 0,0, you can't change it. But the real coordinates can be mapped to any where. 
-		//set the real origin point to canvas x = 400, y = 300. X,Y is pixel all the time.
-       var result = api('setOriginXY', {x:400,y:300});
-###Coordinate Convert
+### SetOriginXY
+
+EasyEDA's canvas origin is 0,0, you can't change it. But the real coordinates can be mapped to any where.   
+
+	//set the real origin point to canvas x = 400, y = 300. X,Y is pixel all the time.
+    var result = api('setOriginXY', {x:400,y:300});
+
+### Coordinate Convert
+
 You can use mm or mil or inch as units, but when you apply the Parameters to SVG graph, you must use coordinate convert. 
     
     //convert the canvas x 400 to real postion, the value is depent your units and origin point.
     var result = api('coordConvert', {type:'canvas2real',x:400})
 
-    //the default units is your canvas units, but you can add a units like 300mm. if your PCB's units is mil, then you will get the canvas coordinate 400mil,300mm.
+    //the default units is your canvas units, but you can add a units like 300mm. 
+    //if your PCB's units is mil, then you will get the canvas coordinate 400mil,300mm.
      var result = api('coordConvert', {type:'real2canvas',x:400,y:'300mm'});
 
   If you set the origin to **0,0**. It is very easy to map the coordinate in your mind, you don't need to use API to convert. the canvas coordinate **100,100** equal the real coordinate **1000mil, 1000mil** or **1inch, 1inch** or **393.7mm, 393.7mm**
 
-###Value Convert
+### Value Convert
+
  How to set the pad's hole size to 20mm? How to set the Track width to 20mil?
      
     //the default units is your canvas units, but you can add a units like mm, mil, inch, even pixel.
@@ -380,7 +457,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
 		 	"strokeWidth": 2
         }
 		});
-Or
+  Or
 
 	 api('updateShape', {
 	  	"shapeType": "TRACK",
@@ -390,14 +467,16 @@ Or
         }
 	 });
 
-###Get SVG Arc Path
+### Get SVG Arc Path
+
  SVG [Arc path Parameter](http://www.w3.org/TR/SVG11/paths.html#PathElement) is very complex,  We provide a API to convert human read ARC parameter to SVG path.
 
 	 var result = api('getSvgArcPathByCRA', {cx:0, cy:0, rx:90, ry:90, startAngle:0.1, endAngle:0.7, sweepFlag:1});
 
 result should be `M89.55037487502231 8.985007498214534A90 90 0 0 1 68.83579685560396 57.97959185139219`
 
-##Examples
-check [Github example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example)
+## Examples
+
+Check [Github example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example)
 
 Enjoy it, if you have any questions, do let us know.
