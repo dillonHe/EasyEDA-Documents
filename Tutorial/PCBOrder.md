@@ -10,7 +10,7 @@
 
    EasyEDA's PCB are in a group buy model and all PCBs are given 100% E-test This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
 
- No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn). 
+ No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](https://easyeda.com/Doc/Tutorial/PCBOrder.htm#Warranty-and-Return). 
  
 
 ## Order Button
