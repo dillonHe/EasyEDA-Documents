@@ -2,7 +2,7 @@
 
 # What is new in V4.6.4 
  
-The new version is V4.6.4. EasyEDA has lots of new features in the version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
+The new version is V4.6.4. EasyEDA has lots of new features in this version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
 ## Demo Video
 
@@ -12,7 +12,7 @@ The new version is V4.6.4. EasyEDA has lots of new features in the version. Try 
 ## New Footprint Manager
 
 In this version we provide a powerful footprint manager tool.
-It support batch modify components' packages. The more detail please refer to [Footprint Manager](./Schematic.htm#Footprint-Manager) section.
+It supports batch modifying component packages. For more detail please refer to [Footprint Manager](./Schematic.htm#Footprint-Manager) section.
 
 ![](images/264_Schematic_FootprintManager.png)
 
@@ -28,14 +28,14 @@ Center point fixed, you can change radius.
 
 ## Global Delete
 
-Have you been upset to can not delete the same units of schematic or PCB ? Now we try to solve this problem via global delete feature.
-You can easily global delete the same units which is you want.
+Have you been upset because you can't delete the same units of schematic or PCB. Now we try to solve this problem via global delete feature.
+You can easily global delete the same units that you want.
 
 ![](./images/272_Introduction_Skill_GlobalDelete.png)
 
 ## Move selected component
 
-When move the selected component, the connected wire will move vertically and horizontally.
+When moving the selected component, the connected wire will move vertically and horizontally.
 
 ![](images/273_Schematic_WireAndComponentMove.gif)
 
@@ -47,15 +47,15 @@ In BOM export dialog， you can assign LCSC part's order code for your component
 
 ![](images/085_Export_BOM_Assign.png)
 
-After clicking assign icon， will open components and packages search dialog, you can choose which component you want to assign.
+After clicking on the assign icon， the components and packages search dialog will open in which you can choose which component you want to assign.
 
 ![](images/274_Export_BOM_Assigned.png)
 
 
 ## More Align options
 
-Editor provide more align options as below,  
-you can try to play it , it will make your design become more convenient.
+The Editor provides more alignment options as below. 
+These options can make your design more convenient.
 
 ![](images/275_Introduction_Align.png)
 
