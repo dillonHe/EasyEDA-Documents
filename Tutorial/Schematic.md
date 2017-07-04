@@ -1,6 +1,6 @@
 
 # Creating The Schematic 
-During this tutorial we will create the simple Schematic design to guide you in how to use EasyEDA Schematic capture.  
+During this tutorial we will create a simple Schematic design to guide you in using EasyEDA Schematic capture.  
 
 ![](images/088_Schematic_CreateTheSchematic.gif)
 
@@ -14,7 +14,7 @@ You can find the canvas Properties setting by clicking on any the blank space 
 
 As described earlier, background and grid colours and the style, size, visibility and snap **attributes** of the grid can all be configured.
 
-The canvas area can be set directly by the Width and Height or preset frame sizes are available.
+The canvas area can be set directly by the Width and Height or by using the available preset frame sizes.
 
 ### Grid
 
@@ -26,13 +26,13 @@ The canvas area can be set directly by the Width and Height or preset frame size
 
 **Grid Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100.
 
-**Grid** (and background) colour can be set directly by entering the hexadecimal value of the colour you want or by clicking on a colour in the palette that opens when you click in the colour value box:
+**Grid** (and background) colour can be set directly by entering the hexadecimal value of the colour you want or by clicking on a colour in the palette that opens when you click on the colour value box:
 
 ![](images/047_Schematic_CanvasBackground.png)
 
 ### Snap
 
-**Snap**: Yes or No. The default hotkey is G. Press this key toggles switching snap to grid on and off.
+**Snap**: Yes or No. The default hotkey is G. Pressing this key toggles switching snap to grid on and off.
 
 **Snap Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100 but any valid number can work, such as 0.1, 1, 5.
 
@@ -66,7 +66,7 @@ There are three ways to enter the wire mode in EasyEDA.
 
 EasyEDA automatically enters **Wire** mode.
 
-Here is a screen shot of the **Astable Multivibrator LED project schematic** after wiring:
+Here is a screenshot of the **Astable Multivibrator LED project schematic** after wiring:
 
 ![](images/052_Schematic_HowToWire-AfterWire.png)
 
@@ -75,7 +75,7 @@ Here is a screen shot of the **Astable Multivibrator LED project schematic** a
 
 If you place a component, such as a resistor, on top of a wire then the wire breaks and reconnects to the ends of the component.
 
-When moving selected components using the mouse, they will drag attached wires with them (“rubber band”) to some extent but please be aware that the rubber banding feature has some limitations. When moving selected components the most wire will move vertically and horizontally. Using the arrow keys will not rubber band. Selected wires do not rubber band.
+When moving selected components using the mouse, they will drag attached wires with them (“rubber band”) to some extent but please be aware that the rubber banding feature has some limitations. When moving selected components most wire will move vertically and horizontally. Using the arrow keys will not rubber band. Selected wires do not rubber band.
 
 ![](images/273_Schematic_WireAndComponentMove.gif)
 
@@ -86,36 +86,36 @@ A selected wire can be moved directly by clicking on it using the mouse or by th
 
 ### Bus
 
-When you design a professional schematic, perhaps it will use a lot of wires. If you wiring one by one, much time would be wasted, and then you need to use `Bus`.
+When you design a professional schematic, perhaps it will use a lot of wires. If you're wiring one by one, much time would be wasted, and then you need to use `Bus`.
 
 ![](images/228_Schematic_Bus.png)  
 
 ### Bus Entry
 
-If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other nets with wires. such as above image.
+If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other nets with wires. such as in the above image.
 
 ### Net Label
 
 **NetLabel and NetFlag**
 
-**NetLabel** can be used to give your wires names to help you find them and identify any mis-connections. You can find the **NetLabel** from the Wiring Tools palette or using the `N` hotkey. When selecting the netlabel, you will find it’s attributes in the right hand Properties panel: 
+**NetLabel** can be used to give your wires names to help you find them and identify any misconnections. You can find the **NetLabel** from the Wiring Tools palette or by using the `N` hotkey. When selecting the netlabel, you will find its attributes in the right hand Properties panel: 
 
 ![](images/053_Schematic_NetLabel.gif)
 
-You can change it’s name and colour. If you only want to change it’s name, it may be easier to just double click the netlabel.
+You can change its name and colour. If you only want to change its name, it may be easier to just double click the netlabel.
 
 
 
 ### Net Flag
 
-**NetFlag** is the same as NetLabel, you can find the NetFlag from the Wiring Tools palette or using the `Ctrl+G` hotkeys for **GND** or `Ctrl+Q` for **VCC**. You can also change it’s name, for example from **VCC** to **VDD**:
+**NetFlag** is the same as NetLabel, you can find the NetFlag from the Wiring Tools palette or using the `Ctrl+G` hotkeys for **GND** or `Ctrl+Q` for **VCC**. You can also change its name, for example from **VCC** to **VDD**:
 
 ![](images/054_Schematic_NetFlag.png)
 
-The screen shot below is after adding NetLabels   
+The screenshot below is after adding NetLabels   
 
 -	indicated by the little **egg marks**   
--	and a **GND** NetFlag   
+  -and a **GND** NetFlag   
 
 This schematic is almost finished.
 
@@ -127,26 +127,26 @@ Wiring Tools palette provides NetFlag: Digital GND, Analog GND, VCC and +5V for 
 
 ### Net Port
 
-When you don't want to route too much wire , how about try  `Net Port` :  
+When you don't want to route too many wires, how about trying  `Net Port` :  
 
 ![](images/232_Schematic_WiringTools_NetPort.png)
 
-It will make your schematic looks more clean, and you just need to set each Net Port a net name.
+It will make your schematic look more clean, and you just need to set each Net Port a net name.
 
 ![](images/231_Schematic_NetPort.png)
 
 
 ### No Connect Flag
- 
+
 You can find the `NO Connect Flag` via wiring tool,   
 
 ![](images/056_Schematic_NoConnectFlagIcon.png),   
 
-In the below schematic, if you don't add a `NO Connect Flag`, there is a error flag in the nets collection of the design manager. 
+In the below schematic, if you don't add a `NO Connect Flag`, there is an error flag in the nets collection of the design manager. 
 
 ![](./images/057_Schematic_NoConnectFlagError.png)   
 
-After adding a `NO Connect Flag`, the error disappear.  
+After adding a `NO Connect Flag`, the error disappears.  
 
 ![](./images/058_Schematic_AddNoConnectFlag.gif)  
 
@@ -156,19 +156,19 @@ After adding a `NO Connect Flag`, the error disappear.
 
 ![](./images/259_Schematic_VoltageProbe.png) 
 
-EasyEDA provide simulation feature of schematic. After simulation running, the waveform you will see where were you placed the voltage probes in the circuit.
+EasyEDA provides a simulation feature for the schematic. After the simulation is running, you will see the waveform where you placed the voltage probes in the circuit.
 
 ![](images/098_SpiceSimulation_BuildTheCircuit.png)
 
-The more detail about simulation you can via [Simulation](./SpiceSimulation.htm#Spice-Simulation) section.
+For more detail about the simulation, please check the [Simulation](./SpiceSimulation.htm#Spice-Simulation) section.
 
 ### Pin
 
-When you create a new symbol in schematic and schematic lib, you must use `Pin` to create pins for new symbol, otherwise your symbol can not wiring with wires.
+When you create a new symbol in schematic and schematic lib, you must use `Pin` to create pins for the new symbol, otherwise your symbol can't be wired with wires.
 
 ![](images/230_Schematic_WiringTools_Pin.png)
 
-The more information please refer to [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
+For more information please refer to the [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
 
 ### Group/Ungroup
 
@@ -178,7 +178,7 @@ On the **Wiring Tools** palette there is the **Group/Ungroup Symbol…** butto
 
 Just like the **Symbol Wizard**, this tool is also for you to quickly create schematic library symbols.
 
-Using the **Symbol Wizard** you can just create generic symbols but how can you quickly and easily create symbols like these?
+Using the **Symbol Wizard** you can only create generic symbols but how can you quickly and easily create symbols like these?
 
 ![](images/073_Schematic_GroupSymbol.png)
 
@@ -200,7 +200,7 @@ So now select all of the items and click the Group/Ungroup Symbol… button. 
 
 After you click OK, all those separate elements will be grouped together to form your new symbol directly in the schematic.
 
-Using group function, you can create any symbol in the schematic, easily and quickly.
+Using the group function, you can create any symbol in the schematic, easily and quickly.
 
 How cool is that?
 
@@ -208,7 +208,7 @@ So what does Ungroup do? Try selecting a symbol and then click the Group/ungrou
 
 **Note:** *The pin numbers and names cannot be moved independently of the pin.*
 
-If you still hard to understand? Don't worry, you can see the dynamic image as below:
+If it's still difficult to understand, don't worry, you can see the process in the dynamic image below:
 ![](images/193_Schematic_Group.gif)
 
 
@@ -216,9 +216,9 @@ If you still hard to understand? Don't worry, you can see the dynamic image as b
 
 ### Sheet Setting
 
-It is now possible to add design notes to the frame and the frame selection, for example A4, can assist in aligning and improve the look of printed schematics and PCB designs. 
+It is now possible to add design notes to the frame and the frame selection, for example A4, which can assist in aligning and improve the look of printed schematics and PCB designs. 
 
-click the frame button like bellow image, Or via: **Super Menu > Miscellaneous > Sheet Setting**
+Click the frame button like in the image below, Or via: **Super Menu > Miscellaneous > Sheet Setting**
 
 ![](./images/214_Schematic_SheetSetting.png)
 
@@ -226,17 +226,17 @@ As illustrated in the image below:
 
 ![](./images/216_Schematic_Sheet.png)  
 
-And you can edit the blue text when you selected in the text attributes or double clicked it.
+And you can edit the blue text when you've selected the text attributes or double clicked it.
 
 
 The bottom right zone can be selected and dragged or the frame can be dragged and deleted.
 
-When you selected the bottom right zone, you can edit the sheet attributes:
+When you've selected the bottom right zone, you can edit the sheet attributes:
 ![](./images/215_Schematic_SheetSetting_Attributes.png)  
 
 ### Line
 
-In the Schematic editor, you can draw a line with any direction. Its attributes you can change as below image:
+In the Schematic editor, you can draw a line with any direction. You can change its attribute as in the image below:
 
 ![](./images/233_Schematic_DrawingTools_Line.gif)  
 
@@ -257,19 +257,19 @@ You can add arrow head to marking text or important part.
 
 ### Text
 
-Text attributes provides many parameters for setting:
+Text attributes provide many parameters for setting:
 
--	**Text**: You can change text in inner box or double click the text. Every new text, The default text is `Text`.
--	**Color**: Define text color.
--	**Font-family**: It provides 12 fonts for choosing.
--	**Font-Size**: Define Text size.
--	**Font-weight**: Define Text weight.
--	**Font-Style**: It contains (auto), normal, italic.
--	**Text-anchor**: It contains (auto), start, middle, end, inherit.
--	**Baseline**: It contains (auto), use-script, no-change, reset-size ... and so on.
--	**Text type**: type include commit and spice.
+-	**Text**: You can change text in inner box or double click the text. For every new text, the default text is `Text`.
+  -**Color**: Defines text color.
+  -**Font-family**: It provides 12 fonts for choosing.
+  -**Font-Size**: Defines Text size.
+  -**Font-weight**: Defines Text weight.
+  -**Font-Style**: It contains (auto), normal, italic.
+  -**Text-anchor**: It contains (auto), start, middle, end, inherit.
+  -**Baseline**: It contains (auto), use-script, no-change, reset-size ... and so on.
+  -**Text type**: types include comment and spice.
 
-Editor will remember your last text parameters, you will figure it out. 
+The editor will remember your last text parameters. 
 
 ![](./images/237_Schematic_DrawingTools_Text.gif) 
 
@@ -284,7 +284,7 @@ Select the place holder, so you can see the image’s attributes in the right ha
 
 ![](images/042_Introduction_ImageEdit.png)
 
-Set Href to the link to your image. For example, setting Href to:
+Set the URL of your image. For example, setting the URL to:
 
 [http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
 
@@ -296,16 +296,16 @@ Please note: at present, EasyEDA cannot host images, so you need to upload your 
 
 ### Drag
 
-If you want move some kind of parts and wires, you can use drag.  
-Or you can select parts and wires area first and move them.
+If you want to move some kind of parts and wires, you can use drag.  
+Or you can select the parts and wires area first and move them.
 
 ![](images/238_Schematic_DrawingTools_Drag.gif)
 
 ### Canvas Origin
 
-Canvas origin default set at left top corner of the schematic sheet, but you can setting it where you want via Canvas Origin.  
+Canvas origin default is set at left top corner of the schematic sheet, but you can set it where you want via Canvas Origin.  
 
-The other way to set canvas origin, you can try **Super Menu > Miscellaneous > Canvas Origin**.  
+For another way to set canvas origin, you can try **Super Menu > Miscellaneous > Canvas Origin**.  
 
 ![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
 
@@ -318,9 +318,9 @@ On the left hand Navigation panel you will find "**EElib**" and "**Parts**" ,
 
 ![](images/045_Schematic_EElib.png)
 
-Many of these components have optional US and EU style symbols, we splited them off, so you can select which you like. Click the drop down list or right click to popup the context menu, it contains many packages or parameter. EasyEDA will remember your choices next time.
+Many of these components have optional US and EU style symbols, we split them, so you can select those you like. Click on the drop down list or right click to popup the context menu, it contains many packages or parameters. EasyEDA will remember your choices for the next time.
 
-Don’t forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resisters:
+Don’t forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resistors:
 
 ![](images/046_Schematic_EElib-res.png)
 
@@ -332,9 +332,9 @@ Simply type your part number or symbol's name to Search.
 
 and then click the “Table of contents” to open the categories list to choose your components. 
 
-From there you can scroll up and down to browse parts in each category.
+From there you can scroll up and down to browse parts from each category.
 
-Suppose you wanted the find the **MAX232** (which converts signals from an [RS-232](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRS-232&sa=D&sntz=1&usg=AFQjCNFt_BArd4HZuR1QqCUxvKGW3ki3UA)  serial port to signals suitable for use in [TTL](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTransistor-transistor_logic&sa=D&sntz=1&usg=AFQjCNFoI3eJYGc8PWqUdnfqHGREfTZccw)  compatible digital logic circuits). Simply typing **Max232** into the Search and press Enter Search box:
+Suppose you wanted the find the **MAX232** (which converts signals from an [RS-232](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRS-232&sa=D&sntz=1&usg=AFQjCNFt_BArd4HZuR1QqCUxvKGW3ki3UA)  serial port to signals suitable for use in [TTL](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTransistor-transistor_logic&sa=D&sntz=1&usg=AFQjCNFoI3eJYGc8PWqUdnfqHGREfTZccw)  compatible digital logic circuits). Simply type **Max232** into the Search box and press Enter:
 
 ![](images/026_Introduction_Parts.png)
 
@@ -396,7 +396,7 @@ Clicking on a Part pins item brings up a temporary pointer:
 
 Find the component which you plan to place to your schematic, then move your mouse to the canvas and left click. If you want to add more, just left click again. To end the current sequence of placements, right click once or press `ESC`.
 
-Don't try to Drag and Drop a component to canvas: EasyEDA team thinks that Click-Click to place component will be easier to use than Click-Drag mode.
+Don't try to Drag and Drop a component to the canvas: EasyEDA team thinks that Click-Click to place components will be easier to use than a Click-Drag mode.
 
 ![](images/048_Schematic_PlacingComponents.gif)
 
@@ -409,7 +409,7 @@ The default Prefix and Value (or name) of EasyEDA components are horizontal. To 
 ...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you’re done.
 
 ## Adjusting Components
- 
+
 About adjusting components you can:
 
 1.  Move components with your mouse
@@ -426,16 +426,16 @@ About adjusting components you can:
 ![](./images/263_Schematic_CrossProbe.png)  
 
 This tool is used to cross probe from chosen objects on the current schematic to its corresponding counterparts in the PCB, or from PCB Footprints to corresponding  counterparts in the schematic. 
- 
-**Note:** *You don't need to open PCB first before you using cross probe in the schematic. Editor will auto open the PCB.*  
-And don't forget to use hotkey `SHIFT+X`.  
+
+**Note:** *You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
+And don't forget to use the hotkey `SHIFT+X`.  
 
 ![](./images/192_Schematic_CrossProbe.gif)  
 
 
 ## Multi-part Components
 
-The number of pins on some components can be quite large. That's why it's easier to divide such component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
+The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
 
 When placing the 74HC04 on a schematic, it will look like the screenshot below.   
 **Note:** *The component Prefix will be in form of: U?.1, U?.2 etc.*
@@ -445,15 +445,15 @@ When placing the 74HC04 on a schematic, it will look like the screenshot below.
 
 ## Design Manager
 
-With large schematics it can be hard to find the components quickly. Sometimes, you may make a mistake such as wiring to a wrong component pin. So you need a tool to help you out. **Design Manager** is the just tool.
+With large schematics it can be hard to find the components quickly. Sometimes, you may make a mistake such as wiring to a wrong component pin. So you need a tool to help you out. **Design Manager** is just the tool.
 
 Just press the `CTRL+D` hotkey to open the Design Manager.
 or click it via on the left navigation panel:
 ![](images/062_Schematic_DesignManager.png)
- 
+
 
 1.  **Filter**: You can find your components or net name easily: for example, if you want to find all capacitances, you just need to type `C`;
-2.  **Components**: Lists all the components in this schematic. Clicking on a Component item highlights that component and pans it to the centre of the window.
+2.  **Components**: Lists all the components in this schematic. Clicking on a Component item highlights that component and pans it to the center of the window.
 3.  **Nets**: Lists all the nets in this schematic. A net must connect at least two Pins, or the net name will be marked as a red error.
 4.  **Net Pins/Parts Pins**: Lists all the pins of the selected net name or components.
 
@@ -464,24 +464,24 @@ If you click the **Q1** Pin **1:VCC**, EasyEDA will show you where it is with a
 
 ## Footprint Manager
 
-Want to batch modify components ? Can't identify the corresponding relationship between component pins and footprint pins? Don't worry , EasyEDA can do this.
+Want to batch modify components? Can't identify the corresponding relationship between component pins and footprint pins? Don't worry, EasyEDA can do this.
 
-There are two ways to open footprint manager:
+There are two ways to open the footprint manager:
 
 - Click top toolbar Tools icon:  
-![](images/264_Schematic_FootprintManager.png) 
+  ![](images/264_Schematic_FootprintManager.png) 
 
-- Click the package input box of costumer attributes when you selected a component:  
-![](images/265_Schematic_FootprintManagerPullOut.png)
+- Click the package input box of custom attributes when you've selected a component:  
+  ![](images/265_Schematic_FootprintManagerPullOut.png)
 
 ### Update Package
 
 If you want to change the Package, for example, select a component such as Q1, from **TO-92** TO **TO220**, you just need to click in the package input box. EasyEDA will popup the footprint manager dialog. You can follow the instructions. 
-  
+
 *	Type **TO220** into the search box and search,   
-*	Select the **TO220** package,   
-*	Verify it in the preview box,  
-*	then press the **Update** button.   
+  *Select the **TO220** package,   
+  *Verify it in the preview box,  
+  *then press the **Update** button.   
 
 After that you will find you have changed the package to **TO220**.
 
@@ -492,7 +492,7 @@ After that you will find you have changed the package to **TO220**.
 
 **Batch Update/Modify Packages**
 
-If you want to modify batch components' packages, in the footprint manager dailog you can press `CTRL` and select all components you want. If your schematic has much components, you should filter them first with package name. Such as below .gif will shown you how to batch modify resistors' packages from `AXIAL-0.3` to `0603`.  
+If you want to batch modify components' packages, in the footprint manager dialog you can press `CTRL` and select all components you want. If your schematic has many components, you should filter them first with package name. Such as in the below .gif which will show you how to batch modify resistors' packages from `AXIAL-0.3` to `0603`.  
 If you want to use your own packages, you can select **My Parts** on Pattern Libraries area.
 
 ![](images/266_Schematic_FootprintManager_BatchUpdate.gif)
@@ -551,7 +551,7 @@ Various Annotate possibilities  are available:
 
 ## Symbol Wizard
 
-How many times have you hit a schematic capture roadblock because you can’t find a component symbol?
+How many times have you hit a schematic capture roadblock because you couldn't find a component symbol?
 
 Well, in EasyEDA that would be never because the **Symbol Wizard** provides a quick and easy way to create a general schematic library symbol.   
 
@@ -583,7 +583,7 @@ When you select a component, for opening the Modify symbol information dialog,
 1.**Super menu > Miscellaneous > Edit Symbol...**;  
 2.Or press the `I` hotkey;  
 3.Or click the Edit Symbol on the Parts Attributes on the left panel.  
- 
+
 Using this dialog you can edit the pin names and numbers, for example, to suit a different package or device variant. You can also enter a Spice Prefix and swap the spice Pin order to make your symbol usable in simulation.   
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
 
@@ -594,14 +594,14 @@ More detailed description of PCB and Spice Prefixes and pin numbers at next sect
 Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
 ![](./images/061_Schematic_PrefixStart.png)
 
- 
+
 ## Prefixes And Pin Numbers 
 
 Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a **Spice Prefix**. They also have two sets of pin numbers: PCB pins and Spice pins.
 
 ### PCB And Spice Prefix 
 
-The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user’s preferences. Depending on how a device is graphically represented by it’s schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
+The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user’s preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
 
 The rules on the assignment of the **Spice Prefix** of a schematic symbol are strict. This is because the Spice Prefix is used to tell the simulator which circuit element the symbol represents and therefore which simulation model it is to use.
 
@@ -692,57 +692,57 @@ Pay special attention to the order of the netnames in the subcircuit call.
 
 The spice pin ordering for the majority of opamp subcircuits is like that shown
 
-in the example below:
-	
-	*-------------------------------------------------------------------
-	
-	*
-	
-	* opamp_ANF01
-	
-	*
-	
-	* Simplified behavioural opamp
-	
-	*
-	
-	* Node assignments
-	
-	*                    noninverting input
-	
-	*                    |   inverting input  
-	
-	*                    |   |   positive supply
-	
-	*                    |   |   |   negative supply
-	
-	*                    |   |   |   |   output
-	
-	*                    |   |   |   |   |
-	
-	* spice pin order:   1   2   3   4   5
-	
-	*                    |   |   |   |   |
-	
-	.subckt opamp_ANF01 inp inn vcc vee out ; these are the netnames
-	
-	*                                         used internally to the
-	
-	*                                         subcircuit.
-	
-	B1 out 0
-	
-	+ V=(TANH((V(inp)-V(inn))*{Avol}*2/(V(vcc)-V(vee)))*(V(vcc)-V(vee))
-	
-	+ +(V(vcc)+V(vee)))/2
-	
-	*
-	
-	.ends opamp_ANF01
-	
+in the example below:  
+​	
+
+
 	*
 
- 
+	* opamp_ANF01
+
+	*
+
+	* Simplified behavioural opamp
+
+	*
+
+	* Node assignments
+
+	*                    noninverting input
+
+	*                    |   inverting input  
+
+	*                    |   |   positive supply
+
+	*                    |   |   |   negative supply
+
+	*                    |   |   |   |   output
+
+	*                    |   |   |   |   |
+
+	* spice pin order:   1   2   3   4   5
+
+	*                    |   |   |   |   |
+
+	.subckt opamp_ANF01 inp inn vcc vee out ; these are the netnames
+
+	*                                         used internally to the
+
+	*                                         subcircuit.
+
+	B1 out 0
+
+	+ V=(TANH((V(inp)-V(inn))*{Avol}*2/(V(vcc)-V(vee)))*(V(vcc)-V(vee))
+
+	+ +(V(vcc)+V(vee)))/2
+
+	*
+
+	.ends opamp_ANF01
+
+	*
+
+
 **Note:** *The spice pin order of the subcircuit call is in exactly the same order as that of the subcircuit.*
 
 Although the physical pin numbering of any device is critical for successfully mapping the pins on a schematic symbol onto a physical package footprint when laying out the PCB, because spice only knows about single devices and does not care about how they are physically packaged, each instance of any device in a spice schematic has to be mapped onto its own copy of the spice model or subcircuit, irrespective of where it is in any physical package.
@@ -751,51 +751,51 @@ Therefore, for the physical, package pin numbering of the four opamps in a quad 
 
 
 	Opamp A         pin number         spice pin order
-	
+
 	OUT                1                5
-	
+
 	IN-                2                2
-	
+
 	IN+                3                1
-	
+
 	V+                4                3
-	
+
 	V-                11                4
-	
+
 	Opamp B         pin number         spice pin order
-	
+
 	OUT                7                5
-	
+
 	IN-                6                2
-	
+
 	IN+                5                1
-	
+
 	V+                4                3
-	
+
 	V-                11                4
-	
+
 	Opamp C         pin number         spice pin order
-	
+
 	OUT                8                5
-	
+
 	IN-                9                2
-	
+
 	IN+                10                1
-	
+
 	V+                4                3
-	
+
 	V-                11                4
-	
+
 	Opamp D         pin number         spice pin order
-	
+
 	OUT                14                5
-	
+
 	IN-                13                2
-	
+
 	IN+                12                1
-	
+
 	V+                4                3
-	
+
 	V-                11                4
 
 
@@ -809,22 +809,22 @@ Exactly how this is handled is at the schematic symbol level depends on how the 
 
 In cases where the subcircuit is built by the user  as opposed to where it is supplied by a vendor for a particular device, exactly the same rules apply except that it is up to the user to specify the subcircuit pin order and to construct the symbol appropriately.
 
-Although as described earlier, built in spice models usually have defined spice pin orders, not all  subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!
+Although as described earlier, built in spice models usually have defined spice pin orders, not all  subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!  
 
-* * * * * 
+----------​
 
 [[8]](#ftnt_ref8) In Debian based distributions gerbv is listed under Electronics in the package management system. The version in the repositories may be an earlier version but some users may find it easier to install than the SourceForge archive.
 
 [[9]](#ftnt_ref9) As is the opamp_ANF01 example above
- 
-  
+
+
 ## Prefix Conflict Error
 
-Sometime, when you convert project to PCB, open the Design manager or run a simulation, you will get a Prefix Conflict error message.
+Sometimes, when you convert a project to PCB, open the Design manager or run a simulation, you will get a Prefix Conflict error message.
 
 ![](images/079_Schematic_ConvertToPCB-PrefixConflictError.png)
 
-In this schematic, you will find two components with R4 reference designator, so you just need to change one to Rx where x is a unique number in that schematic.
+In this schematic, you will find two components with the R4 reference designator, so you just need to change one to Rx where x is a unique number in that schematic.
 
 It may be tempting to backup a schematic into the same project as the original, however, if an attempt is then made to do Convert Project to PCB, you will get the Prefix Conflict error for every component.
 
@@ -836,7 +836,7 @@ To fix this, you just need to create a backup project and remove or better still
 
 ## Net Name Conflict Error
 
-Sometime, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
+Sometimes, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
 
 ![](images/081_Schematic_ConvertToPCB-NetNameConflict.png)
 
@@ -847,9 +847,9 @@ If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.
 
 ## Converting Schematics To PCB
 
-Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to take is to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
+Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
 
-**Note:** *Before converting, you need to use Design Manager to check all the components(packages/footprints) and nets(connection) to ensure no error exist.*
+**Note:** *Before converting, you need to use the Design Manager and Footprint Manager to check all the components, nets(connection) and packages/footprints to ensure no errors exist.*
 
 ![](images/076_Schematic_ConvertToPCB.gif)
 
@@ -857,13 +857,13 @@ Most of the time, schematics are created with the aim of producing a PCB. So ho
 
 To find PCB footprints to match the package type attributes of your Schematic symbols, EasyEDA will search the available PCB libraries.   
 
-EasyEDA will search your own PCB Libs on the **My Parts** section first. If it doesn’t find a matching footprint there then it will search in the System PCB Libs. 
-  
+EasyEDA will search your own PCB Libs from the **My Parts** section first. If it doesn’t find a matching footprint there then it will search in the System PCB Libs. 
+
 So, for example, if your symbol calls up a “**TO220**” package, you have a **TO220**  package in your My Parts section and there is a “**TO220**” package in the system PCB Libs, then EasyEDA will use the  “**TO220**” package in your My Parts and ignore the system PCB Lib.
 
 ### Verify Packages and Build PCB 
 
-After clicking the **Convert project to PCB** button, if the project existing errors the following dialog will open:
+After clicking the **Convert project to PCB** button, if the project has errors the following dialog will open:
 
 ![](images/077_Schematic_VerifyThePackages.png)
 
@@ -871,7 +871,7 @@ The row in red indicates that EasyEDA can’t find a PCB footprint matching th
 
 This could be because you have made an error entering the package attribute in the symbol’s Properties or maybe you haven’t yet created a PCB footprint for the package that your symbol is calling for.   
 
-In this case the package should have been **TO-92(TO-92-3)** but there is empty. To correct it on you can click on the row and change it to **TO-92(TO-92-3)**.
+In this case the package should have been **TO-92(TO-92-3)** but instead it is empty. To correct it you can click on the row and change it to **TO-92(TO-92-3)**.
 
 After making any necessary corrections, click the **Convert project to PCB** button and EasyEDA will automatically load all the package PCB footprints into the PCB editor as shown in the image below.
 
@@ -881,7 +881,7 @@ This shows the footprints placed in arbitrary positions with the connections bet
 
 ### Update PCB
 
-Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, via using the `Update PCB` button can immediately be passed forward to update the a selected PCB without having the PCB editor window already open or without creating a new PCB file.   
+Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, by using the `Update PCB` button you can immediately be passed forward to update the selected PCB without having the PCB editor window already open or without creating a new PCB file.   
   ![](./images/217_Schematic_UpdatePCB.png)    
 
 ## Hierarchy
@@ -895,7 +895,7 @@ paper), all schematics under the same project will be merged into one when be co
 ![](images/083_Schematic_MultiSheet.png)
 
 **Note:**   
-*Please make all of the prefixs unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error) on above section.*
+*Please make all of the prefixes unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error) on above section.*
 
 **Tip:**   
 *Every schematic's prefix will start from 1, such as R1, C1, U1 etc.*   
@@ -906,7 +906,7 @@ paper), all schematics under the same project will be merged into one when be co
 
 ## Modules
 
-Copying codes is an easy job for coders, now copy and reuse a schematic or PCB are easy now.
+Copying codes is an easy job for coders, now copying and reusing a schematic or PCB is easy.
 Take a power supply unit for example, you can save this unit as a schematic module.
 
 ![](./images/218_Schematic_SaveAsModule.png) 
@@ -918,8 +918,8 @@ After saving, you can find it at the **Parts > My Modules** section. And you can
 
 ## BOM/Netlist
 
-EasyEDA provide export the BOM file and netlist of the schematic, you can check this function via [Export](./Export.htm#Export).
+EasyEDA can export the BOM file and netlist of the schematic, you can check this function via [Export](./Export.htm#Export).
 
 
 
-                    
+​                    

@@ -1,6 +1,6 @@
 # Creating the Schematic Libs
 
-Using **Symbol Wizard** and **Group/Ungroup...** are a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
+Using **Symbol Wizard** and **Group/Ungroup...** is a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
 
 Start a new Schematic Lib as shown below or by doing:
 
@@ -20,7 +20,7 @@ Note the Origin Point. To simplify rotating and flipping your symbols when they
 
 ## Pins
 
-Symbols pins are the most import part of any Schematic Lib symbol. They are the things that allow wires to be attached to symbols to connect up your circuit.
+Symbols pins are the most important part of any Schematic Lib symbol. They are the things that allow wires to be attached to symbols to connect up your circuit.
 
 You can use the **P** hotkey to add a Pin or from the toolbar:
 
@@ -30,7 +30,7 @@ Before placing it on the canvas, you can use the rotation hotkey or rotate and 
 
 ![](images/090_SchematicLibs_PinDot.png)
 
-Whenever a Pin is placed as part of a symbol, the **Pin dot** should be **outside** of — and pointing away from — the symbol like example 1(correct position), inside or pointing towards the symbol as shown in example 2(wrong position).
+Whenever a Pin is placed as part of a symbol, the **Pin dot** should be **outside** of — and pointing away from — the symbol like in example 1(correct position), inside or pointing towards the symbol as shown in example 2(wrong position).
 
 ![](images/091_SchematicLibs_PinDotPlacing.png)
 
@@ -72,15 +72,15 @@ Note also that rotate and flip actions do not result in upside down or mirrored 
 
 **Show**: YES/NO. Allows you to hide the pin. When set it to NO, this Pin will be hidden when the symbol is placed on the schematic editor canvas.
 
-Note that the pin is not hidden here is in the Schematic Lib symbol editor canvas because if it was, it would disappear from view and so how would you find it to make it visible again? For the same reason this option has no effect in symbols made using Group/Ungroup…
+Note that the pin is not hidden here in the Schematic Lib symbol editor canvas because if it was, it would disappear from view and so how would you find it to make it visible again? For the same reason this option has no effect in symbols made using Group/Ungroup…
 
 *We may not have thought of everything in EasyEDA but we do try.  :)*
 
 **Electric**: [Undefined, Input, Output, I/O, Power] 
 
-EasyEDA provide Electrical Rules Checking (ERC) right now, But you still need to set electric of your Schematic libs. 
+EasyEDA provides Electrical Rules Checking (ERC) right now, But you still need to set electric of your Schematic libs. 
 
-If you set the PIN as Power and set the pin to be hidden, then the Pin will be connected by Name which is the NetLabel. If the Name is VCC, it will be connected the net in your circuit with the NetLabel or NetFlag VCC. This is helps to in keep the schematic clear and uncluttered when using Multi-part Components.
+If you set the PIN as Power and set the pin to be hidden, then the Pin will be connected by Name which is the NetLabel. If the Name is VCC, it will be connected to the net in your circuit with the NetLabel or NetFlag VCC. This is helps to keep the schematic clear and uncluttered when using Multi-part Components.
 
 After created the Lib, use `CTRL+S` will open the save dialog:
 
@@ -145,4 +145,4 @@ This is your registered user name. Other EasyEDA’s users will remember your co
 
 
 
-                    
+​                    

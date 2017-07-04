@@ -16,7 +16,7 @@ which opens the Import file from your computer dialog:
 
 ![](images/147_Import_NewImport.png)
 
-Please note in File Operation: the Extract Libs option is only supported to import Altium Designer and Eagle libraries.
+Please note that in File Operation: the Extract Libs option is only supported when importing Altium Designer and Eagle libraries.
 
 ## Import Altium Designer 
 
@@ -46,7 +46,7 @@ The image below shows an LTspice schematic imported into EasyEDA.
 
 Please note that because LTspice and EasyEDA use different simulation engines and may use different spice .model and .subckt models, you must check and if necessary edit them to ensure that they are compatible with Ngspice.
 
-The simulation statement in the imported LTspice schematic can be converted into a spice directive that will be understood by EasyEDA simply be deleting the leading “.” For example .tran statement imported as part of the LTspice simulation schematic illustrated above can be converted into the EasyEDA spice directive, tran.
+The simulation statement in the imported LTspice schematic can be converted into a spice directive that will be understood by EasyEDA simply by deleting the leading “.” For example .tran statement imported as part of the LTspice simulation schematic illustrated above can be converted into the EasyEDA spice directive, tran.
 
 You should also check and if necessary, edit or add any functions used in the simulations. For example, in Ngspice the LIMIT function does not exist natively and, although a function can be created to substitute for this missing function, the order of arguments in the Ngspice function is important whereas in the original LTspice function the order does not matter.
 
@@ -58,7 +58,7 @@ For more help in reconciling the differences between LTspice and Ngspice please 
 
 ## Import Kicad Libs 
 
-Although at present, EasyEDA can’t import Schematics and PCB from KiCad, but you can import Kicad’s schematic libs and PCB libs.
+Although at present, EasyEDA can’t import Schematics and PCB from KiCad, you can import Kicad’s schematic libs and PCB libs.
 
 You can add some of the Libs to the **My Parts** section, or place them in the canvas.
 
@@ -74,20 +74,18 @@ How to create irregular board outlines or complex board outline in EasyEDA?   Th
 Find the import DXF menu under the file menu.  
 ![](images/152_Import_DXF.png) 
 
-After select the *.DXF file, you will find a dialog like bellow image
+After selecting the *.DXF file, you will find a dialog like in the image below
 ![](images/153_Import_DXF_ImportDialog.png)
 
-EasyEDA provides two parameters, unit(mm or inch), the shapes will be applied to which layer.
+EasyEDA provides two options, unit(mm or inch), and selection of the layer to which the shapes will be applied.
 
-After click the import button, you will find them on your PCB canvas.
+After clicking the import button, you will find them on your PCB canvas.
 
 ![](images/154_Import_DXF_Imported.png)
 
- You can try this to import this example by your self. [DXF example](/Doc/Tutorial/images/example.dxf)  
+ You can try this to import this example by yourself. [DXF example](/Doc/Tutorial/images/example.dxf)  
+ 
 Please note:  
-1. The file must be a *.dxf filename extension  
-2. The circles will be convert to holes if you choose the layer as board outline.  
-3. There are some items are not supported.  
-
-
-
+1. The file must have a *.dxf filename extension  
+2. The circles will be converted to holes if you choose the layer as board outline.  
+3. There are some items which are not supported.  

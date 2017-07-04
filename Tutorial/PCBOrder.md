@@ -8,10 +8,10 @@
 ## PCB Quality
    As engineers, we have spent more than 6 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
 
-   EasyEDA's PCB are in a group buy model and all PCBs are given 100% E-test This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
+   EasyEDA's PCBs are in a group buy model and all PCBs are given 100% E-test. This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
 
  No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn). 
- 
+
 
 ## Order Button
 To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the click of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
@@ -20,7 +20,7 @@ To order PCBs from us, just click the **Fabrication Output...** button in the PC
 
 ## PCB Order from EasyEDA Editor
    When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 
-   
+
    On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price to you ASAP. 
 
  **Note:**   
@@ -30,13 +30,13 @@ To order PCBs from us, just click the **Fabrication Output...** button in the PC
 - *If you then change your PCB back in the PCB editor, **EasyEDA does not synchronize your Gerber files to the updated PCB design**.*  
 
 - *The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.*
- 
+
 ![](images/PCBOrderPage1.png) 
 
 
 ## PCB Order from Order Link
-  If you would like to upload your own Gerber files from a third party PCB tool such as Eagle, Pads, or Altium Design. To do this, just click this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
- 
+  If you would like to upload your own Gerber files from a third party PCB tool such as Eagle, Pads, or Altium Design, just click on this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
+
 ![](images/PCBOrderPage2.png) 
 
 
@@ -75,9 +75,9 @@ To order PCBs from us, just click the **Fabrication Output...** button in the PC
 </tbody>
 </table>
 
-* If your PCB requires more than the default maximum of 6 layers (up to a maximum of 16) or larger dimensions, please contact us before placing your order
- 
-* If your PCB dimensions are bigger than 45cm * 45cm, maybe add a few addition cost  
+* If your PCB requires more than the default maximum of 6 layers (up to a maximum of 16) or larger dimensions, then please contact us before placing your order
+
+* If your PCB dimensions are bigger than 45cm * 45cm, it may add some additional cost  
 
 
 ## Manufacturing Specifications:
@@ -200,14 +200,14 @@ If you have any special PCB requirements, please contact us before placing your 
 
 ## Price
 
- All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne by the customer. 
- 
- 
+All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne by the customer. 
+
+
 ### Manufacturing Price
 
 Price is dependent on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
 
-EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB suppler than EasyEDA offering the same price and quality.
+EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB supplier than EasyEDA offering the same price and quality.
 
 EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
 
@@ -236,20 +236,20 @@ EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
 <tr>
 </tbody>
 </table>
- 
+
 Note: The shipping cost is estimated. EasyEDA will always try to find the best shipping option.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp), we will ask you to pay for more or change to some other express service such as Fedex, UPS. Sometimes, we will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for delivery by Airmail.
 
 ## File Name
-If your gerber files name are good, this will save us a lot of time in checking your design. 
-There are many different PCB design software packages so there are many variations of gerber file names and filename extensions. 
+If your Gerber file names are good, this will save us a lot of time in checking your design. 
+There are many different PCB design software packages so there are many variations of Gerber file names and filename extensions. 
 
 Gerber Type
 
 ![](images/Gerber_File_name.png) 
- 
-If you don't know how to map your files, don't worry about changing the file names please contact support for help.
 
-**We encourage you to use our free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber files before place an order.**
+If you don't know how to map your files, don't worry about changing the file names and please contact support for help.
+
+**We encourage you to use our free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber files before placing an order.**
 
 ## E-Test
 All PCBs undergo a 100% AOI (Automated Optical Inspection) to make sure that all tracks and pads are connected.

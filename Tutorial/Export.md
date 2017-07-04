@@ -14,11 +14,11 @@ will open this dialog:
 
 ![](images/155_Export_SchematicExportDialog.png)
 
-From here you can choose to export your design to SVG, image (.png) and Pdf file format.
+From here you can choose to export your design to SVG, image (.png) and PDF file format.
 
 For all file formats:
 
-**Width:** 0 is a 1:1 export of your image, higher numbers zoom your image.
+**Width:** 0 is a 1:1 export of your image, higher numbers scale your image.
 
 **PenWidth-Increase:** 0 represents a default line width of 1 pixel; if you set this to 1, the line will be 2 pixels. This is illustrated in the image below.
 
@@ -36,11 +36,11 @@ Or click the top toolbar `BOM` icon:
 
 After clicking the BOM export option, the dialog below will open.
 
-In this dialog， you can assign LCSC part's order code for your components.
+In this dialog，you can assign LCSC part's order code for your components.
 
 ![](images/085_Export_BOM_Assign.png)
 
-After clicking assign icon， will open components and packages search dialog, you can choose which component you want to assign.
+After clicking on the assign icon，the components and packages search dialog will pop up, and you can choose which component you want to assign.
 
 ![](images/274_Export_BOM_Assigned.png)
 
@@ -69,8 +69,8 @@ EasyEDA can export a netlist in a variety of formats: 
 
 ### Exporting Fabrication Files
 
-When you finish your PCB, you can output the Fabrication Files(gerber file), Via as:  
-**Super menu > Miscellaneous > Fabrication Output**， Or click the Fabrication Output button of toolbar.
+When you finish your PCB, you can output the Fabrication Files(gerber file) via :  
+**Super menu > Miscellaneous > Fabrication Output**，or by clicking the Fabrication Output button from the toolbar.
 
 ![](./images/142_PCB_FabricationOutput.png)
 
@@ -80,12 +80,12 @@ It will open a webpage to you, and you can download the gerber as a zipfile.
 
 ### Exporting Generates Pick And Place File
 
-In PCB, if you want to Generates Pick And Place as a CSV file, you can via:   
+In PCB editor, if you want to generate Pick And Place as a CSV file, you can via:   
 
 **Super Menu > Miscellaneous > Generates Pick And Place File**  
 ![](images/220_Export_GeneratesPickAndPlaceFile.png)
 
-When you open CSV file which is export, you can see:  
+When you open the exported CSV file, you can see:  
 ![](images/206_Export_PickAndPlaceCSV.png)
 
 
@@ -101,7 +101,7 @@ you can open this dialog:
 
 ![](images/157_Export_PCBExport_Dialog.png)
 
-You can select to export in pdf, drawing (.png) or SVG format.
+You can select to export in PDF, drawing (.png) or SVG format.
 
 You can select to print individual layers or selected layers merged into a single file.
 
@@ -113,9 +113,9 @@ If you don’t want to order your PCBs from EasyEDA then maybe - for single and 
 
 [http://hackaday.com/2012/12/10/10-ways-to-etch-pcbs-at-home/](http://hackaday.com/2012/12/10/10-ways-to-etch-pcbs-at-home/)
 
-So here’s how you can print your PCB layer by layer and then etching it onto a PCB.
+So here’s how you can print your PCB layer by layer and then etch it onto a PCB.
 
-Step 1) Export it to Pdf, Using: **Document > Export…**, or **Document > Print…**
+Step 1) Export it to PDF, Using: **Document > Export…**, or **Document > Print…**
 
 ![](images/158_Export_PrintPDF.png)   
 
@@ -159,12 +159,11 @@ This solution doesn’t need an internet connect so if you open EasyEDA offli
 
 ## Export EasyEDA Source
 
-You can create an EasyEDA Source sourcefile via: 
+You can create an EasyEDA source file via: 
 
 **Document > EasyEDA Source...**
 
 ![](images/035_Introduction_EasyEDASource.png)  
-
 
 EasyEDA Source is a **JSON** file which can be read by many other programs. Please see:
 
@@ -174,7 +173,7 @@ for more information.
 
 The open EasyEDA Source file allows you to work on files at a text level which enables some powerful ways to manipulate schematic and spice files and symbols as well as PCB files and footprints.
 
-Copy the contents of this EasyEDA source into any text editor, then save the file. You can paste the text back into this box and click Apply to update the display. If you have made no changes to the text then the canvas will show your file exactly as if it was saved and reopened from the EasyEDA server.
+Click on the **Download** button or copy the contents of this EasyEDA source into any text editor, then save the file. You can paste the text back into this box and click Apply to update the display. If you have made no changes to the text then the canvas will show your file exactly as if it was saved and reopened from the EasyEDA server.
 
 This is a good way to share/backup your works. Your file doesn’t need to be saved to EasyEDA’s server. It can be highly compressed in any readily available format such as such as zip or 7z. It can be emailed to anyone who can then open it in EasyEDA without worrying if they have the same libraries as you.
 

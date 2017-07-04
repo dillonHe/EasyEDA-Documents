@@ -11,7 +11,7 @@ You can start a new PCB lib as shown below:
 
 ## PCBLib Tools
 
-PCBLib Tools almost are the same as PCB tools, just lack of some functions.
+PCBLib Tools almost are the same as PCB tools, just lacking some of the functions.
 ![](images/226_PCBLib_PCBLibTools.gif)
 
 
@@ -19,10 +19,10 @@ PCBLib Tools almost are the same as PCB tools, just lack of some functions.
 
 1.  It is important to set the right Snap and Grid sizes to ensure that the pads on the finished footprint snap exactly to the grid and so connect the nets. For example, if you are creating a DIP package, set the Grid size to 100mil.
 
-2.  Keep all other shapes such as component outlines and any associated pin identiifcation marks or text on the TopSilkLayer. EasyEDA will automatically take care of the actual layer assignment when you place the footprint on the PCB.
+2.  Keep all other shapes such as component outlines and any associated pin identification marks or text on the TopSilkLayer. EasyEDA will automatically take care of the actual layer assignment when you place the footprint on the PCB.
 
-3.  `CTRL+S` to save your footprint design and you will find them saved into the **Parts > My Parts > Packages** section of the left Navigation panel. 
+3.  `CTRL+S` to save your footprint designs and you will find them saved into the **Parts > My Parts > Packages** section of the left Navigation panel. 
 
 4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`
 
-	![](images/146_PCBLibs_NewPadRing.png)
+  ![](images/146_PCBLibs_NewPadRing.png)

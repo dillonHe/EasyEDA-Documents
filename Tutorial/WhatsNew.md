@@ -2,7 +2,7 @@
 
 # What is new in V4.6.4 
  
-The new version is V4.6.4. EasyEDA has lots of new features in this version. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
+EasyEDA has lots of new features in the version V4.6.4. Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 
 ## Demo Video
 
@@ -12,7 +12,7 @@ The new version is V4.6.4. EasyEDA has lots of new features in this version. Try
 ## New Footprint Manager
 
 In this version we provide a powerful footprint manager tool.
-It supports batch modifying component packages. For more detail please refer to [Footprint Manager](./Schematic.htm#Footprint-Manager) section.
+It supports batch modifying component packages. For more detail please refer to the [Footprint Manager](./Schematic.htm#Footprint-Manager) section.
 
 ![](images/264_Schematic_FootprintManager.png)
 
@@ -21,15 +21,14 @@ It supports batch modifying component packages. For more detail please refer to 
 
 ## New Arc tool
 
-A new arc tool which is center point fixed, you can change radius easily.
+A new arc tool which is center point fixed, and you can change the radius easily.
 
-Center point fixed, you can change radius.  
 ![](./images/269_PCB_Arc_Center.gif)
 
 ## Global Delete
 
-Have you been upset because you can't delete the same units of schematic or PCB. Now we try to solve this problem via global delete feature.
-You can easily global delete the same units that you want.
+Have you been upset because you couldn't delete the same units of schematic or PCB. Now we tried to solve this problem via the global delete feature.
+You can easily globally delete the same units of your choice.
 
 ![](./images/272_Introduction_Skill_GlobalDelete.png)
 
@@ -43,11 +42,11 @@ When moving the selected component, the connected wire will move vertically and 
 
 ![](images/273_Export_BOM_Icon.png)
 
-In BOM export dialog， you can assign LCSC part's order code for your components.
+In the BOM export dialog，you can assign LCSC part's order code for your components.
 
 ![](images/085_Export_BOM_Assign.png)
 
-After clicking on the assign icon， the components and packages search dialog will open in which you can choose which component you want to assign.
+After clicking on the assign icon，the components and packages search dialog will open in which you can choose the component that you want to assign.
 
 ![](images/274_Export_BOM_Assigned.png)
 
@@ -63,8 +62,8 @@ These options can make your design more convenient.
 ## Import enhance
 
 **New Altium Design Import**  
-  It is faster and better, and we support big file. Please make sure save it as Ascii before import  
+  It is faster and better, and it support big files. Please make sure that you save the file as ASCII before importing.  
 
 **Better DXF Import**    
- Importing DXF file to PCB is better 
+ Importing DXF file to PCB is better.
 

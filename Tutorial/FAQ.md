@@ -8,7 +8,7 @@ Please spend a few minutes reading this FAQ, it will save you lots of time getti
 	- *Where are my files*  
 	- *Why does EasyEDA focus on Cloud based EDA*  
 	- *How can I work if there is no internet*  
-	- *Does EasyEDA has a desktop version*  
+	- *Does EasyEDA have a desktop version*  
 	- *Which Browser is best for EasyEDA*  
 	- *How to go to your dashboard*  
 **Projects and Files**  
@@ -32,11 +32,11 @@ Please spend a few minutes reading this FAQ, it will save you lots of time getti
 **PCB**  
 	- *How to change the Units of PCB from mil to mm or inch*  
 	- *How to pick and move the components on the PCB canvas quickly*  
-	- *Can I create a PCB without to create schematic*  
+	- *Can I create a PCB without creating schematic*  
 	- *How to add more fonts for PCB*  
 	- *How to insert an Image/Logo to PCB*  
 	- *How to insert a DXF board outline*  
-	- *How to create non rectangular pcb outline such as round*  
+	- *How to create non rectangular PCB outline such as round*  
 	- *How to add a slot and cut out*  
 	- *How to measure dimensions on a PCB*  
 	- *How to add more layers*  
@@ -51,8 +51,8 @@ Please spend a few minutes reading this FAQ, it will save you lots of time getti
 	- *Keep in Mind*  
 	- *Most Common Errors on EasyEDA*  
 	- *Spice Simulation FAQ*  
-	- *How to set the resistance to a resistor*  
-	- *Where Can I found the Probe*  
+	- *How to set the resistance of a resistor*  
+	- *Where Can I find the Probe*  
 	- *Why I can't simulate my schematic*
 **Others**  
 	- *Does EasyEDA canvas use the Cartesian coordinate system*    
@@ -76,7 +76,7 @@ EasyEDA is built for people who like to work anywhere, who like to build project
 
 Although most of the time there are ways to access the internet easily and cheaply there may be times when, for whatever the reason, internet access is simply not possible. For times like this, EasyEDA is working to provide a desktop client soon.
   
-### Does EasyEDA has a desktop version?
+### Does EasyEDA have a desktop version?
 
    At present, no but EasyEDA is developing and testing a desktop version to be introduced soon. 
    
@@ -84,7 +84,7 @@ Although most of the time there are ways to access the internet easily and cheap
 
 ### Which Browser is best for EasyEDA?
 
-  **Chrome**. Firefox and Safari are OK too. If you are restricted to using other browsers, you would be better to download the EasyEDA desktop client when it becomes available (see above).
+  **Chrome**. Firefox and Safari are OK too. If you are restricted to using other browsers, it would be better to download the EasyEDA desktop client when it becomes available (see above).
 
 ### How to go to your dashboard.
 
@@ -155,7 +155,7 @@ Alternatively, you can import changes from the schematic from within the PCB Edi
 
 ### How to rename a Sheet/Document or modify description.
 
-In this menu, there is a `Modify`, so you can rename your files.  
+In this menu, there is a `Modify` option, so you can rename your files.  
 ![](./images/249_FAQ_SchematicModify.png)  
 
 ### How to find components
@@ -168,7 +168,7 @@ In the new components dialog, it is easy to select the right components via tags
 
 ### How to add sub parts to a schematic.
 
- You can add sub parts to a schematic one by one but please not that the sub parts prefix must be in the form of U1.1 U1.2 etc, and not U1.A U1.B.
+ You can add sub parts to a schematic one by one but please note that the sub parts prefix must be in the form of U1.1 U1.2 etc, and not U1.A U1.B.
  
 ![](./images/251_FAQ_AddSubpart.png)
 
@@ -187,7 +187,7 @@ In the new components dialog, it is easy to select the right components via tags
 
 To change the sheet size, move the mouse anywhere over the lower right area of the drawing border or frame until the whole border highlights red and then right-click on it. Paper size and orientation can then be changed in `Sheet Attributes` in the right hand panel.
 
-To modify the design information, left-click on the relevant blue text in the lower right area of the drawing border or frame to change it in `Text Attributes` in the right hand panel.  Double left-clicking the blue text will allow you to type new information directly in to the field. 
+To modify the design information, left-click on the relevant blue text in the lower right area of the drawing border or frame to change it in `Text Attributes` in the right hand panel.  Double left-clicking the blue text will allow you to type new information directly into the field. 
 
 ![](./images/214_Schematic_SheetSetting.png)   
 ![](./images/215_Schematic_SheetSetting_Attributes.png)
@@ -225,11 +225,11 @@ There is an option for that in PCB canvas attributes:
  
 ### How to pick and move the components on the PCB canvas quickly.
 
- Before routing the PCB, the components need to be positioned in suitable places on the PCB. In the PCB Editor, it can sometimes be quite to select components by clicking on the silkscreen outline or the pads. To select and move them more easily, please use drag mode (Hot Key `D`) or click the `Move` icon in the PCB Tools toolbar:  
+ Before routing the PCB, the components need to be positioned in suitable places on the PCB. In the PCB Editor, it can sometimes be quite difficult to select components by clicking on the silkscreen outline or the pads. To select and move them more easily, please use drag mode (Hot Key `D`) or click the `Move` icon in the PCB Tools toolbar:  
  ![](./images/252_FAQ_PCBTools_Move.png)
      
 
-### Can I create a PCB without to create schematic?
+### Can I create a PCB without creating schematic?
   Yes but for any but the simplest PCBs, please see:
   
 [https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC]( https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
@@ -247,7 +247,7 @@ You can refer to [Image](./PCB.htm#Image) of PCB section.
 You can refer to [Import DXF File](./Import.htm#Import-DXF-File) of Import section.
 
 ### How to create non rectangular pcb outline such as round? 
-  You can import a DXF file for board outline, For round board outline, you can use a arc to do that, you need to change to board outline layer. the draw 1 arc like bellow image(need to adjust a bit litter), use this skill, you can use lines and arcs to create any complex board outlines.
+  You can import a DXF file for the board outline. For a round board outline, you can use an arc to do that, you just need to change to the board outline layer, then draw 1 arc like in the image below (need to adjust a bit later), you can use lines and arcs to create complex board outlines.
 
 ![](./images/253_FAQ_ComplexOutline.png) 
 
@@ -303,7 +303,7 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
 
 ### I can't convert schematic to PCB. Why is this?
  1. You have not set the right packages for your components. 
- 2. https://easyeda.com/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error
+ 2. https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error
  3. https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages
 
 
@@ -325,7 +325,7 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
    ![](./images/035_Introduction_EasyEDASource.png)
  
   
-  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our [Support Forum](https://easyeda.com/forum); we  will respond ASAP.
+  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our [Support Forum](https://easyeda.com/forum); we will respond ASAP.
    
   
 ## Most Common Errors on EasyEDA.
@@ -339,23 +339,23 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
  
 ## Spice Simulation FAQ
 
-EasyEDA's mainly target is schematic and PCB, not for simulation. EasyEDA just support simple schematics simulation.
+EasyEDA's main target is schematic and PCB, not simulation. EasyEDA only support simple schematics simulation.
 
-### How to set the resistance to a resistor 
+### How to set the resistance of a resistor 
 
    You can use the name attribute. Just set the name or double click the value text.
 
-![](./images/260_FAQ_PartAttribute.png) 
+![](./images/260_FAQ_Resistor.png) 
 
 
-### Where Can I found the Probe?
+### Where Can I find the Probe?
 
   Voltage probe   
   ![](./images/259_Schematic_VoltageProbe.png) 
 
 ### Why I can't simulate my schematic
 
-   EasyEDA just has very few simulation models, EasyEDA is powered by [http://ngspice.sourceforge.net/](http://ngspice.sourceforge.net/) please check Ngspice to know what can be simulated.
+   EasyEDA only has very few simulation models, EasyEDA is powered by [http://ngspice.sourceforge.net/](http://ngspice.sourceforge.net/) please check Ngspice to know what can be simulated.
 
 
 ## Others.
