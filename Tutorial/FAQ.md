@@ -62,7 +62,7 @@ Please spend a few minutes reading this FAQ, it will save you lots of time getti
 
 ### How to find the list of hotkeys.
 
-[https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys](https://easyeda.com/Doc/Tutorial/introduction.htm#Hotkeys)
+[https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys](https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys)
 
 ### Where are my files?
 
@@ -88,7 +88,7 @@ Although most of the time there are ways to access the internet easily and cheap
 
 ### How to go to your dashboard.
 
-In the [dashboard](https://easyeda.com/projects/mylists), you can check all your Projects, Modules, Components and Favorites, projects others have shared with you, forum posts and orders. 
+In the [Dashboard](https://easyeda.com/projects/mylists), you can check all your Projects, Modules, Components and Favorites, projects others have shared with you, forum posts and orders. 
  
 There are two ways to arrive there.  
 
@@ -180,7 +180,7 @@ In the new components dialog, it is easy to select the right components via tags
 
 ### For a complex project, I want to split the schematic over several sheets. Does EasyEDA support hierarchy?
 
- Please check out this link [https://easyeda.com/Doc/Tutorial/schematic.htm#Hierarchy](https://easyeda.com/Doc/Tutorial/schematic.htm#Hierarchy)
+ Please check out this link [https://easyeda.com/Doc/Tutorial/Schematic.htm#Hierarchy](https://easyeda.com/Doc/Tutorial/Schematic.htm#Hierarchy)
 
  
 ### How to change the sheet size and modify the design information.
@@ -214,7 +214,7 @@ In My Parts, Right click the part then select **Add Sub Part** from the menu tha
 
 ### How to change the Package for a component.
 
-[https://easyeda.com/Doc/Tutorial/schematic.htm#Update-Package](https://easyeda.com/Doc/Tutorial/schematic.htm#Update-Package)
+[https://easyeda.com/Doc/Tutorial/Schematic.htm#Update-Package](https://easyeda.com/Doc/Tutorial/Schematic.htm#Update-Package)
 
 ## PCB
 
@@ -314,7 +314,7 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
 
 ##Keep in Mind
 
-  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/introduction.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
+  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/Introduction.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
   
    ![](./images/257_FAQ_DownloadProject.png)
   
