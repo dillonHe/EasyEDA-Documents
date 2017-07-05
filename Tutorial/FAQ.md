@@ -119,17 +119,14 @@ There are two ways to arrive there.
 
 ### How to share a project with others.
 
-   1. Make your project public.
-  Open [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists), then click the red `No entry' icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
-   ![](./images/250_FAQ_ShareProjectToPublic.png)  
+1. Make your project public.  
+Open [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists), then click the red `No entry' icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
+![](./images/250_FAQ_ShareProjectToPublic.png)  
 
-   2. To share a project privately with only selected collaborators via: 
-   
-	[Access Control](https://easyeda.com/Doc/Tutorial/share.htm#Access-Control) 
-   
-	You can right click your project and select the access control menu:
-
-	![](./images/168_Share_AccessControl.png) 
+2. To share a project privately with only selected collaborators via:  
+[Access Control](https://easyeda.com/Doc/Tutorial/Share.htm#Access-Control)   
+You can right click your project and select the access control menu:
+![](./images/168_Share_AccessControl.png) 
   
        
 ### How to find the version history of schematics and PCBs.
