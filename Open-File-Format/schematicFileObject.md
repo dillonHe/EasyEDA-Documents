@@ -1,15 +1,15 @@
 #EasyEDA Schematic File Object
 
-Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt are used the same  format. 
+Note: Schematic, Schematic Library, Spice Symbol, Subpart and Subckt use the same format. 
 
-*EasyEDA Schematic File Object* is a JSON Object which allows you to hack your designs via other language, such as Javascript, Python, PHP, C, C++. The funny thing is that your can control/modify your design in EasyEDA editor via Javascript language.
+*EasyEDA Schematic File Object* is a JSON Object which allows you to hack your designs via other languages, such as Javascript, Python, PHP, C, C++. The interesting thing is that your can control/modify your design in EasyEDA editor via Javascript language.
 
 ##Rules
 ### JSON Keys
  Every EasyEDA graph unit has an unique key, such as  "**wire**", "**schlib**", "**junction**", "**bus**", "**busentry**", "**netlabel**", "**netflag**", "**pin**", "**polyline**", "**path**", "**arc**", "**rect**", "**polygon**", "**arrowhead**", "**ellipse**", "**image**"
 
 ### itemOrder key
-   Becuase of an object in EasyEDA  is an unordered set of name/value pairs in [JSON format](http://json.org/), but EasyEDA's graphs are ordered. We need an array to store the order of these objects. Every schematic lib has an itemOrder key and the whole JSON object has an itemOrder key.
+   Because an object in EasyEDA  is an unordered set of name/value pairs in [JSON format](http://json.org/), but EasyEDA's graphs are ordered. We need an array to store the order of these objects. Every schematic lib has an itemOrder key and the whole JSON object has an itemOrder key.
 
 ##Example
 ### File
@@ -40,13 +40,13 @@ Open [Schematic Example ](https://easyeda.com/file_view_Schmatic-File-Object_TLJ
                 }
             ]
         }
-		..........
+    	..........
     }
 
 All wires will be stored to **wire** key, their id will be taken as the key such as `gge48`.
 
 ### schlib
-  All schematic components will be stored to **schlib**, their id will be taken as the key such as `gge7`. Schematic component JSON is bit litter complication, it has lots of other **JSON Keys**, such as `polyline`, `image`, `path` etc.
+  All schematic components will be stored to **schlib**, their id will be taken as the key such as `gge7`. Schematic component JSON is a little bit complicated, it has lots of other **JSON Keys**, such as `polyline`, `image`, `path` etc.
 
 Note: please check the other shapes format via below JSON example 
 ### JSON example

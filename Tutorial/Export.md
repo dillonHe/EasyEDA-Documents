@@ -18,7 +18,7 @@ From here you can choose to export your design to SVG, image (.png) and PDF file
 
 For all file formats:
 
-**Width:** 0 is a 1:1 export of your image, higher numbers scale your image.
+**Width:** This is images' width , 0 is a 1:1 export of your image, higher numbers scale your image , if you set number as 1024 , the width will be 1024 pixels of the export PNG .
 
 **PenWidth-Increase:** 0 represents a default line width of 1 pixel; if you set this to 1, the line will be 2 pixels. This is illustrated in the image below.
 
@@ -101,7 +101,9 @@ you can open this dialog:
 
 ![](images/157_Export_PCBExport_Dialog.png)
 
-You can select to export in PDF, drawing (.png) or SVG format.
+You can select to export in PDF, drawing (.PNG) or SVG format.
+
+**Note:** *If you want to print the PCB 1:1 with the paper, you need to choose to export PDF(1:1).*
 
 You can select to print individual layers or selected layers merged into a single file.
 
