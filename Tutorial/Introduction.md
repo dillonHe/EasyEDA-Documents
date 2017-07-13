@@ -42,7 +42,7 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 -   Simple but powerful general drawing capabilities
 -   Schematic symbol, spice model and PCB footprint library management
 -   Online sharing of and collaborative working on 
-  -	schematics, simulations, PCB layouts, designs and projects
+  - schematics, simulations, PCB layouts, designs and projects
 
 
 ## UI introduction
@@ -70,7 +70,7 @@ Before using the Filter, you need to select what module you need in the left nav
 
 ![](images/007_Introduction_The-Clear-UI_Filter.png)  
 
-Filter only searches project, file and part titles and names. It does not search the Description and Content fields.
+The Filter only searches project, file and part titles and names. It does not search the Description and Content fields.
 
 Click the X to clear the filter.
 
@@ -82,7 +82,7 @@ The Navigation panel is very important for EasyEDA: it is from here that you c
 ![](images/009_Introduction_The-Clear-UI_Navigation-Panel.png)  
 
 **Project**
-Here, You can find all of your projects that are private or shared to the public, or fork from someone else's. 
+Here, You can find all of your projects that are private or shared with the public, or fork from someone else's. 
 
 Except for System IC, these options have a content menu. For example, if you drop down to My Projects and right click an item, you will get a tree menu like :
 
@@ -95,7 +95,7 @@ EElib means EasyEDA Libraries, It provides lots of components complete with simu
 
 **Design**
 
-Design manager, you can check each components and nets easily, and it will provide DRC(Design rule check) to help your design better.
+Design Manager, you can check each component and net easily, and it will provide DRC(Design rule check) to help your design better.
 
 **Parts** 
 
@@ -109,7 +109,7 @@ For more information you can refer to the [Access Control](./Share.htm#Access-Co
 
 **LCSC**
 
-If you want to buy components to finsh your PCBA, you should try the **LCSC** module, LCSC.com and EasyEDA are the same company.
+If you want to buy components to finish your PCBA, you should try the **LCSC** module, LCSC.com and EasyEDA are the same company.
 
 EasyEDA partners with China’s largest electronic components online store by customers and ordering quantity launch [https://lcsc.com](https://lcsc.com).
  LCSC means **L**ove **C**omponents? **S**ave **C**ost! We suggest to our users to use LCSC parts to design. Why?   
@@ -136,7 +136,7 @@ The configure dialog is also easy to use:
 
 ![](images/013_Introduction_The-Clear-UI_Common_Buttons_Settings.png)
 
-Click on a button to select it. Then you can toggle button visibility by clicking on Show/Hide or by clicking on the tick space to the the left of the button icon. You can change the button position using Move up and Move Down.
+Click on a button to select it. Then you can toggle button visibility by clicking on Show/Hide or by clicking on the tick space to the left of the button icon. You can change the button position using Move up and Move Down.
 
 Many of the buttons have been assigned hotkeys, so you can use those to replace the button actions.
 
@@ -155,7 +155,7 @@ You can close or open this dialog via:
   ![](images/213_Introduction_UI_PreviewDialog.png)
 
 
--	Clicking on the little pencil edit tool opens the item in the preview for editing. Clicking on the location place tool in the top right corner of the preview dialog places the item onto the canvas. If you try to place PCB footprint into a schematic it will not provide any action and message.
+- Clicking on the little pencil edit tool opens the item in the preview for editing. Clicking on the location place tool in the top right corner of the preview dialog places the item onto the canvas. If you try to place PCB footprint into a schematic it will not provide any action and message.
 
 #### 5. Wiring Tools
 
@@ -170,7 +170,7 @@ Wiring Tools are document type sensitive: different document types have differe
 
 #### 7. Super menu
 
-All EasyEDA’s menus can be found here. Most of the time, we hope you can access these options via the Hotkeys or from the top toolbar but if you find that you use some of the more specialised options from this menu frequently then may want to set them as you own hotkeys.
+All EasyEDA’s menus can be found here. Most of the time, we hope you can access these options via the Hotkeys or from the top toolbar but if you find that you use some of the more specialized options from this menu frequently then may want to set them as you own hotkeys.
 
 ![](images/016_Introduction_The-Clear-UI_Super-Menu.png)
 
@@ -186,7 +186,7 @@ You can find the canvas Properties setting by clicking on any of the blank spac
 
 ![](images/017_Introduction_The-Clear-UI_Canvas-Attributes.png)
 
-Background and grid colours and the style, size, visibility and snap attributes of the grid can all be configured.
+Background and grid colors and the style, size, visibility and snap attributes of the grid can all be configured.
 
 The canvas area can be set directly by the Width and Height or from available preset frame sizes.
 
@@ -291,7 +291,7 @@ On the left hand Navigation panel you will find "**EElib**" and "**Parts**"，j
 
 **Create symbols**
 
-EasyEDA support creating symbols by yourself, after created you can find out your components at **Parts > My parts**， and it is easy to manage your parts.
+EasyEDA supports creating symbols by yourself, after created you can find out your components at **Parts > My parts**， and it is easy to manage your parts.
 
 To prepare for the final assembly stage you can create a Bill of Materials (**BOM**) via:
 
@@ -425,7 +425,7 @@ EasyEDA provides a team feature with which you can work seamlessly with your par
    ![](./images/210_Introduction_Account_SwitchToTeamEditor.png)  
 
 **How to Upgrade to a team**
-  If you want to contribute all of your designs to a team, you can use this function. First you need to create a team, then click the link, shown below, under dashboard. 
+  If you want to contribute all of your designs to a team, you can use this function. First you need to create a team, then click the link, shown below, under the dashboard. 
 
   **Be careful！**, because after you do that, **all** of your components, projects will be moved to your team.
 
