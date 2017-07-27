@@ -147,7 +147,7 @@ You can draw a circle in PCB , but it can only be drawn at SilkLayer and Documen
 
 This option is same as schematic's drag.
 
-### HOLE
+### Hole
 
 There were lots of users that didn't know how to use PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA added a HOLE TOOL in the PCB toolbar.  
 ![](./images/139_PCB_PCBTool_Hole.png)

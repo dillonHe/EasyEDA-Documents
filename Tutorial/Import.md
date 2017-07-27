@@ -36,36 +36,7 @@ In the Import file from your computer dialog to the right of File Operation; ti
 
 Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
 
-## Import LTspice 
 
-EasyEDA has all of the standard symbols of LTspice built in so if your LTspice schematic includes only LTspice native symbols (i.e. no symbols which have been created by any third party) then you can import them directly into EasyEDA. If your schematic does contain third party symbols then you should import the symbol (.asy) files first and then import the schematic (.asc) file.
-
-The image below shows an LTspice schematic imported into EasyEDA.
-
-![](images/150_Import_LTspice.png)
-
-Please note that because LTspice and EasyEDA use different simulation engines and may use different spice .model and .subckt models, you must check and if necessary edit them to ensure that they are compatible with Ngspice.
-
-The simulation statement in the imported LTspice schematic can be converted into a spice directive that will be understood by EasyEDA simply by deleting the leading “.” For example .tran statement imported as part of the LTspice simulation schematic illustrated above can be converted into the EasyEDA spice directive, tran.
-
-You should also check and if necessary, edit or add any functions used in the simulations. For example, in Ngspice the LIMIT function does not exist natively and, although a function can be created to substitute for this missing function, the order of arguments in the Ngspice function is important whereas in the original LTspice function the order does not matter.
-
-For more help in reconciling the differences between LTspice and Ngspice please refer to the LTspice Help files and the Ngspice User Manual:
-
-[http://ngspice.sourceforge.net/docs/ngspice-manual.pdf](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf)
-
- Please also see the section on: [How to get help?](./Introduction.htm#How-to-get-help)
-
-## Import Kicad Libs 
-
-Although at present, EasyEDA can’t import Schematics and PCB from KiCad, you can import Kicad’s schematic libs and PCB libs.
-
-You can add some of the Libs to the **My Parts** section, or place them in the canvas.
-
-The image below illustrates some imported Kicad Schematic and Footprint libs:
-
-![](images/151_Import_KicadLibs.png)
- 
                     
 
 ## Import DXF File 
