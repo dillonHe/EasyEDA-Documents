@@ -5,8 +5,7 @@ EasyEDA provides importing from:
 
 -   Altium/ProtelDXP Ascii Schematic/PCB
 -   Eagle Schematic/PCB/libs
--   LTspice Schematic/symbols (some editing may be required for Ngspice compatibility)
--   Kicad libs/modules (symbol and footprint libraries)
+
 
 You can find the import menu from the Document menu:
 
