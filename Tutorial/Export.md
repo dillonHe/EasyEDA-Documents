@@ -44,7 +44,11 @@ After clicking on the assign icon，the components and packages search dialog wi
 
 ![](images/274_Export_BOM_Assigned.png)
 
-Clicking the Export button downloads a BOM.csv file via your browser, you can open it in any text editor or spreadsheet.
+When you click "Export BOM at LCSC", we will help you to list all the components of your BOM,  If you want to buy the components form LCSC, and you just need to put them to the cart and check out.  
+![](images/284_Export_BOM_ExportBOMDailog.png)  
+
+![](images/283_Export_BOM_ExportFromLCSC.png)
+And Click the "BOM" button to download the BOM file. You can open it in any text editor or spreadsheet.
 
 ![](images/086_Export_BOM_CSV.png)
 

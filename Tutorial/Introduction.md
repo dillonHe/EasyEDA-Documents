@@ -431,14 +431,14 @@ EasyEDA provides a team feature with which you can work seamlessly with your par
 
 ![](./images/212_Introduction_Account_UpgradeToTeam.png)  
 
-**Tips about the team function.**
-    1. If you switch to a team, you can't automatically use any Packages/Footprints which you have created under your personal account. You need to **Favorite** your personal package/components first. 
+**Tips about the team function.**  
+1.If you switch to a team, you can't automatically use any Packages/Footprints which you have created under your personal account. You need to **Favorite** your personal package/components first. 
 
-    2. You need to be aware that your team and your personal accounts are the different, separate accounts and that you can't use them both at the same time.  
+2.You need to be aware that your team and your personal accounts are the different, separate accounts and that you can't use them both at the same time.  
 
-    3. After making yourself the owner of a team, it is best to create any Components and Packages needed by the team under that team.
+3.After making yourself the owner of a team, it is best to create any Components and Packages needed by the team under that team.
 
-    4. If you add a member, nominated to be your accountant, to your team then they can deal the team billing and invoices.
+4.If you add a member, nominated to be your accountant, to your team then they can deal the team billing and invoices.
 
 
 #### User Preferences
@@ -1052,7 +1052,10 @@ or select the ellipse and then use:
 
 **Align > Send to Back**
 
+#### Documents Tab Switch
 
+It's easy to fit your documents tab location.  
+![](images/279_Introduction_EditorTabSwitch.gif)
 
 #### Saving Your Work Locally
 

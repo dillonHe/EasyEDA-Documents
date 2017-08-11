@@ -340,6 +340,11 @@ Suppose you wanted the find the **MAX232** (which converts signals from an [RS-2
 
 When you hover the mouse over the picture of the Schematic symbol or PCB footprint, you will find a toolbar with ”Edit”, “Place”, “More” buttons.
 
+**LCSC Assembly Components**
+
+We add an LCSC Assembly Components option of the Parts, It's easy to choose which component can be assembled by LCSC. Yes, We  provide the assembly service.
+![](images/282_Schematic_Parts_AssemblyComponents.png)
+
 **Place**:
 For parts you use infrequently, you don’t need to Favorite them; just Place it into your canvas directly.  
 
@@ -473,6 +478,10 @@ There are two ways to open the footprint manager:
 
 - Click the package input box of custom attributes when you've selected a component:  
   ![](images/265_Schematic_FootprintManagerPullOut.png)
+
+1.Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert. 
+2.In the preview area, you can zoom in, zoom out and pan with mouse.
+![](images/281_Schematic_FootprintManagerEnhance.png)
 
 ### Update Package
 

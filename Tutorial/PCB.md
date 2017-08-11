@@ -175,6 +175,11 @@ The image will be inserted to the active layer, if it is not right, you can chan
 
 This option is the same as schematic's Canvas Origin.
 
+### Protractor
+
+We provide a protractor for PCB tools.  
+![](images/280_PCB_PCBTools_Protractor.gif)
+
 ### Connect Pad to Pad
 
 When creating a PCB without a Schematic, none of the pads on the Footprints have nets connecting them so there will be no ratlines. 
