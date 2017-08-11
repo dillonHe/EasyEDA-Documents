@@ -1,0 +1,18 @@
+{
+	"title" : "Tutorial",
+	"files" : [
+		"WhatsNew.md",
+		"Introduction.md",
+		"Schematic.md",
+		"SchematicLibs.md",
+		"SpiceSimulation.md",
+		"PCB.md",
+		"PCBLib.md",
+		"Import.md",
+		"Export.md",
+		"Share.md",
+		"API.md",
+		"PCBOrder.md",
+		"FAQ.md"
+	]
+}
