@@ -1,8 +1,8 @@
 
 # What is new in V4.8.5 
  
-EasyEDA has lots of new features in the version v4.8.5.  
-Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
+LCEDA has lots of new features in the version v4.8.5.  
+Try it via [https://lceda.cn/editor](https://lceda.cn/editor).
 
 ## Demo Video
 
