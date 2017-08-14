@@ -12,7 +12,7 @@ Try it via [https://lceda.cn/editor](https://lceda.cn/editor).
 ## Desktop Version 
 
 We are glad to tell you that we are providing desktop version now. In desktop version you can keep your design at local.   
-The more information and download, Please refer to [https://easyeda.com/page/download](https://easyeda.com/page/download)  
+The more information and download, Please refer to [https://lceda.cn/page/download](https://lceda.cn/page/download)  
 
 ![](images/285_Introduction_DesktopVersion.png)
 
