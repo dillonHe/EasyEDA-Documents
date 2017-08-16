@@ -28,7 +28,6 @@ We add a protractor for PCB tools.
 ![](images/280_PCB_PCBTools_Protractor.gif)
 
 ## 封装管理器功能增强
-
 1.Footprint manager will check your part's package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.   
 Notice：If your schematic have many different packages, the footprint manager will take a few seconds to the check the packages.  
 2.In the preview area, you can zoom in, zoom out and pan with mouse.  
