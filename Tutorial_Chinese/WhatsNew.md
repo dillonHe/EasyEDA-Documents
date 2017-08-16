@@ -1,54 +1,44 @@
 
-# What is new in V4.8.5 
- 
-LCEDA has lots of new features in the version v4.8.5.  
-Try it via [https://lceda.cn/editor](https://lceda.cn/editor).
-
-## Demo Video
+# 演示视频
 
 <iframe frameborder="0" width="906" height="610" src="https://v.qq.com/iframe/player.html?vid=r05228zg4fw&tiny=0&auto=0" allowfullscreen></iframe>
 
 
-## Desktop Version 
+# 更新说明—v4.8.5版
+ 
+LCEDA/立创EDA在v4.8.5版添加了很多新特性.  
+请前往编辑器体验：[https://lceda.cn/editor](https://lceda.cn/editor).
 
-We are glad to tell you that we are providing desktop version now. In desktop version you can keep your design at local.   
-The more information and download, Please refer to [https://lceda.cn/page/download](https://lceda.cn/page/download)  
 
-![](images/285_Introduction_DesktopVersion.png)
+## 桌面客户端下载
 
-## Documents Tab Switch
+我们已经提供桌面客户端下载，下载地址： [https://lceda.cn/page/download](https://lceda.cn/page/download)  
+**请注意：**若网页版和客户端几乎同时进行修改保存时，客户端会出现感叹号提示同步冲突，此时你需选择所需的对应版本（Use Cloud，使用云端版本；Use Local，使用本地版本），否则在客户端的修改将不会被同步至服务器，且gerber导出也不会应用客户端最新的PCB。
+
+![](images/283_Introduction_DesktopVersionSyncConflict.png)
+
+## 文件标签切换
 
 It's easy to fit your documents tab location.  
 ![](images/279_Introduction_EditorTabSwitch.gif)
 
-## Protractor
+## 量角器
 
 We add a protractor for PCB tools.  
 ![](images/280_PCB_PCBTools_Protractor.gif)
 
-## Footprint Manager Enhanced
+## 封装管理器功能增强
 
 1.Footprint manager will check your part's package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.   
 Notice：If your schematic have many different packages, the footprint manager will take a few seconds to the check the packages.  
 2.In the preview area, you can zoom in, zoom out and pan with mouse.  
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
-## LCSC Assembly Components
+## 新增立创贴片零件库
 
-We add an LCSC Assembly Components option of the Parts, It's easy to choose which component can be assembled by LCSC.   
-Yes, We will provide the assembly service at end of this year.
+我们新增了一个立创可贴片零件库，这个库属于立创商城库的子集，可方便使用立创贴片服务的用户选料，里面包含了690种零件，数量在不断增加中。预计今年年底就可以提供贴片服务，敬请期待。
+
 ![](images/282_Schematic_Parts_AssemblyComponents.png)
-
-## Buy Components From LCSC More Easily
-
-We change the BOM export location in at LCSC.
-![](images/284_Export_BOM_ExportBOMDailog.png)  
-
-When you click "Export BOM at LCSC", we will help you to list all the components of your BOM,  and you just need to put them to the cart and check out.  
-
-![](images/283_Export_BOM_ExportFromLCSC.png)
-And Click the "BOM" button to download the BOM file.
-
 
 
 
