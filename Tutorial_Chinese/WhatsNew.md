@@ -15,7 +15,7 @@ LCEDA/立创EDA在v4.8.5版添加了很多新特性.
 我们已经提供桌面客户端下载，下载地址： [https://lceda.cn/page/download](https://lceda.cn/page/download)  
 **请注意：**若网页版和客户端几乎同时进行修改保存时，客户端会出现感叹号提示同步冲突，此时你需选择所需的对应版本（Use Cloud，使用云端版本；Use Local，使用本地版本），否则在客户端的修改将不会被同步至服务器，且gerber导出也不会应用客户端最新的PCB。
 
-![](images/283_Introduction_DesktopVersionSyncConflict.png)
+![](images/283_Introduction_DesktopSyncConflict.png)
 
 ## 文件标签切换
 
