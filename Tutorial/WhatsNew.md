@@ -18,7 +18,7 @@ The more information and download, Please refer to [https://easyeda.com/page/dow
 **Notice:** *If you edit the same document in the desktop version and web editor at the same time, the desktop version will show the data sync conflicts icon beside the avatar,
 click it and you have to choose which side data you want, otherwise your local changes will not sync to the server, and the gerber output will not generate from the latest PCB of the desktop version too.*
 
-![](images/285_Introduction_DesktopVersion.png)
+![](images/285_Introduction_DesktopVersionSyncConflict.png)
 
 ## Documents Tab Switch
 
