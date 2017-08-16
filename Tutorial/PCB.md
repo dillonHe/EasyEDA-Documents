@@ -474,7 +474,7 @@ From the image, we can get the PIN number in the schematic symbol is set as `3`,
    So, we should be aware that PIN number should be the same as Pad number.
 
 
-## DRC
+## Design Rule Check
 
 EasyEDA provides a powerful real time DRC(Design Rule Check) function. 
 

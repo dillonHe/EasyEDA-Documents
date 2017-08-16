@@ -15,6 +15,9 @@ Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 We are glad to tell you that we are providing desktop version now. In desktop version you can keep your design at local.   
 The more information and download, Please refer to [https://easyeda.com/page/download](https://easyeda.com/page/download)  
 
+**Notice:** *If you edit the same document in the desktop version and web editor at the same time, the desktop version will show the data sync conflicts icon beside the avatar,
+click it and you have to choose which side data you want, otherwise your local changes will not sync to the server, and the gerber output will not generate from the latest PCB of the desktop version too.*
+
 ![](images/285_Introduction_DesktopVersion.png)
 
 ## Documents Tab Switch
