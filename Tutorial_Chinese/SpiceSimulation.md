@@ -1,8 +1,8 @@
 
-# Spice Simulation
+# Spice仿真
 
 
-## Build the circuit 
+## 构建电路 
 
 To simulate your circuit, at least until you become more familiar with the idea and concepts of simulation, first you should build a circuit as described in the chapter on **Creating The Schematic.**
 
@@ -28,7 +28,7 @@ These default net names are usually of the form N001, N002, etc.
 
 Adding NetLabels to name nets (wires or nodes) which you would like to observe (probe) makes it much easier to identify traces when the simulator shows them in WaveForm. Remember that in any circuit, you may want to probe the voltages on nets other than the obvious Input or Output nodes that may be the nets you first think you will want to probe.
 
-## Probing voltages and currents
+## 探测电压和电流
 
 To probe voltages, you can add some Voltage Probes which can be found in the Wiring Tools palette. These will appear on your schematic auto-numbered as volProbe1, volprobe2, etc.
 
@@ -46,7 +46,7 @@ For an alternative method of probing voltages on nets and currents through the E
 
 
 
-## Checking models and subckts
+## 检查模块和子电路
 
 You then need to check that all the devices in the simulation schematic have the necessary and the correct spice models and/or subckts.
 
@@ -232,7 +232,7 @@ If you’re really desperate then if you ask us nicely we just might find or eve
 
 Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation, but don’t worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It’s just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
 
-## Run Simulation
+## 运行仿真
 
 Your schematic is ready, so now you can run it. **SuperMenu > Miscellaneous > Simulation > Run The...**
 
@@ -268,7 +268,7 @@ the maximum value of (Stop Time-Start Time)/(Maximum Timestep) = 1000
 
 See also [CTRL+R to Run Simulation Immediately](#h.ew7ltgf338o)
 
-## WaveForm
+## 波形
 
 EasyEDA's WaveForm display is super easy but to make sure you don't miss any of the features it supports, we've put some detailed information into this tutorial.
 
@@ -302,7 +302,7 @@ WaveForm plot data can be exported in CSV format for further analysis and manipu
 
 Once saved in a Project, a WaveForm window can be exported as a .pdf, .png or .svg file into your browser window. This can then be saved to your device so it is easy to create professional quality documentation.
 
-## Build Your Own Simulation Component
+## 构建你自己的仿真元件
 
 There are several reasons why you may want to build your own simulation component.
 
@@ -312,7 +312,7 @@ There are several reasons why you may want to build your own simulation componen
 
 EasyEDA gives you three ways to build your own components so that you can simulate them:
 
-### 1.From a model in text form 
+### 1.从文本形式的模型建立 
 
 1.  If you already have a spice subcircuit in text form, for example one that you have downloaded from a component manufacturer’s website but you haven’t got a spice symbol for it, then you can create a spice symbol and attach a .subckt definition to it.
 
@@ -354,7 +354,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 7.  If you run a DC op simulation on this example, the result, shown in the Simulation Results... window, should be 2.5V
 
-### 2.From a subcircuit in schematic form
+### 2.从原理图的子电路建立
 
 
 1. Create a spice symbol and subckt circuit.
@@ -391,7 +391,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
  
 
-### 3.From a spice directive in a schematic
+### 3.从原理图中的Spice指令建立
 
 1.  When you already have a spice symbol which has a subckt attached to it - for example, an opamp symbol from the EasyEDA Libs - but you want to use a subckt for a different device which is not already in the EasyEDA Libs, then you can use this method to easily attach a subckt to a symbol directly in your schematic.  
 
@@ -404,7 +404,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	![](images/image103.png)
 
-### 4.Using .models instead of .subckts
+### 4.使用模块而不是子电路建立
 
 1. All three techniques can be used to attach .model statements to symbols in exactly the same way as .subckts but after placing the symbol in your schematic, you must use:
 
@@ -421,25 +421,25 @@ Actually there is a way to save the symbol with the required Spice Prefix so th
 
 We did say that EasyEDA Source enables some powerful ways to manipulate schematic and spice files and symbols! :)
 
-## Advance Tips
+## 更多建议
 
 EasyEDA uses [Ngspice](http://ngspice.sourceforge.net/presentation.html) as the simulation engine, so once you get more familiar with it you can use many [other commands and feature](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf)[s of Ngspice](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf) that are not directly available via the EasyEDA UI.
 
 The lists below show which Ngspice commands are currently supported by EasyEDA and which are not.
 
-### Ngspice Commands Whitelist
+### Ngspice命令白名单
 
 EasyEDA allows these commands:
 
 let define option options unlet op tf tran pss ac dc pz sens disto noise fft fourier meas alter run while repeat dowhile foreach if else end break continue label goto linearize print probe echo
 
-### Ngspice Commands Blacklist
+### Ngspice命令黑名单
 
 EasyEDA does not currently allow these Ngspice commands:
 
 reshape snsave snload circbyline alias deftype display destroy setplot setcirc setscale transpose xgraph gnuplot wrdata wrs2p hardcopy asciiplot write compose print eprint codemodel load cross undefine listing edit dump psd spec show showmod sysinfo altermod resume state stop trace save iplot altermod status delete step remcirc reset aspice jobs rspice bug where newhelp tutorial help oldhelp removecirc quit source shift unset unalias history shell rusage cd version diff rehash cdump mdump mrdump settype strcmp devhelp inventory source
 
-### Probe
+### 探针
 
 An alternative to using the volProbe element to probe voltages in a circuit - which avoids the possibility described in [Probing voltages and currents](#h.vl7fdqh8iyf8) of overwriting net names and consequently corrupting any expressions that use them - is to use the Probe command.
 
@@ -471,7 +471,7 @@ A useful feature allowing you to easily switch between different sets of probe p
 
 But this is just the tip of the iceberg ...
 
-### Using CTRL+R to Run Simulation Immediately
+### 使用CTRL+R运行仿真
 
 As described in [Run Simulation](#h.omum7qtdqc2), using:
 

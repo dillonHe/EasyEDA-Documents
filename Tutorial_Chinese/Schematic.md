@@ -1,12 +1,12 @@
 
-# Creating The Schematic 
-During this tutorial we will create a simple Schematic design to guide you in using EasyEDA Schematic capture.  
+# 创建原理图 
+根据下面的动态图片，可以引导你很快的熟悉如何创建一个原理图。 
 
 ![](images/088_Schematic_CreateTheSchematic.gif)
 
  
 
-## Canvas Settings
+## 画布设置
 
 You can find the canvas Properties setting by clicking on any the blank space in the canvas.
 
@@ -16,7 +16,7 @@ As described earlier, background and grid colours and the style, size, visibilit
 
 The canvas area can be set directly by the Width and Height or by using the available preset frame sizes.
 
-### Grid
+### 格点
 
 **Visible Grid** : Yes or No
 
@@ -30,7 +30,7 @@ The canvas area can be set directly by the Width and Height or by using the avai
 
 ![](images/047_Schematic_CanvasBackground.png)
 
-### Snap
+### 栅格
 
 **Snap**: Yes or No. The default hotkey is G. Pressing this key toggles switching snap to grid on and off.
 
@@ -43,7 +43,7 @@ If you need to draw detailed parts of new symbols or footprints that need to go 
 **ALT Sanp**: Snap size when pressing the `ALT` key.
 
 
-## Wiring Tools
+## 电气工具
 
 If you have hidden your tools , you can open them from here: 
 Top toolbar **Config Gear Icon > Toolbars > ...**
@@ -54,7 +54,7 @@ Top toolbar **Config Gear Icon > Toolbars > ...**
 
 ![](images/191_Introduction_WiringTools.gif)
 
-### Wire
+### 走线
 
 There are three ways to enter the wire mode in EasyEDA.
 
@@ -84,17 +84,17 @@ A selected wire can be moved directly by clicking on it using the mouse or by th
 
 
 
-### Bus
+### 总线
 
 When you design a professional schematic, perhaps it will use a lot of wires. If you're wiring one by one, much time would be wasted, and then you need to use `Bus`.
 
 ![](images/228_Schematic_Bus.png)  
 
-### Bus Entry
+### 总线分支
 
 If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other nets with wires. such as in the above image.
 
-### Net Label
+### 网络标签
 
 **NetLabel and NetFlag**
 
@@ -106,7 +106,7 @@ You can change its name and colour. If you only want to change its name, it m
 
 
 
-### Net Flag
+### 标识符
 
 **NetFlag** is the same as NetLabel, you can find the NetFlag from the Wiring Tools palette or using the `Ctrl+G` hotkeys for **GND** or `Ctrl+Q` for **VCC**. You can also change its name, for example from **VCC** to **VDD**:
 
@@ -125,7 +125,7 @@ This schematic is almost finished.
 Wiring Tools palette provides NetFlag: Digital GND, Analog GND, VCC and +5V for your convenience.
 
 
-### Net Port
+### 网络端口
 
 When you don't want to route too many wires, how about trying  `Net Port` :  
 
@@ -136,7 +136,7 @@ It will make your schematic look more clean, and you just need to set each Net P
 ![](images/231_Schematic_NetPort.png)
 
 
-### No Connect Flag
+### 非连接标志
 
 You can find the `NO Connect Flag` via wiring tool,   
 
@@ -152,7 +152,7 @@ After adding a `NO Connect Flag`, the error disappears.
 
 **Note:** *`NO Connect Flag` only works on the symbol's pin directly.*
 
-### Voltage Probe
+### 电压探针
 
 ![](./images/259_Schematic_VoltageProbe.png) 
 
@@ -162,7 +162,7 @@ EasyEDA provides a simulation feature for the schematic. After the simulation is
 
 For more detail about the simulation, please check the [Simulation](./SpiceSimulation.htm#Spice-Simulation) section.
 
-### Pin
+### 管脚
 
 When you create a new symbol in schematic and schematic lib, you must use `Pin` to create pins for the new symbol, otherwise your symbol can't be wired with wires.
 
@@ -170,7 +170,7 @@ When you create a new symbol in schematic and schematic lib, you must use `Pin` 
 
 For more information please refer to the [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
 
-### Group/Ungroup
+### 组合/解散
 
 On the **Wiring Tools** palette there is the **Group/Ungroup Symbol…** button.
 
@@ -212,9 +212,9 @@ If it's still difficult to understand, don't worry, you can see the process in t
 ![](images/193_Schematic_Group.gif)
 
 
-## Drawing Tools
+## 绘图工具
 
-### Sheet Setting
+### 图纸设置
 
 It is now possible to add design notes to the frame and the frame selection, for example A4, which can assist in aligning and improve the look of printed schematics and PCB designs. 
 
@@ -234,28 +234,28 @@ The bottom right zone can be selected and dragged or the frame can be dragged an
 When you've selected the bottom right zone, you can edit the sheet attributes:
 ![](./images/215_Schematic_SheetSetting_Attributes.png)  
 
-### Line
+### 线条
 
 In the Schematic editor, you can draw a line with any direction. You can change its attribute as in the image below:
 
 ![](./images/233_Schematic_DrawingTools_Line.gif)  
 
-### Bezier
+### 贝塞尔曲线
 
 With this tool, you can draw a pretty cool pattern.
 ![](./images/234_Schematic_DrawingTools_Bezier.gif)  
 
-### Arc
+### 圆弧
 
 You can draw the arc of any shape.  
 ![](./images/235_Schematic_DrawingTools_Arc.gif) 
 
-### Arrow Head
+### 箭头
 
 You can add arrow head to marking text or important part.
 ![](./images/236_Schematic_DrawingTools_Arrow.gif) 
 
-### Text
+### 文本
 
 Text attributes provide many parameters for setting:
 
@@ -274,7 +274,7 @@ The editor will remember your last text parameters.
 ![](./images/237_Schematic_DrawingTools_Text.gif) 
 
 
-### Image
+### 图片
 
 When you select Image from the Drawing Tools palette, an image place holder will be inserted into the canvas:
 
@@ -294,14 +294,14 @@ will make your image look like this:
 
 Please note: at present, EasyEDA cannot host images, so you need to upload your images to an image sharing site such as [http://www.imgur.com](http://www.imgur.com).
 
-### Drag
+### 拖移
 
 If you want to move some kind of parts and wires, you can use drag.  
 Or you can select the parts and wires area first and move them.
 
 ![](images/238_Schematic_DrawingTools_Drag.gif)
 
-### Canvas Origin
+### 画布原点
 
 Canvas origin default is set at left top corner of the schematic sheet, but you can set it where you want via Canvas Origin.  
 
@@ -310,7 +310,7 @@ For another way to set canvas origin, you can try **Super Menu > Miscellaneous >
 ![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
 
 
-## Search symbols
+## 搜索原理图库符号
 
 On the left hand Navigation panel you will find "**EElib**" and "**Parts**" ,
 
@@ -352,7 +352,8 @@ Note:
 
 - *EasyEDA supports multi-documents so please make sure that you are placing the part into the right (active) document. The active document is the one with the highlighted tab.*  
 
-- *You can’t place a Schematic symbol into a PCB file, or a PCB Footprint into a schematic.*
+- *You can’t place a Schematic symbol into a PCB file, or a PCB 
+-  into a schematic.*
 
 **Edit**:
 If you want to create your own version of a symbol or footprint then you can open an existing part from the library to use as a template, edit it and then save it to your local **My Parts** library in **Parts** of the Navigation Panel.
@@ -368,7 +369,7 @@ When you find a component with sub-parts, you can’t Place or Edit it, but you 
 
 ![](images/027_Introduction_Parts-More.png)
 
-### Find Components In The Schematic
+### 在原理图查找元件
 
 Finding individual **components** in a dense schematic can be very time consuming. EasyEDA has an easy way to find and jump to components:
 
@@ -397,7 +398,7 @@ Clicking on a Part pins item brings up a temporary pointer:
 ![](images/024_Introduction_DesignManagerClickComponentNet.png)
 
 
-## Placing Components
+## 放置元件
 
 Find the component which you plan to place to your schematic, then move your mouse to the canvas and left click. If you want to add more, just left click again. To end the current sequence of placements, right click once or press `ESC`.
 
@@ -405,7 +406,7 @@ Don't try to Drag and Drop a component to the canvas: EasyEDA team thinks that 
 
 ![](images/048_Schematic_PlacingComponents.gif)
 
-## Rotating the Prefix and Value (Name) of components
+## 翻转
 
 The default Prefix and Value (or name) of EasyEDA components are horizontal. To change them to vertical like this...
 
@@ -413,7 +414,7 @@ The default Prefix and Value (or name) of EasyEDA components are horizontal. To 
 
 ...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you’re done.
 
-## Adjusting Components
+## 调整元件
 
 About adjusting components you can:
 
@@ -426,7 +427,7 @@ About adjusting components you can:
 
 
 
-## Cross Probe
+## 交互选择模式
 
 ![](./images/263_Schematic_CrossProbe.png)  
 
@@ -438,7 +439,7 @@ And don't forget to use the hotkey `SHIFT+X`.
 ![](./images/192_Schematic_CrossProbe.gif)  
 
 
-## Multi-part Components
+## 多模块元件
 
 The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
 
@@ -448,7 +449,7 @@ When placing the 74HC04 on a schematic, it will look like the screenshot below.
 ![](images/059_Schematic_Mutil-Components.png)
 
 
-## Design Manager
+## 设计管理器
 
 With large schematics it can be hard to find the components quickly. Sometimes, you may make a mistake such as wiring to a wrong component pin. So you need a tool to help you out. **Design Manager** is just the tool.
 
@@ -467,7 +468,7 @@ If you click the **Q1** Pin **1:VCC**, EasyEDA will show you where it is with a
 ![](images/063_Schematic_DesignManagerClickComponentNet.png) 
 
 
-## Footprint Manager
+## 封装管理器
 
 Want to batch modify components? Can't identify the corresponding relationship between component pins and footprint pins? Don't worry, EasyEDA can do this.
 
@@ -479,11 +480,12 @@ There are two ways to open the footprint manager:
 - Click the package input box of custom attributes when you've selected a component:  
   ![](images/265_Schematic_FootprintManagerPullOut.png)
 
-1.Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert. 
-2.In the preview area, you can zoom in, zoom out and pan with mouse.
+1.打开封装管理器会自动检查你的封装是否存在，是否正确。如果零件没有封装，或封装不在个人库和系统库中，或零件脚与封装焊盘无法正常对应， 封装管理器会在零件名前出现错误图标，并使零件名标红。  
+**注意：** *如果你的原理图使用了数量较多的不同名称的封装时，封装管理器在检测封装时会花费一段时间，请耐心等待。*   
+2.在零件和封装的预览窗口，你可以用鼠标拖动，放大缩小预览图。 
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
-### Update Package
+### 更新封装
 
 If you want to change the Package, for example, select a component such as Q1, from **TO-92** TO **TO220**, you just need to click in the package input box. EasyEDA will popup the footprint manager dialog. You can follow the instructions. 
 
@@ -511,7 +513,7 @@ If you want to use your own packages, you can select **My Parts** on Pattern Lib
 And you can modify component's pin map information in here.
 
 
-## Component Attributes
+## 元件属性
 
 After selecting a component, you can find the component’s attributes in the right hand Properties panel.
 
@@ -525,12 +527,12 @@ If you want edit this component, you can click **Edit Symbol**.
 
 
 
-### Define BOM Parameters
+### 定义BOM参数
 After selected a schematic symbol, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this parameter in CSV file.  
 
 ![](./images/060_Schematic_AddNewParameter.png)
 
-## Annotate
+## 标注
 
 After creating a schematic, it is quite likely that you have component Prefixes (reference designators) that are in no particular order on the canvas. You may also have duplicates. You can automatically renumber all the components using the **Annotate** function.
 
@@ -558,7 +560,7 @@ Various Annotate possibilities  are available:
 
  
 
-## Symbol Wizard
+## 原理图库向导
 
 How many times have you hit a schematic capture roadblock because you couldn't find a component symbol?
 
@@ -585,7 +587,7 @@ If you are not too worried that the symbols may not look quite the way people mi
 
 
 
-## Pinmap Modify symbol information
+## 元件引脚信息修改
 
 When you select a component, for opening the Modify symbol information dialog, you can do:
 
@@ -599,16 +601,16 @@ Using this dialog you can edit the pin names and numbers, for example, to suit a
 More detailed description of PCB and Spice Prefixes and pin numbers at next section.
 
 
-## Prefix Start
+## 编号起始
 Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
 ![](./images/061_Schematic_PrefixStart.png)
 
 
-## Prefixes And Pin Numbers 
+## 编号和引脚序号 
 
 Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a **Spice Prefix**. They also have two sets of pin numbers: PCB pins and Spice pins.
 
-### PCB And Spice Prefix 
+### PCB与Spice编号 
 
 The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user’s preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
 
@@ -667,7 +669,7 @@ For more information on circuit elements in Ngspice, please refer to:
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)
 
 
-### PCB and Spice pin numbers 
+### PCB与Spice引脚序号 
 
 The two sets of pin numbers are:
 
@@ -827,7 +829,7 @@ Although as described earlier, built in spice models usually have defined spice 
 [[9]](#ftnt_ref9) As is the opamp_ANF01 example above
 
 
-## Prefix Conflict Error
+## 编号冲突错误
 
 Sometimes, when you convert a project to PCB, open the Design manager or run a simulation, you will get a Prefix Conflict error message.
 
@@ -843,7 +845,7 @@ In the above image, you can find the two identical copies of the same schematic,
 To fix this, you just need to create a backup project and remove or better still save backup copies of your schematics to that project.
 
 
-## Net Name Conflict Error
+## 网络名称冲突错误
 
 Sometimes, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
 
@@ -854,7 +856,7 @@ In this schematic, you will find four net label/net flag(EasyEDA takes volprobe,
 If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.htm#Probe)
 
 
-## Converting Schematics To PCB
+## 原理图转换为PCB
 
 Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
 
@@ -862,7 +864,7 @@ Most of the time, schematics are created with the aim of producing a PCB. So ho
 
 ![](images/076_Schematic_ConvertToPCB.gif)
 
-### PCB Libs search order 
+### PCB库搜索顺序
 
 To find PCB footprints to match the package type attributes of your Schematic symbols, EasyEDA will search the available PCB libraries.   
 
@@ -870,7 +872,7 @@ EasyEDA will search your own PCB Libs from the **My Parts** section first. If
 
 So, for example, if your symbol calls up a “**TO220**” package, you have a **TO220**  package in your My Parts section and there is a “**TO220**” package in the system PCB Libs, then EasyEDA will use the  “**TO220**” package in your My Parts and ignore the system PCB Lib.
 
-### Verify Packages and Build PCB 
+### 校验封装和生成PCB
 
 After clicking the **Convert project to PCB** button, if the project has errors the following dialog will open:
 
@@ -888,12 +890,12 @@ After making any necessary corrections, click the **Convert project to PCB** b
 
 This shows the footprints placed in arbitrary positions with the connections between them shown as blue Rat lines.
 
-### Update PCB
+### 更新PCB
 
 Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, by using the `Update PCB` button you can immediately be passed forward to update the selected PCB without having the PCB editor window already open or without creating a new PCB file.   
   ![](./images/217_Schematic_UpdatePCB.png)    
 
-## Hierarchy
+## 原理图层级
 
 EasyEDA does not support true hierarchical designs but it does support **multi-sheet designs**. You can put several schematics in one project with connections between made by netlabels. All nets in EasyEDA are global so if you create a netlabel DATA0 in schematic A and then create a netlabel DATA0 in schematic B, when Schematic A and schematic B are in the same project, they will be connected.
 
@@ -913,7 +915,7 @@ paper), all schematics under the same project will be merged into one when be co
 ![](images/061_Schematic_PrefixStart.png)
 
 
-## Modules
+## 模块
 
 Copying codes is an easy job for coders, now copying and reusing a schematic or PCB is easy.
 Take a power supply unit for example, you can save this unit as a schematic module.
@@ -925,7 +927,7 @@ After saving, you can find it at the **Parts > My Modules** section. And you can
 ![](./images/219_Schematic_MyModules.png)  
 
 
-## BOM/Netlist
+## BOM与网表
 
 EasyEDA can export the BOM file and netlist of the schematic, you can check this function via [Export](./Export.htm#Export).
 

@@ -1,4 +1,4 @@
-# Creating the Schematic Libs
+# 创建原理图库
 
 Using **Symbol Wizard** and **Group/Ungroup...** is a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
 
@@ -18,7 +18,7 @@ Then you can edit the pin map using:
 
 Note the Origin Point. To simplify rotating and flipping your symbols when they are placed into a schematic, make sure all of your symbols are created as near as possible centered around that point.
 
-## Pins
+## 管脚
 
 Symbols pins are the most important part of any Schematic Lib symbol. They are the things that allow wires to be attached to symbols to connect up your circuit.
 
@@ -94,7 +94,7 @@ You can add a tag for your new symbol: **Parts > My Parts > Schematic Lib > Sele
 ![](images/095_SchematicLibs_MyLibsAddTag.gif)
 
 
-## Subparts
+## 子库
 
 We have already touched on how EasyEDA can support **Multi-part Components**  but how do you create **multi-part components**?
 
@@ -114,7 +114,7 @@ Then double click on each sub part in turn to modify the Pin Name and Number att
 
 Easy or what?
 
-## Custom Attributes
+## 定义属性
 
 In the Schematic Lib editor’s canvas Properties panel, you will find a **Custom Attributes** section:
 

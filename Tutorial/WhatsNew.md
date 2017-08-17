@@ -17,20 +17,12 @@ The more information and download, Please refer to [https://easyeda.com/page/dow
 
 ![](images/285_Introduction_DesktopVersionSyncConflict.png)
 
-## Documents Tab Switch
-
-It's easy to fit your documents tab location.  
-![](images/279_Introduction_EditorTabSwitch.gif)
-
-## Protractor
-
-We add a protractor for PCB tools.  
-![](images/280_PCB_PCBTools_Protractor.gif)
-
 ## Footprint Manager Enhanced
 
-1.Footprint manager will check your part's package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.   
-Notice：If your schematic have many different packages, the footprint manager will take a few seconds to the check packages.  
+1.Footprint manager will check your part's package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.  
+ 
+**Notice：** *If your schematic have many different packages, the footprint manager will take a few seconds to compare the packages' pads and your components' pins. Please wait*  
+
 2.In the preview area, you can zoom in, zoom out and pan with mouse.  
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
@@ -50,12 +42,23 @@ When you click "Export BOM at LCSC", we will help you to list all the components
 ![](images/283_Export_BOM_ExportFromLCSC.png)
 And Click the "BOM" button to download the BOM file.
 
+## Documents Tab Switch
+
+It's easy to fit your documents tab location.  
+![](images/279_Introduction_EditorTabSwitch.gif)
+
+## Protractor
+
+We add a protractor for PCB tools.  
+![](images/280_PCB_PCBTools_Protractor.gif)
 
 
 
 
 
-# What is new in V4.6.4 
+
+
+## What is new in V4.6.4 
 **New Footprint Manager**
 
 In this version we provide a powerful footprint manager tool.

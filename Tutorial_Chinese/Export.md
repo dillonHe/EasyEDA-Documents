@@ -1,10 +1,10 @@
 
-# Export 
+# 导出 
 
 For documentation and other purposes, you can export your Schematic and PCB designs for many items.
 
 
-## Exporting Schematics
+## 导出原理图
 
 Using:
 
@@ -24,7 +24,7 @@ For all file formats:
 
 ![](images/156_Export_SchematicExport_PenWidth.png)
 
-### Export BOM
+### 导出BOM
 
 You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below:
 
@@ -52,7 +52,7 @@ And Click the "BOM" button to download the BOM file. You can open it in any text
 
 ![](images/086_Export_BOM_CSV.png)
 
-### Export Netlist
+### 导出网表
 
 EasyEDA can export the netlist for the active schematic (Document) and/or for the whole active project:
 
@@ -69,9 +69,9 @@ EasyEDA can export a netlist in a variety of formats: 
 ![](images/087_Schematic_NetlistForDocument.png)
 
 
-## Exporting PCB designs
+## 导出PCB
 
-### Exporting Fabrication Files
+### 生成制造文件
 
 When you finish your PCB, you can output the Fabrication Files(gerber file) via :  
 **Super menu > Miscellaneous > Fabrication Output**，or by clicking the Fabrication Output button from the toolbar.
@@ -82,7 +82,7 @@ It will open a webpage to you, and you can download the gerber as a zipfile.
 ![](./images/221_Export_DownloadGerberFile.png)
 
 
-### Exporting Generates Pick And Place File
+### 导出坐标信息
 
 In PCB editor, if you want to generate Pick And Place as a CSV file, you can via:   
 
@@ -93,7 +93,7 @@ When you open the exported CSV file, you can see:
 ![](images/206_Export_PickAndPlaceCSV.png)
 
 
-### Exporting in documentation formats
+### 导出的文件格式
 
 Exporting a PCB design or footprints from EasyEDA is very similar to exporting a Schematic or a Symbol.
 
@@ -113,7 +113,7 @@ You can select to print individual layers or selected layers merged into a singl
 
 It is also possible to mirror selected layers for example to show bottom layers in easily readable orientation.
 
-### Exporting Print For Etching
+### 导出打印并腐蚀
 
 If you don’t want to order your PCBs from EasyEDA then maybe - for single and double sided PCB designs -  you might like to try like using some home made PCB tech:
 
@@ -150,7 +150,7 @@ Step 7) Get your soldering iron out!
 ![](images/163_Export_SolderPCB.png) 
 
 
-## Export SVG Source 
+## 导出SVG源文件 
 
 You can create an SVG sourcefile via: 
 
@@ -163,7 +163,7 @@ This solution doesn’t need an internet connect so if you open EasyEDA offli
 ![](images/021_Introduction_SVGSource.png)  
 
 
-## Export EasyEDA Source
+## 导出EasyEDA源文件
 
 You can create an EasyEDA source file via: 
 

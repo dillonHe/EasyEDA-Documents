@@ -1,24 +1,24 @@
 
-# PCB Design Editor 
+# PCB编辑器 
 
 After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA’s PCB Design Editor.
 
 
-## Canvas 
+## 画布 
 
 Lots of PCB canvas attributes are the same as Schematic canvas attributes. The key is that you can set **units** in PCB canvas attributes.
 
 ![](images/108_PCB_CanvasAttributes.gif)
 
 
-## PCB Tools 
+## PCB工具
 PCB tools provide many function to fulfill your PCB design requirement.
 Such as: Track, Pad, Via, Text, Arc, Circle, Move, Hole, Image, Canvas Origin, Connect Pad to Pad, Copper Area, Solid Region, Measure/Dimension, Rect, Group/Ungroup. etc.
 
 ![](images/109_PCB_PCBTools.gif)
 
 
-### Track 
+### 导线 
 
 In the schematic editor, we use Wire or the `W` Hotkey to connect Pins, in a similar way in the PCB editor, we use Track to connect Pads. Track allows you to draw PCB tracks and can be found on the PCB Tools palette or using the `W` Hotkey (not T: see above!).
 
@@ -65,7 +65,7 @@ In lots of other EDA tools, the track is segment line, but in EasyEDA, the track
 ![](./images/225_PCB_DeleteSegmentTrack.gif)
 
 
-### Pad 
+### 焊盘 
 
 You can add pads using the Pads button from the PCBLib Tools palette or using the `P` hotkey.
 
@@ -100,7 +100,7 @@ Like in the image below, you can edit the PADs points when you select a `POLYGON
 **Plated：** Yes or No.
 
 
-### Via
+### 过孔
 
 When you want to lay a multilayer PCB, you need to add Vias for nets getting through layer and layer.
 
@@ -110,7 +110,7 @@ When placing a `via` on a track, the track will be cut to two segments.  Placing
 ![](./images/142_PCB_ViaOnTrack.gif)
 
 
-### Text
+### 文本
 
 You can add more fonts from your computer or download some [free fonts:www.1001freefonts.com](http://www.1001freefonts.com/) .
 
@@ -126,7 +126,7 @@ So you can add any fonts by yourself. EasyEDA doesn't cache the font on our serv
 
 
 
-### Arc
+### 圆弧
 
 You can draw many Arcs with different sizes, it's easy to create a pretty cool PCB as you like.  
 
@@ -139,20 +139,20 @@ EasyEDA provides two Arc tools:
 - Center point fixed, you can change the radius.  
   ![](./images/269_PCB_Arc_Center.gif)
 
-### Circle
+### 圆
 
 You can draw a circle in PCB , but it can only be drawn at SilkLayer and Document Layer. If you want to draw a circle at TopLayer or BottomLayer, please use Arc.
 
-### Move
+### 移动
 
 This option is same as schematic's drag.
 
-### Hole
+### 通孔
 
 There were lots of users that didn't know how to use PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA added a HOLE TOOL in the PCB toolbar.  
 ![](./images/139_PCB_PCBTool_Hole.png)
 
-### Image  
+### 图片  
 
 On PCB and PCB Lib editor, there is a nice feature on the PCB Tools bar.
 
@@ -171,16 +171,16 @@ The image will be inserted to the active layer, if it is not right, you can chan
 ![](images/187_PCB_InsertImageLayer.png)  
 
 
-### Canvas Origin
+### 画布原点
 
 This option is the same as schematic's Canvas Origin.
 
-### Protractor
+### 量角器
 
 We provide a protractor for PCB tools.  
 ![](images/280_PCB_PCBTools_Protractor.gif)
 
-### Connect Pad to Pad
+### 连接焊盘
 
 When creating a PCB without a Schematic, none of the pads on the Footprints have nets connecting them so there will be no ratlines. 
 
@@ -197,7 +197,7 @@ Or you can set these two pads with the same net name at the right panel Pad Prop
 For more information about Ratline you can refer to the [Ratline](./PCB.htm#Ratline) section.
 
 
-### Copper Area 
+### 覆铜 
 
 Sometimes you will want to fill in or flood an area with copper. Usually this copper area will be connected to a net such as **GND** or a supply rail. You can draw the outline of a flood using the **Copper Area** button from the PCB Tools palette.
 
@@ -226,7 +226,7 @@ Lastly, don’t forget to click the button Rebuild Copper Area to **rebuild**
 1.  Hotkey `Shift+B` to build all of the copper areas.
 2.  Hotkey `Shift+M` to clear all of the copper areas.
 
-### Solid Region
+### 实心填充
 
 EasyEDA has added a new tool Solid Region for PCB design
 
@@ -249,7 +249,7 @@ When the Gerber files are generated, an area defined by a Solid Region set to a
 ![](images/124_PCB_SolidRegion_NPTH.png)
 
 
-### Measure/Dimension 
+### 尺寸与量测 
 
 Making and adding measurements is useful in PCB design. EasyEDA provides two methods to do this.
 
@@ -266,13 +266,13 @@ Making and adding measurements is useful in PCB design. EasyEDA provides two met
   ![](images/133_PCB_Dimension_KeyM.png)
 
 
-### Rect
+### 矩形
 
 It looks like a Solid Region, but it can't be set Nets and you can't set the Layer as NTPH.
 
 ![](images/243_PCB_PCBTools_Rect.png)
 
-### Group/Ungroup
+### 组合与解散
 
 Just like Group/Ungroup in the Schematic Editor can be used to create a schematic lib symbol, you can use Group/Ungroup from the PCB Tools palette to create a PCB Lib footprint in the PCB editor.
 
@@ -280,7 +280,7 @@ For example, place Tracks and Pads on the canvas, then select all of them and cl
 
 ![](images/118_PCB_PCBTool-Group.gif)
 
-## Ratline
+## 飞线
 
 When you lay the track in the PCB, Between PIN and PIN as they have the same net name, a Ratline will be automatically shown among them to reveal that they can be connected with a track.
 
@@ -298,9 +298,9 @@ If you want to check the ratlines with highlight, you can click the pencil on th
 ![](images/278_PCB_LayersTool_Ratlines.png)
 
 
-## PCB Net
+## PCB网络
 
-### Net Name Visible
+### 显示网络名称
 
 PCB editor can display net name in the track or Pads, if you don't need this feature, just need to turn it off via： 
 
@@ -308,12 +308,12 @@ PCB editor can display net name in the track or Pads, if you don't need this fea
 
 ![](images/227_PCB_PCBNetVisible.png)
 
-### Net Length
+### 网络长度
 
 After selecting a track, and then pressing `H` key, EasyEDA will highlight the whole net and pop a message box to tell you the whole net's length. like in the image below  
 ![](./images/138_PCB_NetLength_KeyH.png)
 
-## Layer Setting 
+## 层配置 
 
 Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' gear icon.
 
@@ -324,7 +324,7 @@ In this dialog, you can change the layer’s Color and configure which layers a
 ![](images/110_PCB_LayerOptions.png)
 
 
-## Layers Tool 
+## 层工具 
 
 Active Layer: The colours of the layers in the **Layers Tool** are defined in the Layer Options Settings. To work on a layer then you must make it the Active layer. To do this; click on the coloured rectangle representing the required layer. The pencil icon in the coloured rectangle indicates that this is the active layer.
 
@@ -343,7 +343,7 @@ HotKeys for layer activation:
 
 
 
-## Footprint attributes 
+## 封装属性 
 
 When selecting a Footprint, you can find its attributes at the right hand Properties panel.
 
@@ -359,7 +359,7 @@ When selecting a Footprint, you can find its attributes at the right hand Proper
 **ID**: EasyEDA will assign a unique ID for each footprint automatically, you can't modify it.  
 
 
-### Change Attributes in Batch on PCB Editor
+### 批量修改封装属性
 
 Sometimes, we need to change some attributes of multiple objects together, such as the track width, hole size and font size.  
 Now, you can select them and do some changes. Taking the track for an example. If you select 3 tracks, now you can change their `Width`, `Layer`, `Net` together.  
@@ -370,7 +370,7 @@ You could also use it with other items such as `Pad`, `Via`, and  `TEXT`.
 
 
 
-## Layout A PCB Without Schematic 
+## 绘制无原理图PCB 
 
 For some small PCB projects, maybe you don’t need a schematic. EasyEDA allows you to lay the PCB directly from the PCB Editor.
 
@@ -380,7 +380,7 @@ For setting pad to pad connections, you can check the above section : [Connect P
 
 
 
-## Board Outline
+## 边框
 
 Before placing footprints we need to create a board outline. The board outline must be drawn on the **BoardOutLine** layer. So first, set **BoardOutLine** as the active layer, then draw the board outline using **Track** and **Arc** from the PCB Tools palette.
 
@@ -404,7 +404,7 @@ Via: **Super menu > Miscellaneous > Set Board Outline**, Or find it on the to
 In this dialog, there's a choice of 3 types of board outlines, Rectangular , Circular, Round Rect. If you need a different more complex board outline, you need to import a DXF file.
 
 
-## Design Manager 
+## 设计管理器 
 
 Just like Schematic’s Design Manager, PCB’s Design Manager can be found via:
 
@@ -429,7 +429,7 @@ In this dialog, you can:
 ![](./images/018_Introduction_Design-Manager-PCB.png)
 
 
-## Import Changes 
+## 导入变更 
 
 Sometimes, while working on a project, you need to make changes to the schematic and then update your board, to incorporate them.
 
@@ -452,7 +452,7 @@ If you are happy with your changes, just click the Apply Change button.
 The changes will then be passed into the PCB layout and you can then adjust the tracking to suit.
 
 
-## Invalid Packages 
+## 无效封装
 
 Sometimes, when you try to convert a schematic to a PCB, you will get an error message dialog like below. Don’t worry, it is easy to fix this problem.
 
@@ -474,7 +474,7 @@ From the image, we can get the PIN number in the schematic symbol is set as `3`,
    So, we should be aware that PIN number should be the same as Pad number.
 
 
-## DRC
+## DRC规则检查
 
 EasyEDA provides a powerful real time DRC(Design Rule Check) function. 
 
@@ -487,7 +487,7 @@ This is a big feature of EasyEDA. It is hard to fix DRC errors after laying out 
 ![](./images/136_PCB_DRCError.png)
 
 
-## Auto Router
+## 自动布线
 
 For some simple or prototype PCBs, you may want to use the auto router function to save time. Layout is a time costly and dull job. EasyEDA spends lots of time to provide such a feature and it is loved by our users.
 Steps:
@@ -529,7 +529,7 @@ Sometimes, if you can't get it done, try the tips below.
 Some professional people don't like the auto router, because they think auto router is not professional, but you can use the auto router to check your placement. to check the density of your PCB. 
 
 
-## Photo View
+## 照片预览
 
 EasyEDA has no 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like in the image below. If you can't see this button, try to **reload** the PCB again.
 
@@ -541,7 +541,7 @@ After converting the PCB to Photo View, you can see the result as in the image b
 
 
 
-## Getting Fabrication Files
+## 生成制造文件
 
 You can check via [Exporting Fabrication Files](./Export.htm#Exporting-Fabrication-Files)
 

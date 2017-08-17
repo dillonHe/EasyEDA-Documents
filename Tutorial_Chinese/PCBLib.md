@@ -1,5 +1,5 @@
 
-# Creating The PCB Libs
+# 创建PCB库
 
 There will be times when you will need a PCB footprint that is not already in the EasyEDA libraries.  
 
@@ -9,13 +9,13 @@ You can start a new PCB lib as shown below:
 
 ![](images/143_PCBLibs_NewLib.png)
 
-## PCBLib Tools
+## PCB库工具
 
 PCBLib Tools almost are the same as PCB tools, just lacking some of the functions.
 ![](images/226_PCBLib_PCBLibTools.gif)
 
 
-## Others 
+## 其他事项
 
 1.  It is important to set the right Snap and Grid sizes to ensure that the pads on the finished footprint snap exactly to the grid and so connect the nets. For example, if you are creating a DIP package, set the Grid size to 100mil.
 

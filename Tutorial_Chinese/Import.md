@@ -1,5 +1,5 @@
 
-# Import 
+# 导入 
 
 EasyEDA provides importing from:
 
@@ -17,7 +17,7 @@ which opens the Import file from your computer dialog:
 
 Please note that in File Operation: the Extract Libs option is only supported when importing Altium Designer and Eagle libraries.
 
-## Import Altium Designer 
+## 导入Altium Designer文件 
 
 You can import Altium Designer’s Schematic and PCB files into EasyEDA but only from **ASCII** files, so you need to save the designs as Ascii files like this.
 
@@ -31,14 +31,14 @@ Altium Designer’s Schematic and PCB libraries are not available as **ASCII** 
 
 In the Import file from your computer dialog to the right of File Operation; tick the Extract Libs option and EasyEDA will extract all of the libs from the Schematic files or PCB Files. So, if you want to import Altium Designer’s Libs, you can add them to your Altium Designer Schematic or PCB and then extract them again into your EasyEDA library.
 
-## Import Eagle 
+## 导入Eagle文件 
 
 Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
 
 
                     
 
-## Import DXF File 
+## 导入DXF文件 
 How to create irregular board outlines or complex board outline in EasyEDA?   This is sometimes needed when you are designing a PCB for an enclosure that may have a curved profile, or other unavoidable mechanical features for which one must design.  
 
 Find the import DXF menu under the file menu.  

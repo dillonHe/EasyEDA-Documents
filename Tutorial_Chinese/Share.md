@@ -1,8 +1,8 @@
-# Sharing 
+# 分享 
 
 Sharing your work with others is a big feature of web based EDA tools and EasyEDA is no exception in offering you some nice features.
 
-## Share to Public 
+## 公共分享 
 
 All projects in EasyEDA are set to private by default, your private project can not be shared with anyone.  
 i.e. to make it public, you should create a new project or right click and edit your existing project to be a Public project:  
@@ -24,7 +24,7 @@ If you then open one of the documents in this share folder, you can then click
 
 ![](images/167_Share_SharedProjectShareIcon.png)
 
-## Access Control 
+## 访问控制
 
 How about sharing with selected people?
 
