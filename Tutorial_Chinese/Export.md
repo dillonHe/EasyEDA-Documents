@@ -163,7 +163,7 @@ This solution doesn’t need an internet connect so if you open EasyEDA offli
 ![](images/021_Introduction_SVGSource.png)  
 
 
-## 导出EasyEDA源文件
+## 导出EasyEDA源码文件
 
 You can create an EasyEDA source file via: 
 

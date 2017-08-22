@@ -856,7 +856,7 @@ In this schematic, you will find four net label/net flag(EasyEDA takes volprobe,
 If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.htm#Probe)
 
 
-## 原理图转换为PCB
+## 原理图转PCB
 
 Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
 

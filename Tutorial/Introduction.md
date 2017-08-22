@@ -477,7 +477,12 @@ Select the file which you would like to **recover**, then click the Recover b
 **Please note:**  
 - *EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
 - *And if you cleaned your browser's cache, the recovery files will disappear.*
+- *If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
 
+#### Close Account
+
+If you want to close your account, you can go to [https://easyeda.com/account/close](https://easyeda.com/account/close)  
+Before you close your account, please let us know why, and that will make us to be better.
 
 ### Hotkeys
 
