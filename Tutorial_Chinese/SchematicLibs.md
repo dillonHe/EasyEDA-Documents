@@ -1,4 +1,4 @@
-# 创建原理图库
+# 原理图库文件
 
 Using **Symbol Wizard** and **Group/Ungroup...** is a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
 
@@ -94,7 +94,7 @@ You can add a tag for your new symbol: **Parts > My Parts > Schematic Lib > Sele
 ![](images/095_SchematicLibs_MyLibsAddTag.gif)
 
 
-## 子库
+## 元件子库
 
 We have already touched on how EasyEDA can support **Multi-part Components**  but how do you create **multi-part components**?
 

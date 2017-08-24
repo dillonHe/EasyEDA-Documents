@@ -1,427 +1,352 @@
 
-# 创建原理图 
-根据下面的动态图片，可以引导你很快的熟悉如何创建一个原理图。 
+# 原理图绘制
+ 
+根据下面的动态图片，可以引导你快速熟悉如何创建一个原理图。 
 
 ![](images/088_Schematic_CreateTheSchematic.gif)
 
  
-
 ## 画布设置
 
-You can find the canvas Properties setting by clicking on any the blank space in the canvas.
+点击空白区可在右边属性面板查看和修改画布属性。
 
 ![](images/017_Introduction_The-Clear-UI_Canvas-Attributes.png)
 
-As described earlier, background and grid colours and the style, size, visibility and snap **attributes** of the grid can all be configured.
+画布属性内的参数均可以被自行配置。
 
-The canvas area can be set directly by the Width and Height or by using the available preset frame sizes.
 
-### 格点
+### 网格
 
-**Visible Grid** : Yes or No
+网格是用来标识间距和校准元器件符号的线段。单位像素(pixel)。
 
-**Grid Color**: Any valid colour
+**网格可见**：  是 或 否
 
-**Grid Style**: Line or Dot
+**网格颜色**：任意有效颜色
 
-**Grid Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100.
+**网格样式**：实线 或 点
 
-**Grid** (and background) colour can be set directly by entering the hexadecimal value of the colour you want or by clicking on a colour in the palette that opens when you click on the colour value box:
+**网格大小**: 为了确保元器件位置准确，默认为 10, 20, 100。
+
+网格的线条和画布背景颜色可以通过输入你想要的颜色的十六进制值直接设置，或者通过点击颜色值框中打开的调色板上的颜色来设置颜色。
 
 ![](images/047_Schematic_CanvasBackground.png)
 
 ### 栅格
 
-**Snap**: Yes or No. The default hotkey is G. Pressing this key toggles switching snap to grid on and off.
+栅格是元器件符号和走线移动的格点距离，以确保对齐。
 
-**Snap Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100 but any valid number can work, such as 0.1, 1, 5.
+**吸附**：是 或 否。默认快捷键是 `G`， 按下后吸附功能循环开启关闭。关闭吸附后，元器件和走线可以任意移动不受栅格限制。
 
-It is strongly recommended that you keep **Snap = Yes** all the time. Once items are placed off-grid it can be very difficult to reset them back onto the grid. Off-grid placement can result in wires looking as though they are joined when in fact they are not and so causing netlisting errors that can be hard to track down.
+**栅格尺寸**： 为了确保元器件和走线对齐，默认设置栅格大小为 10、20、 100，但允许设置为其他数值如 0.1、 1、 5等。数值越小，元器件和走线移动的进度越小，越精准。
 
-If you need to draw detailed parts of new symbols or footprints that need to go between grid points, try to reduce the grid spacing to draw these elements and then reset the grid back to your chosen default value as soon as you have completed that part of the drawing. Setting Snap=No should only really be used as a last resort.
+**ALT键栅格**：当按下ALT键时启用该栅格大小。
 
-**ALT Sanp**: Snap size when pressing the `ALT` key.
-
+建议一直保持吸附开启状态。若之前的元器件摆放和走线是在关闭吸附状态下的，再次打开吸附功能后，原有的项目将很难对齐栅格，强行对齐后将可能会使原理图变得很不美观，如走线倾斜等。
 
 ## 电气工具
 
-If you have hidden your tools , you can open them from here: 
-Top toolbar **Config Gear Icon > Toolbars > ...**
+若你关闭了电气工具或者没有正常打开，你可以在工具栏处打开。
 
 ![](images/014_Introduction_The-Clear-UI_Settings-Toolbars.png)
 
-**Note:** *All of the commands in Wiring Tools are electronics related. Don’t use a wire when you just need to draw a line, shape or an arrow: use Drawing Tools instead.*  
+**注意：** *电气工具内的功能均具有电气特性，如果你想画一些圆弧和线框等请使用“绘图工具”。*  
 
 ![](images/191_Introduction_WiringTools.gif)
 
-### 走线
+### 导线
 
-There are three ways to enter the wire mode in EasyEDA.
+有三种模式进入绘制导线模式。
 
-1.  Click the **Wire** button from the **Wiring Tools** palette.
-2.  Press the `W` hotkey.
-3.  Click on the end of a component pin (where the grey pin dot appears if you select the component): 
+1.  在“电气工具”点击“导线”图标；
+2.  按快捷键“W”；
+3.  直接点击元器件的引脚端点然后移动鼠标 。编辑器会自动进入绘制导线模式。
 
 ![](images/051_Schematic_HowToWire.gif) 
 
-EasyEDA automatically enters **Wire** mode.
-
-Here is a screenshot of the **Astable Multivibrator LED project schematic** after wiring:
+下图是一个已经连线完成的原理图。
 
 ![](images/052_Schematic_HowToWire-AfterWire.png)
 
+**移动元件时导线跟随**
 
-**Moving Components And Wires:**
-
-If you place a component, such as a resistor, on top of a wire then the wire breaks and reconnects to the ends of the component.
-
-When moving selected components using the mouse, they will drag attached wires with them (“rubber band”) to some extent but please be aware that the rubber banding feature has some limitations. When moving selected components most wire will move vertically and horizontally. Using the arrow keys will not rubber band. Selected wires do not rubber band.
+当你用鼠标移动一个元器件时，它所连接的导线会相应的垂直/水平跟随移动。
 
 ![](images/273_Schematic_WireAndComponentMove.gif)
-
-A selected wire can be moved directly by clicking on it using the mouse or by the arrow keys. If a wire is selected by clicking on it using the mouse then green grab handles will appear at the ends and vertices.
-
-
 
 
 ### 总线
 
-When you design a professional schematic, perhaps it will use a lot of wires. If you're wiring one by one, much time would be wasted, and then you need to use `Bus`.
+当你绘制的原理图需要很多网络的时候，对每个网络都进行画线将非常困难和耗费时间，此时你可以使用“总线”功能。总线必须和总线分支共同使用。
 
 ![](images/228_Schematic_Bus.png)  
 
 ### 总线分支
 
-If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other nets with wires. such as in the above image.
+绘制了总线之后，需要在总线放置总线分支，并连接所需的网络连线或者放置网络标签。如上图所示。
 
 ### 网络标签
 
-**NetLabel and NetFlag**
-
-**NetLabel** can be used to give your wires names to help you find them and identify any misconnections. You can find the **NetLabel** from the Wiring Tools palette or by using the `N` hotkey. When selecting the netlabel, you will find its attributes in the right hand Properties panel: 
+**网络标签** 可以用来标识导线网络名， 或者标识两个导线间的连接关系。 使用快捷键“N”可以快速放置网络标签。  
+当你点击它，可以在右边的属性面板修改它的属性。
 
 ![](images/053_Schematic_NetLabel.gif)
 
-You can change its name and colour. If you only want to change its name, it may be easier to just double click the netlabel.
-
-
+如果只想更改它的名字，直接双击即可修改。编辑器会记住你上次使用的网络标签名称，并在下一次继续使用该名称，若你修改的网络名称以数字结尾，那么下次放置时网络标签的名称将自动加1。如你放置了VCC1，那么下一个为VCC2。
 
 ### 标识符
 
-**NetFlag** is the same as NetLabel, you can find the NetFlag from the Wiring Tools palette or using the `Ctrl+G` hotkeys for **GND** or `Ctrl+Q` for **VCC**. You can also change its name, for example from **VCC** to **VDD**:
+**标识符** 的作用与“网络标签”相似，使用快捷键 `Ctrl+G` 放置 **GND** ，使用`Ctrl+Q` 放置 **VCC**，并且你可以修改它们的名字。
 
 ![](images/054_Schematic_NetFlag.png)
 
-The screenshot below is after adding NetLabels   
-
--	indicated by the little **egg marks**   
-  -and a **GND** NetFlag   
-
-This schematic is almost finished.
+下图使用网络标签(Q3B等)和GND标识符。
 
 ![](images/055_Schematic_NetFlagAndNetLabel.png)
 
-
-Wiring Tools palette provides NetFlag: Digital GND, Analog GND, VCC and +5V for your convenience.
+电气工具栏为你提供了：数字地GND标识符、模拟地GND标识符、 电源标识符VCC和+5V以方便使用。
 
 
 ### 网络端口
 
-When you don't want to route too many wires, how about trying  `Net Port` :  
+当你需要绘制很多网络导线，或者分页原理图图时，可以使用 “网络端口”功能；在同一原理图下时，使用网络端口与网络标签功能一致。
 
 ![](images/232_Schematic_WiringTools_NetPort.png)
 
-It will make your schematic look more clean, and you just need to set each Net Port a net name.
+使用网络端口可以使原理图变得清晰简洁，没有过多的导线，只需给每个端口设置一个网络名称。
 
 ![](images/231_Schematic_NetPort.png)
 
 
 ### 非连接标志
 
-You can find the `NO Connect Flag` via wiring tool,   
+非连接标志用于原理图上元器件不使用或需要悬空的引脚，避免出现引脚没有进行网络连接而在设计管理器内报错。   
 
 ![](images/056_Schematic_NoConnectFlagIcon.png),   
 
-In the below schematic, if you don't add a `NO Connect Flag`, there is an error flag in the nets collection of the design manager. 
+如下图，如 Q2_1 脚不添加非连接标志，在设计管理器中会出现错误标志。
 
 ![](./images/057_Schematic_NoConnectFlagError.png)   
 
-After adding a `NO Connect Flag`, the error disappears.  
+在添加非连接标志后，错误消失。
 
 ![](./images/058_Schematic_AddNoConnectFlag.gif)  
 
-**Note:** *`NO Connect Flag` only works on the symbol's pin directly.*
+**注意：** *非连接标志只能直接在元器件的引脚端点上使用，不能在导线上使用。*
 
 ### 电压探针
 
+电压探针是在电路图仿真时使用，用于侦测电路电压参数，与实物万用表量测电压时功能一致。
+
 ![](./images/259_Schematic_VoltageProbe.png) 
 
-EasyEDA provides a simulation feature for the schematic. After the simulation is running, you will see the waveform where you placed the voltage probes in the circuit.
+仿真运行后，产生的波形就是根据放置的电压探针进行采样生成。
 
 ![](images/098_SpiceSimulation_BuildTheCircuit.png)
 
-For more detail about the simulation, please check the [Simulation](./SpiceSimulation.htm#Spice-Simulation) section.
+更多关于仿真的内容请查阅 [Spice仿真](./SpiceSimulation.htm#Spice仿真) 章节。
 
 ### 管脚
 
-When you create a new symbol in schematic and schematic lib, you must use `Pin` to create pins for the new symbol, otherwise your symbol can't be wired with wires.
+当你在原理图或原理图库文档新建一个带电气特性的原理图符号时，你必须为它放置管脚(引脚)，否则它将无法通过导线连接。使用默认快捷键 “P”可以快速放置管脚。
 
 ![](images/230_Schematic_WiringTools_Pin.png)
 
-For more information please refer to the [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
+更多信息请查阅 [原理图库文件：管脚](./SchematicLibs.htm#管脚) 章节。
 
-### 组合/解散
+### 组合与解散
 
-On the **Wiring Tools** palette there is the **Group/Ungroup Symbol…** button.
+在电气工具栏的组合/解散标识符。
 
 ![](images/072_Schematic_GroupUngroupIcon.png)
 
-Just like the **Symbol Wizard**, this tool is also for you to quickly create schematic library symbols.
+它与“原理图库向导”相似，可以帮助你快速的创建原理图库符号；也可以解散原理图库符号，以便进行修改。
 
-Using the **Symbol Wizard** you can only create generic symbols but how can you quickly and easily create symbols like these?
+**组合**
+
+在原理图下，使用它可以很容易地画出如下图U2的样式符号。 
 
 ![](images/073_Schematic_GroupSymbol.png)
 
-Here’s how.
-
-EasyEDA allows you to do something that very few other EAD tools support.
-
-Using the `P` Hotkey, you are allowed to add a PIN directly onto the Schematic canvas. So you can add 8 Pins, draw a rectangle from the Drawing Tools palette and add 555 as text to form a symbol for the NE555 like the one shown below:
+如下图的555定时器元件，当你画完长方形，放置了管脚，并对管脚全部重新命名，此时全选全部组件，再点击组合/解散按钮会弹出一个符号命名窗口。
 
 ![](images/074_Schematic_GroupSymbol-PIN.png)
 
-Now comes the clever bit.
-
-Up to this point you have a collection of separate pins, a drawn rectangle and some text that are all separate items with no particular association with each other.
-
-So now select all of the items and click the Group/Ungroup Symbol… button. A dialog will be opened:
+此时你可以输入你所组合的元件的编号，名称，封装信息。
 
 ![](images/075_Schematic_GroupSymbol-555.png)
 
-After you click OK, all those separate elements will be grouped together to form your new symbol directly in the schematic.
+当你点击“确认”后该元件符号已经创建完成。你可以继续进行原理图设计，其与在元件库放置的元器件功能一致。
 
-Using the group function, you can create any symbol in the schematic, easily and quickly.
+如果仍不是很理解，可以看下面的动态图片。
 
-How cool is that?
-
-So what does Ungroup do? Try selecting a symbol and then click the Group/ungroup command to see what happens!
-
-**Note:** *The pin numbers and names cannot be moved independently of the pin.*
-
-If it's still difficult to understand, don't worry, you can see the process in the dynamic image below:
 ![](images/193_Schematic_Group.gif)
+
+**解散**
+
+与组合刚好相反，它可以打散元件符号，以便就地按需修改，无需通过修改元件库文件。
+
+**注意：** *你在这里创建的元件符号不会保存在你个人的库文件中。若你想保存在个人库中，请新建原理图库文件。*
 
 
 ## 绘图工具
 
 ### 图纸设置
 
-It is now possible to add design notes to the frame and the frame selection, for example A4, which can assist in aligning and improve the look of printed schematics and PCB designs. 
+立创EDA默认给新建的原理图设置了A4大小的表格图纸。你可以很方便地修改图纸大小。
 
-Click the frame button like in the image below, Or via: **Super Menu > Miscellaneous > Sheet Setting**
+可以通过绘图工具的“图纸设置”或者 **超级菜单 > 杂项 > 图纸设置**进行修改。
 
 ![](./images/214_Schematic_SheetSetting.png)
 
-As illustrated in the image below:
+在图纸右下角还可以通过双击修改作者，日期，名称等信息。
 
 ![](./images/216_Schematic_Sheet.png)  
 
-And you can edit the blue text when you've selected the text attributes or double clicked it.
+当点击图纸本体时，可以在右边属性面板进行修改大小、颜色等相关信息。  
 
-
-The bottom right zone can be selected and dragged or the frame can be dragged and deleted.
-
-When you've selected the bottom right zone, you can edit the sheet attributes:
 ![](./images/215_Schematic_SheetSetting_Attributes.png)  
 
 ### 线条
 
-In the Schematic editor, you can draw a line with any direction. You can change its attribute as in the image below:
+在原理图中，你可以绘制任意方向的线条。修改线条样式，颜色，填充颜色等。
 
 ![](./images/233_Schematic_DrawingTools_Line.gif)  
 
 ### 贝塞尔曲线
 
-With this tool, you can draw a pretty cool pattern.
+使用贝塞尔曲线，你可以画出很酷的图案。
+
 ![](./images/234_Schematic_DrawingTools_Bezier.gif)  
 
 ### 圆弧
 
-You can draw the arc of any shape.  
+支持绘制不同形状的圆弧。
+
 ![](./images/235_Schematic_DrawingTools_Arc.gif) 
 
 ### 箭头
 
-You can add arrow head to marking text or important part.
+箭头一般在文本前做标识用。
+
 ![](./images/236_Schematic_DrawingTools_Arrow.gif) 
 
 ### 文本
 
-Text attributes provide many parameters for setting:
+文本属性提供多种参数供你设置。
 
--	**Text**: You can change text in inner box or double click the text. For every new text, the default text is `Text`.
-  -**Color**: Defines text color.
-  -**Font-family**: It provides 12 fonts for choosing.
-  -**Font-Size**: Defines Text size.
-  -**Font-weight**: Defines Text weight.
-  -**Font-Style**: It contains (auto), normal, italic.
-  -**Text-anchor**: It contains (auto), start, middle, end, inherit.
-  -**Baseline**: It contains (auto), use-script, no-change, reset-size ... and so on.
-  -**Text type**: types include comment and spice.
+**文本**：你可以修改为你想要的文本。新建时默认为Text。  
+**颜色**：可自定义字体颜色。  
+**字体**：提供12字体选择。  
+**字体大小**：最大支持72号字体大小。    
+**字体粗细**：提供13种粗细选择。  
+**样式**：包含自动、正常、斜体。  
+**文本锚点**: 包含类型有 (auto)、start、middle、end、inherit.  
+**基线**：文本放置位置的基线类型。  
+**文本类型**：是属于备注文本还是Spice仿真描述。
 
-The editor will remember your last text parameters. 
+在同一原理图内，编辑器会记住上一个文本的属性参数，在放置时自动套用上次的属性。
 
-![](./images/237_Schematic_DrawingTools_Text.gif) 
+![](./images/237_Schematic_DrawingTools_Text.png) 
 
 
 ### 图片
 
-When you select Image from the Drawing Tools palette, an image place holder will be inserted into the canvas:
+点击图片功能会生成一个默认图片。
 
 ![](images/041_Introduction_ImageInsert.png)
 
-Select the place holder, so you can see the image’s attributes in the right hand Properties panel:
+点击这个图片在右边属性面板可以编辑它的属性，修改图片。
 
 ![](images/042_Introduction_ImageEdit.png)
 
-Set the URL of your image. For example, setting the URL to:
+可以通过超链接插入图片，也可以从本地上传。插入的超链接必须是以图片格式后缀名(.PNG，.JPG，.SVG)结尾，如：[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
 
-[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
-
-will make your image look like this:
+之后你可以看到图片如下：
 
 ![](images/043_Introduction_ImageURL.png)
 
-Please note: at present, EasyEDA cannot host images, so you need to upload your images to an image sharing site such as [http://www.imgur.com](http://www.imgur.com).
+**注意：***目前立创EDA不能为你上传的图片创建图库，若使用超链接上传图片请使用有效图床。*
 
 ### 拖移
 
-If you want to move some kind of parts and wires, you can use drag.  
-Or you can select the parts and wires area first and move them.
+拖移是整体移动，并且断开连接。
 
 ![](images/238_Schematic_DrawingTools_Drag.gif)
 
 ### 画布原点
 
-Canvas origin default is set at left top corner of the schematic sheet, but you can set it where you want via Canvas Origin.  
+立创EDA画布的默认原点是在左上角，你可以随意定义画布原点。 
 
-For another way to set canvas origin, you can try **Super Menu > Miscellaneous > Canvas Origin**.  
+其它方式设置可通过 **超级菜单 > 杂项 > 画布原点**。
 
 ![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
 
 
-## 搜索原理图库符号
+## 元件库搜索与放置
 
-On the left hand Navigation panel you will find "**EElib**" and "**Parts**" ,
+在左边导航面板有 "**基础库**" 和 "**元件库**" ，
 
-1)  **EELibs** contains ready made symbols for a wide range of components and which can be simulated.
+1) **基础库** 包含了一些常用的基础元件，并且支持仿真。基础库不支持自定义。
 
 ![](images/045_Schematic_EElib.png)
 
-Many of these components have optional US and EU style symbols, we split them, so you can select those you like. Click on the drop down list or right click to popup the context menu, it contains many packages or parameters. EasyEDA will remember your choices for the next time.
+基础库有一些零件样式包含美式和欧式，你可以随意选择你喜欢的样式。点击零件右下角可以选择它相应的封装和参数，编辑器会记住你选择的参数以便下次应用。
 
-Don’t forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resistors:
+使用筛选器可快速找到想要的零件，比如输入“res”或者“电阻”可快速显示出电阻。
 
 ![](images/046_Schematic_EElib-res.png)
 
-2) **Parts**,  or press the hotkey combination `Shift+F`.  
-then you will see a dialog as shown in the image below.
-Simply type your part number or symbol's name to Search.
+单击零件后移动鼠标至画布即可放置，无需拖动。立创EDA不支持拖动放置。
+
+2) **元件库**，或者使用快捷键“SHIFT + F”调出。
+会打开元件库搜索框，输入零件名称后搜索即可。
 
  ![](images/026_Introduction_Parts.png)
 
-and then click the “Table of contents” to open the categories list to choose your components. 
+在搜索结果里可以选择你想要的类别，然后单击选择你所需的零件，再点击搜索框下方的“放置”即可放在画布中。你也可以直接移动鼠标至画布也可以进行放置。
 
-From there you can scroll up and down to browse parts from each category.
+**立创可贴片零件**  
 
-Suppose you wanted the find the **MAX232** (which converts signals from an [RS-232](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRS-232&sa=D&sntz=1&usg=AFQjCNFt_BArd4HZuR1QqCUxvKGW3ki3UA)  serial port to signals suitable for use in [TTL](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTransistor-transistor_logic&sa=D&sntz=1&usg=AFQjCNFoI3eJYGc8PWqUdnfqHGREfTZccw)  compatible digital logic circuits). Simply type **Max232** into the Search box and press Enter:
+为了方便用户选择立创EDA可帮忙贴片的零件，立创EDA单独建立了一个“立创可贴片零件”库，该库是“立创商城”库的子集。  
 
-![](images/026_Introduction_Parts.png)
-
-When you hover the mouse over the picture of the Schematic symbol or PCB footprint, you will find a toolbar with ”Edit”, “Place”, “More” buttons.
-
-**LCSC Assembly Components**
-
-We add an LCSC Assembly Components option of the Parts, It's easy to choose which component can be assembled by LCSC. Yes, We  provide the assembly service.
 ![](images/282_Schematic_Parts_AssemblyComponents.png)
 
-**Place**:
-For parts you use infrequently, you don’t need to Favorite them; just Place it into your canvas directly.  
+**放置**：一些经常使用的零件，无需收藏，直接点击放置即可放在画布中。
 
-Note: 
+**编辑**：这里可以编辑你自己的库文件；或者修改其它用户贡献的，系统库的库文件以适应你的需求，保存后会成你个人的库文件。
 
-- *EasyEDA supports multi-documents so please make sure that you are placing the part into the right (active) document. The active document is the one with the highlighted tab.*  
-
-- *You can’t place a Schematic symbol into a PCB file, or a PCB 
--  into a schematic.*
-
-**Edit**:
-If you want to create your own version of a symbol or footprint then you can open an existing part from the library to use as a template, edit it and then save it to your local **My Parts** library in **Parts** of the Navigation Panel.
-
-**More**:
-We can’t promise that every component in the library is free of errors so please check all symbols and footprints carefully before you commit to a PCB order.
-
-If you do find a mistake in a component, please [let us know(mail to support@easyeda.com)](mailto:support@easyeda.com) so that we can fix it.
-
-Components with sub parts (multi-device packages).
-
-When you find a component with sub-parts, you can’t Place or Edit it, but you can Favorite and Clone it as your own part, which you can then edit.
+**更多**：你可以对一些非个人库文件进行收藏和克隆，可以对自己的库文件进行修改(标题，描述，标签)，删除，添加子库等操作。  
 
 ![](images/027_Introduction_Parts-More.png)
 
-### 在原理图查找元件
+**注意：**    
 
-Finding individual **components** in a dense schematic can be very time consuming. EasyEDA has an easy way to find and jump to components:
+-	*系统库的库文件立创EDA会努力确保100%正确，但仍然可能会有错误的存在，所以在你进行PCB打样或批量生产前，请仔细检查你使用的封装，特别是使用了用户贡献库的封装！*
+-	*如果你发现系统库和立创商城的元件或封装存在错误，还请联系我们进行修复。QQ3001956291，或者邮件：3001956291@qq.com。*
+-   *立创EDA支持多页原理图，选中的零件只能放置在当前打开的文档中。*  
+-   *你无法放置原理图库符号到PCB，同样，你也无法放置PCB封装到原理图中。*
 
-**Super Menu > Miscellaneous > Find Component…**
+### 原理图中查找元件
 
-(or `Ctrl+F`)
+在原理图中查找元件，可以通过：**超级菜单 > 杂项 > 查找元件** 或者使用默认快捷键：“CTRL + F”。
 
 ![](images/022_Introduction_FindComponent.png)  
 
-**Note:** *You have to click OK in this dialog or use the Enter key.*
+**注意：** *你需要点击“确认”或者按回车键才会进行搜索。*
 
-This feature will find, highlight and center in the window, parts by their Prefix (or reference designator).  However, it cannot be used to find net names or other text in a schematic.
+该功能只能查找元件编号，无法查找文本，网络名称等。点击确认后会将零件高亮至画布中央。
 
-This is where the Design Manager comes in.
+如果需要搜索网络，可以使用设计管理器进行搜索，快捷键 “CTRL + D”。
 
-**Left Navigation Panel > Design**, or use hotkey `ctrl+D`.
-
-The Schematic Design Manager is a very powerful tool for finding **components**, **nets** and **pins**.
-
-Clicking on a Component item **highlights** the component and pans it to the center of the window.
-
-![](images/023_Introduction_DesignManagerFindComponent.png)
-
-Clicking on a Part pins item brings up a temporary pointer:
-
-![](images/024_Introduction_DesignManagerClickComponentNet.png)
-
-
-## 放置元件
-
-Find the component which you plan to place to your schematic, then move your mouse to the canvas and left click. If you want to add more, just left click again. To end the current sequence of placements, right click once or press `ESC`.
-
-Don't try to Drag and Drop a component to the canvas: EasyEDA team thinks that Click-Click to place components will be easier to use than a Click-Drag mode.
-
-![](images/048_Schematic_PlacingComponents.gif)
-
-## 翻转
-
-The default Prefix and Value (or name) of EasyEDA components are horizontal. To change them to vertical like this...
-
-![](images/049_Schematic_RotatingPrefixAndValue.gif)
-
-...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you’re done.
 
 ## 调整元件
 
-About adjusting components you can:
+你可以通过以下方式调整元件位置：
 
-1.  Move components with your mouse
-2.  Move components with the arrow keys.
-3.  Find components with the Design Manager via the `CTRL+D` hotkey: select the component in the Design Manager to pan it to the centre of the canvas and then move it with your mouse.
-4.  Align the components:
+-	长按元件后用鼠标移动元件位置；  
+-	选中元件后用键盘的方向键移动；
+-	选中元件后按空格键翻转元件
+-	选中元件后使用对齐工具调整位置。
 
 ![](images/050_Schematic_AdjustingComponents.gif)
 
@@ -429,507 +354,318 @@ About adjusting components you can:
 
 ## 交互选择模式
 
+这个功能是用来跳转原理图符号和PCB封装之间的对应位置。在原理图选中一个零件后，点击“交互选择模式”或者使用快捷键 “SHIFT + X”，即可切换至PCB并高亮选中的零件的封装。
+ 
 ![](./images/263_Schematic_CrossProbe.png)  
 
-This tool is used to cross probe from chosen objects on the current schematic to its corresponding counterparts in the PCB, or from PCB Footprints to corresponding  counterparts in the schematic. 
-
-**Note:** *You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
-And don't forget to use the hotkey `SHIFT+X`.  
+**注意：** *在使用该功能前，你若尚未打开PCB，编辑器会自动为你打开。*  
 
 ![](./images/192_Schematic_CrossProbe.gif)  
 
 
-## 多模块元件
+## 放置元件子库
 
-The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
+当一个元件存在太多引脚时，把它全部画在一个库文件中将会非常耗费空间，所以可以通过创建子库来进行多模块组合该元件。  
 
-When placing the 74HC04 on a schematic, it will look like the screenshot below.   
-**Note:** *The component Prefix will be in form of: U?.1, U?.2 etc.*
+如搜索74HC04DB，一个二进制转换零件。如下图所示，该零件存在7个子库。
+
+![](images/059_Schematic_Mutil-Components_1.png)
+
+当依次放置它的子库在原理图时，如下图所示。
 
 ![](images/059_Schematic_Mutil-Components.png)
+
+**注意：** *如果你只放置第一个子库，并放置多次，编号会从U1.1，U2.1，U3.1开始，所以一般放置第一个子库后需要依次放置其余子库。*
+
+**创建子库**  
+
+当你创建了一个库文件，在“元件库” > “我的库文件”中选中新建的库文件，点击右键“添加子库”即可添加子库，添加后并对每个子库进行编辑，保存后即可完成一个含子库的原理图库文件。更多信息清查看[原理图库文件：元件子库](./SchematicLibs.htm#元件子库)
 
 
 ## 设计管理器
 
-With large schematics it can be hard to find the components quickly. Sometimes, you may make a mistake such as wiring to a wrong component pin. So you need a tool to help you out. **Design Manager** is just the tool.
+当原理图太大，和比较复杂时，很容易出现连接错误，这时可以使用设计管理器来进行查找错误。
 
-Just press the `CTRL+D` hotkey to open the Design Manager.
-or click it via on the left navigation panel:
-![](images/062_Schematic_DesignManager.png)
+使用快捷键“CTRL + D”或者在左边导航面板直接点击“设计管理器”打开。
 
+-	**筛选器**: 方便地查找元件编号，封装名称，网络名，管脚名。
+-	**器件**：选中一个零件后会在画布中高亮该零件，选中下方的Part Pins的管脚时，画布会出现提示线注明是哪个管脚。
+-	**网络**：这里列出所有网络，每个网络至少连接两个引脚，否则这里会提示错误标志。
+-	**Net Pins/Parts Pins**：这里列出网络连接到的引脚或元器件的所有引脚。
 
-1.  **Filter**: You can find your components or net name easily: for example, if you want to find all capacitances, you just need to type `C`;
-2.  **Components**: Lists all the components in this schematic. Clicking on a Component item highlights that component and pans it to the center of the window.
-3.  **Nets**: Lists all the nets in this schematic. A net must connect at least two Pins, or the net name will be marked as a red error.
-4.  **Net Pins/Parts Pins**: Lists all the pins of the selected net name or components.
+![](images/024_Introduction_DesignManagerClickComponentNet.png)
 
-If you click the **Q1** Pin **1:VCC**, EasyEDA will show you where it is with a temporary marker from the top left of the canvas:
-
-![](images/063_Schematic_DesignManagerClickComponentNet.png) 
-
+**注意：***若工程下存在多个原理图时，设计管理器内只会显示当前打开文档的元件与网络信息。故跨原理图的单个网络端口和网络标签可能会出现错误标志，请忽略即可。*
 
 ## 封装管理器
 
-Want to batch modify components? Can't identify the corresponding relationship between component pins and footprint pins? Don't worry, EasyEDA can do this.
+如果你想批量修改封装，想知道零件引脚对应封装哪个焊盘，你可以使用封装管理器。
 
-There are two ways to open the footprint manager:
+有两种方式打开封装管理器：
 
-- Click top toolbar Tools icon:  
+-	在工具栏点击齿轮图标 > 封装管理器。
+
   ![](images/264_Schematic_FootprintManager.png) 
 
-- Click the package input box of custom attributes when you've selected a component:  
+-	选中你想要的零件后，在右边属性面板处点击封装输入框，即可弹出封装管理器。
   ![](images/265_Schematic_FootprintManagerPullOut.png)
 
-1.打开封装管理器会自动检查你的封装是否存在，是否正确。如果零件没有封装，或封装不在个人库和系统库中，或零件脚与封装焊盘无法正常对应， 封装管理器会在零件名前出现错误图标，并使零件名标红。  
-**注意：** *如果你的原理图使用了数量较多的不同名称的封装时，封装管理器在检测封装时会花费一段时间，请耐心等待。*   
-2.在零件和封装的预览窗口，你可以用鼠标拖动，放大缩小预览图。 
+1、打开封装管理器后，它会自动检查你零件的封装是否存在，是否正确。如果零件没有指定封装，或封装不在个人库和系统库中，或零件脚与封装焊盘无法正常对应， 封装管理器会在零件名前出现错误图标，并使零件名标红。  
+
+2、在零件和封装的预览窗口，你可以用鼠标点击拖动，滚轮放大缩小预览图。 
+
 ![](images/281_Schematic_FootprintManagerEnhance.png)
+
+**注意：**   
+
+-	*如果你的原理图使用了数量较多的不同名称的封装，封装管理器在检测封装与元件PCB引脚的对应关系时，会与服务器进行封装数据查找和对比，这将花费一定时间，请耐心等待。*   
+-	*如果你的工程下存在多个原理图文件，打开封装管理器时会将全部原理图打开，并加载所有元件。*
 
 ### 更新封装
 
-If you want to change the Package, for example, select a component such as Q1, from **TO-92** TO **TO220**, you just need to click in the package input box. EasyEDA will popup the footprint manager dialog. You can follow the instructions. 
+如果你想更新封装，比如下图的Q1，从 **TO-92** 更新至 **TO220**。
 
-*	Type **TO220** into the search box and search,   
-  *Select the **TO220** package,   
-  *Verify it in the preview box,  
-  *then press the **Update** button.   
+-	在封装管理器搜索框输入**TO220**，然后搜索；
+-	选择搜索结果中的**TO220**封装；
+-	在预览窗口中检查是否正确；  
+-	然后点击“更新”按钮。   
 
-After that you will find you have changed the package to **TO220**.
+然后所选的零件封装已经更新为 **TO220**。
 
-**Note:** *To ensure that you use a package type that is already in the EasyEDA libraries, it is recommended that you use this technique to change component packages rather than just typing a package type directly into the package text box.*
+**注意：**   
+
+-	*为了确保你使用的封装已存在于立创EDA的封装库中，请使用封装管理器更新而不是直接在封装输入框填入封装名称。*   
+-	*更新封装后，若该封装不在你的封装库中，立创EDA会自动将该封装加入你的收藏中。*
 
 ![](images/066_Schematic_UpdatePackage.png)
 
 
-**Batch Update/Modify Packages**
+**批量更新封装**
 
-If you want to batch modify components' packages, in the footprint manager dialog you can press `CTRL` and select all components you want. If your schematic has many components, you should filter them first with package name. Such as in the below .gif which will show you how to batch modify resistors' packages from `AXIAL-0.3` to `0603`.  
-If you want to use your own packages, you can select **My Parts** on Pattern Libraries area.
+如果你想批量修改封装，可以按住“CTRL”键之后，通过鼠标逐一选择所有需要修改的零件，为防止选错，不支持按“SHIFT”批量选择。如果零件太多，可以在筛选框输入封装名称进行筛选需要修改的零件，如筛选`AXIAL-0.4`。  
+如果你想选择自己的封装，可以在右上角“封装分类”下拉菜单选择“我的库文件”进行选择。
 
-![](images/266_Schematic_FootprintManager_BatchUpdate.gif)
+![](images/266_Schematic_FootprintManager_BatchUpdate.png)
 
-**Modify Pin Map Information**
+**编辑引脚映射**
 
-And you can modify component's pin map information in here.
+你还可以在封装管理器里修改零件的引脚信息，包括编号和名称。其中Pin Name是指该元件的引脚名称；Pad Number是指元件的引脚对应的焊盘号，此处并非指预览窗口封装的焊盘号。
 
 
 ## 元件属性
 
-After selecting a component, you can find the component’s attributes in the right hand Properties panel.
+选中一个零件之后，可以在右边属性面板查看或修改它的属性参数。
 
-![](images/064_Schematic_ComponentAttributes.png)
+1、**元件属性：** 你可以修改元件的名字和编号，并设置它们是否可见。还可以修改器件信息。
 
-1.**Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
-If you want edit this component, you can click **Edit Symbol**.
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
 
-2.**Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
+2、**自定义属性：** 在这里你可以修改元件的供应商，供应商编号，制造商，制造商编号，封装等。Mounted是指该零件是否在PCB板上贴片或者插件，该处在BOM体现。
 
-
-
-### 定义BOM参数
-After selected a schematic symbol, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this parameter in CSV file.  
+3、**添加自定义参数：** 当你选中一个零件，可以它新增参数，若你勾选了“In BOM”，那么该项参数会在BOM表中体现。
 
 ![](./images/060_Schematic_AddNewParameter.png)
-
-## 标注
-
-After creating a schematic, it is quite likely that you have component Prefixes (reference designators) that are in no particular order on the canvas. You may also have duplicates. You can automatically renumber all the components using the **Annotate** function.
-
-**Super menu > Miscellaneous > Annotate**
-
-![](images/067_Schematic_Annotate.png)
-
-Various Annotate possibilities  are available:
-
--   **Active Schematic only**: applies annotation actions to the current schematic only.
--   **All Opened Schematics**: applies annotation actions to all Schematics that are open in EasyEDA.
-
-**Note:** *This option applies even if the opened schematics are from different Projects! If the project that you want to annotate has more than one schematic, you should open all of them and close any schematics that are open from other Projects.*
-
--   **Re-annotate all**: resets all existing annotation and then annotates all components again from scratch;
--   **Keep existing annotation**: annotates new components only (i.e. those whose reference designator finishes with ? like R? or U?).
--   **Direction**: Rows annotates across the schematic in a raster pattern from top left to bottom right; Cols annotates down the schematic in a raster pattern from top left to bottom right.
--   **Annotate**: applies the selected annotation actions. 
-
-**Note:** *Annotation cannot be undone! if you do not accept the result: close all of the affected schematics without saving. If you do accept the result: make sure you save all of the affected schematics.*
-
--   **Reset**: if you want to reset all the reference designators to end with '?', just click the Reset button. After that, R1 will be R?, U1 will be U? etc.
-
-**Note:** *Reset does not reset annotation back to where it was before pressing the Annotate button.*
-
- 
-
-## 原理图库向导
-
-How many times have you hit a schematic capture roadblock because you couldn't find a component symbol?
-
-Well, in EasyEDA that would be never because the **Symbol Wizard** provides a quick and easy way to create a general schematic library symbol.   
-
-The **Symbol Wizard...** command can be found in the top toolbar. 
-
-Or **Super Menu > Miscellaneous > Schematic Library Wizard** in a new schematic lib document.
-
-![](images/068_Schematic_LibWizar.png) 
-
-Using the **NE555** timer as an example: this device is available in a **DIP8** package so select **DIP**. Then enter the NE555 pin names into the **Pin Names** text box separated by new line or space, Then press OK. Abracadabra! As if by magic, you will find a perfectly formed dual in line 8 pin symbol for the NE555 attached to your mouse cursor, ready to be placed! You just need a few seconds to build a NE555 symbol, quickly and easily.
-
-![](images/069_Schematic_LibWizar-NE555.png)
-
-The EasyEDA Schematic Symbol Wizard allows you to create DIP, QPF or SIP styles symbols. If you are designing Arduino Shields then you will need lots of SIP symbol, so you can create a SIP symbol like the one shown below in a few seconds.
-
-![](images/070_Schematic_LibWizar-SIP5.png)
-
-If you are not too worried that the symbols may not look quite the way people might expect and that they may not look anything like the **Package** type you enter, then of course you can use the wizard to create symbols for any component:
-
-![](images/071_Schematic_LibWizar-2N3055.png)
-
-
 
 
 ## 元件引脚信息修改
 
-When you select a component, for opening the Modify symbol information dialog, you can do:
+当你需要修改一个元件引脚信息，你需要选中它，
 
-1.**Super menu > Miscellaneous > Edit Symbol...**;  
-2.Or press the `I` hotkey;  
-3.Or click the Edit Symbol on the Parts Attributes on the left panel.  
+-	可以在右边属性面板的“修改器件”对元件的引脚信息进行修改。
+-	或者在 **超级菜单 > 杂项 > 修改器件** 打开。
+-	或者使用快捷键“I”（字母 i）。
 
-Using this dialog you can edit the pin names and numbers, for example, to suit a different package or device variant. You can also enter a Spice Prefix and swap the spice Pin order to make your symbol usable in simulation.   
+你可以修改元件的引脚名称，PCB前缀，Spice前缀，显示元件隐藏的引脚，对应的PCB引脚序号，Spice引脚序号等。
+比如，你可以通过修改焊盘编号来指定一个你想让它对应的封装；你也可以通过修改Spice前缀和Spice引脚来使它可以进行仿真。
+
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
 
-More detailed description of PCB and Spice Prefixes and pin numbers at next section.
+
+### PCB前缀与Spice前缀
+
+原理图中的元件，除了元件编号和用在PCB上的PCB前缀之外，还有一个用于Spice仿真的**Spice前缀**。
+
+**PCB前缀**是在生成PCB时元件对应封装的编号。基本上原理图编号与封装编号是一致的。比如你将原理图的U1的PCB前缀改为K1，那么它转为PCB时的封装编号就是K1.
+
+**Spice前缀** 用于告诉仿真器，该个符号表示哪个电路元件，用于什么样的仿真模型，它的分配规则比较严格。
+
+大多数Spice电路元件的仿真模块采用单行的 .model 语句形式，但其中一些可能采用多行形式 .subckt 子电路进行定义。 例如，一些MOSFET可以用一个.model语句描述，在这种情况下，它们的Spice前缀是**M**，但许多MOSFET由.subckt描述，所以它们的Spice前缀是**X**。
+
+因此，无论为原理图符号选择的PCB前缀如何，给定电路元件的原理图符号的Spice前缀必须与仿真原理图中该电路元件的实例所需的模块类型相匹配。
+
+大部分Spice前缀与元件的关联列表如下：
+
+![](images/170_Schematic_SpicePrefix.png)
+
+更多关于Spice仿真模块的内容请访问NgSpice：[http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)
+
+
+### PCB引脚序号与Spice引脚序号 
+
+-   PCB引脚序号： 这些序号是元件所需对应封装中真实的引脚数字。 它们是必需存在的，可使原理图中的器件符号的引脚可以映射到PCB中的占用空间的物理引脚上。 换句话说，原理图中显示的连接最终通过PCB上的铜线连接来体现。
+
+-   Spice引脚序号：  这些序号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的数字。
 
 
 ## 编号起始
-Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
+
+每个新建的原理图，在右边的自定义属性下有一个 `Prefix Start` 选项，该选项的作用是给放置的元件设置开始的编号，默认开始的编号是从1开始。若你使用多页原理图时，不希望第二页原理图的元件编号从1开始，那么你可以给它设置为200,300等，那么你放置元件的编号就会变成U200，U201，U202等。
+
 ![](./images/061_Schematic_PrefixStart.png)
 
 
-## 编号和引脚序号 
+## 编号冲突
 
-Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a **Spice Prefix**. They also have two sets of pin numbers: PCB pins and Spice pins.
+若你的原理图和工程下存在两个相同元件编号，当你进行电路仿真、打开设计管理器、转换到PCB过程中，会提示编号冲突，因为在正常情况下原理图和工程中不允许存在两个相同编号的零件。
 
-### PCB与Spice编号 
-
-The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user’s preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
-
-The rules on the assignment of the **Spice Prefix** of a schematic symbol are strict. This is because the Spice Prefix is used to tell the simulator which circuit element the symbol represents and therefore which simulation model it is to use.
-
-Simulation models for most of the spice circuit elements are in the form of a single-line .model statement however some of them may be in the form of a multi-line .**subckt** subcircuit definition. For example, some MOSFETs may be described by a .model statement in which case their Spice Prefix is **M** but many MOSFETs are described by a .subckt and so their Spice Prefix is **X**.
-
-Therefore, irrespective of the PCB Prefix chosen for a schematic symbol, the Spice Prefix for a schematic symbol representing a given circuit element must match the type of model required to simulate that instance of that circuit element in your schematic.
-
-For example, if you have two different n-channel MOSFETs in a schematic; Q1, a BSS123 which is modelled by a .model statement:
-
-BSS123*SRC=BSS123;DI_BSS123;MOSFETs N;Enh;100V 0.170A 1.00ohms  Diodes Inc.
-
-MOSFET
-
-	.MODEL DI_BSS123  NMOS( LEVEL=1 VTO=1.00 KP=6.37m  GAMMA=1.24
-	+ PHI=.75  LAMBDA=625u RD=0.140 RS=0.140
-	+ IS=85.0f  PB=0.800 MJ=0.460 CBD=19.8p
-	+ CBS=23.7p  CGSO=36.0n CGDO=30.0n CGBO=124n  )
-	*   -- Assumes default L=100U W=100U --
-	and Q2, a BSS127S which is modelled by a .subckt:
-	BSS127S*---------- BSS127S Spice Model ----------
-	.SUBCKT BSS127S 10 20 30
-	*     TERMINALS:  D  G  S
-	M1 1 2 3 3 NMOS L = 1E-006 W = 1E-006
-	RD 10 1 84.22
-	RS 30 3 0.001
-	RG 20 2 29
-	CGS 2 3 1.958E-011
-	EGD 12 0 2 1 1
-	VFB 14 0 0
-	FFB 2 1 VFB 1
-	CGD 13 14 2E-011
-	R1 13 0 1
-	D1 12 13 DLIM
-	DDG 15 14 DCGD
-	R2 12 15 1
-	D2 15 0 DLIM
-	DSD 3 10 DSUB
-	.MODEL NMOS NMOS LEVEL = 3 VMAX = 8E+005 ETA = 1E-012 VTO = 3.419
-	+ TOX = 6E-008 NSUB = 1E+016 KP = 0.127 U0 = 400 KAPPA = 1.044E-015
-	.MODEL DCGD D CJO = 1.135E-011 VJ = 0.9232 M = 0.9816
-	.MODEL DSUB D IS = 2.294E-010 N = 1.601 RS = 0.1079 BV = 65
-	+ CJO = 1.956E-011 VJ = 1.514 M = 0.8171
-	.MODEL DLIM D IS = 0.0001
-	.ENDS
-	*Diodes BSS127S Spice Model v1.0 Last Revised 2012/6/6
-
-then even though both have the same PCB Prefix of **Q**: Q1 must have a Spice Prefix of M and **Q2** must have a Spice Prefix of **X**.
-
-A list of Spice Prefixes and their associated circuit elements is given in the table below.
-![](images/170_Schematic_SpicePrefix.png)
-
-For more information on circuit elements in Ngspice, please refer to:
-
-[http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)
-
-
-### PCB与Spice引脚序号 
-
-The two sets of pin numbers are:
-
--   PCB pin number: these are the numbers for the real, physical device pins in its package. They are required so that the pins of a device symbol in a schematic can be mapped onto the physical pins of a PCB footprint. In other words, so that the connections shown in the schematic, end up connected properly by copper on the PCB.
-
--   Spice pin number or pin order:  these are the numbers that map the pins on the symbol to their respective functions in the spice model or subcircuit.
-
-Actually the spice pin ordering has a slightly deeper meaning.
-
-Spice has no concept of component symbols: they are a construct of the schematic editor.
-
-When a spice netlist is generated, the symbol in the schematic editor is either - in the case of model defined devices such as resistors, capacitors, inductors, diodes, transistors and sources - mapped directly to the relevant models (defined by the device prefix such as R, C, L, D, Q and so on), or in the case of a subcircuit, converted into a subcircuit call statement.
-
-The spice pin ordering for the majority of built-in models such as resistors, capacitors, inductors, diodes, transistors and sources are defined and generally taken care of by the schematic editor, more care has to be taken with the spice pin ordering of subcircuits.
-
-This can be illustrated by a simple opamp with 5 pins: inverting and non-inverting inputs; output and positive and negative supply pins but the principle applies to all spice subcircuits.
-
-The subcircuit call for this opamp might look like this in the spice netlist:
-
-X1 input feedback vpos vneg output opamp_ANF01
-
-where:
-
-X1 is the name of the subcircuit in the top level (i.e. the calling) circuit;
-
-input feedback vpos vneg output are the netnames in the circuit calling (i.e. containing) the subcircuit and
-
-opamp_ANF01 is the name of the subcircuit being called.
-
-Pay special attention to the order of the netnames in the subcircuit call.
-
-The spice pin ordering for the majority of opamp subcircuits is like that shown
-
-in the example below:  
-​	
-
-
-	*
-
-	* opamp_ANF01
-
-	*
-
-	* Simplified behavioural opamp
-
-	*
-
-	* Node assignments
-
-	*                    noninverting input
-
-	*                    |   inverting input  
-
-	*                    |   |   positive supply
-
-	*                    |   |   |   negative supply
-
-	*                    |   |   |   |   output
-
-	*                    |   |   |   |   |
-
-	* spice pin order:   1   2   3   4   5
-
-	*                    |   |   |   |   |
-
-	.subckt opamp_ANF01 inp inn vcc vee out ; these are the netnames
-
-	*                                         used internally to the
-
-	*                                         subcircuit.
-
-	B1 out 0
-
-	+ V=(TANH((V(inp)-V(inn))*{Avol}*2/(V(vcc)-V(vee)))*(V(vcc)-V(vee))
-
-	+ +(V(vcc)+V(vee)))/2
-
-	*
-
-	.ends opamp_ANF01
-
-	*
-
-
-**Note:** *The spice pin order of the subcircuit call is in exactly the same order as that of the subcircuit.*
-
-Although the physical pin numbering of any device is critical for successfully mapping the pins on a schematic symbol onto a physical package footprint when laying out the PCB, because spice only knows about single devices and does not care about how they are physically packaged, each instance of any device in a spice schematic has to be mapped onto its own copy of the spice model or subcircuit, irrespective of where it is in any physical package.
-
-Therefore, for the physical, package pin numbering of the four opamps in a quad opamp in say, a **SOIC14** or a **DIP14** package, as shown below, to work with the example subcircuit above, the spice pin ordering would be:
-
-
-	Opamp A         pin number         spice pin order
-
-	OUT                1                5
-
-	IN-                2                2
-
-	IN+                3                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp B         pin number         spice pin order
-
-	OUT                7                5
-
-	IN-                6                2
-
-	IN+                5                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp C         pin number         spice pin order
-
-	OUT                8                5
-
-	IN-                9                2
-
-	IN+                10                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp D         pin number         spice pin order
-
-	OUT                14                5
-
-	IN-                13                2
-
-	IN+                12                1
-
-	V+                4                3
-
-	V-                11                4
-
-
-The physical package pin numbering reflects that of each opamp in the package.
-
-The spice pin ordering is the same for each instance of the individual opamps.
-
-Of course there is only one physical instance of each supply pin on the schematic symbol for the quad opamp in this example but each spice subcircuit must have the supply pins explicitly defined.
-
-Exactly how this is handled is at the schematic symbol level depends on how the schematic capture package handles symbols for multiple devices with shared supply pins but the generation of a spice netlist from the schematic will always generate the complete set of pins required in the subcircuit calls.
-
-In cases where the subcircuit is built by the user  as opposed to where it is supplied by a vendor for a particular device, exactly the same rules apply except that it is up to the user to specify the subcircuit pin order and to construct the symbol appropriately.
-
-Although as described earlier, built in spice models usually have defined spice pin orders, not all  subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!  
-
-----------​
-
-[[8]](#ftnt_ref8) In Debian based distributions gerbv is listed under Electronics in the package management system. The version in the repositories may be an earlier version but some users may find it easier to install than the SourceForge archive.
-
-[[9]](#ftnt_ref9) As is the opamp_ANF01 example above
-
-
-## 编号冲突错误
-
-Sometimes, when you convert a project to PCB, open the Design manager or run a simulation, you will get a Prefix Conflict error message.
+如下图，因为存在两个 R4 所以在仿真的时候出现报错，这时你需要将其中一个编号修改为原理图中不存在的编号。
 
 ![](images/079_Schematic_ConvertToPCB-PrefixConflictError.png)
 
-In this schematic, you will find two components with the R4 reference designator, so you just need to change one to Rx where x is a unique number in that schematic.
-
-It may be tempting to backup a schematic into the same project as the original, however, if an attempt is then made to do Convert Project to PCB, you will get the Prefix Conflict error for every component.
+如果你在同一工程下复制一个原理图做备份，在转换为PCB时会提示编号冲突，那是因为立创EDA在工程下的原理图均视为属于同一个工程，在转换PCB时是将工程下的所有原理图合并后转在同一个PCB。所以你需要将备份文档放置在另外一个工程下。
 
 ![](images/080_Schematic_ConvertToPCB-DuplicateComponentPrefix.png)
 
-In the above image, you can find the two identical copies of the same schematic, which when you Convert Project to PCB, EasyEDA will try to merge into a single schematic, so every item will have 2 copies.   
-To fix this, you just need to create a backup project and remove or better still save backup copies of your schematics to that project.
 
+## 网络冲突
 
-## 网络名称冲突错误
-
-Sometimes, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
+立创EDA原理图中暂时不允许多个不同网络名称同时存在同一条导线上。否则当你进行电路仿真、打开设计管理器、转换到PCB过程中，会提示网络名称冲突。
 
 ![](images/081_Schematic_ConvertToPCB-NetNameConflict.png)
 
-In this schematic, you will find four net label/net flag(EasyEDA takes volprobe, GND VCC as netlabel too) in the same wire, So you must remove the others.
+在上图你可以发现VCC，GND，NetLabel1在同一条导线上，此时，你必须仅保留其中一个网络。
 
-If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.htm#Probe)
+
+
+## 标注
+
+当你创建了一个拥有较多数量元件的原理图时，很可能会出现编号重复，缺失等问题。如果你不想一个个去检查修改，你可以使用“标注”功能进行全局修改。
+
+可以在 **超级菜单 > 杂项 > 标注** 打开。
+
+![](images/067_Schematic_Annotate.png)
+
+**应用范围：**
+
+-   **仅当前原理图**： 标注功能只对当前的原理图有效。
+-   **所有打开的原理图**：  标注功能只对所有打开的原理图有效。
+
+**注意：** *使用所有打开的原理图选项时，即使是不同工程下的原理图也会被进行标注处理。如果你只想标注一个工程下的原理图，你需要将它下面的原理图全部打开，并且关闭其它工程的原理图。*
+
+**方法：**
+
+-   **重新标注**：对全部零件编号进行重新标注，包括已经存在的编号。
+-   **保留原来的标注**：只对新增的还没有分配编号的零件进行标注，原来存在编号的零件不做变更。
+
+**方向：**
+
+-	**行**：从顶部第一行开始，从左到右开始编号。
+-	**列**：从左边第一列开始，从上到下开始编号。
+
+**标注：**点击后进行标注操作。
+
+**重置：**如果你想将全部零件编号的数字都改成 “？”，你可以点击它，效果如 R1 变成 R?，U1 变成 U? 等。
+
+**注意：** 
+
+-	*当你点了标注按钮后，重置按钮并不能恢复你原来的标注。*
+-	*如果你标注后不满意可以使用工具栏的撤销按钮(快捷键CTRL+Z)恢复。但如果你标注保存并关闭文件后，再打开文件将不能恢复原来的标注状态。*
+ 
+
+## 原理图库向导
+
+立创EDA提供一个可快速创建原理图库符号的向导工具。
+
+在工具栏点击打开，如果是在原理图库文档中可以在**“超级菜单” > “杂项” > “原理图库向导”**打开。
+
+![](images/068_Schematic_LibWizar.png) 
+
+使用555定时器为例，当输入编号，名称，封装，选择样式，输入引脚名称后，点击确定即可自动生成一个元件符号。
+
+![](images/069_Schematic_LibWizar-NE555.png)
+
+原理图库向导目前暂时提供了三种图形样式： DIP, QPF 和 SIP 。
+
+![](images/070_Schematic_LibWizar-DIPQFPSIP.png)
+
+通过自定义引脚名字和封装，可以绘制方便识别的原理图库，比如下方自定义的含EBC说明的3极管2N3055符号。
+
+![](images/071_Schematic_LibWizar-2N3055.png)
 
 
 ## 原理图转PCB
 
-Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
+当你完成了原理图绘制，想要转换为PCB，你可以点击工具栏上面的图标**原理图转PCB**，或者点击 “**超级菜单 > 杂项 > 原理图转PCB**“
 
-**Note:** *Before converting, you need to use the Design Manager and Footprint Manager to check all the components, nets(connection) and packages/footprints to ensure no errors exist.*
+**注意：** *在你进行转换PCB之前，请先在设计管理器和封装管理器检查是否存在错误。*
 
-![](images/076_Schematic_ConvertToPCB.gif)
+![](images/076_Schematic_ConvertToPCB.png)
 
-### PCB库搜索顺序
+**PCB库搜索顺序**
 
-To find PCB footprints to match the package type attributes of your Schematic symbols, EasyEDA will search the available PCB libraries.   
+在转换为PCB时，编辑器会优先匹配你个人的封装库，收藏库，如果没有匹配，则会在系统库中查找。
 
-EasyEDA will search your own PCB Libs from the **My Parts** section first. If it doesn’t find a matching footprint there then it will search in the System PCB Libs. 
+比如你放置了一个三极管Q1，默认封装是**TO220**，且你没有重新为它指定封装，若在你的“我的库文件”中存在一个同名的**TO220**封装，那么在转换为PCB时，Q1的封装编辑器会优先匹配你个人的封装，并忽略系统的同名封装。
 
-So, for example, if your symbol calls up a “**TO220**” package, you have a **TO220**  package in your My Parts section and there is a “**TO220**” package in the system PCB Libs, then EasyEDA will use the  “**TO220**” package in your My Parts and ignore the system PCB Lib.
+**校验封装和生成PCB**
 
-### 校验封装和生成PCB
-
-After clicking the **Convert project to PCB** button, if the project has errors the following dialog will open:
+点击“原理图转PCB”后，如果编辑器检测到你的元件封装不存系统库中在或者元件无封装，会弹出错误对话框，并且转换动作不会继续进行。  
+点击下图的表格会打开封装管理器，你逐一修改/更新封装后，再重新转PCB即可。  
 
 ![](images/077_Schematic_VerifyThePackages.png)
 
-The row in red indicates that EasyEDA can’t find a PCB footprint matching the Package that the schematic symbol is calling for.   
-
-This could be because you have made an error entering the package attribute in the symbol’s Properties or maybe you haven’t yet created a PCB footprint for the package that your symbol is calling for.   
-
-In this case the package should have been **TO-92(TO-92-3)** but instead it is empty. To correct it you can click on the row and change it to **TO-92(TO-92-3)**.
-
-After making any necessary corrections, click the **Convert project to PCB** button and EasyEDA will automatically load all the package PCB footprints into the PCB editor as shown in the image below.
+转换成功后会如下图所示，自动生成一个PCB边框，并将PCB封装按照顺序排列成一排，蓝色的飞线表示两个焊盘之间需要进行布线连接，属于同一网络。
 
 ![](images/078_Schematic_ConvertToPCBSuccess.png)
 
-This shows the footprints placed in arbitrary positions with the connections between them shown as blue Rat lines.
 
 ### 更新PCB
 
-Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, by using the `Update PCB` button you can immediately be passed forward to update the selected PCB without having the PCB editor window already open or without creating a new PCB file.   
+当你已经完成转PCB动作，但是又再次修改了原理图，这时你无需转一个新的PCB，只需点击“更新PCB”即可将变更更新至现有的PCB文件。
+
   ![](./images/217_Schematic_UpdatePCB.png)    
+
+你也可以在PCB中直接导入变更。
+
+![](./images/128_PCB_ImportChanges.png)
+
 
 ## 原理图层级
 
-EasyEDA does not support true hierarchical designs but it does support **multi-sheet designs**. You can put several schematics in one project with connections between made by netlabels. All nets in EasyEDA are global so if you create a netlabel DATA0 in schematic A and then create a netlabel DATA0 in schematic B, when Schematic A and schematic B are in the same project, they will be connected.
+立创EDA不支持真正意义上的分级设计，但是支持多页原理图并支持全局网络，你可以在一个工程下放置多个原理图图文件，并将它们通过相同名称的网络标签和网络端口连接起来。
 
 ![](images/082_Schematic_MutilSchematicSheet.png)
 
-**Multi-sheet designs**(equivalent to a circuit spread over several pieces of
-paper), all schematics under the same project will be merged into one when be converted to PCB connecting in **netlabe**, **netflag**. 
+比如你在原理图A和原理图B均放置了网络标签A、B、C，那么在转PCB时编辑器会自动将原理图合并，使网络连接起来。
+
 ![](images/083_Schematic_MultiSheet.png)
 
-**Note:**   
-*Please make all of the prefixes unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error) on above section.*
+**注意：** *请让工程内的元件编号保持唯一，否则会出现上文所说的编号冲突。*
 
-**Tip:**   
-*Every schematic's prefix will start from 1, such as R1, C1, U1 etc.*   
-*1. you can use [Annotate](/Doc/Tutorial/schematic.htm#Annotate) to fix prefix.*  
-*2. You can set the prefix start to 100, then your components will start from R100, C100.*   
+**提示：**   
+*每个原理图的元件编号默认从1开始。如 R1, C1, U1 等。*   
+*1. 你可以使用上文的标注功能进行重新标注编号。*  
+*2. 你可以把起始编号改为100等，那么元件编号就可以 R100, C100等开始编号。*   
+
 ![](images/061_Schematic_PrefixStart.png)
 
 
-## 模块
+## 原理图模块
 
-Copying codes is an easy job for coders, now copying and reusing a schematic or PCB is easy.
-Take a power supply unit for example, you can save this unit as a schematic module.
+立创EDA支持原理图模块功能，以利于电路模块的复用，避免进行原理图的复制粘贴时出错。
+
+创建方式：**“另存为模块”**和**“文档” > “新建”> "原理图模块"**。
 
 ![](./images/218_Schematic_SaveAsModule.png) 
 
-After saving, you can find it at the **Parts > My Modules** section. And you can place the whole block to your schematic.
+原理图模块保存在“元件库”> “我的模块”中，下次使用在这里直接放置即可。
 
 ![](./images/219_Schematic_MyModules.png)  
 
 
 ## BOM与网表
 
-EasyEDA can export the BOM file and netlist of the schematic, you can check this function via [Export](./Export.htm#Export).
+立创EDA支持导出BOM表和网表，更多信息请查看 [导出](./Export.htm#导出)章节。
 
 
 

@@ -11,7 +11,7 @@
 
 - 国内个人用户永久免费，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
  
-- 立创EDA是知名在线EDA软件EasyEDA的国内版本，立创EDA专注国内用户，EasyEDA专注国外用户；立创EDA和EasyEDA功能上一致，编辑器和客户端同步更新；国内版与国外版账号数据系统相对独立，不互通，已经注册EasyEDA的用户请及时将账号数据迁移至国内版，迁移地址：[https://easyeda.com/applyForLceda](https://easyeda.com/applyForLceda)；因为立创EDA数据服务器建立在国内，所以国内用户访问立创EDA速度更快，基本无EasyEDA的卡顿现象。  
+- 立创EDA是知名在线EDA软件EasyEDA的国内版本，立创EDA专注国内用户，EasyEDA专注国外用户；立创EDA和EasyEDA功能上一致，编辑器和客户端同步更新；国内版与国外版账号数据系统相对独立，不互通，已经注册EasyEDA的用户请及时将账号数据迁移至国内版，迁移地址：[https://easyeda.com/applyForLceda](https://easyeda.com/applyForLceda)；因为立创EDA数据服务器建立在国内，所以国内用户访问立创EDA速度更快，基本无EasyEDA的卡顿现象。在今后国内用户访问EasyEDA都会导向LCEDA。
 
 - 无论你使用的是Linux, Mac , Windows，立创EDA均可以为你提供专业的优质服务。访问地址：[https://lceda.cn/editor](https://lceda.cn/editor) 
 
@@ -33,21 +33,14 @@
 -   基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
 -   PCB设计
 -   PCB设计规则检查
--   PCB网表导出支持
-      - 	Altium Designer
-      - 	[Kicad](http://www.kicad-pcb.org/)
-      - 	PADS
-      -        Spice网表  
+-   PCB网表导出支持(Altium Designer, [Kicad](http://www.kicad-pcb.org/), PADS, Spice网表)  
 -   仿真波形图导出(SVG格式)
--   原理图导出支持
-  -   	PDF
-  -   	PNG
-  -   	SVG
+-   原理图导出支持(SVG, PNG, PDF)
 -   生成BOM表
-- 	生成Gerber文件
--	生成坐标文件
--	工程文件下载
--	PCB预览(2D)
+-   生成Gerber文件
+-   生成坐标文件
+-   工程文件下载
+-   PCB预览(2D)
 -   文件导入功能
   -   	Altium/ProtelDXP Ascii 原理图/PCB(导入的AD文件必须是以ASCII格式保存的文件)
   -   	Eagle 原理图/PCB/库文件
