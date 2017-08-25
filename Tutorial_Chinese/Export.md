@@ -1,54 +1,39 @@
 
 # 导出 
 
-For documentation and other purposes, you can export your Schematic and PCB designs for many items.
+立创EDA支持导出多种类型的文件，以便于满足你在多方面的需求。
 
 
 ## 导出原理图
 
-Using:
-
-**Document > Export…**
-
-will open this dialog:
+导出原理图可通过点击：**文档 > 导出**会打开以下对话框：
 
 ![](images/155_Export_SchematicExportDialog.png)
 
-From here you can choose to export your design to SVG, image (.png) and PDF file format.
-
-For all file formats:
-
-**Width:** This is images' width , 0 is a 1:1 export of your image, higher numbers scale your image , if you set number as 1024 , the width will be 1024 pixels of the export PNG .
-
-**PenWidth-Increase:** 0 represents a default line width of 1 pixel; if you set this to 1, the line will be 2 pixels. This is illustrated in the image below.
+-	**导出选项：**PDF，PNG，SVG。
+-	**宽：** 该选项指导出图片的宽度。默认为0，代表实际尺寸。数值越高代表导出的分辨率越高，比如你输入1024，那么导出PNG图片的宽度为1024像素，图片高则根据原理图自动调整。
+-	**线宽增量：** 0代表实际尺寸。当你设置为1时，线宽会增大一倍。如下图，左边线宽为0，右边线宽为1.
 
 ![](images/156_Export_SchematicExport_PenWidth.png)
 
 ### 导出BOM
 
-You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below:
-
-![](images/084_Schematic_BOM-Report.png)
-
-Or click the top toolbar `BOM` icon:
+立创EDA支持导出BOM表(物料清单)，以便于你购买所需的零件。
+BOM导出可以点击工具栏的BOM图标：
 
 ![](images/273_Export_BOM_Icon.png)
 
-After clicking the BOM export option, the dialog below will open.
-
-In this dialog，you can assign LCSC part's order code for your components.
+点击后会弹出一个导出对话框，在这个对话框里，你还可以为零件指定立创商城的零件编号，可在立创商城购买元件时直接上传BOM表即可：
 
 ![](images/085_Export_BOM_Assign.png)
 
-After clicking on the assign icon，the components and packages search dialog will pop up, and you can choose which component you want to assign.
+点击分配图标后会打开元件库搜索框，在这里找到你想要的零件后然后点击“分配”完成编号指定：
 
 ![](images/274_Export_BOM_Assigned.png)
 
-When you click "Export BOM at LCSC", we will help you to list all the components of your BOM,  If you want to buy the components form LCSC, and you just need to put them to the cart and check out.  
-![](images/284_Export_BOM_ExportBOMDailog.png)  
+之后点击“从立创商城购买”按钮即可下载CSV格式的BOM表。未来BOM导出功能会与立创商城打通，一键加入购物车功能将实现，届时将大大方便用户采购元件。
 
-![](images/283_Export_BOM_ExportFromLCSC.png)
-And Click the "BOM" button to download the BOM file. You can open it in any text editor or spreadsheet.
+BOM打开后如图：
 
 ![](images/086_Export_BOM_CSV.png)
 

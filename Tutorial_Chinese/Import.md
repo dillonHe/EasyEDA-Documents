@@ -1,61 +1,66 @@
 
 # 导入 
 
-EasyEDA provides importing from:
+立创EDA目前支持导入的电路设计文件有：
 
--   Altium/ProtelDXP Ascii Schematic/PCB
--   Eagle Schematic/PCB/libs
+-   Altium Designer/Protel DXP ASCII格式的原理图/PCB
+-   Eagle 原理图/PCB/库文件
 
 
-You can find the import menu from the Document menu:
-
-**Document > Import...**
-
-which opens the Import file from your computer dialog:
+你可以在 **文件 > 导入** 打开导入对话框。
 
 ![](images/147_Import_NewImport.png)
 
-Please note that in File Operation: the Extract Libs option is only supported when importing Altium Designer and Eagle libraries.
+提取库文件功能只对Altium Designer原理图文件，PCB文件和Eagle库文件有效。
+
 
 ## 导入Altium Designer文件 
 
-You can import Altium Designer’s Schematic and PCB files into EasyEDA but only from **ASCII** files, so you need to save the designs as Ascii files like this.
+立创EDA仅支持以**ASCII格式**保存的原理图文件和PCB文件。所以你导入的文件必须先保存为ASCII格式：
 
 ![](images/148_Import_AltiumDesignerASCII.png)
 
-EasyEDA offers an excellent experience in importing Alitum Designer’s Schematic and PCB: as you can see from the image below of a schematic imported from Altium Designer:
+导入Altium Designer原理图文件，PCB文件效果已经非常出色，如下图：
 
 ![](images/149_Import_AltiumDesignerSchemaitc.png)
 
-Altium Designer’s Schematic and PCB libraries are not available as **ASCII** files, so how can you import them?
+Altium Designer原理图库文件，PCB库文件并不支持保存为 **ASCII**格式，所以立创EDA不知道直接导入Altium Designer的库文件。
 
-In the Import file from your computer dialog to the right of File Operation; tick the Extract Libs option and EasyEDA will extract all of the libs from the Schematic files or PCB Files. So, if you want to import Altium Designer’s Libs, you can add them to your Altium Designer Schematic or PCB and then extract them again into your EasyEDA library.
+你可以将需要的导入的库文件全部放在原理图或PCB中，再将原理图和PCB另存为ASCII格式，再导入时选择“提取库文件”即可将库文件全部提取。提取后可以直接放置在相应的画布上，也可以直接添加到个人库中。
+
+![](images/149_Import_AltiumDesignerExtractLibs.png)
 
 ## 导入Eagle文件 
 
-Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
+立创EDA支持Eagle文件导入，但是仅支持Eagle v6.0及以上版本的文件，因为Eagle从这些版本才开始采用**ASCII XML**结构的数据来保存本地文件。
+除了原理图和PCB，还可以直接导入库文件。选择导入库文件时，编辑器会自动切换至提取库文件选项。
 
-
+![](images/284_Import_EagleExtractLibs.png)
                     
 
 ## 导入DXF文件 
-How to create irregular board outlines or complex board outline in EasyEDA?   This is sometimes needed when you are designing a PCB for an enclosure that may have a curved profile, or other unavoidable mechanical features for which one must design.  
 
-Find the import DXF menu under the file menu.  
+如果你需要设计及其复杂的边框，设计美观的图案，并且你有现有的素材并保存为DXF格式。那么你可以尝试使用导入DXF功能。
+
+在**文档** > **导入DXF** 打开导入对话框：
+
 ![](images/152_Import_DXF.png) 
 
-After selecting the *.DXF file, you will find a dialog like in the image below
+选择了DXF文件后，会显现DXF文件预览：
+
 ![](images/153_Import_DXF_ImportDialog.png)
 
-EasyEDA provides two options, unit(mm or inch), and selection of the layer to which the shapes will be applied.
+立创EDA提供四种单位：英寸inch、厘米cm、毫米mm、密耳mil。 并可选择需导入的层：顶层、底层、顶层丝印、底层丝印、边框、文档。
 
-After clicking the import button, you will find them on your PCB canvas.
+点击“导入”按钮后，即可在画布中出现。
 
 ![](images/154_Import_DXF_Imported.png)
 
- You can try this to import this example by yourself. [DXF example](/Doc/Tutorial/images/example.dxf)  
+上图提供的DXF文件可以自行下载体验： [DXF边框范例](/Doc/Tutorial/Doc/test.dxf)  
  
-Please note:  
-1. The file must have a *.dxf filename extension  
-2. The circles will be converted to holes if you choose the layer as board outline.  
-3. There are some items which are not supported.  
+**注意：**
+
+-	*只支持在PCB文件导入DXF。*
+-	*导入的DXF文件必须以 .dxf 为扩展名。*
+-	*当你选择导入的层是边框时，圆圈会被转换为过孔。*
+-	*会有一些细节项目无法完美支持。* 

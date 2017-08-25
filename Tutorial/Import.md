@@ -39,6 +39,7 @@ Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 
                     
 
 ## Import DXF File 
+
 How to create irregular board outlines or complex board outline in EasyEDA?   This is sometimes needed when you are designing a PCB for an enclosure that may have a curved profile, or other unavoidable mechanical features for which one must design.  
 
 Find the import DXF menu under the file menu.  
@@ -53,7 +54,7 @@ After clicking the import button, you will find them on your PCB canvas.
 
 ![](images/154_Import_DXF_Imported.png)
 
- You can try this to import this example by yourself. [DXF example](/Doc/Tutorial/images/example.dxf)  
+ You can try this to import this example by yourself. [DXF example](/Doc/Tutorial/Doc/test.dxf)  
  
 Please note:  
 1. The file must have a *.dxf filename extension  
