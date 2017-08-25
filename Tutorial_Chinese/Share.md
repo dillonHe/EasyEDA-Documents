@@ -1,55 +1,64 @@
 # 分享 
 
-Sharing your work with others is a big feature of web based EDA tools and EasyEDA is no exception in offering you some nice features.
+立创EDA为你提供了两种方式的分享功能，你可以很容易地将文件分享给其他人。
 
-## 公共分享 
+-	公开分享：将工程公开给大众，所有人可以查阅。
+-	访问控制：将工程分享给指定的人，适合保密性分享。
 
-All projects in EasyEDA are set to private by default, your private project can not be shared with anyone.  
-i.e. to make it public, you should create a new project or right click and edit your existing project to be a Public project:  
+## 公开分享 
 
-**Create New Project：**
+所有新建的工程立创EDA都默认为私有工程，你不能直接公开分享私人工程下的文件。当你想要进行分享时，你必须先将工程设为公开的。  
+
+公开工程有两种方法：
+
+1、**创建新工程** 时选择公开。
+
 ![](images/164_Share_NewPublicProject.png)  
 
-**Edit Existing Project:**    
+2、**编辑工程** 进行公开。
 
-When you click **Edit Project**, it will open a website to allow you to set your project to be public.
+直接在工程文件夹下，右键点击“编辑工程”，然后在打开的网页设置公开。
 
 ![](images/165_Share_EditProjectToPublic.png)  
 
-After setting the project as public, you will see that the Project folder Icon is now shown as a hand holding the folder.
+工程设置为公开后，工程文件夹图标会出现一个手掌分享标志，表示该工程已经公开。
 
 ![](images/166_Share_SharedProjectIcon.png)
 
-If you then open one of the documents in this share folder, you can then click the Share icon on the toolbar to open the Share my works dialog.
+打开文档后，此时再点击工具栏的分享按钮即可弹出分享窗口，可复制链接进行分享。
 
 ![](images/167_Share_SharedProjectShareIcon.png)
 
+**注意：***如果你选择了公开工程，那么该工程将出现在你的个人主页下(个人首页：https://lceda.cn/你的用户名)，任何人都可以查阅。*
+
+
+**公开工程的好处**
+
+-	可以让更多人知道你开发的作品，为自己增加名气，大家共同学习共同提高；
+-	面试时可直接投递个人主页，让面试官知道你的设计实力；
+-	可以帮助有需要的人复用你的作品，设计开源共享，为开源事业做贡献。
+
 ## 访问控制
 
-How about sharing with selected people?
+如果你只想分享给指定的人，并且允许他/她对你的工程文件进行编辑，那么你可以使用“访问控制”。
 
-Can you share a private project with your partner? Can your partner modify your designs?
-
-Yes, you can use **Access control** to do this.
-
-Right click the project and you will see the Access Control on the context menu; clicking on it will open the Access Control dialog.  
-After adding a user, a user icon will show up beside the project folder icon as below.
+选择工程，右键选择“访问控制”，输入对方的邮箱，设置权限点后击“添加用户”即可分享。
+分享成功后，工程文件夹旁边会出现一个红色的用户图标，标识该工程正通过访问控制共享。
 
 ![](images/168_Share_AccessControl.png)
 
-So if you want to share a project with someone,
+**注意：**
 
-1.  You just need to know their E-mail address which they have used to create an account with EasyEDA
+-	*你分享的人员的邮箱必须是已经在立创EDA注册的账号。*
+-	*你可以设置的分享权限有“只读”和“读写”。*
 
-2.  You can share your project as **read** **only** or **read/write**.
-
-After setting up **Access Control** and Permissions, your partner will find your project in the **Shared** section from the left **Navigation Panel** when they login.
-
-If you partner doesn’t wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then clicking on Reject Sharing;
+对方可在编辑器的左边导航面板的“共享”模块查看你共享给他的工程。如果他不再接受你共享的工程，他可以在“共享”下，对工程右键选择“拒绝分享”，即可取消共享动作。
+下图第一个箭头处指的是分享人的用户名，第二个箭头指的是该工程的分享权限，RW指读写(Read 和 Write)。
 
 ![](images/169_Share_SharedWithMe.png) 
 
-And you also can check projects that your partner has shared with you in the account dashboard:  
+
+同样，你的伙伴使用访问控制共享给你的工程也是在“共享”模块查看。另外还可以在 “个人中心 > 项目 > 分享给我 ”中查看。
 
 ![](images/179_Share_SharedWithMe_Dashboard.png) 
 

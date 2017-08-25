@@ -26,11 +26,7 @@ For all file formats:
 
 ### Export BOM
 
-You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below:
-
-![](images/084_Schematic_BOM-Report.png)
-
-Or click the top toolbar `BOM` icon:
+You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below，click the top toolbar `BOM` icon:
 
 ![](images/273_Export_BOM_Icon.png)
 
