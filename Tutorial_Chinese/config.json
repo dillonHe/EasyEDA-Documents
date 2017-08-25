@@ -11,9 +11,9 @@
 		"Import.md",
 		"Export.md",
 		"Share.md",
-		"API.md",
 		"PCBOrder.md",
 		"PCBOrderFAQ.md",
-		"FAQ.md"
+		"FAQ.md",
+		"API.md"
 	]
 }

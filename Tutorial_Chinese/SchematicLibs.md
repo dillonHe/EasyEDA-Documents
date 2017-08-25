@@ -1,147 +1,138 @@
 # 原理图库文件
 
-Using **Symbol Wizard** and **Group/Ungroup...** is a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
+如前面章节所说，可以使用“原理图库向导”和“组合/解散”功能创建一个原理图库符号，创建后如果要在其他的原理图文档中使用该符号，可对它进行复制(快捷键CTRL + C)，切换文档后粘贴(快捷键CTRL + SHIFT + V)。但这两种方法创建的库文件不会保存在“我的库文件”中，所以需要保存在“我的库文件”中时，可创建一个原理图库文件。
 
-Start a new Schematic Lib as shown below or by doing:
-
-**Document > New > Schematic Lib**
+新建方法：**文档 > 新建 > 原理图库**。
 
 ![](images/088_SchematicLibs_CreateNewLib.png)
 
-This opens the New Schematic Lib symbol editor.
+填写相关信息后，会打开一个空白库文件。此时你可以使用前面的“原理图库向导”或者使用“绘图工具”进行绘制图形，在工具栏上点击引脚图标进行放置引脚(快捷键 P )。在原理图库文档中已无需“组合/解散”功能，故立创EDA没有提供在绘图工具上。
 
-You can now create a symbol using Symbol Wizard as before or draw it using the Drawing Tools palette and add pins using the `P` hotkey (except that you no longer need to use **Group/Ungroup...**).
+若需要修改原理图符号的引脚映射，你可以在：**超级菜单 > 杂项 > 引脚映射** 中打开。
 
-Then you can edit the pin map using:
+**注意：**
 
-**Super menu > Miscellaneous > Pin Map...**
+-	*建议在新建一个原理图库之前，先在“元件库”中搜索，可避免重复工作，或者可以在相近元件的库文件上直接编辑另存为一个新的库文件，以减少工作量。*
+-	*符号图形请在原点上创建，尽量保持原点在元件中央，以便于元件翻转和旋转操作，元件放置在原理图画布时鼠标光标的位置就是原点的位置。若你偏离原点创建，在放置的时候，编辑器会自动将鼠标光标移动在元件中心处。*
 
-Note the Origin Point. To simplify rotating and flipping your symbols when they are placed into a schematic, make sure all of your symbols are created as near as possible centered around that point.
 
-## 管脚
 
-Symbols pins are the most important part of any Schematic Lib symbol. They are the things that allow wires to be attached to symbols to connect up your circuit.
+## 管脚属性
 
-You can use the **P** hotkey to add a Pin or from the toolbar:
+原理图符号的引脚是元件最重要的组成部分之一，它允许进行导线连接以构成整个电路。
+
+在工具栏点击使用或者使用默认快捷键“P”。
 
 ![](images/089_SchematicLibs_ToolbarPins.png)
 
-Before placing it on the canvas, you can use the rotation hotkey or rotate and flip from the menu to rotate it to the right orientation. Make sure the **Pin Dot(black dot)** is in the right position. The **Pin Dot** will be used to connect your wires or netlabels. Whenever a PIN is either placed as directly onto the canvas or as part of a symbol, the mouse has to point to the **Pin Dot** position to automatically start the Wire mode or to join a wire to it.
+**管脚方向**
+
+在放置在画布上之前，可以按空格键进行选择到想要的方向。
+
+管脚的带圆圈端点是可进行导线连接的地方，所以该点正常需朝外放置。
 
 ![](images/090_SchematicLibs_PinDot.png)
 
-Whenever a Pin is placed as part of a symbol, the **Pin dot** should be **outside** of — and pointing away from — the symbol like in example 1(correct position), inside or pointing towards the symbol as shown in example 2(wrong position).
+如下图，左边图片是元件管脚的正确放置方式。
 
 ![](images/091_SchematicLibs_PinDotPlacing.png)
 
-When you select a single Pin, the **Pin attributes** will be shown in the right hand **Properties** panel:
+**管脚属性**
+
+当你选中一个管脚时，可以在右边的属性面板查看和修改它的属性。
 
 ![](images/092_SchematicLibs_PinAttributes.png)
 
-**Orientation**: 0°,90°, 180° and 270°.
+-	**方向**：只支持 0°、90°、180° 和 270°。若你需要放置45°的引脚，你需要将引脚长度改为0，然后用画图工具画出45°线段。
 
-**Start-X and Start-Y**: The pindot position. Sometimes it may be difficult to move the pin to the desired position using the mouse, so you can move the pin via Start-X and Start-Y.
+-	**起始X，起始Y**：引脚端点的坐标。你可编辑它的坐标到达你想要的位置。
 
-**Length**: Pin length.
+-	**长度**：引脚长度。
 
-**Name**: In this example, *VCC* is the name of the Pin.
+-	**名字**：引脚的名字，如上图选中的引脚名字为“VCC”。
 
-**Number**: In this example, *1* is the number of the Pin. This number is the pin number of the device in a physical package and so will be the pin number used in the device footprint for that device in that package in your PCB lib.
+-	**编号**：如上图选中的引脚编号为“8”。该编号与元件对应的封装的引脚编号相对应，并且两者的编号需要一致。你还可以使用带字母的编号，如 A1, B1, C1, A2, B2等。
 
-Note that you can use alphanumeric identifiers such as; A1, B1, C1, A2, B2 and so on as the Number.
+-	**Spice管脚编号**： 这些序号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的编号。
 
-**Spice Pin order**: These are the pin numbers used to connect your symbol to the corresponding pins defined by the .model or .subckt used to simulate your device. The pin numbers of the simulation model may be different from the physical package pin numbers and - unless the model is specifically created to model multiple devices in a single package - do not change for different instances of a device in a multi-device package. The Spice Pin order must be **numerals** only.
+-	**显示名字**：可选择是否隐藏管脚名称。
 
-For more information about Spice Pin order please see the section on [Prefixes And Pin Numbers](./Schematic.htm#Prefixes-And-Pin-Numbers).
+-	**显示编号**：可选择是否隐藏管脚编号。
 
-**Name Display**: If you don’t want to show *VCC*, switch it to NO.
+-	**颜色**：你可以单独为管脚设置颜色，该颜色会共同应用在管脚名字和编号上。你不能单独为它们进行设置颜色。
 
-**Number Display**: If you don’t want to show *1*, switch it to NO.
+-	**Dot**：是否将一个圆添加到管脚的内端，以表示逻辑(或模拟)反相。
 
-You can adjust the Name or Number position using your mouse but note that rotate and flip applies to the whole pin including the name and pin number; these items cannot be rotated and flipped independently of the pin itself.
+-	**时针**： 是否将一个“>”添加到管脚的内端，以表示逻辑时钟输入。
 
-Note also that rotate and flip actions do not result in upside down or mirrored pin number or names.
+-	**显示引脚**：可设置改引脚是否隐藏。当隐藏了该引脚后，放置该元件在原理图中将看不见该引脚。该隐藏功能只在原理图中体现，在原理图库编辑界面下一直保持显示状态。  
+若在原理图想将它显示，只需在元件属性中“修改器件”将“隐藏的引脚”选项取消勾选即可。  
+若你设置一个引脚的电气特性为Power，名称设置为VCC，且已将它隐藏，那么在原理图中它会自动与VCC电源(网络标签)连接，该功能可以让使用了多模块元件的原理图变得更加整洁清晰。
 
-**Color**: You can set the Pin to different colours, such as *PIN3:CLK* as orange and *PIN4:GND* as blue. In this example, the PIN1 is set as color `#880000`, but it shows as red, because it is selected. After deselecting it, the pin will appear color `#880000`.
+-	**电气特性**：包含Undefined(未定义)、 Input(信号输入)、Output(信号输出)、 I/O(信号输入/输出)、 Power(电源)。该功能在仿真时用。默认是Undefined。
 
-**Dot**: adds a circle to the inside end of the pin to indicate logical (or analogue) inversion.
+-	**字体及大小**：你也可以很方便的每个管脚名字和编号设置字体与大小，方便识别。
 
-**Clk**: adds a `>` to the inside end of the pin to indicate that the pin is logical clock input.  
+**注意：**
 
-![](images/093_SchematicLibs_PinAttributesEdit.gif)
+-	*你可以很方便地使用鼠标对管脚编号和名字进行位置调整，但是当你需要翻转或旋转它们时，管脚整体都会被翻转或旋转，立创EDA不允许单独翻转其中一个。*
+-	*立创EDA已经提供电气规则检查 (ERC)，但是你仍然需要为你的元件库文件设置电气特性。*
 
-**Show**: YES/NO. Allows you to hide the pin. When set it to NO, this Pin will be hidden when the symbol is placed on the schematic editor canvas.
+##自定义属性
 
-Note that the pin is not hidden here in the Schematic Lib symbol editor canvas because if it was, it would disappear from view and so how would you find it to make it visible again? For the same reason this option has no effect in symbols made using Group/Ungroup…
-
-*We may not have thought of everything in EasyEDA but we do try.  :)*
-
-**Electric**: [Undefined, Input, Output, I/O, Power] 
-
-EasyEDA provides Electrical Rules Checking (ERC) right now, But you still need to set electric of your Schematic libs. 
-
-If you set the PIN as Power and set the pin to be hidden, then the Pin will be connected by Name which is the NetLabel. If the Name is VCC, it will be connected to the net in your circuit with the NetLabel or NetFlag VCC. This is helps to keep the schematic clear and uncluttered when using Multi-part Components.
-
-After created the Lib, use `CTRL+S` will open the save dialog:
-
-![](images/093_SchematicLibs_SaveLibs.png)
-
-After clicking **Save**, you will see it appears in **Parts > My Parts > Schematic Lib** of the left hand Navigation panel.  
-![](images/094_SchematicLibs_MyLibs.png)
-
-You can add a tag for your new symbol: **Parts > My Parts > Schematic Lib > Select New Lib > More > Modify**, otherwise it will appears on **Untagged**.
-
-![](images/095_SchematicLibs_MyLibsAddTag.gif)
-
-
-## 元件子库
-
-We have already touched on how EasyEDA can support **Multi-part Components**  but how do you create **multi-part components**?
-
-EasyEDA provides a sub parts facility to do this.
-
-After creating a part, you can right click the part in the My Parts section to pop up the content menu.
-
-Suppose you have created your own symbol for a 74HCT04 hex inverter.
-
-![](images/096_SchematicLibs_MyLibsAddSubparts.png)
-
-Right Click **Add sub part** and that will add 74HCT04.*1*,  
-
-Click again to add 74HCT04.*2* , up to 74HCT04.*6*. 
-
-Then double click on each sub part in turn to modify the Pin Name and Number attributes.
-
-Easy or what?
-
-## 定义属性
-
-In the Schematic Lib editor’s canvas Properties panel, you will find a **Custom Attributes** section:
+在原理图库画布中，点击空白处可在右边属性面板查看元件属性，此处的元件属性与在原理图中单击元件时的元件自定义属性基本一致。在原理图中对元件修改的自定义属性仅对所在文档有效，在原理图库画布中设置的自定义属性对该元件的每次放置有效。
 
 ![](images/097_SchematicLibs_MyLibsCustomerAttributes.png)
 
-**Mounted**
+-	**Supplier**：供应商名称，新建默认为Unknown。修改为其他供应商后，会自动出现供应商编号输入框。
 
-You can control this part mounted or not on the PCB. If you choose No, this component will not appear in the BOM report.
+-	**Mounted**：是指该零件是否在PCB板上贴片或者插件，该处在BOM体现。
 
-**Package**
+-	**Package**：击输入框，即可弹出封装管理器。并为元件库文件指定封装。
 
-If you would like to built a PCB, you need to assign a package for your schematic Lib symbol. Although there are other ways to do this in EasyEDA, here is the right place to do it.
+-	**Prefix**：默认的原理图库符号前缀是 **U?** ，子库符号前缀是 **U?.1**。如果你创建了一个电阻你可以设置为 **R?**。
 
-Click in the **Package** input box, and the  **Parts** dialog will open as used to do this task in the Schematic Editor.
+-	**Name**：元件库文件的名称。
 
-**Prefix**
+-	**Contributor**：显示你用户名，立创EDA使用了你的库文件时会看到你的名字。
 
-The default Schematic symbol Prefix is **U?** If you create a resistor, you can set the Prefix to **R?**
+-	**增加参数**：可新增你想要的参数，如你自己的物料编号。是否包含在BOM。
 
 
-**Name**
+## 我的库文件
 
-You can change the schematic lib’s name here, it is can be different from the part’s file name.
+编辑完成后保存 `CTRL+S` 会打开一个对话框，以输入元件名称和描述：
 
-**Contributor**
+![](images/093_SchematicLibs_SaveLibs.png)
 
-This is your registered user name. Other EasyEDA’s users will remember your contributions!  
+点击确认后，你可以在左边导航面板“元件库”> "我的库文件" > “无标签”中找到它。
+  
+![](images/094_SchematicLibs_MyLibs.png)
+
+**标签**
+
+你可以选中它，点击右键“修改”或者右下角“更多”> "修改" 为它添加一个标签。添加后可以在原理图库列表下出现，该元件将出现在该标签下，你可以给一个元件添加多个标签，但建议只添加一个即可。
+
+若你需要再次修改符号，你需要点击下面的“编辑”按钮。
+
+关于元件库的功能更多请查阅前面的[原理图绘制：元件库搜索与放置](./Schematic.htm#元件库搜索与放置)章节。
+
+## 元件子库
+
+当一个元件存在太多引脚时，把它全部画在一个库文件中将会非常耗费空间，所以可以通过创建子库来进行多模块组合该元件。所有子库合在一起时是一个完整的元件。每个子库均对应同一个封装，仅对应的焊盘编号不一样。  
+
+在前面“原理图绘制：元件库搜索与放置”章节已经提到元件子库的放置。
+
+当你创建了一个库文件，在“元件库” > “我的库文件”中选中新建的库文件，点击右键“添加子库”即可依次添加子库
+
+如下图，每次添加子库均会产生一个名称带 .1 ，.2，.3 等的子库文件。
+
+![](images/096_SchematicLibs_MyLibsAddSubparts.png)
+
+添加后并对每个子库进行双击或者点击下方的“编辑”按钮进行编辑图形，引脚及编号等属性，保存后即可完成一个含子库的原理图库文件的创建。
+
+**注意**：*含子库的元件仅在父库指定一个封装即可，若你为每一个子库均指定不同的封装，那么立创EDA将保留最后一个指定的封装做为元件的封装。*
+
 
 
 

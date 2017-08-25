@@ -38,7 +38,7 @@ When you select a single Pin, the **Pin attributes** will be shown in the rig
 
 ![](images/092_SchematicLibs_PinAttributes.png)
 
-**Orientation**: 0°,90°, 180° and 270°.
+**Orientation**: 0°,90°, 180° and 270°。If you want to create a 45° pin, you need to set it length as 0, and draw a line with 45°。
 
 **Start-X and Start-Y**: The pindot position. Sometimes it may be difficult to move the pin to the desired position using the mouse, so you can move the pin via Start-X and Start-Y.
 
