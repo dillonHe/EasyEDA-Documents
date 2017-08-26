@@ -2,61 +2,6 @@
 
 Please spend a few minutes reading this FAQ, it will save you lots of time getting started with EasyEDA.
 
-## Contents
-**Concept**  
-	- *How to find the list of hotkeys*  
-	- *Where are my files*  
-	- *Why does EasyEDA focus on Cloud based EDA*  
-	- *How can I work if there is no internet*  
-	- *Does EasyEDA have a desktop version*  
-	- *Which Browser is best for EasyEDA*  
-	- *How to go to your dashboard*  
-**Projects and Files**  
-	- *How to delete a project*  
-	- *How to delete a schematic or PCB*  
-	- *How to share a project with others*  
-	- *How to find the version history of schematics and PCBs*  
-**Schematic**  
-	- *If I update the schematic, how do I then update the PCB*  
-	- *How to rename a Sheet/Document or modify description*  
-	- *How to find components*  
-	- *How to add sub parts to a schematic*  
-	- *What is the unit of the schematic sheet*  
-	- *For a complex project, I want to split the schematic over several sheets.   Does EasyEDA support hierarchy*    
-	- *How to change the sheet size and modify the design information*  
-**Schematic library symbol**  
-	- *How to create a schematic library symbol*  
-	- *How to tag my schematic library symbol*  
-	- *How to create sub parts for multi-part components*  
-	- *How to change the Package for a component*  
-**PCB**  
-	- *How to change the Units of PCB from mil to mm or inch*  
-	- *How to pick and move the components on the PCB canvas quickly*  
-	- *Can I create a PCB without creating schematic*  
-	- *How to add more fonts for PCB*  
-	- *How to insert an Image/Logo to PCB*  
-	- *How to insert a DXF board outline*  
-	- *How to create non rectangular PCB outline such as round*  
-	- *How to add a slot and cut out*  
-	- *How to measure dimensions on a PCB*  
-	- *How to add more layers*  
-	- *How to add solder mask*  
-	- *How do I set the dimensions of my PCB in the layout*  
-	- *My PCB is complex, how can I be sure that I have routed all of the tracks*  
-	- *I need to start my layout again, how can I remove all of the tracks*  
-	- *How to put a component on the bottom layer*  
-	- *I can't convert schematic to PCB*   Why is this*  
-**PCB package**  
-	- *How to create a PCB package/library*  
-	- *Keep in Mind*  
-	- *Most Common Errors on EasyEDA*  
-	- *Spice Simulation FAQ*  
-	- *How to set the resistance of a resistor*  
-	- *Where Can I find the Probe*  
-	- *Why I can't simulate my schematic*
-**Others**  
-	- *Does EasyEDA canvas use the Cartesian coordinate system*    
-	
 
 ## Concept
 

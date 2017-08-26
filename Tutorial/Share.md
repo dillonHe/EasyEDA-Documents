@@ -4,6 +4,8 @@ Sharing your work with others is a big feature of web based EDA tools and Easy
 
 ## Share to Public 
 
+Did you create a really cool project with EasyEDA? Show it off and be super helpful to other EasyEDA users, you just need to set your projects to public, so others can explore your circuits.
+
 All projects in EasyEDA are set to private by default, your private project can not be shared with anyone.  
 i.e. to make it public, you should create a new project or right click and edit your existing project to be a Public project:  
 

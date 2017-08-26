@@ -5,57 +5,63 @@
 
 **欢迎使用立创EDA/LCEDA**
 
-- 立创EDA是一款基于浏览器的，友好易用的，强大的EDA工具, 服务于广大电子工程师,教育者,学生,制造商和爱好者。致力于中小原理图PCB工程的设计，仿真与实现。  
+-      立创EDA是一款基于浏览器的，友好易用的，强大的EDA(Electronics Design Automation: 电子设计自动化)工具, 服务于广大电子工程师,教育者,学生,制造商和爱好者。致力于中小原理图PCB工程的设计，仿真与实现。  
  
-- 立创EAD可以不需要安装任何软件或插件。只需在任何支持HTML5,标准兼容的web浏览器打开立创EDA即可。请优先使用最新版Chrome和FireFox浏览器，其他浏览器立创EDA暂时不做适配。
-
-- 国内个人用户永久免费，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
+-	立创EAD可以不需要安装任何软件或插件。只需在任何支持HTML5,标准兼容的web浏览器打开立创EDA即可。请优先使用最新版Chrome和FireFox浏览器，其他浏览器立创EDA暂时不做适配。
  
-- 立创EDA是知名在线EDA软件EasyEDA的国内版本，立创EDA专注国内用户，EasyEDA专注国外用户；立创EDA和EasyEDA功能上一致，编辑器和客户端同步更新；国内版与国外版账号数据系统相对独立，不互通，已经注册EasyEDA的用户请及时将账号数据迁移至国内版，迁移地址：[https://easyeda.com/applyForLceda](https://easyeda.com/applyForLceda)；因为立创EDA数据服务器建立在国内，所以国内用户访问立创EDA速度更快，基本无EasyEDA的卡顿现象。在今后国内用户访问EasyEDA都会导向LCEDA。
+-	立创EDA是知名在线EDA软件EasyEDA的国内版本，立创EDA专注国内用户，EasyEDA专注国外用户；立创EDA和EasyEDA功能上一致，编辑器和客户端同步更新；国内版与国外版账号数据系统相对独立，不互通，已经注册EasyEDA的用户请及时将账号数据迁移至国内版，迁移地址：[https://easyeda.com/applyForLceda](https://easyeda.com/applyForLceda)；因为立创EDA数据服务器建立在国内，所以国内用户访问立创EDA速度更快，基本无EasyEDA的卡顿现象。在今后国内用户访问EasyEDA都会导向LCEDA。
 
-- 无论你使用的是Linux, Mac , Windows，立创EDA均可以为你提供专业的优质服务。访问地址：[https://lceda.cn/editor](https://lceda.cn/editor) 
+-	无论你使用的是Linux, Mac , Windows，立创EDA均可以为你提供专业的优质服务。访问地址：[https://lceda.cn/editor](https://lceda.cn/editor) 
 
-- 现已提供桌面客户端下载，画图更流畅：[https://lceda.cn/page/download](https://lceda.cn/page/download)
+-	国内个人用户永久免费，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
+
+-	现已提供桌面客户端下载，画图更流畅：[https://lceda.cn/page/download](https://lceda.cn/page/download)
+
 
 **注意：***在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
   
 **不收费立创EDA怎么生存？**  
 
-- 立创EDA目前提供立创商城元器件销售，PCB打样与批量订单，PCB贴片服务。未来还会为企业用户提供付费服务。    
+-	立创EDA目前提供立创商城元器件销售；PCB打样与批量订单，PCB贴片服务；未来还会为企业用户提供付费服务。    
 
-- 如果你想支持立创EDA更好的发展请在立创商城([www.szlcsc.com](www.szlcsc.com))购买元件，或者在立创EDA这里进行PCB打样与贴片([www.sz-jlc.com](www.sz-jlc.com))。  
-
-当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
+-	如果你想支持立创EDA更好的发展，你可以：
+	-	在立创商城([www.szlcsc.com](www.szlcsc.com))购买元件；
+	-	在立创EDA的兄弟公司嘉立创进行PCB打样与贴片([www.sz-jlc.com](www.sz-jlc.com))；
+	-	使用立创EDA创建个人的库文件和公开的工程；
+	-	向朋友推荐立创EDA。
 
 **立创EDA可提供：**
 
--   原理图绘制
--   基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
--   PCB设计
--   PCB设计规则检查
--   PCB网表导出支持(Altium Designer, [Kicad](http://www.kicad-pcb.org/), PADS, Spice网表)  
--   仿真波形图导出(SVG格式)
--   原理图导出支持(SVG, PNG, PDF)
--   生成BOM表
--   生成Gerber文件
--   生成坐标文件
--   工程文件下载
--   PCB预览(2D)
--   文件导入功能
-  -   	Altium/ProtelDXP Ascii 原理图/PCB(导入的AD文件必须是以ASCII格式保存的文件)
-  -   	Eagle 原理图/PCB/库文件
-  -   	LTspice原理图/符号 (需要被Ngspice兼容)
-  -   	[Kicad](http://www.kicad-pcb.org/)的封装库和模块
-  -   	Spice模块和子电路
--   原理图库的创建和编辑
--   支持多表格原理图和多页原理图
--   Spice子电路创建
--   波形图浏览
--   仿真数据量测
--   PCB封装库创建和编辑
--   简单又强大的绘制能力
--   原理图库，PCB库和仿真符库的管理
--   在线分享和多人协助
+-	原理图绘制
+-	原理图模块创建
+-	基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
+-	PCB设计
+-	PCB模块创建
+-	PCB设计规则检查
+-	PCB网表导出支持(Altium Designer, [Kicad](http://www.kicad-pcb.org/), PADS, Spice网表)  
+-	仿真波形图导出(SVG格式)
+-	原理图PCB导出支持(SVG, PNG, PDF)
+-	生成BOM表
+-	生成Gerber文件
+-	生成坐标文件
+-	工程文件下载
+-	PCB预览(2D)
+-	文件导入功能
+	-	Altium/ProtelDXP Ascii 原理图/PCB(导入的AD文件必须是以ASCII格式保存的文件)
+	-	Eagle 原理图/PCB/库文件
+	-	LTspice原理图/符号 (需要被Ngspice兼容)
+	-	[Kicad](http://www.kicad-pcb.org/)的封装库和模块
+	-	Spice模块和子电路
+-	原理图库的创建和编辑
+-	支持多表格原理图和多页原理图
+-	Spice子电路创建
+-	波形图浏览
+-	仿真数据量测
+-	PCB封装库创建和编辑
+-	简单又强大的绘制能力
+-	库文件的管理
+-	在线分享
+-	多人协作
 
 
 
@@ -292,7 +298,7 @@
 **用户贡献库文件**
 
 用户建立的库文件会自动共享至用户贡献库中，立创EDA认为，库文件的共享可以使更多人使用到你的库文件，减少重复的创建库文件的工作。并且库文件共享并不会产生数据安全性问题，需要关注的是用户私人的工程以及文档。
-用户贡献的库文件在使用时，点击后在右边属性面板可以看到一个“Contributor(贡献者)”参数，显示共享者的用户名。
+用户贡献的库文件在使用时，点击后在右边属性面板可以看到一个“Contributor(贡献者)”参数，显示共享者的用户名。贡献政策参见：[https://lceda.cn/page/contribute](https://lceda.cn/page/contribute)
 
 **查找库文件**
 

@@ -299,7 +299,7 @@ To prepare for the final assembly stage you can create a Bill of Materials (**BO
 
 and you can produce professional quality `SVG`, `.PNG` or `.PDF` output files for your documents.
 
-​
+All EasyEDA Schematic Symbol and PCB Footprint libs are public, so after you have created and saved a new symbol or footprint, others will be able to find your part and you will be credited as a contributor.   [https://easyeda.com/page/contribute](https://easyeda.com/page/contribute)​
 
 ### PCB Design
 

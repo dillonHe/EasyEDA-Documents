@@ -1,21 +1,21 @@
-# EasyEDA API Plug
+# 立创EDA API接口
 
  Before reading this capture, please check [Open EasyEDA File Format](/Doc/Open-File-Format/) first.
 
-## Why Need API
+## 为什么需要API
 
 After route the PCB, you found out that you need to enlarge all tracks size a bit little, How?
 After route the PCB, you found out that all Vias' hole size is too small, How to fix this?
 How to create a board outline using code? 
 EasyEDA API will let you control your designs in an easy way.
 
-## How to use API
+## 如何使用API
 
-### How to find the plug entrance
+### 如何找到接口的入口
 
 You can click **Config Icon > Extensions Setting** on the top toolbar image as below.
 
-### Extensions Setting
+### 扩展设置
 
 You can enable or disable the default extensions, after enable, please **reload** the EasyEDA editor. We will give you a file about how to create an extensions soon.   
 ![](./images/171_API_ExtensionsSetting.png)
@@ -38,7 +38,7 @@ You can check our **github** codes of this API via [https://github.com/dillonHe/
 6. **Close** EasyEDA editor and open it again.  
 ![](./images/174_API_Extensions_InstallExtension.png).  
 
-### Scripts
+### 脚本
 
 If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.  
 
@@ -47,7 +47,7 @@ If you just need some simple functions, you don't need to create an extension. Y
 3. You can install your own scripts, then they will show on **User Scripts**.
 ![](./images/175_API_Scripts_RunHelloWorld.png).  
 
-### Run Script code
+### 运行脚本代码
 
 In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
 ![](./images/176_API_ScriptSample.png).  
@@ -60,14 +60,14 @@ You can open an empty schematic and copy [this example javascript codes](https:/
 You can open a **PCB** and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js) to the text box to run a test. After that, All tracks will be 10mil.
 
 
-## EasyEDA Coordinate System 
+## 立创EDA坐标系
 
 EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.
 ![](./images/178_API_Coordinate.png).   
 
 Be careful this, they are different from **Cartesian coordinate system**  
 
-## Unit
+## 单位
 
 There are two kinds of unit in our editor, SVG Canvas unit and real world EasyEDA unit. SVG Canvas unit is **Pixel**. The real world EasyEDA unit in schematic is also **Pixel**, but in PCB, there are **mm**, **mil** and **inch**. We use bellow map to convert Canvas to real world.
 - 1 pixel = 10 mil
@@ -88,9 +88,9 @@ There are other convert method, such as `inch2pixel`, `pixel2mm`, `pixel2mil` an
 For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 
-## API List
+## API列表
 
-### Get EasyEDA Source
+### 获取立创EDA Source
 
 1. get EasyEDA JSON objects, type is `json`, you can check  [PCB Json object](/Doc/Open-File-Format/PCBFileObject.htm) out to know more.
 
@@ -106,7 +106,7 @@ For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 Check the [Get EasyEDA source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
 
-### Apply Source
+### 应用Source
 
  After you can use your codes to hack EasyEDA's source, then you need to apply the source to EasyEDA's editor. You can  
  
@@ -121,7 +121,7 @@ Check the [Get EasyEDA source example codes](https://raw.githubusercontent.com/d
 
 Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
 
-### Get Shape
+### 获取图形
 
  If you want to get an EasyEDA json object by **id**, you can try to use bellow code.
 
@@ -131,7 +131,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 
   Removing shapes by follow code
    
-### Update Shape
+### 更新图形
 
  If you want to modify an EasyEDA object, you can use this API.
 
@@ -150,7 +150,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 `shapeType`, `FOOTPRINT`, `TRACK`, `COPPERAREA`, `SOLIDREGION`, `RECT`, `CIRCLE`, `TEXT`, `ARC`, `DIMENSION`, `PAD`, `VIA`, `HOLE`
  
 
-### Create Shape
+### 创建图形
 
  If you want to create EasyEDA shape by codes, you can try. We will provide more information about this API soon, now we just provide examples. You will find out how to do.   
 
@@ -277,7 +277,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 
    If you want to create an extension, not just a run one time script, maybe need toolbar button. You can check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) before you read.
 
-#### Create Toolbar Button
+#### 创建工具栏按钮
 
 
 	 //@example create a button 
@@ -300,7 +300,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 *  ]
 	 * });
 
-#### Create Extension Menu
+#### 创建扩展菜单
 
 	/**
 	 * @example  
@@ -313,82 +313,82 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 * ]);
 	 */
 
-### Create Dialog
+### 创建对话框
   check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) 
 
-### Command List
+### 命令列表
 
-#### Clone
+#### 克隆
 
       // clone gge2 gge3 and return their new ids.
       var newIds = api('clone', {ids:["gge2","gge3"]})
 
-#### Delete
+#### 删除
 
 	  api('delete', {ids:["gge2","gge3"]});
 
-#### Rotate
+#### 旋转
 
     // rotate ids to 90 degree
     api('rotate', {ids:["gge2","gge3"],degree:90});
 
-#### Rotate Left
+#### 左旋转
 
     //anticlockwise
     api('rotate_left', {ids:["gge2","gge3"]});
 
-#### Rotate Right
+#### 右旋转
 
     //clockwise
     api('rotate_right', {ids:["gge2","gge3"]});
 
-#### Fliph
+#### 水平翻转
 
     api('fliph', {ids:["gge2","gge3"]});
 
-#### Flipv
+#### 垂直翻转
 
     api('flipv', {ids:["gge2","gge3"]});
 
-#### Align Left
+#### 左对齐
 
     api('align_left', {ids:["gge2","gge3"]});
 
-#### Align Right
+#### 右对齐
 
     api('align_right', {ids:["gge2","gge3"]});
 
-#### Align Top
+#### 顶对齐
 
     api('align_top', {ids:["gge2","gge3"]});
 
-#### Align Bottom 
+#### 底对齐 
 
     api('align_bottom', {ids:["gge2","gge3"]});
 
-### Selection
+### 选中
 
  Change or get selection states of EasyEDA objects in editor.
 
-#### Select
+#### 选择
 
       // gge2 and gge3 will be marked as selected.
       api('select', {ids:["gge2","gge3"]});
 
-#### Select None
+#### 未选择
 
       //no objects will be selected.
       api('selectNone');
 
-#### Get Selected Ids
+####获取选中的Ids
 
      var ids = api('getSelectedIds');
 
-### Move
+### 移动
 
 You can use [Update Shape](#UpdateShape) to change the shapes position, but the Move method is better in this case.
 
-#### Move Objects
+#### 移动对象
 
 Move shapes in relative coordinates, like move the shapes in arrow keys.
 
@@ -402,7 +402,7 @@ Move shapes in relative coordinates, like move the shapes in arrow keys.
 	//Move selected objects from left to right in 20pixel or 200mil step
 	api('moveObjs', {addX:20});
 
-#### Move Objects To
+#### 移动对象至
 
 How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move shapes to absolute coordinates.
 	
@@ -416,14 +416,14 @@ How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move s
 	 api('moveObjsTo', {x:20, y:20});
 It is very easy to understand to move a PAD, VIA, Junction to absolution coordinates. But what are the effects of moving TRACK, FOOTPRINT, netlabel to some where. Just try to play the codes, you will find out the regular pattern.
 
-### SetOriginXY
+### 设置原点XY
 
 EasyEDA's canvas origin is 0,0, you can't change it. But the real coordinates can be mapped to any where.   
 
 	//set the real origin point to canvas x = 400, y = 300. X,Y is pixel all the time.
     var result = api('setOriginXY', {x:400,y:300});
 
-### Coordinate Convert
+### 坐标转换
 
 You can use mm or mil or inch as units, but when you apply the Parameters to SVG graph, you must use coordinate convert. 
     
@@ -436,7 +436,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
 
   If you set the origin to **0,0**. It is very easy to map the coordinate in your mind, you don't need to use API to convert. the canvas coordinate **100,100** equal the real coordinate **1000mil, 1000mil** or **1inch, 1inch** or **393.7mm, 393.7mm**
 
-### Value Convert
+### 单位数值转换
 
  How to set the pad's hole size to 20mm? How to set the Track width to 20mil?
      
@@ -467,7 +467,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
         }
 	 });
 
-### Get SVG Arc Path
+### 获取SVG圆弧路径
 
  SVG [Arc path Parameter](http://www.w3.org/TR/SVG11/paths.html#PathElement) is very complex,  We provide a API to convert human read ARC parameter to SVG path.
 
@@ -475,7 +475,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
 
 result should be `M89.55037487502231 8.985007498214534A90 90 0 0 1 68.83579685560396 57.97959185139219`
 
-## Examples
+## 范例
 
 Check [Github example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example)
 

@@ -543,9 +543,17 @@ After converting the PCB to Photo View, you can see the result as in the image b
 
 ## 生成制造文件
 
-You can check via [Exporting Fabrication Files](./Export.htm#Exporting-Fabrication-Files)
+当你完成PCB设计之后，你可以生成Gerber文件，通过：**超级菜单 > 杂项 > 生成制造文件**，或者点击工具栏上的生成制造文件图标：
 
+![](./images/142_PCB_FabricationOutput.png)
 
+点击后会打开一个下载页面，点击下载即可。
+
+![](./images/221_Export_DownloadGerberFile.png)
+
+如果你需要PCB打样，建议使用立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
+
+当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
 
 
 

@@ -1,28 +1,27 @@
 
 # 创建PCB库
 
-There will be times when you will need a PCB footprint that is not already in the EasyEDA libraries.  
+如果你需要一个PCB封装，但是立创EDA的元件库中不存在，那么你可以自行进行创建。
 
-The process of creating your own PCB Libs is very similar to how you make symbols for your own Schematic Libs.
-
-You can start a new PCB lib as shown below:
+创建PCB库与创建原理图库几乎一致，你可以通过：**文档** > **新建** > **PCB库** 建立。
 
 ![](images/143_PCBLibs_NewLib.png)
 
+
 ## PCB库工具
 
-PCBLib Tools almost are the same as PCB tools, just lacking some of the functions.
-![](images/226_PCBLib_PCBLibTools.gif)
+PCB库工具的使用方法与PCB下的PCB工具一致，只是工具栏内少一些不需要的功能。
+
+![](images/226_PCBLib_PCBLibTools.png)
 
 
 ## 其他事项
 
-1.  It is important to set the right Snap and Grid sizes to ensure that the pads on the finished footprint snap exactly to the grid and so connect the nets. For example, if you are creating a DIP package, set the Grid size to 100mil.
+1.  设置准确的网格和栅格尺寸很重要，一些精密的封装需要准确的尺寸，否则可能导致无法贴片。
 
-2.  Keep all other shapes such as component outlines and any associated pin identification marks or text on the TopSilkLayer. EasyEDA will automatically take care of the actual layer assignment when you place the footprint on the PCB.
+2.  请保持所有封装的边框线框，和文字在顶层丝印层绘制。放置封装在PCB时，立创EDA会自动为封装的丝印切换至PCB对应的丝印层。
 
-3.  `CTRL+S` to save your footprint designs and you will find them saved into the **Parts > My Parts > Packages** section of the left Navigation panel. 
+3.  按“CTRL+S”保存你的封装，然后你可以在左边导航栏的**“元件库”>“我的库文件”>“PCB库”**中找到它。
 
-4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`
-
+4.  焊盘和过孔不能太小，需保持圆圈 >= 4mil。  
   ![](images/146_PCBLibs_NewPadRing.png)
