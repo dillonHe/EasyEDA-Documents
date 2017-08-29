@@ -26,29 +26,23 @@ In the schematic editor, we use Wire or the `W` Hotkey to connect Pins, in a 
 
 1.  Single click to start drawing a track. Single click again to pin the track to the canvas and continue on from that point. Right click to end a track. Double right-click to exit track mode.
 
-2.   Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:
-
+2.   Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:  
   ![](images/113_PCB_TrackInsertVia.gif) 
-
-  If you start drawing a track on the top layer - you will see it drawn in red - then press the B key to change to bottom layer and you will see EasyEDA insert a grey via and then the track will continue being drawn but now on the bottom layer in blue.
+If you start drawing a track on the top layer - you will see it drawn in red - then press the B key to change to bottom layer and you will see EasyEDA insert a grey via and then the track will continue being drawn but now on the bottom layer in blue.
 
 3.  Pressing the `+` or `-` Hotkeys when drawing the track will change the width of the track on the fly.
 
-4.  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.
-
+4.  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.  
   ![](images/114_PCB_TrackVertex.gif)
 
 5.  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
-
   ![](images/115_PCB_TrackSegmentAdjust.gif)
 
 6.  Pressing the `L` Hotkey when drawing the track will change the track’s Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
-
   ![](images/112_PCB_RouteAngle.png)
 
 
 7.  You can change inflection direction when routing, just press `Space` key.
-
   ![](./images/224_PCB_TrackChangeDirection.gif)
 
 
@@ -80,7 +74,7 @@ After selecting one of the pads, you can view and adjust its attributes in the 
 EasyEDA supports four shapes: `Round` , `Rectangular` , `OVAL` and `POLYGON`.  
 
 -	`OVAL` PAD will give your more space.   
-  -`POLYGON` PAD will let you to create some strange pad.  
+-	`POLYGON` PAD will let you to create some strange pad.  
 
 Like in the image below, you can edit the PADs points when you select a `POLYGON` PAD
 ![](./images/145_PCBLibs_NewPadShape.png) 
@@ -304,7 +298,7 @@ If you want to check the ratlines with highlight, you can click the pencil on th
 
 PCB editor can display net name in the track or Pads, if you don't need this feature, just need to turn it off via： 
 
-**Super menu > Miscellaneous > View > PCB Net Visible**, or press hotkey `Q` .
+**Super menu > View > PCB Net Visible**, or press hotkey `Q` .
 
 ![](images/227_PCB_PCBNetVisible.png)
 
@@ -538,6 +532,8 @@ EasyEDA has no 3D View at present, but we provide a nice Photo View to help you 
 After converting the PCB to Photo View, you can see the result as in the image below.
 
 ![](./images/141_PCB_PhotoView.png)
+
+The photo view background default set as black and the right panel was hidden , you can popup up the right attribute panel and modify it.
 
 
 

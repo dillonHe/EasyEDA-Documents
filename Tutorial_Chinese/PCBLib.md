@@ -14,6 +14,8 @@ PCB库工具的使用方法与PCB下的PCB工具一致，只是工具栏内少�
 
 ![](images/226_PCBLib_PCBLibTools.png)
 
+放置焊盘及其编辑，请查阅[PCB：焊盘](./PCB.htm#焊盘)章节。
+
 
 ## 其他事项
 

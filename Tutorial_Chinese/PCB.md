@@ -1,544 +1,545 @@
 
 # PCB编辑器 
 
-After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA’s PCB Design Editor.
+新建PCB编辑器有两种方式。  
 
+-	前面章节中通过原理图转为PCB。
+-	在“文档”>“新建”> “PCB”新建打开。
+
+正常来说，在绘制PCB前，需要先设置PCB板子边框和设计规则。边框和设计规则请查阅后面章节。
 
 ## 画布 
 
-Lots of PCB canvas attributes are the same as Schematic canvas attributes. The key is that you can set **units** in PCB canvas attributes.
+**画布属性**
 
-![](images/108_PCB_CanvasAttributes.gif)
+PCB画布属性和原理图画布属性大部分一致。点击PCB空白处在右边面板可以修改画布的尺寸单位，网格等。目前支持mm，inch，mil三种单位，精度至小数点后两位。
+
+![](images/108_PCB_CanvasAttributes.png)
+
+PCB中大部分对象，在选中它后，基本都可以在右边属性面板查看和修改它的属性。
+
+**其他**
+
+-	**线宽：**这里设置默认布线线宽。
+-	**拐角：**设置默认布线的拐角方向。有：45°，90°，圆弧，任意角度。
+-	**覆铜区：**这里可设置铺铜区域是否可见。选择否之后铺铜将消失，仅保留铺铜的边框。
+-	**增加参数：**该参数仅对PCB画布用，可以做信息标记，不会应用到BOM和Netlist中。
+
 
 
 ## PCB工具
-PCB tools provide many function to fulfill your PCB design requirement.
-Such as: Track, Pad, Via, Text, Arc, Circle, Move, Hole, Image, Canvas Origin, Connect Pad to Pad, Copper Area, Solid Region, Measure/Dimension, Rect, Group/Ungroup. etc.
+PCB工具提供很多功能以满足你绘制PCB的需求。  
+有导线，焊盘，过孔，文本，圆弧，圆，拖动，通孔，图片，画布原点，量角器，连接焊盘，覆铜，实心填充，尺寸，矩形，组合/解散。
 
 ![](images/109_PCB_PCBTools.gif)
 
 
 ### 导线 
 
-In the schematic editor, we use Wire or the `W` Hotkey to connect Pins, in a similar way in the PCB editor, we use Track to connect Pads. Track allows you to draw PCB tracks and can be found on the PCB Tools palette or using the `W` Hotkey (not T: see above!).
+在原理图中使用快捷键“W”绘制导线，在PCB绘制导线的快捷键也是“W”。
 
-**Some Tips about Track.**
+**导线属性**
 
-1.  Single click to start drawing a track. Single click again to pin the track to the canvas and continue on from that point. Right click to end a track. Double right-click to exit track mode.
-
-2.   Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:
-
-  ![](images/113_PCB_TrackInsertVia.gif) 
-
-  If you start drawing a track on the top layer - you will see it drawn in red - then press the B key to change to bottom layer and you will see EasyEDA insert a grey via and then the track will continue being drawn but now on the bottom layer in blue.
-
-3.  Pressing the `+` or `-` Hotkeys when drawing the track will change the width of the track on the fly.
-
-4.  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.
-
-  ![](images/114_PCB_TrackVertex.gif)
-
-5.  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
-
-  ![](images/115_PCB_TrackSegmentAdjust.gif)
-
-6.  Pressing the `L` Hotkey when drawing the track will change the track’s Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
-
-  ![](images/112_PCB_RouteAngle.png)
-
-
-7.  You can change inflection direction when routing, just press `Space` key.
-
-  ![](./images/224_PCB_TrackChangeDirection.gif)
-
-
-**Track Length**
-
-When a track is selected, you can find its Length attribute in the right panel.
+当你选中一条导线时，可以在右边属性面板修改它对应的属性。
 ![](./images/137_PCB_TrackLength.png)  
 
 
-**Delete a Segment from a Track**
+**使用技巧**
 
-In lots of other EDA tools, the track is segment line, but in EasyEDA, the track is polyline. Sometimes, if we want to delete a segment, we must delete the whole track and route again. Now we provide a better way to do this. Move your mouse to the segment which you want to delete, click it, then hold `SHIFT` and **double click it**. the segment will be removed.
+1.  单击左键开始绘制导线；再次单击左键确认布线；单击右键取消布线；再次点击右键提出绘制导线模式。
 
+2.  在顶层绘制导线的同时，使用切换至底层的快捷键“B”，可自动添加设置的过孔，走线并自动切换至底层继续布线。
+  ![](images/113_PCB_TrackInsertVia.gif) 
+
+3.  在布线过程中使用快捷键“+”，“ - ”可以很方便地调节当前的走线的大小。
+
+4.  双击导线线段会增加一个节点，选择节点拖动可以调节走线角度。也可以通过拖动导线的末端端点将导线拉长或缩短。
+  ![](images/114_PCB_TrackVertex.gif)
+
+5.  点击选择一个线段，可以拖动调整其位置。  
+  ![](images/115_PCB_TrackSegmentAdjust.gif)
+
+6.  在布线过程中可以使用快捷键“L”进行布线角度切换。
+  ![](images/112_PCB_RouteAngle.png)
+
+7.  使用空格键改变当前布线的方向。
+  ![](./images/224_PCB_TrackChangeDirection.gif)
+
+8. 在走线过程中，想撤销上一段走线可以通过删除键“Delete”撤销。
+
+9. 当按住“Shift”键并双击左键可以删除导线的线段。
 ![](./images/225_PCB_DeleteSegmentTrack.gif)
 
 
 ### 焊盘 
 
-You can add pads using the Pads button from the PCBLib Tools palette or using the `P` hotkey.
+放置焊盘的快捷键是“P”。
+当你选中一个焊盘时，可以在右边属性面板修改它对应的属性。  
 
-After selecting one of the pads, you can view and adjust its attributes in the right hand Properties panel.
+![](images/144_PCBLibs_NewPad.png)
 
-![](images/144_PCBLibs_NewPad.gif)
+**编号：**若不是单独放置的焊盘，该编号会与原理图库文件的引脚编号相对应。  
 
-**Number:** Remembering the pin numbers you set in the schematic symbol in your Schematic Lib: to connect those schematic symbol pins to the pads in your PCB footprint, the pad numbers you set here in the PCB Lib footprint must be the same.
-
-**Shape:** Round , Rectangular ,  Oval and Polygon.
-
-EasyEDA supports four shapes: `Round` , `Rectangular` , `OVAL` and `POLYGON`.  
-
--	`OVAL` PAD will give your more space.   
-  -`POLYGON` PAD will let you to create some strange pad.  
-
-Like in the image below, you can edit the PADs points when you select a `POLYGON` PAD
+**形状：** Round(圆形) , Rectangular(矩形) ,  Oval(椭圆形)和Polygon(多边形)。 如下图所示，选择多边形可以通过“编辑坐标点”创建复杂的形状。  
 ![](./images/145_PCBLibs_NewPadShape.png) 
 
-**Layer:** If the pads are part of a **SMD** footprint, you can set it to **Top layer** or **Bottom layer**. For through hole components you should set it to **All**.
+**层：**如果放置的焊盘是SMD类型或想它出现在单层，那么层请选择顶层或底层；若需要放置通孔类型焊盘，那么层请选择全部，焊盘将在顶层和底层出现。  
 
-**Net:** You don’t need to enter anything here because at present this footprint is not connected to anything in a circuit.
+**网络：**如果PCB由原理图转来，此处会默认生成网络；若是单独放置的焊盘，此处为空。你可以无需为它设置网络，当走线连接到它时，将自动为它添加网络。  
 
-**Width and Height:** When the shape is set to Round, Width will equal Height.
+**宽和高：** 当图形设置为圆时，宽和高会等值；当图形设置为多边形时，宽和高将不允许编辑。
 
-**Rotation:** Here you can set the Pad's rotation as you want.
+**旋转角度：**你可以设置你想要的任意角度。
 
-**Hole(D):**  This is the drill hole **diameter** for a through hole pad. For a SMD Pad, set this to **zero**.
+**Hole Shape：**内孔形状。有Round(圆形)，Slot(槽形)。普通的DIP封装以及电容等都是圆形钻孔，但某些特殊元件的安装脚需要长方形、椭圆形或其他类型的通孔。这些长方形、椭圆形或者其他类型通孔都算作槽孔。
 
-**Center-X and Center-Y:** using these two attributes, you can set the pad’s position with more precision, compared to using the mouse.
+**孔直径：**这是通孔焊盘的钻孔直径， 若是SMD类型焊盘请设置为0。
 
-**Plated：** Yes or No.
+**中心X和中心Y：**修改这两处数值可以修改焊盘在画布中的位置。
 
+**Plated：** 该焊盘是否有铜。当使用焊盘制作一个螺丝无铜通孔时，需选择否。
+
+**注意：***编辑坐标点仅在图形为Polygon(多边形)时有效；第一个坐标点在左下角，数值为X Y，单位跟随画布。*
 
 ### 过孔
 
-When you want to lay a multilayer PCB, you need to add Vias for nets getting through layer and layer.
+当你绘制一个双层板或多层板时你可以放置过孔，使顶层和底层导通。
 
-**Place a Via On a Track**
+**使用技巧**  
+在走线上放置两个过孔，然后就可以将两个过孔间的走线切换至其他层，或者移除。
 
-When placing a `via` on a track, the track will be cut to two segments.  Placing two vias on a tracks, you will get three segments, then you can change one segment to other layer id, or remove one of them.   
 ![](./images/142_PCB_ViaOnTrack.gif)
+
+**注意：***立创EDA不支持内层填埋孔，所有的过孔均可以在顶层和底层看见。。*
 
 
 ### 文本
 
-You can add more fonts from your computer or download some [free fonts:www.1001freefonts.com](http://www.1001freefonts.com/) .
+因涉及字体版权，立创EDA暂时不支持自带其他的字体。
+如果你需要输入汉字，或者需要不同的字体，你需要自行添加你电脑上的字体。免费字体可以在 [Free Fonts: www.1001freefonts.com](http://www.1001freefonts.com/) 上查找。
 
-Select the text, then you can find a Font-family attribute on the right panel like in the image below.  
+**添加方法**
+
+放置一个文本，并点击它，然后在右边属性面板字体处添加字体。  
 ![](./images/185_PCB_Text_AddFonts.png)  
 
-Click the add button, then choose the font, the font file must be `ttf` or `otf`.  
+点击“Add”按钮，并在打开窗口选择你电脑本地的字体文件后确认即可添加完成。字体文件必须是 `ttf` 或者 `otf`格式。
 ![](./images/186_PCB_Text_FontsSupport.png)  
 
-So you can add any fonts by yourself. EasyEDA doesn't cache the font on our server, so if you close the editor, you need to add the font again by yourself.
 
-**Note:** *If you use the other font, the `LineWidth` attribute is useless, because it will be automatically set by changing the `Height`.*
+**注意：** 
+
+-	*立创EDA不会保存你的字体在服务器，所以每当你关闭编辑器后再打开，你必须重新添加字体。*
+-	*如果你使用的是自添加的字体，字体属性中的宽度设置将无效，你只能修改字体的高度。*
 
 
 
 ### 圆弧
 
-You can draw many Arcs with different sizes, it's easy to create a pretty cool PCB as you like.  
+你可以使用圆弧工具画出不同大小的圆弧，创建布局酷炫的走线图案。可通过两个圆弧合并成一个圆。
 
 ![](./images/242_PCB_PCBTools_Arc.png)  
 
-EasyEDA provides two Arc tools:
+立创EDA提供了两种画圆弧的工具：
 
-- Start point fixed, you can change the end point position and radius.  
+-	先确定起始点，然后确定末点及半径。  
   ![](./images/268_PCB_Arc.gif)
-- Center point fixed, you can change the radius.  
+
+-	先确定圆心，然后确定半径及起点，再确定末点。   
   ![](./images/269_PCB_Arc_Center.gif)
+
+**圆弧属性**
+
+点击圆弧后可在右边面板进行属性修改。  
+**层**：使用圆弧工具画的圆弧可更换多个层。有：顶层，底层，顶层丝印层，底层丝印层，边框层，文档层。
+  ![](./images/270_PCB_PCBTools_ArcAttributes.png)
+
+
 
 ### 圆
 
-You can draw a circle in PCB , but it can only be drawn at SilkLayer and Document Layer. If you want to draw a circle at TopLayer or BottomLayer, please use Arc.
+在PCB工具里面提供的圆工具所画的圆，只能支持在丝印层和文档层绘制，如果你想在顶层或底层绘制一个圆，你必须使用圆弧工具绘制。   
+   ![](./images/271_PCB_PCBTools_CircleAttributes.png)
 
 ### 移动
 
-This option is same as schematic's drag.
+该功能与原理图工具的移动几乎一致。  
+   ![](./images/139_PCB_PCBTool_Drag.png)
+
+当使用该工具移动封装时，连接的走线会与其他封装分离并跟随移动，表现与直接鼠标批量选择后移动一致。
+
+其他关于封装移动的提示：
+
+-	当单选一个封装时，用鼠标移动，走线会拉伸跟随，不会分离；
+-	当单选一个封装时，用方向键移动，走线会与封装分离，仅移动封装。
+
 
 ### 通孔
 
-There were lots of users that didn't know how to use PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA added a HOLE TOOL in the PCB toolbar.  
+由于很多用户不知道如何通过焊盘，过孔来创建通孔，故立创EDA特意提供了一个通孔功能。可在属性设置其直径大小。
 ![](./images/139_PCB_PCBTool_Hole.png)
+
 
 ### 图片  
 
-On PCB and PCB Lib editor, there is a nice feature on the PCB Tools bar.
+在PCB和PCB库画布下，立创EDA支持添加图片。
 
 ![](./images/139_PCB_PCBTool_Image.png)
 
-After clicking on the image icon, you will see the Insert Image window as below.  
+点击插入图片功能，会打开一个窗口，你可以添加你需要的图片，立创EDA支持 `JPG`, `BMP`, `PNG`, `GIF`, 和`SVG`格式的图片。  
 ![](images/184_PCB_InsertImage.png)  
 
-In this dialog, you can choose your favorite image, EasyEDA support `JPG`, `BMP`, `PNG`, `GIF`, and `SVG`. Unlike some other EDA tools which only support a Monochrome Bitmap image, EasyEDA supports full color, but Monochrome Bitmap is welcome.
+添加图片后，可以：
 
-You can adjust the color tolerance, simplify level and reset the image size there.
+-	预览图片：左边为原图预览，右边为调整后的图片效果预览。
+-	颜色容差：数值越大，图像会损失越大。
+-	简化级别：数值越大，图像边沿会更圆润。
+-	图像反转：选择后，原本高亮区域会被挖图。
+-	图片尺寸：设置你要插入的大小。
 
-And you can select shape invert. 
-
-The image will be inserted to the active layer, if it is not right, you can change the attribute. Such as TopSilkLayer.    
+图片会插入在当前编辑的层，如果需要换层或修改其他属性，可以点击它后在属性处修改。
 ![](images/187_PCB_InsertImageLayer.png)  
 
 
 ### 画布原点
 
-This option is the same as schematic's Canvas Origin.
+你可以设置画布原点以满足定位要求。该功能与原理图的画布原点功能一致。
 
 ### 量角器
 
-We provide a protractor for PCB tools.  
-![](images/280_PCB_PCBTools_Protractor.gif)
+立创EDA提供一个量角器方便位置确定。
+点击后先确定圆点，再确认长度，最后确认角度。  
+选中它后，可修改其属性。其中层支持顶层丝印，底层丝印和文档层；精度最高支持小数点后两位。
+![](images/280_PCB_PCBTools_Protractor.png)
+
 
 ### 连接焊盘
 
-When creating a PCB without a Schematic, none of the pads on the Footprints have nets connecting them so there will be no ratlines. 
+当创建一个无原理图的PCB时，焊盘之间由于没有网络，所以不会出现飞线。使用“连接焊盘”功能可以使它们连接起来，帮助你减少出错。 
 
-Rather than try to track the pads from scratch, it is a good idea to connect them up by hand first using `Connect Pad to Pad` from the PCB Tools palette. This will help you to remember to track the pads correctly with fewer mistakes.   
-
-You could also do this by setting net names for all the pads: if the two pads are given the same net name then EasyEDA will understand that they are connected together and will automatically create a ratline between them.  
+点击后，你点击两个无网络的焊盘，即可自动为它们设置相同网络名，并产生飞线：
 
 ![](images/119_PCB_PCBTool-ConnectPadToPad_1.gif)  
 
-Or you can set these two pads with the same net name at the right panel Pad Properties after you click the pad.
+或者你也可以直接为两个焊盘分别设置相同的网络，飞线会自动产生：
 
 ![](images/120_PCB_PCBTool-ConnectPadToPad_2.gif)  
 
-For more information about Ratline you can refer to the [Ratline](./PCB.htm#Ratline) section.
+更多关于飞线的信息，请查阅 [**飞线**](./PCB.htm#飞线) 章节
 
 
 ### 覆铜 
 
-Sometimes you will want to fill in or flood an area with copper. Usually this copper area will be connected to a net such as **GND** or a supply rail. You can draw the outline of a flood using the **Copper Area** button from the PCB Tools palette.
+如果你想保留整块铜箔区域使其接地或者接电源，你可以使用“覆铜”功能。  
+点击后可以围绕你想铺铜的区域绘制铺铜区，一般沿着板子边框或在板子边框外部绘制，顶层和底层需要分别绘制。一块板子可以绘制多个铺铜区，并分别设置。
 
-When selecting a copper area, you can find its attributes from the right hand **Properties** panels.
+选中铺铜线框，可以在右边修改其属性。
 
 ![](images/134_PCB_PCBTool_CopperArea.png)
 
-**Layer:** Bottom, Top, Inner1, Inner2, Inner3, Inner4;
+**层：** 可以修改铺铜区的层：顶层、底层、内层1、内层2、内层3、内层4。
 
-**Net:** the net that the copper area is connected to;
+**网络：** 设置铜箔所连接的网络。
 
-**Clearance:** clearance of the copper area from other nets and floods;
+**间距：** 铺铜区距离走线和焊盘的间隙。
 
-**Pad Connection:** direct or spoke (i.e. a cross shaped heat shunt);
+**焊盘连接：**焊盘与铺铜的连接样式，直接连接还是十字连接。
 
-**Keep Island:** Yes/No. This keeps or removes any isolated areas of copper created as part of the flooding process. It is usually good practice to removes these unless you really need them to maintain a more even spread of copper (copper balance) on your PCB;
+**保留孤岛：**是或否。即是否去除死铜。若铺铜没有设置网络，那么整块铺铜都将被视为死铜而去除，若想保留铺铜，可选择保留孤岛或为铺铜设置网络。
 
-**Fill Style:** No/Filled. No removes the fill so that you can see the tracking more clearly;
+**填充样式：** Solid(实心填充)和None(无)。选择None可以使PCB更清晰，并且PCB成品将无铜箔，只有走线和焊盘。
 
-After drawing the copper area, set the net it is to be connected to (floating copper areas are not recommended because they can cause EMC and Signal Integrity (SI) problems).
+**重建覆铜区：**若你对PCB做了修改，或者铺铜属性做了修改，那么你可以不用重新绘制铺铜区，对其重建即可。
 
-Lastly, don’t forget to click the button Rebuild Copper Area to **rebuild** the flood.
 
-**Two Tips:**
+绘制铺铜后，建议不要将铺铜网络留空，否则很容易产生电磁干扰(EMC)和信号完整性(SI)问题。
 
-1.  Hotkey `Shift+B` to build all of the copper areas.
-2.  Hotkey `Shift+M` to clear all of the copper areas.
+**使用技巧**
+
+-	使用快捷键 `Shift+B` 重建所有铺铜区。
+-	使用快捷键 `Shift+M`  清除所有铺铜区。
 
 ### 实心填充
 
-EasyEDA has added a new tool Solid Region for PCB design
-
+立创EDA提供了一个名叫实心填充的功能。  
 ![](images/121_PCB_PCBTool_SolidRegion.png)
 
-This is a very useful, quick way to connect Pads. You can draw a Solid Region to include all of these pads with same net name, then set the region to the same net name as the pads. It is like Copper Area but easier to use for small areas. To use Solid Region like this, set the Type attribute (in the right hand Properties panel)  to Solid.
+绘制后点击实心填充的区域可以在右边修改其属性。  
+![](images/121_PCB_PCBTool_SolidRegionAttributes.png)
 
+-	**层：**支持将实心填充切换至其他层：顶层，底层，顶层丝印，底层丝印，文档，NPTH。
+-	**网络：**在顶层和底层时，可以对其设置网络使其具有电气特性。
+-	**类型：**Solid(实心填充)，NPTH(Non Plated Through Hole：非镀铜通孔)，Cutout(挖空)。
+	-	**Solid**：通过设置网络且类型为Solid，可以很容易将多个焊盘连接起来，效果与前面的铺铜类似。
 ![](images/122_PCB_SolidRegion_1.png)
-
-The Solid Region can also be used to create a cutout in a copper area.
-
-If you have a copper area but need an area inside it to not be filled then you can draw a Solid Region  and set the Type attribute (in the right hand Properties panel)  to Cutout , then this area will be free of copper, as shown in the image below:
-
-![](images/123_PCB_SolidRegion_Cutout.gif)
-
-Lastly, by setting the Type attribute (in the right hand Properties panel) to NPTH(Non Plated Through Hole), Solid Region can be used to create a *Non Plated Through Hole* of an arbitrary shape.
-
-When the Gerber files are generated, an area defined by a Solid Region set to a Type NPTH in the PCB editor will create an area defined to be a NPTH hole and you can see it in the PCB photo view as below:
-
-![](images/124_PCB_SolidRegion_NPTH.png)
+	-	**NPTH**：当设置实心填充类型为NPTH时，其所属的层也会自动切换至NPTH。实际PCB生产时会将此区域挖穿(非镀铜通孔)。铺铜后效果与照片预览效果如下图所示。
+	-	**Cutout**：该类型仅将铺铜区的铜箔挖空，铺铜不再对该区域铺铜。铺铜后效果与照片预览效果如下图所示。
+![](images/124_PCB_SolidRegion_NPTH_Cutout.png)
 
 
 ### 尺寸与量测 
 
-Making and adding measurements is useful in PCB design. EasyEDA provides two methods to do this.
+尺寸标识与距离测量对于PCB和封装库来说非常重要，立创EDA提供了两种方法。
 
-1.  Dimension tool in the PCB Tools palette:  
-  This tool can show three units on the canvas, milliliter, inch and millimeter.
-
+1. **尺寸工具：**该工具有三种单位，跟随画布单位设置。
+   当你选中尺寸的末端端点，你可以对其进行拉伸和缩小。并可以对其属性进行设置。   
   ![](images/132_PCB_PCBTool_Dimension.png)
 
-  When you click one side of the dimension on the PCB, you can drag it for any directions or change its length.
-  ![](images/276_PCB_PCBTools_Dimension.gif)
-
-2.  Measure a distance using **M** Hotkey: press **M**, Or Via: **Super menu > Miscellaneous > Measure Distance**, then click the two points which you would like to measure.    
-  **Note:** *This method will display the distance units which is the canvas' units.*  
+2.  **量测工具：**使用快捷键“M”或者通过 **超级菜单 > 杂项 > 量测距离**，然后点击你想量测的两个点。单位跟随画布单位设置。
   ![](images/133_PCB_Dimension_KeyM.png)
 
 
 ### 矩形
 
-It looks like a Solid Region, but it can't be set Nets and you can't set the Layer as NTPH.
-
+矩形工具与实心填充很相似，但是矩形不能设置网络，不能设置为NPTH层，也不能设置类型。
 ![](images/243_PCB_PCBTools_Rect.png)
 
 ### 组合与解散
 
-Just like Group/Ungroup in the Schematic Editor can be used to create a schematic lib symbol, you can use Group/Ungroup from the PCB Tools palette to create a PCB Lib footprint in the PCB editor.
-
-For example, place Tracks and Pads on the canvas, then select all of them and click **Group/Ungroup** to group them like in the image below:
+与原理图的组合/解散功能类似，原理图的是对原理图库符号作用，PCB的是对封装起作用。
+使用方法原理图的组合/解散功能一致。
 
 ![](images/118_PCB_PCBTool-Group.gif)
 
+## 层工具 
+
+PCB设计会经常使用层工具，它可以随意拖动位置，用来展示当前活动层。在这里对不同层进行切换编辑。  
+点击层对应的眼睛图标可以使其是否显示该层；点击层的颜色标识区，使铅笔图标切换至对应层，表示该层已进入编辑状态，可进行布线等操作。
+
+![](images/111_PCB_LayerView.png)
+
+切换层的快捷键如下：
+
+-	**T：** 切换至顶层 
+-	**B：** 切换至底层
+-	**1：** 切换至内层1  
+-	**2：** 切换至内层2
+-	**3：** 切换至内层3
+-	**4：** 切换至内层4
+
+**层配置**
+
+点击层工具右上角的齿轮图标，或者通过 **超级菜单 > 杂项 > 层配置** 打开设置界面。
+
+在配置界面，你可以修改层的显示颜色，可以勾选你需要使用的层，如果你需要画多层板，可以将最多4个内层勾选。如果你需要更多层，请联系立创EDA。
+
+![](images/110_PCB_LayerOptions.png)
+
+
+## 边框
+
+在放置封装前，需要先绘制板子边框。边框需在“边框层”绘制。先切换至“边框层”，再使用导线或圆弧进行绘制。
+![](images/125_PCB_Outline.png)
+
+当使用原理图转PCB时，立创EDA会自动生成一个边框，该边框内面积大小是总封装面积的1.5倍。
+若你不喜欢该边框，你可以将它删除后自己重新绘制。  工具栏上的“全局删除”功能可以进行快速删边框。
+![](images/126_PCB_AutoOutline.png)
+
+立创EDA提供了一个边框设置向导，通过它可以很方便的设置边框。
+可通过：**超级菜单 > 杂项 > 边框设置** 或者在工具栏的“工具”图标下“边框设置”。
+
+![](./images/127_PCB_BoardOutlineWizard.png)
+
+在对话框里你可以选择3中类型的边框：矩形，圆形，圆角矩形。并设置对应参数。
+
+如果你需要创建一个复杂的边框，你可以通过导入一个DXF文件生成。DXF可以由CAD等软件进行绘制生成。
+
 ## 飞线
 
-When you lay the track in the PCB, Between PIN and PIN as they have the same net name, a Ratline will be automatically shown among them to reveal that they can be connected with a track.
+当两个封装的焊盘网络相同时，会出现飞线，表示这两个焊盘可以通过导线连接。
 
 ![](images/222_PCB_Ratline.png)
 
-If you want some type of ratline to not show on the PCB editor, you can untick the net you like in the design manager, as below deselect `+12V`:
-If you still draw a track in `+12V` after deselecting, canvas will not display this track , but it will show a text with `+12V` as below.
+如果你想关闭某条网络的飞线，你可以在设计管理器中将该网络的勾去掉；如果你把勾去掉后仍然对它进行布线，那么走线将不会显示出来，仅会显示网络名称在走线的路径上。
 
 ![](images/223_PCB_UnShownRatline.png)
 
-Based on this skill， you don't need to lay GND net before copper area in the PCB.
+基于该技巧，你可以在布线前将GND网络去掉，在后面铺铜时再打开，可以减少飞线的干扰。
 
-If you want to check the ratlines with highlight, you can click the pencil on the Ratlines Layer as below, and you can change the ratline's color.
+如果你想高亮飞线的颜色，你可以切换至飞线层；如果你想改变飞线的颜色，你可以在层配置里面进行修改。
 
 ![](images/278_PCB_LayersTool_Ratlines.png)
 
 
 ## PCB网络
 
-### 显示网络名称
+**显示网络名称**
 
-PCB editor can display net name in the track or Pads, if you don't need this feature, just need to turn it off via： 
-
-**Super menu > Miscellaneous > View > PCB Net Visible**, or press hotkey `Q` .
+编辑器支持在走线和焊盘上显示当前的网络名称，如果想关闭，可以通过：**超级菜单 > 查看 > PCB网络可见**，或者在工具栏上“配置”功能里“PCB网络可见”，也可以使用快捷键“Q”。
 
 ![](images/227_PCB_PCBNetVisible.png)
 
-### 网络长度
+**网络长度**
 
-After selecting a track, and then pressing `H` key, EasyEDA will highlight the whole net and pop a message box to tell you the whole net's length. like in the image below  
+当你选中一条走线，再使用快捷键“H”， 编辑器会高亮整条网络并弹窗提醒走线的总长度。
 ![](./images/138_PCB_NetLength_KeyH.png)
-
-## 层配置 
-
-Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' gear icon.
-
-You can find the Layer Options Settings dialog.
-
-In this dialog, you can change the layer’s Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
-
-![](images/110_PCB_LayerOptions.png)
-
-
-## 层工具 
-
-Active Layer: The colours of the layers in the **Layers Tool** are defined in the Layer Options Settings. To work on a layer then you must make it the Active layer. To do this; click on the coloured rectangle representing the required layer. The pencil icon in the coloured rectangle indicates that this is the active layer.
-
-Show/Hide layers: click on the eye icons to show/hide layers.
-
-![](images/111_PCB_LayerView.gif)
-
-HotKeys for layer activation:
-
-**T:** Top Layer is active  
-**B:** Bottom Layer  
-**1:** Inner1 Layer  
-**2:** Inner2 Layer  
-**3:** Inner3 Layer  
-**4:** Inner4 Layer  
-
 
 
 ## 封装属性 
 
-When selecting a Footprint, you can find its attributes at the right hand Properties panel.
+当你鼠标经过封装时，封装整体高亮后点击即可选中整个封装，可在右边属性面板对其属性进行查看与修改。
 
 ![](images/116_PCB_FootprintAttributes.png)
 
-**Layer**: You can set a footrpint to be on the TopLayer or BottomLayer.   
-*Note: The footprint mirrors when swapping layers.*
+-	**编号：**与原理图的编号相对应。  
+-	**层：**含顶层和底层，切换后封装将切换至对应层。当切换至底层，封装会镜像显示，因为在立创EDA下绘制底层是以顶视图绘制。  
+-	**X左坐标和Y坐标：**可修改封装坐标。  
+-	**旋转角度：** 旋转角度以封装自身原点旋转。
+-	**序号：**立创EDA会自动为每一个对象分配一个序号，做文件保存时的标识，你无法对其修改。  
 
-**X-Location and Y-Location**: Moves the origin of the footprint to a precise position.
+**自定义属性**
 
-**Rotation**: Rotates the footprint about its origin over the range from 0o to any angle in 1o steps (visually of course multiples of 360o will appear identical).
+这个与原理图符号的自定义属性基本一致，无原理图PCB封装添加参数后，选择In BOM可在BOM中体现。
 
-**ID**: EasyEDA will assign a unique ID for each footprint automatically, you can't modify it.  
+**批量修改封装属性**
 
-
-### 批量修改封装属性
-
-Sometimes, we need to change some attributes of multiple objects together, such as the track width, hole size and font size.  
-Now, you can select them and do some changes. Taking the track for an example. If you select 3 tracks, now you can change their `Width`, `Layer`, `Net` together.  
+立创EDA目前允许部分对象批量选择后修改属性。使用“CTRL”+ 鼠标点选进行批量选择。
+如选择了3条不同的走线后，可在右边修改它们的宽度，层，网络。
 
 ![](./images/262_PCB_TrackBatchModify.png)
 
-You could also use it with other items such as `Pad`, `Via`, and  `TEXT`. 
+其他可修改的对象有：焊盘，过孔和文本等。
 
 
 
 ## 绘制无原理图PCB 
 
-For some small PCB projects, maybe you don’t need a schematic. EasyEDA allows you to lay the PCB directly from the PCB Editor.
+在一些小PCB制作，你可能并不需要绘制原理图。 立创EDA允许你直接进行PCB绘制。
 
-Start a new PCB and you can add footprints directly from the PCB Libs from Left Navigation Panel **Parts** and then just track them.  
+新建一个PCB文档后，在坐边导航面板的**“元件库”**中搜索和放置你所需要的封装。可对每个封装添加自定义属性，以便于导出BOM表。
 
-For setting pad to pad connections, you can check the above section : [Connect Pad to Pad](./PCB.htm#Connect-Pad-to-Pad)
-
-
-
-## 边框
-
-Before placing footprints we need to create a board outline. The board outline must be drawn on the **BoardOutLine** layer. So first, set **BoardOutLine** as the active layer, then draw the board outline using **Track** and **Arc** from the PCB Tools palette.
-
-![](images/125_PCB_Outline.png)
-
-When converting a Schematic to PCB, EasyEDA will try to create a board outline for you.
-
-The area of the default board outline area is 1.5 times the sum of the area of all of your footprints, so you can place all of your footprints into this board outline with some allowance for tracking. If you do not like the board outline, you can remove the elements it is made up from  and draw your own.
-
-![](images/126_PCB_AutoOutline.png)
-
-To create a simple rectangular board outline, this arc can be removed and the line X and Y end points edited - either directly in the Properties panel or by dragging the line ends - to close the rectangle.
-
-Alternatively, an outline with more rounded corners can be created by copying the arc and rotating it in 90 degree steps to position it over the desired right angle corners and then editing the line X and Y end points - either by dragging the line ends or directly in the Properties panel - to overlap the arc end points (also shown but not editable in the Properties panel).  
-
-And EasyEDA provides a **Board outline wizard**, so it is very easy to create a board outline.
-Via: **Super menu > Miscellaneous > Set Board Outline**, Or find it on the toolbar.  
-
-![](./images/127_PCB_BoardOutlineWizard.png)
-
-In this dialog, there's a choice of 3 types of board outlines, Rectangular , Circular, Round Rect. If you need a different more complex board outline, you need to import a DXF file.
+之后你可以根据前面叙述的连接焊盘功能将网络连接起来，再进行导线和其他绘制。
 
 
 ## 设计管理器 
 
-Just like Schematic’s Design Manager, PCB’s Design Manager can be found via:
+PCB的设计管理器与原理图的设计管理器一样，在左边导航面板找到；也可以通过快捷键“CTRL + D”切换至设计管理器。
 
-**Left Navigation panel > Design**
+在PCB设计管理器下，你可以：
 
-or just press the `CTRL+D` hotkey to open the Design Manager dialog.
+-	选中一个封装并使它在画布中高亮。
 
-In this dialog, you can:
+-	勾选或不勾选可以使封装显示或隐藏。
 
-1.  Click a component to highlight it.
+-	在筛选器搜索你想要的器件或网络。
 
-2.  Check/uncheck a component to show/hide it.
+-	选中一个网络后，可以高亮全部与它连接的走线，过孔和焊盘。
 
-3.  Filter to find a component or net.
+-	勾选或不勾选一个网络可以使整个网络(包含导线)显示或隐藏。
 
-4.  Click a net to highlight the tracks/vias with the same net.
+-	双击一个网络名可以将它的所有导线连接删除，以便重新绘制走线。
 
-5.  Check/uncheck the net to show/hide the net. For example, very often you may want to use this to hide a GND or supply net which has had a copper flood added to turn it into a plane and then show it again later.
-
-6.  Double click the net to remove all of the tracks and vias with the net name. If you want to reroute a net, this is the recommended method to use to un-route it first.
+-	查看PCB的DRC错误信息列表。
 
 ![](./images/018_Introduction_Design-Manager-PCB.png)
 
 
 ## 导入变更 
 
-Sometimes, while working on a project, you need to make changes to the schematic and then update your board, to incorporate them.
+当你修改了原理图，你可以很方便地导入变更。
 
-It's easy to do this with EasyEDA.
+-	1、可使用原理图的“[更新PCB](./Schematic.htm#更新PCB)”功能。
 
-Go to the **PCB Editor**,
-
-**Super menu > Miscellaneous > Import Changes**
-
-Or click that button at the tool bar  
-
+-	2、直接在打开PCB导入更新。**超级菜单 > 杂项 > 导入修改信息**，或者点击工具栏的导入变更图标。
 ![](./images/128_PCB_ImportChanges.png)
 
-You will get a Confirm Importing changes information dialog:
+如果原理图存在错误，会直接弹窗提醒，如标注重复，封装缺失等。  
+![](./images/128_PCB_ImportChangesError.png)
 
+若无问题将弹出确认对话框：  
 ![](images/129_PCB_ImportingConfirm.png)
 
-If you are happy with your changes, just click the Apply Change button.
+若确认无问题点击“应用修改”即可更新PCB。
 
-The changes will then be passed into the PCB layout and you can then adjust the tracking to suit.
+**注意：**
 
+-	*网络名是自动生成，当你修改了原理图后部分网络可能会出现变更，那么更新至PCB后会导致原网络走线丢失！*
+-	*导入变更后你将无法撤销！*
 
 ## 无效封装
 
-Sometimes, when you try to convert a schematic to a PCB, you will get an error message dialog like below. Don’t worry, it is easy to fix this problem.
+有时候当你转原理图至PCB时可能会提示无效封装。这是因为封装的焊盘编号与原理图库文件的PCB引脚编号不一致导致的。
 
 ![](images/130_PCB_InvalidPackages.png)
 
-From the error message, you will find that the symbol’s PIN number is different from PAD number. What caused that? Check the image below,
-
+如上图的R5，在原理图中R5的PCB引脚编号是A，B：
 ![](images/131_PCB_InvlaidPackages_Symbol.png)
 
+在PCB中，R5的焊盘编号分别是1，2。故无法与A，B对应，导致无网络生成。
 ![](images/277_PCB_InvalidPages_Footprint.png)
 
-From the image, we can get the PIN number in the schematic symbol is set as `3`, but the PAD Number in the PCB Footprint is set as `2`. Now that we've found the problem, how to fix this? 
+为了解决这个问题，你可以：
 
-- Solution One: Change the schematic symbol.
-   Using [PinMap function](./Schematic.htm#Pinmap-Modify-symbol-information). Change the PCB PIN from `3` to `2`. And save your schematic , and update PCB.
+-	修改原理图符号。如上图原理图R5，直接编辑R5的PCB引脚编号分别为1、2，并更新PCB即可。
 
-- Solution Two: Modify the Footprint.
-   Edit the Footprint, change the PAD from `2` to `3`. And set this PAD net name to be the same as LED2 net name in the schematic.  
-   So, we should be aware that PIN number should be the same as Pad number.
+-	修改封装焊盘的编号。如上图封装R5，直接修改R5的焊盘编号分别为A，B即可。
 
 
-## DRC规则检查
+## 设计规则检查
 
-EasyEDA provides a powerful real time DRC(Design Rule Check) function. 
+立创EDA提供一个可实时运行的设计规则检查(DRC: Design Rule Check)功能。
 
-Via at:**Super menu > Miscellaneous > Design Rule Setting** to open the **DRC** setting dialog:  
+可在 **超级菜单 > 杂项 > 设计规则设置** 打开设置对话框。  设置里面的单位跟随当前画布的单位。
 ![](./images/135_PCB_DRCSetting.png)   
 
-**Note:** *When you convert a schematic to PCB, the real time DRC is open. But in the old PCB, the real time DRC is closed. you can open it as in the image above.*  
-
-This is a big feature of EasyEDA. It is hard to fix DRC errors after laying out the PCB. Now EasyEDA will let you know the error in routing. You will find an `X` flag to mark the error, such as Track to Track or Track to PAD like in the image below
+当打开实时设计规则检测功能，在你设计出现超出规则的错误时会直接出现高亮的X标识提示错误位置。如下图的走线间，和走线到焊盘间太近导致出现错误标识。   
 ![](./images/136_PCB_DRCError.png)
 
+你可以在设计管理器中查看DRC错误信息。  点击错误选项会在画布中央高亮显示其位置。
+![](./images/136_PCB_DRCError_DesignManager.png)
+
+
+**注意：**
+
+-	*当你直接通过原理图转为PCB时，实时DRC检查是开启的，但是之前的旧PCB文档是关闭的，你需要自行打开。*
+-	*设计规则检查只能帮你发现部分很明显的错误。*
 
 ## 自动布线
 
-For some simple or prototype PCBs, you may want to use the auto router function to save time. Layout is a time costly and dull job. EasyEDA spends lots of time to provide such a feature and it is loved by our users.
-Steps:
+当你设计一个简单的PCB板子时，或者设计要求不高希望自动布线时，那么你可以使用自动布线功能。在进行自动布线前，你需要设置PCB边框，并将封装放置在边框内。
 
-**1 Click the the auto router button from the toolbar**
+在**超级菜单 > 杂项 > 自动布线**或者点击工具栏的自动布线图标，打开自动布线设置界面。  设置里面的单位跟随当前画布的单位。
 
 ![](./images/180_PCB_AuotoRouter.png)
 
-**2 Config the auto router**
+-	**线宽**：自动布线的默认线宽。  
+-	**通用间隙**：指走线之间，走线与焊盘之间的间隙。  
+-	**SMD间隙**：SMD焊盘之间的间隙。  
+-	**过孔直径和孔直径**：过孔直径。  
+-	**分割网络**：若你要保留你之前的布线，你不能勾选该项。  
+-	**实时**：是否实时显示布线状态。  
+-	**布线层**：选择你要布线的层数。你的PCB开启了内层后此处的内层才可以勾选。  
+-	**忽略网络**：选择无须自动布线的网络。若你的铺铜连接到GND，你可以选择忽略GND网络。  
+-	**特殊网络**：允许设置特殊网络的线宽与线距。如加粗电源走线。  
 
- After you click that button, you will get a config dialog like in the image below.  
+**注意**：*设置的参数不能少于DRC设定值，否则将报错。*  
+![](./images/181_PCB_AuotoRouterConfigError.png)
 
-![](./images/181_PCB_AuotoRouterConfig.png)  
-
-In the config dialog, you can set some rules to make the auto router result professional.
-
-If you want to keep the routed tracks, you need to uncheck the `Ripup Nets`
-
-The real time check box will let you see how it is going, but it will make the process a little bit slow.   
-![](./images/182_PCB_AuotoRouterProcess.png) 
-
-If you like to keep the a net with no route, you can skip it. For example, if you want to use copper area to connect `GND` net, you can skip the `GND` net. 
-
-For the power supply track, you may want it to be bigger, so you can add some special rules. 
-
-**3 Run it**
-
-Click the run button, wait for a few seconds, after adding bottom and top copper area, you will get a finished PCB board like in the image below.
-
+设置完毕后，点击运行即可进行自动布线。完成后如下图所示。
 ![](./images/183_PCB_AuotoRouterFinish.png) 
 
-Sometimes, if you can't get it done, try the tips below.
+如果自动布线失败，你可以尝试以下操作：
 
-1. Skip the GND nets, add copper area to GND net.
-2. use small tracks and small clearance, but make sure the value is more than 6mil.
-3. Route some key tracks manually before auto routing. 
-4. Add more layers, 4 layers or 6 layers
+-	忽略GND网络，并铺铜和设置铺铜网络为GND。
+-	使用小的线宽和间隙，但要确保线宽大于6mil。
+-	先将重要的网络进行手动布线。
+-	添加更多的层。
+-	自动布线耗费服务器CPU资源，使用人数多时会容易失败，请耐心等待。
 
-Some professional people don't like the auto router, because they think auto router is not professional, but you can use the auto router to check your placement. to check the density of your PCB. 
+建议使用手动布线，自动布线没有手动布线的工整和美观；手动布线可以锻炼布线能力提升经验；减轻立创EDA服务器负担。
 
 
 ## 照片预览
 
-EasyEDA has no 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like in the image below. If you can't see this button, try to **reload** the PCB again.
+立创EDA暂未提供3D照片预览，但提供了2D照片预览。在PCB下，在工具栏点击打开。若该图标未出现，请重置工具栏图标：**齿轮图标  > 常用按钮设置 > 重置**。
 
 ![](./images/140_PCB_Toolbar_PhotoView.png)
 
-After converting the PCB to Photo View, you can see the result as in the image below.
+在切换至照片预览后，可在标签上方切换层，选择颜色等。
 
 ![](./images/141_PCB_PhotoView.png)
 
+画布背景默认黑色含网格且属性面板隐藏，你可以在右边点击搜索按钮展开属性面板并设置属性。
 
 
 ## 生成制造文件
@@ -551,7 +552,7 @@ After converting the PCB to Photo View, you can see the result as in the image b
 
 ![](./images/221_Export_DownloadGerberFile.png)
 
-如果你需要PCB打样，建议使用立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
+如果你需要PCB打样，建议通过立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
 
 当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
 

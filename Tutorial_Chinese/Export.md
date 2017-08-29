@@ -97,7 +97,7 @@ BOM打开后如图：
 
 ![](./images/221_Export_DownloadGerberFile.png)
 
-如果你需要PCB打样，建议使用立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
+如果你需要PCB打样，建议通过立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
 
 当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
 
