@@ -18,7 +18,7 @@
 -	现已提供桌面客户端下载，画图更流畅：[https://lceda.cn/page/download](https://lceda.cn/page/download)
 
 
-**注意：***在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
+**注意：** *在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
   
 **不收费立创EDA怎么生存？**  
 
