@@ -12,7 +12,7 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 [EasyEDA](https://easyeda.com/editor) provides:
 
 -   Schematic capture
--   [ngpice-based](http://ngspice.sourceforge.net/) simulation
+-   [NgSpice-based](http://ngspice.sourceforge.net/) simulation
 -   PCB layout
 -   PCB Design Rules and Checking
 -   Export
@@ -31,7 +31,7 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
   -   Altium/ProtelDXP Ascii Schematic/PCB
   -   Eagle Schematic/PCB/libs
   -   LTspice Schematic/symbols (may require editing for Ngspice compatibility)
-  -   [Kicad](http://www.kicad-pcb.org/)libs/modules (footprint libraries)
+  -   [Kicad](http://www.kicad-pcb.org/) Libs/Modules (footprint libraries)
   -   Spice models and subcircuits
 -   Symbol creation and editing
 -   Multi-sheet and Hierarchical schematics (passive drawings and active simulation schematics)
@@ -243,13 +243,13 @@ then will open a web page in which you can edit your project:
 From here, you can change the Visibility, allow other people to comment on your project and type a more detailed description of the project content. To help you make your project stand out or to maybe simply make a detailed description of your project easier to read, you can use Markdown syntax. If you need more information on Markdown syntax, click on Markdown Syntax? just above the Content box.
 
 ### Version History
-It is easy to use this function, right click on the document for which you need the version history in like in the image below
+It is easy to use this function, right click on the document for which you need the version history in like in the image below:  
 ![](./images/188_Introduction_VersionHistory.png)
 
  
 
-After clicking on the version history link, you will get a list of all of the versions like in the image below.  
-![](./images/189_Introduction_VersionHistoryWebpage.png),  
+After clicking on the version history link, you will get a list of all of the versions like in the image below.    
+![](./images/189_Introduction_VersionHistoryWebpage.png)  
 
 Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
 
@@ -257,7 +257,7 @@ Click the version number, you can open the saved file in the editor, if this is 
 *1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
 *2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
 
-* * * * ​
+​
 
 ## Function introduction
 

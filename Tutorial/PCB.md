@@ -539,7 +539,13 @@ The photo view background default set as black and the right panel was hidden , 
 
 ## Getting Fabrication Files
 
-You can check via [Exporting Fabrication Files](./Export.htm#Exporting-Fabrication-Files)
+When you finish your PCB, you can output the Fabrication Files(gerber file) via :  
+**Super menu > Miscellaneous > Fabrication Output**，or by clicking the Fabrication Output button from the toolbar.
+
+![](./images/142_PCB_FabricationOutput.png)
+
+It will open a webpage to you, and you can download the gerber as a zipfile.
+![](./images/221_Export_DownloadGerberFile.png)
 
 
 
