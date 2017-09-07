@@ -116,7 +116,7 @@ In fact the astable example circuit has no elements defined by subcircuits but t
 
 The example below of a simple 555 timer based monostable, includes a .model statement for a type of 2N7002 MOSFET and a subcircuit for the 555 timer which in turn, calls up .model statements for the bipolar transistors, QN and QP and the diode DA that are used within the subcircuit.
 
-It is quite possible to call one subcircuit from within another subcircuit but let’s not get too carried away just yet ...
+It is quite possible to call one subcircuit from within another subcircuit but let's not get too carried away just yet ...
   555 monostable
 
 	.param pi = 3.141593
@@ -218,19 +218,19 @@ At this stage you might be forgiven for feeling a sense of panic at the sudden c
 
 Well, to quote the Hitchhikers Guide to the Galaxy:
 
-Don’t Panic!
+Don't Panic!
 
 All you have to do is check that every different type of device - not every instance - in your simulation schematic has a corresponding .model or .subckt statement associated with it.
 
-If it hasn’t then the first thing to check is that you have got all the device names right.
+If it hasn't then the first thing to check is that you have got all the device names right.
 
-If you still haven’t pulled in a .model or a .subckt then it probably means that a simulation model for that device is not available in the EasyEDA libraries. This may be because we haven’t been able to find a copyright unrestricted model, we haven’t had time to build our own or we just haven’t caught up with entering all the thousands of possible models yet …
+If you still haven't pulled in a .model or a .subckt then it probably means that a simulation model for that device is not available in the EasyEDA libraries. This may be because we haven't been able to find a copyright unrestricted model, we haven't had time to build our own or we just haven't caught up with entering all the thousands of possible models yet …
 
-If you’re desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
+If you're desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
 
-If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
+If you're really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
 
-Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation, but don’t worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It’s just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
+Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation, but don't worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It's just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
 
 ## Run Simulation
 
@@ -260,7 +260,7 @@ For more information about these analyses, please refer to:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.1.2.3](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.1.2.3)
 
-Please note that although using Ngspice for it’s simulation engine, at present (140218) EasyEDA does not support all the possible analysis modes available in Ngspice.
+Please note that although using Ngspice for it's simulation engine, at present (140218) EasyEDA does not support all the possible analysis modes available in Ngspice.
 
 Note that for transient simulations, at present (140218):
 
@@ -314,7 +314,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 ### 1.From a model in text form 
 
-1.  If you already have a spice subcircuit in text form, for example one that you have downloaded from a component manufacturer’s website but you haven’t got a spice symbol for it, then you can create a spice symbol and attach a .subckt definition to it.
+1.  If you already have a spice subcircuit in text form, for example one that you have downloaded from a component manufacturer's website but you haven't got a spice symbol for it, then you can create a spice symbol and attach a .subckt definition to it.
 
 2.  First make a note of the exact name given in the .subckt line. Spice names are case insensitive but can only be made up from alphabetical, numeric and underscore characters.
 
@@ -332,7 +332,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	Using **Document > New > Spice Symbol…** also automatically sets the Spice Prefix of the symbol to X which is essential for a .subckt definition to attach to your symbol.
 
-	Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don’t have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
+	Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don't have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
 
 	![](images/105_SpiceSimulation_NewSipceSymbol.png)  
 
@@ -409,7 +409,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 1. All three techniques can be used to attach .model statements to symbols in exactly the same way as .subckts but after placing the symbol in your schematic, you must use:
 
 	**Super menu > Miscellaneous > Edit Symbol...**
-	to set the symbol’s Spice Prefix to the appropriate letter for the device model you are using.
+	to set the symbol's Spice Prefix to the appropriate letter for the device model you are using.
 
 2. You also have to know the spice pin order for the type of .model statement you are using because, unlike .subckts, the .model statement does not show this explicitly.
 
@@ -417,7 +417,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	![](images/modelPrefix.png)
 
-Actually there is a way to save the symbol with the required Spice Prefix so that you don’t have to edit it every time you place a new instance of the symbol into a schematic … but that needs a bit more insight into editing the EasyEDA Source for the symbol so will be left for the moment.
+Actually there is a way to save the symbol with the required Spice Prefix so that you don't have to edit it every time you place a new instance of the symbol into a schematic … but that needs a bit more insight into editing the EasyEDA Source for the symbol so will be left for the moment.
 
 We did say that EasyEDA Source enables some powerful ways to manipulate schematic and spice files and symbols! :)
 
@@ -491,9 +491,9 @@ That approach is a great way for you to quickly and easily set up and Run any of
 
 Simply by entering your simulation control commands as text, directly into the schematic and setting the Text type to spice, you can set up powerful spice analyses. You can run these straight away, without needing the Run your simulation dialog just using the `CTRL+R` hotkeys.
 
-Using this method it’s quick and easy to create and run more advanced simulation analyses and to make automated measurements on your circuit.
+Using this method it's quick and easy to create and run more advanced simulation analyses and to make automated measurements on your circuit.
 
-Here’s a quick insight into how it works but you can skip this if you like and just get into how to make this amazing feature work for you!
+Here's a quick insight into how it works but you can skip this if you like and just get into how to make this amazing feature work for you!
 
 EasyEDA automatically embeds the simulation commands set up in the Run your simulation dialogs within a control section. You can see this in the spice netlist for any circuit that has been through a simulation run at least once via:
 
@@ -501,7 +501,7 @@ EasyEDA automatically embeds the simulation commands set up in the Run your simu
 
 The control section starts with the .control command and ends with the .endc command. All commands between these delimiters are run in an Ngspice interactive simulation control mode.
 
-Now, you don’t need to worry about these two commands because EasyEDA automatically inserts them in the netlist in the right place to enclose your commands so all you need to do is to enter a list of commands as text, anywhere in the schematic canvas and then, in the Properties panel, set the Text type to spice for it to be included in the spice netlist as a **spice directive**.
+Now, you don't need to worry about these two commands because EasyEDA automatically inserts them in the netlist in the right place to enclose your commands so all you need to do is to enter a list of commands as text, anywhere in the schematic canvas and then, in the Properties panel, set the Text type to spice for it to be included in the spice netlist as a **spice directive**.
 
 The following examples show some of the things you can do using **spice directives**.
 

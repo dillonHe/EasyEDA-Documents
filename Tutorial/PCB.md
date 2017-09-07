@@ -1,7 +1,7 @@
 
 # PCB Design Editor 
 
-After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA’s PCB Design Editor.
+After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA's PCB Design Editor.
 
 
 ## Canvas 
@@ -38,7 +38,7 @@ If you start drawing a track on the top layer - you will see it drawn in red�
 5.  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
   ![](images/115_PCB_TrackSegmentAdjust.gif)
 
-6.  Pressing the `L` Hotkey when drawing the track will change the track’s Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
+6.  Pressing the `L` Hotkey when drawing the track will change the track's Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
   ![](images/112_PCB_RouteAngle.png)
 
 
@@ -81,7 +81,7 @@ Like in the image below, you can edit the PADs points when you select a `POLYGON
 
 **Layer:** If the pads are part of a **SMD** footprint, you can set it to **Top layer** or **Bottom layer**. For through hole components you should set it to **All**.
 
-**Net:** You don’t need to enter anything here because at present this footprint is not connected to anything in a circuit.
+**Net:** You don't need to enter anything here because at present this footprint is not connected to anything in a circuit.
 
 **Width and Height:** When the shape is set to Round, Width will equal Height.
 
@@ -89,7 +89,7 @@ Like in the image below, you can edit the PADs points when you select a `POLYGON
 
 **Hole(D):**  This is the drill hole **diameter** for a through hole pad. For a SMD Pad, set this to **zero**.
 
-**Center-X and Center-Y:** using these two attributes, you can set the pad’s position with more precision, compared to using the mouse.
+**Center-X and Center-Y:** using these two attributes, you can set the pad's position with more precision, compared to using the mouse.
 
 **Plated：** Yes or No.
 
@@ -213,7 +213,7 @@ When selecting a copper area, you can find its attributes from the right hand *
 
 After drawing the copper area, set the net it is to be connected to (floating copper areas are not recommended because they can cause EMC and Signal Integrity (SI) problems).
 
-Lastly, don’t forget to click the button Rebuild Copper Area to **rebuild** the flood.
+Lastly, don't forget to click the button Rebuild Copper Area to **rebuild** the flood.
 
 **Two Tips:**
 
@@ -313,7 +313,7 @@ Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' ge
 
 You can find the Layer Options Settings dialog.
 
-In this dialog, you can change the layer’s Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
+In this dialog, you can change the layer's Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
 
 ![](images/110_PCB_LayerOptions.png)
 
@@ -366,7 +366,7 @@ You could also use it with other items such as `Pad`, `Via`, and  `TEXT`.
 
 ## Layout A PCB Without Schematic 
 
-For some small PCB projects, maybe you don’t need a schematic. EasyEDA allows you to lay the PCB directly from the PCB Editor.
+For some small PCB projects, maybe you don't need a schematic. EasyEDA allows you to lay the PCB directly from the PCB Editor.
 
 Start a new PCB and you can add footprints directly from the PCB Libs from Left Navigation Panel **Parts** and then just track them.  
 
@@ -400,7 +400,7 @@ In this dialog, there's a choice of 3 types of board outlines, Rectangular , Cir
 
 ## Design Manager 
 
-Just like Schematic’s Design Manager, PCB’s Design Manager can be found via:
+Just like Schematic's Design Manager, PCB's Design Manager can be found via:
 
 **Left Navigation panel > Design**
 
@@ -448,11 +448,11 @@ The changes will then be passed into the PCB layout and you can then adjust the 
 
 ## Invalid Packages 
 
-Sometimes, when you try to convert a schematic to a PCB, you will get an error message dialog like below. Don’t worry, it is easy to fix this problem.
+Sometimes, when you try to convert a schematic to a PCB, you will get an error message dialog like below. Don't worry, it is easy to fix this problem.
 
 ![](images/130_PCB_InvalidPackages.png)
 
-From the error message, you will find that the symbol’s PIN number is different from PAD number. What caused that? Check the image below,
+From the error message, you will find that the symbol's PIN number is different from PAD number. What caused that? Check the image below,
 
 ![](images/131_PCB_InvlaidPackages_Symbol.png)
 

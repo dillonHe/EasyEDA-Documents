@@ -47,7 +47,7 @@ So if you want to share a project with someone,
 
 After setting up **Access Control** and Permissions, your partner will find your project in the **Shared** section from the left **Navigation Panel** when they login.
 
-If you partner doesn’t wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then clicking on Reject Sharing;
+If you partner doesn't wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then clicking on Reject Sharing;
 
 ![](images/169_Share_SharedWithMe.png) 
 

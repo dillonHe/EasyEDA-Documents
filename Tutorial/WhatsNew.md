@@ -1,9 +1,9 @@
 
 # Demo Video
 
-<iframe width="906" height="488" src="https://www.yout ube.com/embed/gnffNQcJezY" frameborder="0" allowfullscreen></iframe>
+<iframe width="906" height="488" src="https://www.youtube.com/embed/gnffNQcJezY" frameborder="0" allowfullscreen></iframe>
 
-## Download
+# Download
 
 **Tutorial PDF Download**
 
@@ -33,7 +33,7 @@ Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
 -	**Footprint Manager Enhanced**
 
 	-	**1.**Footprint manager will check your part's package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins Number doesn't correspond the package's Pads Number correctly, the footprint manager will show the red alert.  
-	**Notice：** *If your schematic have many different packages, the footprint manager will take a few seconds to compare the packages' pads and your components' pins. Please wait for it.*  
+	**Notice:** *If your schematic have many different packages, the footprint manager will take a few seconds to compare the packages' pads and your components' pins. Please wait for it.*  
 
 	-	**2.**In the preview area, you can zoom in, zoom out and pan with mouse.  
 ![](images/281_Schematic_FootprintManagerEnhance.png)

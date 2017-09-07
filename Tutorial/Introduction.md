@@ -5,7 +5,7 @@
 
 Welcome to EasyEDA, a great web based EDA tool for electronics engineers, educators, students, makers and enthusiasts.
 
-There’s no need to install any software. Just open EasyEDA in any HTML5 capable, standards compliant web browser.
+There's no need to install any software. Just open EasyEDA in any HTML5 capable, standards compliant web browser.
 
 Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safari. EasyEDA has all the features you expect and need to rapidly and easily take your design from conception through to production.
 
@@ -41,8 +41,7 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 -   PCB footprint creation and editing
 -   Simple but powerful general drawing capabilities
 -   Schematic symbol, spice model and PCB footprint library management
--   Online sharing of and collaborative working on 
-  - schematics, simulations, PCB layouts, designs and projects
+-   Online sharing of and collaborative working on schematics, simulations, PCB layouts, designs and projects
 
 
 ## UI introduction
@@ -111,7 +110,7 @@ For more information you can refer to the [Access Control](./Share.htm#Access-Co
 
 If you want to buy components to finish your PCBA, you should try the **LCSC** module, LCSC.com and EasyEDA are the same company.
 
-EasyEDA partners with China’s largest electronic components online store by customers and ordering quantity launch [https://lcsc.com](https://lcsc.com).
+EasyEDA partners with China's largest electronic components online store by customers and ordering quantity launch [https://lcsc.com](https://lcsc.com).
  LCSC means **L**ove **C**omponents? **S**ave **C**ost! We suggest to our users to use LCSC parts to design. Why?   
 1. Small Quantity & Global Shipping.  
 2. More Than 25,000 Kinds of Components.  
@@ -128,7 +127,7 @@ EasyEDA partners with China’s largest electronic components online store by cu
 
 ![](images/011_Introduction_The-Clear-UI_ToolBar.png)
 
-EasyEDA’s toolbar can be reconfigured via Common Buttons Setting…
+EasyEDA's toolbar can be reconfigured via Common Buttons Setting…
 
 ![](images/012_Introduction_The-Clear-UI_Common_Buttons.png)
 
@@ -150,7 +149,7 @@ You can close or open this dialog via:
 
 -  The Preview Dialog has a resizing handle in the bottom right corner.
 
-  -The Preview Dialog can’t be closed but double clicking on the top banner will roll up the panel or you can click the top right corner `—` . Double clicking top banner again toggles it back to the selected size.  
+  -The Preview Dialog can't be closed but double clicking on the top banner will roll up the panel or you can click the top right corner `—` . Double clicking top banner again toggles it back to the selected size.  
 
   ![](images/213_Introduction_UI_PreviewDialog.png)
 
@@ -170,7 +169,7 @@ Wiring Tools are document type sensitive: different document types have differe
 
 #### 7. Super menu
 
-All EasyEDA’s menus can be found here. Most of the time, we hope you can access these options via the Hotkeys or from the top toolbar but if you find that you use some of the more specialized options from this menu frequently then may want to set them as you own hotkeys.
+All EasyEDA's menus can be found here. Most of the time, we hope you can access these options via the Hotkeys or from the top toolbar but if you find that you use some of the more specialized options from this menu frequently then may want to set them as you own hotkeys.
 
 ![](images/016_Introduction_The-Clear-UI_Super-Menu.png)
 
@@ -178,7 +177,7 @@ All EasyEDA’s menus can be found here. Most of the time, we hope you can acces
 
 ![](images/190_Introduction_DrawingTools.gif)
 
-To keep EasyEDA’s UI clean and sharp, the Wiring and Drawing tools palettes can be resized horizontally, rolled up or hidden so if you want to focus on drawing, you can roll up or hide the others to make more space and reduce the clutter.
+To keep EasyEDA's UI clean and sharp, the Wiring and Drawing tools palettes can be resized horizontally, rolled up or hidden so if you want to focus on drawing, you can roll up or hide the others to make more space and reduce the clutter.
 
 #### 9. Canvas Attributes
 
@@ -305,12 +304,12 @@ All EasyEDA Schematic Symbol and PCB Footprint libs are public, so after you hav
 
 When you are satisfied with your schematic design and simulation results, you can then quickly proceed to produce your finished and populated PCB without leaving EasyEDA.
 
-EasyEDA’s PCB Design canvas helps you to quickly and easily lay out even complex multilayer designs from schematics you have already created in the Schematic canvas or directly as a layout with no schematic.
+EasyEDA's PCB Design canvas helps you to quickly and easily lay out even complex multilayer designs from schematics you have already created in the Schematic canvas or directly as a layout with no schematic.
 
 Passing an EasyEDA Schematic into the PCB Design editor is as easy as clicking a button: Just click the **Convert Project to PCB** PCB icon on the top toolbar!  
 ![](images/204_Introduction_PCB_ConvertToPCB.png)
 
-EasyEDA has extensive libraries of footprints. You can also build up your own library of unusual and specialized parts by copying and modifying existing parts or from scratch using EasyEDA’s powerful footprint creation and editing tools.
+EasyEDA has extensive libraries of footprints. You can also build up your own library of unusual and specialized parts by copying and modifying existing parts or from scratch using EasyEDA's powerful footprint creation and editing tools.
 ![](images/205_Introduction_PCB_PCB.png)
 
 In a similar way as in the Schematic design canvas, to help you locate items and navigate your way around when working in the PCB Design canvas there is a PCB Design Manager.
@@ -380,7 +379,7 @@ Just enter a username, invent a password, confirm it and type in an email addres
 
 The Login dialog image can be seen in the Join section above.
 
-After clicking on Login, you can enter the username or email and password to login to EasyEDA. If you use a private device, you can check **Remember Me**, so you don’t need to login again each time you open EasyEDA.
+After clicking on Login, you can enter the username or email and password to login to EasyEDA. If you use a private device, you can check **Remember Me**, so you don't need to login again each time you open EasyEDA.
 
 Alternatively, if you have a Google or Tencent QQ account, you can login in using [http://en.wikipedia.org/wiki/OpenID](http://en.wikipedia.org/wiki/OpenID); it is safe and easy.
 
@@ -455,7 +454,7 @@ Click on **User Preferences**,
 
 **Save to Server**: Save your preferences (Toolbar configurations, EasyEDA libs, Hotkey settings, language and so on) to the EasyEDA Server.
 
-**Load from Server**: EasyEDA can’t load your Preferences automatically but once you have saved them, you can load them manually. Then, when you change to a different computer or browser, you can load your preferences from the EasyEDA Server.
+**Load from Server**: EasyEDA can't load your Preferences automatically but once you have saved them, you can load them manually. Then, when you change to a different computer or browser, you can load your preferences from the EasyEDA Server.
 
 If you have not saved any preferences then **Load from Server** will have no effect.
 
@@ -496,7 +495,7 @@ To change a Hotkey, click anywhere in the row for the hotkey you want to change
 
 For example, if you want to use R instead of space to rotate selected objects, click on the first row, then press `R`.
 
-After you change the hotkey, don’t forget to click Save Changes button.
+After you change the hotkey, don't forget to click Save Changes button.
 
 The **docType** column describes which type of EasyEDA document each hotkey applies to. **docType** has three types:
 
@@ -1084,7 +1083,7 @@ If the Built Date is still showing older than 2017/06/01:
 
 Close your browser and open EasyEDA again.
 
-If the Built Date is at or newer than 2017/06/01, you don’t need to do anything.
+If the Built Date is at or newer than 2017/06/01, you don't need to do anything.
 
 **Note:** **2017/06/01** *is just an example.*  
 
@@ -1121,10 +1120,10 @@ It is easy to ask for help for any problem with EasyEDA, just click on **Let's C
 
 ![](images/004_Introduction_Help_Lets-Chat.png)  
 
-Please ask your questions in English or Chinese and don’t worry if your English is not good! (Or your Chinese!)
+Please ask your questions in English or Chinese and don't worry if your English is not good! (Or your Chinese!)
 
 1.  You can also ask your questions directly in the [EasyEDA forum](https://easyeda.com/bbs_lists_2.htm). We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a bit busy, so you may need to wait for a while.
-2.  If you don’t want your help requests to be public then you can drop us an email to [support@easyeda.com](mailto:support@easyeda.com)
+2.  If you don't want your help requests to be public then you can drop us an email to [support@easyeda.com](mailto:support@easyeda.com)
 3.  If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
 
 
@@ -1139,7 +1138,7 @@ Please ask your questions in English or Chinese and don’t worry if your Englis
 
 [[4]](#ftnt_ref4) *Take a few moments to think about your username because this is the name that other users will see on your designs and posts if you choose to share them or make them public. Once you have created an account, you cannot change your username.*
 
-[[5]](#ftnt_ref5) *You can use upper and lower case letters, numbers and symbols to make a strong password but don’t forget that the password entry is case sensitive.*
+[[5]](#ftnt_ref5) *You can use upper and lower case letters, numbers and symbols to make a strong password but don't forget that the password entry is case sensitive.*
 
 [[6]](#ftnt_ref6) *Except ordering of PCBs directly from EasyEDA.*
 

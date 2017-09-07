@@ -54,9 +54,9 @@ Note that you can use alphanumeric identifiers such as; A1, B1, C1, A2, B2 and s
 
 For more information about Spice Pin order please see the section on [Prefixes And Pin Numbers](./Schematic.htm#Prefixes-And-Pin-Numbers).
 
-**Name Display**: If you don’t want to show *VCC*, switch it to NO.
+**Name Display**: If you don't want to show *VCC*, switch it to NO.
 
-**Number Display**: If you don’t want to show *1*, switch it to NO.
+**Number Display**: If you don't want to show *1*, switch it to NO.
 
 You can adjust the Name or Number position using your mouse but note that rotate and flip applies to the whole pin including the name and pin number; these items cannot be rotated and flipped independently of the pin itself.
 
@@ -116,7 +116,7 @@ Easy or what?
 
 ## Custom Attributes
 
-In the Schematic Lib editor’s canvas Properties panel, you will find a **Custom Attributes** section:
+In the Schematic Lib editor's canvas Properties panel, you will find a **Custom Attributes** section:
 
 ![](images/097_SchematicLibs_MyLibsCustomerAttributes.png)
 
@@ -137,11 +137,11 @@ The default Schematic symbol Prefix is **U?** If you create a resistor, you can 
 
 **Name**
 
-You can change the schematic lib’s name here, it is can be different from the part’s file name.
+You can change the schematic lib's name here, it is can be different from the part's file name.
 
 **Contributor**
 
-This is your registered user name. Other EasyEDA’s users will remember your contributions!  
+This is your registered user name. Other EasyEDA's users will remember your contributions!  
 
 
 

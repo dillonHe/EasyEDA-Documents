@@ -50,7 +50,7 @@ Top toolbar **Config Gear Icon > Toolbars > ...**
 
 ![](images/014_Introduction_The-Clear-UI_Settings-Toolbars.png)
 
-**Note:** *All of the commands in Wiring Tools are electronics related. Don’t use a wire when you just need to draw a line, shape or an arrow: use Drawing Tools instead.*  
+**Note:** *All of the commands in Wiring Tools are electronics related. Don't use a wire when you just need to draw a line, shape or an arrow: use Drawing Tools instead.*  
 
 ![](images/191_Introduction_WiringTools.gif)
 
@@ -182,7 +182,7 @@ Using the **Symbol Wizard** you can only create generic symbols but how can
 
 ![](images/073_Schematic_GroupSymbol.png)
 
-Here’s how.
+Here's how.
 
 EasyEDA allows you to do something that very few other EAD tools support.
 
@@ -280,7 +280,7 @@ When you select Image from the Drawing Tools palette, an image place holder wi
 
 ![](images/041_Introduction_ImageInsert.png)
 
-Select the place holder, so you can see the image’s attributes in the right hand Properties panel:
+Select the place holder, so you can see the image's attributes in the right hand Properties panel:
 
 ![](images/042_Introduction_ImageEdit.png)
 
@@ -320,7 +320,7 @@ On the left hand Navigation panel you will find "**EElib**" and "**Parts**" ,
 
 Many of these components have optional US and EU style symbols, we split them, so you can select those you like. Click on the drop down list or right click to popup the context menu, it contains many packages or parameters. EasyEDA will remember your choices for the next time.
 
-Don’t forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resistors:
+Don't forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resistors:
 
 ![](images/046_Schematic_EElib-res.png)
 
@@ -346,25 +346,25 @@ We add an LCSC Assembly Components option of the Parts, It's easy to choose whic
 ![](images/282_Schematic_Parts_AssemblyComponents.png)
 
 **Place**:
-For parts you use infrequently, you don’t need to Favorite them; just Place it into your canvas directly.  
+For parts you use infrequently, you don't need to Favorite them; just Place it into your canvas directly.  
 
 Note: 
 
 - *EasyEDA supports multi-documents so please make sure that you are placing the part into the right (active) document. The active document is the one with the highlighted tab.*  
 
-- *You can’t place a Schematic symbol into a PCB file, or a PCB Footprint into a schematic.*
+- *You can't place a Schematic symbol into a PCB file, or a PCB Footprint into a schematic.*
 
 **Edit**:
 If you want to create your own version of a symbol or footprint then you can open an existing part from the library to use as a template, edit it and then save it to your local **My Parts** library in **Parts** of the Navigation Panel.
 
 **More**:
-We can’t promise that every component in the library is free of errors so please check all symbols and footprints carefully before you commit to a PCB order.
+We can't promise that every component in the library is free of errors so please check all symbols and footprints carefully before you commit to a PCB order.
 
 If you do find a mistake in a component, please [let us know(mail to support@easyeda.com)](mailto:support@easyeda.com) so that we can fix it.
 
 Components with sub parts (multi-device packages).
 
-When you find a component with sub-parts, you can’t Place or Edit it, but you can Favorite and Clone it as your own part, which you can then edit.
+When you find a component with sub-parts, you can't Place or Edit it, but you can Favorite and Clone it as your own part, which you can then edit.
 
 ![](images/027_Introduction_Parts-More.png)
 
@@ -411,7 +411,7 @@ The default Prefix and Value (or name) of EasyEDA components are horizontal. To 
 
 ![](images/049_Schematic_RotatingPrefixAndValue.gif)
 
-...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you’re done.
+...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you're done.
 
 ## Adjusting Components
 
@@ -479,7 +479,8 @@ There are two ways to open the footprint manager:
 - Click the package input box of custom attributes when you've selected a component:  
   ![](images/265_Schematic_FootprintManagerPullOut.png)
 
-1.Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert. 
+1.Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert. For example, If your part U1 has 2 pins, pin number are 1 and 2, pin name is A and B, but you assigned a footprint has 2 pads, [pad number](./PCB.htm#Pad) are A and B, the part's pin number doesn't match the pad number, so the the footprint manager will alert red, in order to solve this, method 1: [change part's pin number](./Schematic.htm#Pinmap-Modify-symbol-information) as A and B, method 2: change package's pad number as 1 and 2, method 3: find an other package and update.  
+
 2.In the preview area, you can zoom in, zoom out and pan with mouse.
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
@@ -487,10 +488,10 @@ There are two ways to open the footprint manager:
 
 If you want to change the Package, for example, select a component such as Q1, from **TO-92** TO **TO220**, you just need to click in the package input box. EasyEDA will popup the footprint manager dialog. You can follow the instructions. 
 
-*	Type **TO220** into the search box and search,   
-  *Select the **TO220** package,   
-  *Verify it in the preview box,  
-  *then press the **Update** button.   
+-	Type **TO220** into the search box and search,   
+-	Select the **TO220** package,   
+-	Verify it in the preview box,  
+-	then press the **Update** button.   
 
 After that you will find you have changed the package to **TO220**.
 
@@ -513,7 +514,7 @@ And you can modify component's pin map information in here.
 
 ## Component Attributes
 
-After selecting a component, you can find the component’s attributes in the right hand Properties panel.
+After selecting a component, you can find the component's attributes in the right hand Properties panel.
 
 ![](images/064_Schematic_ComponentAttributes.png)
 
@@ -610,7 +611,7 @@ Device and subcircuit (or hierarchical block) symbols created for use in schemat
 
 ### PCB And Spice Prefix 
 
-The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user’s preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
+The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user's preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
 
 The rules on the assignment of the **Spice Prefix** of a schematic symbol are strict. This is because the Spice Prefix is used to tell the simulator which circuit element the symbol represents and therefore which simulation model it is to use.
 
@@ -866,7 +867,7 @@ Most of the time, schematics are created with the aim of producing a PCB. So ho
 
 To find PCB footprints to match the package type attributes of your Schematic symbols, EasyEDA will search the available PCB libraries.   
 
-EasyEDA will search your own PCB Libs from the **My Parts** section first. If it doesn’t find a matching footprint there then it will search in the System PCB Libs. 
+EasyEDA will search your own PCB Libs from the **My Parts** section first. If it doesn't find a matching footprint there then it will search in the System PCB Libs. 
 
 So, for example, if your symbol calls up a “**TO220**” package, you have a **TO220**  package in your My Parts section and there is a “**TO220**” package in the system PCB Libs, then EasyEDA will use the  “**TO220**” package in your My Parts and ignore the system PCB Lib.
 
@@ -876,9 +877,9 @@ After clicking the **Convert project to PCB** button, if the project has error
 
 ![](images/077_Schematic_VerifyThePackages.png)
 
-The row in red indicates that EasyEDA can’t find a PCB footprint matching the Package that the schematic symbol is calling for.   
+The row in red indicates that EasyEDA can't find a PCB footprint matching the Package that the schematic symbol is calling for.   
 
-This could be because you have made an error entering the package attribute in the symbol’s Properties or maybe you haven’t yet created a PCB footprint for the package that your symbol is calling for.   
+This could be because you have made an error entering the package attribute in the symbol's Properties or maybe you haven't yet created a PCB footprint for the package that your symbol is calling for.   
 
 In this case the package should have been **TO-92(TO-92-3)** but instead it is empty. To correct it you can click on the row and change it to **TO-92(TO-92-3)**.
 
@@ -961,7 +962,7 @@ EasyEDA can export a netlist in a variety of formats: 
 
 -   **Spice**: this is a Spice3f5 compatible netlist generated by the simulation engine of EasyEDA, [Ngspice](http://www.google.com/url?q=http%3A%2F%2Fngspice.sourceforge.net%2Fpresentation.html&sa=D&sntz=1&usg=AFQjCNEvVOggHskD819G-5EW8EB59FL5mw). It is not normally used as the basis for as a PCB layout.
 -   [KiCad](http://www.kicad-pcb.org/): a PCB netlist in a format that can be imported straight into Pcbnew, the PCB layout tool part of the free, open source cross-platform EDA suite.
--   **Altium Designer**: a PCB netlist in a format that can be imported straight into Altium Designer and it’s predecessor, Protel. 
+-   **Altium Designer**: a PCB netlist in a format that can be imported straight into Altium Designer and it's predecessor, Protel. 
 -   **Pads**: a PCB netlist in a format that can be imported straight into Pads PCB layout tools.
 -   [FreePCB](http://www.freepcb.com/): a PCB netlist in a format that can be imported straight into FreePCB, a  free, open source PCB editor for Windows.
 
