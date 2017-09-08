@@ -11,9 +11,10 @@
 		"Import.md",
 		"Export.md",
 		"Share.md",
-		"API.md",
+		"EssentialCheck.md",
 		"FAQ.md",
 		"PCBOrder.md",
 		"PCBOrderFAQ.md"
+		"API.md",
 	]
 }
