@@ -77,6 +77,8 @@ When you finish your PCB, you can output the Fabrication Files(gerber file) via 
 It will open a webpage to you, and you can download the gerber as a zipfile.
 ![](./images/221_Export_DownloadGerberFile.png)
 
+**Notice:** 
+*Before order your PCB, Please read [Essential Check Before Placing a PCB Order](./PCBOrder.htm/#Essential-Check-Before-Placing-a-PCB-Order) section!!*
 
 ### Exporting Generates Pick And Place File
 

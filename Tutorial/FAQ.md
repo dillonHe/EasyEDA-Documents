@@ -174,7 +174,7 @@ There is an option for that in PCB canvas attributes:
 ### Can I create a PCB without creating schematic?
   Yes but for any but the simplest PCBs, please see:
   
-[https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC]( https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
+[https://easyeda.com/forum/topic/The\\_best\\_way\\_to\\_design\\_a\\_PCB\\_in\\_EasyEDA-ThR3pwqIC]( https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
 
 ### How to add more fonts for PCB.
 
@@ -245,11 +245,12 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
 
 ### I can't convert schematic to PCB. Why is this?
  1. You have not set the right packages for your components. 
- 2. https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error
- 3. https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages
+ 2. [https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error](https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error)
+ 3. [https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages](https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages)
 
 
 ## PCB package.
+
 ### How to create a PCB package/library.
  ![](./images/143_PCBLibs_NewLib.png)  
 

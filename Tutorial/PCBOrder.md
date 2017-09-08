@@ -5,6 +5,7 @@
   Although EasyEDA makes it easy to order PCBs for your projects and offers an exceptionally low PCB Manufacturing fee, you are free to download the Gerber files and order your PCBs from any other vendor. However, if you like EasyEDA, please give us a chance to fab. the PCB for you. We think you won't be disappointed.
 
 
+
 ## PCB Quality
    As engineers, we have spent more than 6 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
 
@@ -17,6 +18,114 @@
 To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the click of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
 
 ![](images/142_PCB_FabricationOutput.png)
+
+
+## Essential Check Before Placing a PCB Order
+
+
+**A simple mistake can make a batch of PCBs useless so before submitting an order for PCBs, there are a lot of things to check.**
+
+The list below is a good starting point for the essentials but it by no means exhaustive!
+
+1) Check that all nets and netnames are as intended. For example nets can be accidentally connected together while drawing and editing a schematic and also by inadvertently assigning duplicated netlabels;
+
+2) Check that the appropriate package has been assigned to each and every schematic symbol. Don't forget that different transistors, capacitors and even resistors may be in different packages in different locations in a schematic. Also check that components have been rated correctly as this may affect their package size (don't forget their height too!);
+
+3) Check that the pin designations of the schematic symbol and the PCB package are the same. The pins on the schematic symbol for a bipolar transistor may be labelled B, C, and E but if the corresponding pins on the PCB footprint are labelled as 1, 2, and 3 then EasyEDA will flag this as an error when an attempt is made to convert the schematic into a PCB. It is simple to correct or - better - avoid this: change the labelling on the corresponding pins of the PCB footprint to B, C and E **or** change the labelling on the corresponding pins of the schematic symbol to 1, 2 and 3.
+
+To change the pin labelling in the schematic to match the PCB footprint: select the part, press the `i` key then edit the **Names** in the **Edit Pin Map Information** section of the **Modify symbol information** dialogue that opens and click `OK` when finished.
+
+To change the pin labelling in the PCB to match the schematic symbol: select each pin of the relevant part, then edit the pin **Names** in the right hand **Properties** panel.
+
+Note: do not confuse the schematic symbol pin numbering with the spice pins numbering. For more about this see:
+
+**Schematic symbols: prefixes and pin numbers** in:
+
+[https://docs.google.com/document/u/1/d/1OWZVVFRAe\\_2NW3WratpkA\\_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1](https://docs.google.com/document/u/1/d/1OWZVVFRAe_2NW3WratpkA_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1)
+
+4) Check that the pin designations of the PCB footprint chosen for each and every device actually matches the pinout of the device that will be soldered to it. It is very easy to assign a SOT23 package to a BC846 bipolar transistor where the pin order is:
+
+Pin 1 = Base
+
+Pin 2 = Emitter
+
+Pin 3 = Collector
+
+and then to forget that the pin order for a MMBF5485 junction FET going round the same SOT23 package in the same order is:
+
+Pin 1 = Drain
+
+Pin 2 = Source
+
+Pin 3 = Gate
+
+To change the pin labelling in the schematic to match the PCB footprint: select the part, press the `i` key then edit the order of the **PCB Pin** information in the **Edit Pin Map Information** section of the **Modify symbol information** dialogue that opens and click `OK` when finished.
+
+To change the pin labelling in the PCB to match the schematic symbol: select each pin of the relevant part, then edit the pin **Numbers** in the right hand **Properties** panel.
+
+5) Check that all necessary Bill of Materials (BoM) information is present and correct. Correct it and add more if required, making sure that fields such as `Description` are consistently labelled so that they form a coherent column structure in the BoM;
+
+6) Check that all PCB footprints are correct for the intended devices (yes: whether they have come from the library or you have created them yourself: check them thoroughly);
+
+7) Check that silkscreen markings such as the polarity markings for electrolytic capacitors and diodes are the right way round. Even if the pin names, numbering and sequence around tha package are correct, it can all go wrong if the footprint markings show the device in the wrong orientation.
+
+9) Check that devices have been placed on the correct side of the board;
+
+10) Refresh and check all the Components and Nets in the schematic Design Manager tab in the right hand panel;
+
+11) Refresh and check all the Components, Nets and DRC Errors in the PCB Design Manager tab in the right hand panel;
+
+12) Check connector and on-board pot and switch orientations;
+
+13) Check the dimensions and locations of mounting holes and any components that have to line up with respect to these mounting holes or to apertures in an enclosure;
+
+14) Check that the order of the top and bottom (and any inner layers) is correct;
+
+15) Check that a Board Outline exists, is closed and that it is shaped and dimensioned correctly and is on the correct (Board Outline) layer;
+
+16) Check that silkscreen markings do not overlap pads;
+
+17) Check that all required silkscreen markings are present, in the correct locations on the correct layers, are within the recommended dimensions, are legible and and spelled correctly;
+
+18) Check that any additional information such as notes about the PCB stackup etc., are present and on the correct (Documentation) layer;
+
+19) Check that no board outline, silkscreen or documentation layer information has accidentally been placed on any copper layers;
+
+20) Having completed the layout, check that the assembled component heights do not foul any enclosure (At the time of writing (160922) this is not something that can be acheived directly in EasyEDA as there is no 3D viewer yet available so this must be checked by other means);
+
+21) If copper areas are used with heat shunt spokes enabled, check that any tracks that join pins that are also joined by copper areas run within the area of a spoke. If they do not - for example a 45 degree diagonal track coming out of a pad with 90 degree heat shunt spokes - the track forms an extra spoke which increases the heat shunting to a pad and so may make soldering more difficult;
+
+22) Check that all copper areas assigned to a net are joined by reasonable widths of copper, i.e. they are not just joined by thin slivers of copper;
+
+23) Check that any tracks that require special routing considerations such as Kelvin connections to low value current sense resistors or increased clearances for high voltage traces have been correctly implemented;
+
+24) Check clearances of copper on all layers and components on both sides to the edges of the board;
+
+25) Check that no traces have been set to hidden in the Design Manager Nets list;
+
+26) Use the Design Manager (the **Design** button in the left hand panel) to check that all components are present in both the schematic and the PCB and that all nets have at least two connection;
+
+27) Use the Design Manager (the **Design** button in the left hand panel) to check, investigate and correct all DRC errors.
+A completed PCB design should have no DRC errors;
+
+28) Check that the Gerbers to be generated are from the correct version of the PCB layout. It may have changed as a result of the above checks so always regenerate the Gerbers from the latest version unless there is a specific reason to use them from an earlier version. Putting a version number on the PCB helps but is not perfect as this has to be updated manually anyway;
+
+29) Download and check items (6) to (24) in the Gerbers in either the EasyEDA Gerber Viewer:
+
+[https://gerber-viewer.easyeda.com/](https://gerber-viewer.easyeda.com/)
+
+or using a 3rd party Gerber viewer such as the free and open source gerbv:
+
+[http://gerbv.sf.net/](http://gerbv.sf.net/)  
+[http://flatcam.org/](http://flatcam.org/)  
+[http://kicad-pcb.org/](http://kicad-pcb.org/)  
+[http://www.gerber-viewer.com/](http://www.gerber-viewer.com/)
+
+30) Check the order options such as number of boards, copper finish, silkscreen colour, solder mask colour, panellisation, any solder paste mask requirement and so on;
+
+31) Lastly, check that the order is being placed with the correct delivery option. The default delivery method is by express courier. This is the most expensive option but avoids the mistake of ordering boards that are needed urgently with a slow delivery method.
+
+
 
 ## PCB Order from EasyEDA Editor
    When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 

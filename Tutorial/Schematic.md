@@ -286,7 +286,7 @@ Select the place holder, so you can see the image's attributes in the right hand
 
 Set the URL of your image. For example, setting the URL to:
 
-[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
+[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555\\_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
 
 will make your image look like this:
 
@@ -338,7 +338,7 @@ Suppose you wanted the find the **MAX232** (which converts signals from an [RS-2
 
 ![](images/026_Introduction_Parts.png)
 
-When you hover the mouse over the picture of the Schematic symbol or PCB footprint, you will find a toolbar with ”Edit”, “Place”, “More” buttons.
+When you hover the mouse over the picture of the Schematic symbol or PCB footprint, you will find a toolbar with "Edit”, “Place”, “More” buttons.
 
 **LCSC Assembly Components**
 
@@ -479,9 +479,14 @@ There are two ways to open the footprint manager:
 - Click the package input box of custom attributes when you've selected a component:  
   ![](images/265_Schematic_FootprintManagerPullOut.png)
 
-1.Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert. For example, If your part U1 has 2 pins, pin number are 1 and 2, pin name is A and B, but you assigned a footprint has 2 pads, [pad number](./PCB.htm#Pad) are A and B, the part's pin number doesn't match the pad number, so the the footprint manager will alert red, in order to solve this, method 1: [change part's pin number](./Schematic.htm#Pinmap-Modify-symbol-information) as A and B, method 2: change package's pad number as 1 and 2, method 3: find an other package and update.  
+**1.** Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.   
+For example, If your part U1 has 2 pins, pin number are 1 and 2, pin name is A and B, but you assigned a footprint has 2 pads, [pad number](./PCB.htm#Pad) are A and B, but the part's pin number doesn't match the pad number, so the the footprint manager will alert red, in order to solve this:
 
-2.In the preview area, you can zoom in, zoom out and pan with mouse.
+-	method 1: [change part's pin number](./Schematic.htm#Pinmap-Modify-symbol-information) as A and B.
+-	method 2: change package's pad number as 1 and 2.
+-	method 3: find an other package and update.  
+
+**2.** In the preview area, you can zoom in, zoom out and pan with mouse.
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
 ### Update Package
@@ -518,11 +523,11 @@ After selecting a component, you can find the component's attributes in the rig
 
 ![](images/064_Schematic_ComponentAttributes.png)
 
-1.**Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
+**1.****Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
 If you want edit this component, you can click **Edit Symbol**.
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
 
-2.**Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
+**2.****Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
 
 
 
@@ -590,9 +595,9 @@ If you are not too worried that the symbols may not look quite the way people mi
 
 When you select a component, for opening the Modify symbol information dialog, you can do:
 
-1.**Super menu > Miscellaneous > Edit Symbol...**;  
-2.Or press the `I` hotkey;  
-3.Or click the Edit Symbol on the Parts Attributes on the left panel.  
+**1.****Super menu > Miscellaneous > Edit Symbol...**;  
+**2.**Or press the `I` hotkey;  
+**3.**Or click the Edit Symbol on the Parts Attributes on the left panel.  
 
 Using this dialog you can edit the pin names and numbers, for example, to suit a different package or device variant. You can also enter a Spice Prefix and swap the spice Pin order to make your symbol usable in simulation.   
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
@@ -672,9 +677,9 @@ For more information on circuit elements in Ngspice, please refer to:
 
 The two sets of pin numbers are:
 
--   PCB pin number: these are the numbers for the real, physical device pins in its package. They are required so that the pins of a device symbol in a schematic can be mapped onto the physical pins of a PCB footprint. In other words, so that the connections shown in the schematic, end up connected properly by copper on the PCB.
+-   **PCB pin number: **these are the numbers for the real, physical device pins in its package. They are required so that the pins of a device symbol in a schematic can be mapped onto the physical pins of a PCB footprint. In other words, so that the connections shown in the schematic, end up connected properly by copper on the PCB.
 
--   Spice pin number or pin order:  these are the numbers that map the pins on the symbol to their respective functions in the spice model or subcircuit.
+-   **Spice pin number or pin order: ** these are the numbers that map the pins on the symbol to their respective functions in the spice model or subcircuit.
 
 Actually the spice pin ordering has a slightly deeper meaning.
 
@@ -857,6 +862,8 @@ If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.
 
 ## Converting Schematics To PCB
 
+Before using "Convert to PCB", "Update PCB" in Schematic and "Import Changes" in PCB, please read [Essential Check](./EssentialCheck.htm#Introduction) section.
+
 Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
 
 **Note:** *Before converting, you need to use the Design Manager and Footprint Manager to check all the components, nets(connection) and packages/footprints to ensure no errors exist.*
@@ -893,6 +900,9 @@ This shows the footprints placed in arbitrary positions with the connections bet
 
 Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, by using the `Update PCB` button you can immediately be passed forward to update the selected PCB without having the PCB editor window already open or without creating a new PCB file.   
   ![](./images/217_Schematic_UpdatePCB.png)    
+
+
+
 
 ## Hierarchy
 

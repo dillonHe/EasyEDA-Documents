@@ -24,25 +24,25 @@ In the schematic editor, we use Wire or the `W` Hotkey to connect Pins, in a 
 
 **Some Tips about Track.**
 
-1.  Single click to start drawing a track. Single click again to pin the track to the canvas and continue on from that point. Right click to end a track. Double right-click to exit track mode.
+**1.** Single click to start drawing a track. Single click again to pin the track to the canvas and continue on from that point. Right click to end a track. Double right-click to exit track mode.
 
-2.   Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:  
+**2.** Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:  
   ![](images/113_PCB_TrackInsertVia.gif) 
 If you start drawing a track on the top layer - you will see it drawn in red - then press the B key to change to bottom layer and you will see EasyEDA insert a grey via and then the track will continue being drawn but now on the bottom layer in blue.
 
-3.  Pressing the `+` or `-` Hotkeys when drawing the track will change the width of the track on the fly.
+**3.** Pressing the `+` or `-` Hotkeys when drawing the track will change the width of the track on the fly.
 
-4.  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.  
+**4.**  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.  
   ![](images/114_PCB_TrackVertex.gif)
 
-5.  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
+**5.**  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
   ![](images/115_PCB_TrackSegmentAdjust.gif)
 
-6.  Pressing the `L` Hotkey when drawing the track will change the track's Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
+**6.**  Pressing the `L` Hotkey when drawing the track will change the track's Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
   ![](images/112_PCB_RouteAngle.png)
 
 
-7.  You can change inflection direction when routing, just press `Space` key.
+**7.**  You can change inflection direction when routing, just press `Space` key.
   ![](./images/224_PCB_TrackChangeDirection.gif)
 
 
@@ -425,6 +425,8 @@ In this dialog, you can:
 
 ## Import Changes 
 
+Before using "Convert to PCB", "Update PCB" in Schematic and "Import Changes" in PCB, please read [Essential Check Before Clicking "Convert to PCB" or "Update PCB" or "Import Changes"](./EssentialCheck.htm#Introduction) section.
+
 Sometimes, while working on a project, you need to make changes to the schematic and then update your board, to incorporate them.
 
 It's easy to do this with EasyEDA.
@@ -547,7 +549,8 @@ When you finish your PCB, you can output the Fabrication Files(gerber file) via 
 It will open a webpage to you, and you can download the gerber as a zipfile.
 ![](./images/221_Export_DownloadGerberFile.png)
 
-
+**Notice:** 
+*Before order your PCB, Please read [Essential Check Before Placing a PCB Order](./PCBOrder.htm/#Essential-Check-Before-Placing-a-PCB-Order) section!!*
 
 
 

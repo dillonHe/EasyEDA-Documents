@@ -44,6 +44,11 @@ Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safa
 -   Online sharing of and collaborative working on schematics, simulations, PCB layouts, designs and projects
 
 
+## Design Flow by Using EasyEDA 
+
+You can create circuits design easily by using EasyEDA. The design flow as below:
+![](images/028_Introduction_Design-Flow.png)
+
 ## UI introduction
 
 EasyEDA Editor has a clearly and friendly user interface. You can use its every function very easily when you become familiar with EasyEDA.
@@ -147,14 +152,13 @@ You can close or open this dialog via:
 
  **Super Menu > View > Toolbars > Preview** or on the top toolbar **Config Icon > Toolbars > Preview**.
 
--  The Preview Dialog has a resizing handle in the bottom right corner.
+-	The Preview Dialog has a resizing handle in the bottom right corner.
 
-  -The Preview Dialog can't be closed but double clicking on the top banner will roll up the panel or you can click the top right corner `—` . Double clicking top banner again toggles it back to the selected size.  
+-	The Preview Dialog can't be closed but double clicking on the top banner will roll up the panel or you can click the top right corner `—` . Double clicking top banner again toggles it back to the selected size.    
+![](images/213_Introduction_UI_PreviewDialog.png)
 
-  ![](images/213_Introduction_UI_PreviewDialog.png)
 
-
-- Clicking on the little pencil edit tool opens the item in the preview for editing. Clicking on the location place tool in the top right corner of the preview dialog places the item onto the canvas. If you try to place PCB footprint into a schematic it will not provide any action and message.
+-	Clicking on the little pencil edit tool opens the item in the preview for editing. Clicking on the location place tool in the top right corner of the preview dialog places the item onto the canvas. If you try to place PCB footprint into a schematic it will not provide any action and message.
 
 #### 5. Wiring Tools
 
@@ -352,9 +356,6 @@ EasyEDA supports up to 6 layer PCBs by default but it is capable of handling mor
 Searching footprints is the same as searching symbols by using **Parts** in the Schematic.
 You can place the selected footprints in the canvas after the search.
 
-### Design Flow using EasyEDA 
-You can create circuits design easily by using EasyEDA. Design flow as below:
-![](images/028_Introduction_Design-Flow.png)
 
 
 ### Account Management 
@@ -474,9 +475,9 @@ In **user management menu**, click on **Crash Recovery**. Or you can click **
 Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
 
 **Please note:**  
-- *EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
-- *And if you cleaned your browser's cache, the recovery files will disappear.*
-- *If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
+-	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
+-	*And if you cleaned your browser's cache, the recovery files will disappear.*
+-	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
 
 #### Close Account
 

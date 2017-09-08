@@ -49,7 +49,7 @@ If you just need some simple functions, you don't need to create an extension. Y
 
 ### Run Script code
 
-In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
+In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.  
 ![](./images/176_API_ScriptSample.png).  
 
 **example 1 Art**  
@@ -62,8 +62,8 @@ You can open a **PCB** and copy [this example javascript codes](https://raw.gith
 
 ## EasyEDA Coordinate System 
 
-EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.
-![](./images/178_API_Coordinate.png).   
+EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.  
+![](./images/178_API_Coordinate.png)
 
 Be careful this, they are different from **Cartesian coordinate system**  
 

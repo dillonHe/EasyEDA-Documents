@@ -23,6 +23,5 @@ PCBLib Tools almost are the same as PCB tools, just lacking some of the function
 
 3.  `CTRL+S` to save your footprint designs and you will find them saved into the **Parts > My Parts > Packages** section of the left Navigation panel. 
 
-4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`
-
+4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`  
   ![](images/146_PCBLibs_NewPadRing.png)

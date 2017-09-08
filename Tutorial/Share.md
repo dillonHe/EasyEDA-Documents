@@ -9,7 +9,7 @@ Did you create a really cool project with EasyEDA? Show it off and be super help
 All projects in EasyEDA are set to private by default, your private project can not be shared with anyone.  
 i.e. to make it public, you should create a new project or right click and edit your existing project to be a Public project:  
 
-**Create New Project：**
+**Create New Project：**  
 ![](images/164_Share_NewPublicProject.png)  
 
 **Edit Existing Project:**    
