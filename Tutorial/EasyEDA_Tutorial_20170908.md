@@ -3329,16 +3329,6 @@ PCB editor can display net name in the track or Pads, if you don't need this fea
 After selecting a track, and then pressing `H` key, EasyEDA will highlight the whole net and pop a message box to tell you the whole net's length. like in the image below  
 ![](./images/138_PCB_NetLength_KeyH.png)
 
-## Layer Setting 
-
-Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' gear icon.
-
-You can find the Layer Options Settings dialog.
-
-In this dialog, you can change the layer's Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
-
-![](images/110_PCB_LayerOptions.png)
-
 
 ## Layers Tool 
 
@@ -3348,16 +3338,24 @@ Show/Hide layers: click on the eye icons to show/hide layers.
 
 ![](images/111_PCB_LayerView.png)
 
-HotKeys for layer activation:
+HotKeys for layer activation:  
 
-**T:** Top Layer is active  
-**B:** Bottom Layer  
-**1:** Inner1 Layer  
-**2:** Inner2 Layer  
-**3:** Inner3 Layer  
-**4:** Inner4 Layer  
+-	**T:** Top Layer is active  
+-	**B:** Bottom Layer  
+-	**1:** Inner1 Layer  
+-	**2:** Inner2 Layer  
+-	**3:** Inner3 Layer  
+-	**4:** Inner4 Layer  
 
+## Layer Setting 
 
+Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' gear icon.
+
+You can find the Layer Options Settings dialog.
+
+In this dialog, you can change the layer's Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
+
+![](images/110_PCB_LayerOptions.png)
 
 ## Footprint attributes 
 

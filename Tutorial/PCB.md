@@ -318,12 +318,13 @@ Show/Hide layers: click on the eye icons to show/hide layers.
 ![](images/111_PCB_LayerView.gif)
 
 HotKeys for layer activation:  
-**T:** Top Layer is active  
-**B:** Bottom Layer  
-**1:** Inner1 Layer  
-**2:** Inner2 Layer  
-**3:** Inner3 Layer  
-**4:** Inner4 Layer  
+
+-	**T:** Top Layer is active  
+-	**B:** Bottom Layer  
+-	**1:** Inner1 Layer  
+-	**2:** Inner2 Layer  
+-	**3:** Inner3 Layer  
+-	**4:** Inner4 Layer  
 
 ## Layer Setting 
 
