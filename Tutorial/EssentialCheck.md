@@ -94,7 +94,7 @@ Naming nets instead of relying on the EasyEDA auto-generated alphanumeric names 
 
 * Verify that there are no duplicate prefixes in the schematic:
 
-[https://easyeda.com/forum/topic/How\\_to\\_resolve\\_quotPrefix\\_Conflictquot\\_error\\_-gpbca8642](https://easyeda.com/forum/topic/How_to_resolve_quotPrefix_Conflictquot_error_-gpbca8642)
+[https://easyeda.com/forum/topic/How_to_resolve_quotPrefix_Conflictquot_error_-gpbca8642](https://easyeda.com/forum/topic/How_to_resolve_quotPrefix_Conflictquot_error_-gpbca8642)
 
 Remember to check across all sheets of a multi-sheet schematic;
 
@@ -162,7 +162,7 @@ Where possible, check datasheets, applications notes and schematics and PCBs for
 
 For some background on the importance of adequate decoupling please see:
 
-[https://easyeda.com/andyfierman/Power\\_supply\\_decoupling\\_and\\_why\\_it\\_matters_-451e18a0d36b4f208394b2a2ff7642c9](https://easyeda.com/andyfierman/Power_supply_decoupling_and_why_it_matters_-451e18a0d36b4f208394b2a2ff7642c9)
+[https://easyeda.com/andyfierman/Power_supply_decoupling_and_why_it_matters_-451e18a0d36b4f208394b2a2ff7642c9](https://easyeda.com/andyfierman/Power_supply_decoupling_and_why_it_matters_-451e18a0d36b4f208394b2a2ff7642c9)
 
 * Verify that a Schematic Symbol and an associated PCB Package has been created for every Part needed to construct the complete PCB. 
 
@@ -194,7 +194,7 @@ Remember that in EasyEDA, the PCB Footprint is viewed looking down onto the comp
 
 For more information about this please see:
 
-[https://easyeda.com/forum/topic/How\\_to\\_add\\_extra\\_information\\_to\\_the\\_Bill\\_of\\_Materials\\_BOM-Hp9rJCUcu](https://easyeda.com/forum/topic/How_to_add_extra_information_to_the_Bill_of_Materials_BOM-Hp9rJCUcu)
+[https://easyeda.com/forum/topic/How_to_add_extra_information_to_the_Bill_of_Materials_BOM-Hp9rJCUcu](https://easyeda.com/forum/topic/How_to_add_extra_information_to_the_Bill_of_Materials_BOM-Hp9rJCUcu)
 
 * Verify that any necessary information relating to the physical placement of components and layout of copper traces and areas has been annotated in the schematic.
 

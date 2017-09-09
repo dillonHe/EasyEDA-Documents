@@ -174,7 +174,7 @@ There is an option for that in PCB canvas attributes:
 ### Can I create a PCB without creating schematic?
   Yes but for any but the simplest PCBs, please see:
   
-[https://easyeda.com/forum/topic/The\\_best\\_way\\_to\\_design\\_a\\_PCB\\_in\\_EasyEDA-ThR3pwqIC]( https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
+[https://easyeda.com/forum/topic/The\_best\_way\_to\_design\_a\_PCB\_in\_EasyEDA-ThR3pwqIC](https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
 
 ### How to add more fonts for PCB.
 

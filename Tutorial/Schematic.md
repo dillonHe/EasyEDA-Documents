@@ -286,7 +286,7 @@ Select the place holder, so you can see the image's attributes in the right hand
 
 Set the URL of your image. For example, setting the URL to:
 
-[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555\\_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
+[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
 
 will make your image look like this:
 

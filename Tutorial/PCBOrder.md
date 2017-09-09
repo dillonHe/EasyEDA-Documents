@@ -41,7 +41,7 @@ Note: do not confuse the schematic symbol pin numbering with the spice pins numb
 
 **Schematic symbols: prefixes and pin numbers** in:
 
-[https://docs.google.com/document/u/1/d/1OWZVVFRAe\\_2NW3WratpkA\\_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1](https://docs.google.com/document/u/1/d/1OWZVVFRAe_2NW3WratpkA_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1)
+[https://docs.google.com/document/u/1/d/1OWZVVFRAe\_2NW3WratpkA\_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1](https://docs.google.com/document/u/1/d/1OWZVVFRAe_2NW3WratpkA_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1)
 
 4) Check that the pin designations of the PCB footprint chosen for each and every device actually matches the pinout of the device that will be soldered to it. It is very easy to assign a SOT23 package to a BC846 bipolar transistor where the pin order is:
 
