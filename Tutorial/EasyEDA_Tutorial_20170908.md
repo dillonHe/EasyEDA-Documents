@@ -632,12 +632,6 @@ A list of all the available default hotkeys is given below.
       <td>Paste</td>
    </tr>
    <tr>
-      <td>8</td>
-      <td>ALL</td>
-      <td>Ctrl+Shift+V</td>
-      <td>Cross Document Paste</td>
-   </tr>
-   <tr>
       <td>9</td>
       <td>ALL</td>
       <td>Delete</td>
