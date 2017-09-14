@@ -485,9 +485,11 @@ This is a big feature of EasyEDA. It is hard to fix DRC errors after laying out 
 ## Auto Router
 
 For some simple or prototype PCBs, you may want to use the auto router function to save time. Layout is a time costly and dull job. EasyEDA spends lots of time to provide such a feature and it is loved by our users.
+Before using the auto router, you need to set the board outline for the PCB.
+
 Steps:
 
-**1 Click the the auto router button from the toolbar**
+**1 Click the the auto router button from the toolbar** or **"Super Menu > Miscellaneous > Auto Router"**
 
 ![](./images/180_PCB_AuotoRouter.png)
 
@@ -497,29 +499,67 @@ Steps:
 
 ![](./images/181_PCB_AuotoRouterConfig.png)  
 
-In the config dialog, you can set some rules to make the auto router result professional.
+In the config dialog, you can set some rules to make the auto router result professional. These rule must equalize or more than DRC setting.
 
-If you want to keep the routed tracks, you need to uncheck the `Ripup Nets`
-
-The real time check box will let you see how it is going, but it will make the process a little bit slow.   
-![](./images/182_PCB_AuotoRouterProcess.png) 
-
-If you like to keep the a net with no route, you can skip it. For example, if you want to use copper area to connect `GND` net, you can skip the `GND` net. 
-
-For the power supply track, you may want it to be bigger, so you can add some special rules. 
+-	**Remove Existing Tracks:** If you want to reserve the routed track, you need to deselect it.
+-	**Realtime Display:** when you select it , the real time routing status will show on.
+-	**Router Layers:** If you want to route inner layer, you have to enable the inner layer first at [Layers Setting](https://easyeda.com/Doc/Tutorial/PCB.htm#Layer-Setting).
+-	**Router Server:** 
+	-	**Cloud:** Using EasyEDA online server.
+	-	**Local:**  Using the local auto router server, when you click the Auto Router icon, the editor will check the local router server available or not automatically. How to use please see as below.
+-	**Skip Nets:**  If you like to keep the a net with no route, you can skip it. For example, if you want to use copper area to connect `GND` net, you can skip the `GND` net. 
+-	**Special Nets:** For the power supply track, you may want it to be bigger, so you can add some special rules. 
 
 **3 Run it**
 
-Click the run button, wait for a few seconds, after adding bottom and top copper area, you will get a finished PCB board like in the image below.
+After click the **"Run"** button , The real time check box will let you see how it is going, but it will make the process a little bit slow.   
+![](./images/182_PCB_AuotoRouterProcess.png) 
+
+Waiting for a few minutes, after adding bottom and top copper area, you will get a finished PCB board like in the image below.
 
 ![](./images/183_PCB_AuotoRouterFinish.png) 
+
+
+### Local Auto Router
+
+EasyEDA suggest that using local auto router rather than using the cloud server,  because when many users using cloud server, the auto router will fail.
+
+You need to configure the browser and execute the AutoRouter.bat first before click the **Auto Router** icon at editor.
+![](./images/287_PCB_LocalAutoRouter_Folder.png)
+
+This version only works on windows7(x64) or later.  Download via: [EasyEDA Router v0.2.zip]()
+
+**Notice:** *Please use the latest Chrome or Firefox !!!*
+
+**1)Chrome**
+
+If the local auto router is unavailable, you have to upgrade Chrome to version 60.0.3112.78 or later.
+
+
+**2)Firefox**
+
+Configure Firefox:
+
+Type "`about:config`" into the address bar then press enter, and search "`allowInsecure`", and Find `network.websocket.allowInsecureFromHTTPS` , 
+
+double click it, its value will change  as "true", re-open Firefox and try again.
+
+![](./images/288_PCB_LocalAutoRouter_Firefox.png)
+
+If the local router server is available, the dialog will tell you. Click the **Run** button, the **AutoRouter.bat** dialog will show the process as below:
+
+![](./images/289_PCB_LocalAutoRouter_Dialog.png)
+
+**Tips**
 
 Sometimes, if you can't get it done, try the tips below.
 
 1. Skip the GND nets, add copper area to GND net.
-2. use small tracks and small clearance, but make sure the value is more than 6mil.
+2. Use small tracks and small clearance, but make sure the value is more than 6mil.
 3. Route some key tracks manually before auto routing. 
 4. Add more layers, 4 layers or 6 layers
+5. Use local auto router rather than cloud server.
+6. Tell the error detail to us.
 
 Some professional people don't like the auto router, because they think auto router is not professional, but you can use the auto router to check your placement. to check the density of your PCB. 
 
