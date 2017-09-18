@@ -532,7 +532,7 @@ PCB的设计管理器与原理图的设计管理器一样，在左边导航面�
 
 立创EDA建议用户使用本地布线服务器，当使用云端服务器时，如果使用人数较多，自动布线将会产生排队、布线失败等现象。
 
-该版本需在windows7及以上的64位操作系统。下载地址：[EasyEDA Router v0.2.zip]()
+该版本需在windows7及以上的64位操作系统。下载地址：[EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)
 
 在点击“自动布线”图标前，前请先配置浏览器和运行AutoRouter.bat。
 

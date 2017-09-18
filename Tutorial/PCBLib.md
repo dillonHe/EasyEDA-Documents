@@ -25,3 +25,15 @@ PCBLib Tools almost are the same as PCB tools, just lacking some of the function
 
 4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`  
   ![](images/146_PCBLibs_NewPadRing.png)
+
+
+## Edit PCBLibs
+
+When you feel the PCB Libs(footprint) can not be satisfy for you, you can edit it.
+
+Via **"Parts" > "Search Part/My Parts/LCSC Parts/System Components/User Contributions" > Select Package > Edit**
+
+![](images/291_PCBLibs_Edit.png)
+
+when you finish and save , it will be saved to your personal libraries "My Parts" and become your personal libraries.
+​ 

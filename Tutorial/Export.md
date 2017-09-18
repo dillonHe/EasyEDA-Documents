@@ -6,6 +6,8 @@ For documentation and other purposes, you can export your Schematic and PCB desi
 
 ## Exporting Schematics
 
+### Exporting Schematics In Documentation Formats
+
 Using:
 
 **Document > Export…**
@@ -65,7 +67,27 @@ EasyEDA can export a netlist in a variety of formats: 
 ![](images/087_Schematic_NetlistForDocument.png)
 
 
-## Exporting PCB designs
+## Exporting PCB Designs
+
+### Exporting PCB In Documentation Formats
+
+Exporting a PCB design or footprints from EasyEDA is very similar to exporting a Schematic or a Symbol.
+
+Using:
+
+**Document > Export…**
+
+you can open this dialog:
+
+![](images/157_Export_PCBExport_Dialog.png)
+
+You can select to export in PDF, drawing (.PNG) or SVG format.
+
+**Note:** *If you want to print the PCB 1:1 with the paper, you need to choose to export PDF(1:1).*
+
+You can select to print individual layers or selected layers merged into a single file.
+
+It is also possible to mirror selected layers for example to show bottom layers in easily readable orientation.
 
 ### Exporting Fabrication Files
 
@@ -90,26 +112,6 @@ In PCB editor, if you want to generate Pick And Place as a CSV file, you can via
 When you open the exported CSV file, you can see:  
 ![](images/206_Export_PickAndPlaceCSV.png)
 
-
-### Exporting in documentation formats
-
-Exporting a PCB design or footprints from EasyEDA is very similar to exporting a Schematic or a Symbol.
-
-Using:
-
-**Document > Export…**
-
-you can open this dialog:
-
-![](images/157_Export_PCBExport_Dialog.png)
-
-You can select to export in PDF, drawing (.PNG) or SVG format.
-
-**Note:** *If you want to print the PCB 1:1 with the paper, you need to choose to export PDF(1:1).*
-
-You can select to print individual layers or selected layers merged into a single file.
-
-It is also possible to mirror selected layers for example to show bottom layers in easily readable orientation.
 
 ### Exporting Print For Etching
 

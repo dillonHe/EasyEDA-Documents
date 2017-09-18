@@ -114,6 +114,8 @@ Then double click on each sub part in turn to modify the Pin Name and Number att
 
 Easy or what?
 
+
+
 ## Custom Attributes
 
 In the Schematic Lib editor's canvas Properties panel, you will find a **Custom Attributes** section:
@@ -126,9 +128,9 @@ You can control this part mounted or not on the PCB. If you choose No, this comp
 
 **Package**
 
-If you would like to built a PCB, you need to assign a package for your schematic Lib symbol. Although there are other ways to do this in EasyEDA, here is the right place to do it.
+If you would like to built a PCB, you need to assign a package for your schematic Lib symbol. Although there are other ways to do this in EasyEDA, here is the right place to do it. When you set a package , the package's pad numbers must match the  schematic Lib's pin number, otherwise,  when you convert the schematic to PCB , there will miss several nets.
 
-Click in the **Package** input box, and the  **Parts** dialog will open as used to do this task in the Schematic Editor.
+Click in the **Package** input box, and the  **Footprint Manager** dialog will open as used to do this task in the Schematic Editor.
 
 **Prefix**
 
@@ -145,4 +147,15 @@ This is your registered user name. Other EasyEDA's users will remember your cont
 
 
 
-​                    
+## Edit SchematicLibs
+
+When you feel the Schematic Libs can not be satisfy for you, you can edit it.
+
+Via **"Parts" > "Search Part/My Parts/LCSC Parts/System Components/User Contributions" > Select Schematic Lib > Edit**
+
+![](images/290_SchematicLibs_Edit.png)
+
+when you finish and save , it will be saved to your personal libraries "My Parts" and become your personal libraries.
+​  
+
+                  
