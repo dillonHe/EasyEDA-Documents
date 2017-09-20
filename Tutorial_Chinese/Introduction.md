@@ -30,38 +30,58 @@
 	-	使用立创EDA创建个人的库文件和公开的工程；
 	-	向朋友推荐立创EDA。
 
+**文档说明：**
+
+-	本文档会跟随编辑器的新功能更新而持续更新。
+-	编辑器Beta版会先行推出新的功能与改善，但可能会有bug，请谨慎体验。访问地址：[https://beta.lceda.cn/editor](https://beta.lceda.cn/editor)
+
 **立创EDA可提供：**
 
+-	简单，易用，友好，强大的绘图体验与能力
+-	可在任意地点，时间，设备上工作
+-	实时团队协作
+-	在线共享
+-	大量的开源项目
+-	整合PCB制造和元器件购买供应链
+-	提供API
+-	支持脚本
 -	原理图绘制
--	原理图模块创建
--	基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
+	-	基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
+	-	仿真模型和子电路的创建
+	-	波形图的查看和导出(CSV)
+	-	网表导出(Spice, Protel/Altium Designer, Pads, FreePCB)
+	-	多文件格式导出(PDF, PNG, SVG)
+	-	EasyEDA源码格式导出(json)
+	-	Altium Designer格式导出
+	-	BOM导出
+	-	多页原理图
+	-	原理图模块
+	-	主题设置
+	-	文档恢复
 -	PCB设计
--	PCB模块创建
--	PCB设计规则检查
--	PCB网表导出支持(Altium Designer, [Kicad](http://www.kicad-pcb.org/), PADS, Spice网表)  
--	仿真波形图导出(SVG格式)
--	原理图PCB导出支持(SVG, PNG, PDF)
--	生成BOM表
--	生成Gerber文件
--	生成坐标文件
--	工程文件下载
--	PCB预览(2D)
--	文件导入功能
-	-	Altium/ProtelDXP Ascii 原理图/PCB(导入的AD文件必须是以ASCII格式保存的文件)
+	-	设计规则检查
+	-	多层设计
+	-	多文件格式导出(PDF, PNG, SVG)
+	-	EasyEDA源码格式导出(json)
+	-	Altium Designer格式导出
+	-	BOM导出
+	-	照片预览
+	-	Gerber文件导出
+	-	SMT坐标文件导出
+	-	自动布线
+	-	PCB模块
+	-	文档恢复
+-	文件导入
+	-	Altium/ProtelDXP ASCII 原理图/PCB
 	-	Eagle 原理图/PCB/库文件
-	-	LTspice原理图/符号 (需要被Ngspice兼容)
-	-	[Kicad](http://www.kicad-pcb.org/)的封装库和模块
-	-	Spice模块和子电路
--	原理图库的创建和编辑
--	支持多表格原理图和多页原理图
--	Spice子电路创建
--	波形图浏览
--	仿真数据量测
--	PCB封装库创建和编辑
--	简单又强大的绘制能力
--	库文件的管理
--	在线分享
--	多人协作
+	-	LTspice 原理图/原理图库文件
+	-	DXF文件
+-	库文档
+	-	超过50万库文档(原理图库和封装库)
+	-	库文档管理
+	-	符号/子库的创建与编辑
+	-	仿真符号的创建与编辑
+	-	封装库的创建与编辑
 
 ## 浏览器设置
 

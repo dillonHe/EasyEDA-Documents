@@ -3,45 +3,72 @@
 
 ## What's EasyEDA
 
-Welcome to EasyEDA, a great web based EDA tool for electronics engineers, educators, students, makers and enthusiasts.
+Welcome to EasyEDA, a great web based EDA tool for electronics engineers, educators, students, makers and enthusiasts. 
 
 There's no need to install any software. Just open EasyEDA in any HTML5 capable, standards compliant web browser.
 
-Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safari. EasyEDA has all the features you expect and need to rapidly and easily take your design from conception through to production.
+Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safari. Highly recommend to use Chrome and Firefox.
+EasyEDA has all the features you expect and need to rapidly and easily take your design from conception through to production.
 
-[EasyEDA](https://easyeda.com/editor) provides:
+**EasyEDA Editor:** [https://easyeda.com/editor](https://easyeda.com/editor)  
+**EasyEDA Editor Beta:** [https://beta.easyeda.com/editor](https://beta.easyeda.com/editor)
 
--   Schematic capture
--   [NgSpice-based](http://ngspice.sourceforge.net/) simulation
--   PCB layout
--   PCB Design Rules and Checking
--   Export
--   PCB netlist in
-  - Altium Designer
-  - [Kicad](http://www.kicad-pcb.org/)
-  - PADS
--   Spice netlist
--   WaveForm simulation plot data (in CSV format)
--   Schematic in
-  -   pdf
-  -   image
-  -   SVG
--   Creation of BOM reports
--   Import
-  -   Altium/ProtelDXP Ascii Schematic/PCB
-  -   Eagle Schematic/PCB/libs
-  -   LTspice Schematic/symbols (may require editing for Ngspice compatibility)
-  -   [Kicad](http://www.kicad-pcb.org/) Libs/Modules (footprint libraries)
-  -   Spice models and subcircuits
--   Symbol creation and editing
--   Multi-sheet and Hierarchical schematics (passive drawings and active simulation schematics)
--   Spice subcircuit creation
--   WaveForm viewer
--   Post simulation measurements
--   PCB footprint creation and editing
--   Simple but powerful general drawing capabilities
--   Schematic symbol, spice model and PCB footprint library management
--   Online sharing of and collaborative working on schematics, simulations, PCB layouts, designs and projects
+**Instruction:**   
+
+-	This tutorial document will be updated according to the updated EasyEDA editor.
+-	The Editor beta version will release the new future and enhancement first, but maybe have some bugs, please using carefully.
+
+
+**EasyEDA Provides:**   
+
+-	Simple, Easier, Friendly, and Powerful general drawing capabilities
+-	Working Anywhere, Anytime, Any Device
+-	Real-time Team Cooperation
+-	Sharing Online
+-	Thousands of open source projects
+-	Integrated PCB fabrication and components purchase chain
+-	API provide
+-	Script support
+-	Schematic Capture
+	-	[NgSpice-based](http://ngspice.sourceforge.net/) Simulation
+	-	Spice models and subcircuits create
+	-	WaveForm viewer and data export(CSV)
+	-	Netlist export(Spice, Protel/Altium Designer, Pads, FreePCB)
+	-	Documentation export(PDF, PNG, SVG)
+	-	EasyEDA source file export(json)
+	-	Altium Designer format export
+	-	BOM export
+	-	Mutil-sheet and hierarchical schematics
+	-	Schematic module
+	-	Theme setting
+	-	Document recovery
+-	PCB Layout
+	-	Design Rules Checking
+	-	Mutil-Layer
+	-	Documentation export(PDF, PNG, SVG)
+	-	EasyEDA source file export(json)
+	-	Altium Designer format export
+	-	BOM export
+	-	Photo view
+	-	Gerber output
+	-	Pick and Place File output
+	-	Auto Router
+	-	PCB module
+	-	Document recovery
+-	Import
+	-	Altium/ProtelDXP ASCII Schematic/PCB
+	-	Eagle Schematic/PCB/Libraries
+	-	LTspice Schematic/Schematic Libraries
+	-	DXF
+-	Libraries
+	-	More than 500,000 Libraries(Symbol and Footprint)
+	-	Libraries management
+	-	Symbol/Subpart create and edit
+	-	Spice symbol/model create and edit
+	-	Libraries management
+	-	Footprint create and edit
+	
+
 
 
 ## Design Flow by Using EasyEDA 

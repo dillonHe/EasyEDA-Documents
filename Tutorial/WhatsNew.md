@@ -7,7 +7,7 @@
 
 **Tutorial PDF Download**
 
-The latest documentation of tutorial is providing .PDF now , and download via : [EasyEDA\_Tutorial\_20170918.pdf](./Doc/EasyEDA_Tutorial_20170918.pdf)
+The latest documentation of tutorial is providing .PDF now , and download via : [EasyEDA\_Tutorial\_20170920.pdf](./Doc/EasyEDA_Tutorial_20170920.pdf)
 
 **Desktop Client Download**
 

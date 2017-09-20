@@ -26,7 +26,26 @@ For all file formats:
 
 ![](images/156_Export_SchematicExport_PenWidth.png)
 
-### Export BOM
+### Exporting Schematics In Altium Designer Format
+
+EasyEDA support exporting the schematics in Altium Designer format.
+Via **"Documents > Export Altium..."**, and click the **"Download now"** you will get  a  `.schdoc` file.
+![](images/292_Export_SchematicInAltium.png)
+
+
+### Download Schematics
+
+You can download the schematic when it is opening,  via: 
+
+**Document > EasyEDA Source...**, click the download button, you will get a .json file.
+
+![](images/035_Introduction_EasyEDASource.png)  
+
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
+
+
+
+### Exporting BOM
 
 You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below，click the top toolbar `BOM` icon:
 
@@ -50,7 +69,7 @@ And Click the "BOM" button to download the BOM file. You can open it in any text
 
 ![](images/086_Export_BOM_CSV.png)
 
-### Export Netlist
+### Exporting Netlist
 
 EasyEDA can export the netlist for the active schematic (Document) and/or for the whole active project:
 
@@ -65,6 +84,7 @@ EasyEDA can export a netlist in a variety of formats: 
 -   [FreePCB](http://www.freepcb.com/): a PCB netlist in a format that can be imported straight into FreePCB, a  free, open source PCB editor for Windows.
 
 ![](images/087_Schematic_NetlistForDocument.png)
+
 
 
 ## Exporting PCB Designs
@@ -88,6 +108,42 @@ You can select to export in PDF, drawing (.PNG) or SVG format.
 You can select to print individual layers or selected layers merged into a single file.
 
 It is also possible to mirror selected layers for example to show bottom layers in easily readable orientation.
+
+
+### Exporting PCB In Altium Designer Format
+
+EasyEDA support exporting the PCB in Altium Designer format.
+Via **"Documents > Export Altium..."**.  
+![](images/293_Export_PCBInAltium.png)
+
+When open the exported PCB file at Altium Designer, there will open a dialog of DXP Import Wizard, don't worry, just cancel it to continue.
+
+![](images/293_Export_PCBInAltium_1.png)
+
+And then, you will see the PCB file, which is looks like without copper area as below:
+
+![](images/293_Export_PCBInAltium_3.png)
+
+At now, you need to repour all polygons at Altium Designer. Via: **Tools > Polygon Pours > Repour All**:
+
+![](images/293_Export_PCBInAltium_2.png)
+
+And the last, save it.
+
+![](images/293_Export_PCBInAltium_4.png)
+
+
+### Download PCB
+
+You can download the PCB when it is opening,  via: 
+
+**Document > EasyEDA Source...**, click the download button, you will get a .json file.
+
+![](images/035_Introduction_EasyEDASource.png)  
+
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
+
+
 
 ### Exporting Fabrication Files
 
@@ -150,7 +206,7 @@ Step 7) Get your soldering iron out!
 ![](images/163_Export_SolderPCB.png) 
 
 
-## Export SVG Source 
+## Exporting SVG Source 
 
 You can create an SVG sourcefile via: 
 
@@ -163,13 +219,15 @@ This solution doesn't need an internet connect so if you open EasyEDA offline
 ![](images/021_Introduction_SVGSource.png)  
 
 
-## Export EasyEDA Source
+## Exporting EasyEDA Source
 
 You can create an EasyEDA source file via: 
 
 **Document > EasyEDA Source...**
 
 ![](images/035_Introduction_EasyEDASource.png)  
+
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
 
 EasyEDA Source is a **JSON** file which can be read by many other programs. Please see:
 

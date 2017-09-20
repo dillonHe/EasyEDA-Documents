@@ -6,6 +6,8 @@
 
 ## 导出原理图
 
+### 用多文件格式导出原理图
+
 导出原理图可通过点击：**文档 > 导出** 会打开以下对话框：
 
 ![](images/155_Export_SchematicExportDialog.png)
@@ -16,13 +18,17 @@
 
 ![](images/156_Export_SchematicExport_PenWidth.png)
 
-## 打印原理图
 
-在点击 **文件** > **打印** 后，会打开一个网页，并调出浏览器打印对话框，设置参数后直接打印即可。请留意打印边界的设置，否则打印出来的画面可能会超出单页界面。
+### 用Altium Designer格式导出原理图
 
-也可以使用导出的PDF，PNG，SVG进行打印。建议优先选择PDF打印。
+导出Altium Designer格式原理图可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
 
-## 下载原理图文档
+![](images/289_Export_SchematicInAltium.png)
+
+点击“立即下载”即可下载Altium Designer格式的原理图。
+
+
+### 下载原理图文档
 
 立创EDA支持你下载自己的原理图文件，以EasyEDA格式源码方式下载，.json为后缀名。
 
@@ -34,7 +40,15 @@
 
 更多关于EasyEDA格式源码的信息，请查看下面[导出EasyEDA源码文件](./Export.htm#导出EasyEDA源码文件)章节。
 
-## 导出BOM
+
+### 打印原理图
+
+在点击 **文件** > **打印** 后，会打开一个网页，并调出浏览器打印对话框，设置参数后直接打印即可。请留意打印边界的设置，否则打印出来的画面可能会超出单页界面。
+
+也可以使用导出的PDF，PNG，SVG进行打印。建议优先选择PDF打印。
+
+
+### 导出BOM
 
 立创EDA支持导出BOM表(物料清单)，以便于你购买所需的零件。
 BOM导出可以点击工具栏的BOM图标：
@@ -57,7 +71,7 @@ BOM打开后如图：
 
 ![](images/086_Export_BOM_CSV.png)
 
-## 导出网表
+### 导出网表
 
 立创EDA支持导出多种EDA使用的网表文件格式。可导出单一文档网表也可导出整个工程的网表。
 
@@ -69,6 +83,8 @@ BOM打开后如图：
 
 
 ## 导出PCB
+
+### 用多文件格式导出PCB
 
 导出PCB设计与导出原理图设计的一样。在 **文档 > 导出** 或 **文档 > 打印**，点击后会打开如下对话框：
 
@@ -85,9 +101,38 @@ BOM打开后如图：
 
 -	*如果你要打印1:1大小的PCB，请选择导出 PDF(1:1)。*
 
+
+### 用Altium Designer格式导出PCB
+
+导出Altium Designer格式PCB可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
+
+![](images/289_Export_PCBInAltium.png)
+
+点击“立即下载”即可下载Altium Designer格式的PCB。
+
+当用Altium Designer打开导出的PCB时， 会打开一个“DXP Import Wizard”的窗口，点击取消继续即可。
+
+![](images/290_Export_PCBInAltium_1.png)
+
+打开后的PCB会如下图，似乎没有铺铜一般：
+
+![](images/290_Export_PCBInAltium_3.png)
+
+此时你需要对PCB进行重新铺铜，通过: **Tools > Polygon Pours > Repour All**：
+
+![](images/290_Export_PCBInAltium_2.png)
+
+之后保存即可。
+
+![](images/290_Export_PCBInAltium_4.png)
+
+
+
 ## 下载PCB文档
 
 下载方法与前面的**下载原理图文档**一致。
+
+
 
 ## 生成制造文件
 
@@ -102,6 +147,7 @@ BOM打开后如图：
 如果你需要PCB打样，建议通过立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
 
 当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
+
 
 ## 导出贴片坐标信息
 
