@@ -330,22 +330,6 @@ then will open a web page in which you can edit your project:
 ![](images/038_Introduction_EditProject-WebPage.png)
 
 From here, you can change the Visibility, allow other people to comment on your project and type a more detailed description of the project content. To help you make your project stand out or to maybe simply make a detailed description of your project easier to read, you can use Markdown syntax. If you need more information on Markdown syntax, click on Markdown Syntax? just above the Content box.
-
-### Version History
-It is easy to use this function, right click on the document for which you need the version history in like in the image below  
-![](./images/188_Introduction_VersionHistory.png)
-
- 
-
-After clicking on the version history link, you will get a list of all of the versions like in the image below.    
-![](./images/189_Introduction_VersionHistoryWebpage.png),  
-
-Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
-
-**Note:**  
-*1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
-*2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
-
 ​
 
 ## Function introduction
@@ -547,24 +531,7 @@ Click on **User Preferences**,
 If you have not saved any preferences then **Load from Server** will have no effect.
 
 
-#### Crash Recovery
 
-No operating system, software or network is perfect, so sometimes things can go wrong. Having your Desktop or web browser freeze or your broadband connection drop, two hours into laying out a PCB, could spoil your day.
-
-However, with EasyEDA, your day will be just fine.
-
-This is because EasyEDA auto saves and makes backups of all your open files to your computer so crash recovery is built into EasyEDA.
-
-In **user management menu**, click on **Crash Recovery**. Or you can click **Crash Recovery** button on the top Toolbar as below:
-
-![](images/032_Introduction_Account-CrashRecovery.png)
-
-Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
-
-**Please note:**  
--	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
--	*And if you cleaned your browser's cache, the recovery files will disappear.*
--	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
 
 #### Close Account
 
@@ -983,6 +950,40 @@ A list of all the available default hotkeys is given below.
 
 ### Basic Driving Skills.
 
+#### Version History
+It is easy to use this function, right click on the document for which you need the version history in like in the image below:  
+![](./images/188_Introduction_VersionHistory.png)
+
+ 
+
+After clicking on the version history link, you will get a list of all of the versions like in the image below.    
+![](./images/189_Introduction_VersionHistoryWebpage.png)  
+
+Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
+
+**Note:**  
+*1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
+*2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
+
+
+#### Crash Recovery
+
+No operating system, software or network is perfect, so sometimes things can go wrong. Having your Desktop or web browser freeze or your broadband connection drop, two hours into laying out a PCB, could spoil your day.
+
+However, with EasyEDA, your day will be just fine.
+
+This is because EasyEDA auto saves and makes backups of all your open files to your computer so crash recovery is built into EasyEDA.
+
+In **user management menu**, click on **Crash Recovery**. Or you can click **Crash Recovery** button on the top Toolbar as below:
+
+![](images/032_Introduction_Account-CrashRecovery.png)
+
+Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
+
+**Please note:**  
+-	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
+-	*And if you cleaned your browser's cache, the recovery files will disappear.*
+-	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
 
 To use EasyEDA, you need to be familiar with a few basic terms and concepts. The best way to learn them is to open up EasyEDA, open a new schematic:
 

@@ -591,7 +591,7 @@ If you are not too worried that the symbols may not look quite the way people mi
 
 
 
-## Pinmap Modify symbol information
+## Pinmap Modify Symbol Information
 
 When you select a component, for opening the Modify symbol information dialog, you can do:
 

@@ -272,21 +272,6 @@ then will open a web page in which you can edit your project:
 
 From here, you can change the Visibility, allow other people to comment on your project and type a more detailed description of the project content. To help you make your project stand out or to maybe simply make a detailed description of your project easier to read, you can use Markdown syntax. If you need more information on Markdown syntax, click on Markdown Syntax? just above the Content box.
 
-### Version History
-It is easy to use this function, right click on the document for which you need the version history in like in the image below:  
-![](./images/188_Introduction_VersionHistory.png)
-
- 
-
-After clicking on the version history link, you will get a list of all of the versions like in the image below.    
-![](./images/189_Introduction_VersionHistoryWebpage.png)  
-
-Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
-
-**Note:**  
-*1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
-*2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
-
 ​
 
 ## Function introduction
@@ -375,7 +360,7 @@ PCB Designs can be shared with colleagues and made public in the same way as Sch
 
 The size of PCB that you can produce using EasyEDA is almost unlimited: designs of over 100cm * 100cm are possible … but you might need a powerful computer for that.
 
-EasyEDA supports up to 6 layer PCBs by default but it is capable of handling more, so if you need more layers then please contact us as shown in the section on [How to get Help?](#How-to-get-help).
+EasyEDA supports up to 6 layer PCBs by default but it is capable of handling more, so if you need more layers then please contact us as shown in the section on [How to get Help?](#How-To-Get-Help).
 
 
 **Search footprints**  
@@ -487,24 +472,6 @@ Click on **User Preferences**,
 If you have not saved any preferences then **Load from Server** will have no effect.
 
 
-#### Crash Recovery
-
-No operating system, software or network is perfect, so sometimes things can go wrong. Having your Desktop or web browser freeze or your broadband connection drop, two hours into laying out a PCB, could spoil your day.
-
-However, with EasyEDA, your day will be just fine.
-
-This is because EasyEDA auto saves and makes backups of all your open files to your computer so crash recovery is built into EasyEDA.
-
-In **user management menu**, click on **Crash Recovery**. Or you can click **Crash Recovery** button on the top Toolbar as below:
-
-![](images/032_Introduction_Account-CrashRecovery.png)
-
-Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
-
-**Please note:**  
--	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
--	*And if you cleaned your browser's cache, the recovery files will disappear.*
--	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
 
 #### Close Account
 
@@ -928,6 +895,43 @@ To use EasyEDA, you need to be familiar with a few basic terms and concepts. Th
 
 **Document > New > Schematic** , and play!
 
+
+#### Version History
+It is easy to use this function, right click on the document for which you need the version history in like in the image below:  
+![](./images/188_Introduction_VersionHistory.png)
+
+ 
+
+After clicking on the version history link, you will get a list of all of the versions like in the image below.    
+![](./images/189_Introduction_VersionHistoryWebpage.png)  
+
+Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
+
+**Note:**  
+*1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
+*2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
+
+
+#### Crash Recovery
+
+No operating system, software or network is perfect, so sometimes things can go wrong. Having your Desktop or web browser freeze or your broadband connection drop, two hours into laying out a PCB, could spoil your day.
+
+However, with EasyEDA, your day will be just fine.
+
+This is because EasyEDA auto saves and makes backups of all your open files to your computer so crash recovery is built into EasyEDA.
+
+In **user management menu**, click on **Crash Recovery**. Or you can click **Crash Recovery** button on the top Toolbar as below:
+
+![](images/032_Introduction_Account-CrashRecovery.png)
+
+Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
+
+**Please note:**  
+-	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
+-	*And if you cleaned your browser's cache, the recovery files will disappear.*
+-	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
+
+
 #### Resizing the canvas area
 
 Hovering the mouse cursor over the areas indicated by the three green ellipses will bring up blue toolbar toggle lines. Clicking on them will toggle the visibility of their associated top, right and left toolbar areas to expand the canvas area. The vertical lines can also be dragged horizontally to resize the panels.  
@@ -1090,7 +1094,7 @@ Although EasyEDA saves all your files on our Server, sometimes you may want to s
 More detail you can view at [Export EasyEDA Source](./Export.htm#Export-EasyEDA-Source) section.
 
 
-## About upgrade 
+## About Upgrade 
 
 If you use EasyEDA online, it can seamlessly upgrade by itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/)) which may delay the automatic upgrading process. Therefore, if you want to upgrade to the latest version immediately, you can follow the two simple steps below.
 
@@ -1136,7 +1140,7 @@ If those two steps don't work, you may need to clear your browser's cache:
 -  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.
   ![](images/005_Introduction_Upgrade_RemoveChromeCache_2.png) 
 
-## How to get help
+## How To Get Help
 
 It is easy to ask for help for any problem with EasyEDA, just click on **Let's Chat**, and then complete and Submit the Support request:
 
