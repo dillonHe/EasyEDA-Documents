@@ -132,6 +132,16 @@ And the last, save it.
 
 ![](images/293_Export_PCBInAltium_4.png)
 
+If you export the PCB without tracks, you need to show all connections first before routing :
+
+Via: **Design > Netlist > Clean All Nets** 
+
+![](images/293_Export_PCBInAltium_5.png)
+
+Or use hotkey: **N > H > A** and then **N > S > A**:
+
+![](images/293_Export_PCBInAltium_6.png)
+
 
 ### Download PCB
 

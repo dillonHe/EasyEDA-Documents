@@ -104,13 +104,15 @@ BOM打开后如图：
 
 ### 用Altium Designer格式导出PCB
 
-导出Altium Designer格式PCB可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
+立创EDA支持PCB导出为Altium Designer格式PCB，由于是初版，导出没有很完善，会有部分元素丢失，如设计规则等，在发给制造商前请谨慎检查。
+
+可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
 
 ![](images/289_Export_PCBInAltium.png)
 
 点击“立即下载”即可下载Altium Designer格式的PCB。
 
-当用Altium Designer打开导出的PCB时， 会打开一个“DXP Import Wizard”的窗口，点击取消继续即可。
+当用Altium Designer打开导出的PCB时， 会打开一个“DXP导入向导”的窗口，点击取消继续即可。
 
 ![](images/290_Export_PCBInAltium_1.png)
 
@@ -118,13 +120,24 @@ BOM打开后如图：
 
 ![](images/290_Export_PCBInAltium_3.png)
 
-此时你需要对PCB进行重新铺铜，通过: **Tools > Polygon Pours > Repour All**：
+此时你需要对PCB进行重新铺铜，通过: **工具 > 铺铜 > 所有铺铜重铺**：
 
 ![](images/290_Export_PCBInAltium_2.png)
 
 之后保存即可。
 
 ![](images/290_Export_PCBInAltium_4.png)
+
+如果你要导出的PCB没有进行布线，那么你需要在Altium Designer里面进行相应的设置，使飞线显示出来：
+
+通过：**“设计 > 网络表 > 清除所有网络”**，快捷键：**D > N > A**
+
+![](images/290_Export_PCBInAltium_5.png)
+
+或者通过快捷键：**N > H > A** 再 **N > S > A**。
+
+![](images/290_Export_PCBInAltium_6.png)
+
 
 
 

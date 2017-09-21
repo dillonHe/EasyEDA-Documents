@@ -26,7 +26,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 -	Real-time Team Cooperation
 -	Sharing Online
 -	Thousands of open source projects
--	Integrated PCB fabrication and components purchase chain
+-	Integrated [PCB fabrication](https://jlcpcb.com) and [Components purchase](https://lcsc.com) chain
 -	API provide
 -	Script support
 -	Schematic Capture

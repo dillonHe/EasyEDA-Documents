@@ -80,7 +80,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 -	Real-time Team Cooperation
 -	Sharing Online
 -	Thousands of open source projects
--	Integrated PCB fabrication and components purchase chain
+-	Integrated [PCB fabrication](https://jlcpcb.com) and [Components purchase](https://lcsc.com) chain
 -	API provide
 -	Script support
 -	Schematic Capture
@@ -3871,6 +3871,16 @@ At now, you need to repour all polygons at Altium Designer. Via: **Tools > Polyg
 And the last, save it.
 
 ![](images/293_Export_PCBInAltium_4.png)
+
+If you export the PCB without tracks, you need to show all connections first before routing :
+
+Via: **Design > Netlist > Clean All Nets** 
+
+![](images/293_Export_PCBInAltium_5.png)
+
+Or use hotkey: **N > H > A** and then **N > S > A**:
+
+![](images/293_Export_PCBInAltium_6.png)
 
 
 ### Download PCB
