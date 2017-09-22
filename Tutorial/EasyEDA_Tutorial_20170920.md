@@ -123,7 +123,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 	-	Footprint create and edit
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Design Flow By Using EasyEDA 
