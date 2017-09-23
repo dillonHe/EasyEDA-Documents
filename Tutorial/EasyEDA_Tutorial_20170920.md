@@ -123,7 +123,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 	-	Footprint create and edit
 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 ## Design Flow By Using EasyEDA 
@@ -131,7 +131,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 You can create circuits design easily by using EasyEDA. The design flow as below:
 ![](images/028_Introduction_Design-Flow.png)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 
 ## UI introduction
@@ -3620,6 +3620,7 @@ After converting the PCB to Photo View, you can see the result as in the image b
 
 The photo view background default set as black and the right panel was hidden , you can popup up the right attribute panel and modify it.
 
+![](./images/294_PCB_PhotoView_Attribute.png)
 
 
 ## Getting Fabrication Files
