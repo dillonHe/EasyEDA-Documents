@@ -23,9 +23,11 @@ You can import Altium Designer's Schematic and PCB files into EasyEDA but only
 
 ![](images/148_Import_AltiumDesignerASCII.png)
 
-EasyEDA offers an excellent experience in importing Alitum Designer's Schematic and PCB: as you can see from the image below of a schematic imported from Altium Designer:
+EasyEDA offers an excellent experience in importing Alitum Designer's Schematic and PCB as you can see from the image below of a schematic imported from Altium Designer:
 
 ![](images/149_Import_AltiumDesignerSchemaitc.png)
+
+If your schematic and PCB are Protel 99se format files, please open at Altium Designer and save as ASCII format, and then import them.
 
 Altium Designer's Schematic and PCB libraries are not available as **ASCII** files, so how can you import them?
 

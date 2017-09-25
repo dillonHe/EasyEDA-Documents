@@ -3703,6 +3703,8 @@ EasyEDA offers an excellent experience in importing Alitum Designer's Schematic
 
 ![](images/149_Import_AltiumDesignerSchemaitc.png)
 
+If your schematic and PCB are Protel 99se format files, please open at Altium Designer and save as ASCII format, and then import them.
+
 Altium Designer's Schematic and PCB libraries are not available as **ASCII** files, so how can you import them?
 
 In the Import file from your computer dialog to the right of File Operation; tick the Extract Libs option and EasyEDA will extract all of the libs from the Schematic files or PCB Files. So, if you want to import Altium Designer's Libs, you can add them to your Altium Designer Schematic or PCB and then extract them again into your EasyEDA library.

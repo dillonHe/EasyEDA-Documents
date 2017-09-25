@@ -7,12 +7,13 @@
 
 **Tutorial PDF Download**
 
-The latest documentation of tutorial is providing .PDF now , and download via : [EasyEDA\_Tutorial\_20170920.pdf](./Doc/EasyEDA_Tutorial_20170920.pdf)
+The latest documentation of tutorial is providing via .PDF now , and download via : [EasyEDA\_Tutorial\_20170920.pdf](./Doc/EasyEDA_Tutorial_20170920.pdf)
 
 **Desktop Client Download**
 
-We are glad to tell you that we are providing desktop client application now. In desktop client application you can keep your design at local.   
-The more information and download, Please refer to [https://easyeda.com/page/download](https://easyeda.com/page/download)  
+We're sorry to inform you that EasyEDA desktop client is temporarily stopped for download and development (The new desktop version will come back in one year). Due to the rapid updates of Web-based EasyEDA, its too many new features can't be applied to EasyEDA desktop quickly and the desktop version is not suitable for weekly or even daily updates. We strongly suggest synchronizing your data to the server or download to your local hard drive, and then use web-based EasyEDA for your project design. 
+Meanwhile, EasyEDA will soon provide privatization deployment which you can deploy a server similar to EasyEDA in your intranet.
+Any questions, please contact our technical support via support@easyeda.com. 
 
 **Notice:**
 
