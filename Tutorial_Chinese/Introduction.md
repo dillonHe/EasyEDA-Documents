@@ -1227,7 +1227,7 @@ PCB的封装查找与原理图的库文件查找一致，在“元件库”中�
 
 QQ：3001956291<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3001956291&site=qq&menu=yes"><img border="0" src="images/292_Introduction_Help_QQTalk.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>  
 
-立创EDA技术交流群：229233498 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d01843167614c68d008c02046f1a37f603f1351e27f724998a7e78845599483"><img border="0" src="images/292_Introduction_Help_QQGroup.png" alt="立创EDA交流群" title="立创EDA交流群"></a>
+立创EDA技术交流群：229233498 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d01843167614c68d008c02046f1a37f603f1351e27f724998a7e78845599483"><img border="0" src="images/292_Introduction_Help_QQGroup.png" alt="立创EDA交流群" title="立创EDA交流群"></a>（为防止广告需要验证注册邮箱）
 
 
 **注意：** 
