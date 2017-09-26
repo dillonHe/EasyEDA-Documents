@@ -1223,7 +1223,11 @@ PCB的封装查找与原理图的库文件查找一致，在“元件库”中�
 2.  如果你不想别人看到你的问题，你可以联系技术支持。建议使用社区提问，以便作问题记录，方便其他用户查看和搜索，加速学习进度。
 3.  如果你发现了编辑器的BUG，包括使用上的操作BUG，系统库文件的错误，请及时联系支持人员进行修复。
 
-技术支持联系方式：QQ3001956291，或者邮件：3001956291@qq.com，立创EDA技术交流群：229233498
+邮件：3001956291@qq.com   
+
+QQ：3001956291<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3001956291&site=qq&menu=yes"><img border="0" src="images/292_Introduction_Help_QQTalk.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>  
+
+立创EDA技术交流群：229233498 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d01843167614c68d008c02046f1a37f603f1351e27f724998a7e78845599483"><img border="0" src="images/292_Introduction_Help_QQGroup.png" alt="立创EDA交流群" title="立创EDA交流群"></a>
 
 
 **注意：** 
