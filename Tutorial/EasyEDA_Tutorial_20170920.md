@@ -1313,6 +1313,16 @@ When moving selected components using the mouse, they will drag attached wires w
 A selected wire can be moved directly by clicking on it using the mouse or by the arrow keys. If a wire is selected by clicking on it using the mouse then green grab handles will appear at the ends and vertices.
 
 
+**Auto adjust connection**
+
+If you put a resistor or capacitor on a wire, the wire will auto connect the pins as below:
+
+![](images/295_Schematic_Wire_2.png)
+
+When you want to wiring a series of resistors which are in a row, you can just wire through them,  and then you will find they all be connected.
+
+![](images/295_Schematic_Wire_1.png)
+
 
 
 ### Bus
@@ -5062,7 +5072,7 @@ If you are just in the prototype phase and want to save money, then you can use 
 ​     
 
 ##Material Details
-  EasyEDA supports FR4-Standard Tg 140C, FR4-Tg 150C, FR4-High Tg 170C. The FR4 TG's lead time may be more than 6 days. 90% of EasyEDA orders use FR4-Standard. For more information about this, please check the [FR4 Material pdf](images/FR4-material.pdf "FR4 material")
+  EasyEDA supports FR4-Standard Tg 140C, FR4-Tg 150C, FR4-High Tg 170C. The FR4 TG's lead time may be more than 6 days. 90% of EasyEDA orders use FR4-Standard. For more information about this, please check the [FR4 Material pdf](Doc/FR4-material.pdf "FR4 material")
 
 ##Smallest Holes Diameter
    0.3mm for mechanical drill, 0.2mm for the laser drill. To save money, please use a minimum drill diameter of 0.3mm.

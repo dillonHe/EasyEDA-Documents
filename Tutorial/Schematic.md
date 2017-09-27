@@ -81,6 +81,15 @@ When moving selected components using the mouse, they will drag attached wires w
 
 A selected wire can be moved directly by clicking on it using the mouse or by the arrow keys. If a wire is selected by clicking on it using the mouse then green grab handles will appear at the ends and vertices.
 
+**Auto adjust connection**
+
+If you put a resistor or capacitor on a wire, the wire will auto connect the pins as below:
+
+![](images/295_Schematic_Wire_2.png)
+
+When you want to wiring a series of resistors which are in a row, you can just wire through them,  and then you will find they all be connected.
+
+![](images/295_Schematic_Wire_1.png)
 
 
 
