@@ -524,7 +524,7 @@ Waiting for a few minutes, after adding bottom and top copper area, you will get
 
 EasyEDA suggest that using local auto router rather than using the cloud server,  because when many users using cloud server, the cloud auto router will fail.
 
-The local auto router need to download and unzip it to the Non-System folder, this version only works on windows7(x64) or later.  Download via: [EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)
+The local auto router server need to download and unzip it to the Non-System folder, this version only works on windows7(x64) or later.  Download via: [EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)
 
 You need to configure the browser and execute the AutoRouter.bat first before click the **Auto Router** icon at editor.
 ![](./images/287_PCB_LocalAutoRouter_Folder.png)

@@ -24,12 +24,26 @@ Any questions, please contact our technical support via support@easyeda.co
 
 # Updated Instructions
 
+**What is new in v4.9.3**
+
+-	**Local Auto Router**
+
+	-	To solve the auto router always busy, we provide the local auto router function now.
+![](./images/289_PCB_LocalAutoRouter_Dialog.png)
+Download via: [EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)  
+Before run the local auto router, you have to configure the browser, for more information please refer: [https://easyeda.com/Doc/Tutorial/PCB.htm#Local-Auto-Router](https://easyeda.com/Doc/Tutorial/PCB.htm#Local-Auto-Router)
+
+
+-	**Export the Altium Designer file format**
+
+	-	Now EasyEDA is support to export the Altium Designer file format, because of this is the first version, maybe have some problem we haven't found, please check carefully when you open at Altium Designer.  
+![](images/292_Export_SchematicInAltium.png)  
+The more information please refer to :  
+[https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-Schematics-In-Altium-Designer-Format](https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-Schematics-In-Altium-Designer-Format)  
+[https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-PCB-In-Altium-Designer-Format](https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-PCB-In-Altium-Designer-Format)
+
+
 **What is new in v4.8.5**
- 
-EasyEDA has lots of new features in the version v4.8.5.  
-Try it via [https://easyeda.com/editor](https://easyeda.com/editor).
-
-
 
 -	**Footprint Manager Enhanced**
 

@@ -26,11 +26,27 @@
 
 
 # 更新说明
+
+**v4.9.3更新说明**
+
+-	**本地自动布线**
+
+	-	由于使用服务器进行自动布线，当使用人数较多时，需进行排队，并出现服务器繁忙的情况，为了解决这一问题所以我们特意开发了本地自动布线插件，请大家优先使用本地自动布线，功能与服务器自动布线一致。  
+![](./images/288_PCB_LocalAutoRouter_Dialog.png)
+插件下载地址：[EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)  
+使用前，浏览器需要进行相应的配置，具体信息请查看：[https://lceda.cn/Doc/Tutorial/PCB.htm#本地自动布线](https://lceda.cn/Doc/Tutorial/PCB.htm#本地自动布线)
+
+-	**支持AD格式文件导出**
+
+	-	如同之前承诺，AD格式文件导出功能已经发布。   
+**注意：***由于是初版导出功能，可能会有我们还没有发现的问题，AD打开后请注意检查。*
+ ![](images/289_Export_SchematicInAltium.png)  
+具体信息请查看：  
+[https://lceda.cn/Doc/Tutorial/Export.htm#用Altium-Designer格式导出原理图](https://lceda.cn/Doc/Tutorial/Export.htm#用Altium-Designer格式导出原理图)  
+[https://lceda.cn/Doc/Tutorial/Export.htm#用Altium-Designer格式导出PCB](https://lceda.cn/Doc/Tutorial/Export.htm#用Altium-Designer格式导出PCB)
+
  
 **v4.8.5更新说明**
-
-LCEDA/立创EDA在**v4.8.5版**添加了很多新特性。
-请前往编辑器体验：[https://lceda.cn/editor](https://lceda.cn/editor).
 
 -	**封装管理器功能增强**
 
