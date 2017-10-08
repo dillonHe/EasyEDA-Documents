@@ -945,7 +945,7 @@ Unlike real circuits, every point in a simulation schematic MUST have a DC path 
 
 Before discussing the significance of the DC path to ground, however, it is essential to look at some of the basic components and sources that are used in almost all simulations and to understand how they affect these DC paths.
 
-###### Values and DC paths of RLC components
+##### Values and DC paths of RLC components
 
 This section is about the values of - and DC paths through - resistors, inductors and capacitors.
 
@@ -987,7 +987,7 @@ This section is about the values of - and DC paths through - resistors, inductor
     Note that, in ngspice, the Ron and Roff values used in switches can be set such that Ron > Roff. This is a useful way to invert the logic sense of a switch.  
     At this point it is worth noting that if it is important that the simulation results are as close as possible to those expected to be observed when probing a real circuit using real test equipment, it is sometimes useful to place a realistic load on wires (nets) in the simulation schematic where voltage measurements are to be made in the real circuit. Similarly for current measurements, realistic ammeter insertion impedances should be connected in series with the wire. To avoid unnecessary loading of the simulated circuit however, only place such loads in the locations where external measurement devices are to be connected to the real circuit and only in the same numbers as there are measurement instruments being used at the same time. For example, if there are two oscilloscope probes connected to a circuit but one of them is moved around, only connect loads representing simulated oscilloscope probes to two places in the simulated circuit. If different places need to be probed then move the simulated probes and rerun the simulation.  
 
-###### DC paths through Voltage and Current Sources
+##### DC paths through Voltage and Current Sources
 
 This section is about the DC paths through Voltage and Current Sources.
 
@@ -1003,7 +1003,7 @@ As a consequence of their generating a constant current through an infinite sour
 
 *   In simulation, connecting a capacitor in parallel with a current source generating a current, I, without also connecting a resistor, R, in parallel, will cause the voltage on the capacitor to ramp towards infinity. Even with the resistor in parallel, the voltage will ramp to I*R which may still be a large voltage. If such a circuit exists in a simulation schematic then, unless it is shorted out by a switch with some suitably low value resistance or set to some initial voltage, the voltage across the capacitor will already have ramped towards infinity at time t=0, i.e. as the simulation starts. This can lead to unexpectedly high voltages right from the start of a simulation.
 
-###### The effects of adding DC paths
+##### The effects of adding DC paths
 
 This section is about creating DC paths and some of the effects they can have.
 
@@ -1043,7 +1043,7 @@ Some examples of this use of the ground return path resistor can be seen in the 
 
 *   It must be remembered that all voltages probed in a schematic are with respect to ground. This is particularly important to remember when probing signals that are floating, such as the transformer coupled examples discussed above. This is when B or E Sources can be used to probe two floating voltages and subtract them to simply generate the difference between them.
 
-###### Common problems with DC paths
+##### Common problems with DC paths
 
 A DC path to ground is often provided by the rest of the circuit but here are some cases that are often overlooked:
 
@@ -1102,7 +1102,7 @@ The most likely cause is one of the most overlooked beginners' mistakes: there a
 
 In order to view any useful output from a simulation, the circuit must have at least one voltage probe or one ammeter in the circuit. In basic simulations these will be the VolProbe and Ammeter symbols from the EasyEDA Libs. In more advanced simulations, these can be implemented using a <span style="font-weight:bold">probe</span> command. In either case, at least one type of probe must exist in the simulation schematic. If no probe is present, the simulation will run but the <span style="font-weight:bold">Simulation Results...</span> window will be empty and no WaveForm window will open.
 
-###### Probing voltages
+##### Probing voltages
 
 All voltage measurements in real circuits are actually measurements of voltage differences. In many cases such as when probing a voltage using an oscilloscope probe, it is easy to forget that the voltage being measured is, in reality, the difference between the voltage at the probe tip and wherever the probe ground lead is connected. In the same way it is easy to forget that probing a single ended voltage in a simulation schematic is with respect to wherever the ground node has been placed.
 
@@ -1130,7 +1130,7 @@ The schematic also demonstrates the importance of:
 
 [Probing voltages 02](https://easyeda.com/editor#id=PYWwIiSPN)
 
-###### Probing currents
+##### Probing currents
 
 In a real circuit, probing the current in a wire places a resistive load between them. This will cause some voltage drop across the ammeter. With a good quality ammeter that voltage drop may be very low, in the order of milivolts. There will be some stray capacitance across the insertion resistance and from the ammeter connections to ground. There will also be stray lead inductances. If the current being measured is an AC signal then impedances due to these stray and parasitic components will also load the circuit.
 
@@ -1313,7 +1313,7 @@ They can then be run simply by doing:
 
 Several analysis statements can be entered in a single schematic butone and only one can be made active for any one simulation run.
 
-###### 1) OP: Perform an Operating Point Analysis
+##### 1) OP: Perform an Operating Point Analysis
 
 General form:
 
@@ -1325,7 +1325,7 @@ op
 
 Causes SPICE to perform an operating-point analysis to determine thethe quiescent state of the circuit with inductors shorted andcapacitors opened. The results of this analysis are used to calculatevalues for the the linearised, small-signal models of nonlinear devices.
 
-###### 2) TF: Perform a DC Transfer Function Analysis
+##### 2) TF: Perform a DC Transfer Function Analysis
 
 The dc transfer function analysis portion of SPICE computes thefollowing small signal characteristics:
 
@@ -1349,7 +1349,7 @@ Examples:
 
 The TF command defines the small-signal output and input for the DCsmall-signal analysis. OUTvar is the small-signal output variable andinSRC is the small-signal input source. If this line is included, SPICEcomputes the DC small-signal value of the transfer function(output/input), input resistance and the output resistance.
 
-###### 3) DC: Perform a DC-Sweep Analysis
+##### 3) DC: Perform a DC-Sweep Analysis
 
 During a DC-sweep analysis SPICE steps the value of a specifiedindependent voltage or current source over the user-specified range andperforms an operating point analysis at each value. This permits theevaluation of the DC transfer function, and also provides a mechanismfor plotting the characteristic curves of devices and models.
 
@@ -1387,7 +1387,7 @@ The following simulations illustrate sweeping:
 
 [Sweep the ambient temperature](https://easyeda.com/editor#id=P0UO6oGAS)
 
-###### 4) AC: Perform a Small-Signal AC (frequency domain) Analysis
+##### 4) AC: Perform a Small-Signal AC (frequency domain) Analysis
 
 The ac small-signal portion of SPICE computes the ac outputvariables as a function of frequency. The program first computes the dcoperating point of the circuit and determines linearized, small-signalmodels for all of the nonlinear devices in the circuit. The resultantlinear circuit is then analyzed over a user-specified range offrequencies. The desired output of an ac small-signal analysis isusually a transfer function (voltage gain, transimpedance, etc). If thecircuit has only one ac input, it is convenient to set that input tounity and zero phase, so that output variables have the same value asthe transfer function of the output variable with respect to the input.
 
@@ -1413,7 +1413,7 @@ Use:
 
 Fstart is the starting frequency, and Fstop is the final frequency.
 
-###### 5) TRAN: Perform a Transient (time domain) Analysis
+##### 5) TRAN: Perform a Transient (time domain) Analysis
 
 The transient analysis portion of SPICE computes the transientoutput variables as a function of time over a user-specified timeinterval. The initial conditions are automatically determined by a dcanalysis. All sources which are not time dependent (for example, powersupplies) are set to their dc value.
 
@@ -1443,7 +1443,7 @@ The optional keyword 'uic' (use initial conditions) indicates thatthe user does 
 
 Please see the description below of the .ic control line for itsinterpretation when uic is not specified.
 
-###### IC: Set Initial Conditions
+##### IC: Set Initial Conditions
 
 General form:
 
