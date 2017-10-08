@@ -2944,12 +2944,14 @@ If the local router server is available, the dialog will tell you. Click the **R
 
 Sometimes, if you can't get it done, try the tips below.
 
-1. Skip the GND nets, add copper area to GND net.
-2. Use small tracks and small clearance, but make sure the value is more than 6mil.
-3. Route some key tracks manually before auto routing. 
-4. Add more layers, 4 layers or 6 layers
-5. Use local auto router rather than cloud server.
-6. Tell the error detail to us.
+-	Skip the GND nets, add copper area to GND net.
+-	Use small tracks and small clearance, but make sure the value is more than 6mil.
+-	Route some key tracks manually before auto routing. 
+-	Add more layers, 4 layers or 6 layers
+-	Use local auto router rather than cloud server.
+-	Don't use the special characters for the net name, such as <> () # & and space.
+-	Tell the error detail to us and send your PCB file as EasyEDA Source file to support@easyeda.com.
+
 
 Some professional people don't like the auto router, because they think auto router is not professional, but you can use the auto router to check your placement. to check the density of your PCB. 
 
