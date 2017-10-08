@@ -1096,6 +1096,12 @@ More detail you can view at [Export EasyEDA Source](./Export.htm#Export-EasyEDA-
 
 ## About Upgrade 
 
+**Version Rule**
+
+EasyEDA version number is ReleaseYearCount.ReleaseMonth.ReleaseCountOfThisMonth. For example, v4.9.3 is the fourth year release of EasyEDA, and at the ninth month of this year, EasyEDA had released 3 times.
+
+**Version Upgrade**
+
 If you use EasyEDA online, it can seamlessly upgrade by itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/)) which may delay the automatic upgrading process. Therefore, if you want to upgrade to the latest version immediately, you can follow the two simple steps below.
 
 
