@@ -7,7 +7,9 @@
 
 **Tutorial PDF Download**
 
-The latest documentation of tutorial is providing via .PDF now , and download via : [EasyEDA\_Tutorial\_20170920.pdf](./Doc/EasyEDA_Tutorial_20170920.pdf)
+The latest documentation of tutorial is providing via .PDF now , and download via :   
+Link1(Google Drive)：[EasyEDA\_Tutorial\_20170920.pdf](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM?usp=sharing)  
+Link2(GitHub)：[EasyEDA\_Tutorial\_20170920.pdf](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)
 
 **Desktop Client Download**
 

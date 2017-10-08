@@ -7,7 +7,9 @@
 
 **帮助文档下载**
 
-最新版帮助文档PDF支持书签导航，下载地址：[立创EDA帮助文档_20170920.pdf](https://pan.baidu.com/s/1eRT18kE)
+最新版帮助文档PDF支持书签导航。  
+下载地址1(百度网盘)：[立创EDA帮助文档_20170920.pdf](https://pan.baidu.com/s/1eRT18kE)  
+下载地址2(GitHub)：[立创EDA帮助文档_20170920.pdf](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial_Chinese/Doc)
 
 **客户端下载：**
 
