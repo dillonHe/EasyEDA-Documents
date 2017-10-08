@@ -5,12 +5,12 @@
 		"Introduction.md",
 		"Schematic.md",
 		"SchematicLibs.md",
-		"SpiceSimulation.md",
 		"PCB.md",
 		"PCBLib.md",
 		"Import.md",
 		"Export.md",
 		"Share.md",
+		"Simulation.md",
 		"API.md"
 	]
 }

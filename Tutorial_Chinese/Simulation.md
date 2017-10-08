@@ -1,8 +1,9 @@
 
-# Spice仿真
+# 电路仿真
 
+## Spice仿真
 
-## 构建电路 
+### Build the circuit 
 
 To simulate your circuit, at least until you become more familiar with the idea and concepts of simulation, first you should build a circuit as described in the chapter on **Creating The Schematic.**
 
@@ -28,7 +29,7 @@ These default net names are usually of the form N001, N002, etc.
 
 Adding NetLabels to name nets (wires or nodes) which you would like to observe (probe) makes it much easier to identify traces when the simulator shows them in WaveForm. Remember that in any circuit, you may want to probe the voltages on nets other than the obvious Input or Output nodes that may be the nets you first think you will want to probe.
 
-## 探测电压和电流
+### Probing voltages and currents
 
 To probe voltages, you can add some Voltage Probes which can be found in the Wiring Tools palette. These will appear on your schematic auto-numbered as volProbe1, volprobe2, etc.
 
@@ -46,7 +47,7 @@ For an alternative method of probing voltages on nets and currents through the E
 
 
 
-## 检查模块和子电路
+### Checking models and subckts
 
 You then need to check that all the devices in the simulation schematic have the necessary and the correct spice models and/or subckts.
 
@@ -116,7 +117,7 @@ In fact the astable example circuit has no elements defined by subcircuits but t
 
 The example below of a simple 555 timer based monostable, includes a .model statement for a type of 2N7002 MOSFET and a subcircuit for the 555 timer which in turn, calls up .model statements for the bipolar transistors, QN and QP and the diode DA that are used within the subcircuit.
 
-It is quite possible to call one subcircuit from within another subcircuit but let’s not get too carried away just yet ...
+It is quite possible to call one subcircuit from within another subcircuit but let's not get too carried away just yet ...
   555 monostable
 
 	.param pi = 3.141593
@@ -218,21 +219,21 @@ At this stage you might be forgiven for feeling a sense of panic at the sudden c
 
 Well, to quote the Hitchhikers Guide to the Galaxy:
 
-Don’t Panic!
+Don't Panic!
 
 All you have to do is check that every different type of device - not every instance - in your simulation schematic has a corresponding .model or .subckt statement associated with it.
 
-If it hasn’t then the first thing to check is that you have got all the device names right.
+If it hasn't then the first thing to check is that you have got all the device names right.
 
-If you still haven’t pulled in a .model or a .subckt then it probably means that a simulation model for that device is not available in the EasyEDA libraries. This may be because we haven’t been able to find a copyright unrestricted model, we haven’t had time to build our own or we just haven’t caught up with entering all the thousands of possible models yet …
+If you still haven't pulled in a .model or a .subckt then it probably means that a simulation model for that device is not available in the EasyEDA libraries. This may be because we haven't been able to find a copyright unrestricted model, we haven't had time to build our own or we just haven't caught up with entering all the thousands of possible models yet …
 
-If you’re desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
+If you're desperate then EasyEDA gives you several ways that you can include third party models in your simulation but more of that later.
 
-If you’re really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
+If you're really desperate then if you ask us nicely we just might find or even build one for you. Please see the section on [How to get help?](./Introduction.htm#How-to-get-help)
 
-Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation, but don’t worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It’s just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
+Once you are satisfied that you have done everything to pull in the right models then you can save and then run the simulation, but don't worry, EasyEDA will still tell you if you have made any mistakes in the Simulation Results.. dialog. It's just that until you are familiar with using simulation it really is easier if you do the checking before your run a simulation because the error reporting from Ngspice may include warnings and error messages about other things besides just missing models and that can make it very confusing for beginners.
 
-## 运行仿真
+### Run Simulation
 
 Your schematic is ready, so now you can run it. **SuperMenu > Miscellaneous > Simulation > Run The...**
 
@@ -260,7 +261,7 @@ For more information about these analyses, please refer to:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.1.2.3](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.1.2.3)
 
-Please note that although using Ngspice for it’s simulation engine, at present (140218) EasyEDA does not support all the possible analysis modes available in Ngspice.
+Please note that although using Ngspice for it's simulation engine, at present (140218) EasyEDA does not support all the possible analysis modes available in Ngspice.
 
 Note that for transient simulations, at present (140218):
 
@@ -268,7 +269,7 @@ the maximum value of (Stop Time-Start Time)/(Maximum Timestep) = 1000
 
 See also [CTRL+R to Run Simulation Immediately](#h.ew7ltgf338o)
 
-## 波形
+### WaveForm
 
 EasyEDA's WaveForm display is super easy but to make sure you don't miss any of the features it supports, we've put some detailed information into this tutorial.
 
@@ -302,7 +303,7 @@ WaveForm plot data can be exported in CSV format for further analysis and manipu
 
 Once saved in a Project, a WaveForm window can be exported as a .pdf, .png or .svg file into your browser window. This can then be saved to your device so it is easy to create professional quality documentation.
 
-## 构建你自己的仿真元件
+### Build Your Own Simulation Component
 
 There are several reasons why you may want to build your own simulation component.
 
@@ -312,9 +313,9 @@ There are several reasons why you may want to build your own simulation componen
 
 EasyEDA gives you three ways to build your own components so that you can simulate them:
 
-### 1.从文本形式的模型建立 
+#### 1.From a model in text form 
 
-1.  If you already have a spice subcircuit in text form, for example one that you have downloaded from a component manufacturer’s website but you haven’t got a spice symbol for it, then you can create a spice symbol and attach a .subckt definition to it.
+1.  If you already have a spice subcircuit in text form, for example one that you have downloaded from a component manufacturer's website but you haven't got a spice symbol for it, then you can create a spice symbol and attach a .subckt definition to it.
 
 2.  First make a note of the exact name given in the .subckt line. Spice names are case insensitive but can only be made up from alphabetical, numeric and underscore characters.
 
@@ -332,7 +333,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	Using **Document > New > Spice Symbol…** also automatically sets the Spice Prefix of the symbol to X which is essential for a .subckt definition to attach to your symbol.
 
-	Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don’t have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
+	Remember that the Spice Pin names assigned to the symbol **must** be numbered in the same order that they appear in the .subckt. So, if there are four pins named A, B, C and D in the order 1, 2, 3 and 4 in the subckt, then the corresponding pins on the symbol must be in the same number order. They don't have to have the same names: you could have symbol pins named; fish, go, moo and banana but if they correspond, in the same order, to the .subckt names A, B, C and D then they must be numbered as: 
 
 	![](images/105_SpiceSimulation_NewSipceSymbol.png)  
 
@@ -354,7 +355,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 7.  If you run a DC op simulation on this example, the result, shown in the Simulation Results... window, should be 2.5V
 
-### 2.从原理图的子电路建立
+#### 2.From a subcircuit in schematic form
 
 
 1. Create a spice symbol and subckt circuit.
@@ -391,7 +392,7 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
  
 
-### 3.从原理图中的Spice指令建立
+#### 3.From a spice directive in a schematic
 
 1.  When you already have a spice symbol which has a subckt attached to it - for example, an opamp symbol from the EasyEDA Libs - but you want to use a subckt for a different device which is not already in the EasyEDA Libs, then you can use this method to easily attach a subckt to a symbol directly in your schematic.  
 
@@ -404,12 +405,12 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	![](images/image103.png)
 
-### 4.使用模块而不是子电路建立
+#### 4.Using .models instead of .subckts
 
 1. All three techniques can be used to attach .model statements to symbols in exactly the same way as .subckts but after placing the symbol in your schematic, you must use:
 
 	**Super menu > Miscellaneous > Edit Symbol...**
-	to set the symbol’s Spice Prefix to the appropriate letter for the device model you are using.
+	to set the symbol's Spice Prefix to the appropriate letter for the device model you are using.
 
 2. You also have to know the spice pin order for the type of .model statement you are using because, unlike .subckts, the .model statement does not show this explicitly.
 
@@ -417,29 +418,29 @@ EasyEDA gives you three ways to build your own components so that you can simula
 
 	![](images/modelPrefix.png)
 
-Actually there is a way to save the symbol with the required Spice Prefix so that you don’t have to edit it every time you place a new instance of the symbol into a schematic … but that needs a bit more insight into editing the EasyEDA Source for the symbol so will be left for the moment.
+Actually there is a way to save the symbol with the required Spice Prefix so that you don't have to edit it every time you place a new instance of the symbol into a schematic … but that needs a bit more insight into editing the EasyEDA Source for the symbol so will be left for the moment.
 
 We did say that EasyEDA Source enables some powerful ways to manipulate schematic and spice files and symbols! :)
 
-## 更多建议
+### Advance Tips
 
 EasyEDA uses [Ngspice](http://ngspice.sourceforge.net/presentation.html) as the simulation engine, so once you get more familiar with it you can use many [other commands and feature](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf)[s of Ngspice](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf) that are not directly available via the EasyEDA UI.
 
 The lists below show which Ngspice commands are currently supported by EasyEDA and which are not.
 
-### Ngspice命令白名单
+#### Ngspice Commands Whitelist
 
 EasyEDA allows these commands:
 
 let define option options unlet op tf tran pss ac dc pz sens disto noise fft fourier meas alter run while repeat dowhile foreach if else end break continue label goto linearize print probe echo
 
-### Ngspice命令黑名单
+#### Ngspice Commands Blacklist
 
 EasyEDA does not currently allow these Ngspice commands:
 
 reshape snsave snload circbyline alias deftype display destroy setplot setcirc setscale transpose xgraph gnuplot wrdata wrs2p hardcopy asciiplot write compose print eprint codemodel load cross undefine listing edit dump psd spec show showmod sysinfo altermod resume state stop trace save iplot altermod status delete step remcirc reset aspice jobs rspice bug where newhelp tutorial help oldhelp removecirc quit source shift unset unalias history shell rusage cd version diff rehash cdump mdump mrdump settype strcmp devhelp inventory source
 
-### 探针
+#### Probe
 
 An alternative to using the volProbe element to probe voltages in a circuit - which avoids the possibility described in [Probing voltages and currents](#h.vl7fdqh8iyf8) of overwriting net names and consequently corrupting any expressions that use them - is to use the Probe command.
 
@@ -471,7 +472,7 @@ A useful feature allowing you to easily switch between different sets of probe p
 
 But this is just the tip of the iceberg ...
 
-### 使用CTRL+R运行仿真
+#### Using CTRL+R to Run Simulation Immediately
 
 As described in [Run Simulation](#h.omum7qtdqc2), using:
 
@@ -491,9 +492,9 @@ That approach is a great way for you to quickly and easily set up and Run any of
 
 Simply by entering your simulation control commands as text, directly into the schematic and setting the Text type to spice, you can set up powerful spice analyses. You can run these straight away, without needing the Run your simulation dialog just using the `CTRL+R` hotkeys.
 
-Using this method it’s quick and easy to create and run more advanced simulation analyses and to make automated measurements on your circuit.
+Using this method it's quick and easy to create and run more advanced simulation analyses and to make automated measurements on your circuit.
 
-Here’s a quick insight into how it works but you can skip this if you like and just get into how to make this amazing feature work for you!
+Here's a quick insight into how it works but you can skip this if you like and just get into how to make this amazing feature work for you!
 
 EasyEDA automatically embeds the simulation commands set up in the Run your simulation dialogs within a control section. You can see this in the spice netlist for any circuit that has been through a simulation run at least once via:
 
@@ -501,7 +502,7 @@ EasyEDA automatically embeds the simulation commands set up in the Run your simu
 
 The control section starts with the .control command and ends with the .endc command. All commands between these delimiters are run in an Ngspice interactive simulation control mode.
 
-Now, you don’t need to worry about these two commands because EasyEDA automatically inserts them in the netlist in the right place to enclose your commands so all you need to do is to enter a list of commands as text, anywhere in the schematic canvas and then, in the Properties panel, set the Text type to spice for it to be included in the spice netlist as a **spice directive**.
+Now, you don't need to worry about these two commands because EasyEDA automatically inserts them in the netlist in the right place to enclose your commands so all you need to do is to enter a list of commands as text, anywhere in the schematic canvas and then, in the Properties panel, set the Text type to spice for it to be included in the spice netlist as a **spice directive**.
 
 The following examples show some of the things you can do using **spice directives**.
 
@@ -677,10 +678,9 @@ For more information on the meas statement, see:
 
 
 
+## 仿真手册
 
-# 仿真手册 
-
-## 介绍
+### Introduction
 
 EasyEDA is not just a way to draw circuit diagrams and design PCBs. It is also a circuit simulator.
 
@@ -688,7 +688,7 @@ A circuit simulator is basically a specialised mathematical program, optimised t
 
 The circuit simulation program that EasyEDA uses is called ngspice. Ngspice is Free and Open Source Software (FOSS) that is in turn based on a simulator called SPICE that was originally written by Larry Nagel.
 
-### What this book is for
+#### What this book is for
 
 This book is an introduction to circuit simulation in EasyEDA using ngspice.
 
@@ -712,7 +712,7 @@ The book then introduces and illustrates more advanced techniques such as:
 
 *   setting up complex simulations including arbitrary voltage and current sources.
 
-### What this book is not for
+#### What this book is not for
 
 *   This is not a book about learning to use EasyEDA to draw schematics. For general information about using EasyEDA please refer to the [EasyEDA Tutorial](https://easyeda.com/Doc/Tutorial/);
 
@@ -746,7 +746,7 @@ More information about ngpsice is available from here:
 
 <span style="font-style:italic">[http://ngspice.sourceforge.net/presentation.html](http://ngspice.sourceforge.net/presentation.html)</span>
 
-### Who this book is for
+#### Who this book is for
 
 All simulation tools and how they interact with schematic capture tools are different so even for people with experience of using simulation tools, it is worth at least skimming through the sections of this book to get an idea of where to find information if things don't seem to go quite as planned.
 
@@ -760,7 +760,7 @@ Sadly, however, this will almost certainly be a very frustrating and discouragin
 
 So, to avoid a lot of discouragement and wasted time, it is worth taking a few minutes to understand some of the most common things that can cause a simulation to fail or to run but give unexpected answers.
 
-### How the book is structured
+#### How the book is structured
 
 This book is not some dry tome with lots of words, diagrams and snippets of code. It is written as a live, interactive document. Rather than having to read lots of text and then having to go into EasyEDA to create circuits to try things out, live simulation examples are embedded directly into the text to illustrate the points being discussed.
 
@@ -819,7 +819,7 @@ Using PULSE, EXP, PWL and B Sources to 'kick start' circuits is also illustrated
 
 *   The use of expressions and functions in the creation of custom behavioural models is covered with reference to some of the in-house EasyEDA (EE suffix) models.
 
-# Introductory concepts of Spice simulation
+### Introductory concepts of Spice simulation
 
 For every circuit being simulated, EasyEDA converts the schematic into a textual description of the circuit that is then passed to the simulator.
 
@@ -833,7 +833,7 @@ Just like real ones, circuits to simulated require power sources and often signa
 
 The netlists of more advanced simulations can include instructions, called **measure statements**, to the simulator to perform calculations on the results of the simulation itself, for example to measure the rise time of a pulse, the RMS value of a signal or the 3dB bandwidth of a filter circuit.
 
-# About naming conventions
+### About naming conventions
 
 Before going any further it is important to understand the naming conventions used throughout this book and throughout all the simulations
 
@@ -862,7 +862,7 @@ Ngspice and therefore, EasyEDA, requires that the following topological constrai
 These constraints will be covered in more detail later,
 
 
-## Introduction to using a simulator
+### Introduction to using a simulator
 
 Using a simulator is not quite the same as building a real circuit. There are many things that can catch out the newcomer to simulation because neither real world nor most simulator components are ideal. The departures from ideal are often different between the two and if these differences between real and simulated components in a circuit are not clearly understood, they can lead to confusion when the results of a even a simple simulation are different from those expected.
 
@@ -870,11 +870,11 @@ Part of the problem is that a user's expectations are informed by experience of 
 
 Learning to use a simulator means thinking more about what the real world really looks like, how it differs from the theoretical world of textbook problems and simple diagrammatic circuit representations and therefore what the results of measurements are likely to be.
 
-### Avoiding common mistakes
+#### Avoiding common mistakes
 
 The following section describes and illustrates some of the most common mistakes, misunderstandings and causes for confusion.
 
-#### Prefix conflict error
+##### Prefix conflict error
 
 This error message will appear:
 
@@ -912,7 +912,7 @@ then EasyEDA will run a simulation only on the schematic in the current active t
 
 If you have given a unique prefix to every component in that selected sheet then this simulation will run because EasyEDA will find only single instances of every component in the schematic.
 
-#### All simulation circuits MUST have a ground node
+##### All simulation circuits MUST have a ground node
 ![](./images/GroundSpice.png)
 
 A feature of the way simulators work is that they MUST have a ground node (also referred to as the 0 net) somewhere in the circuit. All voltages probed in the circuit, unless <span style="font-style:italic">explicitly</span> probed as voltage differences are then measured with respect to that ground node. The ground node can be placed anywhere in the circuit that is convenient for the purposes of the simulation but it must exist somewhere in that circuit.
@@ -929,7 +929,7 @@ Once any of the available ground symbols is added, the simulation will run:
 
 [All simulation schematics MUST have a ground 02](https://easyeda.com/editor#id=4WUSQNLJ5)
 
-#### All simulation circuits MUST have a power and/or signal source
+##### All simulation circuits MUST have a power and/or signal source
 
 In exactly the same way that a real circuit must have some sort of power supply - even if that power supply is actually the signal source itself (for example, a crystal set or a volume control potentiometer) or comes from a capacitor pre-charged to some voltage or an inductor pre-charged to some current prior switching the circuit on - a simulation schematic must have a power and/or a signal source or an initial condition such as a capacitor pre-charged to some voltage or an inductor pre-charged to some current prior to the start of the simulation.
 
@@ -939,13 +939,13 @@ EasyEDA provides a wide range of signal sources. These will be covered in detail
 ![](./images/Spice-power-supply.png)
 [All simulation schematics MUST have a power supply too](https://easyeda.com/editor#id=4ke8qIZTb)
 
-#### Every point in a simulation schematic MUST have a DC path to ground
+##### Every point in a simulation schematic MUST have a DC path to ground
 
 Unlike real circuits, every point in a simulation schematic MUST have a DC path to ground (or 0 net). Attempting to run a simulation with a node that has no DC path to ground will fail with errors.
 
 Before discussing the significance of the DC path to ground, however, it is essential to look at some of the basic components and sources that are used in almost all simulations and to understand how they affect these DC paths.
 
-##### Values and DC paths of RLC components
+###### Values and DC paths of RLC components
 
 This section is about the values of - and DC paths through - resistors, inductors and capacitors.
 
@@ -963,57 +963,47 @@ This section is about the values of - and DC paths through - resistors, inductor
 
 
 *   Inductors and capacitors in ngspice can be set to positive and to negative values and to zero. Beware that setting a component to a negative value may cause the circuit connected to them to exhibit instability or oscillation. This in turn may cause the simulation to fail.
-* 
+
 *   Resistors obviously have a DC path through them.
-*   
-    Resistors in ngspice can be set to positive and to negative values but cannot be set to exactly zero: they MUST have a non-zero value. Setting a resistance to zero will cause the simulation run to fail with an error. This is basically because any voltage difference across a zero resistance (such as may occur normally in a circuit or even just as a consequence of numerical "noise" in the simulation calculations) will generate an infinite current, which will obviously crash out of the top end of the simulators calculation dynamic range. This applies to all resistors in ngspice, including the Ron and Roff values in switches and resistances given in device models.
+*   Resistors in ngspice can be set to positive and to negative values but cannot be set to exactly zero: they MUST have a non-zero value. Setting a resistance to zero will cause the simulation run to fail with an error. This is basically because any voltage difference across a zero resistance (such as may occur normally in a circuit or even just as a consequence of numerical "noise" in the simulation calculations) will generate an infinite current, which will obviously crash out of the top end of the simulators calculation dynamic range. This applies to all resistors in ngspice, including the Ron and Roff values in switches and resistances given in device models.
     Beware that setting a resistor to a negative value may cause the circuit connected to it to exhibit instability or oscillation. This in turn may cause the simulation to fail.
 *   A common cause of confusion in simulation is the apparently unexpected behaviour of circuits using open circuit switches.
-    Just like switches in the real world, switches in EasyEDA have non-zero ON resistances (Ron). They also have finite OFF resistances (Roff). If an EasyEDA switch is connected in series with a voltage source into an open circuit load (such as presented by a VolProbe) then the voltage at the output of the switch will be equal to the open circuit voltage of the voltage source <span style="font-style:italic">whether the switch is open or closed</span>. This is different from the real world experience because in a real circuit, the voltage would be measured with a voltmeter or an oscilloscope probe having a much lower resistance than the open circuit resistance of the switch.
-    To illustrate this, let’s take a simple example of a switch connected in series with an ideal voltage source set to 1V and then measure the V(Output) of the switch when open and closed.
-    With the switch closed the expected output is V(Output) = 1V.
-    And that’s what the simulation shows.
-    OK. With the switch open the expected output is V(Output) = 0V.
-    What the simulation actually shows is V(Output) = 1V.
-    What’s that all about? Surely the switch must not be simulating properly and is stuck closed?
-    Well, no actually; the switch and voltage are doing exactly what they should. It’s just that these results are unexpected  because there's a misunderstandingabout how the simulated circuit differs from a real circuit.
-    No real switch has an infinite OFF state resistance but similarly, there is no such thing as a real open circuit that presents an infinite load impedance.
-    The Voltage and Current Controlled Switches and the Static Switches in EasyEDA are not ideal: they all have a finite OFF resistance. For the voltage and current controlled switches, the OFF resistances are specified by the user editable R(off)(Ω) parameter in the right hand Properties panel with a default value of 1GΩ. The Static Switches have a fixed 10GΩ OFF resistance. In either case these resistances are large but certainly not infinite.
-    However, the effective resistance to ground at the Output node using a Volprobe or plot expression, really is infinite. Therefore when operating into an infinite resistance load there would be no difference between the ON and OFF state voltages at the Output node.
-    Note that if a load resistance of 1GΩ were to be connected from the Output node to ground, then there would be a clear ON/OFF state difference.
-    This is illustrated in the following simulation:
+    Just like switches in the real world, switches in EasyEDA have non-zero ON resistances (Ron). They also have finite OFF resistances (Roff). If an EasyEDA switch is connected in series with a voltage source into an open circuit load (such as presented by a VolProbe) then the voltage at the output of the switch will be equal to the open circuit voltage of the voltage source <span style="font-style:italic">whether the switch is open or closed</span>. This is different from the real world experience because in a real circuit, the voltage would be measured with a voltmeter or an oscilloscope probe having a much lower resistance than the open circuit resistance of the switch.  
+    To illustrate this, let’s take a simple example of a switch connected in series with an ideal voltage source set to 1V and then measure the V(Output) of the switch when open and closed.  
+    With the switch closed the expected output is V(Output) = 1V.  
+    And that’s what the simulation shows.  
+    OK. With the switch open the expected output is V(Output) = 0V.  
+    What the simulation actually shows is V(Output) = 1V.  
+    What’s that all about? Surely the switch must not be simulating properly and is stuck closed?  
+    Well, no actually; the switch and voltage are doing exactly what they should. It’s just that these results are unexpected  because there's a misunderstandingabout how the simulated circuit differs from a real circuit.  
+    No real switch has an infinite OFF state resistance but similarly, there is no such thing as a real open circuit that presents an infinite load impedance.  
+    The Voltage and Current Controlled Switches and the Static Switches in EasyEDA are not ideal: they all have a finite OFF resistance. For the voltage and current controlled switches, the OFF resistances are specified by the user editable R(off)(Ω) parameter in the right hand Properties panel with a default value of 1GΩ. The Static Switches have a fixed 10GΩ OFF resistance. In either case these resistances are large but certainly not infinite.  
+    However, the effective resistance to ground at the Output node using a Volprobe or plot expression, really is infinite. Therefore when operating into an infinite resistance load there would be no difference between the ON and OFF state voltages at the Output node.  
+    Note that if a load resistance of 1GΩ were to be connected from the Output node to ground, then there would be a clear ON/OFF state difference.  
+    This is illustrated in the following simulation:    
+    [EasyEDA switches are not ideal](https://easyeda.com/editor#id=0MEe2PNZp)  
+    Some further examples of the effects of finite switch resistances are illustrated in this next simulation:  
+    [Effects of finite switch resistances](https://easyeda.com/editor#id=Ba4mEWewq)  
+    Note that, in ngspice, the Ron and Roff values used in switches can be set such that Ron > Roff. This is a useful way to invert the logic sense of a switch.  
+    At this point it is worth noting that if it is important that the simulation results are as close as possible to those expected to be observed when probing a real circuit using real test equipment, it is sometimes useful to place a realistic load on wires (nets) in the simulation schematic where voltage measurements are to be made in the real circuit. Similarly for current measurements, realistic ammeter insertion impedances should be connected in series with the wire. To avoid unnecessary loading of the simulated circuit however, only place such loads in the locations where external measurement devices are to be connected to the real circuit and only in the same numbers as there are measurement instruments being used at the same time. For example, if there are two oscilloscope probes connected to a circuit but one of them is moved around, only connect loads representing simulated oscilloscope probes to two places in the simulated circuit. If different places need to be probed then move the simulated probes and rerun the simulation.  
 
-    [EasyEDA switches are not ideal](https://easyeda.com/editor#id=0MEe2PNZp)
-    Some further examples of the effects of
-    
+###### DC paths through Voltage and Current Sources
 
-    finite switch resistances are illustrated in this next simulation:
-
-    [Effects of finite switch resistances](https://easyeda.com/editor#id=Ba4mEWewq)
-
-    Note that, in ngspice, the Ron and Roff values used in switches can be set such that Ron > Roff. This is a useful way to invert the logic sense of a switch.
-
-    At this point it is worth noting that if it is important that the simulation results are as close as possible to those expected to be observed when probing a real circuit using real test equipment, it is sometimes useful to place a realistic load on wires (nets) in the simulation schematic where voltage measurements are to be made in the real circuit. Similarly for current measurements, realistic ammeter insertion impedances should be connected in series with the wire. To avoid unnecessary loading of the simulated circuit however, only place such loads in the locations where external measurement devices are to be connected to the real circuit and only in the same numbers as there are measurement instruments being used at the same time. For example, if there are two oscilloscope probes connected to a circuit but one of them is moved around, only connect loads representing simulated oscilloscope probes to two places in the simulated circuit. If different places need to be probed then move the simulated probes and rerun the simulation.
-
-##### DC paths through Voltage and Current Sources
-
-    This section is about the DC paths through Voltage and Current Sources.
+This section is about the DC paths through Voltage and Current Sources.
 
 *   Voltage sources in ngspice (including independent V and dependent B and E voltage sources) have zero source resistance and have no current limit. The output voltage will be constant for any load current. This is true when sourcing or sinking current. sinking. This is not the same behaviour as regulated and current limited bench power supplies set to give a constant voltage output. Except for specialised supplies such as Source Measure Units, bench supplies can usually only source currents for positive outputs or sink currents for negative output voltages, up to some current limit set by the user.
-    *   Voltage Sources in ngspice therefore have a DC path through them.
-
-    As a consequence of their zero source resistance, in the same way that damagingly high currents will flow if real batteries are connected in parallel without some resistance between them, voltage sources in simulation schematics cannot be connected in parallel without some resistance in series between them. This is true even if they are set to exactly the same voltage. Attempting to do so will cause the simulation run to fail with an error.
-
+    *   Voltage Sources in ngspice therefore have a DC path through them.  
+    As a consequence of their zero source resistance, in the same way that damagingly high currents will flow if real batteries are connected in parallel without some resistance between them, voltage sources in simulation schematics cannot be connected in parallel without some resistance in series between them. This is true even if they are set to exactly the same voltage. Attempting to do so will cause the simulation run to fail with an error.  
     Similarly, in the same way that damagingly high currents will flow if an inductor is connected directly across a real power supply without some resistance between them, inductors in simulation schematics cannot be connected directly in parallel with voltage sources without some resistance in series between them.  Attempting to do so will cause the simulation run to fail with an error.
 
 *   Current sources in ngspice (including independent I and dependent B and F sources) have an infinite source resistance and have no voltage limit. The output current will be constant for any load impedance and voltage across the current source. This is not the same behaviour as regulated and current limited bench power supplies when they are set to give a constant current output. Except for specialised supplies such as Source Measure Units, bench supplies can usually only source currents up to some maximum positive voltage at the output or sink currents down to some minimum negative voltage at the output, as set by the user.
-*  Current Sources in ngspice therefore do not have a DC path through them.
+*  Current Sources in ngspice therefore do not have a DC path through them.    
 
 As a consequence of their generating a constant current through an infinite source resistance, in the same way that damagingly high voltages can be generated if two real current sources are connected in series without some finite resistance across each source, current sources in simulation cannot be connected in series without some finite resistance connected in parallel with each source. Attempting to do so will cause the simulation run to fail with an error.
 
 *   In simulation, connecting a capacitor in parallel with a current source generating a current, I, without also connecting a resistor, R, in parallel, will cause the voltage on the capacitor to ramp towards infinity. Even with the resistor in parallel, the voltage will ramp to I*R which may still be a large voltage. If such a circuit exists in a simulation schematic then, unless it is shorted out by a switch with some suitably low value resistance or set to some initial voltage, the voltage across the capacitor will already have ramped towards infinity at time t=0, i.e. as the simulation starts. This can lead to unexpectedly high voltages right from the start of a simulation.
 
-##### The effects of adding DC paths
+###### The effects of adding DC paths
 
 This section is about creating DC paths and some of the effects they can have.
 
@@ -1053,7 +1043,7 @@ Some examples of this use of the ground return path resistor can be seen in the 
 
 *   It must be remembered that all voltages probed in a schematic are with respect to ground. This is particularly important to remember when probing signals that are floating, such as the transformer coupled examples discussed above. This is when B or E Sources can be used to probe two floating voltages and subtract them to simply generate the difference between them.
 
-##### Common problems with DC paths
+###### Common problems with DC paths
 
 A DC path to ground is often provided by the rest of the circuit but here are some cases that are often overlooked:
 
@@ -1074,7 +1064,7 @@ This is illustrated by the placement of the RDC_PATH_TO_GROUND 1kresistor connec
 
 This problem often occurs when driving a transformer from a voltage source. Adding a small series resistance fixes this little gotcha (in practice there will always be a finite winding resistance anyway!).
 
-#### Components are connected by netnames
+##### Components are connected by netnames
 
 It is important to understand that although components in a schematic can be shown joined by wires or by netlabels, in a spice netlist they are joined by purely by the net names given to them either automatically by EasyEDA or manually by the user placing netlabels. This includes nets joined by any of the three NetFlag GND ground symbols. It also includes nets joined by the Net Port, NetFlag VCC and NetFlag +5 symbols as illustrated below:
 
@@ -1094,7 +1084,7 @@ To avoid accidentally connecting nets together that are not intended to be conne
 
 [Nets can be joined by netnames 03](https://easyeda.com/editor#id=sqkBTN5nF)
 
-#### Probing signals
+##### Probing signals
 
 After spending ages building a schematic the time has finally arrived: the first simulation is run. The <span style="font-weight:bold">Simulation Results...</span> window pop opens and there it is ...
 
@@ -1112,7 +1102,7 @@ The most likely cause is one of the most overlooked beginners' mistakes: there a
 
 In order to view any useful output from a simulation, the circuit must have at least one voltage probe or one ammeter in the circuit. In basic simulations these will be the VolProbe and Ammeter symbols from the EasyEDA Libs. In more advanced simulations, these can be implemented using a <span style="font-weight:bold">probe</span> command. In either case, at least one type of probe must exist in the simulation schematic. If no probe is present, the simulation will run but the <span style="font-weight:bold">Simulation Results...</span> window will be empty and no WaveForm window will open.
 
-##### Probing voltages
+###### Probing voltages
 
 All voltage measurements in real circuits are actually measurements of voltage differences. In many cases such as when probing a voltage using an oscilloscope probe, it is easy to forget that the voltage being measured is, in reality, the difference between the voltage at the probe tip and wherever the probe ground lead is connected. In the same way it is easy to forget that probing a single ended voltage in a simulation schematic is with respect to wherever the ground node has been placed.
 
@@ -1140,7 +1130,7 @@ The schematic also demonstrates the importance of:
 
 [Probing voltages 02](https://easyeda.com/editor#id=PYWwIiSPN)
 
-##### Probing currents
+###### Probing currents
 
 In a real circuit, probing the current in a wire places a resistive load between them. This will cause some voltage drop across the ammeter. With a good quality ammeter that voltage drop may be very low, in the order of milivolts. There will be some stray capacitance across the insertion resistance and from the ammeter connections to ground. There will also be stray lead inductances. If the current being measured is an AC signal then impedances due to these stray and parasitic components will also load the circuit.
 
@@ -1163,7 +1153,7 @@ Note however, that although a 0V source can be used to <span style="font-style:i
 [Probing currents 01](https://easyeda.com/editor#id=ZzsK2Wewq)
 
 
-## Configuring Voltage and Current Sources
+### Configuring Voltage and Current Sources
 
 EasyEDA Libs provides a range of what are referred to in ngspice as **Dependent Sources**.
 
@@ -1174,7 +1164,7 @@ These sources have already been discussed in terms of their DC source resistance
 In most of the examples so far, they have been used to provide DC supply voltages either as ideal voltage sources or as Thevenin or Norton Sources.
 
 Their use to provide time domain (time varying) signals has been introduced in the examples about transformers but has not so far been explained.
-Find them from below 
+Find them from below   
 ![](./images/Spice-AC-source.png)
 
 This section describes in detail how any dependent source can be set up to provide the following types of signal sources:
@@ -1188,52 +1178,54 @@ This section describes in detail how any dependent source can be set up to provi
 
 Although the examples in this section only illustrate how to configure Dependent Voltage Sources, Dependent Current Sources are configured in exactly the same way.
 
-### Configuring the SIN or SINE option
+#### Configuring the SIN or SINE option
 
 Configuring the SINE option to create an unmodulated, single frequency sinusoidal signal source.
 
 [Spice Sinusoidal Source example](https://easyeda.com/editor#id=cw641ZlxT)
 
 ![](./images/Spice-Sinusoidal-Source.png)
-### More ways to use the SIN (or SINE) option
+#### More ways to use the SIN (or SINE) option
 
 [Spice Sinusoidal Source: more examples](https://easyeda.com/editor#id=vLFyQ82kC)
 
-### Configuring the PULSE option
+#### Configuring the PULSE option
 
 Configuring the PULSE option to create a pulse signal source.
 
 [Spice PULSE Source](https://easyeda.com/editor#id=XPJDUcuoG)
+
 ![](./images/Spice-PULSE-Source.png)
-### More ways to use the PULSE option
+
+#### More ways to use the PULSE option
 
 [Spice PULSE Source: more examples](https://easyeda.com/editor#id=oOICUcun3)
 
-### Configuring the EXP option
+#### Configuring the EXP option
 
 Configuring the EXP option to create a single pulse source with exponential rising and falling edges.
 
 [Spice EXP Source](https://easyeda.com/editor#id=cewqI0hzR)
 
-### Configuring the SFFM option
+#### Configuring the SFFM option
 
 Configuring the SFFM option to create a simple, single frequency, frequency modulated sinusoidal signal source.
 
 [Spice SFFM Source](https://easyeda.com/editor#id=SwqI0izRL)
 
-### Configuring the AM option
+#### Configuring the AM option
 
 Configuring the AM option to create a simple, single frequency, amplitude modulated sinusoidal signal source.
 
 [Spice AM Source](https://easyeda.com/editor#id=KGZNnJtdX)
 
-### Configuring the PWL option
+#### Configuring the PWL option
 
 Configuring the PWL option to create an arbitrary piecewise linear waveform signal source.
 
 [Spice PWL Source](https://easyeda.com/editor#id=wxhbHBvN5)
 
-### Configuring the AC source option
+#### Configuring the AC source option
 
 It can be quite hard to visualise what the Amplitude and the Phase settings in the AC Source options of the Independent Voltage and Current Sources really mean when the signals in an AC Analysis cannot be viewed in the time domain in a Transient Analysis. To try to help visualise these settings and what they represent, the following couple of examples demonstrate the settings in ways that can be related back to their equivalents in the time domain.
 
@@ -1265,9 +1257,9 @@ The second simulation also shows how more than one AC Source can be configured i
 
 [Configuring AC Sources 02](https://easyeda.com/editor#id=PDxrJDjAu)
 
-## Setting up Analyses
+### Setting up Analyses
 
-### What are Analyses?
+#### What are Analyses?
 
 An analysis is simply the instruction to the simulator telling itwhat type of simulation to carry out on the spice netlist.
 
@@ -1275,7 +1267,7 @@ There are several different types of analysis that can be carriedout when a simu
 
 EasyEDA supports a subset of the spice analyses that are availablein ngspice. The supported analyses supported by the Simulate...dialogue box (accessed via the green running man &gt; Run the Documentor Run the Project options or directly via CTRL+R) are described below.
 
-#### SPICE Analyses available from the Green Man / Simulate... button
+##### SPICE Analyses available from the Green Man / Simulate... button
 
 Clicking on the Green Man (Simulate...) icon opens the Simulation options menu.
 
@@ -1303,7 +1295,7 @@ the following SPICE analyses can be run from a simple dialogue box.For more info
 
 5) Transient
 
-#### SPICE Analyses and Control Statement Syntax
+##### SPICE Analyses and Control Statement Syntax
 
 The following SPICE analyses can also be entered directly into atext box in a schematic.
 
@@ -1321,7 +1313,7 @@ They can then be run simply by doing:
 
 Several analysis statements can be entered in a single schematic butone and only one can be made active for any one simulation run.
 
-##### 1) OP: Perform an Operating Point Analysis
+###### 1) OP: Perform an Operating Point Analysis
 
 General form:
 
@@ -1333,7 +1325,7 @@ op
 
 Causes SPICE to perform an operating-point analysis to determine thethe quiescent state of the circuit with inductors shorted andcapacitors opened. The results of this analysis are used to calculatevalues for the the linearised, small-signal models of nonlinear devices.
 
-##### 2) TF: Perform a DC Transfer Function Analysis
+###### 2) TF: Perform a DC Transfer Function Analysis
 
 The dc transfer function analysis portion of SPICE computes thefollowing small signal characteristics:
 
@@ -1357,7 +1349,7 @@ Examples:
 
 The TF command defines the small-signal output and input for the DCsmall-signal analysis. OUTvar is the small-signal output variable andinSRC is the small-signal input source. If this line is included, SPICEcomputes the DC small-signal value of the transfer function(output/input), input resistance and the output resistance.
 
-##### 3) DC: Perform a DC-Sweep Analysis
+###### 3) DC: Perform a DC-Sweep Analysis
 
 During a DC-sweep analysis SPICE steps the value of a specifiedindependent voltage or current source over the user-specified range andperforms an operating point analysis at each value. This permits theevaluation of the DC transfer function, and also provides a mechanismfor plotting the characteristic curves of devices and models.
 
@@ -1395,7 +1387,7 @@ The following simulations illustrate sweeping:
 
 [Sweep the ambient temperature](https://easyeda.com/editor#id=P0UO6oGAS)
 
-##### 4) AC: Perform a Small-Signal AC (frequency domain) Analysis
+###### 4) AC: Perform a Small-Signal AC (frequency domain) Analysis
 
 The ac small-signal portion of SPICE computes the ac outputvariables as a function of frequency. The program first computes the dcoperating point of the circuit and determines linearized, small-signalmodels for all of the nonlinear devices in the circuit. The resultantlinear circuit is then analyzed over a user-specified range offrequencies. The desired output of an ac small-signal analysis isusually a transfer function (voltage gain, transimpedance, etc). If thecircuit has only one ac input, it is convenient to set that input tounity and zero phase, so that output variables have the same value asthe transfer function of the output variable with respect to the input.
 
@@ -1421,7 +1413,7 @@ Use:
 
 Fstart is the starting frequency, and Fstop is the final frequency.
 
-##### 5) TRAN: Perform a Transient (time domain) Analysis
+###### 5) TRAN: Perform a Transient (time domain) Analysis
 
 The transient analysis portion of SPICE computes the transientoutput variables as a function of time over a user-specified timeinterval. The initial conditions are automatically determined by a dcanalysis. All sources which are not time dependent (for example, powersupplies) are set to their dc value.
 
@@ -1451,7 +1443,7 @@ The optional keyword 'uic' (use initial conditions) indicates thatthe user does 
 
 Please see the description below of the .ic control line for itsinterpretation when uic is not specified.
 
-##### IC: Set Initial Conditions
+###### IC: Set Initial Conditions
 
 General form:
 
@@ -1480,9 +1472,9 @@ It is important to realise however that if the 'uic' directive is used without e
 Note that if the 'uic' option is not used then any .IC directives included in the simulation are used anyway.
 
 
-## Initial conditions and starting up circuits
+### Initial conditions and starting up circuits
 
-### Some background and basic start-up techniques
+#### Some background and basic start-up techniques
 
 All time domain simulations start at time t=0.
 
@@ -1558,11 +1550,11 @@ This solution works very well but, in this example, over 95% of the simulation t
 
 This is where another technique for setting initial conditions in a circuit can sometimes be useful.
 
-### Setting initial voltages on nets and currents through components
+#### Setting initial voltages on nets and currents through components
 
 There are occasions where it is required to start a simulation in some predetermined state. For example, a capacitor may be required to start a transient simulation at time t=0, precharged to some given voltage. Similarly the current in an inductor may need to be specified at time t=0. In a larger simulation it may be helpful to precharge the output smoothing capacitor of a power supply to approximately the right voltage to save the time taken for it to be charged up from zero. If the capacitor is at the output of an SMPS then it may be useful to charge the inductor(s) in the SMPS to their average operating current(s) too.
 
-#### Using the ic spice directive
+##### Using the ic spice directive
 
 Using the `.ic` spice directive to set an initial voltage condition on a net
 
@@ -1582,19 +1574,19 @@ These next examples show two ways to use append the 'uic' option to a Transient 
 
 [Relaxation oscillator startup 06](https://easyeda.com/editor#id=IOMK531Zl)
 
-#### Using a current source to set an initial current through an inductor
+##### Using a current source to set an initial current through an inductor
 
 The `.ic` spice directive can only be used to set initial voltage conditions on one or more nets. It cannot be used to set an initial current through a component. This example illustrates a simple way to use a current source to set an initial current through a component.
 
 [Setting initial circuit conditions 02](https://easyeda.com/editor#id=Emy7tPbxv)
 
-#### Setting a capacitor voltage using an XSPICE capacitor model
+##### Setting a capacitor voltage using an XSPICE capacitor model
 
 An alternative to using the '.ic': setting the initial voltage across a capacitor using an XSPICE capacitor model in place of the default EasyEDA capacitor.
 
 [Setting initial circuit conditions 03](https://easyeda.com/editor#id=bBJe82kCw)
 
-#### Setting an inductor current using an XSPICE inductor model
+##### Setting an inductor current using an XSPICE inductor model
 
 An alternative to using a current source in parallel with an inductor: setting the initial current through an inductor using an XSPICE inductor model in place of the default EasyEDA inductor.
 
@@ -1602,7 +1594,7 @@ An alternative to using a current source in parallel with an inductor: setting t
 
 Some circuits may start up on their own but simply changing a component model may cause it to fail to start-up. Don't be afraid to try these techniques before spending ages trying to find some other obscure cause.
 
-### Using a 1V source to help start-up
+#### Using a 1V source to help start-up
 
 This is an advanced technique which has limited application but which in the right circumstances can be very useful.
 
@@ -1612,7 +1604,7 @@ This can sometimes help produce a clean startup from zero internal initial state
 
 It must be borne in mind however, that as with other techniques that bring a simulation up from zero, any attemtp to run an OP, TF or an AC simulation will usually return zero results because all the internal states and in many cases the gains of B sources will have been forced to a zero initial value.
 
-### Replacing ideal and Thevenin voltage sources with band-limited Norton Sources to help start-up
+#### Replacing ideal and Thevenin voltage sources with band-limited Norton Sources to help start-up
 
 This is technique is very widely applicable since it helps improve the overall convergence of simulations and not just their startup behaviour.
 
@@ -1648,7 +1640,7 @@ Although not an example of start-up or initialisation problem, the Ideal and The
 
 [Parameters, expressions, functions and B Sources](https://easyeda.com/editor#id=8MhztnFXf)
 
-### Using the 'OFF' option to help start-up
+#### Using the 'OFF' option to help start-up
 
 Some components, such as switches, bjts, jfets, MOSFETs and MESFETs have an 'OFF' option to specify the device to be in an intial OFF state.
 
@@ -1664,14 +1656,268 @@ Similarly, to set a bjt with the name 2N2222 to be initially OFF the name should
 
 2N2222 OFF
 
-## Expressions
+### Expressions
 
 Expressions can be used to define component values and to help configure Voltage and Current Sources.
 
-### Operators
+#### Operators
 
 In expressions, parentheses are evaluated before the other operators. The operators are evaluated following a list of precedence as shwn in the table below. For equal precedence binary ops, evaluation goes left to right. Functions operate on real values only!
-<table border="1" cellspacing="0"><colgroup span="4" width="85"></colgroup><tbody><tr><td align="left">Operator</td><td align="left">Alias</td><td align="left">Precedence</td><td align="left">Description</td></tr><tr><td align="left">-</td><td align="left"></td><td align="left">1</td><td align="left">unary negate (see Note 1 below)</td></tr><tr><td align="left">!</td><td align="left"></td><td align="left">1</td><td align="left">unary not</td></tr><tr><td align="left">**</td><td align="left">^</td><td align="left">2</td><td align="left">power (but see also the pow(x,a), pwr(x,a) and pwrs(x,a) functions)</td></tr><tr><td align="left">*</td><td align="left"></td><td align="left">3</td><td align="left">multiply</td></tr><tr><td align="left">/</td><td align="left"></td><td align="left">3</td><td align="left">divide</td></tr><tr><td align="left">%</td><td align="left"></td><td align="left">3</td><td align="left">modulo (does not work in B Source expressions)</td></tr><tr><td align="left">\</td><td align="left"></td><td align="left">3</td><td align="left">integer divide (does not work in B Source expressions)</td></tr><tr><td align="left">+</td><td align="left"></td><td align="left">4</td><td align="left">add</td></tr><tr><td align="left">-</td><td align="left"></td><td align="left">4</td><td align="left">subtract</td></tr><tr><td align="left">==</td><td align="left"></td><td align="left">5</td><td align="left">equality</td></tr><tr><td align="left">!=</td><td align="left">&lt;&gt;</td><td align="left">5</td><td align="left">non-equal</td></tr><tr><td align="left">&lt;=</td><td align="left"></td><td align="left">5</td><td align="left">less or equal</td></tr><tr><td align="left">&gt;=</td><td align="left"></td><td align="left">5</td><td align="left">greater or equal</td></tr><tr><td align="left">&lt;</td><td align="left"></td><td align="left">5</td><td align="left">less than</td></tr><tr><td align="left">&gt;</td><td align="left"></td><td align="left">5</td><td align="left">greater than</td></tr><tr><td align="left">&amp;&amp;</td><td align="left"></td><td align="left">6</td><td align="left">boolean and</td></tr><tr><td align="left">||</td><td align="left"></td><td align="left">7</td><td align="left">boolean or</td></tr><tr><td align="left">c?x:y</td><td align="left"></td><td align="left">8</td><td align="left">ternary operator (See also the if(x,y,z) and ifx(x,y,z) functions)</td></tr></tbody></table>
+<table border="1" cellspacing="0">
+<colgroup span="4" width="100"></colgroup>
+<tbody>
+<tr>
+	<td align="left">
+		Operator
+	</td>
+	<td align="left">
+		Alias
+	</td>
+	<td align="left">
+		Precedence
+	</td>
+	<td align="left">
+		Description
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		-
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		1
+	</td>
+	<td align="left">
+		unary negate (see Note 1 below)
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		!
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		1
+	</td>
+	<td align="left">
+		unary not
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		**
+	</td>
+	<td align="left">
+		^
+	</td>
+	<td align="left">
+		2
+	</td>
+	<td align="left">
+		power (but see also the pow(x,a), pwr(x,a) and pwrs(x,a) functions)
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		*
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		3
+	</td>
+	<td align="left">
+		multiply
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		/
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		3
+	</td>
+	<td align="left">
+		divide
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		%
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		3
+	</td>
+	<td align="left">
+		modulo (does not work in B Source expressions)
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		\
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		3
+	</td>
+	<td align="left">
+		integer divide (does not work in B Source expressions)
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		+
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		4
+	</td>
+	<td align="left">
+		add
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		-
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		4
+	</td>
+	<td align="left">
+		subtract
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		==
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		equality
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		!=
+	</td>
+	<td align="left">
+		&lt;&gt;
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		non-equal
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		&lt;=
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		less or equal
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		&gt;=
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		greater or equal
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		&lt;
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		less than
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		&gt;
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		5
+	</td>
+	<td align="left">
+		greater than
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		&amp;&amp;
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		6
+	</td>
+	<td align="left">
+		boolean and
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		||
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		7
+	</td>
+	<td align="left">
+		boolean or
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		c?x:y
+	</td>
+	<td align="left">
+	</td>
+	<td align="left">
+		8
+	</td>
+	<td align="left">
+		ternary operator (See also the if(x,y,z) and ifx(x,y,z) functions)
+	</td>
+</tr>
+</tbody>
+</table>
 
 **Note 1**
 
@@ -1707,7 +1953,7 @@ Some examples of logical operators used to defined value of voltage sources:
 
 Note that when used directly in component and source value fields, expressions MUST be on a single line. When used like this, expressions cannot be wrapped over more than one line.
 
-### Using Expressions to define component values
+#### Using Expressions to define component values
 
 The -3dB frequency, fc, of a first order RC lowpass filter is given by:
 
@@ -1743,7 +1989,7 @@ Simply by entering the right hand side of these expressions into the component v
 
 the value of those components will be defined directly by those expressions, as illustrated in Rupper and Rlower in this example.
 
-### Using Expressions to configure voltage and current sources
+#### Using Expressions to configure voltage and current sources
 
 In this example, PULSE source V1 is configured to generate a signal with a 20us rise and fall time, a frequency of 5kHz and exactly equal high and low times: in other words, a slow edged squarewave of 200us period and a 50% duty cycle.
 
@@ -1776,7 +2022,7 @@ The use of expressions is illustrated in the following example:
 [Using expressions 01](https://easyeda.com/editor#id=MAIB71VP7)
 
 
-## Parameters
+### Parameters
 
 Usually, the values of components are specified directly in the component's value field. There are, however, occasions where it is desirable to be able to set or change the value of several components at once without having to edit each individual component value.
 
@@ -1887,20 +2133,20 @@ The basic use of parameters is illustrated below:
 
 [Using parameters 01](https://easyeda.com/editor#id=OKVvtr1Ay)
 
-### Using parameters in expressions
+#### Using parameters in expressions
 
 Expressions and parameters can be combined to simplify and automate the calculation of component and source configuration values, as illustrated in the following example:
 
 [Using parameters in expressions 01](https://easyeda.com/editor#id=GQ5F1BzVu)
 
 
-## Functions
+### Functions
 
 The sections on expressions and parameters shows how component and source values can be defined using arithmetic equations. The examples used to illustrate this used only simple linear expressions. This section introduces the concept of functions.
 
 Functions hugely expand the power of parameters and expressions by allowing the creation of expressions including non-linear functions of other parameters
 
-### Predefined functions
+#### Predefined functions
 
 EasyEDA has a number of pre-defined functions. Many of them are immediately available to be used in expressions because they are built-in to ngspice or they are automatically added in to the spice netlist by EasyEDA at the time of first saving a schematic.
 
@@ -1912,10 +2158,10 @@ All the currently available pre-defined functions are listed, together with illu
 
 Note that all the functions in this list can be used in any context in EasyEDA: in the value fields and in expressions for component values, Independent Sources and for B Sources.
 
-#### Table of functions
+##### Table of functions
 <table border="1" cellspacing="0">
 
-  <colgroup width="139"></colgroup> <colgroup span="3" width="85"></colgroup>
+  <colgroup width="130"></colgroup> <colgroup span="3" width="120"></colgroup>
   <tbody>
     <tr>
       <td align="left">Function</td>
@@ -2198,7 +2444,7 @@ and 1, 0 for x &lt;= 0.</td>
   </tbody>
 </table>
 
-### User defined functions
+#### User defined functions
 
 There may be occasions where a function is required that maybe has to be used in several places in a schematic or it is useful in several different schematics. To save having to copy and paste a complicated expression as a block of text each time it is needed, the <span style="font-weight:bold">.func</span> statement makes it is possible to create a user defined function.
 
@@ -2234,7 +2480,7 @@ There are several examples of this in the simulations linked to in the table abo
 
 can be found appended to every EasyEDA spice netlist.
 
-## B sources spice simulation
+### B sources spice simulation
 B sources are one of the most powerful components in EasyEDA. They are available as a BV voltage 
 source and as BI current source (although in fact at the spice netlist level they are the same device 
 just defined to have a voltage or a current output). 
@@ -2334,7 +2580,7 @@ and in the opamp_ANF01 .subckt example found elsewhere in this document, there i
 
 	
 
-## Device models
+### Device models
 
 In order to simulate the behaviour of the individual components, they have to be described mathematically. The underlying equations that describe the behaviour of a component are written into the simulator program (sometimes they can be added by the user).
 
@@ -2360,7 +2606,7 @@ Subcircuit models may themselves contain .model statements.
 
 Subcircuits can also contain parameters and can also have parameters passed to them to change their characteristics for example to tailor them to a particular device variant.
 
-### Why are there different models for the same device?
+#### Why are there different models for the same device?
 
 Because each family of devices (resistors, diodes, bjts, jfets, MOSFETs etc.) is described by one or more sets of equations, each family has one or more models available for it.
 
@@ -2374,14 +2620,154 @@ There may be differences between .subckt models because there are implementation
 
 Sometimes, there are differences in the models just to get around the copyright protection. Some differences are to optimise the model for a particular simulator and some differences are simply down to the preferences of the model writer.
 
-### .model statements
+#### .model statements
 
 In the spice netlist of a circuit, the user can see the models listed in .model statements. When a schematic is saved, these .model statements are pulled in to the netlist by EasyEDA recognising the symbols and their associated device names given in the schematic. Each model may either be pulled in from a library or - for devices that are not in the EasyEDA libraries - by downloading a model from a manufacturer's website and then manually pasting it directly into the schematic (the process of doing this will be described later).
 
-#### Ngspice model types
+##### Ngspice model types
 
 To help identify model types and in particular if they are for N or P type devices, the following table of model types may be helpful.
-<table border="1" cellspacing="0"><colgroup span="2" width="50%"></colgroup><tbody><tr><td align="left">Code</td><td align="left">Model Type</td></tr><tr><td align="left">R</td><td align="left">Semiconductor resistor model</td></tr><tr><td align="left">C</td><td align="left">Semiconductor capacitor model</td></tr><tr><td align="left">L</td><td align="left">Inductor model</td></tr><tr><td align="left">SW</td><td align="left">Voltage controlled switch</td></tr><tr><td align="left">CSW</td><td align="left">Current controlled switch</td></tr><tr><td align="left">URC</td><td align="left">Uniform distributed RC model</td></tr><tr><td align="left">LTRA</td><td align="left">Lossy transmission line model</td></tr><tr><td align="left">D</td><td align="left">Diode model</td></tr><tr><td align="left">NPN</td><td align="left">NPN BJT model</td></tr><tr><td align="left">PNP</td><td align="left">PNP BJT model</td></tr><tr><td align="left">NJF</td><td align="left">N-channel JFET model</td></tr><tr><td align="left">PJF</td><td align="left">P-channel JFET model</td></tr><tr><td align="left">NMOS</td><td align="left">N-channel MOSFET model</td></tr><tr><td align="left">PMOS</td><td align="left">P-channel MOSFET model</td></tr><tr><td align="left">NMF</td><td align="left">N-channel MESFET model</td></tr><tr><td align="left">PMF</td><td align="left">P-channel MESFET model</td></tr></tbody></table>
+<table border="1" cellspacing="0">
+<colgroup span="2" width="50%"></colgroup>
+<tbody>
+<tr>
+	<td align="left">
+		Code
+	</td>
+	<td align="left">
+		Model Type
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		R
+	</td>
+	<td align="left">
+		Semiconductor resistor model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		C
+	</td>
+	<td align="left">
+		Semiconductor capacitor model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		L
+	</td>
+	<td align="left">
+		Inductor model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		SW
+	</td>
+	<td align="left">
+		Voltage controlled switch
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		CSW
+	</td>
+	<td align="left">
+		Current controlled switch
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		URC
+	</td>
+	<td align="left">
+		Uniform distributed RC model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		LTRA
+	</td>
+	<td align="left">
+		Lossy transmission line model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		D
+	</td>
+	<td align="left">
+		Diode model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		NPN
+	</td>
+	<td align="left">
+		NPN BJT model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		PNP
+	</td>
+	<td align="left">
+		PNP BJT model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		NJF
+	</td>
+	<td align="left">
+		N-channel JFET model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		PJF
+	</td>
+	<td align="left">
+		P-channel JFET model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		NMOS
+	</td>
+	<td align="left">
+		N-channel MOSFET model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		PMOS
+	</td>
+	<td align="left">
+		P-channel MOSFET model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		NMF
+	</td>
+	<td align="left">
+		N-channel MESFET model
+	</td>
+</tr>
+<tr>
+	<td align="left">
+		PMF
+	</td>
+	<td align="left">
+		P-channel MESFET model
+	</td>
+</tr>
+</tbody>
+</table>
 
 Although it is beyond the scope of this document to go into detail there are some other points about models that are worth mentioning.
 
@@ -2390,19 +2776,19 @@ Although it is beyond the scope of this document to go into detail there are som
 
 *   Different simulators support different sets of models so in some cases the simulator may warn the user that some parameters are unrecognised and so are ignored. This generally has little effect on the simulation results but if the user is particularly concerned about their effects than the only option is to change to using a simulator that supports all the relevant parameters.
 
-### .subckt definitions
+#### .subckt definitions
 
 Not all devices are described by .model statements.
 
 Models of more complex devices such as Thyristors (SCRs, Triacs and also Diacs), Insulated Gate Bipolar Transistors (IGBTs), operational amplifiers (opamps) and even many MOSFETs are often made up by connecting lower level devices to make a circuit that behaves like the desired device. This is called a **subcircuit**. The spice netlist of this subcircuit is then used to create a type of device model defined by what is called a **.subckt**. The low level components in subcircuits are described by the same sort of models (those lists of parameters or coefficients) as for the basic diodes etc., already referred to so a .subckt will often contain a list of .model statements describing the devices that are used to build the .subckt itself. Complex .subckts may even call other .subckts.
 
-### Behavioural models
+#### Behavioural models
 
 Using Behavioural Voltage and Current Sources and expressions it is possible to create what are called **behavioural models** of components. These are models that behave like a device but which have little of the actual underlying realistic circuit defined and are mostly - or perhaps completely - described by explicitly defined expressions (equations). The models for most devices internally comprising more than one active component, i.e. ICs, are largely behavioural. This is a way of hiding the detailed information about the manufacturer's process technology that low level spice modelling reveals.
 
 The use of expressions and behavioural sources in EasyEDA is explained later in the book.
 
-### What if there is no model available for a device?
+#### What if there is no model available for a device?
 
 Not all devices have spice models that can be run in ngspice. There are a number of possible reasons for this.
 
@@ -2432,7 +2818,7 @@ Similarly, models contained in the libraries of commercial simulation tools are 
 
 It is often possible to find device models offered in forums, discussion groups and various online collections of models. Again, the user must exercise caution and use their judgement in deciding if such models really are suitable. Often it is not possible to establish where they originate from so their validity is very hard to verify.It is also possible that such models have been copied in breach of the originators copyright.
 
-### The relationship between spice models and device datasheets
+#### The relationship between spice models and device datasheets
 
 Although some of the device models in EasyEDA have been specially written so that the user can easily tailor them to simulate a range of devices by editing parameters that can be found directly in - or inferred from - device datasheets (see: About the relationship between spice models and real world behaviour below), most of them are off-the-shelf models from the device manufacturers.
 
@@ -2498,7 +2884,7 @@ and registering to get a copy of:
 
 [*http://en.wikipedia.org/wiki/SPICE*](http://en.wikipedia.org/wiki/SPICE)
 
-### The relationship between spice models and real world behaviour
+#### The relationship between spice models and real world behaviour
 
 Not all spice models are created equal. Here are just some of the things to be aware of.
 
@@ -2550,7 +2936,7 @@ EasyEDA has an in-house behavioural macromodel which can be tailored to model a 
 
 For all of the in-house EasyEDA models, more information about them can be found in the .subckt definition itself simply by viewing the spice netlist of any saved circuit thay have been put into.
 
-### How to change the model attached to a symbol
+#### How to change the model attached to a symbol
 
 **Please note that before attempting to edit device models, it is *essential* that the user is familiar with and understands the relationship between spice pin names and numbering, described in the section on 'Schematic symbols: prefixes and pin numbers'.**
 
@@ -2570,13 +2956,13 @@ The problem here is that until a model search function is up and running this ap
 
 
 
-## Schematic symbols: prefixes and pin numbers 
+### Schematic symbols: prefixes and pin numbers 
 
 **Please note that before attempting to edit device models, it is *essential* that the user is familiar with and understands the relationship between spice pin names and numbering, described in this section.**
 
 Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a Spice Prefix. They also have two sets of pin numbers: PCB pins and Spice pins.
 
-### PCB and Spice Prefix
+#### PCB and Spice Prefix
 
 The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user's preferences. Depending on how a device is graphically represented by it's schematic symbol it may have a different PCB Prefix or reference designator. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.
 
@@ -2909,7 +3295,7 @@ For more information on circuit elements in Ngspice, please refer to:
 
 [http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)  
 
-### PCB and Spice pin numbers
+#### PCB and Spice pin numbers
 
 The two sets of pin numbers are:
 
@@ -3231,9 +3617,9 @@ In cases where the subcircuit is built by the user as opposed to where it is sup
 
 Although as described earlier, built-in spice models usually have defined spice pin orders, not all subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!
 
-### Associating spice models to schematic symbols
+#### Associating spice models to schematic symbols
 
-#### For .MODEL defined models
+##### For .MODEL defined models
 
 1.  Find a spice .model for your target device;
 2.  Copy and paste it into a text placeholder (the `T` hotkey) in your schematic (but please respect the EULA and copyright of commercial files);
@@ -3278,7 +3664,7 @@ This process is illustrated in the following example:
 
 [N channel depletion mode MOSFET using a .model statement](https://easyeda.com/editor#id=NnhztL2kC)
 
-#### For .SUBCKT defined models
+##### For .SUBCKT defined models
 
 The process described above works fine for simple .model defined models but for .subckt defined models it is a little more complicated because you need to tell EasyEDA that the model is a .subckt and not a simple .model.
 
@@ -3369,12 +3755,12 @@ Another example of the process described above to change the Spice Prefix of a s
 
 [An N-channel depletion mode MOSFET using an EasyEDA .subckt](https://easyeda.com/editor#id=sHBTNtZhz)
 
-#### Attaching models to custom symbols
+##### Attaching models to custom symbols
 
 This is basically the same as attaching a model to any of the predefined symbols from the EasyEDA Libs except that the symbol is one that has been created from scratch or by editing an existing symbol. The rules for assigning and checking that the spice prefix matches the type of model to be attached (i.e. 'X' for .subckt or any Spice Prefix other than 'X' for .model) and checking that the spice pin numbering matches that of the type of device defined by the .model statement or by the pin sequence of a .subckt defined model.
   
 
-## Custom modelling
+### Custom modelling
 
 This is an advanced topic and this section will be filled out when time permits.
 
@@ -3400,11 +3786,11 @@ and this project:
 
 
 
-### Making measurements of simulation results
+#### Making measurements of simulation results
 
 In the same way that digital storage oscilloscopes (DSO) allow measurements to be made of signals displayed on the screen using cursors and directly reading values from their positions and from mathematical analysis of the waveform data stored in the DSO memory, EasyEDA allows measurements to be made of simulation results directly using cursors and by analysis of the data used to create the WaveForm trace display using the <span style="font-weight:bold">meas</span> command.
 
-#### Using the WaveForm display cursors
+##### Using the WaveForm display cursors
 
 The WaveForm X and Y cursor functions are a simple and quick way to make measurements of points in waveforms and to make measurements of differences between points.
 
@@ -3418,11 +3804,11 @@ Note that the screenshot utility must have a user definable time delay to allow 
 
 For more information on displaying simulation results in Waveform, please refer to [WaveForm](/Doc/Tutorial/spiceSimulation.htm#WaveForm) in the EasyEDA Tutorial.
 
-#### Using the meas command
+##### Using the meas command
 
 The meas command is used to analyse the output data of a dc, ac, tran or fft (or spec) simulation. The command is executed immediately after the simulation has finished.
 
-### The meaning of terms in MEAS commands
+#### The meaning of terms in MEAS commands
 
 The meas type <span style="font-weight:bold">{DC|AC|TRAN|SP}</span> depends on the data which are to be evaluated, either originating from a DC, AC analysis, TRANsient or SPectrum analysis (using the fft (or spec) analysis) simulation.
 
@@ -3440,9 +3826,9 @@ For <span style="font-weight:bold">dc</span> analysis <span style="font-weight:b
 
 Frequency and time values may start at 0 and extend to positive real numbers. Voltage (or current) inputs for the independent (scale) axis in a dc analysis may start or end at arbitrary real valued numbers.
 
-### Examples of the forms and syntaxes of MEAS commands
+#### Examples of the forms and syntaxes of MEAS commands
 
-#### Trig Targ
+##### Trig Targ
 
 A meas command using the Trig Targ syntax of <span style="font-weight:bold">General Form 1</span> measures the difference in dc voltage, frequency or time between two points selected from one or two output vectors. The following examples all are using transient simulation. Measurements for tran analysis start after a delay time td. If other examples are run with ac simulation or spectrum analysis, time may be replaced by frequency whilst after a dc simulation, the independent variable may become a voltage or current.
 
@@ -3502,7 +3888,7 @@ meas tran tdiff TRIG AT=1m TARG v(2) VAL=-0.8 CROSS=3
 
 measures the time difference between the time point 1ms versus the time when v(2) crosses -0.8 V for the third time (any slope).
 
-#### Find ... When
+##### Find ... When
 
 The FIND and WHEN functions allow to measure any dependent or independent time, frequency, or dc parameter, when two signals cross each other or a signal crosses a given value.
 
@@ -3578,7 +3964,7 @@ Measure statement example:
 
 returns the dependent (y) variable drawn from v(2) at the time point 2 ms (given by AT=time).
 
-#### AVG | MIN | MAX | PP | RMS | MIN_AT | MAX_AT
+##### AVG | MIN | MAX | PP | RMS | MIN_AT | MAX_AT
 
 <span style="font-weight:bold">General Form 7</span>:
 
@@ -3616,7 +4002,7 @@ Measure statement example:
 
 returns the average value of v(1) inside the time interval between 2 ms and 4 ms.
 
-#### INTEG
+##### INTEG
 
 A meas statement with the INTEG form returns the area under out_variable inside the time interval between FROM val and TO val.
 
@@ -3632,11 +4018,11 @@ Measure statement example:
 
 returns the area under v(2) inside the time interval between 2 ms and 3 ms.
 
-#### DERIV
+##### DERIV
 
 Please note that meas {DC|AC|TRAN|SP} result DERIV&lt;ATIVE&gt; ... is not yet available in ngspice
 
-#### More measure statements
+##### More measure statements
 
 	meas tran inv_delay 2 trig v(in) val='vp/2' td=1n fall=1 targ v(out) val='vp/2' rise=1
 	
@@ -3698,10 +4084,3 @@ The following examples illustrate some of the measurements that can be made this
 
 [Find gain and bandwidth](https://easyeda.com/editor#id=8GE0KRFDn)
 
-
-
-
-
-
-
- 
