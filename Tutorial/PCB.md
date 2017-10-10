@@ -524,30 +524,42 @@ Waiting for a few minutes, after adding bottom and top copper area, you will get
 
 EasyEDA suggest that using local auto router rather than using the cloud server,  because when many users using cloud server, the cloud auto router will fail.
 
-The local auto router server need to download and unzip it to the Non-System folder, this version only works on windows7(x64) or later.  Download via: [EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)
+The local auto router server need to download and unzip it to the Non-System folder.
 
-You need to configure the browser and execute the AutoRouter.bat first before click the **Auto Router** icon at editor.
-![](./images/287_PCB_LocalAutoRouter_Folder.png)
+Download Address1(Google Drive): [EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM)  
+Download Address2(GitHub): [EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)  
+Download Address3(Baidu): [EasyEDA Router.7z](https://pan.baidu.com/s/1eRT18kE#list/path=%2F)  
 
+You need to configure the browser and execute the script first before click the **Auto Router** icon at editor.
+
+Supported OS:
+
+-	Windows7(x64) or later 64bit Windows
+-	Ubuntu17.04(x64) or other 64bit Linux 
+
+Start local Auto Router:
+
+-	Double click win64.bat in Windows.
+-	Run "sh lin64.sh" on command terminal in Linux.
 
 **Notice:** *Please use the latest Chrome or Firefox !!!*
 
 **1)Chrome**
 
-If the local auto router is unavailable, you have to upgrade Chrome to version 60.0.3112.78 or later.
+The Crome Browser don't need to be configure, If the local auto router is unavailable, you have to upgrade Chrome to version 60.0.3112.78 or later.
 
 
 **2)Firefox**
 
-Configure Firefox:
-
-Type "`about:config`" into the address bar then press enter, and search "`allowInsecure`", and Find `network.websocket.allowInsecureFromHTTPS` , 
-
-double click it, its value will change  as "true", re-open Firefox and try again.
+1. Type "about:config" into the address bar then press enter
+2. Search and double click the options as below (change the values to "true"):  
+		`network.websocket.allowInsecureFromHTTPS`  
+		`security.mixed_content.block_active_content`
+3. Re-open Firefox and try again.
 
 ![](./images/288_PCB_LocalAutoRouter_Firefox.png)
 
-If the local router server is available, the dialog will tell you. Click the **Run** button, the **AutoRouter.bat** dialog will show the process as below:
+If the local router server is available, the dialog will tell you. Click the **Run** button, the dialog will show the process as below:
 
 ![](./images/289_PCB_LocalAutoRouter_Dialog.png)
 

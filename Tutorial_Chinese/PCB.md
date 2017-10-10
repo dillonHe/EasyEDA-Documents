@@ -532,25 +532,43 @@ PCB的设计管理器与原理图的设计管理器一样，在左边导航面�
 
 立创EDA建议用户使用本地布线服务器，当使用云端服务器时，如果使用人数较多，自动布线将会产生排队、布线失败等现象。
 
-该版本需在windows7及以上的64位操作系统。下载地址：[EasyEDA Router.zip](https://lceda.cn/EasyEDA-Router.zip)。下载后解压至非系统文件夹。
+下载地址1(百度网盘)：[EasyEDA Router.7z](https://pan.baidu.com/s/1eRT18kE#list/path=%2F)  
+下载地址2(Google Drive)：[EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM)  
+下载地址3(GitHub)：[EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)  
+ 
+下载后解压至非系统文件夹。
 
-在点击“自动布线”图标前，前请先配置浏览器和运行AutoRouter.bat。
+支持的操作系统：
+
+-	Win7 64位及以上
+-	Ubuntu 17.04 64位及其它64位Linux系统
+	
+在点击“自动布线”图标前，前请先配置浏览器和运行对应的脚本。	
+
+运行本地布线：
+	
+-	在Windows下双击win64.bat
+-	在Linux下控制台执行"sh lin64.sh"
+
+先配置浏览器：
 
 **注意：**  *请务必使用最新版的谷歌浏览器或火狐浏览器！！！*
 
 **1)Chrome谷歌浏览器**
 
-如果你的本地自动布线无法使用，请检查是否已经使用了最新版的谷歌浏览器，需v60.0.3112.78及以上。
+Chrome谷歌浏览器无需配置，如果你的本地自动布线无法使用，请检查是否已经使用了最新版的谷歌浏览器，需v60.0.3112.78及以上。
 
-**2)Firefox火狐浏览器**
-
-在地址栏输入"`about:config`"并按回车，搜索"`allowInsecure`"，找到 `network.websocket.allowInsecureFromHTTPS`，
-
-然后双击它，使它的值变为"True"，然后重新打开火狐浏览器进行本地自动布线。
+**2) Firefox火狐浏览器**
+	
+1. 在地址栏输入"about:config"并按回车
+2. 搜索并双击如下参数（置为"true"）：  
+		`network.websocket.allowInsecureFromHTTPS`  
+		`security.mixed_content.block_active_content`
+3. 重新打开火狐浏览器进行本地自动布线。
 
 ![](./images/287_PCB_LocalAutoRouter_Firefox.png)
 
-本地布线服务器可用时，对话框内有提示。点击“运行”后可以看到**AutoRouter.bat**的运行窗口提示如下：
+本地布线服务器可用时，对话框内有提示。点击“运行”后可以看到窗口提示如下：
 
 ![](./images/288_PCB_LocalAutoRouter_Dialog.png)
 
