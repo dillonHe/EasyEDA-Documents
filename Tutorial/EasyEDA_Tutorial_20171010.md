@@ -2918,7 +2918,6 @@ The local auto router server need to download and unzip it to the Non-System fol
 
 Download Address1(Google Drive): [EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM)  
 Download Address2(GitHub): [EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)  
-Download Address3(Baidu): [EasyEDA Router.7z](https://pan.baidu.com/s/1eRT18kE#list/path=%2F)  
 
 You need to configure the browser and execute the script first before click the **Auto Router** icon at editor.
 
@@ -3072,8 +3071,6 @@ In the Import file from your computer dialog to the right of File Operation; ti
 
 Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
 
-
-                    
 
 ## Import DXF File 
 

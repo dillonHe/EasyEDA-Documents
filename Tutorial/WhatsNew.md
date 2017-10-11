@@ -5,11 +5,11 @@
 
 # Download
 
-**Tutorial PDF Download**
+**Tutorial PDF & Local Auto Router Download**
 
-The latest documentation of tutorial is providing via .PDF now , and download via :   
-Link1(Google Drive)：[EasyEDA\_Tutorial.pdf](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM?usp=sharing)  
-Link2(GitHub)：[EasyEDA\_Tutorial.pdf](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)
+The latest documentation of tutorial and Local Auto Router is providing download now , via :   
+Link1(Google Drive)：[EasyEDA\_Tutorial.pdf & EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM?usp=sharing)  
+Link2(GitHub)：[EasyEDA\_Tutorial.pdf & EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)
 
 **Desktop Client Download**
 
