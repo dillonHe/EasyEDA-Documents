@@ -5,6 +5,41 @@ Please spend a few minutes reading this FAQ, it will save you lots of time getti
 
 ## Concept
 
+### Can I use EasyEDA in my company?
+
+You are free to use EasyEDA for individuals, business and education.
+
+### I don't like others seeing my design. How can I stop that happening?
+
+Set your project as Private. For extra security you can even save your work locally.
+
+### What happens if EasyEDA service is offline for some reason?
+
+EasyEDA can be run as an offline application.
+
+### Is EasyEDA safe?
+
+There are no absolutely secure things in the world but even if you have the misfortune - as happened to one of our team - of losing one laptop and having two hard drives break, 
+EasyEDA will try to protect your designs in following ways:
+
+1. We utilize SSL throughout the entire domain EasyEDA.com. Secure Socket Layer (SSL) technology encrypts all data transferred between your computer and our servers. Your data is for your eyes only.
+2. You can save your files locally.
+3. Multiple copies of every file are saved in your local database. 
+4. EasyEDA servers backup your designs frequently.
+
+### What if EasyEDA cannot become self sustaining and has to close down?
+
+We promise to do our best to ensure that neither of these things will happen; we have spent so much of our time to get to this point. We promise that if we cannot make enough money out of EasyEDA to keep it alive or to fund further development, we will not simply abandon our baby or our community but we will consider donating the code to the Open Source Community to let them build on our efforts. There are no companies who can stay forever, so if a time comes when we have to close down,  we will follow the steps below:
+
+1. Give our users six months warning prior to closure;
+2. Ensure all our users can backup their designs;
+3. Ensure that user's designs can be exported to some other EDA tools, such as Kicad, Altium Designer and others.
+4. Package our codes, so that users can install an EasyEDA in their own OS (Windows, Linux, Mac). Users can then build their own cloud EDA.
+5. Upload our codes to github.com and make them open source.
+
+So, nothing will be lost and our users can continue to enjoy an awesome web based EDA tool that lets them stay in charge of their designs: anywhere, anytime and on any OS.
+
+
 ### How to find the list of hotkeys.
 
 [https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys](https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys)
@@ -23,9 +58,9 @@ Although most of the time there are ways to access the internet easily and cheap
   
 ### Does EasyEDA have a desktop version?
 
-   At present, no but EasyEDA is developing and testing a desktop version to be introduced soon. 
-   
-   A Windows version will be available at the end of this year. Mac and Linux versions will be available early next year. 
+We're sorry to inform you that EasyEDA desktop client is temporarily stopped for download and development (The new desktop version will come back in one year). Due to the rapid updates of Web-based EasyEDA, its too many new features can't be applied to EasyEDA desktop quickly and the desktop version is not suitable for weekly or even daily updates. We strongly suggest synchronizing your data to the server or download to your local hard drive, and then use web-based EasyEDA for your project design. 
+Meanwhile, EasyEDA will soon provide privatization deployment which you can deploy a server similar to EasyEDA in your intranet.
+Any questions, please contact our technical support via support@easyeda.com. 
 
 ### Which Browser is best for EasyEDA?
 
@@ -64,16 +99,19 @@ There are two ways to arrive there.
 
 ### How to share a project with others.
 
-1. Make your project public.  
-Open [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists), then click the red `No entry' icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
+1.Make your project public.  
+Open [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists), then click the red `No entry` icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
+
 ![](./images/250_FAQ_ShareProjectToPublic.png)  
 
-2. To share a project privately with only selected collaborators via:  
+2.To share a project privately with only selected collaborators via:  
 [Access Control](https://easyeda.com/Doc/Tutorial/Share.htm#Access-Control)   
+
 You can right click your project and select the access control menu:
+
 ![](./images/168_Share_AccessControl.png) 
+
   
-       
 ### How to find the version history of schematics and PCBs.
 
   The version history of your EasyEDA schematics and PCBs can be accessed by right-clicking on the file you wish to query to open the context menu as shown in the image below: 
@@ -135,7 +173,7 @@ To modify the design information, left-click on the relevant blue text in the lo
 ![](./images/215_Schematic_SheetSetting_Attributes.png)
 
 
-##Schematic library symbol
+## Schematic library symbol
 
 ### How to create a schematic library symbol.
 
@@ -255,7 +293,7 @@ A common mistake is to just draw a solder mask, without a copper area, like the 
  ![](./images/143_PCBLibs_NewLib.png)  
 
 
-##Keep in Mind
+## Keep in Mind
 
   1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/Introduction.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
   
