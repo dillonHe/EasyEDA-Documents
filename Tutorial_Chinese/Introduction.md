@@ -15,8 +15,6 @@
 
 -	国内个人用户永久免费，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
 
--	现已提供桌面客户端下载，画图更流畅：[https://lceda.cn/page/download](https://lceda.cn/page/download)
-
 
 **注意：** *在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
   
@@ -33,7 +31,7 @@
 **文档说明：**
 
 -	本文档会跟随编辑器的新功能更新而持续更新。
--	编辑器Beta版会先行推出新的功能与改善，但可能会有bug，请谨慎体验。访问地址：[https://beta.lceda.cn/editor](https://beta.lceda.cn/editor)
+-	编辑器Beta版(公测版)会先行推出新的功能与改善，但可能会有bug，请谨慎体验。访问地址：[https://beta.lceda.cn/editor](https://beta.lceda.cn/editor)
 
 **立创EDA可提供：**
 

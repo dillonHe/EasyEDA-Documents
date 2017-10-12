@@ -1,61 +1,64 @@
-<h1 align = "center">立创EDA帮助文档</h1>
+
+<h1 align = "center">EasyEDA Tutorial</h1>
 
 <p align = "center">2017.10.10</p>
-<p align = "center" >立创EDA编辑器正式版：<a href=https://lceda.cn/editor>https://lceda.cn/editor</a></p>
-<p align = "center" >立创EDA编辑器Beta版：<a href=https://beta.lceda.cn/editor>https://beta.lceda.cn/editor</a></p>
-<p align = "center" ><img src="images/lceda-logo_3.png" width=340></p>
+<p align = "center" >EasyEDA Editor: <a href=https://easyeda.com/editor>https://easyeda.com/editor</a></p>
+<p align = "center" >EasyEDA Editor Beta: <a href=https://beta.easyeda.com/editor>https://beta.easyeda.com/editor</a></p>
+<p align = "center" ><img src="images/EasyEDA_logo.png" width=340></p>
 
-**文档说明：**
+**Instruction:**
 
--	本文档会跟随编辑器的新功能更新而持续更新。
--	最新版本请前往 [https://lceda.cn/Doc/Tutorial/](https://lceda.cn/Doc/Tutorial/WhatsNew.htm#) 下载。
--	编辑器Beta版会先行推出新的功能与改善，但可能会有bug，请谨慎体验。
+-	This document will be updated according to the updated EasyEDA editor.
+-	The latest edition please refer to [https://easyeda.com/Doc/Tutorial/](https://easyeda.com/Doc/Tutorial/WhatsNew.htm#Download) .
+-	The Editor beta version will release the new future and enhancement first, but maybe have some bugs, please using carefully.
 
 <br>
 
-**更新记录：**
+**Update Record:**
 
-<table width="100%"  style="font-family:'微软雅黑'; font-size:14px;">
+<table width="100%"  style="font-size:14px;">
    <tr>
-      <td width="10%" style = font-weight:bold; >更新日期</td>
-      <td width="12%" style = font-weight:bold; >编辑器版本</td>
-      <td width="78%" style = font-weight:bold; >更新简述</td>
+      <td width="14%" style = font-weight:bold; >Update Date</td>
+      <td width="16%" style = font-weight:bold; >Editor Version</td>
+      <td width="72%" style = font-weight:bold; >Description</td>
+   </tr>
+      <tr>
+      <td>2017.10.12</td>
+      <td>v4.10.1</td>
+      <td>New function: Cross Probe and Place; Change "Net Name Conflict Error" section to "Multi-NetLabels in One Wire"</td>
    </tr>
    <tr>
       <td>2017.10.10</td>
       <td>v4.9.3</td>
-      <td>本地自动布线支持Linux(64)</td>
-   </tr>   
+      <td>Local auto router support Linux(64)</td>
+   </tr>
    <tr>
       <td>2017.10.09</td>
       <td>v4.9.3</td>
-      <td>添加仿真章节(英文版)，API章节(英文版)和开放文件格式章节(英文版)</td>
+      <td>Add OpenFileFormat section</td>
+   </tr>
+   <tr>
+      <td>2017.10.08</td>
+      <td>v4.9.3</td>
+      <td>Change SpiceSimulation to Simulation, Add Simulation eBook section at Simulation section</td>
    </tr>
    <tr>
       <td>2017.09.20</td>
       <td>v4.9.3 Beta</td>
-      <td>新增导出为Altium文件格式章节</td>
+      <td>Update export Altium Designer format description</td>
    </tr>
    <tr>
       <td>2017.09.18</td>
       <td>v4.9.3 Beta</td>
-      <td>新增“本地自动布线”章节</td>
+      <td>Update local auto router description</td>
    </tr>
    <tr>
       <td>2017.09.08</td>
       <td>v4.8.5</td>
-      <td>修正错误，添加“浏览器设置”章节</td>
+      <td>First release, Add "Essential Check" section, add "Essential Check Before Placing a PCB Order" of PCBOrder section</td>
    </tr>
-   <tr>
-      <td>2017.08.30</td>
-      <td>v4.8.5</td>
-      <td>第一版更新，未包含仿真章节</td>
-   </tr>
-   <tr>
-      <td>NA</td>
-      <td></td>
-      <td></td>
-   </tr>
+
+
 <table>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -64,3078 +67,3196 @@
 
 
 
-# 立创EDA介绍
 
-## 什么是立创EDA
+# Introduction to EasyEDA
 
-**欢迎使用立创EDA/LCEDA**
+## What's EasyEDA
 
--      立创EDA是一款基于浏览器的，友好易用的，强大的EDA(Electronics Design Automation: 电子设计自动化)工具, 服务于广大电子工程师,教育者,学生,制造商和爱好者。致力于中小原理图PCB工程的设计，仿真与实现。  
- 
--	立创EAD可以不需要安装任何软件或插件。只需在任何支持HTML5,标准兼容的web浏览器打开立创EDA即可。请优先使用最新版Chrome和FireFox浏览器，其他浏览器立创EDA暂时不做适配。
- 
--	立创EDA是知名在线EDA软件EasyEDA的国内版本，立创EDA专注国内用户，EasyEDA专注国外用户；立创EDA和EasyEDA功能上一致，编辑器和客户端同步更新；国内版与国外版账号数据系统相对独立，不互通，已经注册EasyEDA的用户请及时将账号数据迁移至国内版，迁移地址：[https://easyeda.com/applyForLceda](https://easyeda.com/applyForLceda)；因为立创EDA数据服务器建立在国内，所以国内用户访问立创EDA速度更快，基本无EasyEDA的卡顿现象。在今后国内用户访问EasyEDA都会导向LCEDA。
-
--	无论你使用的是Linux, Mac , Windows，立创EDA均可以为你提供专业的优质服务。访问地址：[https://lceda.cn/editor](https://lceda.cn/editor) 
-
--	国内个人用户**永久免费**，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
-
--	现已提供桌面客户端下载，画图更流畅：[https://lceda.cn/page/download](https://lceda.cn/page/download)
+Welcome to EasyEDA, a great web based EDA tool for electronics engineers, educators, students, makers and enthusiasts.
 
 
-**注意：***在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
-  
-**不收费立创EDA怎么生存？**  
+There's no need to install any software. Just open EasyEDA in any HTML5 capable, standards compliant web browser.
 
--	立创EDA目前提供立创商城元器件销售；PCB打样与批量订单，PCB贴片服务；未来还会为企业用户提供付费服务。    
--	如果你想支持立创EDA更好的发展，你可以：
-	-	在立创商城([www.szlcsc.com](www.szlcsc.com))购买元件；
-	-	在立创EDA的兄弟公司嘉立创进行PCB打样与贴片([www.sz-jlc.com](www.sz-jlc.com))；
-	-	使用立创EDA创建个人的库文件和公开的工程；
-	-	向朋友推荐立创EDA。
+Whether you are using Linux, Mac or Windows; Chrome, Firefox, IE, Opera, or Safari. Highly recommend to use Chrome and Firefox.
+EasyEDA has all the features you expect and need to rapidly and easily take your design from conception through to production.
 
-**立创EDA可提供：**
+[EasyEDA](https://easyeda.com/editor) provides:   
 
--	简单，易用，友好，强大的绘图体验与能力
--	可在任意地点，时间，设备上工作
--	实时团队协作
--	在线共享
--	大量的开源项目
--	整合PCB制造和元器件购买供应链
--	提供API
--	支持脚本
--	原理图绘制
-	-	基于[NgSpice](http://ngspice.sourceforge.net/)的仿真功能
-	-	仿真模型和子电路的创建
-	-	波形图的查看和导出(CSV)
-	-	网表导出(Spice, Protel/Altium Designer, Pads, FreePCB)
-	-	多文件格式导出(PDF, PNG, SVG)
-	-	EasyEDA源码格式导出(json)
-	-	Altium Designer格式导出
-	-	BOM导出
-	-	多页原理图
-	-	原理图模块
-	-	主题设置
-	-	文档恢复
--	PCB设计
-	-	设计规则检查
-	-	多层设计
-	-	多文件格式导出(PDF, PNG, SVG)
-	-	EasyEDA源码格式导出(json)
-	-	Altium Designer格式导出
-	-	BOM导出
-	-	照片预览
-	-	Gerber文件导出
-	-	SMT坐标文件导出
-	-	自动布线
-	-	PCB模块
-	-	文档恢复
--	文件导入
-	-	Altium/ProtelDXP ASCII 原理图/PCB
-	-	Eagle 原理图/PCB/库文件
-	-	LTspice 原理图/原理图库文件
-	-	DXF文件
--	库文档
-	-	超过50万库文档(原理图库和封装库)
-	-	库文档管理
-	-	符号/子库的创建与编辑
-	-	仿真符号的创建与编辑
-	-	封装库的创建与编辑
+-	Simple, Easier, Friendly, and Powerful general drawing capabilities
+-	Working Anywhere, Anytime, Any Device
+-	Real-time Team Cooperation
+-	Sharing Online
+-	Thousands of open source projects
+-	Integrated [PCB fabrication](https://jlcpcb.com) and [Components purchase](https://lcsc.com) chain
+-	API provide
+-	Script support
+-	Schematic Capture
+	-	[NgSpice-based](http://ngspice.sourceforge.net/) Simulation
+	-	Spice models and subcircuits create
+	-	WaveForm viewer and data export(CSV)
+	-	Netlist export(Spice, Protel/Altium Designer, Pads, FreePCB)
+	-	Documentation export(PDF, PNG, SVG)
+	-	EasyEDA source file export(json)
+	-	Altium Designer format export
+	-	BOM export
+	-	Mutil-sheet and hierarchical schematics
+	-	Schematic module
+	-	Theme setting
+	-	Document recovery
+-	PCB Layout
+	-	Design Rules Checking
+	-	Mutil-Layer
+	-	Documentation export(PDF, PNG, SVG)
+	-	EasyEDA source file export(json)
+	-	Altium Designer format export
+	-	BOM export
+	-	Photo view
+	-	Gerber output
+	-	Pick and Place File output
+	-	Auto Router
+	-	PCB module
+	-	Document recovery
+-	Import
+	-	Altium/ProtelDXP ASCII Schematic/PCB
+	-	Eagle Schematic/PCB/Libraries
+	-	LTspice Schematic/Schematic Libraries
+	-	DXF
+-	Libraries
+	-	More than 500,000 Libraries(Symbol and Footprint)
+	-	Libraries management
+	-	Symbol/Subpart create and edit
+	-	Spice symbol/model create and edit
+	-	Libraries management
+	-	Footprint create and edit
 
 
-## 浏览器设置
-
-在使用立创EDA之前，请先对浏览器进行设置。推荐使用原生的Chrome谷歌浏览器和Firefox火狐浏览器，立创EDA优先支持这两款浏览器，不建议使用IE和Edge。若你使用的是国内厂商基于Chromium浏览器二次开发的浏览器，如QQ浏览器，360浏览器，百度浏览器等，你需要切换至极速内核，设置浏览器最小字号和关闭鼠标手势，否则可能会无法正常使用。
-
-**切换至极速内核**：使用双核浏览器时，必须切换至极速内核，若使用兼容内核(IE内核)，部分功能可能无法正常使用。如文件导入失败，布线样式错误，铺铜区域错误。
-
-**关闭手势功能**：如果不关闭浏览器手势，将无法在编辑器使用长按右键平移功能。
-
-**设置浏览器最小字体**：使用谷歌浏览器内核的浏览器通常设置最小字体字号为12号，在原理图进行缩小时会出现文字太大的现象(如下图左边)，此时你需要将最小字号设为更小。  
-![](./images/286_Introduction_BrowserFontSize.png)
-
-以下是浏览器的设置方法：
-
--	谷歌浏览器：
-	-	切换极速内核：无需设置。
-	-	关闭手势功能：不支持，无需设置。
-	-	设置最小字号：**设置 > 外观  > 自定义字体 > 最小字号**。
--	火狐浏览器：
-	-	切换极速内核：无需设置。
-	-	关闭手势功能：不支持，无需设置。
-	-	设置最小字号：**选项 > 内容 > 字体和颜色 > 高级 > 最小字体大小**，将最小字号设为最小。
--	360安全浏览器：
-	-	切换极速内核：点击地址栏最右边的内核模式切换按钮。
-	-	关闭手势功能：**设置 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**设置 > 界面设置  > 字体大小 > 自定义字体大小** ，将最小字号设为最小。
--	360极速浏览器：
-	-	切换极速内核：**选项 > 高级设置 > 内核模式 > 默认使用Blink内核**。
-	-	关闭手势功能：**选项 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**选项 > 高级设置 > 网络内容 > 自定义字体 > 最小字体号**，将最小字号设为最小。
--	猎豹浏览器：
-	-	切换极速内核：**选项/设置 > 基本设置 > 浏览模式 > 优先使用极速模式**。
-	-	关闭手势功能：**选项/设置 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**选项/设置 > 更多设置 > 网页内容 > 自定义字体 > 最小字号** ，将最小字号设为最小。
--	QQ浏览器：
-	-	切换极速内核：**设置 > 高级  > 内核模式 >  总是使用极速内核**。
-	-	关闭手势功能：**设置 > 手势与快捷键 > 开启鼠标手势**，去掉勾选。
-	-	设置最小字号：**设置 > 常规设置  > 网络内容 >  自定义字体 > 最小字号** ，将最小字号设为最小。
--	傲游5浏览器：
-	-	切换极速内核：**工具 > 内核切换：兼容 -> 极速**。
-	-	关闭手势功能：**设置 > 鼠标手势和快捷键 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：无需设置，默认最小字号。
--	搜狗浏览器：
-	-	切换极速内核：**工具 > 切换到极速模式**。
-	-	关闭手势功能：**工具 > 选项 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：无法设置。
--	百度浏览器：
-	-	切换极速内核：点击地址栏最右边的内核模式切换按钮。
-	-	关闭手势功能：**浏览器设置 > 高级设置 > 鼠标手势  > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：无法设置。
--	UC浏览器：
-	-	切换极速内核：点击地址栏最右边的内核模式切换按钮。
-	-	关闭手势功能：**设置 > 鼠标手势 > 基本 > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**设置 > 其他 > 网络内容 >  自定义字体 > 最小字号** ，将最小字号设为最小。
--	2345加速浏览器：
-	-	切换极速内核：点击地址栏最右边的内核模式切换按钮。
-	-	关闭手势功能：**选项 > 鼠标手势 > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**选项 > 高级设置 > 网络内容 > 自定义字体 > 最小字体号**，将最小字号设为最小。
--	Opera浏览器：
-	-	切换极速内核：无需设置。
-	-	关闭手势功能：**菜单 > 设置 > 浏览器 > 快捷键 > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**菜单 > 设置 > 网站 > 显示 > 自定义字体 > 最小字体大小**，将最小字号设为最小。
--	世界之窗浏览器：
-	-	切换极速内核：无需设置。
-	-	关闭手势功能：**设置 > 显示高级设置 > 鼠标手势 > 启用鼠标手势**，去掉勾选。
-	-	设置最小字号：**设置 > 显示高级设置 > 网络内容 > 自定义字体 > 最小字体大小**，将最小字号设为最小。
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
+## Design Flow By Using EasyEDA 
 
-
-## 工程设计流程
-
-使用立创EDA进行设计的流程如下：  
-
+You can create circuits design easily by using EasyEDA. The design flow as below:
 ![](images/028_Introduction_Design-Flow.png)
 
+<br><br><br><br><br><br><br><br><br><br>
 
-<br><br><br><br><br>
 
+## UI introduction
 
-## 使用界面
+EasyEDA Editor has a clearly and friendly user interface. You can use its every function very easily when you become familiar with EasyEDA.
 
-立创EDA拥有一个友好的，简洁的，美观的使用界面。
+### Global UI
 
-### 全局界面
-
-**原理图界面**
+**Schematic UI**
 ![](./images/001_Introduction_Global-UI_Schematic.png)
 
-**PCB界面**
+**PCB  UI**
 ![](./images/002_Introduction_Global-UI_PCB.png) 
 
-### 简洁的操作界面
+### The Clear EasyEDA UI
 
-立创EDA有两个区域非常重要，分别是左边标识为2的导航面板，右边标识为9的属性面板。工程，元件库等均可以在导航面板找到；通过选择你需要的项目，在属性面板可以查看和修改你想要的属性。
 ![](images/006_Introduction_The-Clear-UI_Schematic.png)
 
-#### 1. 筛选器
+#### 1. Filter
 
-使用筛选器，只需要输入部分字符就可以很方便地搜索出想要的东西。 在工程按钮下，可以很方便搜索工程，工程里面的文件。在基础库可以很方便搜索想要的零件符号。比如直接在基础库搜索 “555” 即可将 555定时器搜索出来。
+Before using the Filter, you need to select what module you need in the left navigation panel, and then you can quickly and easily find projects, files, parts and footprints, just by typing a few letters of the title. For example, if you want to find all files containing “NE555” in the title, just type “555”, it is non-case-sensitive.  
 
 ![](images/007_Introduction_The-Clear-UI_Filter.png)  
 
-筛选器只能搜索标题，文件或工程的描述无法搜索。
+The Filter only searches project, file and part titles and names. It does not search the Description and Content fields.
 
-点击 `X` 清除筛选内容。
+Click the X to clear the filter.
 
-#### 2. 导航面板
+#### 2. Navigation Panel
 
-导航面板是立创EDA非常重要的一个组成模块，你可以在这里找到你的工程，系统基础库，设计管理器，元件库，他人共享给你的文件等。
+The Navigation panel is very important for EasyEDA: it is from here that you can find all your projects, files, parts and footprints.
+
 
 ![](images/009_Introduction_The-Clear-UI_Navigation-Panel.png)  
 
-**工程**  
+**Project**
+Here, You can find all of your projects that are private or shared with the public, or fork from someone else's. 
 
-在这里，你可以找到你的所有工程及文件，包括你私人的，已共享的，直接拷贝别人的工程文件。
-
-除了元件库，它们均可以使用右键菜单。如工程文件下的右键菜单：
+Except for System IC, these options have a content menu. For example, if you drop down to My Projects and right click an item, you will get a tree menu like :
 
 ![](images/192_Introduction_NavigationPanel_ProjectRightClick.png)
 
 
-**基础库**
+**EELib**
 
-这里包含了很多常用的库文件，可以很方便的使用，只需鼠标单击后移动至原理图画布即可。该处不允许自定义。 
+EElib means EasyEDA Libraries, It provides lots of components complete with simulation models, many of which have been developed for EasyEDA to make your simulation experience easier.  
 
-**设计管理器**
+**Design**
 
-设计管理器，在原理图下你可以很方便地检查每个零件和每条网络；在PCB下这里还可以查看设计规则错误(DRC)。
+Design Manager, you can check each component and net easily, and it will provide DRC(Design rule check) to help your design better.
 
-**元件库** 
+**Parts** 
 
-包含了原理图库和封装库，其中包括系统库和用户共享库。你的个人库文件也在这里。  
+Contains schematic symbols and PCB footprints for many readily available components and projects. And your own libs and modules will show up here.
+
+**Shared**
+
+About this module, if your partner shared his/her private project with you by using the **Access Control** option, then the project will show here.  
+
+For more information you can refer to the [Access Control](./Share.htm#Access-Control) section.
+
+**LCSC**
+
+If you want to buy components to finish your PCBA, you should try the **LCSC** module, LCSC.com and EasyEDA are the same company.
+
+EasyEDA partners with China's largest electronic components online store by customers and ordering quantity launch [https://lcsc.com](https://lcsc.com).
+ LCSC means **L**ove **C**omponents? **S**ave **C**ost! We suggest to our users to use LCSC parts to design. Why? 
+  
+-	1. Small Quantity & Global Shipping.  
+-	2. More Than 25,000 Kinds of Components.  
+-	3. All components are genuine.   
+-	4. It is easy to order co after design.   
+-	5. You can save 40% cost at least.  
+-	6. You can use our symbols and package.  
 
 ![](images/008_Introduction_The-Clear-UI_Parts.png) 
-
-**共享**
-
-如果你的伙伴使用 **访问控制** 功能将他的工程共享给你，那么共享的工程会出现在这里。如果对方使用的是公众共享功能，共享给你的工程不会出现在这里。
-
-更多信息请访问[“访问控制”](./Share.htm#访问控制)。
-
-**立创商城**
-
-你若需要购买元器件进行PCB制作，建议通过这里购买。立创商城提供了6W+的元器件对外销售，是目前国内领先的元器件自营商城，经营的元器件均是正品，可放心购买。立创EDA和立创商城共同属于深圳市立创电子商务有限公司。
-
-访问地址：[www.szlcsc.com](www.szlcsc.com)。 
-
 ![](images/010_Introduction_The-Clear-UI_LCSC.png) 
 
 
-#### 3. 工具栏
-
-编辑器提供简单美观的功能图标。
+#### 3. ToolBar
 
 ![](images/011_Introduction_The-Clear-UI_ToolBar.png)
 
-工具栏图标可通过“常用按钮设置”进行配置。
+EasyEDA's toolbar can be reconfigured via Common Buttons Setting…
 
 ![](images/012_Introduction_The-Clear-UI_Common_Buttons.png)
 
-配置方式简单明了。
+The configure dialog is also easy to use:
 
 ![](images/013_Introduction_The-Clear-UI_Common_Buttons_Settings.png)
 
-选中后可以点击隐藏/显示，上移下移来调整在工具栏的位置。
+Click on a button to select it. Then you can toggle button visibility by clicking on Show/Hide or by clicking on the tick space to the left of the button icon. You can change the button position using Move up and Move Down.
+
+Many of the buttons have been assigned hotkeys, so you can use those to replace the button actions.
+
+#### 4. Preview Dialog
+
+The Preview dialog will help you choose components and packages and can help you to identify schematics and PCB layouts.
+
+You can close or open this dialog via:  
+
+ **Super Menu > View > Toolbars > Preview** or on the top toolbar **Config Icon > Toolbars > Preview**.
+
+-	The Preview Dialog has a resizing handle in the bottom right corner.
+
+-	The Preview Dialog can't be closed but double clicking on the top banner will roll up the panel or you can click the top right corner `—` . Double clicking top banner again toggles it back to the selected size.    
+![](images/213_Introduction_UI_PreviewDialog.png)
 
 
-#### 4. 预览窗口
+-	Clicking on the little pencil edit tool opens the item in the preview for editing. Clicking on the location place tool in the top right corner of the preview dialog places the item onto the canvas. If you try to place PCB footprint into a schematic it will not provide any action and message.
 
-当你选择一个原理图或PCB时，可以在这里进行预览。因为需要从服务器进行加载，所以预览图需要
+#### 5. Wiring Tools
 
-你可以通过 
+![](images/191_Introduction_WiringTools_1.png)
 
- **超级菜单 > 查看 > 工具栏 > 预览** 或者在工具栏 **配置 > 工具栏 > 预览** 处进行打开这个功能.
-
--  在右下角处，拖动可以进行放大缩小。
--  无法关闭，你可以点击右上角的 - 进行收缩窗口。
--  点击铅笔图标可以打开当前预览文件。
-
-  ![](images/213_Introduction_UI_PreviewDialog.png)
+Wiring Tools are document type sensitive: different document types have different tools.
 
 
-#### 5. 电气工具
-
-编辑器会根据不同的类型显示不同工具栏。以下是原理图的电气工具。  
-
-![](images/191_Introduction_WiringTools.png)
-
-
-#### 6. 用户管理菜单
-
-在这里你可以切换至团队，切换语言，修改系统设置等。
+#### 6. User management menu
 
 ![](images/015_Introduction_The-Clear-UI_User-Menu.png)
 
-#### 7. 超级菜单
+#### 7. Super menu
 
-编辑器全部的菜单功能均可以在这里找到。这里面很多功能均可以通过设置快捷键的方式使用，也建议你使用快捷键，可提高设计效率。
+All EasyEDA's menus can be found here. Most of the time, we hope you can access these options via the Hotkeys or from the top toolbar but if you find that you use some of the more specialized options from this menu frequently then may want to set them as you own hotkeys.
 
 ![](images/016_Introduction_The-Clear-UI_Super-Menu.png)
 
-#### 8. 绘图工具
+#### 8. Drawing Tools
 
-绘图工具和电气工具，和PCB绘制工具均可以通过拉伸窗口进行调节大小，也可以随意拖动位置。
+![](images/190_Introduction_DrawingTools_3.png)
 
-![](images/190_Introduction_DrawingTools.png)
+To keep EasyEDA's UI clean and sharp, the Wiring and Drawing tools palettes can be resized horizontally, rolled up or hidden so if you want to focus on drawing, you can roll up or hide the others to make more space and reduce the clutter.
 
+#### 9. Canvas Attributes
 
-
-#### 9. 画布属性
-
-点击画布空白处后就可以在右边面板查看与修改画布属性。
+You can find the canvas Properties setting by clicking on any of the blank space in the canvas.
 
 ![](images/017_Introduction_The-Clear-UI_Canvas-Attributes.png)
 
+Background and grid colors and the style, size, visibility and snap attributes of the grid can all be configured.
 
-背景颜色，网格，网格样式，大小，栅格等属性均可以修改。
+The canvas area can be set directly by the Width and Height or from available preset frame sizes.
 
 
-#### 10. 画布
+#### 10. Canvas
 
-画布区域是主要工作区，在这里可完成原理图的创建和绘制编辑，库文件符号的绘制和编辑，PCB的创建，布局和编辑，仿真与波形查看等。
+This is where it all happens! This the area where you create and edit your schematics, PCB layouts, symbols, footprints and other drawings, run simulations and display WaveForm traces.
 
-**原理图**  
+**Schematic**  
 ![](images/193_Introduction_Canvas_Schematic.png)  
 
 **PCB**  
 ![](images/194_Introduction_Canvas_PCB.png)  
 
-**库符号**  
+**Symbols**  
 ![](images/195_Introduction_Canvas_Symbols.png)  
 
-**封装**  
+**Footprints**  
 ![](images/196_Introduction_Canvas_Footprints.png)
 
-**其他绘图**  
+**Other Drawing**  
 ![](images/197_Introduction_Canvas_Drawings.png)
 
-**仿真波形**  
+**Simulation WaveForm**  
 ![](images/198_Introduction_Canvas_WaveForm.png)
 
 
-## 如何创建一个工程或文件
+## How to Create A New Project or File
 
-在登录后，通过点击
- **文件 > 新建 > 工程...** 或 **文件 > 新建 > 原理图..等**
+After logining in, you can create a new project:
+ **Document > New > Project... > Create a new project/Schematic..etc**
 ![](./images/003_Introduction_HowNewProject.png)   
 
-“工程”概念在编辑器中非常重要，在新建原理图，PCB等一些文件前必须存在一个工程文件夹才可进行新建，否则需要新建一个工程，以便于管理新建的文件。
+The Project concept is important in EasyEDA because it is the foundation of how to organise your designs.
 
 ![](./images/036_Introduction_NewProjectDialog.png) 
 
-设置名称并点击确认后，新建的工程将在左边的“工程”处显示。
+Give it a title: this will show in the project tree in the left hand panel.
 
-在新建时，你还可以选择这个工程是私人的还是共享的。
+You can make your project public or private by setting its Visibility.
 
-选择共享后，该工程与其下的文件将显示在你的个人主页上，任何人都可以查看复制你的设计。添加的描述可以帮忙别人了解你的设计内容。
+If you choose to make you project Public, Categories allows you to select which category you want your project to be listed under on our website. If you keep your project private then the category is still applied but has no direct use in sorting your projects because this field is not searched in the Filter box in the left hand panel.
 
-若创建后你想修改你的工程信息，你可在工程文件夹右键，选择编辑工程。
+Adding a short description helps you and anyone you are sharing this project with understand what the project is about.
+
+Once created, to modify your project, right click on it in the project tree in the left hand panel,
 
 ![](images/037_Introduction_EditProject.png)
 
-将打开一个网页，你可以修改工程的相关信息。
+then will open a web page in which you can edit your project:
 
 ![](images/038_Introduction_EditProject-WebPage.png)
 
-
-
+From here, you can change the Visibility, allow other people to comment on your project and type a more detailed description of the project content. To help you make your project stand out or to maybe simply make a detailed description of your project easier to read, you can use Markdown syntax. If you need more information on Markdown syntax, click on Markdown Syntax? just above the Content box.
 ​
 
-## 功能介绍
+## Function introduction
 
-### 原理图绘制
+### Schematics 
 
-立创EDA可以创建很专业的原理图。
+EasyEDA can create highly professional looking schematics.
 
 ![](images/039_Introduction_Schematic.png)  
 
-立创EDA有一些简单而强大的绘图功能，你可以通过复制现有的符号复制到自己的库中，然后编辑和保存，来创建自己的库文件，或者从头开始绘制新的原理图库文件。
+Because EasyEDA has some simple but powerful drawing capabilities, you can create your own symbols either by copying existing symbols into your own library and then editing and saving them, or by drawing them from scratch.
 
-编辑器提供了 **原理图库向导**，以便于迅速创建 `DIP`, `QFP` 和 `SIP`类的原理图符号。
+There is also a **Symbol Wizard** to quickly draw new symbols for `DIP`, `QFP` and `SIP`
 
-立创EDA除了普通的简单的“2D”图形库之外，还有一个“3D”零件符号库，连接后看起来与实物相似。
+A feature of EasyEDA is that as well as extensive libraries of the usual simple “2D” graphical schematic symbols, it has a library of drawn `3D` component symbols, i.e. symbols that look like the physical components that they represent.
 
-如果你有足够的耐心，你可以创建很漂亮的3D形状的原理图。
+If you have enough time and patience using the drawing features to full effect in symbol creation, your schematic can be built like this:
 
 ![](images/203_Introduction_Schematic3D.png)
 
-还有一个强大的功能是可以从AD，Kicad，Eagle等导入原理图PCB库符号。
+Another powerful feature is that it is also possible to import symbols from `Kicad`, `Eagle` and `Altium` libraries.
 
-### 元件库管理
+### Libraries management
 
-**系统库文件**
+Thanks to the Free and Open Source Kicad Libs and some Open Source Eagle libs, EasyEDA now has 100,000+ components, which should be enough for most projects.
 
-感谢于免费和开源的Kicad库和一些开源的Eagle库，加上立创商城自身创建的库文档，立创EDA已经有超过50w个元件库，基本上已经可以满足大部分设计需要。
+Now you can enjoy using EasyEDA without having to spend so much time hunting for or building schematic symbols and PCB footprints.  
 
-你基本可以不用花太多时间去寻找和创建新的原理图库和封装库就可以进行设计。
+**Search symbols**
 
-**用户贡献库文件**
+On the left hand Navigation panel you will find "**EElib**" and "**Parts**", just type what components you want and search.
 
-用户建立的库文件会自动共享至用户贡献库中，立创EDA认为，库文件的共享可以使更多人使用到你的库文件，减少重复的创建库文件的工作。并且库文件共享并不会产生数据安全性问题，需要关注的是用户私人的工程以及文档。
-用户贡献的库文件在使用时，点击后在右边属性面板可以看到一个“Contributor(贡献者)”参数，显示共享者的用户名。贡献政策参见：[https://lceda.cn/page/contribute](https://lceda.cn/page/contribute)
+**Create symbols**
 
-**查找库文件**
+EasyEDA supports creating symbols by yourself, after created you can find out your components at **Parts > My parts**, and it is easy to manage your parts.
 
-在左边导航面板的“基础库”和“元件库”，点击后输入你想要的库名称后搜索即可。
+To prepare for the final assembly stage you can create a Bill of Materials (**BOM**) via:
 
-**创建个人库文件**
+**Super Menu > Miscellaneous > BOM Report...**
 
-立创EDA支持创建个人库文件，创建的库文件可以在 **元件库 > 我的库文件** 中找到，并且很容易进行管理。
-​
+and you can produce professional quality `SVG`, `.PNG` or `.PDF` output files for your documents.
 
-### PCB设计
+All EasyEDA Schematic Symbol and PCB Footprint libs are public, so after you have created and saved a new symbol or footprint, others will be able to find your part and you will be credited as a contributor.   [https://easyeda.com/page/contribute](https://easyeda.com/page/contribute)​
 
-1、立创EDA可以快速地通过原理图创建PCB，甚至是复杂的多层原理图。
+### PCB Design
 
-在原理图下点击工具栏图标 **原理图转PCB** 即可快速转为PCB。  
+When you are satisfied with your schematic design and simulation results, you can then quickly proceed to produce your finished and populated PCB without leaving EasyEDA.
+
+EasyEDA's PCB Design canvas helps you to quickly and easily lay out even complex multilayer designs from schematics you have already created in the Schematic canvas or directly as a layout with no schematic.
+
+Passing an EasyEDA Schematic into the PCB Design editor is as easy as clicking a button: Just click the **Convert Project to PCB** PCB icon on the top toolbar!  
 ![](images/204_Introduction_PCB_ConvertToPCB.png)
 
-立创EDA也支持没有原理图的PCB设计。
-
-2、立创EDA具有大量的封装库文件，但你也可以通过创建新的封装文件，创建可以重新创建、通过修改编辑原有的封装、复制封装等方式创建。
-
+EasyEDA has extensive libraries of footprints. You can also build up your own library of unusual and specialized parts by copying and modifying existing parts or from scratch using EasyEDA's powerful footprint creation and editing tools.  
 ![](images/205_Introduction_PCB_PCB.png)
 
-3、为了方便查找和定位封装位置，立创EDA在左边面板提供了一个设计管理器。
+In a similar way as in the Schematic design canvas, to help you locate items and navigate your way around when working in the PCB Design canvas there is a PCB Design Manager.
 
-设计管理器可以很方便的查找元件(封装)，走线(网络)，焊盘(网络焊盘)，还有DRC错误列表。
+**Left Navigation Panel > Design**
 
-当点击任一项目后，画布中会将当前的项目（封装或者网络）进行居中高亮，以方便识别。
+The PCB Design Manager is a very powerful tool for finding components, tracks (nets) and pads (Net Pads).
 
-4、使用层工具可以显示你所需要的层，和编辑所在的层。你也可以修改PCB的层数和显示颜色，通过：**超级菜单 > 杂项 > 层配置...**
+Clicking on any item highlights the component and pans it to the center of the window.
 
-5、在设计规则检查对话框中，默认的走线宽度、间隙和通过孔尺寸都可以进行配置：**超级菜单 > 杂项 > 设计规则设置...**
+You can set up layers used in the PCB and their display colours and visibility using
 
-在你完成PCB设计并发送Gerber和钻孔文件给PCB厂生产前，设计规则检查几乎是最后的一步工作，所以在你开始PCB布线之前，最好先进行规则设置。
+**Super Menu > Miscellaneous > Layer Options...**
 
-在发送Gerber给PCB厂商之前，你需要使用Gerber查看器检查生成的gerber是否符合要求，这里推荐开源免费的Gerber查看软件[Gerbv: http://gerbv.geda-project.org/](http://gerbv.geda-project.org/) 
+The active layer and layer visibility can be selected using the Layers Toolbar.
 
-6、完成PCB后，你还可以把物料清单“BOM”表导出，以便于购买元器件：工具栏BOM图标。
+Default track widths, clearances and via hole dimensions can all be configured in the Design Rule Check dialog which is opened via:
 
-7、PCB你也可以导出高质量的文件 `SVG`, `.PNG` or `.PDF`。
+**Super Menu > Miscellaneous > Design Rule Setting...**
 
-8、PCB也可以和原理图一样对外进行分享。
+From first setting up the Design Rule Check (**DRC**) at the start of your board layout, running a DRC is almost the last step in checking your PCB design before you generate **Gerber** and **Drill** files for board manufacture ready to place your order for a finished PCB.
 
-9、PCB设计的尺寸在立创EDA是没有限制的，一般超过100cm x 100cm也是允许的，但是这需要你有一个很强大的电脑，因为在浏览器下，绘制大面积的PCB会产生卡顿现象。
+The last step is to check the Gerber and Drill files using an easy to install and use Free and Open Source Software Gerber Viewer: [Gerbv: http://gerbv.geda-project.org/](http://gerbv.geda-project.org/) 
 
-立创EDA默认支持6层板，但它可以支持更多， 所以若你需要更多层请联系立创EDA技术支持，联系方式请查看下方[寻求帮助](#寻求帮助)章节。
+While you are waiting for your PCB to be delivered, you can create a Bill of Materials (BOM) via:
 
-10、封装查找 
+**Super Menu > Miscellaneous > BOM Report...**
 
-PCB的封装查找与原理图的库文件查找一致，在“元件库”中，查找后，选择所需的封装点击“放置”即可放置在画布中。
+and you can produce professional quality `SVG`, `.png` or `.pdf` output files for your documentation.
+
+PCB Designs can be shared with colleagues and made public in the same way as Schematics.
+
+The size of PCB that you can produce using EasyEDA is almost unlimited: designs of over 100cm * 100cm are possible … but you might need a powerful computer for that.
+
+EasyEDA supports up to 6 layer PCBs by default but it is capable of handling more, so if you need more layers then please contact us as shown in the section on [How to get Help?](#How-to-get-help).
+
+
+**Search footprints**  
+
+Searching footprints is the same as searching symbols by using **Parts** in the Schematic.
+You can place the selected footprints in the canvas after the search.
 
 
 
 
-### 账号管理
+### Account Management 
 
-立创EDA是一种基于网络的服务，账号与数据均加密保存在服务器上，你最好创建一个帐户来管理自己的设计和元件库。创建一个帐号很简单，只要你愿意，你可以免费访问立创EDA的全部功能。  
+EasyEDA is a web-based service and although you are free to use it in Anonymous mode which you can do without creating an account, you are much better off creating an account to manage your own designs and parts libraries. Creating an account is easy and gives you free access to the full power of EasyEDA for as long as you wish.
 
-#### 注册登录
 
-在用户管理菜单，点击注册：
+#### Join
+
+Click  **Join...** on the **User Management** menu:
 
 ![](images/029_Introduction_Account-Join.png)
 
-点击后会打开一个新页面，该页面可以进行注册和登录：
+After clicking on **Join**, a new webpage about **Create an account**  opens.
 
 ![](images/030_Introduction_Account-Join-Open.png)
 
-输入相关信息后注册/登录即可。
-
-**注意：***因国家相关政策规定，所有注册账户必须登记手机号码；一旦你创建了帐户，你只有一次修改你的用户名的机会，请谨慎命名。*
+Just enter a username, invent a password, confirm it and type in an email address. A valid email address is needed so that we can send you a confirmation email before we create your account. This is also the address we will use to contact you with information or any questions about your PCB orders.
 
 
-#### 重置密码
+#### Login
 
-你的密码是经过加密处理的，立创EDA也不知道密码是什么，如果你忘记密码可以通过使用登录界面/用户菜单的“忘记密码”链接进行找回，系统会发短信给你进行确认，请确保你仍然使用原注册的手机号。在你要更换手机号码之前请及时在个人中心更换新手机号码。  
+The Login dialog image can be seen in the Join section above.
 
+After clicking on Login, you can enter the username or email and password to login to EasyEDA. If you use a private device, you can check **Remember Me**, so you don't need to login again each time you open EasyEDA.
+
+Alternatively, if you have a Google or Tencent QQ account, you can login in using [http://en.wikipedia.org/wiki/OpenID](http://en.wikipedia.org/wiki/OpenID); it is safe and easy.
+
+**Note:** *QQ login only applies to users who have logged in EasyEDA with QQ before.*
+
+
+#### Reset Your Password
+Your password is encrypted, so EasyEDA team doesn't know it, but you can reset it via your email. Click the **Lost Password** menu and type your email. If you can't get the email after 10 minutes, please send an email to us.
 ![](images/033_Introduction_Account-LostPassword.png)
 
 
-#### 团队协作
+#### Teams
+EasyEDA provides a team feature with which you can work seamlessly with your partners. You can work as if everyone is logged in under the same account, with full access to all components, Schematics, PCBs and Projects.
 
-立创EDA提供了团队功能，该功能可以使你和伙伴共同进行项目协作设计，当你和伙伴共同登录在团队账号下时，可访问团队的全部库文件，原理图，PCB和其他工程文件。
+**How to find the team function**
 
-**团队功能在哪**
-
-在个人中心[https://lceda.cn/account](https://lceda.cn/account)，存在一个团队选项。可创建团队，若已存在团队，点击后可直接切换至团队下。
+  Under the [dashboard](https://beta.easyeda.com/projects/mylists) , there is a team section.
 
  ![](./images/207_Introduction_Account_CreateTeam.png)   
 
 
-**如何创建团队**
+**How to create a team**
 
-1.如上面图所示，在登录后点击[https://lceda.cn/teams/create](https://lceda.cn/teams/create)进行创建新团队。
-
-2.在**用户菜单 > 团队 > 新建团队**  进行创建团队。  
-
+  There is a link as shown in the image above, or click [https://easyeda.com/teams/create](https://easyeda.com/teams/create) after you login, Or you can click **User Management > Teams > Create Team** to open this link to create a team.  
  ![](./images/208_Introduction_Account_CreateTeam_2.png)   
 
-创建完成后，点击团队进行切换至团队状态下，然后你邀请你的伙伴加入团队即可。  
-
+  And then you need to invite your partner(s) to join this team at Team Manage of the dashboard:
  ![](./images/211_Introduction_Account_CreateTeam_3.png) 
 
-**如何切换至团队下**
+**How to switch to team model**
 
-1) 进入个人中心切换。  
-   点击你创建的团队名称，然后网页会进行重定向，之后就会切换至团队下。
+  1) switch to the dashboard.
+   After you have created a team, click the team name and the dashboard will switch to showing only the team projects, files and components.
 
    ![](./images/209_Introduction_Account_SwitchToTeam.png)  
 
-   切换后你可以对你的队员/团队项目进行管理。
+   After switching to a team, there is a team management section where you can manage your team members, invite new team members and even delete the team.
 
-2) 在编辑器切换。  
-   在 用户菜单 > 团队 选项，选择然后点击你的团队名称即可切换在团队下的编辑器。当前编辑器用户名也会切换至团队名。
+  2) switch to the editor.
+   Under your personal menu, there is a sub menu allowing you to switch to a team or to your personal account.
 
    ![](./images/210_Introduction_Account_SwitchToTeamEditor.png)  
 
-**如何更新至团队**
+**How to Upgrade to a team**
+  If you want to contribute all of your designs to a team, you can use this function. First you need to create a team, then click the link, shown below, under the dashboard. 
 
-如果你想把你的设计贡献到团队中，可在个人中心中使用下图的更新至团队功能。
-
-  **注意：***若你进行了更新至团队操作，你的个人库文件，工程等均会移动至团队下，且不可逆！！！*
+  **Be careful！**, because after you do that, **all** of your components, projects will be moved to your team.
 
 ![](./images/212_Introduction_Account_UpgradeToTeam.png)  
 
-**团队功能使用技巧**  
+**Tips about the team function.**  
+1.If you switch to a team, you can't automatically use any Packages/Footprints which you have created under your personal account. You need to **Favorite** your personal package/components first. 
 
-1.如果你切换至团队下，你将不能在元件库中使用你原先个人账户下创建的库文件，如果要使用你必须先收藏你个人账号下的库文件，或者直接搜索库文件名称。
+2.You need to be aware that your team and your personal accounts are the different, separate accounts and that you can't use them both at the same time.  
 
-2.你必须了解到你的个人账户和团队账户是相对独立的账号，你无法在同一个浏览器的标签下同时使用。若要使用个人账户必须在其他浏览器打开。
+3.After making yourself the owner of a team, it is best to create any Components and Packages needed by the team under that team.
 
-3.在你成为团队所有者之后，最好为团队创建所需的库文件。
-
-4.如果你加入一个成员，并将他提名为会计师，他就可以处理团队的账单和发票。
-
-
-#### 个人偏好
-
-在用户菜单下，点击个人偏好：
-
-![](images/031_Introduction_Account-UserPreference.png)  
-
-其中，  
-
-- **热键同步：**指同步你设置的快捷键指服务器，默认勾选，不可取消。  
-	    
-- **语言：**设置默认语言，会同步至服务器。
-
-- **最大备份级数：** 每个打开的文档自动创建备份的数目。该备份是指备份至本地的数目，详细请查看下面的“恢复备份数据”。
-
-- **自动备份(分钟)：** 这是自动保存所有打开文档的时间间隔。
-
-- **保存到服务器：** 将你的个人偏好保存至服务器中(工具栏配置，个人库，快捷键设置， 语言设置等)。
-
-- **从服务器加载：** 立创EDA不会主动将你的个人偏好加载到本地，所以你必须进行手动加载。当你更换浏览器和电脑的时候也可以进行手动加载个人偏好。
-
-如果你没有保存个人偏好至服务器，点击从服务器加载将不会产生任何影响。
+4.If you add a member, nominated to be your accountant, to your team then they can deal the team billing and invoices.
 
 
-#### 恢复备份数据
+#### User Preferences
 
-没有什么数据是绝对安全，但是立创EDA会尽最大努力保障你的数据安全。
+When EasyEDA shows up the login success popup in the bottom right of the window, your user management menu will be look like this:
 
-立创EDA会为你已经打开的文件进行自动保存和创建备份，当你误删文件或需要之前的版本时，你可以使用恢复数据备份进行数据恢复。
+Click on **User Preferences**,  
 
-在 **用户菜单**，点击 **恢复备份数据** ，或者点击工具栏的 **恢复备份数据** 图标打开：
+![](images/031_Introduction_Account-UserPreference.png)
 
-![](images/032_Introduction_Account-CrashRecovery.png)
+**Maximum backup level**: every open document can be saved at up to this number of different revisions.
 
-选择你想要的文件版本后，点击“恢复”按钮即可在新标签打开，然后进行编辑保存即可。
+**Auto save (minutes)**: this is the time interval between auto saves of all your open documents.
 
-**注意：**  
+**Save to Server**: Save your preferences (Toolbar configurations, EasyEDA libs, Hotkey settings, language and so on) to the EasyEDA Server.
 
-- *立创EDA编辑器保存这些备份文件在你的本地电脑，而不是服务器，当你更换电脑后将无法使用自动备份的数据。*  
-- *自动备份是以浏览器缓存的方式进行保存，如果你清除了立创EDA网站的缓存，那么这些备份数据也会被清除。*
-- *若你已经清除了浏览器缓存，你还可以使用前面所说的“历史版本”功能找回想要的版本。已删除的文件可以在文件回收站找回：[https://lceda.cn/document/recycle](https://lceda.cn/document/recycle)*
+**Load from Server**: EasyEDA can't load your Preferences automatically but once you have saved them, you can load them manually. Then, when you change to a different computer or browser, you can load your preferences from the EasyEDA Server.
+
+If you have not saved any preferences then **Load from Server** will have no effect.
 
 
-#### 账号注销
 
-若你想注销你注册的立创EDA账号，你可以点击：[https://lceda.cn/account/close](https://lceda.cn/account/close)。
-注销前请告知原因，立创EDA将往更好的方面改善。
 
-### 快捷键
+#### Close Account
 
-立创EDA提供了很多快捷键供用户使用，每一个快捷键均可以进行配置。
+If you want to close your account, you can go to [https://easyeda.com/account/close](https://easyeda.com/account/close)  
+Before you close your account, please let us know why, and that will make us to be better.
 
-进入快捷键配置选项：
+### Hotkeys
+
+After a while of using an EDA tool suite, clicking all over the place with a mouse gets very tedious and seriously reduces your productivity. Keyboard shortcuts or Hotkeys avoid much of that. EasyEDA not only provides lots of hotkeys, but also every hotkey can be reconfigured.
+
+Under the Config toolbar, click the Hotkeys Setting... Menu which will open the Hotkey Setting dialog.
 
 ![](images/034_Introduction_HotkeySetting.png)
 
-或在“**超级菜单 > 杂项 > 热键配置**”处打开。
+To change a Hotkey, click anywhere in the row for the hotkey you want to change and then press your new key.
 
-点击你需要修改的选项，出现输入框后按下你的按键，再保存即可完成快捷键设置。
+For example, if you want to use R instead of space to rotate selected objects, click on the first row, then press `R`.
 
-**文档类型** 该列表示快捷键在对应的文档类型内是有效的。
+After you change the hotkey, don't forget to click Save Changes button.
 
-- **所有：** 在编辑器内所有的文件类型。
-- **原理图：** 原理图和原理图库文件。
-- **PCB：** PCB和PCB库文件。
+The **docType** column describes which type of EasyEDA document each hotkey applies to. **docType** has three types:
 
-相同的快捷键可以使用在不同的文档中，比如在原理图使用“C”键画圆弧，在PCB中是画一个圆形。
+- **ALL**: any document type in EasyEDA.
+- **SCH**: schematic and schematic libs
+- **PCB**: PCB and PCB libs.
 
-默认的快捷键列表如下。
+The functions of some hotkeys may change between docTypes. For example, the hotkey `C` draws an Arc in SCH, but draws a circle in PCB.
+
+A list of all the available default hotkeys is given below. 
 <table>
    <tr>
-      <td>序号</td>
-      <td>文档类型</td>
-      <td>快捷键</td>
-      <td>功能</td>
+      <td>ID</td>
+      <td>docType</td>
+      <td>shortcut</td>
+      <td>function</td>
    </tr>
    <tr>
       <td>0</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Space</td>
-      <td>选择所选图形</td>
+      <td>Rotate selected objects</td>
    </tr>
    <tr>
       <td>1</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Left</td>
-      <td>向左滚动或左移所选图形</td>
+      <td>Scroll Or Move selected left</td>
    </tr>
    <tr>
       <td>2</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Right</td>
-      <td>向右滚动或右移所选图形</td>
+      <td>Scroll or Move selected right</td>
    </tr>
    <tr>
       <td>3</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Up</td>
-      <td>向上滚动或上移所选图形</td>
+      <td>Scroll or Move selected up</td>
    </tr>
    <tr>
       <td>4</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Down</td>
-      <td>向下滚动或下移所选图形</td>
+      <td>Scroll or Move selected down</td>
    </tr>
    <tr>
       <td>5</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+X</td>
-      <td>剪切</td>
+      <td>Cut</td>
    </tr>
    <tr>
       <td>6</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+C</td>
-      <td>复制</td>
+      <td>Copy</td>
    </tr>
    <tr>
       <td>7</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+V</td>
-      <td>粘贴</td>
-   </tr>
-   <tr>
-      <td>8</td>
-      <td>所有</td>
-      <td>Ctrl+Shift+V</td>
-      <td>跨文档粘贴</td>
+      <td>Paste</td>
    </tr>
    <tr>
       <td>9</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Delete</td>
-      <td>删除所选</td>
+      <td>Delete Selected</td>
    </tr>
    <tr>
       <td>10</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+A</td>
-      <td>全选</td>
+      <td>Select All</td>
    </tr>
    <tr>
       <td>11</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Esc</td>
-      <td>取消绘制</td>
+      <td>Cancel current drawing</td>
    </tr>
    <tr>
       <td>12</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+Z</td>
-      <td>撤销</td>
+      <td>Undo</td>
    </tr>
    <tr>
       <td>13</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+Y</td>
-      <td>重做</td>
+      <td>Redo</td>
    </tr>
    <tr>
       <td>14</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+S</td>
-      <td>保存</td>
+      <td>Save</td>
    </tr>
    <tr>
       <td>15</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>A</td>
-      <td>放大</td>
+      <td>Zoom In</td>
    </tr>
    <tr>
       <td>16</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Z</td>
-      <td>缩小</td>
+      <td>Zoom Out</td>
    </tr>
    <tr>
       <td>17</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>X</td>
-      <td>水平翻转</td>
+      <td>Flip Horizontal</td>
    </tr>
    <tr>
       <td>18</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Y</td>
-      <td>垂直翻转</td>
+      <td>Flip Vertical</td>
    </tr>
    <tr>
       <td>19</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>G</td>
-      <td>吸附</td>
+      <td>Snap</td>
    </tr>
    <tr>
       <td>20</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+F</td>
-      <td>查找元件</td>
+      <td>Find Component</td>
    </tr>
    <tr>
       <td>21</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>Ctrl+D</td>
-      <td>设计管理器</td>
+      <td>Design Manager</td>
    </tr>
    <tr>
       <td>22</td>
-      <td>所有</td>
+      <td>ALL</td>
       <td>D</td>
-      <td>拖动</td>
+      <td>Drag Tool</td>
    </tr>
    <tr>
       <td>23</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>W</td>
-      <td>绘制导线</td>
+      <td>Draw Wire</td>
    </tr>
    <tr>
       <td>24</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>B</td>
-      <td>绘制总线</td>
+      <td>Draw Bus</td>
    </tr>
    <tr>
       <td>25</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>U</td>
-      <td>总线分支</td>
+      <td>Bus Entry</td>
    </tr>
    <tr>
       <td>26</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>N</td>
-      <td>网络标签</td>
+      <td>NetLabel</td>
    </tr>
    <tr>
       <td>27</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>Ctrl+Q</td>
-      <td>标识符 VCC</td>
+      <td>NetFlag VCC</td>
    </tr>
    <tr>
       <td>28</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>Ctrl+G</td>
-      <td>标识符 GND</td>
+      <td>NetFlag GND</td>
    </tr>
    <tr>
       <td>29</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>P</td>
-      <td>放置管脚</td>
+      <td>Place Pin</td>
    </tr>
    <tr>
       <td>30</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>L</td>
-      <td>绘制折线</td>
+      <td>Draw Polyline</td>
    </tr>
    <tr>
       <td>31</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>O</td>
-      <td>绘制多边形</td>
+      <td>Draw Polygon</td>
    </tr>
    <tr>
       <td>32</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>Q</td>
-      <td>绘制贝塞尔曲线</td>
+      <td>Draw Bezier</td>
    </tr>
    <tr>
       <td>33</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>C</td>
-      <td>绘制圆弧</td>
+      <td>Draw Arc</td>
    </tr>
    <tr>
       <td>34</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>S</td>
-      <td>绘制矩形</td>
+      <td>Draw Rect</td>
    </tr>
    <tr>
       <td>35</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>E</td>
-      <td>绘制椭圆</td>
+      <td>Draw Ellipse</td>
    </tr>
    <tr>
       <td>36</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>F</td>
-      <td>自由绘制</td>
+      <td>Freehand Draw</td>
    </tr>
    <tr>
       <td>37</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>T</td>
-      <td>放置文本</td>
+      <td>Draw Text</td>
    </tr>
    <tr>
       <td>38</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>I</td>
-      <td>修改选中器件</td>
+      <td>Edit Selected Symbol</td>
    </tr>
    <tr>
       <td>39</td>
-      <td>原理图</td>
+      <td>SCH</td>
       <td>Ctrl+R</td>
-      <td>运行当前文档</td>
+      <td>Run the Document</td>
    </tr>
    <tr>
       <td>40</td>
       <td>PCB</td>
       <td>W</td>
-      <td>绘制走线</td>
+      <td>Draw Track</td>
    </tr>
    <tr>
       <td>41</td>
       <td>PCB</td>
       <td>U</td>
-      <td>绘制圆弧</td>
+      <td>Draw Arc</td>
    </tr>
    <tr>
       <td>42</td>
       <td>PCB</td>
       <td>C</td>
-      <td>绘制圆形</td>
+      <td>Draw Circle</td>
    </tr>
    <tr>
       <td>43</td>
       <td>PCB</td>
       <td>N</td>
-      <td>放置尺寸</td>
+      <td>Draw Dimension</td>
    </tr>
    <tr>
       <td>44</td>
       <td>PCB</td>
       <td>S</td>
-      <td>放置文本</td>
+      <td>Draw Text</td>
    </tr>
    <tr>
       <td>45</td>
       <td>PCB</td>
       <td>O</td>
-      <td>放置连接线</td>
+      <td>Draw Connect</td>
    </tr>
    <tr>
       <td>46</td>
       <td>PCB</td>
       <td>E</td>
-      <td>绘制铺铜</td>
+      <td>Draw copperArea</td>
    </tr>
    <tr>
       <td>47</td>
       <td>PCB</td>
       <td>T</td>
-      <td>切换至顶层</td>
+      <td>Change To TopLayer</td>
    </tr>
    <tr>
       <td>48</td>
       <td>PCB</td>
       <td>B</td>
-      <td>切换至底层</td>
+      <td>Change To BottomLayer</td>
    </tr>
    <tr>
       <td>49</td>
       <td>PCB</td>
       <td>1</td>
-      <td>切换至内层1</td>
+      <td>Change To Inner1</td>
    </tr>
    <tr>
       <td>50</td>
       <td>PCB</td>
       <td>2</td>
-      <td>切换至内层2</td>
+      <td>Change To Inner2</td>
    </tr>
    <tr>
       <td>51</td>
       <td>PCB</td>
       <td>3</td>
-      <td>切换至内层3</td>
+      <td>Change To Inner3</td>
    </tr>
    <tr>
       <td>52</td>
       <td>PCB</td>
       <td>4</td>
-      <td>切换至内层4</td>
+      <td>Change To Inner4</td>
    </tr>
    <tr>
       <td>53</td>
       <td>PCB</td>
       <td>P</td>
-      <td>放置焊盘</td>
+      <td>Place Pad</td>
    </tr>
    <tr>
       <td>54</td>
       <td>PCB</td>
       <td>V</td>
-      <td>放置过孔</td>
+      <td>Place Via</td>
    </tr>
    <tr>
       <td>55</td>
       <td>PCB</td>
       <td>M</td>
-      <td>量测距离</td>
+      <td>Measure</td>
    </tr>
    <tr>
       <td>56</td>
       <td>PCB</td>
       <td>L</td>
-      <td>改变布线角度</td>
+      <td>Change Route Angle</td>
    </tr>
    <tr>
       <td>57</td>
       <td>PCB</td>
       <td>-</td>
-      <td>减少线宽</td>
+      <td>Decrease Routing Width</td>
    </tr>
    <tr>
       <td>58</td>
       <td>PCB</td>
       <td>+</td>
-      <td>增加线宽</td>
+      <td>Increase Routing Width</td>
    </tr>
    <tr>
       <td>59</td>
       <td>PCB</td>
       <td>Alt+-</td>
-      <td>减少栅格尺寸</td>
+      <td>Decrease Snap Size</td>
    </tr>
    <tr>
       <td>60</td>
       <td>PCB</td>
       <td>Alt++</td>
-      <td>增加栅格尺寸</td>
+      <td>Increase Snap Size</td>
    </tr>
    <tr>
       <td>61</td>
       <td>PCB</td>
       <td>H</td>
-      <td>高亮网络</td>
+      <td>Highlight Net</td>
    </tr>
    <tr>
       <td>62</td>
       <td>PCB</td>
       <td>Shift+M</td>
-      <td>删除所有铺铜</td>
+      <td>Remove All Copper Area</td>
    </tr>
    <tr>
       <td>63</td>
       <td>PCB</td>
       <td>Shift+B</td>
-      <td>重建所有铺铜</td>
+      <td>Rebuild All Copper Area</td>
    </tr>
-   <tr>
-      <td>64</td>
-      <td>所有</td>
-      <td>K</td>
-      <td>适合窗口</td>
-   </tr>
-   <tr>
-      <td>65</td>
-      <td>所有</td>
-      <td>Shift+X</td>
-      <td>交叉选择模式</td>
-   </tr>
-   <tr>
-      <td>67</td>
-      <td>所有</td>
-      <td>Shif+F</td>
-      <td>浏览和查找元件库</td>
-   </tr>
-
 </table>
 
-### 基础技巧.
+### Basic Driving Skills.
 
-为了方便使用立创EDA进行设计，你需要了解一些基础的使用技巧，请打开编辑器并新建一个原理图文件进行体验。
-
-### 历史版本 
-
-如果你想找回你原来的一些文件版本，你可以在单击文件右键后选择历史版本。  
-
+#### Version History
+It is easy to use this function, right click on the document for which you need the version history in like in the image below:  
 ![](./images/188_Introduction_VersionHistory.png)
 
-点击后会打开一个页面，里面会列出最近的历史版本。  
  
-![](./images/189_Introduction_VersionHistoryWebpage.png),  
 
-点击历史版本号，可以在编辑器打开查看，找到你想要的后，保存即可。
+After clicking on the version history link, you will get a list of all of the versions like in the image below.    
+![](./images/189_Introduction_VersionHistoryWebpage.png)  
 
-**注意:***请不要频繁对你的文件进行保存操作，否则这里会产生大量的历史版本，要找到你想要的版本将会非常困难。立创EDA会在你每保存一次时生成一个历史版本编号，为减少服务器负担，请尽量不要频繁进行保存操作。*
+Click the version number, you can open the saved file in the editor, if this is what you need, you can save it to your project and delete your bad file.
+
+**Note:**  
+*1. For now all of the versions are marked as number, we will allow you to add a tag soon.*  
+*2. Don't save your files too frequently, or you will get lots of versions and it will be hard to find the exact one you want.*
 
 
+#### Crash Recovery
 
+No operating system, software or network is perfect, so sometimes things can go wrong. Having your Desktop or web browser freeze or your broadband connection drop, two hours into laying out a PCB, could spoil your day.
 
+However, with EasyEDA, your day will be just fine.
 
-#### 改变画布大小
+This is because EasyEDA auto saves and makes backups of all your open files to your computer so crash recovery is built into EasyEDA.
 
-当你鼠标移动经过画布边沿时（上方，左右），会出现一条高亮的线段，点击上方的那条可以打开/关闭工具栏，点击左右两边的线段的中间按钮可以关闭/打开导航面板和属性面板，以增大画布面积。左右两边的线段还可以用鼠标拖动改变面板大小，以符合使用的习惯。  
+In **user management menu**, click on **Crash Recovery**. Or you can click **Crash Recovery** button on the top Toolbar as below:
 
-![](images/194_Introduction_Skill_ResizingCanvas.png)
+![](images/032_Introduction_Account-CrashRecovery.png)
 
-#### 光标样式
+Select the file which you would like to **recover**, then click the Recover button; your file will be opened in a new tab. 
 
-如果你不喜欢十字光标样式，你可以选择关闭它。**超级菜单 > 查看 > 十字光标**
+**Please note:**  
+-	*EasyEDA saves these crash recovery files on your computer and not on the EasyEDA server. Therefore you cannot recover files from a crash on one computer or browser by changing to a different computer or browser.*  
+-	*And if you cleaned your browser's cache, the recovery files will disappear.*
+-	*If you make a mistake to delete a file and remove the cache already, maybe you can find your document back via : [https://easyeda.com/document/recycle](https://easyeda.com/document/recycle).*
+
+To use EasyEDA, you need to be familiar with a few basic terms and concepts. The best way to learn them is to open up EasyEDA, open a new schematic:
+
+**Document > New > Schematic** , and play!
+
+#### Resizing the canvas area
+
+Hovering the mouse cursor over the areas indicated by the three green ellipses will bring up blue toolbar toggle lines. Clicking on them will toggle the visibility of their associated top, right and left toolbar areas to expand the canvas area. The vertical lines can also be dragged horizontally to resize the panels.  
+
+![](images/194_Introduction_Skill_ResizingCanvas_15.png)
+
+#### Cursor Style
+
+ Some users don't like the cross cursor, so you can change it to arrow cursor like in the image below.
 
 ![](./images/191_Introduction_The-Clear-UI_CrossCursorChange.png)
 
-这两种光标如下，左边是无十字光标，右边是十字光标样式。 
+These difference between these options is as below: 
 
 ![](./images/190_Introduction_The-Clear-UI_CrossCursor.png)
 
-#### 批量清除
+#### Clear
 
-如果你觉得你的原理图和PCB太乱，需要批量删除时，你可以：
+If you think your schematic or PCB looks terrible, and you want to redraw all units, you can:
 
-- **超级菜单 > 编辑 > 清除**，或者CTRL + A全选后，按Delete键删除。
-- 删除文件并创建一个新的。  
-- 使用工具栏的 **全局删除** 功能。  
+- **Super Menu > Edit > Clear**.  
+- Delete this schematic and create a new one.  
+- Use **Global Delete** on the top toolbar **Tools**  
   ![](./images/272_Introduction_Skill_GlobalDelete.png)
 
 
-#### 鼠标左击
+#### Left clicking
 
-与其他EDA软件相似： 
+Similar to other EDA software: 
 
--   点击一个对象并已经选中它，可以在右边属性面板查看它的属性；
--   选中后长按可以保持它，和拖动它；
--   在空白区长按并拖动鼠标可以创建一个选择区域；
--   在选择区域内的对象可以通过鼠标进行整体移动；
--   双击文本可以对它进行编辑；
+-   Click on an item to select it;
+-   If over a selected item, click and hold to drag a selected item;
+-   If not over a selected item, clicking and holding while dragging creates a selection box;
+-   the selection box, using click and drag to the right, selects everything inside the box;
+-   the selection box, using click and drag to the left, selects everything inside and intersected by the box;
+-   Double click on a text area to edit it;
+-   The exact left click functionality depends on what item is being selected and in what Canvas the item exists (Schematic or PCB).
+
+#### Right clicking
+
+EasyEDA does not support right click context menus in the Schematic or PCB Canvas. Instead, right clicking executes a context sensitive command:
+
+-   When you are placing a symbol, after a right click, the active symbol will be removed;
+-   When you are drawing a shape such as a polyline, after a right click, the polyline will be stopped at the place where you right click but the mouse will remain as a **cross**, so you can draw another shape;
+-   To get out of the current active context sensitive command such as  placement or drawing mode and go back to **select mode**, just double right click.
+
+**Ctrl+Right** clicking anywhere in the Schematic, waveForm or PCB Canvas drags the canvas around within the EasyEDA window.
+
+#### ESC key
+
+Pressing the `ESC` key ends the current drawing action but does not exit the current active context sensitive command mode (i.e. it does not return the cursor to select mode).
+
+#### Select more shapes
+
+-   Ctrl+left clicking on items adds those items to your selection;
+-   Clicking and holding creates a selection box;
+-   Creating a selection box, using click and drag to the right, selects everything inside the box;
+-   Creating a selection box, using click and drag to the left, selects everything inside and intersected by the box;
+
+#### Zoom in and Zoom out
+
+-   Using the middle mouse button:
+-   Roll forward to zoom in; 
+-   Roll back to zoom out;
+-   Using hotkeys, the default hotkey `A` for zoom in, `Z` for zoom out.
+
+**Please note:**   
+*Do not roll your mouse at the same time as pressing the CTRL key. Some browsers will zoom the whole site, not just the canvas in the EasyEDA window. If this happens, just press `Ctrl+0` to reset the browser zoom.*  
 
 
-#### 鼠标右击
+#### Double clicks
 
-立创EDA暂时不支持画布内右键菜单。
-
--   当你进行放置元器件或者封装时，单击右键可以停止放置动作；
--   当你进行画线时，单击右键可以停止当前画线，以便进行第二处画线操作；
--   当你画多边形等形状时，画线位置会停止在你右击的位置，然后你还可以改变画线形状继续画线。
--   当你双击右键时会退出当前操作。
-
-
-#### ESC键
-
--  按单次“ESC”键结束当前的绘图操作，但不会退出当前的命令模式。
--  按两次“ESC”键推出当前的绘图操作，将光标返回到选择模式
-
-
-#### 选择多项目
-
--   CTRL + 左键一个个点击选择你所需要的对象。
--   也可以直接按住左键拖动鼠标，批量选择对象。
--   CTRL + A全选对象。
-
-
-#### 放大缩小
-
--   使用鼠标滚轮进行放大缩小
--   向前滚动放大，等同快捷键Z
--   向后滚动缩小，等同快捷键A
-
-**注意：***有些浏览器在按住 CTRL + 滚轮 会导致整个浏览器浏览页面变大，而不是滚动画布，这时你可以按CTRL + 0 恢复界面。*  
-
-
-#### 鼠标双击
-
-鼠标左键双击目前仅对文本有效，双击任意文本可以打开可调节大小的文本编辑框，你可以输入你想要的文本。
+Double clicking any text area opens a resizable text box to allow you edit the text inline.
 
 ![](images/040_Introduction_TextEdit.png)
 
-在编辑器框内按Enter键回车换行，鼠标点击框外部区域关闭编辑框。
+Press enter to create new line. Click outside the text box to close it.
+
+#### Pan
+
+-   Right click anywhere in the Schematic, WaveForm or PCB Canvas and Hold down right button to drags the canvas around within the EasyEDA window.
+-   If your canvas is bigger than the EasyEDA window and is showing scroll bars, you can use either the scroll bars or the Arrow keys to scroll the canvas to pan.
+-   When drawing a wire, a graphic line or shape that you wish to extend beyond the edge of the EasyEDA window holding down the left mouse button after starting the line will pan the canvas to keep the drawn item inside the window.
+
+**Tip:**
+*If you use Chrome, and cursor is in the canvas while pressing CTRL or ALT key and rolling your mouse, the canvas will move vertically, and when pressing SHIFT and rolling your mouse, the canvas will move horizontally.*
 
 
-#### 平移
+#### Rotate
 
--   在画布内，可以通过长按右键/鼠标中键任意拖动画布位置。
--   你还可以使用滚动条和方向键平移画布。
--   当你绘制走线时，鼠标移动在最边沿后会停止。
+After selecting one or more items, you can rotate the selected items using:
 
-**注意：***若你的浏览器右键拖动失效，请关闭浏览器手势。*
+**Super Menu > Edit > Rotate** or click top ToolBar **Rotate and Flip > Rotate Left or Rotate Right**
 
-**提示：***如果你使用的是Chrome浏览器，鼠标在画布内时，按CTRL或ALT键，并滚动滚轮，画布可以垂直平移；若按住SHIFT键，并滚动滚轮，画布可以水平平移。*
-
-
-#### 旋转
-
-当选择一个或多个对象时，你可以将他们旋转：**超级菜单 > 编辑 > 旋转** 或者点击工具栏的旋转图标。
+or by pressing the default rotate hotkey: `Space`.
 
 ![](images/200_Introduction_Skill_Rotate.png)
 
-或者按下默认的快捷键“空格键”。图中Q零件就是翻转后的形态。
+**Please note:**  
+*Rotating a multiple selection rotates each item about its own symbol origin. It does not rotate the items about the centroid of the group of items.*
 
-**注意：***旋转多个对象时，是以他们各自的原点进行旋转，而不是以整体中心旋转。*
+#### Flip
 
-
-#### 翻转
-
-翻转是以中心轴进行翻转，如下方的三极管Q2，就可以由Q1翻转而来。
+To place a Q2 as shown in the schematic below you need to Flip the item.
 
 ![](images/201_Introduction_Skill_Flip.png)
 
-翻转与旋转放在一起，**超级菜单 > 编辑 > 翻转** 或者点击工具栏的旋转图标。
+You can Flip one or more selected items using:   
 
-使用默认快捷键`X`进行水平翻转，`Y` 进行垂直翻转。
+**Rotate and Flip > Flip Horizontal or Flip Vertical**  from the toolbar,  
+
+or by pressing the default flip hotkeys: `X` to Flip Horizontal, `Y` to Flip Vertical.
 
 
-#### 对齐
+#### Align
 
-立创EDA提供大量的对齐工具，可以很方便的对齐原理图符号以及PCB封装：
+EasyEDA provides many align option features, you can align your components or footprints very easily, it include:  
 
-- 左对齐
-- 右对齐
-- 顶对齐
-- 底对齐
-- 水平居中对齐
-- 垂直居中对齐
-- 水平等距分布
-- 垂直等距分布
-- 左边沿等距分布
-- 右边沿等距分布
-- 对齐网格
+- Align Left
+- Align Right
+- Align Top
+- Align Bottom
+- Align Horizontal Center
+- Align Vertical Center
+- Distribute Horizontally
+- Distribute Verticall
+- Distribute Left Edges Equidistantly
+- Distribute Top Edges Equidistantly
+- Align Grid
 
 ![](images/275_Introduction_Align.png)
 
-#### 移到顶层或低层
+#### Bring to Front and Send to Back
 
-该功能可以很方便将你想要的物件移动在最前面或者后面，以避免物件被最前面的遮挡。
-如图的长方形和椭圆形均已经填充有颜色，分别是椭圆移到顶层和底层时的不同区别。
+In the image below, both the rectangle and the ellipse are filled.
 
 ![](images/202_Introduction_Skill_BringToFront.png)
 
+If you draw the ellipse before drawing the rectangle, the rectangle will overlap and therefore hide the ellipse. To reveal the ellipse, select the rectangle and then use:
 
-#### 文档标签切换
+**Align > Send to Back**  from the toolbar.
 
-编辑器可以很方便地切换文档标签，只要鼠标左键按住标签，往左右拖动即可。
-  
-![](images/279_Introduction_EditorTabSwitch.png)
+To bring the rectangle to the front again, you could select it and use:
 
-#### 保存文件在本地
+**Align > Bring to Front**
 
-尽管立创EDA已经将你的文件保存在服务器，如果你想保存在本地，立创EDA也有提供该功能。
-你可以直接在工程“ 右键 > 下载工程 ”，或者直接在 “文档” 按钮使用 “EasyEDA格式源码” 保存文件。
+or select the ellipse and then use:
 
-具体可以浏览[导出EasyEDA源码文件](./Export.htm#导出EasyEDA源码文件)章节。
+**Align > Send to Back**
+
+#### Documents Tab Switch
+
+It's easy to fit your documents tab location.  
+![](images/279_Introduction_EditorTabSwitch_15.png)
+
+#### Saving Your Work Locally
+
+Although EasyEDA saves all your files on our Server, sometimes you may want to save your work locally and EasyEDA provides a hack way to do this.
+
+More detail you can view at [Export EasyEDA Source](./Export.htm#Export-EasyEDA-Source) section.
 
 
-## 关于升级 
+## About upgrade 
 
-如果你使用的是网页版立创EDA，编辑器可以很容易的自动升级。立创EDA的升级方式是自动升级，不提供手动升级和暂停升级功能，也不提供降级选择。  
+**Version Rule**
 
-由于立创EDA使用的是一种网页APP缓存技术([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/))，可以让你在离线时继续使用，但该技术有可能使在线升级失效。所以当立创EDA发布了新版本，你的编辑器一直没有自动更新至最新版本时，可以尝试以下操作：
- 
-- 关闭浏览器，并重新打开。
-- 打开编辑器等待一段时间，若没有更新再进行刷新网页操作。
-- 刷新后查看关于是否已经更新成功。
+EasyEDA version number is ReleaseYearsCount.ReleaseMonth.ReleaseCountOfThisMonth. For example, v4.9.3 is the fourth year release of EasyEDA, and at the ninth month of this year, EasyEDA had released 3 times.
 
-如果更新不成功，那么你需要清除浏览器缓存再次打开编辑器：   
+**Version Upgrade**
 
-**注意：***清除缓存会把原来的本地备份数据也清除！具体可看前面的 “恢复备份数据” 章节。*
+If you use EasyEDA online, it can seamlessly upgrade by itself. However,EasyEDA uses an App Cache technique to allow you to use EasyEDA offline ([W3C HTML5 Offline Web Applications](http://dev.w3.org/html5/offline-webapps/)) which may delay the automatic upgrading process. Therefore, if you want to upgrade to the latest version immediately, you can follow the two simple steps below.
 
-**1.Firefox**  
 
--  点击 **菜单 > 选项 > 隐私 > 历史记录 > 清空近期历史记录**；
--  选择 **缓存** 后，点击立即清除。
--  重新打开立创EDA编辑器即可。
+1. Check the About... dialog; 
+
+2. If the Built Date is older than 2017/06/01:
+
+Close your browser open EasyEDA again.
+
+If the Built Date is still showing older than 2017/06/01:
+
+Close your browser and open EasyEDA again.
+
+If the Built Date is at or newer than 2017/06/01, you don't need to do anything.
+
+**Note:** **2017/06/01** *is just an example.*  
+
+If those two steps don't work, you may need to clear your browser's cache:
+
+**1.Mozilla Firefox**  
+
+-  Go to “Preferences… > Advanced > Network > Offline Storage”,
+
+  -Click on “Clear now”,
+
+  -Reload easyeda again.
 
 ![](images/199_Introduction_Upgrade_RemoveFirefoxCache.png)  
 
 
 **2.Chrome**  
 
--  在地址栏输入 **chrome://appcache-internals/**   
--  找到**lceda.cn**并且点击 “**Remove Item**”。
--  然后打开编辑器即可。  
+-  Open the following URL: **[chrome://appcache-internals/](chrome://appcache-internals/#)**   
 
-  ![](images/044_Introduction_Upgrade_RemoveChromeCache.png)  
+-  Look for easyeda.com and click “Remove”  
 
--  或者使用快捷键 **Ctrl+shift+Delete**或者打开 **设置 > 隐私设置和安全性 > 清除浏览数据**  来删除所有缓存。
+-  reload easyeda again.  
 
+
+    ![](images/044_Introduction_Upgrade_RemoveChromeCache.png)  
+
+-  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.
   ![](images/005_Introduction_Upgrade_RemoveChromeCache_2.png) 
 
+## How to get help
+
+It is easy to ask for help for any problem with EasyEDA, just click on **Let's Chat**, and then complete and Submit the Support request:
+
+![](images/004_Introduction_Help_Lets-Chat.png)  
+
+Please ask your questions in English or Chinese and don't worry if your English is not good! (Or your Chinese!)
+
+1.  You can also ask your questions directly in the [EasyEDA forum](https://easyeda.com/bbs_lists_2.htm). We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a bit busy, so you may need to wait for a while.
+2.  If you don't want your help requests to be public then you can drop us an email to [support@easyeda.com](mailto:support@easyeda.com)
+3.  If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
+
+
+**Please note that:**  
+*EasyEDA team may not have the time or resources to help you fix all your problems; we may just be able to help you to fix problems commonly encountered by newbies, such as using a drawing polyline in place of a wire, finding a spice model for a simulation or selecting the right PCB footprint.*
+
+[[1]](#ftnt_ref1) *Please note that although some browsers or plug-ins allow you to use gestures, EasyEDA does not work with gestures, so you should disable this function.*
+
+[[2]](#ftnt_ref2) *Simultaneous editing is not yet fully supported: care must be taken because the last save by any collaborator overwrites all previous saves.*
+
+[[3]](#ftnt_ref3) *It can also find the value text but it cannot step through multiple components with the same value.*
+
+[[4]](#ftnt_ref4) *Take a few moments to think about your username because this is the name that other users will see on your designs and posts if you choose to share them or make them public. Once you have created an account, you cannot change your username.*
+
+[[5]](#ftnt_ref5) *You can use upper and lower case letters, numbers and symbols to make a strong password but don't forget that the password entry is case sensitive.*
+
+[[6]](#ftnt_ref6) *Except ordering of PCBs directly from EasyEDA.*
+
+[[7]](#ftnt_ref7) *If you always open EasyEDA in the same browser on the same machine, your Anonymous files will appear under the Anonymous Files folder in the left hand panel but you should not rely on this as a way of keeping track of Anonymous files.*
+
+Please email [support@easyeda.com](mailto:support@easyeda.com) when you need any help.
 
 
 
-## 寻求帮助
-
-立创EDA为广大用户提供了友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)  
-目前立创EDA和立创社区的账号体系还没有打通，所以需要分别注册，在未来会打通两个账号系统。
-
-1.  你可以在社区直接提问需求帮助，技术支持或资深用户会及时查看并回复。
-2.  如果你不想别人看到你的问题，你可以联系技术支持。建议使用社区提问，以便作问题记录，方便其他用户查看和搜索，加速学习进度。
-3.  如果你发现了编辑器的BUG，包括使用上的操作BUG，系统库文件的错误，请及时联系支持人员进行修复。
-
-技术支持联系方式：QQ 3001956291，或者邮件：3001956291@qq.com，立创EDA技术交流群：229233498 (申请加入需提交注册邮箱，以便管理员验证)
 
 
-**注意：**  
+# Creating The Schematic 
+During this tutorial we will create a simple Schematic design to guide you in using EasyEDA Schematic capture.  
 
--	*如果是使用技巧上面的问题，请先查看本帮助文档后尝试自行解决，本文档已经阐述立创EDA几乎所有功能。若仍然不能解决，可通过以上方法联系技术支持人员。*  
--	*由于立创EDA没有太多的人力资源去专门处理这些问题，所以解决你的问题可能会有一定的滞后，技术支持人员会尽快回复解决。*  
--	*当前技术支持人员更多的是协助新用户对编辑器的熟悉和使用。*
+![](images/088_Schematic_CreateTheSchematic.gif)
 
-<br><br><br><br>
-
-# 原理图绘制
  
-阅读以下章节，可以引导你快速熟悉如何设计一个原理图。 
 
- 
-## 画布设置
+## Canvas Settings
 
-点击空白区可在右边属性面板查看和修改画布属性。画布属性内的参数均可以被自行配置。网格和栅格尺寸单位为像素(pixel)。
+You can find the canvas Properties setting by clicking on any the blank space in the canvas.
 
 ![](images/017_Introduction_The-Clear-UI_Canvas-Attributes.png)
 
-原理图中大部分对象，在选中它后，基本都可以在右边属性面板查看和修改它的属性。
+As described earlier, background and grid colours and the style, size, visibility and snap **attributes** of the grid can all be configured.
 
-### 网格
+The canvas area can be set directly by the Width and Height or by using the available preset frame sizes.
 
-网格是用来标识间距和校准元器件符号的线段。单位像素(pixel)。
+### Grid
 
-**网格可见**：  是 或 否
+**Visible Grid** : Yes or No
 
-**网格颜色**：任意有效颜色
+**Grid Color**: Any valid colour
 
-**网格样式**：实线 或 点
+**Grid Style**: Line or Dot
 
-**网格大小**: 为了确保元器件位置准确，默认为 10, 20, 100。
+**Grid Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100.
 
-网格的线条和画布背景颜色可以通过输入你想要的颜色的十六进制值直接设置，或者通过点击颜色值框中打开的调色板上的颜色来设置颜色。
+**Grid** (and background) colour can be set directly by entering the hexadecimal value of the colour you want or by clicking on a colour in the palette that opens when you click on the colour value box:
 
 ![](images/047_Schematic_CanvasBackground.png)
 
-### 栅格
+### Snap
 
-栅格是元器件符号和走线移动的格点距离，以确保对齐。
+**Snap**: Yes or No. The default hotkey is G. Pressing this key toggles switching snap to grid on and off.
 
-**吸附**：是 或 否。默认快捷键是 `G`， 按下后吸附功能循环开启关闭。关闭吸附后，元器件和走线可以任意移动不受栅格限制。
+**Snap Size**: To ensure proper alignment of all EasyEDA parts, it is advisable to set in 10, 20, 100 but any valid number can work, such as 0.1, 1, 5.
 
-**栅格尺寸**： 为了确保元器件和走线对齐，默认设置栅格大小为 10、20、 100，但允许设置为其他数值如 0.1、 1、 5等。数值越小，元器件和走线移动的进度越小，越精准。
+It is strongly recommended that you keep **Snap = Yes** all the time. Once items are placed off-grid it can be very difficult to reset them back onto the grid. Off-grid placement can result in wires looking as though they are joined when in fact they are not and so causing netlisting errors that can be hard to track down.
 
-**ALT键栅格**：当按下ALT键时启用该栅格大小。
+If you need to draw detailed parts of new symbols or footprints that need to go between grid points, try to reduce the grid spacing to draw these elements and then reset the grid back to your chosen default value as soon as you have completed that part of the drawing. Setting Snap=No should only really be used as a last resort.
 
-建议一直保持吸附开启状态。若之前的元器件摆放和走线是在关闭吸附状态下的，再次打开吸附功能后，原有的项目将很难对齐栅格，强行对齐后将可能会使原理图变得很不美观，如走线倾斜等。
+**ALT Sanp**: Snap size when pressing the `ALT` key.
 
-## 电气工具
 
-若你关闭了电气工具或者没有正常打开，你可以在工具栏处打开。
+## Wiring Tools
+
+If you have hidden your tools , you can open them from here: 
+Top toolbar **Config Gear Icon > Toolbars > ...**
 
 ![](images/014_Introduction_The-Clear-UI_Settings-Toolbars.png)
 
-**注意：** *电气工具内的功能均具有电气特性，如果你想画一些圆弧和线框等请使用“绘图工具”。*  
+**Note:** *All of the commands in Wiring Tools are electronics related. Don't use a wire when you just need to draw a line, shape or an arrow: use Drawing Tools instead.*  
 
-![](images/191_Introduction_WiringTools.png)
+![](images/191_Introduction_WiringTools.gif)
 
-### 导线
+### Wire
 
-有三种模式进入绘制导线模式。
+There are three ways to enter the wire mode in EasyEDA.
 
-1.  在“电气工具”点击“导线”图标；
-2.  按快捷键“W”；
-3.  直接点击元器件的引脚端点然后移动鼠标 。编辑器会自动进入绘制导线模式。
+1.  Click the **Wire** button from the **Wiring Tools** palette.
+2.  Press the `W` hotkey.
+3.  Click on the end of a component pin (where the grey pin dot appears if you select the component): 
 
-下图是一个已经连线完成的原理图。
+![](images/051_Schematic_HowToWire.gif) 
+
+EasyEDA automatically enters **Wire** mode.
+
+Here is a screenshot of the **Astable Multivibrator LED project schematic** after wiring:
 
 ![](images/052_Schematic_HowToWire-AfterWire.png)
 
-**移动元件时导线跟随**
 
-当你用鼠标移动一个元器件时，它所连接的导线会相应的垂直/水平跟随移动。
+**Moving Components And Wires:**
 
-![](images/273_Schematic_WireAndComponentMove_20.png)
+If you place a component, such as a resistor, on top of a wire then the wire breaks and reconnects to the ends of the component.
 
-**自动断线**
+When moving selected components using the mouse, they will drag attached wires with them (“rubber band”) to some extent but please be aware that the rubber banding feature has some limitations. When moving selected components most wire will move vertically and horizontally. Using the arrow keys will not rubber band. Selected wires do not rubber band.
 
-当你放置一个电阻或者电容在导线上时，导线会自动连接引脚两端，并去除中间的线段。
+![](images/273_Schematic_WireAndComponentMove.gif)
 
-![](images/293_Schematic_Wire_2.png)
+A selected wire can be moved directly by clicking on it using the mouse or by the arrow keys. If a wire is selected by clicking on it using the mouse then green grab handles will appear at the ends and vertices.
 
-当你需要连接并排的电阻或电容时，可以直接从左往右走线，线段会自动连接并移除多余走线。
+**Auto adjust connection**
 
-![](images/293_Schematic_Wire_1.png)
+If you put a resistor or capacitor on a wire, the wire will auto connect the pins as below:
 
-### 总线
+![](images/295_Schematic_Wire_2.png)
 
-当你绘制的原理图需要很多网络的时候，对每个网络都进行画线将非常困难和耗费时间，此时你可以使用“总线”功能。总线必须和总线分支共同使用。
+When you want to wiring a series of resistors which are in a row, you can just wire through them,  and then you will find they all be connected.
+
+![](images/295_Schematic_Wire_1.png)
+
+
+
+### Bus
+
+When you design a professional schematic, perhaps it will use a lot of wires. If you're wiring one by one, much time would be wasted, and then you need to use `Bus`.
 
 ![](images/228_Schematic_Bus.png)  
 
-### 总线分支
+### Bus Entry
 
-绘制了总线之后，需要在总线放置总线分支，并连接所需的网络连线或者放置网络标签。如上图所示。
+If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other nets with wires. such as in the above image.
 
-### 网络标签
+### Net Label
 
-**网络标签** 可以用来标识导线网络名， 或者标识两个导线间的连接关系。 使用快捷键“N”可以快速放置网络标签。  
-当你点击它，可以在右边的属性面板修改它的属性。
+**NetLabel and NetFlag**
 
-![](images/053_Schematic_NetLabel_20.png)
+**NetLabel** can be used to give your wires names to help you find them and identify any misconnections. You can find the **NetLabel** from the Wiring Tools palette or by using the `N` hotkey. When selecting the netlabel, you will find its attributes in the right hand Properties panel: 
 
-如果只想更改它的名字，直接双击即可修改。编辑器会记住你上次使用的网络标签名称，并在下一次继续使用该名称，若你修改的网络名称以数字结尾，那么下次放置时网络标签的名称将自动加1。如你放置了VCC1，那么下一个为VCC2。
+![](images/053_Schematic_NetLabel.gif)
 
-### 标识符
+You can change its name and colour. If you only want to change its name, it may be easier to just double click the netlabel.
 
-**标识符** 的作用与“网络标签”相似，使用快捷键 `Ctrl+G` 放置 **GND** ，使用`Ctrl+Q` 放置 **VCC**，并且你可以修改它们的名字。
+
+
+### Net Flag
+
+**NetFlag** is the same as NetLabel, you can find the NetFlag from the Wiring Tools palette or using the `Ctrl+G` hotkeys for **GND** or `Ctrl+Q` for **VCC**. You can also change its name, for example from **VCC** to **VDD**:
 
 ![](images/054_Schematic_NetFlag.png)
 
-下图使用网络标签(Q3B等)和GND标识符。
+The screenshot below is after adding NetLabels   
+
+-	indicated by the little **egg marks**   
+  -and a **GND** NetFlag   
+
+This schematic is almost finished.
 
 ![](images/055_Schematic_NetFlagAndNetLabel.png)
 
-电气工具栏为你提供了：数字地GND标识符、模拟地GND标识符、 电源标识符VCC和+5V以方便使用。
+
+Wiring Tools palette provides NetFlag: Digital GND, Analog GND, VCC and +5V for your convenience.
 
 
-### 网络端口
+### Net Port
 
-当你需要绘制很多网络导线，或者分页原理图图时，可以使用 “网络端口”功能；在同一原理图下时，使用网络端口与网络标签功能一致。
+When you don't want to route too many wires, how about trying  `Net Port` :  
 
 ![](images/232_Schematic_WiringTools_NetPort.png)
 
-使用网络端口可以使原理图变得清晰简洁，没有过多的导线，只需给每个端口设置一个网络名称。
+It will make your schematic look more clean, and you just need to set each Net Port a net name.
 
 ![](images/231_Schematic_NetPort.png)
 
 
-### 非连接标志
+### No Connect Flag
 
-非连接标志用于原理图上元器件不使用或需要悬空的引脚，避免出现引脚没有进行网络连接而在设计管理器内报错。   
+You can find the `NO Connect Flag` via wiring tool,   
 
 ![](images/056_Schematic_NoConnectFlagIcon.png),   
 
-如下图，如 Q2_1 脚不添加非连接标志，在设计管理器中会出现错误标志。
+In the below schematic, if you don't add a `NO Connect Flag`, there is an error flag in the nets collection of the design manager. 
 
 ![](./images/057_Schematic_NoConnectFlagError.png)   
 
-在添加非连接标志后，错误消失。
+After adding a `NO Connect Flag`, the error disappears.  
 
-![](./images/058_Schematic_AddNoConnectFlag.png)  
+![](./images/058_Schematic_AddNoConnectFlag.gif)  
 
-**注意：** *非连接标志只能直接在元器件的引脚端点上使用，不能在导线上使用。*
+**Note:** *`NO Connect Flag` only works on the symbol's pin directly.*
 
-### 电压探针
-
-电压探针是在电路图仿真时使用，用于侦测电路电压参数，与实物万用表量测电压时功能一致。
+### Voltage Probe
 
 ![](./images/259_Schematic_VoltageProbe.png) 
 
-仿真运行后，产生的波形就是根据放置的电压探针进行采样生成。
+EasyEDA provides a simulation feature for the schematic. After the simulation is running, you will see the waveform where you placed the voltage probes in the circuit.
 
 ![](images/098_SpiceSimulation_BuildTheCircuit.png)
 
-更多关于仿真的内容请查阅 [Spice仿真](./SpiceSimulation.htm#Spice仿真) 章节。
+For more detail about the simulation, please check the [Simulation](./SpiceSimulation.htm#Spice-Simulation) section.
 
-### 管脚
+### Pin
 
-当你在原理图或原理图库文档新建一个带电气特性的原理图符号时，你必须为它放置管脚(引脚)，否则它将无法通过导线连接。使用默认快捷键 “P”可以快速放置管脚。
+When you create a new symbol in schematic and schematic lib, you must use `Pin` to create pins for the new symbol, otherwise your symbol can't be wired with wires.
 
 ![](images/230_Schematic_WiringTools_Pin.png)
 
-更多信息请查阅 [原理图库文件：管脚](./SchematicLibs.htm#管脚) 章节。
+For more information please refer to the [Schematic Lib: Pin](./SchematicLibs.htm#Pins) section.
 
-### 组合与解散
+### Group/Ungroup
 
-在电气工具栏的组合/解散标识符。
+On the **Wiring Tools** palette there is the **Group/Ungroup Symbol…** button.
 
 ![](images/072_Schematic_GroupUngroupIcon.png)
 
-它与“原理图库向导”相似，可以帮助你快速的创建原理图库符号；也可以解散原理图库符号，以便进行修改。
+Just like the **Symbol Wizard**, this tool is also for you to quickly create schematic library symbols.
 
-**组合**
-
-在原理图下，使用它可以很容易地画出如下图U2的样式符号。 
+Using the **Symbol Wizard** you can only create generic symbols but how can you quickly and easily create symbols like these?
 
 ![](images/073_Schematic_GroupSymbol.png)
 
-如下图的555定时器元件，当你画完长方形，放置了管脚，并对管脚全部重新命名，此时全选全部组件，再点击组合/解散按钮会弹出一个符号命名窗口。
+Here's how.
+
+EasyEDA allows you to do something that very few other EAD tools support.
+
+Using the `P` Hotkey, you are allowed to add a PIN directly onto the Schematic canvas. So you can add 8 Pins, draw a rectangle from the Drawing Tools palette and add 555 as text to form a symbol for the NE555 like the one shown below:
 
 ![](images/074_Schematic_GroupSymbol-PIN.png)
 
-此时你可以输入你所组合的元件的编号，名称，封装信息。
+Now comes the clever bit.
+
+Up to this point you have a collection of separate pins, a drawn rectangle and some text that are all separate items with no particular association with each other.
+
+So now select all of the items and click the Group/Ungroup Symbol… button. A dialog will be opened:
 
 ![](images/075_Schematic_GroupSymbol-555.png)
 
-当你点击“确认”后该元件符号已经创建完成。你可以继续进行原理图设计，其与在元件库放置的元器件功能一致。
+After you click OK, all those separate elements will be grouped together to form your new symbol directly in the schematic.
+
+Using the group function, you can create any symbol in the schematic, easily and quickly.
+
+How cool is that?
+
+So what does Ungroup do? Try selecting a symbol and then click the Group/ungroup command to see what happens!
+
+**Note:** *The pin numbers and names cannot be moved independently of the pin.*
+
+If it's still difficult to understand, don't worry, you can see the process in the dynamic image below:
+![](images/193_Schematic_Group.gif)
 
 
+## Drawing Tools
 
-**解散**
+### Sheet Setting
 
-与组合刚好相反，它可以打散元件符号，以便就地按需修改，无需通过修改元件库文件。
+It is now possible to add design notes to the frame and the frame selection, for example A4, which can assist in aligning and improve the look of printed schematics and PCB designs. 
 
-**注意：** *你在这里创建的元件符号不会保存在你个人的库文件中。若你想保存在个人库中，请新建原理图库文件。*
-
-
-## 绘图工具
-
-### 图纸设置
-
-立创EDA默认给新建的原理图设置了A4大小的表格图纸。你可以很方便地修改图纸大小。
-
-可以通过绘图工具的“图纸设置”或者 **超级菜单 > 杂项 > 图纸设置**进行修改。
+Click the frame button like in the image below, Or via: **Super Menu > Miscellaneous > Sheet Setting**
 
 ![](./images/214_Schematic_SheetSetting.png)
 
-在图纸右下角还可以通过双击修改作者，日期，名称等信息。
+As illustrated in the image below:
 
 ![](./images/216_Schematic_Sheet.png)  
 
-当点击图纸本体时，可以在右边属性面板进行修改大小、颜色等相关信息。  
+And you can edit the blue text when you've selected the text attributes or double clicked it.
 
+
+The bottom right zone can be selected and dragged or the frame can be dragged and deleted.
+
+When you've selected the bottom right zone, you can edit the sheet attributes:
 ![](./images/215_Schematic_SheetSetting_Attributes.png)  
 
-### 线条
+### Line
 
-在原理图中，你可以绘制任意方向的线条。修改线条样式，颜色，填充颜色等。
+In the Schematic editor, you can draw a line with any direction. You can change its attribute as in the image below:
 
-![](./images/233_Schematic_DrawingTools_Line_48.png)  
+![](./images/233_Schematic_DrawingTools_Line.gif)  
 
-### 贝塞尔曲线
+### Bezier
 
-使用贝塞尔曲线，你可以画出很酷的图案。
+With this tool, you can draw a pretty cool pattern.
+![](./images/234_Schematic_DrawingTools_Bezier.gif)  
 
-![](./images/234_Schematic_DrawingTools_Bezier_123.png)  
+### Arc
 
-### 圆弧
+You can draw the arc of any shape.  
+![](./images/235_Schematic_DrawingTools_Arc.gif) 
 
-支持绘制不同形状的圆弧。
+### Arrow Head
 
-![](./images/235_Schematic_DrawingTools_Arc_93.png) 
+You can add arrow head to marking text or important part.
+![](./images/236_Schematic_DrawingTools_Arrow.gif) 
 
-### 箭头
+### Text
 
-箭头一般在文本前做标识用。
+Text attributes provide many parameters for setting:
 
-![](./images/236_Schematic_DrawingTools_Arrow_37.png) 
+-	**Text**: You can change text in inner box or double click the text. For every new text, the default text is `Text`.
+  -**Color**: Defines text color.
+  -**Font-family**: It provides 12 fonts for choosing.
+  -**Font-Size**: Defines Text size.
+  -**Font-weight**: Defines Text weight.
+  -**Font-Style**: It contains (auto), normal, italic.
+  -**Text-anchor**: It contains (auto), start, middle, end, inherit.
+  -**Baseline**: It contains (auto), use-script, no-change, reset-size ... and so on.
+  -**Text type**: types include comment and spice.
 
-### 文本
+The editor will remember your last text parameters. 
 
-文本属性提供多种参数供你设置。
-
--	**文本**：你可以修改为你想要的文本。新建时默认为Text。  
--	**颜色**：可自定义字体颜色。  
--	**字体**：提供12字体选择。  
--	**字体大小**：最大支持72号字体大小。    
--	**字体粗细**：提供13种粗细选择。  
--	**样式**：包含自动、正常、斜体。  
--	**文本锚点**: 包含类型有 (auto)、start、middle、end、inherit.  
--	**基线**：文本放置位置的基线类型。  
--	**文本类型**：是属于备注文本还是Spice仿真描述。
-
-在同一原理图内，编辑器会记住上一个文本的属性参数，在放置时自动套用上次的属性。
-
-![](./images/237_Schematic_DrawingTools_Text.png) 
+![](./images/237_Schematic_DrawingTools_Text.gif) 
 
 
-### 图片
+### Image
 
-点击图片功能会生成一个默认图片。
+When you select Image from the Drawing Tools palette, an image place holder will be inserted into the canvas:
 
 ![](images/041_Introduction_ImageInsert.png)
 
-点击这个图片在右边属性面板可以编辑它的属性，修改图片。
+Select the place holder, so you can see the image's attributes in the right hand Properties panel:
 
 ![](images/042_Introduction_ImageEdit.png)
 
-可以通过超链接插入图片，也可以从本地上传。插入的超链接必须是以图片格式后缀名(.PNG，.JPG，.SVG)结尾，如：[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
+Set the URL of your image. For example, setting the URL to:
 
-之后你可以看到图片如下：
+[http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png](http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/555_Pinout.svg/220px-555_Pinout.svg.png)
+
+will make your image look like this:
 
 ![](images/043_Introduction_ImageURL.png)
 
-**注意：***目前立创EDA不能为你上传的图片创建图库，若使用超链接上传图片请使用有效图床。*
+Please note: at present, EasyEDA cannot host images, so you need to upload your images to an image sharing site such as [http://www.imgur.com](http://www.imgur.com).
 
-### 拖移
+### Drag
 
-拖移是整体移动，并且断开连接。
+If you want to move some kind of parts and wires, you can use drag.  
+Or you can select the parts and wires area first and move them.
 
-![](images/238_Schematic_DrawingTools_Drag_55.png)
+![](images/238_Schematic_DrawingTools_Drag.gif)
 
-### 画布原点
+### Canvas Origin
 
-立创EDA画布的默认原点是在左上角，你可以随意定义画布原点。 
+Canvas origin default is set at left top corner of the schematic sheet, but you can set it where you want via Canvas Origin.  
 
-其它方式设置可通过 **超级菜单 > 杂项 > 画布原点**。
+For another way to set canvas origin, you can try **Super Menu > Miscellaneous > Canvas Origin**.  
 
-![](images/239_Schematic_DrawingTools_CanvasOrigin_83.png)
+![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
 
 
-## 元件库搜索与放置
+## Search symbols
 
-在左边导航面板有 "**基础库**" 和 "**元件库**" ，
+On the left hand Navigation panel you will find "**EElib**" and "**Parts**" ,
 
-1) **基础库** 包含了一些常用的基础元件，并且支持仿真。基础库不支持自定义。
+1)  **EELibs** contains ready made symbols for a wide range of components and which can be simulated.
 
 ![](images/045_Schematic_EElib.png)
 
-基础库有一些零件样式包含美式和欧式，你可以随意选择你喜欢的样式。点击零件右下角可以选择它相应的封装和参数，编辑器会记住你选择的参数以便下次应用。
+Many of these components have optional US and EU style symbols, we split them, so you can select those you like. Click on the drop down list or right click to popup the context menu, it contains many packages or parameters. EasyEDA will remember your choices for the next time.
 
-使用筛选器可快速找到想要的零件，比如输入“res”或者“电阻”可快速显示出电阻。
+Don't forget to use Filter to locate a component fast. For example, you just need to type `res` to find all of resistors:
 
 ![](images/046_Schematic_EElib-res.png)
 
-单击零件后移动鼠标至画布即可放置，无需拖动。立创EDA不支持拖动放置。
-
-2) **元件库**，或者使用快捷键“SHIFT + F”调出。
-会打开元件库搜索框，输入零件名称后搜索即可。
+2) **Parts**,  or press the hotkey combination `Shift+F`.  
+then you will see a dialog as shown in the image below.
+Simply type your part number or symbol's name to Search.
 
  ![](images/026_Introduction_Parts.png)
 
-在搜索结果里可以选择你想要的类别，然后单击选择你所需的零件，再点击搜索框下方的“放置”即可放在画布中。你也可以直接移动鼠标至画布也可以进行放置。
+and then click the “Table of contents” to open the categories list to choose your components. 
 
-**立创可贴片零件**  
+From there you can scroll up and down to browse parts from each category.
 
-为了方便用户选择立创EDA可帮忙贴片的零件，立创EDA单独建立了一个“立创可贴片零件”库，该库是“立创商城”库的子集。  
+Suppose you wanted the find the **MAX232** (which converts signals from an [RS-232](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FRS-232&sa=D&sntz=1&usg=AFQjCNFt_BArd4HZuR1QqCUxvKGW3ki3UA)  serial port to signals suitable for use in [TTL](http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTransistor-transistor_logic&sa=D&sntz=1&usg=AFQjCNFoI3eJYGc8PWqUdnfqHGREfTZccw)  compatible digital logic circuits). Simply type **Max232** into the Search box and press Enter:
 
+![](images/026_Introduction_Parts.png)
+
+When you hover the mouse over the picture of the Schematic symbol or PCB footprint, you will find a toolbar with "Edit”, “Place”, “More” buttons.
+
+**LCSC Assembly Components**
+
+We add an LCSC Assembly Components option of the Parts, It's easy to choose which component can be assembled by LCSC. Yes, We  provide the assembly service.
 ![](images/282_Schematic_Parts_AssemblyComponents.png)
 
-**放置**：一些经常使用的零件，无需收藏，直接点击放置即可放在画布中。
+**Place**:
+For parts you use infrequently, you don't need to Favorite them; just Place it into your canvas directly.  
 
-**编辑**：这里可以编辑你自己的库文件；或者修改其它用户贡献的，系统库的库文件以适应你的需求，保存后会成你个人的库文件。
+Note: 
 
-**更多**：你可以对一些非个人库文件进行收藏和克隆，可以对自己的库文件进行修改(标题，描述，标签)，删除，添加子库等操作。  
+- *EasyEDA supports multi-documents so please make sure that you are placing the part into the right (active) document. The active document is the one with the highlighted tab.*  
+
+- *You can't place a Schematic symbol into a PCB file, or a PCB Footprint into a schematic.*
+
+**Edit**:
+If you want to create your own version of a symbol or footprint then you can open an existing part from the library to use as a template, edit it and then save it to your local **My Parts** library in **Parts** of the Navigation Panel.
+
+**More**:
+We can't promise that every component in the library is free of errors so please check all symbols and footprints carefully before you commit to a PCB order.
+
+If you do find a mistake in a component, please [let us know(mail to support@easyeda.com)](mailto:support@easyeda.com) so that we can fix it.
+
+Components with sub parts (multi-device packages).
+
+When you find a component with sub-parts, you can't Place or Edit it, but you can Favorite and Clone it as your own part, which you can then edit.
 
 ![](images/027_Introduction_Parts-More.png)
 
-**注意：**    
+### Find Components In The Schematic
 
--	*系统库的库文件立创EDA会努力确保100%正确，但仍可能存在错误，如果你发现系统库和立创商城的元件或封装存在错误，还请联系我们进行修复。QQ3001956291，或者邮件：3001956291@qq.com。*
--   *立创EDA支持多页原理图，选中的零件只能放置在当前打开的文档中。*  
--   *你无法放置原理图库符号到PCB，同样，你也无法放置PCB封装到原理图中。*
+Finding individual **components** in a dense schematic can be very time consuming. EasyEDA has an easy way to find and jump to components:
 
-### 原理图中查找元件
+**Super Menu > Miscellaneous > Find Component…**
 
-在原理图中查找元件，可以通过：**超级菜单 > 杂项 > 查找元件** 或者使用默认快捷键：“CTRL + F”。
+(or `Ctrl+F`)
 
 ![](images/022_Introduction_FindComponent.png)  
 
-**注意：** *你需要点击“确认”或者按回车键才会进行搜索。*
+**Note:** *You have to click OK in this dialog or use the Enter key.*
 
-该功能只能查找元件编号，无法查找文本，网络名称等。点击确认后会将零件高亮至画布中央。
+This feature will find, highlight and center in the window, parts by their Prefix (or reference designator).  However, it cannot be used to find net names or other text in a schematic.
 
-如果需要搜索网络，可以使用设计管理器进行搜索，快捷键 “CTRL + D”。
+This is where the Design Manager comes in.
 
+**Left Navigation Panel > Design**, or use hotkey `ctrl+D`.
 
-## 调整元件
+The Schematic Design Manager is a very powerful tool for finding **components**, **nets** and **pins**.
 
-你可以通过以下方式调整元件位置：
+Clicking on a Component item **highlights** the component and pans it to the center of the window.
 
--	长按元件后用鼠标移动元件位置；  
--	选中元件后用键盘的方向键移动；
--	选中元件后按空格键翻转元件
--	选中元件后使用对齐工具调整位置。
+![](images/023_Introduction_DesignManagerFindComponent.png)
 
-![](images/050_Schematic_AdjustingComponents_46.png)
-
-
-
-## 交互选择模式
-
-这个功能是用来跳转原理图符号和PCB封装之间的对应位置。在原理图选中一个零件后，点击“交互选择模式”或者使用快捷键 “SHIFT + X”，即可切换至PCB并高亮选中的零件的封装。
- 
-![](./images/192_Schematic_CrossProbe.png)  
-
-**注意：** *在使用该功能前，你若尚未打开PCB，编辑器会自动为你打开。*  
-
-
-
-
-## 放置元件子库
-
-当一个元件存在太多引脚时，把它全部画在一个库文件中将会非常耗费空间，所以可以通过创建子库来进行多模块组合该元件。  
-
-如搜索74HC04DB，一个二进制转换零件。如下图所示，该零件存在7个子库。
-
-![](images/059_Schematic_Mutil-Components_1.png)
-
-当依次放置它的子库在原理图时，如下图所示。
-
-![](images/059_Schematic_Mutil-Components.png)
-
-**注意：** *如果你只放置第一个子库，并放置多次，编号会从U1.1，U2.1，U3.1开始，所以一般放置第一个子库后需要依次放置其余子库。*
-
-更多关于元件子库的信息清查看[原理图库文件：元件子库](./SchematicLibs.htm#元件子库)
-
-
-## 设计管理器
-
-当原理图太大，和比较复杂时，很容易出现连接错误，这时可以使用设计管理器来进行查找错误。
-
-使用快捷键“CTRL + D”或者在左边导航面板直接点击“设计管理器”打开。
-
--	**筛选器**: 方便地查找元件编号，封装名称，网络名，管脚名。
--	**器件**：选中一个零件后会在画布中高亮该零件，选中下方的Part Pins的管脚时，画布会出现提示线注明是哪个管脚。
--	**网络**：这里列出所有网络，每个网络至少连接两个引脚，否则这里会提示错误标志。
--	**Net Pins/Parts Pins**：这里列出网络连接到的引脚或元器件的所有引脚。
+Clicking on a Part pins item brings up a temporary pointer:
 
 ![](images/024_Introduction_DesignManagerClickComponentNet.png)
 
-**注意：***若工程下存在多个原理图时，设计管理器内只会显示当前打开文档的元件与网络信息。故跨原理图的单个网络端口和网络标签可能会出现错误标志，请忽略即可。*
 
-## 封装管理器
+## Placing Components
 
-如果你想批量修改封装，想知道零件引脚对应封装哪个焊盘，你可以使用封装管理器。
+Find the component which you plan to place to your schematic, then move your mouse to the canvas and left click. If you want to add more, just left click again. To end the current sequence of placements, right click once or press `ESC`.
 
-有两种方式打开封装管理器：
+Don't try to Drag and Drop a component to the canvas: EasyEDA team thinks that Click-Click to place components will be easier to use than a Click-Drag mode.
 
--	在工具栏点击齿轮图标 > 封装管理器。
+![](images/048_Schematic_PlacingComponents.gif)
 
+## Rotating the Prefix and Value (Name) of components
+
+The default Prefix and Value (or name) of EasyEDA components are horizontal. To change them to vertical like this...
+
+![](images/049_Schematic_RotatingPrefixAndValue.gif)
+
+...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you're done.
+
+## Adjusting Components
+
+About adjusting components you can:
+
+1.  Move components with your mouse
+2.  Move components with the arrow keys.
+3.  Find components with the Design Manager via the `CTRL+D` hotkey: select the component in the Design Manager to pan it to the centre of the canvas and then move it with your mouse.
+4.  Align the components:
+
+![](images/050_Schematic_AdjustingComponents.gif)
+
+
+
+## Cross Probe
+
+![](./images/263_Schematic_CrossProbe.png)  
+
+This tool is used to cross probe from chosen objects on the current schematic to its corresponding counterparts in the PCB, or from PCB Footprints to corresponding  counterparts in the schematic. 
+
+**Note:** 
+
+-	*You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
+And don't forget to use the hotkey `SHIFT+X`.  
+
+![](./images/192_Schematic_CrossProbe.gif)  
+
+
+## Cross Probe And Place
+
+If your schematic have a lot of components, it will be difficult to layout the PCB , so EasyEDA provides a powerful function "Cross Probe And Place".
+ 
+Cross Probe And Place will make the footprints' location match the schematic's parts' location as much as it possibly can.
+
+![](./images/295_Schematic_CrossProbeAndPlace1.png)
+
+**How to use**: 
+-	[Converting Schematic to PCB](https://easyeda.com/Doc/Tutorial/Schematic.htm#Converting-Schematics-To-PCB) first, and save at current project.
+-	Select the components area by mouse in the schematic, and then click the "Cross Probe And Place", hotkey "CTRL + SHIFT + X".
+-	The editor will switch to the PCB, and choose the footprints as you selected for waiting for placing.
+-	Right click to place, and the mouse will keep the drag status, its easy for adjusting the footprints' location.
+
+![](./images/295_Schematic_CrossProbeAndPlace2.png)
+
+**Notice**:
+
+-	*You don't need to open PCB first before using this function in the schematic. Editor will open the PCB automatically.*  
+-	*If your project has many PCBs, and didn't open anyone yet, the editor will open the first one automatically; If you already open a PCB, and this function will be valid for this PCB.*
+
+
+
+## Design Manager
+
+With large schematics it can be hard to find the components quickly. Sometimes, you may make a mistake such as wiring to a wrong component pin. So you need a tool to help you out. **Design Manager** is just the tool.
+
+Just press the `CTRL+D` hotkey to open the Design Manager.
+or click it via on the left navigation panel:
+![](images/062_Schematic_DesignManager.png)
+
+
+1.  **Filter**: You can find your components or net name easily: for example, if you want to find all capacitances, you just need to type `C`;
+2.  **Components**: Lists all the components in this schematic. Clicking on a Component item highlights that component and pans it to the center of the window.
+3.  **Nets**: Lists all the nets in this schematic. A net must connect at least two Pins, or the net name will be marked as a red error.
+4.  **Net Pins/Parts Pins**: Lists all the pins of the selected net name or components.
+
+If you click the **Q1** Pin **1:VCC**, EasyEDA will show you where it is with a temporary marker from the top left of the canvas:
+
+![](images/063_Schematic_DesignManagerClickComponentNet.png) 
+
+
+## Footprint Manager
+
+Want to batch modify components? Can't identify the corresponding relationship between component pins and footprint pins? Don't worry, EasyEDA can do this.
+
+There are two ways to open the footprint manager:
+
+- Click top toolbar Tools icon:  
   ![](images/264_Schematic_FootprintManager.png) 
 
--	选中你想要的零件后，在右边属性面板处点击封装输入框，即可弹出封装管理器。
+- Click the package input box of custom attributes when you've selected a component:  
   ![](images/265_Schematic_FootprintManagerPullOut.png)
 
-1、打开封装管理器后，它会自动检查你零件的封装是否存在，是否正确。如果零件没有指定封装，或封装不在个人库和系统库中，或零件引脚编号与封装焊盘编号无法正常对应时， 封装管理器会在零件名前出现错误图标，并使零件名标红。    
+**1.** Footprint manager will check your parts package correct or not automatically.  If the part without the package or this package doesn't exist in EasyEDA Libraries, or if the part's Pins doesn't correspond the package's Pads correctly, the footprint manager will show the red alert.   
+For example, If your part U1 has 2 pins, pin number are 1 and 2, pin name is A and B, but you assigned a footprint has 2 pads, [pad number](./PCB.htm#Pad) are A and B, but the part's pin number doesn't match the pad number, so the the footprint manager will alert red, in order to solve this:
 
--	例如：你的零件U1有两个引脚，编号分别是1、2，名称分别是VCC和GND；但是你用的封装的焊盘编号是A、B，所以左边列表会报错标红，要修正错误要么你将1、2改成A、B，要么将封装的焊盘编号A、B改成1、2；要么更换封装。
+-	method 1: [change part's pin number](./Schematic.htm#Pinmap-Modify-symbol-information) as A and B.
+-	method 2: change package's pad number as 1 and 2.
+-	method 3: find an other package and update.  
 
-2、在零件和封装的预览窗口，你可以用鼠标点击拖动，滚轮放大缩小预览图。 
-
+**2.** In the preview area, you can zoom in, zoom out and pan with mouse.
 ![](images/281_Schematic_FootprintManagerEnhance.png)
 
-**注意：**   
+### Update Package
 
--	*如果你的原理图使用了数量较多的不同名称的封装，封装管理器在检测封装焊盘编号与元件引脚编号的对应关系时，会与服务器进行封装数据查找和对比，这将花费一定时间，请耐心等待。*   
--	*如果你的工程下存在多个原理图文件，打开封装管理器时会将全部原理图打开，并加载所有元件。*
+If you want to change the Package, for example, select a component such as Q1, from **TO-92** TO **TO220**, you just need to click in the package input box. EasyEDA will popup the footprint manager dialog. You can follow the instructions. 
 
+-	Type **TO220** into the search box and search,   
+-	Select the **TO220** package,   
+-	Verify it in the preview box,  
+-	then press the **Update** button.   
 
-### 更新封装
+After that you will find you have changed the package to **TO220**.
 
-如果你想更新封装，比如下图的Q1，从 **TO-92** 更新至 **TO220**。
-
--	在封装管理器搜索框输入**TO220**，然后搜索；
--	选择搜索结果中的**TO220**封装；
--	在预览窗口中检查是否正确；  
--	然后点击“更新”按钮。   
-
-然后所选的零件封装已经更新为 **TO220**。
-
-**注意：**   
-
--	*为了确保你使用的封装已存在于立创EDA的封装库中，请使用封装管理器更新而不是直接在封装输入框填入封装名称。*   
--	*更新封装后，若该封装不在你的封装库中，立创EDA会自动将该封装加入你的收藏中。*
+**Note:** *To ensure that you use a package type that is already in the EasyEDA libraries, it is recommended that you use this technique to change component packages rather than just typing a package type directly into the package text box.*
 
 ![](images/066_Schematic_UpdatePackage.png)
 
 
-**批量更新封装**
+**Batch Update/Modify Packages**
 
-如果你想批量修改封装，可以按住“CTRL”键之后，通过鼠标逐一选择所有需要修改的零件，为防止选错，不支持按“SHIFT”批量选择。如果零件太多，可以在筛选框输入封装名称进行筛选需要修改的零件，如筛选`AXIAL-0.4`。  
-如果你想选择自己的封装，可以在右上角“封装分类”下拉菜单选择“我的库文件”进行选择。
+If you want to batch modify components' packages, in the footprint manager dialog you can press `CTRL` and select all components you want. If your schematic has many components, you should filter them first with package name. Such as in the below .gif which will show you how to batch modify resistors' packages from `AXIAL-0.3` to `0603`.  
+If you want to use your own packages, you can select **My Parts** on Pattern Libraries area.
 
-![](images/266_Schematic_FootprintManager_BatchUpdate.png)
+![](images/266_Schematic_FootprintManager_BatchUpdate.gif)
 
-**编辑引脚映射**
+**Modify Pin Map Information**
 
-你还可以在封装管理器里修改零件的引脚信息，包括编号和名称。其中Pin Name是指该元件的引脚名称；Pad Number是指元件的引脚号，此处并非指预览窗口封装的焊盘号。
-
-
-## 元件属性
-
-选中一个零件之后，可以在右边属性面板查看或修改它的属性参数。
-
-1、**元件属性：** 你可以修改元件的名字和编号，并设置它们是否可见。还可以修改器件信息。
-
-![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
-
-2、**自定义属性：** 在这里你可以修改元件的供应商，供应商编号，制造商，制造商编号，封装等。Mounted是指该零件是否在PCB板上贴片或者插件，该处在BOM体现。
-
-3、**添加自定义参数：** 当你选中一个零件，可以它新增参数，若你勾选了“In BOM”，那么该项参数会在BOM表中体现。
-
-![](./images/060_Schematic_AddNewParameter.png)
+And you can modify component's pin map information in here.
 
 
-## 元件引脚信息修改
+## Annotate
 
-当你需要修改一个元件引脚信息，你需要选中它，
+After creating a schematic, it is quite likely that you have component Prefixes (reference designators) that are in no particular order on the canvas. You may also have duplicates. You can automatically renumber all the components using the **Annotate** function.
 
--	可以在右边属性面板的“修改器件”对元件的引脚信息进行修改。
--	或者在 **超级菜单 > 杂项 > 修改器件** 打开。
--	或者使用快捷键“I”（字母 i）。
-
-你可以修改元件的引脚名称，PCB前缀，Spice前缀，显示元件隐藏的引脚，元件引脚编号，Spice引脚编号等。
-比如，你可以通过修改引脚编号来指定一个你想让它对应的封装；你也可以通过修改Spice前缀和Spice引脚编号来使它可以进行仿真。
-
-![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
-
-**注意：***显示了元件隐藏的引脚后无法再通过此选项将该引脚再次隐藏，你需使用工具栏的撤销功能。*
-
-### PCB前缀与Spice前缀
-
-原理图中的元件，除了元件编号和用在PCB上的PCB前缀之外，还有一个用于Spice仿真的**Spice前缀**。
-
-**PCB前缀**是在生成PCB时元件对应封装的编号。基本上原理图编号与封装编号是一致的。比如你将原理图的U1的PCB前缀改为K1，那么它转为PCB时的封装编号就是K1.
-
-**Spice前缀** 用于告诉仿真器，该个符号表示哪个电路元件，用于什么样的仿真模型，它的分配规则比较严格。
-
-大多数Spice电路元件的仿真模块采用单行的 .model 语句形式，但其中一些可能采用多行形式 .subckt 子电路进行定义。 例如，一些MOSFET可以用一个.model语句描述，在这种情况下，它们的Spice前缀是**M**，但许多MOSFET由.subckt描述，所以它们的Spice前缀是**X**。
-
-因此，无论为原理图符号选择的PCB前缀如何，给定电路元件的原理图符号的Spice前缀必须与仿真原理图中该电路元件的实例所需的模块类型相匹配。
-
-大部分Spice前缀与元件的关联列表如下：
-
-![](images/170_Schematic_SpicePrefix.png)
-
-更多关于Spice仿真模块的内容请访问NgSpice：[http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)
-
-
-### 元件引脚编号与Spice引脚编号 
-
--   元件引脚编号： 这些编号是元件所需对应封装中真实的引脚数字。 它们是必需存在的，可使原理图中的器件符号的引脚可以映射到PCB中的占用空间的物理引脚上。 换句话说，原理图中显示的连接最终通过PCB上的铜线连接来体现。
-
--   Spice引脚编号：  这些编号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的编号。
-
-
-## 元件编号起始
-
-每个新建的原理图，在右边的自定义属性下有一个 `Prefix Start` 选项，该选项的作用是给放置的元件设置开始的编号，默认开始的编号是从1开始。若你使用多页原理图时，不希望第二页原理图的元件编号从1开始，那么你可以给它设置为200,300等，那么你放置元件的编号就会变成U200，U201，U202等。
-
-![](./images/061_Schematic_PrefixStart.png)
-
-
-## 元件编号冲突
-
-若你的原理图和工程下存在两个相同元件编号，当你进行电路仿真、打开设计管理器、转换到PCB过程中，会提示编号冲突，因为在正常情况下原理图和工程中不允许存在两个相同编号的零件。
-
-如下图，因为存在两个 R4 所以在仿真的时候出现报错，这时你需要将其中一个编号修改为原理图中不存在的编号。
-
-![](images/079_Schematic_ConvertToPCB-PrefixConflictError.png)
-
-如果你在同一工程下复制一个原理图做备份，在转换为PCB时会提示编号冲突，那是因为立创EDA在工程下的原理图均视为属于同一个工程，在转换PCB时是将工程下的所有原理图合并后转在同一个PCB。所以你需要将备份文档放置在另外一个工程下。
-
-![](images/080_Schematic_ConvertToPCB-DuplicateComponentPrefix.png)
-
-
-## 网络冲突
-
-立创EDA原理图中暂时不允许多个不同网络名称同时存在同一条导线上。否则当你进行电路仿真、打开设计管理器、转换到PCB过程中，会提示网络名称冲突。
-
-![](images/081_Schematic_ConvertToPCB-NetNameConflict.png)
-
-在上图你可以发现VCC，GND，NetLabel1在同一条导线上，此时，你必须仅保留其中一个网络。
-
-
-
-## 标注
-
-当你创建了一个拥有较多数量元件的原理图时，很可能会出现编号重复，缺失等问题。如果你不想一个个去检查修改，你可以使用“标注”功能进行全局修改。
-
-可以在 **超级菜单 > 杂项 > 标注** 打开。
+**Super menu > Miscellaneous > Annotate**
 
 ![](images/067_Schematic_Annotate.png)
 
-**应用范围：**
+Various Annotate possibilities  are available:
 
--   **仅当前原理图**： 标注功能只对当前的原理图有效。
--   **所有打开的原理图**：  标注功能只对所有打开的原理图有效。
+-   **Active Schematic only**: applies annotation actions to the current schematic only.
+-   **All Opened Schematics**: applies annotation actions to all Schematics that are open in EasyEDA.
 
-**注意：** *使用所有打开的原理图选项时，即使是不同工程下的原理图也会被进行标注处理。如果你只想标注一个工程下的原理图，你需要将它下面的原理图全部打开，并且关闭其它工程的原理图。*
+**Note:** *This option applies even if the opened schematics are from different Projects! If the project that you want to annotate has more than one schematic, you should open all of them and close any schematics that are open from other Projects.*
 
-**方法：**
+-   **Re-annotate all**: resets all existing annotation and then annotates all components again from scratch;
+-   **Keep existing annotation**: annotates new components only (i.e. those whose reference designator finishes with ? like R? or U?).
+-   **Direction**: Rows annotates across the schematic in a raster pattern from top left to bottom right; Cols annotates down the schematic in a raster pattern from top left to bottom right.
+-   **Annotate**: applies the selected annotation actions. 
 
--   **重新标注**：对全部零件编号进行重新标注，包括已经存在的编号。
--   **保留原来的标注**：只对新增的还没有分配编号的零件进行标注，原来存在编号的零件不做变更。
+**Note:** *Annotation cannot be undone! if you do not accept the result: close all of the affected schematics without saving. If you do accept the result: make sure you save all of the affected schematics.*
 
-**方向：**
+-   **Reset**: if you want to reset all the reference designators to end with '?', just click the Reset button. After that, R1 will be R?, U1 will be U? etc.
 
--	**行**：从顶部第一行开始，从左到右开始编号。
--	**列**：从左边第一列开始，从上到下开始编号。
+**Note:** *Reset does not reset annotation back to where it was before pressing the Annotate button.*
 
-**标注：**点击后进行标注操作。
 
-**重置：**如果你想将全部零件编号的数字都改成 “？”，你可以点击它，效果如 R1 变成 R?，U1 变成 U? 等。
+## Symbol Wizard
 
-**注意：** 
+How many times have you hit a schematic capture roadblock because you couldn't find a component symbol?
 
--	*当你点了标注按钮后，重置按钮并不能恢复你原来的标注。*
--	*如果你标注后不满意可以使用工具栏的撤销按钮(快捷键CTRL+Z)恢复。但如果你标注保存并关闭文件后，再打开文件将不能恢复原来的标注状态。*
- 
+Well, in EasyEDA that would be never because the **Symbol Wizard** provides a quick and easy way to create a general schematic library symbol.   
 
-## 原理图库向导
+The **Symbol Wizard...** command can be found in the top toolbar. 
 
-立创EDA提供一个可快速创建原理图库符号的向导工具。
-
-在工具栏点击打开，如果是在原理图库文档中可以在**“超级菜单” > “杂项” > “原理图库向导”**打开。
+Or **Super Menu > Miscellaneous > Schematic Library Wizard** in a new schematic lib document.
 
 ![](images/068_Schematic_LibWizar.png) 
 
-使用555定时器为例，当输入编号，名称，封装，选择样式，输入引脚名称后，点击确定即可自动生成一个元件符号。
+Using the **NE555** timer as an example: this device is available in a **DIP8** package so select **DIP**. Then enter the NE555 pin names into the **Pin Names** text box separated by new line or space, Then press OK. Abracadabra! As if by magic, you will find a perfectly formed dual in line 8 pin symbol for the NE555 attached to your mouse cursor, ready to be placed! You just need a few seconds to build a NE555 symbol, quickly and easily.
 
 ![](images/069_Schematic_LibWizar-NE555.png)
 
-原理图库向导目前暂时提供了三种图形样式： DIP, QPF 和 SIP 。
+The EasyEDA Schematic Symbol Wizard allows you to create DIP, QPF or SIP styles symbols. If you are designing Arduino Shields then you will need lots of SIP symbol, so you can create a SIP symbol like the one shown below in a few seconds.
 
-![](images/070_Schematic_LibWizar-DIPQFPSIP.png)
+![](images/070_Schematic_LibWizar-SIP5.png)
 
-通过自定义引脚名字和封装，可以绘制方便识别的原理图库，比如下方自定义的含EBC说明的3极管2N3055符号。
+If you are not too worried that the symbols may not look quite the way people might expect and that they may not look anything like the **Package** type you enter, then of course you can use the wizard to create symbols for any component:
 
 ![](images/071_Schematic_LibWizar-2N3055.png)
 
 
-## 原理图转PCB
+## Multi-part Components
 
-当你完成了原理图绘制，想要转换为PCB，你可以点击工具栏上面的图标**原理图转PCB**，或者点击 “**超级菜单 > 杂项 > 原理图转PCB**“
+The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
 
-**注意：** *在你进行转换PCB之前，请先在设计管理器和封装管理器检查是否存在错误。*
+When placing the 74HC04 on a schematic, it will look like the screenshot below.   
+**Note:** *The component Prefix will be in form of: U?.1, U?.2 etc.*
 
-![](images/076_Schematic_ConvertToPCB.png)
+![](images/059_Schematic_Mutil-Components.png)
 
-**PCB库搜索顺序**
+## Component Attributes
 
-在转换为PCB时，编辑器会优先匹配你个人的封装库，收藏库，如果没有匹配，则会在系统库中查找。
+After selecting a component, you can find the component's attributes in the right hand Properties panel.
 
-比如你放置了一个三极管Q1，默认封装是**TO220**，且你没有重新为它指定封装，若在你的“我的库文件”中存在一个同名的**TO220**封装，那么在转换为PCB时，Q1的封装编辑器会优先匹配你个人的封装，并忽略系统的同名封装。
+![](images/064_Schematic_ComponentAttributes.png)
 
-**校验封装和生成PCB**
+**1.****Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
+If you want edit this component, you can click **Edit Symbol**.
+![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
 
-点击“原理图转PCB”后，如果编辑器检测到你的元件封装不存系统库中在或者元件无封装，会弹出错误对话框，并且转换动作不会继续进行。  
-点击下图的表格会打开封装管理器，你逐一修改/更新封装后，再重新转PCB即可。  
+**2.****Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
+
+
+### Define BOM Parameters
+After selected a schematic symbol, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this parameter in CSV file.  
+
+![](./images/060_Schematic_AddNewParameter.png)
+
+## Pinmap Modify Symbol Information
+
+When you select a component, for opening the Modify symbol information dialog, you can do:
+
+**1.****Super menu > Miscellaneous > Edit Symbol...**;  
+**2.**Or press the `I` hotkey;  
+**3.**Or click the Edit Symbol on the Parts Attributes on the left panel.  
+
+Using this dialog you can edit the pin names and numbers, for example, to suit a different package or device variant. You can also enter a Spice Prefix and swap the spice Pin order to make your symbol usable in simulation.   
+![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
+
+More detailed description of PCB and Spice Prefixes and pin numbers at next section.
+
+
+## Prefixes And Pin Numbers 
+
+Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a **Spice Prefix**. They also have two sets of pin numbers: PCB pins and Spice pins.
+
+### PCB And Spice Prefix 
+
+The rules on the assignment of the PCB Prefix or reference designator of a schematic symbol are somewhat dependent on the EDA tool and on the user's preferences. Depending on how a device is graphically represented by its schematic symbol it may have a different **PCB Prefix** or** reference designator**. For example, a single discrete MOSFET device may have a PCB Prefix of Q, M or perhaps TR, whereas if it is part of a monolithic multiple transistor array it may have a PCB Prefix of U or IC.  
+
+The rules on the assignment of the **Spice Prefix** of a schematic symbol are strict. This is because the Spice Prefix is used to tell the simulator which circuit element the symbol represents and therefore which simulation model it is to use.
+
+Simulation models for most of the spice circuit elements are in the form of a single-line .model statement however some of them may be in the form of a multi-line .**subckt** subcircuit definition. For example, some MOSFETs may be described by a .model statement in which case their Spice Prefix is **M** but many MOSFETs are described by a .subckt and so their Spice Prefix is **X**.
+
+Therefore, irrespective of the PCB Prefix chosen for a schematic symbol, the Spice Prefix for a schematic symbol representing a given circuit element must match the type of model required to simulate that instance of that circuit element in your schematic.
+
+A list of Spice Prefixes and their associated circuit elements is given in the table below.
+![](images/170_Schematic_SpicePrefix.png)
+
+For more information on circuit elements in Ngspice, please refer to:
+
+[http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2](http://ngspice.sourceforge.net/docs/ngspice-manual.pdf#subsection.2.1.2)
+
+
+### PCB and Spice pin numbers 
+
+The two sets of pin numbers are:
+
+-   **PCB pin number: **these are the numbers for the real, physical device pins in its package. They are required so that the pins of a device symbol in a schematic can be mapped onto the physical pins of a PCB footprint. In other words, so that the connections shown in the schematic, end up connected properly by copper on the PCB.
+
+-   **Spice pin number or pin order: ** these are the numbers that map the pins on the symbol to their respective functions in the spice model or subcircuit.
+
+
+## Prefix Start
+
+Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
+![](./images/061_Schematic_PrefixStart.png)
+
+
+## Prefix Conflict Error
+
+Sometimes, when you convert a project to PCB, open the Design manager or run a simulation, you will get a Prefix Conflict error message.
+
+![](images/079_Schematic_ConvertToPCB-PrefixConflictError.png)
+
+In this schematic, you will find two components with the R4 reference designator, so you just need to change one to Rx where x is a unique number in that schematic.
+
+It may be tempting to backup a schematic into the same project as the original, however, if an attempt is then made to do Convert Project to PCB, you will get the Prefix Conflict error for every component.
+
+![](images/080_Schematic_ConvertToPCB-DuplicateComponentPrefix.png)
+
+In the above image, you can find the two identical copies of the same schematic, which when you Convert Project to PCB, EasyEDA will try to merge into a single schematic, so every item will have 2 copies.   
+To fix this, you just need to create a backup project and remove or better still save backup copies of your schematics to that project.
+
+
+## Multi-NetLabels in One Wire
+
+EasyEDA support mutil-netlabel in one wire now.
+
+When you convert the schematic to the PCB, the editor will choose the first netlabel you placed as the net name for this wire, as below NETLABEL1.
+
+![](images/294_Schematic_MultiNetLabel.png)
+
+As above image, when you click anyone netlabel's name in the design manager, the wire will be highlighted. 
+
+
+**Notice**：
+
+-	*If wire 1 has 3 netlabels A  B and C, and wire 2 has netlabel A, then wire 1 and wire 2 are the same net.*
+
+## Converting Schematics To PCB
+
+Before using "Convert to PCB", "Update PCB" in Schematic and "Import Changes" in PCB, please read [Essential Check](./EssentialCheck.htm#Introduction) section.
+
+Most of the time, schematics are created with the aim of producing a PCB. So how do you convert your schematic to a PCB in EasyEDA? You just need to to click the PCB icon on the toolbar with the title **Convert project to PCB**.  
+
+**Note:** *Before converting, you need to use the Design Manager and Footprint Manager to check all the components, nets(connection) and packages/footprints to ensure no errors exist.*
+
+![](images/076_Schematic_ConvertToPCB.gif)
+
+### PCB Libs search order 
+
+To find PCB footprints to match the package type attributes of your Schematic symbols, EasyEDA will search the available PCB libraries.   
+
+EasyEDA will search your own PCB Libs from the **My Parts** section first. If it doesn't find a matching footprint there then it will search in the System PCB Libs. 
+
+So, for example, if your symbol calls up a “**TO220**” package, you have a **TO220**  package in your My Parts section and there is a “**TO220**” package in the system PCB Libs, then EasyEDA will use the  “**TO220**” package in your My Parts and ignore the system PCB Lib.
+
+### Verify Packages and Build PCB 
+
+After clicking the **Convert project to PCB** button, if the project has errors the following dialog will open:
 
 ![](images/077_Schematic_VerifyThePackages.png)
 
-转换成功后会如下图所示，自动生成一个PCB边框，并将PCB封装按照顺序排列成一排，蓝色的飞线表示两个焊盘之间需要进行布线连接，属于同一网络。
+The row in red indicates that EasyEDA can't find a PCB footprint matching the Package that the schematic symbol is calling for.   
+
+This could be because you have made an error entering the package attribute in the symbol's Properties or maybe you haven't yet created a PCB footprint for the package that your symbol is calling for.   
+
+In this case the package should have been **TO-92(TO-92-3)** but instead it is empty. To correct it you can click on the row and change it to **TO-92(TO-92-3)**.
+
+After making any necessary corrections, click the **Convert project to PCB** button and EasyEDA will automatically load all the package PCB footprints into the PCB editor as shown in the image below.
 
 ![](images/078_Schematic_ConvertToPCBSuccess.png)
 
+This shows the footprints placed in arbitrary positions with the connections between them shown as blue Rat lines.
 
-### 更新PCB
+### Update PCB
 
-当你已经完成转PCB动作，但是又再次修改了原理图，这时你无需转一个新的PCB，只需点击“更新PCB”即可将变更更新至现有的PCB文件。
-
+Converting a schematic to PCB can be done using the `Convert Project to PCB...` , but if you do modifications to the schematic, by using the `Update PCB` button you can immediately be passed forward to update the selected PCB without having the PCB editor window already open or without creating a new PCB file.   
   ![](./images/217_Schematic_UpdatePCB.png)    
 
-你也可以在PCB中直接导入变更。
-
-![](./images/128_PCB_ImportChanges.png)
-
-**注意：**
-
--	*网络名是自动生成，当你修改了原理图后部分网络可能会出现变更，那么更新至PCB后会导致原网络走线丢失！*
--	*PCB导入变更后你将无法撤销！*
 
 
-## 原理图层级
 
-立创EDA不支持真正意义上的分级设计，但是支持多页原理图并支持全局网络，你可以在一个工程下放置多个原理图图文件，并将它们通过相同名称的网络标签和网络端口连接起来。
+## Hierarchy
+
+EasyEDA does not support true hierarchical designs but it does support **multi-sheet designs**. You can put several schematics in one project with connections between made by netlabels. All nets in EasyEDA are global so if you create a netlabel DATA0 in schematic A and then create a netlabel DATA0 in schematic B, when Schematic A and schematic B are in the same project, they will be connected.
 
 ![](images/082_Schematic_MutilSchematicSheet.png)
 
-比如你在原理图A和原理图B均放置了网络标签A、B、C，那么在转PCB时编辑器会自动将原理图合并，使网络连接起来。
-
+**Multi-sheet designs**(equivalent to a circuit spread over several pieces of
+paper), all schematics under the same project will be merged into one when be converted to PCB connecting in **netlabe**, **netflag**. 
 ![](images/083_Schematic_MultiSheet.png)
 
-**注意：** *请让工程内的元件编号保持唯一，否则会出现上文所说的编号冲突。*
+**Note:**   
+*Please make all of the prefixes unique, if the Schematic A has a R1, and the Schematic B has a R1, then you will get a [Prefix Conflict Error](/Doc/Tutorial/introduction.htm#Prefix-Conflict-Error) on above section.*
 
-**提示：**   
-*每个原理图的元件编号默认从1开始。如 R1, C1, U1 等。*   
-*1. 你可以使用上文的标注功能进行重新标注编号。*  
-*2. 你可以把起始编号改为100等，那么元件编号就可以 R100, C100等开始编号。*   
-
+**Tip:**   
+*Every schematic's prefix will start from 1, such as R1, C1, U1 etc.*   
+*1. you can use [Annotate](/Doc/Tutorial/schematic.htm#Annotate) to fix prefix.*  
+*2. You can set the prefix start to 100, then your components will start from R100, C100.*   
 ![](images/061_Schematic_PrefixStart.png)
 
 
-## 原理图模块
+## Modules
 
-立创EDA支持原理图模块功能，以利于电路模块的复用，避免进行原理图的复制粘贴时出错。
-
-创建方式：**“另存为模块”**和**“文档” > “新建”> "原理图模块"**。
+Copying codes is an easy job for coders, now copying and reusing a schematic or PCB is easy.
+Take a power supply unit for example, you can save this unit as a schematic module.
 
 ![](./images/218_Schematic_SaveAsModule.png) 
 
-原理图模块保存在“元件库”> “我的模块”中，下次使用在这里直接放置即可。
+After saving, you can find it at the **Parts > My Modules** section. And you can place the whole block to your schematic.
 
 ![](./images/219_Schematic_MyModules.png)  
 
 
-## BOM与网表
+## BOM/Netlist
 
-立创EDA支持导出BOM表和网表，更多信息请查看 [导出](./Export.htm#导出)章节。
+### Export BOM
 
-
-# 原理图库文件
-
-如前面章节所说，可以使用“原理图库向导”和“组合/解散”功能创建一个原理图库符号，创建后如果要在其他的原理图文档中使用该符号，可对它进行复制(快捷键CTRL + C)，切换文档后粘贴(快捷键CTRL + SHIFT + V)。但这两种方法创建的库文件不会保存在“我的库文件”中，所以需要保存在“我的库文件”中时，可创建一个原理图库文件。
-
-新建方法：**文档 > 新建 > 原理图库**。
-
-![](images/088_SchematicLibs_CreateNewLib.png)
-
-填写相关信息后，会打开一个空白库文件。此时你可以使用前面的“原理图库向导”或者使用“绘图工具”进行绘制图形，在工具栏上点击引脚图标进行放置引脚(快捷键 P )。在原理图库文档中已无需“组合/解散”功能，故立创EDA没有提供在绘图工具上。
-
-若需要修改原理图符号的引脚映射，你可以在：**超级菜单 > 杂项 > 引脚映射** 中打开。
-
-**注意：**
-
--	*建议在新建一个原理图库之前，先在“元件库”中搜索，可避免重复工作，或者可以在相近元件的库文件上直接编辑另存为一个新的库文件，以减少工作量。*
--	*符号图形请在原点上创建，尽量保持原点在元件中央，以便于元件翻转和旋转操作，元件放置在原理图画布时鼠标光标的位置就是原点的位置。若你偏离原点创建，在放置的时候，编辑器会自动将鼠标光标移动在元件中心处。*
-
-
-
-## 管脚属性
-
-原理图符号的引脚是元件最重要的组成部分之一，它允许进行导线连接以构成整个电路。
-
-在工具栏点击使用或者使用默认快捷键“P”。
-
-![](images/089_SchematicLibs_ToolbarPins.png)
-
-**管脚方向**
-
-在放置在画布上之前，可以按空格键进行选择到想要的方向。
-
-管脚的带圆圈端点是可进行导线连接的地方，所以该点正常需朝外放置。
-
-![](images/090_SchematicLibs_PinDot.png)
-
-如下图，左边图片是元件管脚的正确放置方式。
-
-![](images/091_SchematicLibs_PinDotPlacing.png)
-
-**管脚属性**
-
-当你选中一个管脚时，可以在右边的属性面板查看和修改它的属性。
-
-![](images/092_SchematicLibs_PinAttributes.png)
-
--	**方向**：只支持 0°、90°、180° 和 270°。若你需要放置45°的引脚，你需要将引脚长度改为0，然后用画图工具画出45°线段。
-
--	**起始X，起始Y**：引脚端点的坐标。你可编辑它的坐标到达你想要的位置。
-
--	**长度**：引脚长度。
-
--	**名字**：引脚的名字，如上图选中的引脚名字为“VCC”。
-
--	**编号**：如上图选中的引脚编号为“8”。该编号与元件对应的封装的引脚编号相对应，并且两者的编号需要一致。你还可以使用带字母的编号，如 A1, B1, C1, A2, B2等。
-
--	**Spice管脚编号**： 这些序号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的编号。
-
--	**显示名字**：可选择是否隐藏管脚名称。
-
--	**显示编号**：可选择是否隐藏管脚编号。
-
--	**颜色**：你可以单独为管脚设置颜色，该颜色会共同应用在管脚名字和编号上。你不能单独为它们进行设置颜色。
-
--	**Dot**：是否将一个圆添加到管脚的内端，以表示逻辑(或模拟)反相。
-
--	**时种**： 是否将一个“>”添加到管脚的内端，以表示逻辑时钟输入。
-
--	**显示引脚**：可设置改引脚是否隐藏。当隐藏了该引脚后，放置该元件在原理图中将看不见该引脚。该隐藏功能只在原理图中体现，在原理图库编辑界面下一直保持显示状态。  
-若在原理图想将它显示，只需在元件属性中“修改器件”将“隐藏的引脚”选项取消勾选即可。  
-若你设置一个引脚的电气特性为Power，名称设置为VCC，且已将它隐藏，那么在原理图中它会自动与VCC电源(网络标签)连接，该功能可以让使用了多模块元件的原理图变得更加整洁清晰。
-
--	**电气特性**：包含Undefined(未定义)、 Input(信号输入)、Output(信号输出)、 I/O(信号输入/输出)、 Power(电源)。该功能在仿真时用。默认是Undefined。
-
--	**字体及大小**：你也可以很方便的每个管脚名字和编号设置字体与大小，便于识别。
-
-**注意：**
-
--	*你可以很方便地使用鼠标对管脚编号和名字进行位置调整，但是当你需要翻转或旋转它们时，管脚整体都会被翻转或旋转，立创EDA不允许单独翻转其中一个。*
--	*立创EDA已经提供电气规则检查 (ERC)，但是你仍然需要为你的元件库文件设置电气特性。*
-
-##自定义属性
-
-在原理图库画布中，点击空白处可在右边属性面板查看元件属性，此处的元件属性与在原理图中单击元件时的元件自定义属性基本一致。在原理图中对元件修改的自定义属性仅对所在文档有效，在原理图库画布中设置的自定义属性对该元件的每次放置有效。
-
-![](images/097_SchematicLibs_MyLibsCustomerAttributes.png)
-
--	**Supplier**：供应商名称，新建默认为Unknown。修改为其他供应商后，会自动出现供应商编号输入框。
-
--	**Mounted**：是指该零件是否在PCB板上贴片或者插件，该处在BOM体现。
-
--	**Package**：击输入框，即可弹出封装管理器。并为元件库文件指定封装。
-
--	**Prefix**：默认的原理图库符号前缀是 **U?** ，子库符号前缀是 **U?.1**。如果你创建了一个电阻你可以设置为 **R?**。
-
--	**Name**：元件库文件的名称。
-
--	**Contributor**：显示你用户名，立创EDA使用了你的库文件时会看到你的名字。
-
--	**增加参数**：可新增你想要的参数，如你自己的物料编号。是否包含在BOM。
-
-
-## 我的库文件
-
-编辑完成后保存 `CTRL+S` 会打开一个对话框，以输入元件名称和描述：
-
-![](images/093_SchematicLibs_SaveLibs.png)
-
-点击确认后，你可以在左边导航面板“元件库”> "我的库文件" > “无标签”中找到它。
-  
-![](images/094_SchematicLibs_MyLibs.png)
-
-**标签**
-
-你可以选中它，点击右键“修改”或者右下角“更多”> "修改" 为它添加一个标签。添加后可以在原理图库列表下出现，该元件将出现在该标签下，你可以给一个元件添加多个标签，但建议只添加一个即可。
-
-若你需要再次修改符号，你需要点击下面的“编辑”按钮。
-
-关于元件库的功能更多请查阅前面的[原理图绘制：元件库搜索与放置](./Schematic.htm#元件库搜索与放置)章节。
-
-## 元件子库
-
-当一个元件存在太多引脚时，把它全部画在一个库文件中将会非常耗费空间，所以可以通过创建子库来进行多模块组合该元件。所有子库合在一起时是一个完整的元件。每个子库均对应同一个封装，仅对应的焊盘编号不一样。  
-
-在前面“原理图绘制：元件库搜索与放置”章节已经提到元件子库的放置。
-
-当你创建了一个库文件，在“元件库” > “我的库文件”中选中新建的库文件，点击右键“添加子库”即可依次添加子库
-
-如下图，每次添加子库均会产生一个名称带 .1 ，.2，.3 等的子库文件。
-
-![](images/096_SchematicLibs_MyLibsAddSubparts.png)
-
-添加后并对每个子库进行双击或者点击下方的“编辑”按钮进行编辑图形，引脚及编号等属性，保存后即可完成一个含子库的原理图库文件的创建。
-
-**注意**：*含子库的元件仅在父库指定一个封装即可，若你为每一个子库均指定不同的封装，那么立创EDA将保留最后一个指定的封装做为元件的封装。*
-
-
-
-# PCB编辑器 
-
-新建PCB编辑器有两种方式。  
-
--	前面章节中通过原理图转为PCB。
--	在“文档”>“新建”> “PCB”新建打开。
-
-正常来说，在绘制PCB前，需要先设置PCB板子边框和设计规则。边框和设计规则请查阅后面章节。
-
-## 画布 
-
-**画布属性**
-
-PCB画布属性和原理图画布属性大部分一致。点击PCB空白处在右边面板可以修改画布的尺寸单位，网格等。目前支持mm，inch，mil三种单位，精度至小数点后两位。
-
-![](images/108_PCB_CanvasAttributes.png)
-
-PCB中大部分对象，在选中它后，基本都可以在右边属性面板查看和修改它的属性。
-
-**其他**
-
--	**线宽：**这里设置默认布线线宽。
--	**拐角：**设置默认布线的拐角方向。有：45°，90°，圆弧，任意角度。
--	**覆铜区：**这里可设置铺铜区域是否可见。选择否之后铺铜将消失，仅保留铺铜的边框。
--	**增加参数：**该参数仅对PCB画布用，可以做信息标记，不会应用到BOM和Netlist中。
-
-
-
-## PCB工具
-
-PCB工具提供很多功能以满足你绘制PCB的需求。  
-有导线，焊盘，过孔，文本，圆弧，圆，拖动，通孔，图片，画布原点，量角器，连接焊盘，覆铜，实心填充，尺寸，矩形，组合/解散。
-
-![](images/109_PCB_PCBTools.png)
-
-
-### 导线 
-
-在原理图中使用快捷键“W”绘制导线，在PCB绘制导线的快捷键也是“W”。
-
-**导线属性**
-
-当你选中一条导线时，可以在右边属性面板修改它对应的属性。  
-![](./images/137_PCB_TrackLength.png)  
-
-
-**使用技巧**
-
-1.  单击左键开始绘制导线；再次单击左键确认布线；单击右键取消布线；再次点击右键提出绘制导线模式。
-
-2.  在顶层绘制导线的同时，使用切换至底层的快捷键“B”，可自动添加设置的过孔，走线并自动切换至底层继续布线。
-  ![](images/113_PCB_TrackInsertVia_57.png) 
-
-3.  在布线过程中使用快捷键“+”，“ - ”可以很方便地调节当前的走线的大小。
-
-4.  双击导线线段会增加一个节点，选择节点拖动可以调节走线角度。也可以通过拖动导线的末端端点将导线拉长或缩短。
-  ![](images/114_PCB_TrackVertex.png)
-
-5.  点击选择一个线段，可以拖动调整其位置。  
-  ![](images/115_PCB_TrackSegmentAdjust.png)
-
-6.  在布线过程中可以使用快捷键“L”进行布线角度切换。
-  ![](images/112_PCB_RouteAngle.png)
-
-7.  使用空格键改变当前布线的方向。
-  ![](./images/224_PCB_TrackChangeDirection.png)
-
-8. 在走线过程中，想撤销上一段走线可以通过删除键“Delete”撤销。
-
-9. 当按住“Shift”键并双击左键可以删除导线的线段。
-![](./images/225_PCB_DeleteSegmentTrack.png)
-
-
-### 焊盘 
-
-放置焊盘的快捷键是“P”。
-当你选中一个焊盘时，可以在右边属性面板修改它对应的属性。  
-
-![](images/144_PCBLibs_NewPad.png)
-
-**编号：**若不是单独放置的焊盘，该编号会与原理图库文件的引脚编号相对应。  
-
-**形状：** Round(圆形) , Rectangular(矩形) ,  Oval(椭圆形)和Polygon(多边形)。 如下图所示，选择多边形可以通过“编辑坐标点”创建复杂的形状。  
-![](./images/145_PCBLibs_NewPadShape.png) 
-
-**层：**如果放置的焊盘是SMD类型或想它出现在单层，那么层请选择顶层或底层；若需要放置通孔类型焊盘，那么层请选择全部，焊盘将在顶层和底层出现。  
-
-**网络：**如果PCB由原理图转来，此处会默认生成网络；若是单独放置的焊盘，此处为空。你可以无需为它设置网络，当走线连接到它时，将自动为它添加网络。  
-
-**宽和高：** 当图形设置为圆时，宽和高会等值；当图形设置为多边形时，宽和高将不允许编辑。
-
-**旋转角度：**你可以设置你想要的任意角度。
-
-**Hole Shape：**内孔形状。有Round(圆形)，Slot(槽形)。普通的DIP封装以及电容等都是圆形钻孔，但某些特殊元件的安装脚需要长方形、椭圆形或其他类型的通孔。这些长方形、椭圆形或者其他类型通孔都算作槽孔。
-
-**孔直径：**这是通孔焊盘的钻孔直径， 若是SMD类型焊盘请设置为0。
-
-**中心X和中心Y：**修改这两处数值可以修改焊盘在画布中的位置。
-
-**Plated：** 该焊盘是否有铜。当使用焊盘制作一个螺丝无铜通孔时，需选择否。
-
-**注意：***编辑坐标点仅在图形为Polygon(多边形)时有效；第一个坐标点在左下角，数值为X Y，单位跟随画布。*
-
-### 过孔
-
-当你绘制一个双层板或多层板时你可以放置过孔，使顶层和底层导通。
-
-**使用技巧**  
-
-在走线上放置两个过孔，然后就可以将两个过孔间的走线切换至其他层，或者移除。
-
-![](./images/142_PCB_ViaOnTrack_50.png)
-
-**注意：***立创EDA不支持内层填埋孔，所有的过孔均可以在顶层和底层看见。*
-
-
-### 文本
-
-因涉及字体版权，立创EDA暂时不支持自带其他的字体。
-如果你需要输入汉字，或者需要不同的字体，你需要自行添加你电脑上的字体。免费字体可以在 [Free Fonts: www.1001freefonts.com](http://www.1001freefonts.com/) 上查找。
-
-**添加方法**
-
-放置一个文本，并点击它，然后在右边属性面板字体处添加字体。  
-![](./images/185_PCB_Text_AddFonts.png)  
-
-点击“Add”按钮，并在打开窗口选择你电脑本地的字体文件后确认即可添加完成。字体文件必须是 `ttf` 或者 `otf`格式。
-![](./images/186_PCB_Text_FontsSupport.png)  
-
-
-**注意：** 
-
--	*立创EDA不会保存你的字体在服务器，所以每当你关闭编辑器后再打开，你必须重新添加字体。*
--	*如果你使用的是自添加的字体，字体属性中的宽度设置将无效，你只能修改字体的高度。*
-
-
-
-### 圆弧
-
-你可以使用圆弧工具画出不同大小的圆弧，创建布局酷炫的走线图案。可通过两个圆弧合并成一个圆。
-
-![](./images/242_PCB_PCBTools_Arc.png)  
-
-立创EDA提供了两种画圆弧的工具：
-
--	先确定起始点，然后确定末点及半径。  
-  ![](./images/268_PCB_Arc_30.png)
-
--	先确定圆心，然后确定半径及起点，再确定末点。   
-  ![](./images/269_PCB_Arc_Center_54.png)
-
-**圆弧属性**
-
-点击圆弧后可在右边面板进行属性修改。  
-**层**：使用圆弧工具画的圆弧可更换多个层。有：顶层，底层，顶层丝印层，底层丝印层，边框层，文档层。
-  ![](./images/270_PCB_PCBTools_ArcAttributes.png)
-
-
-
-### 圆
-
-在PCB工具里面提供的圆工具所画的圆，只能支持在丝印层和文档层绘制，如果你想在顶层或底层绘制一个圆，你必须使用圆弧工具绘制。   
-   ![](./images/271_PCB_PCBTools_CircleAttributes.png)
-
-### 移动
-
-该功能与原理图工具的移动几乎一致。  
-   ![](./images/139_PCB_PCBTool_Drag.png)
-
-当使用该工具移动封装时，连接的走线会与其他封装分离并跟随移动，表现与直接鼠标批量选择后移动一致。
-
-其他关于封装移动的提示：
-
--	当单选一个封装时，用鼠标移动，走线会拉伸跟随，不会分离；
--	当单选一个封装时，用方向键移动，走线会与封装分离，仅移动封装。
-
-
-### 通孔
-
-由于很多用户不知道如何通过焊盘，过孔来创建通孔，故立创EDA特意提供了一个通孔功能。可在属性设置其直径大小。
-![](./images/139_PCB_PCBTool_Hole.png)
-
-
-### 图片  
-
-在PCB和PCB库画布下，立创EDA支持添加图片。
-
-![](./images/139_PCB_PCBTool_Image.png)
-
-点击插入图片功能，会打开一个窗口，你可以添加你需要的图片，立创EDA支持 `JPG`, `BMP`, `PNG`, `GIF`, 和`SVG`格式的图片。  
-![](images/184_PCB_InsertImage.png)  
-
-添加图片后，可以：
-
--	预览图片：左边为原图预览，右边为调整后的图片效果预览。
--	颜色容差：数值越大，图像会损失越大。
--	简化级别：数值越大，图像边沿会更圆润。
--	图像反转：选择后，原本高亮区域会被挖图。
--	图片尺寸：设置你要插入的大小。
-
-图片会插入在当前编辑的层，如果需要换层或修改其他属性，可以点击它后在属性处修改。
-![](images/187_PCB_InsertImageLayer.png)  
-
-
-### 画布原点
-
-你可以设置画布原点以满足定位要求。该功能与原理图的画布原点功能一致。
-
-### 量角器
-
-立创EDA提供一个量角器方便位置确定。
-点击后先确定圆点，再确认长度，最后确认角度。  
-选中它后，可修改其属性。其中层支持顶层丝印，底层丝印和文档层；精度最高支持小数点后两位。
-![](images/280_PCB_PCBTools_Protractor.png)
-
-
-### 连接焊盘
-
-当创建一个无原理图的PCB时，焊盘之间由于没有网络，所以不会出现飞线。使用“连接焊盘”功能可以使它们连接起来，帮助你减少出错。 
-
-点击后，你点击两个无网络的焊盘，即可自动为它们设置相同网络名，并产生飞线：
-
-![](images/119_PCB_PCBTool-ConnectPadToPad_1_34.png)  
-
-或者你也可以直接为两个焊盘分别设置相同的网络，飞线会自动产生：
-
-![](images/120_PCB_PCBTool-ConnectPadToPad_2_91.png)  
-
-更多关于飞线的信息，请查阅 [**飞线**](./PCB.htm#飞线) 章节
-
-
-### 覆铜 
-
-如果你想保留整块铜箔区域使其接地或者接电源，你可以使用“覆铜”功能。  
-点击后可以围绕你想铺铜的区域绘制铺铜区，一般沿着板子边框或在板子边框外部绘制，顶层和底层需要分别绘制。一块板子可以绘制多个铺铜区，并分别设置。
-
-选中铺铜线框，可以在右边修改其属性。
-
-![](images/134_PCB_PCBTool_CopperArea.png)
-
-**层：** 可以修改铺铜区的层：顶层、底层、内层1、内层2、内层3、内层4。
-
-**网络：** 设置铜箔所连接的网络。
-
-**间距：** 铺铜区距离走线和焊盘的间隙。
-
-**焊盘连接：**焊盘与铺铜的连接样式，直接连接还是十字连接。
-
-**保留孤岛：**是或否。即是否去除死铜。若铺铜没有设置网络，那么整块铺铜都将被视为死铜而去除，若想保留铺铜，可选择保留孤岛或为铺铜设置网络。
-
-**填充样式：** Solid(实心填充)和None(无)。选择None可以使PCB更清晰，并且PCB成品将无铜箔，只有走线和焊盘。
-
-**重建覆铜区：**若你对PCB做了修改，或者铺铜属性做了修改，那么你可以不用重新绘制铺铜区，对其重建即可。
-
-
-绘制铺铜后，建议不要将铺铜网络留空，否则很容易产生电磁干扰(EMC)和信号完整性(SI)问题。
-
-**使用技巧**
-
--	使用快捷键 `Shift+B` 重建所有铺铜区。
--	使用快捷键 `Shift+M`  清除所有铺铜区。
-
-### 实心填充
-
-立创EDA提供了一个名叫实心填充的功能。  
-![](images/121_PCB_PCBTool_SolidRegion.png)
-
-绘制后点击实心填充的区域可以在右边修改其属性。  
-![](images/121_PCB_PCBTool_SolidRegionAttributes.png)
-
--	**层：**支持将实心填充切换至其他层：顶层，底层，顶层丝印，底层丝印，文档，NPTH。
--	**网络：**在顶层和底层时，可以对其设置网络使其具有电气特性。
--	**类型：**Solid(实心填充)，NPTH(Non Plated Through Hole：非镀铜通孔)，Cutout(挖空)。
-	-	**Solid**：通过设置网络且类型为Solid，可以很容易将多个焊盘连接起来，效果与前面的铺铜类似。
-![](images/122_PCB_SolidRegion_1.png)
-	-	**NPTH**：当设置实心填充类型为NPTH时，其所属的层也会自动切换至NPTH。实际PCB生产时会将此区域挖穿(非镀铜通孔)。铺铜后效果与照片预览效果如下图所示。
-	-	**Cutout**：该类型仅将铺铜区的铜箔挖空，铺铜不再对该区域铺铜。铺铜后效果与照片预览效果如下图所示。
-![](images/124_PCB_SolidRegion_NPTH_Cutout.png)
-
-
-### 尺寸与量测 
-
-尺寸标识与距离测量对于PCB和封装库来说非常重要，立创EDA提供了两种方法。
-
-1. **尺寸工具：**该工具有三种单位，跟随画布单位设置。
-   当你选中尺寸的末端端点，你可以对其进行拉伸和缩小。并可以对其属性进行设置。   
-  ![](images/132_PCB_PCBTool_Dimension.png)
-
-2.  **量测工具：**使用快捷键“M”或者通过 **超级菜单 > 杂项 > 量测距离**，然后点击你想量测的两个点。单位跟随画布单位设置。
-  ![](images/133_PCB_Dimension_KeyM.png)
-
-
-### 矩形
-
-矩形工具与实心填充很相似，但是矩形不能设置网络，不能设置为NPTH层，也不能设置类型。
-![](images/243_PCB_PCBTools_Rect.png)
-
-### 组合与解散
-
-与原理图的组合/解散功能类似，原理图的是对原理图库符号作用，PCB的是对封装起作用。
-使用方法原理图的组合/解散功能一致。
-
-![](images/118_PCB_PCBTool-Group_186.png)
-
-## 层工具 
-
-PCB设计会经常使用层工具，它可以随意拖动位置，用来展示当前活动层。在这里对不同层进行切换编辑。  
-点击层对应的眼睛图标可以使其是否显示该层；点击层的颜色标识区，使铅笔图标切换至对应层，表示该层已进入编辑状态，可进行布线等操作。
-
-![](images/111_PCB_LayerView.png)
-
-切换层的快捷键如下：
-
--	**T：** 切换至顶层 
--	**B：** 切换至底层
--	**1：** 切换至内层1  
--	**2：** 切换至内层2
--	**3：** 切换至内层3
--	**4：** 切换至内层4
-
-**层配置**
-
-点击层工具右上角的齿轮图标，或者通过 **超级菜单 > 杂项 > 层配置** 打开设置界面。
-
-在配置界面，你可以修改层的显示颜色，可以勾选你需要使用的层，如果你需要画多层板，可以将最多4个内层勾选。如果你需要更多层，请联系立创EDA。
-
-![](images/110_PCB_LayerOptions.png)
-
-
-## 边框
-
-在放置封装前，需要先绘制板子边框。边框需在“边框层”绘制。先切换至“边框层”，再使用导线或圆弧进行绘制。
-![](images/125_PCB_Outline.png)
-
-当使用原理图转PCB时，立创EDA会自动生成一个边框，该边框内面积大小是总封装面积的1.5倍。
-若你不喜欢该边框，你可以将它删除后自己重新绘制。  工具栏上的“全局删除”功能可以进行快速删边框。  
-![](images/126_PCB_AutoOutline.png)
-
-立创EDA提供了一个边框设置向导，通过它可以很方便的设置边框。
-可通过：**超级菜单 > 杂项 > 边框设置** 或者在工具栏的“工具”图标下“边框设置”。
-
-![](./images/127_PCB_BoardOutlineWizard.png)
-
-在对话框里你可以选择3中类型的边框：矩形，圆形，圆角矩形。并设置对应参数。
-
-如果你需要创建一个复杂的边框，你可以通过导入一个DXF文件生成。DXF可以由CAD等软件进行绘制生成。
-
-## 飞线
-
-当两个封装的焊盘网络相同时，会出现飞线，表示这两个焊盘可以通过导线连接。
-
-![](images/222_PCB_Ratline.png)
-
-如果你想关闭某条网络的飞线，你可以在设计管理器中将该网络的勾去掉；如果你把勾去掉后仍然对它进行布线，那么走线将不会显示出来，仅会显示网络名称在走线的路径上。
-
-![](images/223_PCB_UnShownRatline.png)
-
-基于该技巧，你可以在布线前将GND网络去掉，在后面铺铜时再打开，可以减少飞线的干扰。
-
-如果你想高亮飞线的颜色，你可以切换至飞线层；如果你想改变飞线的颜色，你可以在层配置里面进行修改。
-
-![](images/278_PCB_LayersTool_Ratlines.png)
-
-
-## PCB网络
-
-**显示网络名称**
-
-编辑器支持在走线和焊盘上显示当前的网络名称，如果想关闭，可以通过：**超级菜单 > 查看 > PCB网络可见**，或者在工具栏上“配置”功能里“PCB网络可见”，也可以使用快捷键“Q”。
-
-![](images/227_PCB_PCBNetVisible.png)
-
-**网络长度**
-
-当你选中一条走线，再使用快捷键“H”， 编辑器会高亮整条网络并弹窗提醒走线的总长度。
-![](./images/138_PCB_NetLength_KeyH.png)
-
-
-## 封装属性 
-
-当你鼠标经过封装时，封装整体高亮后点击即可选中整个封装，可在右边属性面板对其属性进行查看与修改。
-
-![](images/116_PCB_FootprintAttributes.png)
-
--	**编号：**与原理图的编号相对应。  
--	**层：**含顶层和底层，切换后封装将切换至对应层。当切换至底层，封装会镜像显示，因为在立创EDA下绘制底层是以顶视图绘制。  
--	**X左坐标和Y坐标：**可修改封装坐标。  
--	**旋转角度：** 旋转角度以封装自身原点旋转。
--	**序号：**立创EDA会自动为每一个对象分配一个序号，做文件保存时的标识，你无法对其修改。  
-
-**自定义属性**
-
-这个与原理图符号的自定义属性基本一致，无原理图PCB封装添加参数后，选择In BOM可在BOM中体现。
-
-**批量修改封装属性**
-
-立创EDA目前允许部分对象批量选择后修改属性。使用“CTRL”+ 鼠标点选进行批量选择。
-如选择了3条不同的走线后，可在右边修改它们的宽度，层，网络。
-
-![](./images/262_PCB_TrackBatchModify.png)
-
-其他可修改的对象有：焊盘，过孔和文本等。
-
-
-
-## 绘制无原理图PCB 
-
-在一些小PCB制作，你可能并不需要绘制原理图。 立创EDA允许你直接进行PCB绘制。
-
-新建一个PCB文档后，在坐边导航面板的**“元件库”**中搜索和放置你所需要的封装。可对每个封装添加自定义属性，以便于导出BOM表。
-
-之后你可以根据前面叙述的连接焊盘功能将网络连接起来，再进行导线和其他绘制。
-
-
-## 设计管理器 
-
-PCB的设计管理器与原理图的设计管理器一样，在左边导航面板找到；也可以通过快捷键“CTRL + D”切换至设计管理器。
-
-在PCB设计管理器下，你可以：
-
--	选中一个封装并使它在画布中高亮。
-
--	勾选或不勾选可以使封装显示或隐藏。
-
--	在筛选器搜索你想要的器件或网络。
-
--	选中一个网络后，可以高亮全部与它连接的走线，过孔和焊盘。
-
--	勾选或不勾选一个网络可以使整个网络(包含导线)显示或隐藏。
-
--	双击一个网络名可以将它的所有导线连接删除，以便重新绘制走线。
-
--	查看PCB的DRC错误信息列表。
-
-![](./images/018_Introduction_Design-Manager-PCB.png)
-
-
-## 导入变更 
-
-当你修改了原理图，你可以很方便地导入变更。
-
--	1、可使用原理图的“[更新PCB](./Schematic.htm#更新PCB)”功能。
-
--	2、直接在打开PCB导入更新。**超级菜单 > 杂项 > 导入修改信息**，或者点击工具栏的导入变更图标。
-![](./images/128_PCB_ImportChanges.png)
-
-如果原理图存在错误，会直接弹窗提醒，如标注重复，封装缺失等。  
-![](./images/128_PCB_ImportChangesError.png)
-
-若无问题将弹出确认对话框：  
-![](images/129_PCB_ImportingConfirm.png)
-
-若确认无问题点击“应用修改”即可更新PCB。
-
-**注意：**
-
--	*网络名是自动生成，当你修改了原理图后部分网络可能会出现变更，那么更新至PCB后会导致原网络走线丢失！*
--	*导入变更后你将无法撤销！*
-
-## 无效封装
-
-有时候当你转原理图至PCB时可能会提示无效封装。这是因为封装的焊盘编号与原理图库文件的PCB引脚编号不一致导致的。
-
-![](images/130_PCB_InvalidPackages.png)
-
-如上图的R5，在原理图中R5的PCB引脚编号是A，B：
-![](images/131_PCB_InvlaidPackages_Symbol.png)
-
-在PCB中，R5的焊盘编号分别是1，2。故无法与A，B对应，导致无网络生成。
-![](images/277_PCB_InvalidPages_Footprint.png)
-
-为了解决这个问题，你可以：
-
--	修改原理图符号。如上图原理图R5，直接编辑R5的PCB引脚编号分别为1、2，并更新PCB即可。
-
--	修改封装焊盘的编号。如上图封装R5，直接修改R5的焊盘编号分别为A，B即可。
-
-
-## 设计规则检查
-
-立创EDA提供一个可实时运行的设计规则检查(DRC: Design Rule Check)功能。
-
-可在 **超级菜单 > 杂项 > 设计规则设置** 打开设置对话框。  设置里面的单位跟随当前画布的单位。
-![](./images/135_PCB_DRCSetting.png)   
-
-当打开实时设计规则检测功能，在你设计出现超出规则的错误时会直接出现高亮的X标识提示错误位置。如下图的走线间，和走线到焊盘间太近导致出现错误标识。   
-![](./images/136_PCB_DRCError.png)
-
-你可以在设计管理器中查看DRC错误信息。  点击错误选项会在画布中央高亮显示其位置。
-![](./images/136_PCB_DRCError_DesignManager.png)
-
-
-**注意：**
-
--	*当你直接通过原理图转为PCB时，实时DRC检查是开启的，但是之前的旧PCB文档是关闭的，你需要自行打开。*
--	*设计规则检查只能帮你发现部分很明显的错误。*
-
-## 自动布线
-
-当你设计一个简单的PCB板子时，或者设计要求不高希望自动布线时，那么你可以使用自动布线功能。在进行自动布线前，你需要设置PCB边框，并将封装放置在边框内。
-
-在**超级菜单 > 杂项 > 自动布线**或者点击工具栏的自动布线图标，打开自动布线设置界面。  设置里面的单位跟随当前画布的单位。
-
-![](./images/180_PCB_AuotoRouter.png)
-
--	**线宽**：自动布线的默认线宽。  
--	**通用间隙**：指走线之间，走线与焊盘之间的间隙。  
--	**SMD间隙**：SMD焊盘之间的间隙。  
--	**过孔直径和孔直径**：过孔直径。  
--	**清除已有布线**：若你要保留你之前的布线，你不能勾选该项。  
--	**实时显示**：是否实时显示布线状态。  
--	**布线层**：选择你要布线的层数。你的PCB开启了内层后此处的内层才可以勾选。  
--	**布线服务器**：
-	-	**云端**：使用立创EDA的服务器进行自动布线。
-	-	**本地**：使用本地布自动线服务器，当你打开配置对话框时，编辑器会自动检测本地布线服务器是否可用，使用方法请看下面的说明。
--	**忽略网络**：选择无须自动布线的网络。若你的铺铜连接到GND，你可以选择忽略GND网络。  
--	**特殊网络**：允许设置特殊网络的线宽与线距。如加粗电源走线。  
-
-**注意**：*设置的参数不能少于DRC设定值，否则将报错。*  
-![](./images/181_PCB_AuotoRouterConfigError.png)
-
-设置完毕后，点击运行即可进行自动布线。完成后如下图所示。
-![](./images/183_PCB_AuotoRouterFinish.png) 
-
-
-
-### 本地自动布线
-
-立创EDA建议用户使用本地布线服务器，当使用云端服务器时，如果使用人数较多，自动布线将会产生排队、布线失败等现象。
-
-下载地址1(百度网盘)：[EasyEDA Router.7z](https://pan.baidu.com/s/1eRT18kE#list/path=%2F)  
-下载地址2(Google Drive)：[EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM)  
-下载地址3(GitHub)：[EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)  
- 
-下载后解压至非系统文件夹。
-
-支持的操作系统：
-
--	Win7 64位及以上
--	Ubuntu 17.04 64位及其它64位Linux系统
-	
-在点击“自动布线”图标前，前请先配置浏览器和运行对应的脚本。	
-
-运行本地布线：
-	
--	在Windows下双击win64.bat
--	在Linux下控制台执行"sh lin64.sh"
-
-先配置浏览器：
-
-**注意：**  *请务必使用最新版的谷歌浏览器或火狐浏览器！！！*
-
-**1)Chrome谷歌浏览器**
-
-Chrome谷歌浏览器无需配置，如果你的本地自动布线无法使用，请检查是否已经使用了最新版的谷歌浏览器，需v60.0.3112.78及以上。
-
-**2) Firefox火狐浏览器**
-	
-1. 在地址栏输入"about:config"并按回车
-2. 搜索并双击如下参数（置为"true"）：  
-		`network.websocket.allowInsecureFromHTTPS`  
-		`security.mixed_content.block_active_content`
-3. 重新打开火狐浏览器进行本地自动布线。
-
-![](./images/287_PCB_LocalAutoRouter_Firefox.png)
-
-本地布线服务器可用时，对话框内有提示。点击“运行”后可以运行窗口提示如下：
-
-![](./images/288_PCB_LocalAutoRouter_Dialog.png)
-
-**提示：**
-
-
-如果自动布线失败，你可以尝试以下操作：
-
--	忽略GND网络，并铺铜和设置铺铜网络为GND。
--	使用小的线宽和间隙，但要确保线宽大于6mil。
--	先将重要的网络进行手动布线。
--	添加更多的层。
--	自动布线耗费服务器CPU资源，使用人数多时会容易失败，请耐心等待。
--	不要在网络名使用特殊字符，如 # $ & <> @ 等。
--	其他的将详细故障信息告知我们，并将你的PCB文件以EasyEDA源码文件的格式发送至3001956291@qq.com。
-
-建议使用手动布线，自动布线没有手动布线的工整和美观；手动布线可以锻炼布线能力提升经验；减轻立创EDA服务器负担。
-
-
-## 照片预览
-
-立创EDA暂未提供3D照片预览，但提供了2D照片预览。在PCB下，在工具栏点击打开。若该图标未出现，请重置工具栏图标：**齿轮图标  > 常用按钮设置 > 重置**。
-
-![](./images/140_PCB_Toolbar_PhotoView.png)
-
-在切换至照片预览后，可在标签上方切换层，选择颜色等。
-
-![](./images/141_PCB_PhotoView.png)
-
-画布背景默认黑色含网格且属性面板隐藏，你可以在右边点击收缩按钮展开属性面板并设置属性。
-
-![](./images/291_PCB_PhotoView_Attribute.png)
-
-
-
-## 生成制造文件
-
-当你完成PCB设计之后，你可以生成Gerber文件，通过：**超级菜单 > 杂项 > 生成制造文件**，或者点击工具栏上的生成制造文件图标：
-
-![](./images/142_PCB_FabricationOutput.png)
-
-点击后会打开一个下载页面，点击下载即可。
-
-![](./images/221_Export_DownloadGerberFile.png)
-
-如果你需要PCB打样，建议通过立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
-
-当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
-
-
-
-# 创建PCB库
-
-如果你需要一个PCB封装，但是立创EDA的元件库中不存在，那么你可以自行进行创建。
-
-创建PCB库与创建原理图库几乎一致，你可以通过：**文档** > **新建** > **PCB库** 建立。
-
-![](images/143_PCBLibs_NewLib.png)
-
-
-## PCB库工具
-
-PCB库工具的使用方法与PCB下的PCB工具一致，只是工具栏内少一些不需要的功能。
-
-![](images/226_PCBLib_PCBLibTools.png)
-
-放置焊盘及其编辑，请查阅[PCB：焊盘](./PCB.htm#焊盘)章节。
-
-
-## 其他事项
-
-1.  设置准确的网格和栅格尺寸很重要，一些精密的封装需要准确的尺寸，否则可能导致无法贴片。
-
-2.  请保持所有封装的边框线框，和文字在顶层丝印层绘制。放置封装在PCB时，立创EDA会自动为封装的丝印切换至PCB对应的丝印层。
-
-3.  按“CTRL+S”保存你的封装，然后你可以在左边导航栏的**“元件库”>“我的库文件”>“PCB库”**中找到它。
-
-4.  焊盘和过孔不能太小，需保持圆圈 >= 4mil。  
-  ![](images/146_PCBLibs_NewPadRing.png)
-  
- 
-
-# 导入 
-
-立创EDA目前支持导入的电路设计文件有：
-
--   Altium Designer/Protel DXP ASCII格式的原理图/PCB
--   Eagle 原理图/PCB/库文件
-
-
-你可以在 **文件 > 导入** 打开导入对话框。
-
-![](images/147_Import_NewImport.png)
-
-提取库文件功能只对Altium Designer原理图文件，PCB文件和Eagle库文件有效。
-
-
-## 导入Altium Designer文件 
-
-立创EDA仅支持以**ASCII格式**保存的原理图文件和PCB文件。所以你要导入的文件必须先保存为ASCII格式：
-
-![](images/148_Import_AltiumDesignerASCII.png)
-
-导入Altium Designer原理图文件，PCB文件效果已经非常出色，如下图：
-
-![](images/149_Import_AltiumDesignerSchemaitc.png)
-
-如果是Protel 99se的文件，请先在AD打开再根据上面的方式保存，再导入。
-
-Altium Designer原理图库文件，PCB库文件并不支持保存为 **ASCII**格式，所以立创EDA不支持直接导入Altium Designer的库文件。
-
-你可以将需要的导入的库文件全部放在原理图或PCB中，再将原理图和PCB另存为ASCII格式，再导入时选择“提取库文件”即可将库文件全部提取。提取后可以直接放置在相应的画布上，也可以直接添加到个人库中。
-
-![](images/149_Import_AltiumDesignerExtractLibs.png)
-
-## 导入Eagle文件 
-
-立创EDA支持Eagle文件导入，但是仅支持Eagle v6.0及以上版本的文件，因为Eagle从这些版本才开始采用**ASCII XML**结构的数据来保存本地文件。
-除了原理图和PCB，还可以直接导入库文件。选择导入库文件时，编辑器会自动切换至提取库文件选项。
-
-![](images/284_Import_EagleExtractLibs.png)
-                    
-
-## 导入DXF文件 
-
-如果你需要设计及其复杂的边框，设计美观的图案，并且你有现有的素材并保存为DXF格式。那么你可以尝试使用导入DXF功能。
-
-在**文档** > **导入DXF** 打开导入对话框：
-
-![](images/152_Import_DXF.png) 
-
-选择了DXF文件后，会显现DXF文件预览：
-
-![](images/153_Import_DXF_ImportDialog.png)
-
-立创EDA提供四种单位：英寸inch、厘米cm、毫米mm、密耳mil。 并可选择需导入的层：顶层、底层、顶层丝印、底层丝印、边框、文档。
-
-点击“导入”按钮后，即可在画布中出现。
-
-![](images/154_Import_DXF_Imported.png)
-
-上图提供的DXF文件可以自行下载体验： [DXF边框范例](/Doc/Tutorial/Doc/test.dxf)  
- 
-**注意：**
-
--	*只支持在PCB文件导入DXF。*
--	*导入的DXF文件必须以 .dxf 为扩展名。*
--	*当你选择导入的层是边框时，圆圈会被转换为过孔。*
--	*会有一些细节项目无法完美支持。* 
-
-
-
-# 导出 
-
-立创EDA支持导出多种类型的文件，以便于满足你在多方面的需求。
-
-
-## 导出原理图
-
-### 用多文件格式导出原理图
-
-导出原理图可通过点击：**文档 > 导出** 会打开以下对话框：
-
-![](images/155_Export_SchematicExportDialog.png)
-
--	**导出选项：**可选择PDF，PNG，SVG文件。
--	**宽：** 该选项是指所导出图片的宽度，仅对导出PNG有效。默认为0，代表实际尺寸。数值越高代表导出的分辨率越高，比如你输入1024，那么导出PNG图片的宽度为1024像素，图片高则根据原理图自动调整。
--	**线宽增量：** 0代表实际尺寸。当你设置为1时，线宽会增大一倍。如下图，左边线宽为0，右边线宽为1.
-
-![](images/156_Export_SchematicExport_PenWidth.png)
-
-
-### 用Altium Designer格式导出原理图
-
-导出Altium Designer格式原理图可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
-
-![](images/289_Export_SchematicInAltium.png)
-
-点击“立即下载”即可下载Altium Designer格式的原理图。
-
-
-### 下载原理图文档
-
-立创EDA支持你下载自己的原理图文件，以EasyEDA格式源码方式下载，.json为后缀名。
-
-你可以在**文档** > **EasyEDA格式源码**下载：
-
-![](images/285_Export_SchematicEasyEDASource.png)
-
-也可以使用**下载工程**功能下载：**选择原理图所在的工程  > 点击右键 > 下载工程**。
-
-更多关于EasyEDA格式源码的信息，请查看下面[导出EasyEDA源码文件](./Export.htm#导出EasyEDA源码文件)章节。
-
-
-### 打印原理图
-
-在点击 **文件** > **打印** 后，会打开一个网页，并调出浏览器打印对话框，设置参数后直接打印即可。请留意打印边界的设置，否则打印出来的画面可能会超出单页界面。
-
-也可以使用导出的PDF，PNG，SVG进行打印。建议优先选择PDF打印。
-
-
-### 导出BOM
-
-立创EDA支持导出BOM表(物料清单)，以便于你购买所需的零件。
-BOM导出可以点击工具栏的BOM图标：
+You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below，click the top toolbar `BOM` icon:
 
 ![](images/273_Export_BOM_Icon.png)
 
-点击后会弹出一个导出对话框，在这个对话框里，直接点击“从立创商城购买”按钮即可下载CSV格式的BOM表。   
+After clicking the BOM export option, the dialog below will open.
 
-导出前，你还可以为零件指定立创商城的零件编号，以利于在立创商城上方便购买元件，下单时直接上传BOM表即可：
+In this dialog，you can assign LCSC part's order code for your components.
 
 ![](images/085_Export_BOM_Assign.png)
 
-点击分配图标后会打开元件库搜索框，在这里找到你想要的零件后然后点击“分配”完成编号指定，分配的编号将出现在BOM中。
+After clicking on the assign icon，the components and packages search dialog will pop up, and you can choose which component you want to assign.
 
 ![](images/274_Export_BOM_Assigned.png)
 
-未来BOM导出功能会与立创商城打通，将实现一键加入购物车功能，届时将大大方便用户采购元件。
+When you click "Export BOM at LCSC", we will help you to list all the components of your BOM,  If you want to buy the components form LCSC, and you just need to put them to the cart and check out.  
+![](images/284_Export_BOM_ExportBOMDailog.png)  
 
-BOM打开后如图：
+![](images/283_Export_BOM_ExportFromLCSC.png)
+And Click the "BOM" button to download the BOM file. You can open it in any text editor or spreadsheet.
 
 ![](images/086_Export_BOM_CSV.png)
 
-### 导出网表
+### Export Netlist
 
-立创EDA支持导出多种EDA使用的网表文件格式。可导出单一文档网表也可导出整个工程的网表。
+EasyEDA can export the netlist for the active schematic (Document) and/or for the whole active project:
 
-支持的格式有：Spice仿真格式，Protel/Altium格式，Pads格式，FreePCB格式，Kicad格式，Eagle格式，OrCAD格式。
+**Super menu > Miscellaneous > Netlist for Document or Netlist for Project**
 
-打开通过：**超级菜单 > 杂项 > 生成本文件网络/生成本工程网络**
+EasyEDA can export a netlist in a variety of formats: 
+
+-   **Spice**: this is a Spice3f5 compatible netlist generated by the simulation engine of EasyEDA, [Ngspice](http://www.google.com/url?q=http%3A%2F%2Fngspice.sourceforge.net%2Fpresentation.html&sa=D&sntz=1&usg=AFQjCNEvVOggHskD819G-5EW8EB59FL5mw). It is not normally used as the basis for as a PCB layout.
+-   [KiCad](http://www.kicad-pcb.org/): a PCB netlist in a format that can be imported straight into Pcbnew, the PCB layout tool part of the free, open source cross-platform EDA suite.
+-   **Altium Designer**: a PCB netlist in a format that can be imported straight into Altium Designer and it's predecessor, Protel. 
+-   **Pads**: a PCB netlist in a format that can be imported straight into Pads PCB layout tools.
+-   [FreePCB](http://www.freepcb.com/): a PCB netlist in a format that can be imported straight into FreePCB, a  free, open source PCB editor for Windows.
 
 ![](images/087_Schematic_NetlistForDocument.png)
 
 
-## 导出PCB
 
-### 用多文件格式导出PCB
-
-导出PCB设计与导出原理图设计的一样。在 **文档 > 导出** 或 **文档 > 打印**，点击后会打开如下对话框：
-
-![](images/157_Export_PCBExport_Dialog.png)
-
--	**导出选项：**可选择PDF，PNG，SVG格式文件。
--	**宽：** 该选项是指所导出图片的宽度，仅对导出PNG有效。默认为0，代表实际尺寸。数值越高代表导出的分辨率越高，比如你输入1024，那么导出PNG图片的宽度为1024像素，图片高则根据原理图自动调整。
--	**合并层：**选择的层将全部打印在一个PDF/PNG/SVG里面。
--	**分离层：**选择的层会分别在一个单独文件里，以压缩包的形式导出。只有选择分离层时，层的镜像选项才可以使用。
--	**色彩：**有全彩和白底黑图。若自己制作PCB建议选择白底黑图。
--	**装配图**：选择该选项后只打印顶层和底层的装配位置。如插件孔，焊盘等。
-
-**注意：** 
-
--	*如果你要打印1:1大小的PCB，请选择导出 PDF(1:1)。*
-
-
-### 用Altium Designer格式导出PCB
-
-导出Altium Designer格式PCB可通过点击：**文档 > 导出Altium...** 会打开以下对话框：
-
-![](images/289_Export_PCBInAltium.png)
-
-点击“立即下载”即可下载Altium Designer格式的PCB。
-
-当用Altium Designer打开导出的PCB时， 会打开一个“DXP Import Wizard”的窗口，点击取消继续即可。
-
-![](images/290_Export_PCBInAltium_1.png)
-
-打开后的PCB会如下图，似乎没有铺铜一般：
-
-![](images/290_Export_PCBInAltium_3.png)
-
-此时你需要对PCB进行重新铺铜，通过: **Tools > Polygon Pours > Repour All**：
-
-![](images/290_Export_PCBInAltium_2.png)
-
-之后保存即可。
-
-![](images/290_Export_PCBInAltium_4.png)
-
-如果你要导出的PCB没有进行布线，那么你需要在Altium Designer里面进行相应的设置，使飞线显示出来：
-
-通过：**“设计 > 网络表 > 清除所有网络”**，快捷键：**D > N > A**
-
-![](images/290_Export_PCBInAltium_5.png)
-
-或者通过快捷键：**N > H > A** 再 **N > S > A**。
-
-![](images/290_Export_PCBInAltium_6.png)
+​                    
 
 
 
-### 下载PCB文档
+# Creating the Schematic Libs
 
-下载方法与前面的**下载原理图文档**一致。
+Using **Symbol Wizard** and **Group/Ungroup...** is a quick way to create schematic symbols but they are placed directly into the schematic that they are built in. It is possible to reuse them by copying them (`CTRL+C` hotkeys) from the schematic they were created in and then cross-document-pasting them (`CTRL+SHIFT+V` hotkeys) into a different schematic but this quickly gets messy if you need to copy symbols that were created in several different schematics. OK, you could keep copying new symbols into a dedicated “symbol library” schematic sheet to save searching for them but EasyEDA offers you an easier way to create and manage your symbols in a library.
+
+Start a new Schematic Lib as shown below or by doing:
+
+**Document > New > Schematic Lib**
+
+![](images/088_SchematicLibs_CreateNewLib.png)
+
+This opens the New Schematic Lib symbol editor.
+
+You can now create a symbol using Symbol Wizard as before or draw it using the Drawing Tools palette and add pins using the `P` hotkey (except that you no longer need to use **Group/Ungroup...**).
+
+Then you can edit the pin map using:
+
+**Super menu > Miscellaneous > Pin Map...**
+
+Note the Origin Point. To simplify rotating and flipping your symbols when they are placed into a schematic, make sure all of your symbols are created as near as possible centered around that point.
+
+## Pins
+
+Symbols pins are the most important part of any Schematic Lib symbol. They are the things that allow wires to be attached to symbols to connect up your circuit.
+
+You can use the **P** hotkey to add a Pin or from the toolbar:
+
+![](images/089_SchematicLibs_ToolbarPins.png)
+
+Before placing it on the canvas, you can use the rotation hotkey or rotate and flip from the menu to rotate it to the right orientation. Make sure the **Pin Dot(black dot)** is in the right position. The **Pin Dot** will be used to connect your wires or netlabels. Whenever a PIN is either placed as directly onto the canvas or as part of a symbol, the mouse has to point to the **Pin Dot** position to automatically start the Wire mode or to join a wire to it.
+
+![](images/090_SchematicLibs_PinDot.png)
+
+Whenever a Pin is placed as part of a symbol, the **Pin dot** should be **outside** of — and pointing away from — the symbol like in example 1(correct position), inside or pointing towards the symbol as shown in example 2(wrong position).
+
+![](images/091_SchematicLibs_PinDotPlacing.png)
+
+When you select a single Pin, the **Pin attributes** will be shown in the right hand **Properties** panel:
+
+![](images/092_SchematicLibs_PinAttributes.png)
+
+**Orientation**: 0°,90°, 180° and 270°。If you want to create a 45° pin, you need to set it length as 0, and draw a line with 45°。
+
+**Start-X and Start-Y**: The pindot position. Sometimes it may be difficult to move the pin to the desired position using the mouse, so you can move the pin via Start-X and Start-Y.
+
+**Length**: Pin length.
+
+**Name**: In this example, *VCC* is the name of the Pin.
+
+**Number**: In this example, *1* is the number of the Pin. This number is the pin number of the device in a physical package and so will be the pin number used in the device footprint for that device in that package in your PCB lib.
+
+Note that you can use alphanumeric identifiers such as; A1, B1, C1, A2, B2 and so on as the Number.
+
+**Spice Pin order**: These are the pin numbers used to connect your symbol to the corresponding pins defined by the .model or .subckt used to simulate your device. The pin numbers of the simulation model may be different from the physical package pin numbers and - unless the model is specifically created to model multiple devices in a single package - do not change for different instances of a device in a multi-device package. The Spice Pin order must be **numerals** only.
+
+For more information about Spice Pin order please see the section on [Prefixes And Pin Numbers](./Schematic.htm#Prefixes-And-Pin-Numbers).
+
+**Name Display**: If you don't want to show *VCC*, switch it to NO.
+
+**Number Display**: If you don't want to show *1*, switch it to NO.
+
+You can adjust the Name or Number position using your mouse but note that rotate and flip applies to the whole pin including the name and pin number; these items cannot be rotated and flipped independently of the pin itself.
+
+Note also that rotate and flip actions do not result in upside down or mirrored pin number or names.
+
+**Color**: You can set the Pin to different colours, such as *PIN3:CLK* as orange and *PIN4:GND* as blue. In this example, the PIN1 is set as color `#880000`, but it shows as red, because it is selected. After deselecting it, the pin will appear color `#880000`.
+
+**Dot**: adds a circle to the inside end of the pin to indicate logical (or analogue) inversion.
+
+**Clk**: adds a `>` to the inside end of the pin to indicate that the pin is logical clock input.  
+
+![](images/093_SchematicLibs_PinAttributesEdit_51.png)
+
+**Show**: YES/NO. Allows you to hide the pin. When set it to NO, this Pin will be hidden when the symbol is placed on the schematic editor canvas.
+
+Note that the pin is not hidden here in the Schematic Lib symbol editor canvas because if it was, it would disappear from view and so how would you find it to make it visible again? For the same reason this option has no effect in symbols made using Group/Ungroup…
+
+*We may not have thought of everything in EasyEDA but we do try.  :)*
+
+**Electric**: [Undefined, Input, Output, I/O, Power] 
+
+EasyEDA provides Electrical Rules Checking (ERC) right now, But you still need to set electric of your Schematic libs. 
+
+If you set the PIN as Power and set the pin to be hidden, then the Pin will be connected by Name which is the NetLabel. If the Name is VCC, it will be connected to the net in your circuit with the NetLabel or NetFlag VCC. This is helps to keep the schematic clear and uncluttered when using Multi-part Components.
+
+After created the Lib, use `CTRL+S` will open the save dialog:
+
+![](images/093_SchematicLibs_SaveLibs.png)
+
+After clicking **Save**, you will see it appears in **Parts > My Parts > Schematic Lib** of the left hand Navigation panel.  
+![](images/094_SchematicLibs_MyLibs.png)
+
+You can add a tag for your new symbol: **Parts > My Parts > Schematic Lib > Select New Lib > More > Modify**, otherwise it will appears on **Untagged**.
+
+![](images/095_SchematicLibs_MyLibsAddTag_58.png)
+
+
+## Subparts
+
+We have already touched on how EasyEDA can support **Multi-part Components**  but how do you create **multi-part components**?
+
+EasyEDA provides a sub parts facility to do this.
+
+After creating a part, you can right click the part in the My Parts section to pop up the content menu.
+
+Suppose you have created your own symbol for a 74HCT04 hex inverter.
+
+![](images/096_SchematicLibs_MyLibsAddSubparts.png)
+
+Right Click **Add sub part** and that will add 74HCT04.*1*,  
+
+Click again to add 74HCT04.*2* , up to 74HCT04.*6*. 
+
+Then double click on each sub part in turn to modify the Pin Name and Number attributes.
+
+Easy or what?
+
+## Custom Attributes
+
+In the Schematic Lib editor's canvas Properties panel, you will find a **Custom Attributes** section:
+
+![](images/097_SchematicLibs_MyLibsCustomerAttributes.png)
+
+**Mounted**
+
+You can control this part mounted or not on the PCB. If you choose No, this component will not appear in the BOM report.
+
+**Package**
+
+If you would like to built a PCB, you need to assign a package for your schematic Lib symbol. Although there are other ways to do this in EasyEDA, here is the right place to do it. When you set a package , the package's pad numbers must match the  schematic Lib's pin number, otherwise,  when you convert the schematic to PCB , there will miss several nets.
+
+Click in the **Package** input box, and the  **Footprint Manager** dialog will open as used to do this task in the Schematic Editor.
+
+
+**Prefix**
+
+The default Schematic symbol Prefix is **U?** If you create a resistor, you can set the Prefix to **R?**
+
+
+**Name**
+
+You can change the schematic lib's name here, it is can be different from the part's file name.
+
+**Contributor**
+
+This is your registered user name. Other EasyEDA's users will remember your contributions!  
+
+## Edit SchematicLibs
+
+When you feel the Schematic Libs can not be satisfy for you, you can edit it.
+
+Via **"Parts" > "Search Part/My Parts/LCSC Parts/System Components/User Contributions" > Select Schematic Lib > Edit**
+
+![](images/290_SchematicLibs_Edit.png)
+
+when you finish and save , it will be saved to your personal libraries "My Parts" and become your personal libraries.
+
+​
+				 
+					 
+					 
+
+# PCB Design Editor 
+
+After the initial conversion of a schematic to PCB, it is time to learn how to manage EasyEDA's PCB Design Editor.
+
+
+## Canvas 
+
+Lots of PCB canvas attributes are the same as Schematic canvas attributes. The key is that you can set **units** in PCB canvas attributes.
+
+![](images/108_PCB_CanvasAttributes_15.png)
+
+
+## PCB Tools 
+PCB tools provide many function to fulfill your PCB design requirement.
+Such as: Track, Pad, Via, Text, Arc, Circle, Move, Hole, Image, Canvas Origin, Connect Pad to Pad, Copper Area, Solid Region, Measure/Dimension, Rect, Group/Ungroup. etc.
+
+![](images/109_PCB_PCBTools_123.png)
+
+
+### Track 
+
+In the schematic editor, we use Wire or the `W` Hotkey to connect Pins, in a similar way in the PCB editor, we use Track to connect Pads. Track allows you to draw PCB tracks and can be found on the PCB Tools palette or using the `W` Hotkey (not T: see above!).
+
+**Some Tips about Track.**
+
+**1.**  Single click to start drawing a track. Single click again to pin the track to the canvas and continue on from that point. Right click to end a track. Double right-click to exit track mode.
+
+**2.**   Drawing a track at the same time as using a hotkey(for example hotkey `B`) for changing the active layer will automatically insert a Via:  
+  ![](images/113_PCB_TrackInsertVia_57.png) 
+If you start drawing a track on the top layer - you will see it drawn in red - then press the B key to change to bottom layer and you will see EasyEDA insert a grey via and then the track will continue being drawn but now on the bottom layer in blue.
+
+**3.**  Pressing the `+` or `-` Hotkeys when drawing the track will change the width of the track on the fly.
+
+**4.**  Double clicking on a drawn section of the track will add a new vertex at that point. You can drag the vertex to form a new corner.  
+  ![](images/114_PCB_TrackVertex_19.png)
+
+**5.**  Click to select the track and then Click and Drag on a segment of the track to adjust the segment between vertices.
+  ![](images/115_PCB_TrackSegmentAdjust_38.png)
+
+**6.**  Pressing the `L` Hotkey when drawing the track will change the track's Route Angle on the fly. And you can change Route Angle on the Canvas Attributes of the right panel before the next drawing.
+  ![](images/112_PCB_RouteAngle.png)
+
+
+**7.**  You can change inflection direction when routing, just press `Space` key.
+  ![](./images/224_PCB_TrackChangeDirection.png)
+
+
+**Track Length**
+
+When a track is selected, you can find its Length attribute in the right panel.
+![](./images/137_PCB_TrackLength.png)  
+
+
+**Delete a Segment from a Track**
+
+In lots of other EDA tools, the track is segment line, but in EasyEDA, the track is polyline. Sometimes, if we want to delete a segment, we must delete the whole track and route again. Now we provide a better way to do this. Move your mouse to the segment which you want to delete, click it, then hold `SHIFT` and **double click it**. the segment will be removed.
+
+![](./images/225_PCB_DeleteSegmentTrack_21.png)
+
+
+### Pad 
+
+You can add pads using the Pads button from the PCBLib Tools palette or using the `P` hotkey.
+
+After selecting one of the pads, you can view and adjust its attributes in the right hand Properties panel.
+
+![](images/144_PCBLibs_NewPad_32.png)
+
+**Number:** Remembering the pin numbers you set in the schematic symbol in your Schematic Lib: to connect those schematic symbol pins to the pads in your PCB footprint, the pad numbers you set here in the PCB Lib footprint must be the same.
+
+**Shape:** Round , Rectangular ,  Oval and Polygon.
+
+EasyEDA supports four shapes: `Round` , `Rectangular` , `OVAL` and `POLYGON`.  
+
+-	`OVAL` PAD will give your more space.   
+-	`POLYGON` PAD will let you to create some strange pad.  
+
+Like in the image below, you can edit the PADs points when you select a `POLYGON` PAD
+![](./images/145_PCBLibs_NewPadShape.png) 
+
+**Layer:** If the pads are part of a **SMD** footprint, you can set it to **Top layer** or **Bottom layer**. For through hole components you should set it to **All**.
+
+**Net:** You don't need to enter anything here because at present this footprint is not connected to anything in a circuit.
+
+**Width and Height:** When the shape is set to Round, Width will equal Height.
+
+**Rotation:** Here you can set the Pad's rotation as you want.
+
+**Hole(D):**  This is the drill hole **diameter** for a through hole pad. For a SMD Pad, set this to **zero**.
+
+**Center-X and Center-Y:** using these two attributes, you can set the pad's position with more precision, compared to using the mouse.
+
+**Plated：** Yes or No.
+
+
+### Via
+
+When you want to lay a multilayer PCB, you need to add Vias for nets getting through layer and layer.
+
+**Place a Via On a Track**
+
+When placing a `via` on a track, the track will be cut to two segments.  Placing two vias on a tracks, you will get three segments, then you can change one segment to other layer id, or remove one of them.   
+![](./images/142_PCB_ViaOnTrack_85.png)
+
+
+### Text
+
+You can add more fonts from your computer or download some [free fonts:www.1001freefonts.com](http://www.1001freefonts.com/) .
+
+Select the text, then you can find a Font-family attribute on the right panel like in the image below.  
+![](./images/185_PCB_Text_AddFonts.png)  
+
+Click the add button, then choose the font, the font file must be `ttf` or `otf`.  
+![](./images/186_PCB_Text_FontsSupport.png)  
+
+So you can add any fonts by yourself. EasyEDA doesn't cache the font on our server, so if you close the editor, you need to add the font again by yourself.
+
+**Note:** *If you use the other font, the `LineWidth` attribute is useless, because it will be automatically set by changing the `Height`.*
 
 
 
-### 生成制造文件
+### Arc
 
-当你完成PCB设计之后，你可以生成Gerber文件，通过：**超级菜单 > 杂项 > 生成制造文件**，或者点击工具栏上的生成制造文件图标：
+You can draw many Arcs with different sizes, it's easy to create a pretty cool PCB as you like.  
+
+![](./images/242_PCB_PCBTools_Arc.png)  
+
+EasyEDA provides two Arc tools:
+
+- Start point fixed, you can change the end point position and radius.  
+  ![](./images/268_PCB_Arc.png)
+- Center point fixed, you can change the radius.  
+  ![](./images/269_PCB_Arc_Center.png)
+
+### Circle
+
+You can draw a circle in PCB , but it can only be drawn at SilkLayer and Document Layer. If you want to draw a circle at TopLayer or BottomLayer, please use Arc.
+
+### Move
+
+This option is same as schematic's drag.
+
+### Hole
+
+There were lots of users that didn't know how to use PAD or VIA as a HOLE, they asked EasyEDA for help, so EasyEDA added a HOLE TOOL in the PCB toolbar.  
+![](./images/139_PCB_PCBTool_Hole.png)
+
+### Image  
+
+On PCB and PCB Lib editor, there is a nice feature on the PCB Tools bar.
+
+![](./images/139_PCB_PCBTool_Image.png)
+
+After clicking on the image icon, you will see the Insert Image window as below.  
+![](images/184_PCB_InsertImage.png)  
+
+In this dialog, you can choose your favorite image, EasyEDA support `JPG`, `BMP`, `PNG`, `GIF`, and `SVG`. Unlike some other EDA tools which only support a Monochrome Bitmap image, EasyEDA supports full color, but Monochrome Bitmap is welcome.
+
+You can adjust the color tolerance, simplify level and reset the image size there.
+
+And you can select shape invert. 
+
+The image will be inserted to the active layer, if it is not right, you can change the attribute. Such as TopSilkLayer.    
+![](images/187_PCB_InsertImageLayer.png)  
+
+
+### Canvas Origin
+
+This option is the same as schematic's Canvas Origin.
+
+### Protractor
+
+We provide a protractor for PCB tools.  
+![](images/280_PCB_PCBTools_Protractor_58.png)
+
+### Connect Pad to Pad
+
+When creating a PCB without a Schematic, none of the pads on the Footprints have nets connecting them so there will be no ratlines. 
+
+Rather than try to track the pads from scratch, it is a good idea to connect them up by hand first using `Connect Pad to Pad` from the PCB Tools palette. This will help you to remember to track the pads correctly with fewer mistakes.   
+
+You could also do this by setting net names for all the pads: if the two pads are given the same net name then EasyEDA will understand that they are connected together and will automatically create a ratline between them.  
+
+![](images/119_PCB_PCBTool-ConnectPadToPad_1.png)  
+
+Or you can set these two pads with the same net name at the right panel Pad Properties after you click the pad.
+
+![](images/120_PCB_PCBTool-ConnectPadToPad_2.png)  
+
+For more information about Ratline you can refer to the [Ratline](./PCB.htm#Ratline) section.
+
+
+### Copper Area 
+
+Sometimes you will want to fill in or flood an area with copper. Usually this copper area will be connected to a net such as **GND** or a supply rail. You can draw the outline of a flood using the **Copper Area** button from the PCB Tools palette.
+
+When selecting a copper area, you can find its attributes from the right hand **Properties** panels.
+
+![](images/134_PCB_PCBTool_CopperArea.png)
+
+**Layer:** Bottom, Top, Inner1, Inner2, Inner3, Inner4;
+
+**Net:** the net that the copper area is connected to;
+
+**Clearance:** clearance of the copper area from other nets and floods;
+
+**Pad Connection:** direct or spoke (i.e. a cross shaped heat shunt);
+
+**Keep Island:** Yes/No. This keeps or removes any isolated areas of copper created as part of the flooding process. It is usually good practice to removes these unless you really need them to maintain a more even spread of copper (copper balance) on your PCB;
+
+**Fill Style:** No/Filled. No removes the fill so that you can see the tracking more clearly;
+
+After drawing the copper area, set the net it is to be connected to (floating copper areas are not recommended because they can cause EMC and Signal Integrity (SI) problems).
+
+Lastly, don't forget to click the button Rebuild Copper Area to **rebuild** the flood.
+
+**Two Tips:**
+
+1.  Hotkey `Shift+B` to build all of the copper areas.
+2.  Hotkey `Shift+M` to clear all of the copper areas.
+
+### Solid Region
+
+EasyEDA has added a new tool Solid Region for PCB design
+
+![](images/121_PCB_PCBTool_SolidRegion.png)
+
+This is a very useful, quick way to connect Pads. You can draw a Solid Region to include all of these pads with same net name, then set the region to the same net name as the pads. It is like Copper Area but easier to use for small areas. To use Solid Region like this, set the Type attribute (in the right hand Properties panel)  to Solid.
+
+![](images/122_PCB_SolidRegion_1.png)
+
+The Solid Region can also be used to create a cutout in a copper area.
+
+If you have a copper area but need an area inside it to not be filled then you can draw a Solid Region  and set the Type attribute (in the right hand Properties panel)  to Cutout , then this area will be free of copper, as shown in the image below:
+
+![](images/123_PCB_SolidRegion_Cutout.png)
+
+Lastly, by setting the Type attribute (in the right hand Properties panel) to NPTH(Non Plated Through Hole), Solid Region can be used to create a *Non Plated Through Hole* of an arbitrary shape.
+
+When the Gerber files are generated, an area defined by a Solid Region set to a Type NPTH in the PCB editor will create an area defined to be a NPTH hole and you can see it in the PCB photo view as below:
+
+![](images/124_PCB_SolidRegion_NPTH.png)
+
+
+### Measure/Dimension 
+
+Making and adding measurements is useful in PCB design. EasyEDA provides two methods to do this.
+
+1.  Dimension tool in the PCB Tools palette:  
+  This tool can show three units on the canvas, milliliter, inch and millimeter.
+
+  ![](images/132_PCB_PCBTool_Dimension.png)
+
+  When you click one side of the dimension on the PCB, you can drag it for any directions or change its length.
+  ![](images/276_PCB_PCBTools_Dimension.png)
+
+2.  Measure a distance using **M** Hotkey: press **M**, Or Via: **Super menu > Miscellaneous > Measure Distance**, then click the two points which you would like to measure.    
+  **Note:** *This method will display the distance units which is the canvas' units.*  
+  ![](images/133_PCB_Dimension_KeyM.png)
+
+
+### Rect
+
+It looks like a Solid Region, but it can't be set Nets and you can't set the Layer as NTPH.
+
+![](images/243_PCB_PCBTools_Rect.png)
+
+### Group/Ungroup
+
+Just like Group/Ungroup in the Schematic Editor can be used to create a schematic lib symbol, you can use Group/Ungroup from the PCB Tools palette to create a PCB Lib footprint in the PCB editor.
+
+For example, place Tracks and Pads on the canvas, then select all of them and click **Group/Ungroup** to group them like in the image below:
+
+![](images/118_PCB_PCBTool-Group.png)
+
+## Ratline
+
+When you lay the track in the PCB, Between PIN and PIN as they have the same net name, a Ratline will be automatically shown among them to reveal that they can be connected with a track.
+
+![](images/222_PCB_Ratline.png)
+
+If you want some type of ratline to not show on the PCB editor, you can untick the net you like in the design manager, as below deselect `+12V`:
+If you still draw a track in `+12V` after deselecting, canvas will not display this track , but it will show a text with `+12V` as below.
+
+![](images/223_PCB_UnShownRatline.png)
+
+Based on this skill， you don't need to lay GND net before copper area in the PCB.
+
+If you want to check the ratlines with highlight, you can click the pencil on the Ratlines Layer as below, and you can change the ratline's color.
+
+![](images/278_PCB_LayersTool_Ratlines.png)
+
+
+## PCB Net
+
+### Net Name Visible
+
+PCB editor can display net name in the track or Pads, if you don't need this feature, just need to turn it off via： 
+
+**Super menu > View > PCB Net Visible**, or press hotkey `Q` .
+
+![](images/227_PCB_PCBNetVisible.png)
+
+### Net Length
+
+After selecting a track, and then pressing `H` key, EasyEDA will highlight the whole net and pop a message box to tell you the whole net's length. like in the image below  
+![](./images/138_PCB_NetLength_KeyH.png)
+
+
+## Layers Tool 
+
+Active Layer: The colours of the layers in the **Layers Tool** are defined in the Layer Options Settings. To work on a layer then you must make it the Active layer. To do this; click on the coloured rectangle representing the required layer. The pencil icon in the coloured rectangle indicates that this is the active layer.
+
+Show/Hide layers: click on the eye icons to show/hide layers.
+
+![](images/111_PCB_LayerView.png)
+
+HotKeys for layer activation:  
+
+-	**T:** Top Layer is active  
+-	**B:** Bottom Layer  
+-	**1:** Inner1 Layer  
+-	**2:** Inner2 Layer  
+-	**3:** Inner3 Layer  
+-	**4:** Inner4 Layer  
+
+## Layer Setting 
+
+Via **Super menu > Miscellaneous > Layer Options...**, Or Click **Layers**' gear icon.
+
+You can find the Layer Options Settings dialog.
+
+In this dialog, you can change the layer's Color and configure which layers are shown in the Layers Tool. If you plan to design a PCB with more than 2 layers, then you must tick Inner1 and Inner2 for a 4 layer PCB plus Inner3 and Inner4 for a 6 layer PCB.
+
+![](images/110_PCB_LayerOptions.png)
+
+## Footprint attributes 
+
+When selecting a Footprint, you can find its attributes at the right hand Properties panel.
+
+![](images/116_PCB_FootprintAttributes.png)
+
+**Layer**: You can set a footrpint to be on the TopLayer or BottomLayer.   
+*Note: The footprint mirrors when swapping layers.*
+
+**X-Location and Y-Location**: Moves the origin of the footprint to a precise position.
+
+**Rotation**: Rotates the footprint about its origin over the range from 0o to any angle in 1o steps (visually of course multiples of 360o will appear identical).
+
+**ID**: EasyEDA will assign a unique ID for each footprint automatically, you can't modify it.  
+
+
+### Change Attributes in Batch on PCB Editor
+
+Sometimes, we need to change some attributes of multiple objects together, such as the track width, hole size and font size.  
+Now, you can select them and do some changes. Taking the track for an example. If you select 3 tracks, now you can change their `Width`, `Layer`, `Net` together.  
+
+![](./images/262_PCB_TrackBatchModify.png)
+
+You could also use it with other items such as `Pad`, `Via`, and  `TEXT`. 
+
+
+
+## Layout A PCB Without Schematic 
+
+For some small PCB projects, maybe you don't need a schematic. EasyEDA allows you to lay the PCB directly from the PCB Editor.
+
+Start a new PCB and you can add footprints directly from the PCB Libs from Left Navigation Panel **Parts** and then just track them.  
+
+For setting pad to pad connections, you can check the above section : [Connect Pad to Pad](./PCB.htm#Connect-Pad-to-Pad)
+
+
+
+## Board Outline
+
+Before placing footprints we need to create a board outline. The board outline must be drawn on the **BoardOutLine** layer. So first, set **BoardOutLine** as the active layer, then draw the board outline using **Track** and **Arc** from the PCB Tools palette.
+
+![](images/125_PCB_Outline.png)
+
+When converting a Schematic to PCB, EasyEDA will try to create a board outline for you.
+
+The area of the default board outline area is 1.5 times the sum of the area of all of your footprints, so you can place all of your footprints into this board outline with some allowance for tracking. If you do not like the board outline, you can remove the elements it is made up from  and draw your own.
+
+![](images/126_PCB_AutoOutline.png)
+
+To create a simple rectangular board outline, this arc can be removed and the line X and Y end points edited - either directly in the Properties panel or by dragging the line ends - to close the rectangle.
+
+Alternatively, an outline with more rounded corners can be created by copying the arc and rotating it in 90 degree steps to position it over the desired right angle corners and then editing the line X and Y end points - either by dragging the line ends or directly in the Properties panel - to overlap the arc end points (also shown but not editable in the Properties panel).  
+
+And EasyEDA provides a **Board outline wizard**, so it is very easy to create a board outline.
+Via: **Super menu > Miscellaneous > Set Board Outline**, Or find it on the toolbar.  
+
+![](./images/127_PCB_BoardOutlineWizard.png)
+
+In this dialog, there's a choice of 3 types of board outlines, Rectangular , Circular, Round Rect. If you need a different more complex board outline, you need to import a DXF file.
+
+
+## Design Manager 
+
+Just like Schematic's Design Manager, PCB's Design Manager can be found via:
+
+**Left Navigation panel > Design**
+
+or just press the `CTRL+D` hotkey to open the Design Manager dialog.
+
+In this dialog, you can:
+
+1.  Click a component to highlight it.
+
+2.  Check/uncheck a component to show/hide it.
+
+3.  Filter to find a component or net.
+
+4.  Click a net to highlight the tracks/vias with the same net.
+
+5.  Check/uncheck the net to show/hide the net. For example, very often you may want to use this to hide a GND or supply net which has had a copper flood added to turn it into a plane and then show it again later.
+
+6.  Double click the net to remove all of the tracks and vias with the net name. If you want to reroute a net, this is the recommended method to use to un-route it first.
+
+![](./images/018_Introduction_Design-Manager-PCB.png)
+
+
+## Import Changes 
+
+Before using "Convert to PCB", "Update PCB" in Schematic and "Import Changes" in PCB, please read [Essential Check Before Clicking "Convert to PCB" or "Update PCB" or "Import Changes"](./EssentialCheck.htm#Introduction) section.
+
+Sometimes, while working on a project, you need to make changes to the schematic and then update your board, to incorporate them.
+
+It's easy to do this with EasyEDA.
+
+Go to the **PCB Editor**,
+
+**Super menu > Miscellaneous > Import Changes**
+
+Or click that button at the tool bar  
+
+![](./images/128_PCB_ImportChanges.png)
+
+You will get a Confirm Importing changes information dialog:
+
+![](images/129_PCB_ImportingConfirm.png)
+
+If you are happy with your changes, just click the Apply Change button.
+
+The changes will then be passed into the PCB layout and you can then adjust the tracking to suit.
+
+
+## Invalid Packages 
+
+Sometimes, when you try to convert a schematic to a PCB, you will get an error message dialog like below. Don't worry, it is easy to fix this problem.
+
+![](images/130_PCB_InvalidPackages.png)
+
+From the error message, you will find that the symbol's PIN number is different from PAD number. What caused that? Check the image below,
+
+![](images/131_PCB_InvlaidPackages_Symbol.png)
+
+![](images/277_PCB_InvalidPages_Footprint.png)
+
+From the image, we can get the PIN number in the schematic symbol is set as `3`, but the PAD Number in the PCB Footprint is set as `2`. Now that we've found the problem, how to fix this? 
+
+- Solution One: Change the schematic symbol.
+   Using [PinMap function](./Schematic.htm#Pinmap-Modify-symbol-information). Change the PCB PIN from `3` to `2`. And save your schematic , and update PCB.
+
+- Solution Two: Modify the Footprint.
+   Edit the Footprint, change the PAD from `2` to `3`. And set this PAD net name to be the same as LED2 net name in the schematic.  
+   So, we should be aware that PIN number should be the same as Pad number.
+
+
+## Design Rule Check
+
+EasyEDA provides a powerful real time DRC(Design Rule Check) function. 
+
+Via at:**Super menu > Miscellaneous > Design Rule Setting** to open the **DRC** setting dialog:  
+![](./images/135_PCB_DRCSetting.png)   
+
+**Note:** *When you convert a schematic to PCB, the real time DRC is open. But in the old PCB, the real time DRC is closed. you can open it as in the image above.*  
+
+This is a big feature of EasyEDA. It is hard to fix DRC errors after laying out the PCB. Now EasyEDA will let you know the error in routing. You will find an `X` flag to mark the error, such as Track to Track or Track to PAD like in the image below
+![](./images/136_PCB_DRCError.png)
+
+
+## Auto Router
+
+For some simple or prototype PCBs, you may want to use the auto router function to save time. Layout is a time costly and dull job. EasyEDA spends lots of time to provide such a feature and it is loved by our users.
+Before using the auto router, you need to set the board outline for the PCB.
+
+Steps:
+
+**1 Click the the auto router button from the toolbar** or **"Super Menu > Miscellaneous > Auto Router"**
+
+![](./images/180_PCB_AuotoRouter.png)
+
+**2 Config the auto router**
+
+ After you click that button, you will get a config dialog like in the image below.  
+
+![](./images/181_PCB_AuotoRouterConfig.png)  
+
+In the config dialog, you can set some rules to make the auto router result professional. These rule must equalize or more than DRC setting.
+
+-	**Remove Existing Tracks:** If you want to reserve the routed track, you need to deselect it.
+-	**Realtime Display:** when you select it , the real time routing status will show on.
+-	**Router Layers:** If you want to route inner layer, you have to enable the inner layer first at [Layers Setting](https://easyeda.com/Doc/Tutorial/PCB.htm#Layer-Setting).
+-	**Router Server:** 
+	-	**Cloud:** Using EasyEDA online server.
+	-	**Local:**  Using the local auto router server, when you click the Auto Router icon, the editor will check the local router server available or not automatically. How to use please see as below.
+-	**Skip Nets:**  If you like to keep the a net with no route, you can skip it. For example, if you want to use copper area to connect `GND` net, you can skip the `GND` net. 
+-	**Special Nets:** For the power supply track, you may want it to be bigger, so you can add some special rules. 
+
+**3 Run it**
+
+After click the **"Run"** button , The real time check box will let you see how it is going, but it will make the process a little bit slow.   
+![](./images/182_PCB_AuotoRouterProcess.png) 
+
+Waiting for a few minutes, after adding bottom and top copper area, you will get a finished PCB board like in the image below.
+
+![](./images/183_PCB_AuotoRouterFinish.png) 
+
+
+### Local Auto Router
+
+EasyEDA suggest that using local auto router rather than using the cloud server,  because when many users using cloud server, the cloud auto router will fail.
+
+The local auto router server need to download and unzip it to the Non-System folder.
+
+Download Address1(Google Drive): [EasyEDA Router.7z](https://drive.google.com/drive/folders/0BwqCaNlgtS3UZkM3UFZqVkRqNHM)  
+Download Address2(GitHub): [EasyEDA Router.7z](https://github.com/dillonHe/EasyEDA-Documents/tree/master/Tutorial/Doc)  
+
+You need to configure the browser and execute the script first before click the **Auto Router** icon at editor.
+
+Supported OS:
+
+-	Windows7(x64) or later 64bit Windows
+-	Ubuntu17.04(x64) or other 64bit Linux 
+
+Start local Auto Router:
+
+-	Double click win64.bat in Windows.
+-	Run "sh lin64.sh" on command terminal in Linux.
+
+**Notice:** *Please use the latest Chrome or Firefox !!!*
+
+**1)Chrome**
+
+The Crome Browser don't need to be configure, If the local auto router is unavailable, you have to upgrade Chrome to version 60.0.3112.78 or later.
+
+
+**2)Firefox**
+
+1. Type "about:config" into the address bar then press enter
+2. Search and double click the options as below (change the values to "true"):  
+		`network.websocket.allowInsecureFromHTTPS`  
+		`security.mixed_content.block_active_content`
+3. Re-open Firefox and try again.
+
+![](./images/288_PCB_LocalAutoRouter_Firefox.png)
+
+If the local router server is available, the dialog will tell you. Click the **Run** button, the dialog will show the process as below:
+
+![](./images/289_PCB_LocalAutoRouter_Dialog.png)
+
+Sometimes, if you can't get it done, try the tips below.
+
+-	Skip the GND nets, add copper area to GND net.
+-	Use small tracks and small clearance, but make sure the value is more than 6mil.
+-	Route some key tracks manually before auto routing. 
+-	Add more layers, 4 layers or 6 layers
+-	Use local auto router rather than cloud server.
+-	Don't use the special characters for the net name, such as <> () # & and space.
+-	Tell the error detail to us and send your PCB file as EasyEDA Source file to support@easyeda.com.
+
+
+Some professional people don't like the auto router, because they think auto router is not professional, but you can use the auto router to check your placement. to check the density of your PCB. 
+
+
+## Photo View
+
+EasyEDA has no 3D View at present, but we provide a nice Photo View to help you to check the PCB. There is a `PhotoView` button on the PCB document toolbar, like in the image below. If you can't see this button, try to **reload** the PCB again.
+
+![](./images/140_PCB_Toolbar_PhotoView.png)
+
+After converting the PCB to Photo View, you can see the result as in the image below.
+
+![](./images/141_PCB_PhotoView.png)
+
+The photo view background default set as black and the right panel was hidden , you can popup up the right attribute panel and modify it.
+
+![](./images/294_PCB_PhotoView_Attribute.png)
+
+
+## Getting Fabrication Files
+
+When you finish your PCB, you can output the Fabrication Files(gerber file) via :  
+**Super menu > Miscellaneous > Fabrication Output**，or by clicking the Fabrication Output button from the toolbar.
 
 ![](./images/142_PCB_FabricationOutput.png)
 
-点击后会打开一个下载页面，点击下载即可。
-
+It will open a webpage to you, and you can download the gerber as a zipfile.
 ![](./images/221_Export_DownloadGerberFile.png)
 
-如果你需要PCB打样，建议通过立创EDA的兄弟公司嘉立创：[www.sz-jlc.com](www.sz-jlc.com)
-
-当然，你也可以将导出的Gerber文件发给任意一个厂家进行生产，立创EDA并没有做任何使用限制！！
 
 
-### 导出贴片坐标信息
+# Creating The PCB Libs
 
-立创EDA支持导出SMT坐标信息，以便于工厂进行SMT贴片。
+There will be times when you will need a PCB footprint that is not already in the EasyEDA libraries.  
 
-导出可点击：**超级菜单 > 杂项 >  生成贴片坐标文件**  
+The process of creating your own PCB Libs is very similar to how you make symbols for your own Schematic Libs.
 
+You can start a new PCB lib as shown below:
+
+![](images/143_PCBLibs_NewLib.png)
+
+## PCBLib Tools
+
+PCBLib Tools almost are the same as PCB tools, just lacking some of the functions.
+![](images/226_PCBLib_PCBLibTools_75.png)
+
+
+## Others 
+
+1.  It is important to set the right Snap and Grid sizes to ensure that the pads on the finished footprint snap exactly to the grid and so connect the nets. For example, if you are creating a DIP package, set the Grid size to 100mil.
+
+2.  Keep all other shapes such as component outlines and any associated pin identification marks or text on the TopSilkLayer. EasyEDA will automatically take care
+3.   of the actual layer assignment when you place the footprint on the PCB.
+
+3.  `CTRL+S` to save your footprint designs and you will find them saved into the **Parts > My Parts > Packages** section of the left Navigation panel. 
+
+4.  Annular ring of the pad/via is too small, keep the annular ring >= 4mil. In this case, you can add a `Hole`  
+  ![](images/146_PCBLibs_NewPadRing.png)
+
+## Edit PCBLibs
+
+When you feel the PCB Libs(footprint) can not be satisfy for you, you can edit it.
+
+Via **"Parts" > "Search Part/My Parts/LCSC Parts/System Components/User Contributions" > Select Package > Edit**
+
+![](images/291_PCBLibs_Edit.png)
+
+when you finish and save , it will be saved to your personal libraries "My Parts" and become your personal libraries.
+
+
+
+# Import 
+
+EasyEDA provides importing from:
+
+-   Altium/ProtelDXP Ascii Schematic/PCB
+-   Eagle Schematic/PCB/libs
+
+
+You can find the import menu from the Document menu:
+
+**Document > Import...**
+
+which opens the Import file from your computer dialog:
+
+![](images/147_Import_NewImport.png)
+
+Please note that in File Operation: the Extract Libs option is only supported when importing Altium Designer and Eagle libraries.
+
+## Import Altium Designer 
+
+You can import Altium Designer's Schematic and PCB files into EasyEDA but only from **ASCII** files, so you need to save the designs as Ascii files like this.
+
+![](images/148_Import_AltiumDesignerASCII.png)
+
+EasyEDA offers an excellent experience in importing Alitum Designer's Schematic and PCB: as you can see from the image below of a schematic imported from Altium Designer:
+
+![](images/149_Import_AltiumDesignerSchemaitc.png)
+
+If your schematic and PCB are Protel 99se format files, please open at Altium Designer and save as ASCII format, and then import them.
+
+Altium Designer's Schematic and PCB libraries are not available as **ASCII** files, so how can you import them?
+
+In the Import file from your computer dialog to the right of File Operation; tick the Extract Libs option and EasyEDA will extract all of the libs from the Schematic files or PCB Files. So, if you want to import Altium Designer's Libs, you can add them to your Altium Designer Schematic or PCB and then extract them again into your EasyEDA library.
+
+## Import Eagle 
+
+Eagle Schematic/PCB/libs can be imported, but EasyEDA can only support version 6 and later (6+) because that was when Version 6 Eagle adopted an **ASCII XML** data structure as their native file format.
+
+
+## Import DXF File 
+
+How to create irregular board outlines or complex board outline in EasyEDA?   This is sometimes needed when you are designing a PCB for an enclosure that may have a curved profile, or other unavoidable mechanical features for which one must design.  
+
+Find the import DXF menu under the file menu.  
+![](images/152_Import_DXF.png) 
+
+After selecting the *.DXF file, you will find a dialog like in the image below
+![](images/153_Import_DXF_ImportDialog.png)
+
+EasyEDA provides two options, unit(mm or inch), and selection of the layer to which the shapes will be applied.
+
+After clicking the import button, you will find them on your PCB canvas.
+
+![](images/154_Import_DXF_Imported.png)
+
+ You can try this to import this example by yourself. [DXF example](/Doc/Tutorial/Doc/test.dxf)  
+ 
+Please note:  
+1. The file must have a *.dxf filename extension  
+2. The circles will be converted to holes if you choose the layer as board outline.  
+3. There are some items which are not supported.  
+
+
+
+
+# Export 
+
+For documentation and other purposes, you can export your Schematic and PCB designs for many items.
+
+
+## Exporting Schematics
+
+### Exporting Schematics In Documentation Formats
+
+Using:
+
+**Document > Export…**
+
+will open this dialog:
+
+![](images/155_Export_SchematicExportDialog.png)
+
+From here you can choose to export your design to SVG, image (.png) and PDF file format.
+
+For all file formats:
+
+**Width:** This is images' width , 0 is a 1:1 export of your image, higher numbers scale your image , if you set number as 1024 , the width will be 1024 pixels of the export PNG .
+
+**PenWidth-Increase:** 0 represents a default line width of 1 pixel; if you set this to 1, the line will be 2 pixels. This is illustrated in the image below.
+
+![](images/156_Export_SchematicExport_PenWidth.png)
+
+### Exporting Schematics In Altium Designer Format
+
+EasyEDA support exporting the schematics in Altium Designer format.
+Via **"Documents > Export Altium..."**, and click the **"Download now"** you will get  a  `.schdoc` file.
+![](images/292_Export_SchematicInAltium.png)
+
+
+### Download Schematics
+
+You can download the schematic when it is opening,  via: 
+
+**Document > EasyEDA Source...**, click the download button, you will get a .json file.
+
+![](images/035_Introduction_EasyEDASource.png)  
+
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
+
+
+
+### Exporting BOM
+
+You can **export** the Bill of Materials (BOM) for the active schematic (Document) and PCB or for the active project (i.e. the BOM for all the sheets in the project) as shown below，click the top toolbar `BOM` icon:
+
+![](images/273_Export_BOM_Icon.png)
+
+After clicking the BOM export option, the dialog below will open.
+
+In this dialog，you can assign LCSC part's order code for your components.
+
+![](images/085_Export_BOM_Assign.png)
+
+After clicking on the assign icon，the components and packages search dialog will pop up, and you can choose which component you want to assign.
+
+![](images/274_Export_BOM_Assigned.png)
+
+When you click "Export BOM at LCSC", we will help you to list all the components of your BOM,  If you want to buy the components form LCSC, and you just need to put them to the cart and check out.  
+![](images/284_Export_BOM_ExportBOMDailog.png)  
+
+![](images/283_Export_BOM_ExportFromLCSC.png)
+And Click the "BOM" button to download the BOM file. You can open it in any text editor or spreadsheet.
+
+![](images/086_Export_BOM_CSV.png)
+
+### Exporting Netlist
+
+EasyEDA can export the netlist for the active schematic (Document) and/or for the whole active project:
+
+**Super menu > Miscellaneous > Netlist for Document or Netlist for Project**
+
+EasyEDA can export a netlist in a variety of formats: 
+
+-   **Spice**: this is a Spice3f5 compatible netlist generated by the simulation engine of EasyEDA, [Ngspice](http://www.google.com/url?q=http%3A%2F%2Fngspice.sourceforge.net%2Fpresentation.html&sa=D&sntz=1&usg=AFQjCNEvVOggHskD819G-5EW8EB59FL5mw). It is not normally used as the basis for as a PCB layout.
+-   [KiCad](http://www.kicad-pcb.org/): a PCB netlist in a format that can be imported straight into Pcbnew, the PCB layout tool part of the free, open source cross-platform EDA suite.
+-   **Altium Designer**: a PCB netlist in a format that can be imported straight into Altium Designer and it's predecessor, Protel. 
+-   **Pads**: a PCB netlist in a format that can be imported straight into Pads PCB layout tools.
+-   [FreePCB](http://www.freepcb.com/): a PCB netlist in a format that can be imported straight into FreePCB, a  free, open source PCB editor for Windows.
+
+![](images/087_Schematic_NetlistForDocument.png)
+
+
+
+## Exporting PCB Designs
+
+### Exporting PCB In Documentation Formats
+
+Exporting a PCB design or footprints from EasyEDA is very similar to exporting a Schematic or a Symbol.
+
+Using:
+
+**Document > Export…**
+
+you can open this dialog:
+
+![](images/157_Export_PCBExport_Dialog.png)
+
+You can select to export in PDF, drawing (.PNG) or SVG format.
+
+**Note:** *If you want to print the PCB 1:1 with the paper, you need to choose to export PDF(1:1).*
+
+You can select to print individual layers or selected layers merged into a single file.
+
+It is also possible to mirror selected layers for example to show bottom layers in easily readable orientation.
+
+
+### Exporting PCB In Altium Designer Format
+
+EasyEDA support exporting the PCB in Altium Designer format.
+Via **"Documents > Export Altium..."**.  
+![](images/293_Export_PCBInAltium.png)
+
+When open the exported PCB file at Altium Designer, there will open a dialog of DXP Import Wizard, don't worry, just cancel it to continue.
+
+![](images/293_Export_PCBInAltium_1.png)
+
+And then, you will see the PCB file, which is looks like without copper area as below:
+
+![](images/293_Export_PCBInAltium_3.png)
+
+At now, you need to repour all polygons at Altium Designer. Via: **Tools > Polygon Pours > Repour All**:
+
+![](images/293_Export_PCBInAltium_2.png)
+
+And the last, save it.
+
+![](images/293_Export_PCBInAltium_4.png)
+
+If you export the PCB without tracks, you need to show all connections first before routing :
+
+Via: **Design > Netlist > Clean All Nets** 
+
+![](images/293_Export_PCBInAltium_5.png)
+
+Or use hotkey: **N > H > A** and then **N > S > A**:
+
+![](images/293_Export_PCBInAltium_6.png)
+
+
+### Download PCB
+
+You can download the PCB when it is opening,  via: 
+
+**Document > EasyEDA Source...**, click the download button, you will get a .json file.
+
+![](images/035_Introduction_EasyEDASource.png)  
+
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
+
+
+
+### Exporting Fabrication Files
+
+When you finish your PCB, you can output the Fabrication Files(gerber file) via :  
+**Super menu > Miscellaneous > Fabrication Output**，or by clicking the Fabrication Output button from the toolbar.
+
+![](./images/142_PCB_FabricationOutput.png)
+
+It will open a webpage to you, and you can download the gerber as a zipfile.
+![](./images/221_Export_DownloadGerberFile.png)
+
+**Notice:** 
+*Before order your PCB, Please read [Essential Check Before Placing a PCB Order](./PCBOrder.htm/#Essential-Check-Before-Placing-a-PCB-Order) section!!*
+
+### Exporting Generates Pick And Place File
+
+In PCB editor, if you want to generate Pick And Place as a CSV file, you can via:   
+
+**Super Menu > Miscellaneous > Generates Pick And Place File**  
 ![](images/220_Export_GeneratesPickAndPlaceFile.png)
 
-导出的文件格式为CSV，打开后如下：
-
+When you open the exported CSV file, you can see:  
 ![](images/206_Export_PickAndPlaceCSV.png)
 
-目前导出的文件暂时仅支持mil单位，以后会增加对其他单位的支持。
 
+### Exporting Print For Etching
 
-### 导出打印并自制PCB板
+If you don't want to order your PCBs from EasyEDA then maybe - for single and double sided PCB designs -  you might like to try like using some home made PCB tech:
 
-如果你不想花钱打样PCB，想自己打印并腐蚀。比如：[百度经验：教你轻松自制PCB电路板](https://jingyan.baidu.com/article/414eccf64c14a36b431f0ae1.html)；[百度经验：自制电路板制作PCB的过程](https://jingyan.baidu.com/article/8cdccae979e128315413cd1c.html)  
-你可以参考以下步骤。
+[http://hackaday.com/2012/12/10/10-ways-to-etch-pcbs-at-home/](http://hackaday.com/2012/12/10/10-ways-to-etch-pcbs-at-home/)
 
-1、导出PCB为PDF： **文件 > 导出**，或者 **文件 > 打印**。一般选底层。请按需选择是否需要镜像导出。
+So here's how you can print your PCB layer by layer and then etch it onto a PCB.
 
-**注意：** 
-
--	*请确保选择的颜色是白底黑图。*
+Step 1) Export it to PDF, Using: **Document > Export…**, or **Document > Print…**
 
 ![](images/158_Export_PrintPDF.png)   
 
-2、在PDF阅读器打开PDF，确认是否符合要求。
+**Note:** *Make sure the Colour is Black on White Background.*
+
+Step 2) Open the pdf file in a viewer
 
 ![](images/159_Export_ViewPDF.png)
 
-3、使用碳粉打印机打印在转印纸上。
+Step 3) Print it to paper
 
 ![](images/160_Export_PDFToPaper.png)
 
-4、使用熨斗印在PCB基板上。
+Step 4) Copy it to the copper
 
 ![](images/161_Export_CopyToCopper.png)
 
-5、腐蚀PCB板并清洗碳粉。
+Step 5) Etch it.
 
-6、钻孔。
+Step 6) Drill it ...
 
 ![](images/162_Export_DrillPCB.png)
 
-7、零件焊接，并完成PCB制作。
+Step 7) Get your soldering iron out!
 
 ![](images/163_Export_SolderPCB.png) 
 
 
-## 导出SVG源文件 
+## Exporting SVG Source 
 
-立创EDA支持导出原理图，PCB，库文件的SVG源文件。
+You can create an SVG sourcefile via: 
 
-在**文档 > SVG源码**打开。
+**Document > SVG source...**
 
-点击下载后直接得到一个SVG后缀的文件，然后可以通过文本编辑器或浏览器打开该文件。你也可以复制对话框内的代码在编辑器中进行编辑，SVG编辑器推荐 [Inkscape：https://inkscape.org/zh/](https://inkscape.org/zh/) 
+then copy the contents of this box into a text editor and save the file with a .svg extension. You can edit it in [Inkscape](http://www.inkscape.org/) or open it in your browser.
 
-该导出SVG功能可直接在本地完成，无需联网。
+This solution doesn't need an internet connect so if you open EasyEDA offline, you can use it.
 
 ![](images/021_Introduction_SVGSource.png)  
 
 
-## 导出EasyEDA源码文件
+## Exporting EasyEDA Source
 
-立创EDA支持导出原理图，PCB，库文件的EasyEDA源码文件。
+You can create an EasyEDA source file via: 
 
-通过 **文档 > EasyEDA格式源码** 打开。
+**Document > EasyEDA Source...**
 
-![](images/285_Export_SchematicEasyEDASource.png)
+![](images/035_Introduction_EasyEDASource.png)  
 
-EasyEDA格式源码文件是一个**JSON**文件，该文件类型可以被很多程序打开和编辑。 关于Json的介绍请查看：[Json.cn: 什么是Json](http://www.json.cn/wiki.html)；[Json官网: Json介绍](http://www.json.org/json-zh.html)
+Or **Project > Right Click > Download Project**, you will download a zip file with EasyEDA Source files for Schematics and PCBs.
 
-开放的EasyEDA源码文件允许你在文本编辑器上进行编辑，这可以很方便地修改原理图、Spice文件、原理图库文件，以及PCB文件和封装。
+EasyEDA Source is a **JSON** file which can be read by many other programs. Please see:
 
-点击“下载”即可将文档以json的格式下载。导出EasyEDA源码文件是一个很好分享/备份你的作品的方法。使用该方法你的文件可以不需要保存文件到立创EDA的服务器。Json文件可以被高度压缩为zip或7z。它可以通过电子邮件发送给任何人，而且他们在立创EDA编辑器中可以正常打开，完全不用担心他们是否拥有和你一样的库文件。
+[http://en.wikipedia.org/wiki/JSON](http://en.wikipedia.org/wiki/JSON)
 
-为此，立创EDA还提供了读写EasyEDA文件的接口，可自行编写在立创EDA编辑器上运行的脚本。详情可查看[立创EDA API接口](./API.htm#立创EDA-API接口)章节。
+for more information.
+
+The open EasyEDA Source file allows you to work on files at a text level which enables some powerful ways to manipulate schematic and spice files and symbols as well as PCB files and footprints.
+
+Click on the **Download** button or copy the contents of this EasyEDA source into any text editor, then save the file. You can paste the text back into this box and click Apply to update the display. If you have made no changes to the text then the canvas will show your file exactly as if it was saved and reopened from the EasyEDA server.
+
+This is a good way to share/backup your works. Your file doesn't need to be saved to EasyEDA's server. It can be highly compressed in any readily available format such as such as zip or 7z. It can be emailed to anyone who can then open it in EasyEDA without worrying if they have the same libraries as you.
+
+EasyEDA team will provide more details of the EasyEDA Source soon to show how you can edit and even create drawings, schematics, symbols, footprints and PCB layouts in EasyEDA Source. It is also possible to copy and edit symbols straight out of a Schematic and save them as new Schematic Lib or Spice Symbols and even to create a new Spice Subckt from a Schematic.
 
 
 
-# 分享 
+# Sharing 
 
-立创EDA为你提供了两种方式的分享功能，你可以很容易地将文件分享给其他人。
+Sharing your work with others is a big feature of web based EDA tools and EasyEDA is no exception in offering you some nice features.
 
--	公开分享：将工程公开给大众，所有人可以查阅。
--	访问控制：将工程分享给指定的人，适合保密性分享。
+## Share to Public 
 
-## 公开分享 
+Did you create a really cool project with EasyEDA? Show it off and be super helpful to other EasyEDA users, you just need to set your projects to public, so others can explore your circuits.
 
-所有新建的工程立创EDA都默认为私有工程，你不能直接公开分享私人工程下的文件。当你想要进行分享时，你必须先将工程设为公开的。  
+All projects in EasyEDA are set to private by default, your private project can not be shared with anyone.  
+i.e. to make it public, you should create a new project or right click and edit your existing project to be a Public project:  
 
-公开工程有两种方法：
-
-1、**创建新工程** 时选择公开。
-
+**Create New Project：**  
 ![](images/164_Share_NewPublicProject.png)  
 
-2、**编辑工程** 进行公开。
+**Edit Existing Project:**    
 
-直接在工程文件夹下，右键点击“编辑工程”，然后在打开的网页设置公开。
+When you click **Edit Project**, it will open a website to allow you to set your project to be public.
 
 ![](images/165_Share_EditProjectToPublic.png)  
 
-工程设置为公开后，工程文件夹图标会出现一个手掌分享标志，表示该工程已经公开。
+After setting the project as public, you will see that the Project folder Icon is now shown as a hand holding the folder.
 
 ![](images/166_Share_SharedProjectIcon.png)
 
-打开文档后，此时再点击工具栏的分享按钮即可弹出分享窗口，可复制链接进行分享。
+If you then open one of the documents in this share folder, you can then click the Share icon on the toolbar to open the Share my works dialog.
 
 ![](images/167_Share_SharedProjectShareIcon.png)
 
-**注意：***如果你选择了公开工程，那么该工程将出现在你的个人主页下(个人首页：https://lceda.cn/你的用户名)，任何人都可以查阅。*
+## Access Control 
 
+How about sharing with selected people?
 
-**公开工程的好处**
+Can you share a private project with your partner? Can your partner modify your designs?
 
--	可以让更多人知道你开发的作品，为自己增加名气，大家共同学习共同提高；
--	面试时可直接投递个人主页，让面试官知道你的设计实力；
--	可以帮助有需要的人复用你的作品，设计开源共享，为开源事业做贡献，同时也为立创EDA的发展做贡献。
+Yes, you can use **Access control** to do this.
 
-## 访问控制
-
-如果你只想分享给指定的人，并且允许他/她对你的工程文件进行编辑，那么你可以使用“访问控制”。
-
-选择工程，右键选择“访问控制”，输入对方的邮箱，设置权限点后击“添加用户”即可分享。
-分享成功后，工程文件夹旁边会出现一个红色的用户图标，标识该工程正通过访问控制共享。
+Right click the project and you will see the Access Control on the context menu; clicking on it will open the Access Control dialog.  
+After adding a user, a user icon will show up beside the project folder icon as below.
 
 ![](images/168_Share_AccessControl.png)
 
-**注意：**
+So if you want to share a project with someone,
 
--	*你分享的人员的邮箱必须是已经在立创EDA注册的账号。*
--	*你可以设置的分享权限有“只读”和“读写”。*
+1.  You just need to know their E-mail address which they have used to create an account with EasyEDA
 
-对方可在编辑器的左边导航面板的“共享”模块查看你共享给他的工程。如果他不再接受你共享的工程，他可以在“共享”下，对工程右键选择“拒绝分享”，即可取消共享动作。
-下图第一个箭头处指的是分享人的用户名，第二个箭头指的是该工程的分享权限，RW指读写(Read 和 Write)。
+2.  You can share your project as **read** **only** or **read/write**.
+
+After setting up **Access Control** and Permissions, your partner will find your project in the **Shared** section from the left **Navigation Panel** when they login.
+
+If you partner doesn't wish to accept the shared project, they can reject it by right clicking on the project in the Shared with Me section and then clicking on Reject Sharing;
 
 ![](images/169_Share_SharedWithMe.png) 
 
-
-同样，你的伙伴使用访问控制共享给你的工程也是在“共享”模块查看。另外还可以在 “个人中心 > 项目 > 分享给我 ”中查看。
+And you also can check projects that your partner has shared with you in the account dashboard:  
 
 ![](images/179_Share_SharedWithMe_Dashboard.png) 
 
 
 
-# 电路仿真
+# Simulation
 
-## Spice仿真
+## Spice Simulation
 
 ### Build the circuit 
 
@@ -3812,7 +3933,7 @@ For more information on the meas statement, see:
 
 
 
-## 仿真手册
+## Simulation eBook 
 
 ### Introduction
 
@@ -7219,24 +7340,1127 @@ The following examples illustrate some of the measurements that can be made this
 [Find gain and bandwidth](https://easyeda.com/editor#id=8GE0KRFDn)
 
 
-# 立创EDA API接口
+
+
+# Essential Check
+
+## Introduction
+
+By following - and constantly checking against - a set of procedures, it is possible to avoid just about all of the common mistakes and omissions that can significantly delay or even stop a schematic being successfully converted to a PCB and then that PCB being successfully updated from the schematic as a design progresses.
+
+It can also significantly reduce the likelihood of a PCB being made that subsequently is found to not work correctly due to mistakes made during the creation of the original schematic (Schematic Capture). 
+
+After spending hours on Schematic Capture, it is very frustrating to be presented with error messages about prefix conflicts, missing or invalid packages when first attempting to pass a schematic through to the PCB Editor by clicking on the **Convert Project to PCB…** button or, after making changes to a schematic, similar error messages or having components that disappear from the PCB when attempting to update an existing PCB using the **Update PCB…** button in the Schematic Editor or the **Import Changes…** button in the PCB Editor. 
+
+These issues can be avoided by running through a series of checks for the first time each new Part (i.e. the first instance) is placed into the schematic.
+
+There are several other issues that arise from mistakes in and omissions from the schematic that people encounter only after they are part way through a PCB design or - worse still - only when they receive their PCBs in the post.
+
+Almost all of these other issues can be avoided by running through a further series of checks (i) during Schematic Capture, (ii) once Schematic Capture is complete but before first attempting to convert the schematic into a PCB and (iii) when updating the PCB as work progresses.
+
+This document pulls together all the essential procedures to follow and things to check in the schematic before clicking on the **Convert Project to PCB…**, **Update PCB…** or **Import Changes…** buttons.
+
+## Things to understand before using this document.
+
+Before using the document it is important that the following points are clearly understood:
+
+### What constitutes a Part in a schematic and a PCB?
+
+A Part is any element of the circuit that is to be mounted on the PCB plus any element which is ultimately intended to be mounted on or form an integral part of the PCB such as heat sinks, PCB mounting holes, mounting holes for PCB mounted potentiometers and switches (for example where a PCB is used as a front panel or as a self-contained test jig), test points, wire links or jumpers, fuse holders and even image based elements such as high voltage warnings and logos.
+
+Note that fuses that are fitted into PCB mounted fuse holders are best dealt with in a schematic by showing the fuse using a fuse symbol in the schematic but assigning to that fuse symbol the BoM information - including the package - that is for the required fuse holder. The required fuse ratings, type and supplier information can then be included in the BoM using Add new parameter function.
+
+Other socketed devices can be treated in the same way.
+
+### What is the relationship between Parts, Schematic Symbols and PCB Packages?
+
+Any Part must have a Schematic Symbol to represent it in the schematic (a.k.a. Schematic Lib) and that Schematic Symbol must have a PCB Package (a.k.a. PCB Lib) assigned to it either when the symbol is created or after placing the first instance of it into the schematic. 
+
+The associated PCB Package must exist in the library.
+
+* Ensuring that every Part has a Schematic Symbol with a PCB Package associated with it **and** that that PCB Package actually exists in the Parts (SHIFT+F) library will avoid a **Missing package** error being issued on Conversion or Update to PCB.
+
+It is possible that a component may comprise more than one device in a package, for example logic gates. Some symbols represent both devices in a single symbol but quite often a separate symbol is used to represent each of the devices. This may mean that some of the pin numbers and/or names on the symbols representing each of the two devices may be different although both may have the same power and ground pin numbers and/or names.
+
+High pin count devices such as processors and FPGAs may be split into several symbols representing different sections or ports. It is important to ensure that pin numbers and names are unique across all the symbols.
+
+It is possible that a component may be available in different packages. For example the LM358-N dual operational amplifier is available in several different packages. The pin numbering and/or naming of the symbol may be different depending on which package the component is supplied in.
+
+It is easy in EasyEDA to change the pin numbering and/or naming for a Schematic Symbol (using the `I` Hotkey) or a PCB Package so it may be tempting to think of an LM358-N as the same part in a different package and just put down a symbol, edit the package assigned to it and then hack the pin numbers and names about until they match the PCB package.
+
+However, an LM358-N in a SOIC-8 package has a different pinout, a different part number and has to be physically ordered as a different part from an LM358-N in a DSBGA-8 package.
+
+* They are therefore two *different*  Parts. 
+
+When thought of like this it should be clear that there should be one Schematic Symbol (or pair if each device has a separate symbol) and a matching PCB Package for an LM358-N in a SOIC-8 package and another Schematic Symbol (or pair if each device has a separate symbol) and a matching PCB Package for an LM358-N in a DSBGA-8 package.
+
+* Ensuring that the pin numbers/names of the Schematic Symbol for a Part are correct, unique and match those of the PCB package associated *with that particular part* will avoid the generation of the **Invalid package** error being issued on Conversion or Update to PCB.
+
+### Why do Parts in a PCB disappear when the PCB is updated from the schematic?
+
+It is important to understand that any Part that is supposed to form part of or be mounted on the PCB must have a corresponding Schematic Symbol in the schematic. 
+
+If it *does* then as soon as the PCB is created, the PCB Package for that Part , even such a seemingly abstract item as a mounting hole, warning sign or a logo, will be pulled into the PCB layout without having to be added to the PCB later by hand.
+
+If it *does not* then not only will the PCB package for that Part not be pulled into the PCB layout as it is created but when it is added to the PCB later by hand and the PCB is then updated to bring in changes made to the original schematic, *that PCB package will be deleted*.
+
+Such elements can be added to the schematic later and then imported into the PCB but if they do not exist in the schematic at the time the PCB is updated from that schematic then they will always be deleted and will therefore have to be added back to the PCB by hand.
+
+### What is the relationship between User Contributions and the other Parts categories (LCSC (Official), Assembly LCSC Components, System Components, My Parts, My Modules and Common Modules)?
+
+Any Schematic Symbol or PCB Package chosen from the **User Contributions** category MUST be added to your local library by doing:
+
+**Parts (or SHIFT+F) > Search for and select the part then > More > Add Favorite**
+
+![](./images/286_PCBOrder_EssentialCheck_1.png)
+
+* Failure to do this will result in the package not being found and a **Missing package** error being issued on Conversion or Update to PCB.
+
+Packages in the other library sections will be found automatically.
+
+Note however that although Schematic Symbols and PCB packages created by a user within a Team will automatically appear in that user’s My Parts library, once that user swaps to another Team, those parts will no longer appear in their My Parts library but will only be available via the **Add Favorite** option from the User Contributions library.
+
+
+## Procedures and Checklist
+
+* Verify that the Schematic has been drawn to show clearly how the components in the circuit are connected together;  
+
+The schematic must help the reader understand signal and power flow in the circuit with inputs on the left, outputs on the right, positive supplies at the top, negative supplies at the bottom and netlabels used to clarify connections and reduce congestion. 
+
+Components may be grouped by function and boxes may be drawn around them. 
+
+Decoupling components may be drawn adjacent to the devices they are associated with or symbols with dedicated sub-parts for power pins can be used to reduce congestion;
+
+* Use the Design Manager (left-click the **Design** button in the left hand panel) to check that all components are present in the schematic and that all nets have been assigned reasonable mnemonic names and have at least two connection. 
+
+Naming nets instead of relying on the EasyEDA auto-generated alphanumeric names makes signal tracing and debugging the final PCB much easier but care must be taken to ensure that names are correct and that there are no unintended duplicate names or accidental increments in numbered nets;
+
+* Verify that there are no duplicate prefixes in the schematic:
+
+[https://easyeda.com/forum/topic/How\\_to\\_resolve\\_quotPrefix\\_Conflictquot\\_error\\_-gpbca8642](https://easyeda.com/forum/topic/How_to_resolve_quotPrefix_Conflictquot_error_-gpbca8642)
+
+Remember to check across all sheets of a multi-sheet schematic;
+
+* Check that the schematic is drawn correctly.   
+In particular, check that no nets have been accidentally cross connected, that wires have join dots where they are intended to be joined, that they are properly connected to component pins and that nets joined by netlabels are correctly named and that there are no unintended duplicate net names.  
+![](./images/286_PCBOrder_EssentialCheck_2.png)
+
+* Verify that junctions of 4 or more wires are drawn to show staggered junctions to avoid confusion with wires that cross but are not joined at the crossing point.  
+![](./images/286_PCBOrder_EssentialCheck_3.png)
+
+* Check that all parts and nets have been placed with the Canvas Attribute **Snap = Yes**:  
+![](./images/286_PCBOrder_EssentialCheck_4.png)  
+and that no parts have been placed off grid so that although they may appear to be connected on close inspection it can be seen that they are not:  
+![](./images/286_PCBOrder_EssentialCheck_5.png)
+
+* Check that pins have been terminated (pulled up, down, left open etc.) as specified in manufacturers'  datasheets. 
+
+* Check that all unconnected pins have **No Connect** symbols attached directly to them. Unconnected pins without No Connect symbols attached directly to them will show up as alphanumeric net names in the Design Manager but will not highlight when clicked on in the Design Manager.  
+No Connect symbols must be attached directly to component pins. There should be no wire between the No Connect symbol and the pin.  
+![](./images/286_PCBOrder_EssentialCheck_6.png)  
+Note that the No Connect symbol changed in V4.8.5 of EasyEDA from a red cross to a green one to make the highlighted state of a selected symbol clear;
+
+* Check that the device ratings are suitable for the circuit in which they are to be used. For example, capacitor, diode, transistor, connector and switch voltage ratings, transistor, resistor and zener diode power dissipations, inductor, diode (including LED), transistor, connector and switch current ratings.  
+
+Although these parameters should have been checked at the time of specifying the components as an essential part of the circuit design stage prior to or during Schematic Capture, there is plenty of scope for them to have gone astray during the part selection, placement and editing steps of Schematic Capture.  
+
+An undetected mistake now can result in the wrong size part being chosen. For example a larger diameter or even a taller electrolytic capacitor may be needed. Whilst this is easy to correct in the PCB design stage, at best this may waste time in having to redesign part of the PCB. At worst the mistake may not be discovered before the PCB design is completed and sent for manufacturing.
+
+* Check that diode (including LED) and bipolar transistor base-emitter junction reverse breakdown voltage ratings and that input differential and common mode voltage ratings of operational amplifiers and comparators are not exceeded during any state of operation of the circuit including power up and power down. 
+
+Consider adding diode or MOSFET reverse supply protection especially for battery powered circuits.
+
+An example of MOSFET reverse protection is described in:
+
+[https://easyeda.com/example/Uberclamp_Schematic_PCB_and_BoM-r4YgysK2k](https://easyeda.com/example/Uberclamp_Schematic_PCB_and_BoM-r4YgysK2k)
+
+Pay special attention to this in operational amplifier or comparator devices that exhibit `output phase reversal` under some input conditions. For more information about this see:
+
+[http://www.analog.com/media/en/training-seminars/tutorials/MT-036.pdf](http://www.analog.com/media/en/training-seminars/tutorials/MT-036.pdf)
+
+For example, the TL081 exhibits this behaviour but it is not documented in more recent versions of the datasheet. See Applications Hints on page 5 of this earlier version:
+
+[http://www.physics.ucc.ie/fpetersweb/FrankWeb/courses/PY2108/spec%20sheets/TL081%20OpAmp.pdf](http://www.physics.ucc.ie/fpetersweb/FrankWeb/courses/PY2108/spec%20sheets/TL081%20OpAmp.pdf)
+
+Consider adding diode or MOSFET reverse supply protection especially for battery powered circuits.
+
+An example of MOSFET reverse protection is described in:
+
+[https://easyeda.com/example/Uberclamp_Schematic_PCB_and_BoM-r4YgysK2k](https://easyeda.com/example/Uberclamp_Schematic_PCB_and_BoM-r4YgysK2k)
+
+
+* Check that LED currents are supplied through series current limiting resistors or from constant current sources.
+
+For background on this please see:
+
+[https://easyeda.com/andyfierman/LEDs_must_have_series_resistors-OoGYgCK2k](https://easyeda.com/andyfierman/LEDs_must_have_series_resistors-OoGYgCK2k)
+
+* Check that signal connectors have sufficient ground pins to maintain signal integrity by minimising signal return path impedances (i.e. ground loop area). This is especially important in designs with high speed signals through the connectors but can also be important for lower speed signalling with long wire interconnects and/or fast edge speeds.
+
+* Check that power connectors have sufficient ground and power pins pins to maintain power integrity by minimising power and ground return path impedances. 
+
+* Verify that device power supply decoupling complies with manufacturers’ recommendations. 
+
+Where possible, check datasheets, applications notes and schematics and PCBs for Reference Designs or Evaluation Boards.
+
+For some background on the importance of adequate decoupling please see:
+
+[https://easyeda.com/andyfierman/Power\\_supply\\_decoupling\\_and\\_why\\_it\\_matters_-451e18a0d36b4f208394b2a2ff7642c9](https://easyeda.com/andyfierman/Power_supply_decoupling_and_why_it_matters_-451e18a0d36b4f208394b2a2ff7642c9)
+
+* Verify that a Schematic Symbol and an associated PCB Package has been created for every Part needed to construct the complete PCB. 
+
+Remember to include Schematic Symbols and an associated PCB Packages for things like heat sinks, PCB mounting holes, mounting holes for PCB mounted potentiometers and switches (for example where a PCB is used as a front panel or as a self-contained test jig), test points, wire links or jumpers, fuse holders and even image based elements such as high voltage warnings and logos; 
+
+Look in: 
+
+**Parts (or SHIFT+F) > MyParts > Schematic Lib > Favorite Schematic Lib**
+
+and:
+
+**Parts (or SHIFT+F) > MyParts > Package > Favorite Package**
+
+and verify that every Schematic Symbol and associated PCB Package chosen from the **User Contributions** category has been added to your local library;
+
+* Verify that the pin numbers/names of the Schematic Symbol(s) for every Part are correct, unique and match those of the PCB package associated *with that particular part*;
+
+* Verify that the pin order (pin mapping) of the PCB Package associated with every part is correct.
+
+This task is simplified using the EasyEDA Footprint Manager:
+
+[https://easyeda.com/Doc/Tutorial/Schematic.htm#Footprint-Manager](https://easyeda.com/Doc/Tutorial/Schematic.htm#Footprint-Manager)
+
+![](./images/286_PCBOrder_EssentialCheck_7.png)
+
+Remember that in EasyEDA, the PCB Footprint is viewed looking down onto the component side of the board. This view is assumed to be with all components mounted on the Top Layer. Packages can subsequently be placed on the top or bottom layers as required.
+
+* Verify that all necessary information about the specific components (and any suitable alternatives) that are to be used in the circuit and which are ultimately intended to be mounted on or form an integral part of the PCB, from which a Bill of Materials (BoM) can be generated has been added to the Schematic Symbols.
+
+For more information about this please see:
+
+[https://easyeda.com/forum/topic/How\\_to\\_add\\_extra\\_information\\_to\\_the\\_Bill\\_of\\_Materials\\_BOM-Hp9rJCUcu](https://easyeda.com/forum/topic/How_to_add_extra_information_to_the_Bill_of_Materials_BOM-Hp9rJCUcu)
+
+* Verify that any necessary information relating to the physical placement of components and layout of copper traces and areas has been annotated in the schematic.
+
+Including text (or even diagrammatic information in the schematic about component positioning and orientation, clearances around heatsinks for airflow or copper areas for heat sinking, current and voltage ratings of traces, trace length matching, controlled impedance transmission lines and differential pairing can all help in the following stages of PCB design.
+
+Nets that are carrying high currents may be drawn using thicker wires (Stroke width).
+
+Nets can be drawn converging at star points to help illustrate where this type of PCB layout is required on the PCB:
+
+![](./images/286_PCBOrder_EssentialCheck_8.png)
+
+Kelvin connections to current sense resistors can be drawn in a similar way:
+
+![](./images/286_PCBOrder_EssentialCheck_9.png)
+
+Nets can be colour coded but beware using red because it can be very hard to see when such nets are highlighted.
+
+* Generate - and check - the Bill of Materials (BoM) information and check the availability of components.
+
+Whilst it is easy to change parts in the PCB design stage, at best this may waste time in having to redesign part of the PCB. At worst the unavailability of a part may not be discovered before the PCB design is completed and sent for manufacturing.
+
+* Use the Design Manager (left-click the **Design** button in the left hand panel) to check everything again!
+
+
+
+
+
+
+
+
+# FAQ
+
+Please spend a few minutes reading this FAQ, it will save you lots of time getting started with EasyEDA.
+
+
+## Hot Question
+
+### How to find the list of hotkeys.
+
+[https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys](https://easyeda.com/Doc/Tutorial/Introduction.htm#Hotkeys)
+
+### Where are my files?
+
+Your files are stored on EasyEDA servers, so you can access them anywhere and share them with your partners.
+ 
+### Why does EasyEDA focus on Cloud based EDA?
+
+EasyEDA is built for people who like to work anywhere, who like to build projects together with other team members, who like to share their projects, who like something that operates like a github for hardware design. The only way to meet these needs is to build a Cloud version EDA.
+
+### How can I work if there is no internet?
+
+Although most of the time there are ways to access the internet easily and cheaply there may be times when, for whatever the reason, internet access is simply not possible. For times like this, EasyEDA is working to provide a desktop client soon.
+  
+### Does EasyEDA have a desktop version?
+
+   At present, no but EasyEDA is developing and testing a desktop version to be introduced soon. 
+   
+   A Windows version will be available at the end of this year. Mac and Linux versions will be available early next year. 
+
+### Which Browser is best for EasyEDA?
+
+  **Chrome**. Firefox and Safari are OK too. If you are restricted to using other browsers, it would be better to download the EasyEDA desktop client when it becomes available (see above).
+
+### How to go to your dashboard.
+
+In the [Dashboard](https://easyeda.com/projects/mylists), you can check all your Projects, Modules, Components and Favorites, projects others have shared with you, forum posts and orders. 
+ 
+There are two ways to arrive there.  
+
+
+1. From the Editor, you can click on the EasyEDA logo or user logo:  
+	![](./images/244_FAQ_Dashboard_1.png)      
+
+	![](./images/246_FAQ_Dashboard_3.png)  
+
+2. From the homepage, you can click My Projects:  
+	![](./images/245_FAQ_Dashboard_2.png) 
+
+
+## Projects and Files
+  
+### How to delete a project.
+
+   Select it and right click to open a context menu, like the image below.
+   
+![](./images/247_FAQ_DeleteProject.png)
+ 
+### How to delete a schematic or PCB.
+
+   Select it and right click to open a context menu, like the image below.
+ 
+![](./images/248_FAQ_DeleteSchematic.png) 
+
+
+### How to share a project with others.
+
+1. Make your project public.  
+Open [https://easyeda.com/projects/mylists](https://easyeda.com/projects/mylists), then click the red `No entry' icon where indicated by the arrows. This icon will change to a green 'Tick' icon to show that the project is now public.
+![](./images/250_FAQ_ShareProjectToPublic.png)  
+
+2. To share a project privately with only selected collaborators via:  
+[Access Control](https://easyeda.com/Doc/Tutorial/Share.htm#Access-Control)   
+You can right click your project and select the access control menu:
+![](./images/168_Share_AccessControl.png) 
+  
+       
+### How to find the version history of schematics and PCBs.
+
+  The version history of your EasyEDA schematics and PCBs can be accessed by right-clicking on the file you wish to query to open the context menu as shown in the image below: 
+  
+ ![](./images/188_Introduction_VersionHistory.png)  
+ 
+ Then click on the version number that you wish to view.
+ 
+ **Note:** *saving a previous version will restore that version to being the current version of the file.*
+
+## Schematic
+
+### If I update the schematic, how do I then update the PCB?
+  
+The initial conversion of a schematic to PCB is done from within the Schematic Editor using the `Convert Project to PCB...` button as illustrated in the toolbar below but a new `Update PCB` button has been added so that modifications to the schematic can immediately be passed forward to update a selected PCB without having the PCB editor window already open. 
+  ![](./images/217_Schematic_UpdatePCB.png) 
+
+Alternatively, you can import changes from the schematic from within the PCB Editor:
+
+[https://easyeda.com/Doc/Tutorial/PCB.htm#Import-Changes](https://easyeda.com/Doc/Tutorial/PCB.htm#Import-Changes)
+
+### How to rename a Sheet/Document or modify description.
+
+In this menu, there is a `Modify` option, so you can rename your files.  
+![](./images/249_FAQ_SchematicModify.png)  
+
+### How to find components
+
+The component search function has been significantly improved to make finding part symbols and footprints quicker and easier. Press `SHIFT+F` or click on the `Parts` icon on the left navigation panel: 
+
+![](./images/026_Introduction_Parts.png) 
+
+In the new components dialog, it is easy to select the right components via tags and you can set tags for your own components.
+
+### How to add sub parts to a schematic.
+
+ You can add sub parts to a schematic one by one but please note that the sub parts prefix must be in the form of U1.1 U1.2 etc, and not U1.A U1.B.
+ 
+![](./images/251_FAQ_AddSubpart.png)
+
+
+### What is the unit of the schematic sheet?
+
+  The basic unit of the schematic sheet is the pixel. 1 pixel is about 10mil (0.001 inch) but please note that this use of the pixels as a unit in a schematic is just for reference.
+
+
+### For a complex project, I want to split the schematic over several sheets. Does EasyEDA support hierarchy?
+
+ Please check out this link [https://easyeda.com/Doc/Tutorial/Schematic.htm#Hierarchy](https://easyeda.com/Doc/Tutorial/Schematic.htm#Hierarchy)
+
+ 
+### How to change the sheet size and modify the design information.
+
+To change the sheet size, move the mouse anywhere over the lower right area of the drawing border or frame until the whole border highlights red and then right-click on it. Paper size and orientation can then be changed in `Sheet Attributes` in the right hand panel.
+
+To modify the design information, left-click on the relevant blue text in the lower right area of the drawing border or frame to change it in `Text Attributes` in the right hand panel.  Double left-clicking the blue text will allow you to type new information directly into the field. 
+
+![](./images/214_Schematic_SheetSetting.png)   
+![](./images/215_Schematic_SheetSetting_Attributes.png)
+
+
+##Schematic library symbol
+
+### How to create a schematic library symbol.
+
+**Document > New > Schematic Lib**
+
+![](./images/088_SchematicLibs_CreateNewLib.png) 
+
+
+### How to tag my schematic library symbol.
+  
+  ![](./images/095_SchematicLibs_MyLibsAddTag_58.png) 
+
+
+### How to create sub parts for multi-part components.
+
+In My Parts, Right click the part then select **Add Sub Part** from the menu that opens:
+  ![](./images/096_SchematicLibs_MyLibsAddSubparts.png) 
+
+### How to change the Package for a component.
+
+[https://easyeda.com/Doc/Tutorial/Schematic.htm#Update-Package](https://easyeda.com/Doc/Tutorial/Schematic.htm#Update-Package)
+
+## PCB
+
+### How to change the Units of PCB from mil to mm or inch.
+
+There is an option for that in PCB canvas attributes:   
+![](./images/132_PCB_PCBTool_Dimension.png) 
+ 
+### How to pick and move the components on the PCB canvas quickly.
+
+ Before routing the PCB, the components need to be positioned in suitable places on the PCB. In the PCB Editor, it can sometimes be quite difficult to select components by clicking on the silkscreen outline or the pads. To select and move them more easily, please use drag mode (Hot Key `D`) or click the `Move` icon in the PCB Tools toolbar:  
+ ![](./images/252_FAQ_PCBTools_Move.png)
+     
+
+### Can I create a PCB without creating schematic?
+  Yes but for any but the simplest PCBs, please see:
+  
+[https://easyeda.com/forum/topic/The\\_best\\_way\\_to\\_design\\_a\\_PCB\\_in\\_EasyEDA-ThR3pwqIC]( https://easyeda.com/forum/topic/The_best_way_to_design_a_PCB_in_EasyEDA-ThR3pwqIC)
+
+### How to add more fonts for PCB.
+
+You can refer to [Text](./PCB.htm#Text) of PCB section.
+
+### How to insert an Image/Logo to PCB.
+
+You can refer to [Image](./PCB.htm#Image) of PCB section.
+
+### How to insert a DXF board outline.
+
+You can refer to [Import DXF File](./Import.htm#Import-DXF-File) of Import section.
+
+### How to create non rectangular pcb outline such as round? 
+  You can import a DXF file for the board outline. For a round board outline, you can use an arc to do that, you just need to change to the board outline layer, then draw 1 arc like in the image below (need to adjust a bit later), you can use lines and arcs to create complex board outlines.
+
+![](./images/253_FAQ_ComplexOutline.png) 
+
+
+### How to add a slot and cut out. 
+
+[https://easyeda.com/Doc/Tutorial/PCB.htm#Pad](https://easyeda.com/Doc/Tutorial/PCB.htm#Pad)
+and [https://easyeda.com/Doc/Tutorial/PCB.htm#Solid-Region](https://easyeda.com/Doc/Tutorial/PCB.htm#Solid-Region)
+
+### How to measure dimensions on a PCB.
+
+[https://easyeda.com/Doc/Tutorial/PCB.htm#Measure-Dimension](https://easyeda.com/Doc/Tutorial/PCB.htm#Measure-Dimension)
+
+### How to add more layers.
+ Click the layer options button, then tick the extra layers in the dialog that opens.
+ ![](./images/110_PCB_LayerOptions.png) 
+ 
+### How to add solder mask.
+It is possible to get boards with the copper exposed so that you can apply a layer of solder over those tracks to further increase their current carrying capacity. In this case, you need to add solder mask over a copper (copper area, track, solid region). 
+EasyEDA will add solder mask for pads automatically. Sometimes however, you may need to add an aperture in the solder mask to expose and area of copper.  
+
+
+1. First, add a top or bottom solder mask layer, as required.  
+
+	![](./images/254_FAQ_SolderMask.png)   
+
+
+2. Next, draw a region in the solder mask layer over a copper item as illustrated in the image below. This in effect draws an aperture in the solder mask so that the copper item inside the region, in this case the track, will be not be covered by the green film of solder mask.  
+  
+	![](./images/255_FAQ_SolderMask_1.png)    
+
+A common mistake is to just draw a solder mask, without a copper area, like the track pointed to by the yellow arrow. That is incorrect and does not produce the desired result.
+ 
+### How do I set the dimensions of my PCB in the layout?
+
+ PCB's dimension/size depends on the board outline, you can create your board outline, please refer to [Board Outline](./PCB.htm#Board-Outline) of the PCB section.
+
+### My PCB is complex, how can I be sure that I have routed all of the tracks?
+
+ Please refer to [Design Manager](./PCB.htm#Design-Manager) of PCB section. 
+ 
+
+### I need to start my layout again, how can I remove all of the tracks?
+
+![](./images/256_FAQ_UnrouteAll.png)
+
+### How to put a component on the bottom layer?
+ There are two ways to do this.
+ 
+1. If your active layer is the bottom layer, then every component you place will be placed on the bottom layer automatically.
+2. You can place a component then select it and change its layer attribute to `Bottom layer` in the right hand panel.
+![](./images/bottomlayercomponent.png) 
+
+### I can't convert schematic to PCB. Why is this?
+ 1. You have not set the right packages for your components. 
+ 2. [https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error](https://easyeda.com/Doc/Tutorial/Schematic.htm#Prefix-Conflict-Error)
+ 3. [https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages](https://easyeda.com/Doc/Tutorial/PCB.htm#Invalid-Packages)
+
+
+## PCB package.
+### How to create a PCB package/library.
+ ![](./images/143_PCBLibs_NewLib.png)  
+
+
+##Keep in Mind
+
+  1. There is no need to back up your schematics and PCBs manually. After the first save of any file, EasyEDA will back up all saved files automatically  under the [Version History](https://easyeda.com/Doc/Tutorial/Introduction.htm#Version-History). If you want to back up your files locally, you can download a copy of the whole project or of individual files in a project in EasyEDA Source (JSON) format:
+  
+   ![](./images/257_FAQ_DownloadProject.png)
+  
+  and;
+  
+  **Document > EasyEDA Source > Download**
+  
+   ![](./images/035_Introduction_EasyEDASource.png)
+ 
+  
+  2. If you need help, you can contact us ![](https://easyeda.com/Doc/Tutorial/images/support_email.png) or ask via our [Support Forum](https://easyeda.com/forum); we will respond ASAP.
+   
+  
+## Most Common Errors on EasyEDA.
+
+  1. Manually creating backup schematics into the same project. When a project is converted to PCB, EasyEDA will merge all of the schematics under the same project into a single PCB. If there are multiple copies of the same schematic in a project then this will create errors such as duplicate part prefixes. Especially if you are new to EasyEDA, just keep one copy of each unique schematic in any one project. 
+  2. Saving schematic and PCB into different projects. Unless you are absolutely sure that you will not need to update (Synchronise) your PCB from changes made to your schematic then please keep the schematics and PCB under the same project.
+  3. Bad packages. Schematic symbols must have the appropriate footprints assigned to them, these footprints must exist in the library and - for any footprint that you have not created yourself - you must have clicked on the **Favorite** option in the component search window to add it to your **Favorite Parts** list in the left hand Navigation panel.
+  ![](./images/258_FAQ_AddFavorite.png)
+  4. Using the polyline from the Drawing Tools Palette to connect symbol pins. To connect components together, you must use Wires from the Wiring Tools Palette.
+  
+ 
+## Spice Simulation FAQ
+
+EasyEDA's main target is schematic and PCB, not simulation. EasyEDA only support simple schematics simulation.
+
+### How to set the resistance of a resistor 
+
+   You can use the name attribute. Just set the name or double click the value text.
+
+![](./images/260_FAQ_Resistor.png) 
+
+
+### Where Can I find the Probe?
+
+  Voltage probe   
+  ![](./images/259_Schematic_VoltageProbe.png) 
+
+### Why I can't simulate my schematic
+
+   EasyEDA only has very few simulation models, EasyEDA is powered by [http://ngspice.sourceforge.net/](http://ngspice.sourceforge.net/) please check Ngspice to know what can be simulated.
+
+
+## Others.
+
+### Does EasyEDA canvas use the Cartesian coordinate system?
+
+ Yes and no. 
+ 
+ It uses X and Y coordinates where the horizontal X coordinate is positive to the right of the origin and negative to the left but the vertical Y coordinate is positive **below** the origin and negative above it. 
+ 
+ Actually, we think our coordinate system is not very good but it is hard to change. 
+ 
+![](./images/261_FAQ_CoordinateSystem.png)  
+
+
+
+# PCB Order 
+  After laying out your PCB, you probably want to order some **PCBs**. We have made it easy for you to save time and money by using our **awesome service** to order **low cost**, **high quality** PCBs *directly* from EasyEDA. More importantly, if you are not satisfied with the quality of our PCBs, EasyEDA will refund your money in full.
+
+  Although EasyEDA makes it easy to order PCBs for your projects and offers an exceptionally low PCB Manufacturing fee, you are free to download the Gerber files and order your PCBs from any other vendor. However, if you like EasyEDA, please give us a chance to fab. the PCB for you. We think you won't be disappointed.
+
+
+## PCB Quality
+   As engineers, we have spent more than 6 years building EasyEDA. As artisans, we believe that if you like using our EDA tools, then you will like our PCBs. 
+
+   EasyEDA's PCBs are in a group buy model and all PCBs are given 100% E-test. This allows us to provide you with good quality, tested PCBs at a great price. We have shipped thousands to our users, all of whom like our PCBs. 
+
+ No matter how good we tell you our service is, maybe you still have doubts. The easy way to remove those doubts is to try it out because - as we have said above - if you are not satisfied with the quality of our PCBs, we will refund your money in full. For details of this offer, please check the [Warranty and Return](#WarrantyandReturn). 
+
+
+## Order Button
+To order PCBs from us, just click the **Fabrication Output...** button in the PCB Editor window, as shown in the image below, and you will be redirected to an order page. In that page you can place an order quickly and easily. At the same time, at the click of a button, you can check the Gerber and drill files in our Online Gerber Viewer and then download your files. Obviously, we hope that you will support EasyEDA by ordering your PCBs from us but you are welcome to download the Gerber and drill files and send them to your favorite PCB house.
+
+![](images/142_PCB_FabricationOutput.png)
+
+
+## Essential Check Before Placing a PCB Order
+
+
+**A simple mistake can make a batch of PCBs useless so before submitting an order for PCBs, there are a lot of things to check.**
+
+The list below is a good starting point for the essentials but it by no means exhaustive!
+
+1) Check that all nets and netnames are as intended. For example nets can be accidentally connected together while drawing and editing a schematic and also by inadvertently assigning duplicated netlabels;
+
+2) Check that the appropriate package has been assigned to each and every schematic symbol. Don't forget that different transistors, capacitors and even resistors may be in different packages in different locations in a schematic. Also check that components have been rated correctly as this may affect their package size (don't forget their height too!);
+
+3) Check that the pin designations of the schematic symbol and the PCB package are the same. The pins on the schematic symbol for a bipolar transistor may be labelled B, C, and E but if the corresponding pins on the PCB footprint are labelled as 1, 2, and 3 then EasyEDA will flag this as an error when an attempt is made to convert the schematic into a PCB. It is simple to correct or - better - avoid this: change the labelling on the corresponding pins of the PCB footprint to B, C and E **or** change the labelling on the corresponding pins of the schematic symbol to 1, 2 and 3.
+
+To change the pin labelling in the schematic to match the PCB footprint: select the part, press the `i` key then edit the **Names** in the **Edit Pin Map Information** section of the **Modify symbol information** dialogue that opens and click `OK` when finished.
+
+To change the pin labelling in the PCB to match the schematic symbol: select each pin of the relevant part, then edit the pin **Names** in the right hand **Properties** panel.
+
+Note: do not confuse the schematic symbol pin numbering with the spice pins numbering. For more about this see:
+
+**Schematic symbols: prefixes and pin numbers** in:
+
+[https://docs.google.com/document/u/1/d/1OWZVVFRAe\\_2NW3WratpkA\\_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1](https://docs.google.com/document/u/1/d/1OWZVVFRAe_2NW3WratpkA_SGuHa5AcRow5ZRfvcoVTU/pub#h.pkwqa1)
+
+4) Check that the pin designations of the PCB footprint chosen for each and every device actually matches the pinout of the device that will be soldered to it. It is very easy to assign a SOT23 package to a BC846 bipolar transistor where the pin order is:
+
+Pin 1 = Base
+
+Pin 2 = Emitter
+
+Pin 3 = Collector
+
+and then to forget that the pin order for a MMBF5485 junction FET going round the same SOT23 package in the same order is:
+
+Pin 1 = Drain
+
+Pin 2 = Source
+
+Pin 3 = Gate
+
+To change the pin labelling in the schematic to match the PCB footprint: select the part, press the `i` key then edit the order of the **PCB Pin** information in the **Edit Pin Map Information** section of the **Modify symbol information** dialogue that opens and click `OK` when finished.
+
+To change the pin labelling in the PCB to match the schematic symbol: select each pin of the relevant part, then edit the pin **Numbers** in the right hand **Properties** panel.
+
+5) Check that all necessary Bill of Materials (BoM) information is present and correct. Correct it and add more if required, making sure that fields such as `Description` are consistently labelled so that they form a coherent column structure in the BoM;
+
+6) Check that all PCB footprints are correct for the intended devices (yes: whether they have come from the library or you have created them yourself: check them thoroughly);
+
+7) Check that silkscreen markings such as the polarity markings for electrolytic capacitors and diodes are the right way round. Even if the pin names, numbering and sequence around tha package are correct, it can all go wrong if the footprint markings show the device in the wrong orientation.
+
+9) Check that devices have been placed on the correct side of the board;
+
+10) Refresh and check all the Components and Nets in the schematic Design Manager tab in the right hand panel;
+
+11) Refresh and check all the Components, Nets and DRC Errors in the PCB Design Manager tab in the right hand panel;
+
+12) Check connector and on-board pot and switch orientations;
+
+13) Check the dimensions and locations of mounting holes and any components that have to line up with respect to these mounting holes or to apertures in an enclosure;
+
+14) Check that the order of the top and bottom (and any inner layers) is correct;
+
+15) Check that a Board Outline exists, is closed and that it is shaped and dimensioned correctly and is on the correct (Board Outline) layer;
+
+16) Check that silkscreen markings do not overlap pads;
+
+17) Check that all required silkscreen markings are present, in the correct locations on the correct layers, are within the recommended dimensions, are legible and and spelled correctly;
+
+18) Check that any additional information such as notes about the PCB stackup etc., are present and on the correct (Documentation) layer;
+
+19) Check that no board outline, silkscreen or documentation layer information has accidentally been placed on any copper layers;
+
+20) Having completed the layout, check that the assembled component heights do not foul any enclosure (At the time of writing (160922) this is not something that can be acheived directly in EasyEDA as there is no 3D viewer yet available so this must be checked by other means);
+
+21) If copper areas are used with heat shunt spokes enabled, check that any tracks that join pins that are also joined by copper areas run within the area of a spoke. If they do not - for example a 45 degree diagonal track coming out of a pad with 90 degree heat shunt spokes - the track forms an extra spoke which increases the heat shunting to a pad and so may make soldering more difficult;
+
+22) Check that all copper areas assigned to a net are joined by reasonable widths of copper, i.e. they are not just joined by thin slivers of copper;
+
+23) Check that any tracks that require special routing considerations such as Kelvin connections to low value current sense resistors or increased clearances for high voltage traces have been correctly implemented;
+
+24) Check clearances of copper on all layers and components on both sides to the edges of the board;
+
+25) Check that no traces have been set to hidden in the Design Manager Nets list;
+
+26) Use the Design Manager (the **Design** button in the left hand panel) to check that all components are present in both the schematic and the PCB and that all nets have at least two connection;
+
+27) Use the Design Manager (the **Design** button in the left hand panel) to check, investigate and correct all DRC errors.
+A completed PCB design should have no DRC errors;
+
+28) Check that the Gerbers to be generated are from the correct version of the PCB layout. It may have changed as a result of the above checks so always regenerate the Gerbers from the latest version unless there is a specific reason to use them from an earlier version. Putting a version number on the PCB helps but is not perfect as this has to be updated manually anyway;
+
+29) Download and check items (6) to (24) in the Gerbers in either the EasyEDA Gerber Viewer:
+
+[https://gerber-viewer.easyeda.com/](https://gerber-viewer.easyeda.com/)
+
+or using a 3rd party Gerber viewer such as the free and open source gerbv:
+
+[http://gerbv.sf.net/](http://gerbv.sf.net/)  
+[http://flatcam.org/](http://flatcam.org/)  
+[http://kicad-pcb.org/](http://kicad-pcb.org/)  
+[http://www.gerber-viewer.com/](http://www.gerber-viewer.com/)
+
+30) Check the order options such as number of boards, copper finish, silkscreen colour, solder mask colour, panellisation, any solder paste mask requirement and so on;
+
+31) Lastly, check that the order is being placed with the correct delivery option. The default delivery method is by express courier. This is the most expensive option but avoids the mistake of ordering boards that are needed urgently with a slow delivery method.
+
+
+
+## PCB Order from EasyEDA Editor
+   When you click the `Fabrication Output...` button your order is coming from within the EasyEDA editor environment so you don't need to input information about **Layers**, **Width** and **Height**; EasyEDA fills this information in for you. 
+
+   On the order form page you will find a real time price. Most of the time this price is the final cost however if, for example, you change the Layers to 4 or 6, you will find the price field changes to **Quote**. If that happens, don't worry: just click the `Save to Cart` button and we will email a quote for the final price to you ASAP. 
+
+ **Note:**   
+
+- *When you add your PCB to the cart, EasyEDA saves a copy of Gerber files at that time.*   
+
+- *If you then change your PCB back in the PCB editor, **EasyEDA does not synchronize your Gerber files to the updated PCB design**.*  
+
+- *The only way is to delete the earlier version of the PCB from your Cart and then add the updated design as a new item.*
+
+![](images/PCBOrderPage1.png) 
+
+
+## PCB Order from Order Link
+  If you would like to upload your own Gerber files from a third party PCB tool such as Eagle, Pads, or Altium Design, just click on this link [https://easyeda.com/order](https://easyeda.com/order) to order. This page will let you upload your own Gerber Files.
+
+![](images/PCBOrderPage2.png) 
+
+
+## PCB Capabilities 
+
+<table>
+<tbody>
+<tr>
+<td width="200">Number of Copper Layers*</td>
+<td width="400">1-16</td>
+</tr>
+<tr>
+<td>PCB Material</td>
+<td>FR-4, FR4-Tg, FR4-High Tg</td>
+</tr>
+<tr>
+<td>Available Solder Mask Colors</td>
+<td>Green, Red, Yellow, Blue, White, Black</td>
+</tr>
+<tr>
+<td>Silk Screen Colors</td>
+<td>White, Black (For White Solder Mask only)</td>
+</tr>
+<tr>
+<td>Minimum Quantity</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Minimum dimensions*</td>
+<td>0.4cm x 0.4cm</td>
+</tr>
+<tr>
+<td>Maximum dimensions*</td>
+<td>100cm x 100cm</td>
+</tr>
+</tbody>
+</table>
+
+* If your PCB requires more than the default maximum of 6 layers (up to a maximum of 16) or larger dimensions, then please contact us before placing your order
+
+* If your PCB dimensions are bigger than 45cm * 45cm, it may add some additional cost  
+
+
+## Manufacturing Specifications:
+<table border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr bgcolor="#ccc">
+<td rowspan="2">Item</td>
+<td colspan="3">Specs</td>
+</tr>
+<tr bgcolor="#ccc">
+<td>Unit: mm</td>
+<td>Unit: mil</td>
+</tr>
+<tr>
+<td>Available Board Thickness</td>
+<td>0.4, 0.6 (except 4 layer), 0.8, 1.0, 1.2, 1.6, 2.0</td>
+<td>15.7, 23.6 (except 4 layer), 31.5, 39.4, 47.2, 63.0, 78.7</td>
+</tr>
+<tr>
+<td>Thickness Tolerance</td>
+<td>(t &gt;= 1.0) ± 10%</td>
+<td>(t &gt;= 39.4) ± 10%</td>
+</tr>
+<tr>
+<td>Thickness Tolerance</td>
+<td>(t &lt; 1.0) ± 0.1%</td>
+<td>(t &lt; 39.4) ± 0.1%</td>
+</tr>
+<tr>
+<td>Insulation Layer Thickness</td>
+<td>0.075 - 5.0</td>
+<td>2.95 - 196.85</td>
+</tr>
+<tr>
+<td>Minimum trace width</td>
+<td>0.089</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>Minimum inner trace width </td>
+<td>0.127</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Minimum trace/vias/pads space</td>
+<td>0.102</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Minimum inner trace/vias/pads space </td>
+<td>0.102</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Minimum silkscreen width</td>
+<td>0.1524</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Minimum silkscreen text size</td>
+<td>0.8128</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Outer Layer Copper Thickness</td>
+<td>&gt; 0.03</td>
+<td>&gt; 1.18</td>
+</tr>
+
+<tr>
+<td>Drilled Hole Diameter (Mechanical)</td>
+<td>0.3 - 6.35</td>
+<td>11.81 - 250.00</td>
+<tr>
+<td>Drilled Hole Diameter (Laser)</td>
+<td>0.2 - 0.3</td>
+<td>7.87 - 11.81</td>
+</tr>
+
+<tr>
+<td>Diameter Tolerance (Mechanical)</td>
+<td>	±0.08 </td>
+<td>	± 3.148</td>
+
+<tr>
+<td>Solder Mask Bridges</td>
+<td>0.1</td>
+<td>3.94</td>
+</tr>
+
+<tr>
+<td>Circuit to edge</td>
+<td>≥0.3</td>
+<td>≥11.8</td>
+</tr>
+<tr>
+<td>Slot</td>
+<td>≥0.6</td>
+<td>≥23.6</td>
+</tr>
+<tr>
+<td>Slot Tolerance(Mechanical)</td>
+<td>±0.15</td>
+<td>±6</td>
+</tr>
+
+<tr>
+<td>Aspect Ratio</td>
+<td colspan="2">8:1</td>
+</tr>
+<tr>
+<td>Solder Mask Type</td>
+<td colspan="2">Photosensitive ink</td>
+</tr>
+</tbody>
+</table>
+
+If you have any special PCB requirements, please contact us before placing your order. 
+
+
+## Price
+
+All Prices stated are FOB Shenzhen. This does not include transportation costs which shall be borne by the customer. 
+
+
+### Manufacturing Price
+
+Price is dependent on many factors, such as the quantity of PCBs you order, PCB Color, Surface Finish, PCB Thickness, PCB Dimensions, Hole size etc. 
+
+EasyEDA uses a group buy business model and we are sure it will be hard to find a better PCB supplier than EasyEDA offering the same price and quality.
+
+EasyEDA needs 2~4 days to manufacture the PCBs after you submit payment.
+
+
+### Shipping Costs
+<table>
+<tbody>
+<tr bgcolor="#ccc">
+<td width="50">Method</td>
+<td width="300">note</td>
+<td width="50">Price</td>
+<td  >Service</td>
+</tr>
+<tr>
+<td><strong>&nbsp;Air Mail</strong></td>
+<td>&nbsp;Delivery Time: 8-35 days. Most of our users receive their PCBs in two weeks.</td>
+<td>From $6</td>
+<td >Usually  http://www.singpost.com/ </td>
+</tr>
+<tr>
+<td>&nbsp;<strong>Express</strong></td>
+<td>&nbsp;Delivery Time: 3-7 days</td>
+<td>From $24</td>
+<td >Usually delivered by http://www.DHL.com/ </td>
+</tr>
+<tr>
+</tbody>
+</table>
+
+**Note:** The shipping cost is estimated. EasyEDA will always try to find the best shipping option.  If you are in some [Remote Areas](http://raslist.dhl.com/jsp/first.jsp), we will ask you to pay for more or change to some other express service such as Fedex, UPS. Sometimes, we will use [Hongkongpost](http://www.hongkongpost.hk/eng/index.htm) for delivery by Airmail.
+
+## File Name
+If your Gerber file names are good, this will save us a lot of time in checking your design. 
+There are many different PCB design software packages so there are many variations of Gerber file names and filename extensions. 
+
+Gerber Type
+
+![](images/Gerber_File_name.png) 
+
+If you don't know how to map your files, don't worry about changing the file names and please contact support for help.
+
+**We encourage you to use our free online [gerber viewer](https://gerber-viewer.easyeda.com/) to check your gerber files before placing an order.**
+
+## E-Test
+All PCBs undergo a 100% AOI (Automated Optical Inspection) to make sure that all tracks and pads are connected.
+In addition to this the PCBs can be tested by a flying probe to make sure that all vias are connected, because this is not visible by the AOI. Single layer PCBs do not require this test because there are no vias but boards with 2 layers and above will always be 100% tested with a flying probe.
+
+## Payment
+We accept the PayPal, Credit Card and Wire Transfers. 
+
+### PayPal and Credit Card
+We use Paypal as our payment; it is safe and easy. If you don't have a Paypal account, you can still use Paypal to pay with a debit or credit card.
+
+![](images/paycard.png) 
+
+### Wire Transfers
+Wire Transfers can only be used on orders with a grand total (subtotal plus all additions and deductions but excluding shipping fees) of at least $600. For orders > $2000, payment by Wire Transfer is preferred. In this circumstance, 3.5% extra discount will be applied for the grand total (subtotal plus all additions and deductions but excluding shipping fees). Wire Transfer payments usually take 3-5 business days to clear. We will not ship your order until your payment is verified by our bank. Please send a copy of the Wire Transfer receipt to our customer service because although it is not sufficient to release an order, it will help us to push the delivery date. 
+
+## Customs, Duties and Taxes
+You should expect to pay any amount charged by the government in your respective country. This includes but is not limited to: duties, taxes and any extra fees charged by the courier company. We will not be held responsible for any extra charges once the original package has been shipped. If the customer refuses to pay these extra charges, the return shipping and any additional fees will be taken out of the cost of the order, with any remaining funds being refunded to the customer.
+Customs are quite different in each country. Please include information about particular Customs requirements as necessary, while you are placing your order: we will support you as much as possible. 
+
+## Warranty and Return
+For your first order for a PCB laid out in **EasyEDA**, we have the top return policy on the planet! If you don't like them, just send an email to 
+
+![](images/support_email.png), no reason needed. We will provide your full money back - including product + shipping costs - in one working day. 
+
+For subsequent orders, because you now know the quality level of our PCBs, if you are not satisfied with a product you bought from us for whatever reason, you just need to email us some pictures of the product and explain why you are not happy with it. We will then refund the full money of the product. Shipping fees will only be refunded if the return is a result of a shipping error on our part. 
+
+
+# PCBOrderFAQ
+
+## PCB Parameter Description
+
+### PCB Dimension
+
+EasyEDA supports the design of PCBs up to 50cm * 50cm however we suggest our customers try to limit the design to a PCB size of no larger than 45cm * 45cm. We may have to charge more for PCB sizes greater than this because they are harder to fabricate and need a bigger box with more packaging to protect them in shipping.
+
+* If the size is smaller than 2cm, you need to panelize them to big size, or we can't help you to do the E-test.
+
+
+### PCB Quantity
+ EasyEDA uses a group buy model, so the price is very low, but the minimum number of PCBs should be 5 pcs. So for example, if you need 2 pcs, you need to order 5 pcs and similarly, if you need 7 pcs you need to order 10 pcs. 
+
+### PCB Thickness
+   EasyEDA PCB provides 0.4mm, 0.6mm, 0.8mm, 1.0mm, 1.2mm, 1.6mm, 2.0mm thickness to choose from. If you need a 2.5mm or 3mm thickness board, please ask us for a quote via email.  Please note that not all thicknesses will be available for all numbers of layers; for example no PCB house can fabricate a 32 layer PCB with a 0.4mm thickness!
+
+
+### PCB Stack up
+
+#### 2 Layer PCB stackup 1Oz
+![](images/2layerStackupPCB.png)  
+
+
+#### 2 Layer PCB stackup 2Oz
+![](images/2layerStackupPCB2oz.png)  
+
+
+#### 4 Layer PCB stackup 1Oz
+![](images/4layerStackupPCB1oz.png) 
+
+#### 4 Layer PCB stackup 2Oz
+![](images/4layerStackupPCB2oz.png) 
+
+#### 6 Layer PCB stackup 1Oz
+![](images/6layerStackupPCB1oz.png) 
+
+For other numbers of layers or for a different layer stack up, please email us before placing your order.
+
+
+### Copper Weight
+  You can select 1oz, 2oz in our order page. 
+
+   1. For 1Oz, the track width and clearance can be 3mil. 
+
+   2. For 2Oz, please make sure the clearance is bigger than 8mil. 
+
+
+
+### Different Design in Panel 
+Some customers would like to merge more than 1 PCB in the same Gerber. We know you want to save money but this may make it **hard to cut the board outline** and more importantly this will take a lot more time to pick up and package the PCB. Although by ,doing this, you just have the one order, this complicates the fabrication of the panel and separation of the individual PCBs, so we will usually charge more for this. Similarly, using holes or slots as break off sections between boards are treated the same way as putting more than one design on a panel, each with its' own board outline. 
+
+Note: This additional charge only applies if the PCBs on a panel are different. Boards such as in the left hand image below will not incur an additional charge because they are easy to pick up but boards such as in the right hand image would incur an additional charge.
+
+ ![](images/DiffirentPCB.png)  
+
+
+If you are just in the prototype phase and want to save money, then you can use the following trick. Place your different designs all inside one overall board outline and use lines drawn in the silk layer to mark out the separate the PCBs. Then, when you receive the PCB, carefully cut them apart yourself (we recommend you do this before you assemble the PCBs!). Like the PCB shown below, the yellow lines are drawn in the silk layers showing how you can merge 3 different PCBs in one gerber without incurring any extra costs.
+
+![](images/silklayerPCB.png)  
+
+### V-cut/V-Groove
+
+   This will help you to build a PCB Array to save time by making it faster to solder the PCB in SMT. 
+
+ ![](images/V-cut-v-groove.png)  
+
+   1.  The V-cut line should be the same as the outline of the Sub-PCB. That is to say, there is zero space between the sub-boards.
+
+   2.  The PCB panel needs to be larger than 8 * 8cm.
+
+   3.  The V-cut line must cross the whole panel or else the factory can't add a V-groove on the PCB because the milling cutter may destroy any sub-PCBs on the V-cut line. They also cannot stop part way across the panel. The V-cut lines shown below are not acceptable:
+
+ ![](images/NoOKV-CUT.png)  
+​     
+
+### Material Details
+  EasyEDA supports FR4-Standard Tg 140C, FR4-Tg 150C, FR4-High Tg 170C. The FR4 TG's lead time may be more than 6 days. 90% of EasyEDA orders use FR4-Standard. For more information about this, please check the [FR4 Material pdf](Doc/FR4-material.pdf "FR4 material")
+
+### Smallest Holes Diameter
+   0.3mm for mechanical drill, 0.2mm for the laser drill. To save money, please use a minimum drill diameter of 0.3mm.
+
+### Ring
+ The width of the ring around vias or pads should be wider than 6mil/0.15mm.
+
+![](images/Ring-via.png)  
+
+
+### Min. Tracing/Spacing
+ We support down to 4mil but to save money, please use 6mil.   
+![](images/clearance.png)  
+
+### Grid size
+Make sure the Grid filled size is bigger than 8mil/8mil ( track/space), if less than that, we will change it to 8mil/8mil .
+
+![](images/gridSize.png)
+
+
+
+
+### Impedance Control
+ We support 5% and 10% precision. Please add enough information about your impedance control requirements to help us to fabricate your PCB.
+
+### Gold Fingers
+If you wish to built PCBs that plug directly into edge connectors, such as memory cards, please choose **Gold Fingers** as shown in the image below:  
+![](images/Gold-Fingers.png)  
+
+ 
+
+### Half-cut/Castellated Holes
+If you need to build some PCBs as shown in the image below, please choose **Half-cut** holes.
+
+![](images/Half-cut-Castellated-Holes.png)
+
+### Panel by EasyEDA
+ When your Gerber is for just one design and you need EasyEDA to help you to duplicate many copies onto one panel, you can use this option.
+   You can drag across the rectangles to select then click on the panel to set how many rows and columns as shown in the image below:
+
+![](images/Panel.png)
+
+For this image, we will merge 10 small PCBs to 1 big panel. If you order 5 pcs, then we will send 5 big panels to you, each with 10 PCBs on it so you will end up with 50 small PCBs.
+
+If you select the **Edge Rails**, we will add a 5mm board edge as shown in the image below:
+This is 2 rows and 5 cols panel PCB.
+
+![](images/V-cut-v-groove.png)   
+
+**Note:**   
+
+1. *Make sure the single PCB size is bigger than 2cm x 2cm, or we will charge $20 for the v-cut cost. Small PCB is hard to v-cut.* 
+2. *Make sure the board outline is simple, for complex board outlines, you need to panelize by yourself. Or you can pay us $15 to do that, we will send the panelized gerber to you to confirm.*
+   ​    
+
+## Stencil Parameter Description
+A Stencil can help you to solder the PCB quickly. For efficient and reliable SMT assembly a Stencil is a must.
+EasyEDA can provide the option of NON-FRAMEWORK (or frameless) and FRAMEWORK stencils.
+The right hand image below shows a frameless stencil. Frameless stencils are cheaper and lower weight(0.2Kg) so they can help to reduce the shipping cost.
+
+![](images/stencil.png)  
+
+ 
+
+## Order FAQ
+
+### How to check the Shipping Cost?
+
+We can ship PCBs to any country. The shipping cost depends on the weight of the boards, country, and shipping method. Before you pay, you can see the shipping cost and select the shipping method. So you just need to add it to your cart and then you will see some options like in the image below:
+
+![](images/shippingcost.png)
+
+
+### How to order lots of PCB together?
+
+EasyEDA allows you to order many different PCBs together,  just add the PCB to cart one by one , at last to pay for together.
+
+
+### How to remove the customer ID on the PCB?
+EasyEDA uses a group buy model to save the cost of production, for picking up your PCB easier, we need to add a very small string to your PCB, the string might be under some IC, and if you solder the PCB, the string will be hidden. If you don't like it, there are two ways.
+
+1. Email us, we will fabricate your PCB in another way, but the cost will be higher.
+
+2. When you order, you can use https://easyeda.com/Doc/Tutorial/PCBOrderFAQ#Panel-by-EasyEDA and keep the edge, we will add the string at the dirty edge, so there is no string on your product PCB.
+
+
+
+
+
+
+
+
+
+
+# EasyEDA API Plug
 
  Before reading this capture, please check [Open EasyEDA File Format](/Doc/Open-File-Format/) first.
 
-## 为什么需要API
+## Why Need API
 
 After route the PCB, you found out that you need to enlarge all tracks size a bit little, How?
 After route the PCB, you found out that all Vias' hole size is too small, How to fix this?
 How to create a board outline using code? 
 EasyEDA API will let you control your designs in an easy way.
 
-## 如何使用API
+## How to use API
 
-### 如何找到接口的入口
+### How to find the plug entrance
 
 You can click **Config Icon > Extensions Setting** on the top toolbar image as below.
 
-### 扩展设置
+### Extensions Setting
 
 You can enable or disable the default extensions, after enable, please **reload** the EasyEDA editor. We will give you a file about how to create an extensions soon.   
 ![](./images/171_API_ExtensionsSetting.png)
@@ -7259,7 +8483,7 @@ You can check our **github** codes of this API via [https://github.com/dillonHe/
 6. **Close** EasyEDA editor and open it again.  
 ![](./images/174_API_Extensions_InstallExtension.png).  
 
-### 脚本
+### Scripts
 
 If you just need some simple functions, you don't need to create an extension. You just need to create a single Javascipt file and keep it in this list.  
 
@@ -7268,9 +8492,9 @@ If you just need some simple functions, you don't need to create an extension. Y
 3. You can install your own scripts, then they will show on **User Scripts**.
 ![](./images/175_API_Scripts_RunHelloWorld.png).  
 
-### 运行脚本代码
+### Run Script code
 
-In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.
+In some case, you just need to run the function one time, such as create a user define board outline in codes, changing the Track width, change the hole size etc. You can use this way.  
 ![](./images/176_API_ScriptSample.png).  
 
 **example 1 Art**  
@@ -7281,14 +8505,14 @@ You can open an empty schematic and copy [this example javascript codes](https:/
 You can open a **PCB** and copy [this example javascript codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js) to the text box to run a test. After that, All tracks will be 10mil.
 
 
-## 立创EDA坐标系
+## EasyEDA Coordinate System 
 
-EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.
+EasyEDA's editor is based [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics), SVG viewport,(Coordinates increase **left-to-right** and **top-to-bottom**, the same as EasyEDA ). But SVG's origin is fixed at the left top corn, and EasyEDA's origin can be modified at the any place.  
 ![](./images/178_API_Coordinate.png).   
 
 Be careful this, they are different from **Cartesian coordinate system**  
 
-## 单位
+## Unit
 
 There are two kinds of unit in our editor, SVG Canvas unit and real world EasyEDA unit. SVG Canvas unit is **Pixel**. The real world EasyEDA unit in schematic is also **Pixel**, but in PCB, there are **mm**, **mil** and **inch**. We use bellow map to convert Canvas to real world.
 - 1 pixel = 10 mil
@@ -7309,9 +8533,9 @@ There are other convert method, such as `inch2pixel`, `pixel2mm`, `pixel2mil` an
 For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 
-## API列表
+## API List
 
-### 获取立创EDA Source
+### Get EasyEDA Source
 
 1. get EasyEDA JSON objects, type is `json`, you can check  [PCB Json object](/Doc/Open-File-Format/PCBFileObject.htm) out to know more.
 
@@ -7327,7 +8551,7 @@ For example, if you want to change a Track to 20mil, so you just need to use 2.
 
 Check the [Get EasyEDA source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
 
-### 应用Source
+### Apply Source
 
  After you can use your codes to hack EasyEDA's source, then you need to apply the source to EasyEDA's editor. You can  
  
@@ -7342,7 +8566,7 @@ Check the [Get EasyEDA source example codes](https://raw.githubusercontent.com/d
 
 Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonHe/EasyEDA-Documents/master/API/example/modifyTrackVia.js).
 
-### 获取图形
+### Get Shape
 
  If you want to get an EasyEDA json object by **id**, you can try to use bellow code.
 
@@ -7352,7 +8576,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 
   Removing shapes by follow code
    
-### 更新图形
+### Update Shape
 
  If you want to modify an EasyEDA object, you can use this API.
 
@@ -7371,7 +8595,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 `shapeType`, `FOOTPRINT`, `TRACK`, `COPPERAREA`, `SOLIDREGION`, `RECT`, `CIRCLE`, `TEXT`, `ARC`, `DIMENSION`, `PAD`, `VIA`, `HOLE`
  
 
-### 创建图形
+### Create Shape
 
  If you want to create EasyEDA shape by codes, you can try. We will provide more information about this API soon, now we just provide examples. You will find out how to do.   
 
@@ -7498,7 +8722,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 
    If you want to create an extension, not just a run one time script, maybe need toolbar button. You can check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) before you read.
 
-#### 创建工具栏按钮
+#### Create Toolbar Button
 
 
 	 //@example create a button 
@@ -7521,7 +8745,7 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 *  ]
 	 * });
 
-#### 创建扩展菜单
+#### Create Extension Menu
 
 	/**
 	 * @example  
@@ -7534,82 +8758,82 @@ Check the [Apply Source example codes](https://raw.githubusercontent.com/dillonH
 	 * ]);
 	 */
 
-### 创建对话框
+### Create Dialog
   check the [example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example/theme) 
 
-### 命令列表
+### Command List
 
-#### 克隆
+#### Clone
 
       // clone gge2 gge3 and return their new ids.
       var newIds = api('clone', {ids:["gge2","gge3"]})
 
-#### 删除
+#### Delete
 
 	  api('delete', {ids:["gge2","gge3"]});
 
-#### 旋转
+#### Rotate
 
     // rotate ids to 90 degree
     api('rotate', {ids:["gge2","gge3"],degree:90});
 
-#### 左旋转
+#### Rotate Left
 
     //anticlockwise
     api('rotate_left', {ids:["gge2","gge3"]});
 
-#### 右旋转
+#### Rotate Right
 
     //clockwise
     api('rotate_right', {ids:["gge2","gge3"]});
 
-#### 水平翻转
+#### Fliph
 
     api('fliph', {ids:["gge2","gge3"]});
 
-#### 垂直翻转
+#### Flipv
 
     api('flipv', {ids:["gge2","gge3"]});
 
-#### 左对齐
+#### Align Left
 
     api('align_left', {ids:["gge2","gge3"]});
 
-#### 右对齐
+#### Align Right
 
     api('align_right', {ids:["gge2","gge3"]});
 
-#### 顶对齐
+#### Align Top
 
     api('align_top', {ids:["gge2","gge3"]});
 
-#### 底对齐 
+#### Align Bottom 
 
     api('align_bottom', {ids:["gge2","gge3"]});
 
-### 选中
+### Selection
 
  Change or get selection states of EasyEDA objects in editor.
 
-#### 选择
+#### Select
 
       // gge2 and gge3 will be marked as selected.
       api('select', {ids:["gge2","gge3"]});
 
-#### 未选择
+#### Select None
 
       //no objects will be selected.
       api('selectNone');
 
-####获取选中的Ids
+#### Get Selected Ids
 
      var ids = api('getSelectedIds');
 
-### 移动
+### Move
 
 You can use [Update Shape](#UpdateShape) to change the shapes position, but the Move method is better in this case.
 
-#### 移动对象
+#### Move Objects
 
 Move shapes in relative coordinates, like move the shapes in arrow keys.
 
@@ -7623,7 +8847,7 @@ Move shapes in relative coordinates, like move the shapes in arrow keys.
 	//Move selected objects from left to right in 20pixel or 200mil step
 	api('moveObjs', {addX:20});
 
-#### 移动对象至
+#### Move Objects To
 
 How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move shapes to absolute coordinates.
 	
@@ -7637,14 +8861,14 @@ How to move a `VIA` or `junction` to position `{x:'10mil', y:'10mil'}` ?, Move s
 	 api('moveObjsTo', {x:20, y:20});
 It is very easy to understand to move a PAD, VIA, Junction to absolution coordinates. But what are the effects of moving TRACK, FOOTPRINT, netlabel to some where. Just try to play the codes, you will find out the regular pattern.
 
-### 设置原点XY
+### SetOriginXY
 
 EasyEDA's canvas origin is 0,0, you can't change it. But the real coordinates can be mapped to any where.   
 
 	//set the real origin point to canvas x = 400, y = 300. X,Y is pixel all the time.
     var result = api('setOriginXY', {x:400,y:300});
 
-### 坐标转换
+### Coordinate Convert
 
 You can use mm or mil or inch as units, but when you apply the Parameters to SVG graph, you must use coordinate convert. 
     
@@ -7657,7 +8881,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
 
   If you set the origin to **0,0**. It is very easy to map the coordinate in your mind, you don't need to use API to convert. the canvas coordinate **100,100** equal the real coordinate **1000mil, 1000mil** or **1inch, 1inch** or **393.7mm, 393.7mm**
 
-### 单位数值转换
+### Value Convert
 
  How to set the pad's hole size to 20mm? How to set the Track width to 20mil?
      
@@ -7688,7 +8912,7 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
         }
 	 });
 
-### 获取SVG圆弧路径
+### Get SVG Arc Path
 
  SVG [Arc path Parameter](http://www.w3.org/TR/SVG11/paths.html#PathElement) is very complex,  We provide a API to convert human read ARC parameter to SVG path.
 
@@ -7696,17 +8920,15 @@ You can use mm or mil or inch as units, but when you apply the Parameters to SVG
 
 result should be `M89.55037487502231 8.985007498214534A90 90 0 0 1 68.83579685560396 57.97959185139219`
 
-## 范例
+## Examples
 
 Check [Github example](https://github.com/dillonHe/EasyEDA-Documents/tree/master/API/example)
 
-Enjoy it, if you have any questions, do let us know.
+Enjoy it, if you have any questions, do let us know.     
 
-​
-# 开放文件格式
+# Open File Format
 
 ## Common Information
-
 EasyEDA is a free, zero-install, Web and cloud-based EDA tool suite, integrating powerful schematic capture, mixed-mode circuit simulation and PCB layout.
 
 EasyEDA team tries to make our users happy. We provide an open ASCII file format. With this file format, you can create a schematic or PCB using some codes, even with Notepad. When you try to add hundreds of LEDs to a schematic or PCB batch, you will find out that you can use codes to create an EasyEDA file, then import it to EasyEDA. It is fun and quick.
@@ -8882,4 +10104,4 @@ Note: please check the other shapes format via below JSON example.
 Check the complete JSON object via github gist [PCB Json object](https://gist.github.com/071d4680dcdbf6bf9dd6.git)
 <script src="https://gist.github.com/dillonHe/071d4680dcdbf6bf9dd6.js"></script> 
  
-                   
+

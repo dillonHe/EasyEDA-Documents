@@ -441,20 +441,35 @@ About adjusting components you can:
 
 This tool is used to cross probe from chosen objects on the current schematic to its corresponding counterparts in the PCB, or from PCB Footprints to corresponding  counterparts in the schematic. 
 
-**Note:** *You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
+**Note:** 
+
+-	*You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
 And don't forget to use the hotkey `SHIFT+X`.  
 
 ![](./images/192_Schematic_CrossProbe.gif)  
 
 
-## Multi-part Components
+## Cross Probe And Place
 
-The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
+If your schematic have a lot of components, it will be difficult to layout the PCB , so EasyEDA provides a powerful function "Cross Probe And Place".
+ 
+Cross Probe And Place will make the footprints' location match the schematic's parts' location as much as it possibly can.
 
-When placing the 74HC04 on a schematic, it will look like the screenshot below.   
-**Note:** *The component Prefix will be in form of: U?.1, U?.2 etc.*
+![](./images/295_Schematic_CrossProbeAndPlace1.png)
 
-![](images/059_Schematic_Mutil-Components.png)
+**How to use**: 
+-	[Converting Schematic to PCB](https://easyeda.com/Doc/Tutorial/Schematic.htm#Converting-Schematics-To-PCB) first, and save at current project.
+-	Select the components area by mouse in the schematic, and then click the "Cross Probe And Place", hotkey "CTRL + SHIFT + X".
+-	The editor will switch to the PCB, and choose the footprints as you selected for waiting for placing.
+-	Right click to place, and the mouse will keep the drag status, its easy for adjusting the footprints' location.
+
+![](./images/295_Schematic_CrossProbeAndPlace2.png)
+
+**Notice**:
+
+-	*You don't need to open PCB first before using this function in the schematic. Editor will open the PCB automatically.*  
+-	*If your project has many PCBs, and didn't open anyone yet, the editor will open the first one automatically; If you already open a PCB, and this function will be valid for this PCB.*
+
 
 
 ## Design Manager
@@ -526,25 +541,6 @@ If you want to use your own packages, you can select **My Parts** on Pattern Lib
 And you can modify component's pin map information in here.
 
 
-## Component Attributes
-
-After selecting a component, you can find the component's attributes in the right hand Properties panel.
-
-![](images/064_Schematic_ComponentAttributes.png)
-
-**1.****Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
-If you want edit this component, you can click **Edit Symbol**.
-![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
-
-**2.****Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
-
-
-
-### Define BOM Parameters
-After selected a schematic symbol, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this parameter in CSV file.  
-
-![](./images/060_Schematic_AddNewParameter.png)
-
 ## Annotate
 
 After creating a schematic, it is quite likely that you have component Prefixes (reference designators) that are in no particular order on the canvas. You may also have duplicates. You can automatically renumber all the components using the **Annotate** function.
@@ -571,7 +567,6 @@ Various Annotate possibilities  are available:
 
 **Note:** *Reset does not reset annotation back to where it was before pressing the Annotate button.*
 
- 
 
 ## Symbol Wizard
 
@@ -598,7 +593,32 @@ If you are not too worried that the symbols may not look quite the way people mi
 ![](images/071_Schematic_LibWizar-2N3055.png)
 
 
+## Multi-part Components
 
+The number of pins on some components can be quite large. That's why it's easier to divide such a component into several parts or functional blocks. As a simple example, there are six gates in the 74HC04 Hex Inverter component. To avoid clutter in the schematic, GND and VCC pins of such components are usually served by a separate part of the component. This is really convenient as it doesn't interfere the working process with logical parts. The NetLabel names of VCC and GND Pin are usually hidden.
+
+When placing the 74HC04 on a schematic, it will look like the screenshot below.   
+**Note:** *The component Prefix will be in form of: U?.1, U?.2 etc.*
+
+![](images/059_Schematic_Mutil-Components.png)
+
+## Component Attributes
+
+After selecting a component, you can find the component's attributes in the right hand Properties panel.
+
+![](images/064_Schematic_ComponentAttributes.png)
+
+**1.****Part Attributes:** You can change the **Prefix** and **Name** here，And make them **visible** or **invisible**.  
+If you want edit this component, you can click **Edit Symbol**.
+![](images/065_Schematic_ComponentAttributes-EditSymbol.png)    
+
+**2.****Custom Attributes:** You can change *component's supplier*, *mounted or not*, *change package*, and *add new parameter*.
+
+
+### Define BOM Parameters
+After selected a schematic symbol, you can add a parameter, and you can mark it as `In BOM`, when you export a BOM file, you can find this parameter in CSV file.  
+
+![](./images/060_Schematic_AddNewParameter.png)
 
 ## Pinmap Modify Symbol Information
 
@@ -614,11 +634,6 @@ Using this dialog you can edit the pin names and numbers, for example, to suit a
 More detailed description of PCB and Spice Prefixes and pin numbers at next section.
 
 
-## Prefix Start
-Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
-![](./images/061_Schematic_PrefixStart.png)
-
-
 ## Prefixes And Pin Numbers 
 
 Device and subcircuit (or hierarchical block) symbols created for use in schematics that are intended to be run as spice simulations, in addition to having a PCB Prefix that is used for the reference designator in the schematic, also have a **Spice Prefix**. They also have two sets of pin numbers: PCB pins and Spice pins.
@@ -632,47 +647,6 @@ The rules on the assignment of the **Spice Prefix** of a schematic symbol are 
 Simulation models for most of the spice circuit elements are in the form of a single-line .model statement however some of them may be in the form of a multi-line .**subckt** subcircuit definition. For example, some MOSFETs may be described by a .model statement in which case their Spice Prefix is **M** but many MOSFETs are described by a .subckt and so their Spice Prefix is **X**.
 
 Therefore, irrespective of the PCB Prefix chosen for a schematic symbol, the Spice Prefix for a schematic symbol representing a given circuit element must match the type of model required to simulate that instance of that circuit element in your schematic.
-
-For example, if you have two different n-channel MOSFETs in a schematic; Q1, a BSS123 which is modelled by a .model statement:
-
-BSS123*SRC=BSS123;DI_BSS123;MOSFETs N;Enh;100V 0.170A 1.00ohms  Diodes Inc.
-
-MOSFET
-
-	.MODEL DI_BSS123  NMOS( LEVEL=1 VTO=1.00 KP=6.37m  GAMMA=1.24
-	+ PHI=.75  LAMBDA=625u RD=0.140 RS=0.140
-	+ IS=85.0f  PB=0.800 MJ=0.460 CBD=19.8p
-	+ CBS=23.7p  CGSO=36.0n CGDO=30.0n CGBO=124n  )
-	*   -- Assumes default L=100U W=100U --
-	and Q2, a BSS127S which is modelled by a .subckt:
-	BSS127S*---------- BSS127S Spice Model ----------
-	.SUBCKT BSS127S 10 20 30
-	*     TERMINALS:  D  G  S
-	M1 1 2 3 3 NMOS L = 1E-006 W = 1E-006
-	RD 10 1 84.22
-	RS 30 3 0.001
-	RG 20 2 29
-	CGS 2 3 1.958E-011
-	EGD 12 0 2 1 1
-	VFB 14 0 0
-	FFB 2 1 VFB 1
-	CGD 13 14 2E-011
-	R1 13 0 1
-	D1 12 13 DLIM
-	DDG 15 14 DCGD
-	R2 12 15 1
-	D2 15 0 DLIM
-	DSD 3 10 DSUB
-	.MODEL NMOS NMOS LEVEL = 3 VMAX = 8E+005 ETA = 1E-012 VTO = 3.419
-	+ TOX = 6E-008 NSUB = 1E+016 KP = 0.127 U0 = 400 KAPPA = 1.044E-015
-	.MODEL DCGD D CJO = 1.135E-011 VJ = 0.9232 M = 0.9816
-	.MODEL DSUB D IS = 2.294E-010 N = 1.601 RS = 0.1079 BV = 65
-	+ CJO = 1.956E-011 VJ = 1.514 M = 0.8171
-	.MODEL DLIM D IS = 0.0001
-	.ENDS
-	*Diodes BSS127S Spice Model v1.0 Last Revised 2012/6/6
-
-then even though both have the same PCB Prefix of **Q**: Q1 must have a Spice Prefix of M and **Q2** must have a Spice Prefix of **X**.
 
 A list of Spice Prefixes and their associated circuit elements is given in the table below.
 ![](images/170_Schematic_SpicePrefix.png)
@@ -690,156 +664,11 @@ The two sets of pin numbers are:
 
 -   **Spice pin number or pin order: ** these are the numbers that map the pins on the symbol to their respective functions in the spice model or subcircuit.
 
-Actually the spice pin ordering has a slightly deeper meaning.
 
-Spice has no concept of component symbols: they are a construct of the schematic editor.
+## Prefix Start
 
-When a spice netlist is generated, the symbol in the schematic editor is either - in the case of model defined devices such as resistors, capacitors, inductors, diodes, transistors and sources - mapped directly to the relevant models (defined by the device prefix such as R, C, L, D, Q and so on), or in the case of a subcircuit, converted into a subcircuit call statement.
-
-The spice pin ordering for the majority of built-in models such as resistors, capacitors, inductors, diodes, transistors and sources are defined and generally taken care of by the schematic editor, more care has to be taken with the spice pin ordering of subcircuits.
-
-This can be illustrated by a simple opamp with 5 pins: inverting and non-inverting inputs; output and positive and negative supply pins but the principle applies to all spice subcircuits.
-
-The subcircuit call for this opamp might look like this in the spice netlist:
-
-X1 input feedback vpos vneg output opamp_ANF01
-
-where:
-
-X1 is the name of the subcircuit in the top level (i.e. the calling) circuit;
-
-input feedback vpos vneg output are the netnames in the circuit calling (i.e. containing) the subcircuit and
-
-opamp_ANF01 is the name of the subcircuit being called.
-
-Pay special attention to the order of the netnames in the subcircuit call.
-
-The spice pin ordering for the majority of opamp subcircuits is like that shown
-
-in the example below:  
-​	
-
-
-	*
-
-	* opamp_ANF01
-
-	*
-
-	* Simplified behavioural opamp
-
-	*
-
-	* Node assignments
-
-	*                    noninverting input
-
-	*                    |   inverting input  
-
-	*                    |   |   positive supply
-
-	*                    |   |   |   negative supply
-
-	*                    |   |   |   |   output
-
-	*                    |   |   |   |   |
-
-	* spice pin order:   1   2   3   4   5
-
-	*                    |   |   |   |   |
-
-	.subckt opamp_ANF01 inp inn vcc vee out ; these are the netnames
-
-	*                                         used internally to the
-
-	*                                         subcircuit.
-
-	B1 out 0
-
-	+ V=(TANH((V(inp)-V(inn))*{Avol}*2/(V(vcc)-V(vee)))*(V(vcc)-V(vee))
-
-	+ +(V(vcc)+V(vee)))/2
-
-	*
-
-	.ends opamp_ANF01
-
-	*
-
-
-**Note:** *The spice pin order of the subcircuit call is in exactly the same order as that of the subcircuit.*
-
-Although the physical pin numbering of any device is critical for successfully mapping the pins on a schematic symbol onto a physical package footprint when laying out the PCB, because spice only knows about single devices and does not care about how they are physically packaged, each instance of any device in a spice schematic has to be mapped onto its own copy of the spice model or subcircuit, irrespective of where it is in any physical package.
-
-Therefore, for the physical, package pin numbering of the four opamps in a quad opamp in say, a **SOIC14** or a **DIP14** package, as shown below, to work with the example subcircuit above, the spice pin ordering would be:
-
-
-	Opamp A         pin number         spice pin order
-
-	OUT                1                5
-
-	IN-                2                2
-
-	IN+                3                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp B         pin number         spice pin order
-
-	OUT                7                5
-
-	IN-                6                2
-
-	IN+                5                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp C         pin number         spice pin order
-
-	OUT                8                5
-
-	IN-                9                2
-
-	IN+                10                1
-
-	V+                4                3
-
-	V-                11                4
-
-	Opamp D         pin number         spice pin order
-
-	OUT                14                5
-
-	IN-                13                2
-
-	IN+                12                1
-
-	V+                4                3
-
-	V-                11                4
-
-
-The physical package pin numbering reflects that of each opamp in the package.
-
-The spice pin ordering is the same for each instance of the individual opamps.
-
-Of course there is only one physical instance of each supply pin on the schematic symbol for the quad opamp in this example but each spice subcircuit must have the supply pins explicitly defined.
-
-Exactly how this is handled is at the schematic symbol level depends on how the schematic capture package handles symbols for multiple devices with shared supply pins but the generation of a spice netlist from the schematic will always generate the complete set of pins required in the subcircuit calls.
-
-In cases where the subcircuit is built by the user  as opposed to where it is supplied by a vendor for a particular device, exactly the same rules apply except that it is up to the user to specify the subcircuit pin order and to construct the symbol appropriately.
-
-Although as described earlier, built in spice models usually have defined spice pin orders, not all  subcircuits have the same spice pin numbering. Therefore if your spice circuit throws errors - especially if there are warnings about pin numbers or pin names - it is worth remembering to check that the pin order of the symbol that is netlisted to form the calling statement matches that of the subcircuit that is being called!  
-
-----------​
-
-[[8]](#ftnt_ref8) In Debian based distributions gerbv is listed under Electronics in the package management system. The version in the repositories may be an earlier version but some users may find it easier to install than the SourceForge archive.
-
-[[9]](#ftnt_ref9) As is the opamp_ANF01 example above
+Every **NEW** schematic file has a `Prefix Start` custom parameter, some users would like use  **multi-sheet designs**, but they hate every prefix start by 1, they hope one schematic start by 1, next start by 100, 200, 300. So you can use this solution.
+![](./images/061_Schematic_PrefixStart.png)
 
 
 ## Prefix Conflict Error
@@ -858,16 +687,20 @@ In the above image, you can find the two identical copies of the same schematic,
 To fix this, you just need to create a backup project and remove or better still save backup copies of your schematics to that project.
 
 
-## Net Name Conflict Error
+## Multi-NetLabels in One Wire
 
-Sometimes, when you convert project to PCB, open the Design manager or run a simulation, you will get a **Net Name Conflict** error message.
+EasyEDA support mutil-netlabel in one wire now.
 
-![](images/081_Schematic_ConvertToPCB-NetNameConflict.png)
+When you convert the schematic to the PCB, the editor will choose the first netlabel you placed as the net name for this wire, as below NETLABEL1.
 
-In this schematic, you will find four net label/net flag(EasyEDA takes volprobe, GND VCC as netlabel too) in the same wire, So you must remove the others.
+![](images/294_Schematic_MultiNetLabel.png)
 
-If you would like to probe a GND, you can use [Probe command](./SpiceSimulation.htm#Probe)
+As above image, when you click anyone netlabel's name in the design manager, the wire will be highlighted. 
 
+
+**Notice**：
+
+-	*If wire 1 has 3 netlabels A  B and C, and wire 2 has netlabel A, then wire 1 and wire 2 are the same net.*
 
 ## Converting Schematics To PCB
 
