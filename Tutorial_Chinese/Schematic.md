@@ -1,9 +1,7 @@
 
 # 原理图绘制
  
-根据下面的动态图片，可以引导你快速熟悉如何创建一个原理图。 
-
-![](images/088_Schematic_CreateTheSchematic.gif)
+阅读以下章节，可以引导你快速熟悉如何设计一个原理图。 
 
  
 ## 画布设置
@@ -52,7 +50,7 @@
 
 -	*电气工具内的功能均具有电气特性，如果你想画一些圆弧和线框等请使用“绘图工具”。*  
 
-![](images/191_Introduction_WiringTools.gif)
+![](images/191_Introduction_WiringTools.png)
 
 ### 导线
 
@@ -62,8 +60,6 @@
 2.  按快捷键“W”；
 3.  直接点击元器件的引脚端点然后移动鼠标 。编辑器会自动进入绘制导线模式。
 
-![](images/051_Schematic_HowToWire.gif) 
-
 下图是一个已经连线完成的原理图。
 
 ![](images/052_Schematic_HowToWire-AfterWire.png)
@@ -72,7 +68,7 @@
 
 当你用鼠标移动一个元器件时，它所连接的导线会相应的垂直/水平跟随移动。
 
-![](images/273_Schematic_WireAndComponentMove.gif)
+![](images/273_Schematic_WireAndComponentMove_20.png)
 
 
 **自动断线**
@@ -101,7 +97,7 @@
 **网络标签** 可以用来标识导线网络名， 或者标识两个导线间的连接关系。 使用快捷键“N”可以快速放置网络标签。  
 当你点击它，可以在右边的属性面板修改它的属性。
 
-![](images/053_Schematic_NetLabel.gif)
+![](images/053_Schematic_NetLabel_20.png)
 
 如果只想更改它的名字，直接双击即可修改。编辑器会记住你上次使用的网络标签名称，并在下一次继续使用该名称，若你修改的网络名称以数字结尾，那么下次放置时网络标签的名称将自动加1。如你放置了VCC1，那么下一个为VCC2。
 
@@ -141,7 +137,7 @@
 
 在添加非连接标志后，错误消失。
 
-![](./images/058_Schematic_AddNoConnectFlag.gif)  
+![](./images/058_Schematic_AddNoConnectFlag.png)  
 
 **注意：** 
 
@@ -226,25 +222,25 @@
 
 在原理图中，你可以绘制任意方向的线条。修改线条样式，颜色，填充颜色等。
 
-![](./images/233_Schematic_DrawingTools_Line.gif)  
+![](./images/233_Schematic_DrawingTools_Line_48.png)  
 
 ### 贝塞尔曲线
 
 使用贝塞尔曲线，你可以画出很酷的图案。
 
-![](./images/234_Schematic_DrawingTools_Bezier.gif)  
+![](./images/234_Schematic_DrawingTools_Bezier_123.png)  
 
 ### 圆弧
 
 支持绘制不同形状的圆弧。
 
-![](./images/235_Schematic_DrawingTools_Arc.gif) 
+![](./images/235_Schematic_DrawingTools_Arc_93.png) 
 
 ### 箭头
 
 箭头一般在文本前做标识用。
 
-![](./images/236_Schematic_DrawingTools_Arrow.gif) 
+![](./images/236_Schematic_DrawingTools_Arrow_37.png) 
 
 ### 文本
 
@@ -289,7 +285,7 @@
 
 拖移是整体移动，并且断开连接。
 
-![](images/238_Schematic_DrawingTools_Drag.gif)
+![](images/238_Schematic_DrawingTools_Drag_55.png)
 
 ### 画布原点
 
@@ -297,7 +293,7 @@
 
 其它方式设置可通过 **超级菜单 > 杂项 > 画布原点**。
 
-![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
+![](images/239_Schematic_DrawingTools_CanvasOrigin_83.png)
 
 
 ## 元件库搜索与放置
@@ -340,8 +336,8 @@
 **注意：**    
 
 -	*系统库的库文件立创EDA会努力确保100%正确，但仍可能存在错误，如果你发现系统库和立创商城的元件或封装存在错误，还请联系我们进行修复。QQ3001956291，或者邮件：3001956291@qq.com。故建议你进行PCB打样或批量生产前，请仔细检查你使用的封装，特别是使用了用户贡献库的封装！*
--   *立创EDA支持多页原理图，选中的零件只能放置在当前打开的文档中。*  
--   *你无法放置原理图库符号到PCB，同样，你也无法放置PCB封装到原理图中。*
+-	*立创EDA支持多页原理图，选中的零件只能放置在当前打开的文档中。*  
+-	*你无法放置原理图库符号到PCB，同样，你也无法放置PCB封装到原理图中。*
 
 ### 原理图中查找元件
 
@@ -367,7 +363,7 @@
 -	选中元件后按空格键翻转元件
 -	选中元件后使用对齐工具调整位置。
 
-![](images/050_Schematic_AdjustingComponents.gif)
+![](images/050_Schematic_AdjustingComponents_46.png)
 
 
 
@@ -382,7 +378,7 @@
 -	*在使用该功能前，你若尚未打开PCB，编辑器会自动为你打开。*  
 -	*如果你工程内含有多个PCB，且尚未打开PCB，则编辑器会自动打开第一个。*
 
-![](./images/192_Schematic_CrossProbe.gif)  
+
 
 
 ## 布局传递
@@ -393,6 +389,7 @@
 ![](./images/295_Schematic_CrossProbeAndPlace1.png)
 
 **使用方法**：
+
 -	先将[原理图转为PCB](https://lceda.cn/Doc/Tutorial/Schematic.htm#原理图转PCB)并保存PCB至当前工程下。
 -	用鼠标区域选择原理图的零件，点击“布局传递”，快捷键“CTRL + SHIFT + X”。
 -	编辑器会切换至PCB，并将封装悬浮等待鼠标左击放置在画布上。
@@ -442,6 +439,7 @@
 
 -	*如果你的原理图使用了数量较多的不同名称的封装，封装管理器在检测封装焊盘编号与元件引脚编号的对应关系时，会与服务器进行封装数据查找和对比，这将花费一定时间，请耐心等待。*   
 -	*如果你的工程下存在多个原理图文件，打开封装管理器时会将全部原理图打开，并加载所有元件。*
+
 
 ### 更新封装
 
@@ -557,7 +555,7 @@
 -	或者使用快捷键“I”（字母 i）。
 
 你可以修改元件的引脚名称，PCB前缀，Spice前缀，显示元件隐藏的引脚，元件引脚编号，Spice引脚编号等。
-比如，你可以通过修改焊盘编号来指定一个你想让它对应的封装；你也可以通过修改Spice前缀和Spice引脚编号来使它可以进行仿真。
+比如，你可以通过修改引脚编号来指定一个你想让它对应的封装；你也可以通过修改Spice前缀和Spice引脚编号来使它可以进行仿真。
 
 ![](images/065_Schematic_ComponentAttributes-EditSymbol.png)
 
@@ -588,7 +586,7 @@
 
 -   元件引脚编号： 这些编号是元件所需对应封装中真实的引脚数字。 它们是必需存在的，可使原理图中的器件符号的引脚可以映射到PCB中的占用空间的物理引脚上。 换句话说，原理图中显示的连接最终通过PCB上的铜线连接来体现。
 
--   Spice引脚编号 ：  这些编号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的编号。
+-   Spice引脚编号 ： 这些编号是将原理图符号上的引脚映射到Spice仿真或子电路中对应功能的编号。
 
 
 ## 元件编号起始

@@ -24,7 +24,7 @@
    </tr>
       <tr>
       <td>2017.10.12</td>
-      <td>v4.10.1</td>
+      <td>v4.10.1 Beta</td>
       <td>New function: Cross Probe and Place; Change "Net Name Conflict Error" section to "Multi-NetLabels in One Wire"</td>
    </tr>
    <tr>
@@ -1702,6 +1702,7 @@ Cross Probe And Place will make the footprints' location match the schematic's p
 ![](./images/295_Schematic_CrossProbeAndPlace1.png)
 
 **How to use**: 
+
 -	[Converting Schematic to PCB](https://easyeda.com/Doc/Tutorial/Schematic.htm#Converting-Schematics-To-PCB) first, and save at current project.
 -	Select the components area by mouse in the schematic, and then click the "Cross Probe And Place", hotkey "CTRL + SHIFT + X".
 -	The editor will switch to the PCB, and choose the footprints as you selected for waiting for placing.

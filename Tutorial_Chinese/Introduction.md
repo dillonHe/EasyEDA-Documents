@@ -13,7 +13,7 @@
 
 -	无论你使用的是Linux, Mac , Windows，立创EDA均可以为你提供专业的优质服务。访问地址：[https://lceda.cn/editor](https://lceda.cn/editor) 
 
--	国内个人用户永久免费，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
+-	国内个人用户**永久免费**，提供友好的社区支持。社区请访问：[http://club.szlcsc.com/forum/97_0_1.html/](http://club.szlcsc.com/forum/97_0_1.html)
 
 
 **注意：** *在首次使用立创EDA进行项目设计前，请花两小时阅读本帮助文档以及[LCEDA国内用户使用注意事项](https://lceda.cn/page/FAQ)，可极大提高你的设计效率，减少出错！*
@@ -261,7 +261,7 @@
 
 编辑器会根据不同的类型显示不同工具栏。以下是原理图的电气工具。  
 
-![](images/191_Introduction_WiringTools.gif)
+![](images/191_Introduction_WiringTools.png)
 
 
 #### 6. 用户管理菜单
@@ -278,9 +278,11 @@
 
 #### 8. 绘图工具
 
-![](images/190_Introduction_DrawingTools.gif)
-
 绘图工具和电气工具，和PCB绘制工具均可以通过拉伸窗口进行调节大小，也可以随意拖动位置。
+
+![](images/190_Introduction_DrawingTools.png)
+
+
 
 #### 9. 画布属性
 
@@ -338,6 +340,8 @@
 将打开一个网页，你可以修改工程的相关信息。
 
 ![](images/038_Introduction_EditProject-WebPage.png)
+
+
 
 ​
 
@@ -1017,7 +1021,7 @@ PCB的封装查找与原理图的库文件查找一致，在“元件库”中�
 
 当你鼠标移动经过画布边沿时（上方，左右），会出现一条高亮的线段，点击上方的那条可以打开/关闭工具栏，点击左右两边的线段的中间按钮可以关闭/打开导航面板和属性面板，以增大画布面积。左右两边的线段还可以用鼠标拖动改变面板大小，以符合使用的习惯。  
 
-![](images/194_Introduction_Skill_ResizingCanvas.gif)
+![](images/194_Introduction_Skill_ResizingCanvas.png)
 
 #### 光标样式
 
@@ -1162,7 +1166,7 @@ PCB的封装查找与原理图的库文件查找一致，在“元件库”中�
 
 编辑器可以很方便地切换文档标签，只要鼠标左键按住标签，往左右拖动即可。
   
-![](images/279_Introduction_EditorTabSwitch.gif)
+![](images/279_Introduction_EditorTabSwitch.png)
 
 #### 保存文件在本地
 
