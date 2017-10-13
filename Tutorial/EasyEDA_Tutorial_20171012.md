@@ -1,7 +1,7 @@
 
 <h1 align = "center">EasyEDA Tutorial</h1>
 
-<p align = "center">2017.10.10</p>
+<p align = "center">2017.10.12</p>
 <p align = "center" >EasyEDA Editor: <a href=https://easyeda.com/editor>https://easyeda.com/editor</a></p>
 <p align = "center" >EasyEDA Editor Beta: <a href=https://beta.easyeda.com/editor>https://beta.easyeda.com/editor</a></p>
 <p align = "center" ><img src="images/EasyEDA_logo.png" width=340></p>
@@ -1246,7 +1246,7 @@ Please email [support@easyeda.com](mailto:support@easyeda.com) when you need any
 # Creating The Schematic 
 During this tutorial we will create a simple Schematic design to guide you in using EasyEDA Schematic capture.  
 
-![](images/088_Schematic_CreateTheSchematic.gif)
+![](images/088_Schematic_CreateTheSchematic.png)
 
  
 
@@ -1296,7 +1296,7 @@ Top toolbar **Config Gear Icon > Toolbars > ...**
 
 **Note:** *All of the commands in Wiring Tools are electronics related. Don't use a wire when you just need to draw a line, shape or an arrow: use Drawing Tools instead.*  
 
-![](images/191_Introduction_WiringTools.gif)
+![](images/191_Introduction_WiringTools.png)
 
 ### Wire
 
@@ -1306,7 +1306,7 @@ There are three ways to enter the wire mode in EasyEDA.
 2.  Press the `W` hotkey.
 3.  Click on the end of a component pin (where the grey pin dot appears if you select the component): 
 
-![](images/051_Schematic_HowToWire.gif) 
+![](images/051_Schematic_HowToWire.png) 
 
 EasyEDA automatically enters **Wire** mode.
 
@@ -1321,7 +1321,7 @@ If you place a component, such as a resistor, on top of a wire then the wire bre
 
 When moving selected components using the mouse, they will drag attached wires with them (“rubber band”) to some extent but please be aware that the rubber banding feature has some limitations. When moving selected components most wire will move vertically and horizontally. Using the arrow keys will not rubber band. Selected wires do not rubber band.
 
-![](images/273_Schematic_WireAndComponentMove.gif)
+![](images/273_Schematic_WireAndComponentMove.png)
 
 A selected wire can be moved directly by clicking on it using the mouse or by the arrow keys. If a wire is selected by clicking on it using the mouse then green grab handles will appear at the ends and vertices.
 
@@ -1353,7 +1353,7 @@ If you decide to wire with `Bus` , the `Bus Entry` must connect to Bus and other
 
 **NetLabel** can be used to give your wires names to help you find them and identify any misconnections. You can find the **NetLabel** from the Wiring Tools palette or by using the `N` hotkey. When selecting the netlabel, you will find its attributes in the right hand Properties panel: 
 
-![](images/053_Schematic_NetLabel.gif)
+![](images/053_Schematic_NetLabel.png)
 
 You can change its name and colour. If you only want to change its name, it may be easier to just double click the netlabel.
 
@@ -1401,7 +1401,7 @@ In the below schematic, if you don't add a `NO Connect Flag`, there is an error 
 
 After adding a `NO Connect Flag`, the error disappears.  
 
-![](./images/058_Schematic_AddNoConnectFlag.gif)  
+![](./images/058_Schematic_AddNoConnectFlag.png)  
 
 **Note:** *`NO Connect Flag` only works on the symbol's pin directly.*
 
@@ -1462,7 +1462,7 @@ So what does Ungroup do? Try selecting a symbol and then click the Group/ungrou
 **Note:** *The pin numbers and names cannot be moved independently of the pin.*
 
 If it's still difficult to understand, don't worry, you can see the process in the dynamic image below:
-![](images/193_Schematic_Group.gif)
+![](images/193_Schematic_Group.png)
 
 
 ## Drawing Tools
@@ -1491,22 +1491,22 @@ When you've selected the bottom right zone, you can edit the sheet attributes:
 
 In the Schematic editor, you can draw a line with any direction. You can change its attribute as in the image below:
 
-![](./images/233_Schematic_DrawingTools_Line.gif)  
+![](./images/233_Schematic_DrawingTools_Line.png)  
 
 ### Bezier
 
 With this tool, you can draw a pretty cool pattern.
-![](./images/234_Schematic_DrawingTools_Bezier.gif)  
+![](./images/234_Schematic_DrawingTools_Bezier.png)  
 
 ### Arc
 
 You can draw the arc of any shape.  
-![](./images/235_Schematic_DrawingTools_Arc.gif) 
+![](./images/235_Schematic_DrawingTools_Arc.png) 
 
 ### Arrow Head
 
 You can add arrow head to marking text or important part.
-![](./images/236_Schematic_DrawingTools_Arrow.gif) 
+![](./images/236_Schematic_DrawingTools_Arrow.png) 
 
 ### Text
 
@@ -1524,7 +1524,7 @@ Text attributes provide many parameters for setting:
 
 The editor will remember your last text parameters. 
 
-![](./images/237_Schematic_DrawingTools_Text.gif) 
+![](./images/237_Schematic_DrawingTools_Text.png) 
 
 
 ### Image
@@ -1552,7 +1552,7 @@ Please note: at present, EasyEDA cannot host images, so you need to upload your 
 If you want to move some kind of parts and wires, you can use drag.  
 Or you can select the parts and wires area first and move them.
 
-![](images/238_Schematic_DrawingTools_Drag.gif)
+![](images/238_Schematic_DrawingTools_Drag.png)
 
 ### Canvas Origin
 
@@ -1560,7 +1560,7 @@ Canvas origin default is set at left top corner of the schematic sheet, but you 
 
 For another way to set canvas origin, you can try **Super Menu > Miscellaneous > Canvas Origin**.  
 
-![](images/239_Schematic_DrawingTools_CanvasOrigin.gif)
+![](images/239_Schematic_DrawingTools_CanvasOrigin.png)
 
 
 ## Search symbols
@@ -1656,13 +1656,13 @@ Find the component which you plan to place to your schematic, then move your mou
 
 Don't try to Drag and Drop a component to the canvas: EasyEDA team thinks that Click-Click to place components will be easier to use than a Click-Drag mode.
 
-![](images/048_Schematic_PlacingComponents.gif)
+![](images/048_Schematic_PlacingComponents.png)
 
 ## Rotating the Prefix and Value (Name) of components
 
 The default Prefix and Value (or name) of EasyEDA components are horizontal. To change them to vertical like this...
 
-![](images/049_Schematic_RotatingPrefixAndValue.gif)
+![](images/049_Schematic_RotatingPrefixAndValue.png)
 
 ...Left click the prefix or value and when it is highlighted in **red** color, then press the **rotation** hotkey **Space** and you're done.
 
@@ -1675,7 +1675,7 @@ About adjusting components you can:
 3.  Find components with the Design Manager via the `CTRL+D` hotkey: select the component in the Design Manager to pan it to the centre of the canvas and then move it with your mouse.
 4.  Align the components:
 
-![](images/050_Schematic_AdjustingComponents.gif)
+![](images/050_Schematic_AdjustingComponents.png)
 
 
 
@@ -1690,7 +1690,7 @@ This tool is used to cross probe from chosen objects on the current schematic to
 -	*You don't need to open PCB first before using cross probe in the schematic. Editor will open the PCB automatically.*  
 And don't forget to use the hotkey `SHIFT+X`.  
 
-![](./images/192_Schematic_CrossProbe.gif)  
+![](./images/192_Schematic_CrossProbe.png)  
 
 
 ## Cross Probe And Place
@@ -1779,7 +1779,7 @@ After that you will find you have changed the package to **TO220**.
 If you want to batch modify components' packages, in the footprint manager dialog you can press `CTRL` and select all components you want. If your schematic has many components, you should filter them first with package name. Such as in the below .gif which will show you how to batch modify resistors' packages from `AXIAL-0.3` to `0603`.  
 If you want to use your own packages, you can select **My Parts** on Pattern Libraries area.
 
-![](images/266_Schematic_FootprintManager_BatchUpdate.gif)
+![](images/266_Schematic_FootprintManager_BatchUpdate.png)
 
 **Modify Pin Map Information**
 
@@ -1955,7 +1955,7 @@ Most of the time, schematics are created with the aim of producing a PCB. So ho
 
 **Note:** *Before converting, you need to use the Design Manager and Footprint Manager to check all the components, nets(connection) and packages/footprints to ensure no errors exist.*
 
-![](images/076_Schematic_ConvertToPCB.gif)
+![](images/076_Schematic_ConvertToPCB.png)
 
 ### PCB Libs search order 
 
@@ -2973,6 +2973,8 @@ EasyEDA support exporting the schematics in Altium Designer format.
 Via **"Documents > Export Altium..."**, and click the **"Download now"** you will get  a  `.schdoc` file.
 ![](images/292_Export_SchematicInAltium.png)
 
+Tips: EasyEDA don't support to export the schematic libraries in Altium Designer format, but you can place the schematic libraries to the schematic, and export that in Altium Designer format, and then extract them at Altium Designer.
+
 
 ### Download Schematics
 
@@ -3083,6 +3085,7 @@ Or use hotkey: **N > H > A** and then **N > S > A**:
 
 ![](images/293_Export_PCBInAltium_6.png)
 
+Tips: EasyEDA don't support to export the PCB libraries in Altium Designer format, but you can place the PCB libraries to the PCB, and export that in Altium Designer format, and then extract them at Altium Designer.
 
 ### Download PCB
 
@@ -3545,7 +3548,7 @@ X and Y trace data can be seen on-screen just by moving the mouse cursor around 
 
 Delta X and delta Y trace data can be seen on-screen using a Left-Click and Drag select box, with the readout adapting to the Y axes in each pane. Returning the cursor to within a small radius of the starting point of the select box -without releasing the Left-Click - returns the readout to X and Y trace data.
 
-![](images/103_SpiceSimulation_WaveformView.gif)
+![](images/103_SpiceSimulation_WaveformView.png)
 
 Left-Click, Drag and then releasing the Left-Click zooms all plots, synchronised across all panes, horizontally. Double clicking anywhere in the WaveForm window resets the zoom.
 

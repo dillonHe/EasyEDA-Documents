@@ -32,6 +32,7 @@ EasyEDA support exporting the schematics in Altium Designer format.
 Via **"Documents > Export Altium..."**, and click the **"Download now"** you will get  a  `.schdoc` file.
 ![](images/292_Export_SchematicInAltium.png)
 
+Tips: EasyEDA don't support to export the schematic libraries in Altium Designer format, but you can place the schematic libraries to the schematic, and export that in Altium Designer format, and then extract them at Altium Designer.
 
 ### Download Schematics
 
@@ -142,6 +143,7 @@ Or use hotkey: **N > H > A** and then **N > S > A**:
 
 ![](images/293_Export_PCBInAltium_6.png)
 
+Tips: EasyEDA don't support to export the PCB libraries in Altium Designer format, but you can place the PCB libraries to the PCB, and export that in Altium Designer format, and then extract them at Altium Designer.
 
 ### Download PCB
 
