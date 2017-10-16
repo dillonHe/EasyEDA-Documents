@@ -44,6 +44,7 @@ Any questions, please contact our technical support via support@easyeda.co
 	-	Fixed the special charaters will cause the auto router fail issue.
 	-	Fixed the circle copper area will casue the edge rag issue.
 	-	Improved BOM export.
+	-	Added milimeter unit for Pick and place file output.
 
 **What is new in v4.9.3**
 
