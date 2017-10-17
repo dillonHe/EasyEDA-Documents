@@ -31,6 +31,7 @@ Any questions, please contact our technical support via support@easyeda.co
 -	New Feature:
 	-	New menu of "Help".
 	-	New Function: [Cross Probe and Place](https://easyeda.com/Doc/Tutorial/Schematic.htm#Cross-Probe-And-Place), hotkey "ctrl + shift + x".
+    ![](images/295_Schematic_CrossProbeAndPlace1.gif)
 	-	Local auto router support Linux (64bit).
 -	Improvement:
 	-	Optimized the sort rule of nets in the schematic.
@@ -38,7 +39,7 @@ Any questions, please contact our technical support via support@easyeda.co
 	-	Improved the schematic drawing is not fluent issue.
 	-	Fixed the package title with space will cause the package update fail issue.
 	-	Fixed when paste the copy with right click will make undo fail issue.
-	-	Fixed when change the PIN length and rotation error issue.
+	-	Fixed when change the PIN length cause the rotation error issue.
 	-	Fixed the text alignment issue.
 	-	Improved the Firefox zoom in and zoom out fluency.
 	-	Fixed the special charaters will cause the auto router fail issue.

@@ -384,9 +384,12 @@
 ## 布局传递
 
 当你的原理图使用了大量零件的时候，转为PCB后会有很多相同的封装均放置在同一列，非常不方便选取需要的封装信息。为此，立创EDA提供了“布局传递”功能。  
+
+**顶部工具栏 > 工具 > 布局传递**
+
 布局传递是将原理图中的零件位置布局相对应地传递至PCB的封装位置布局。
 
-![](./images/295_Schematic_CrossProbeAndPlace1.png)
+![](./images/295_Schematic_CrossProbeAndPlace1.gif)
 
 **使用方法**：
 

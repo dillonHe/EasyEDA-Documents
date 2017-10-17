@@ -453,9 +453,12 @@ And don't forget to use the hotkey `SHIFT+X`.
 
 If your schematic have a lot of components, it will be difficult to layout the PCB , so EasyEDA provides a powerful function "Cross Probe And Place".
  
+**Topbar > Tools > Cross Probe And Place**
+
 Cross Probe And Place will make the footprints' location match the schematic's parts' location as much as it possibly can.
 
-![](./images/295_Schematic_CrossProbeAndPlace1.png)
+![](images/295_Schematic_CrossProbeAndPlace1.gif)
+
 
 **How to use**: 
 
