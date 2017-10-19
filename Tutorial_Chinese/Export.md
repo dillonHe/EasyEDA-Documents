@@ -73,6 +73,11 @@ BOM打开后如图：
 
 ![](images/086_Export_BOM_CSV.png)
 
+**注意**：
+
+-	导出的CSV文件是UTF-8格式编码，若上传在sz-jlc.com提示格式不正确，请用Notepad++将CSV文件编码转为ANSI编码后重新上传。
+
+
 ### 导出网表
 
 立创EDA支持导出多种EDA使用的网表文件格式。可导出单一文档网表也可导出整个工程的网表。
@@ -176,7 +181,11 @@ BOM打开后如图：
 
 ![](images/206_Export_PickAndPlaceCSV.png)
 
-目前导出的文件暂时仅支持mil单位，以后会增加对其他单位的支持。
+目前导出的文件支持mil和mm单位，导出的单位跟随PCB的单位设置。
+
+**注意**：
+
+-	导出的CSV文件是UTF-8格式编码，若上传在sz-jlc.com提示格式不正确，请用Notepad++将CSV文件编码转为ANSI编码后重新上传。
 
 
 ### 导出打印并自制PCB板
