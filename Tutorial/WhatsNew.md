@@ -29,6 +29,7 @@ Any questions, please contact our technical support via support@easyeda.co
 **What is new in v4.10.2**
 
 2017.10.17:
+
 -	Improvement:
 	-	Fixed netlabel can't be connected issue.
 
@@ -36,6 +37,7 @@ Any questions, please contact our technical support via support@easyeda.co
 **What is new in v4.10.1**
 
 2017.10.16:
+
 -	New Feature:
 	-	New menu of "Help".
 	-	New Function: [Cross Probe and Place](https://easyeda.com/Doc/Tutorial/Schematic.htm#Cross-Probe-And-Place), hotkey "ctrl + shift + x".
@@ -43,7 +45,8 @@ Any questions, please contact our technical support via support@easyeda.co
 	-	Local auto router support Linux (64bit).
 -	Improvement:
 	-	Optimized the sort rule of nets in the schematic.
-	-	Optimized the multi-netlabel in one wire display in the schematic design manager.
+	-	Optimized the multi-netlabel in one wire display in the schematic design manager.  
+	*In the earlier version, when you place a component at a wire, its net name will change, and if you update to PCB, the tracks and net name will be change too. but since this verison, that problem is fixed, but the earlier PCB tracks and net name we can't keep the same as before, If you want to keep the PCB layout, you'd better use the `Convert to PCB` rather than `Update PCB`.*
 	-	Improved the schematic drawing is not fluent issue.
 	-	Fixed the package title with space will cause the package update fail issue.
 	-	Fixed when paste the copy with right click will make undo fail issue.
@@ -53,7 +56,7 @@ Any questions, please contact our technical support via support@easyeda.co
 	-	Fixed the special charaters will cause the auto router fail issue.
 	-	Fixed the circle copper area will casue the edge rag issue.
 	-	Improved BOM export.
-	-	Added milimeter unit for Pick and place file output.
+	-	Added milimeter unit for Pick and place file output. The unit follow the PCB unit setting.
 
 **What is new in v4.9.3**
 
