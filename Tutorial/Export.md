@@ -70,6 +70,11 @@ And Click the "BOM" button to download the BOM file. You can open it in any text
 
 ![](images/086_Export_BOM_CSV.png)
 
+**Notice**：
+
+-	The exporting CSV file is coded by UTF-8, if it doesn't work for components store, maybe you need to convert its coded format to ANSI.
+
+
 ### Exporting Netlist
 
 EasyEDA can export the netlist for the active schematic (Document) and/or for the whole active project:
@@ -179,6 +184,12 @@ In PCB editor, if you want to generate Pick And Place as a CSV file, you can via
 
 When you open the exported CSV file, you can see:  
 ![](images/206_Export_PickAndPlaceCSV.png)
+
+This file support two units "mm" and "mil", it is followed the PCB unit setting.
+
+**Notice**：
+
+-	The exporting CSV file is coded by UTF-8, if it doesn't work for the SMT factory(jlcpcb.com), maybe you need to convert its coded format to ANSI.
 
 
 ### Exporting Print For Etching
