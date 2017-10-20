@@ -17,6 +17,8 @@ We're sorry to inform you that EasyEDA desktop client is temporarily stopped for
 Meanwhile, EasyEDA will soon provide privatization deployment which you can deploy a server similar to EasyEDA in your intranet.
 Any questions, please contact our technical support via support@easyeda.com. 
 
+2017.09.30
+
 **Notice:**
 
 -	*If you edit the same document in the desktop version and web editor at the same time, the desktop version will show the data sync conflicts icon beside the avatar.*
