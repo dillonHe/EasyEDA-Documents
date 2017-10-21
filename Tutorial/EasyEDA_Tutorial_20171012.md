@@ -10,7 +10,7 @@
 
 -	This document will be updated according to the updated EasyEDA editor.
 -	The latest edition please refer to [https://easyeda.com/Doc/Tutorial/](https://easyeda.com/Doc/Tutorial/WhatsNew.htm#Download) .
--	The Editor beta version will release the new future and enhancement first, but maybe have some bugs, please using carefully.
+-	The Editor beta version will release the new feature and enhancement first, but maybe have some bugs, please using carefully.
 
 <br>
 

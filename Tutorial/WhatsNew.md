@@ -28,11 +28,22 @@ Any questions, please contact our technical support via support@easyeda.co
 
 # Updated Instructions
 
+**What is new in v4.10.3**
+
+2017.10.20:
+
+-	Improvement:
+
+	-	Improved the efficiency for delete much tracks. Before, it takes a few minutes to delete 1000+ tracks, now, it only takes a few seconds.
+	-	Fixed the problem that the ratline will not disappear after routing.
+	-	Fixed the problem that the copper area will not disappear after deleting the copper.
+
 **What is new in v4.10.2**
 
 2017.10.17:
 
 -	Improvement:
+
 	-	Fixed netlabel can't be connected issue.
 
 
@@ -41,11 +52,15 @@ Any questions, please contact our technical support via support@easyeda.co
 2017.10.16:
 
 -	New Feature:
+
 	-	New menu of "Help".
+	![](images/296_WhatsNew_NewHelpMenu.png)
 	-	New Function: [Cross Probe and Place](https://easyeda.com/Doc/Tutorial/Schematic.htm#Cross-Probe-And-Place), hotkey "ctrl + shift + x".
     ![](images/295_Schematic_CrossProbeAndPlace1.gif)
 	-	Local auto router support Linux (64bit).
+	
 -	Improvement:
+
 	-	Optimized the sort rule of nets in the schematic.
 	-	Optimized the multi-netlabel in one wire display in the schematic design manager.  
 	*In the earlier version, when you place a component at a wire, its net name will change, and if you update to PCB, the tracks and net name will be change too. but since this verison, that problem is fixed, but the earlier PCB tracks and net name we can't keep the same as before, If you want to keep the PCB layout, you'd better use the `Convert to PCB` rather than `Update PCB`.*

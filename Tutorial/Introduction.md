@@ -16,7 +16,7 @@ EasyEDA has all the features you expect and need to rapidly and easily take you
 **Instruction:**   
 
 -	This tutorial document will be updated according to the updated EasyEDA editor.
--	The Editor beta version will release the new future and enhancement first, but maybe have some bugs, please using carefully.
+-	The Editor beta version will release the new feature and enhancement first, but maybe have some bugs, please using carefully.
 
 
 **EasyEDA Provides:**   
@@ -1030,6 +1030,8 @@ or by pressing the default rotate hotkey: `Space`.
 
 ![](images/200_Introduction_Skill_Rotate.png)
 
+If in PCB, you can click the footprint and change it's rotation at the right panel.
+
 **Please note:**  
 *Rotating a multiple selection rotates each item about its own symbol origin. It does not rotate the items about the centroid of the group of items.*
 
@@ -1098,7 +1100,7 @@ More detail you can view at [Export EasyEDA Source](./Export.htm#Export-EasyEDA-
 
 **Version Rule**
 
-EasyEDA version number is ReleaseYearCount.ReleaseMonth.ReleaseCountOfThisMonth. For example, v4.9.3 is the fourth year release of EasyEDA, and at the ninth month of this year, EasyEDA had released 3 times.
+EasyEDA version number is `ReleaseYearCount.ReleaseMonth.ReleaseCountOfThisMonth`. For example, v4.9.3 is the fourth year release of EasyEDA, and at the ninth month of this year, EasyEDA had released 3 times.
 
 **Version Upgrade**
 
@@ -1107,14 +1109,10 @@ If you use EasyEDA online, it can seamlessly upgrade by itself. However,EasyEDA
 
 1. Check the About... dialog; 
 
-2. If the Built Date is older than 2017/06/01:
-
-Close your browser open EasyEDA again.
-
-If the Built Date is still showing older than 2017/06/01:
-
-Close your browser and open EasyEDA again.
-
+2. If the Built Date is older than 2017/06/01:  
+Close your browser open EasyEDA again.  
+If the Built Date is still showing older than 2017/06/01:  
+Close your browser and open EasyEDA again.  
 If the Built Date is at or newer than 2017/06/01, you don't need to do anything.
 
 **Note:** **2017/06/01** *is just an example.*  
@@ -1123,12 +1121,11 @@ If those two steps don't work, you may need to clear your browser's cache:
 
 **1.Mozilla Firefox**  
 
--  Go to “Preferences… > Advanced > Network > Offline Storage”,
+-	Go to “Preferences… > Advanced > Offline Web Content and User Data”,
 
-  -Click on “Clear now”,
+-	Click on “Clear now”,
 
-  -Reload easyeda again.
-
+-	Reload easyeda again.  
 ![](images/199_Introduction_Upgrade_RemoveFirefoxCache.png)  
 
 
@@ -1138,9 +1135,7 @@ If those two steps don't work, you may need to clear your browser's cache:
 
 -  Look for easyeda.com and click “Remove”  
 
--  reload easyeda again.  
-
-
+-  Reload easyeda again.  
     ![](images/044_Introduction_Upgrade_RemoveChromeCache.png)  
 
 -  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.
@@ -1148,32 +1143,41 @@ If those two steps don't work, you may need to clear your browser's cache:
 
 ## How To Get Help
 
-It is easy to ask for help for any problem with EasyEDA, just click on **Let's Chat**, and then complete and Submit the Support request:
+It is easy to ask for help for any problem with EasyEDA. Please ask your questions in English or Chinese and don't worry if your English is not good! (Or your Chinese!)
+
+-	just click on **Let's Chat**, and then complete and Submit the Support request:
 
 ![](images/004_Introduction_Help_Lets-Chat.png)  
 
-Please ask your questions in English or Chinese and don't worry if your English is not good! (Or your Chinese!)
+-	About editor usage and skill, please read this tutorial, you only need to view it's contents and you will find what you want mostly.
 
-1.  You can also ask your questions directly in the [EasyEDA forum](https://easyeda.com/bbs_lists_2.htm). We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a bit busy, so you may need to wait for a while.
-2.  If you don't want your help requests to be public then you can drop us an email to [support@easyeda.com](mailto:support@easyeda.com)
-3.  If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
+-	You can also ask your questions directly in the [EasyEDA forum](/forum/).  
+We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a bit busy, so you may need to wait for a while.
 
+-	If you don't want your help requests to be public then you can drop us an email to：
+PCB order support1:[Nicole@easyeda.cc](mailto:Nicole@easyeda.cc)  
+PCB order support2:[Lilyyang@jlcpcb.com](mailto:Lilyyang@jlcpcb.com)  
+EasyEDA Editor support: [support@easyeda.com](mailto:support@easyeda.com)  
+
+-	If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
+
+-	If you still can't solve the problem, please send email to us. If it is about schematic and PCB, please attach your file as [EasyEDA source file - json](https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-EasyEDA-Source) ). 
 
 **Please note that:**  
+
 *EasyEDA team may not have the time or resources to help you fix all your problems; we may just be able to help you to fix problems commonly encountered by newbies, such as using a drawing polyline in place of a wire, finding a spice model for a simulation or selecting the right PCB footprint.*
 
-[[1]](#ftnt_ref1) *Please note that although some browsers or plug-ins allow you to use gestures, EasyEDA does not work with gestures, so you should disable this function.*
+-	*Please note that although some browsers or plug-ins allow you to use gestures, EasyEDA does not work with gestures, so you should disable this function.*
 
-[[2]](#ftnt_ref2) *Simultaneous editing is not yet fully supported: care must be taken because the last save by any collaborator overwrites all previous saves.*
+-	*Simultaneous editing is not yet fully supported: care must be taken because the last save by any collaborator overwrites all previous saves.*
 
-[[3]](#ftnt_ref3) *It can also find the value text but it cannot step through multiple components with the same value.*
+-	*It can also find the value text but it cannot step through multiple components with the same value.*
 
-[[4]](#ftnt_ref4) *Take a few moments to think about your username because this is the name that other users will see on your designs and posts if you choose to share them or make them public. Once you have created an account, you cannot change your username.*
+-	*Take a few moments to think about your username because this is the name that other users will see on your designs and posts if you choose to share them or make them public. Once you have created an account, you cannot change your username.*
 
-[[5]](#ftnt_ref5) *You can use upper and lower case letters, numbers and symbols to make a strong password but don't forget that the password entry is case sensitive.*
+-	*You can use upper and lower case letters, numbers and symbols to make a strong password but don't forget that the password entry is case sensitive.*
 
-[[6]](#ftnt_ref6) *Except ordering of PCBs directly from EasyEDA.*
+-	*Except ordering of PCBs directly from EasyEDA.*
 
-[[7]](#ftnt_ref7) *If you always open EasyEDA in the same browser on the same machine, your Anonymous files will appear under the Anonymous Files folder in the left hand panel but you should not rely on this as a way of keeping track of Anonymous files.*
+-	*If you always open EasyEDA in the same browser on the same machine, your Anonymous files will appear under the Anonymous Files folder in the left hand panel but you should not rely on this as a way of keeping track of Anonymous files.*
 
-Please email [support@easyeda.com](mailto:support@easyeda.com) when you need any help.
