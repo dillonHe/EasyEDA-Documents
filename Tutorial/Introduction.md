@@ -1154,13 +1154,13 @@ It is easy to ask for help for any problem with EasyEDA. Please ask your questio
 We will try to respond to every post but please be patient. Maybe EasyEDA team is in a different timezone and we are a bit busy, so you may need to wait for a while.
 
 -	If you don't want your help requests to be public then you can drop us an email to：
-PCB order support1:[Nicole@easyeda.cc](mailto:Nicole@easyeda.cc)  
-PCB order support2:[Lilyyang@jlcpcb.com](mailto:Lilyyang@jlcpcb.com)  
+EasyEDA PCB order:[Nicole@easyeda.cc](mailto:Nicole@easyeda.cc)  
+JLCPCB Order PCB order:[Lilyyang@jlcpcb.com](mailto:Lilyyang@jlcpcb.com)  
 EasyEDA Editor support: [support@easyeda.com](mailto:support@easyeda.com)  
 
 -	If maybe you have a design that you know worked in some other EDA package and you are having problems importing it to EasyEDA, let us know and we will take a look and try to help you to fix them.
 
--	If you still can't solve the problem, please send email to us. If it is about schematic and PCB, please attach your file as [EasyEDA source file - json](https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-EasyEDA-Source) ). 
+-	If you still can't solve the problem, please send email to us. If it is about schematic and PCB, please attach your file as [EasyEDA source file](https://easyeda.com/Doc/Tutorial/Export.htm#Exporting-EasyEDA-Source).json
 
 **Please note that:**  
 

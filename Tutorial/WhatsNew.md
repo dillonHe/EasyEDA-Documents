@@ -19,12 +19,7 @@ Any questions, please contact our technical support via support@easyeda.co
 
 2017.09.30
 
-**Notice:**
 
--	*If you edit the same document in the desktop version and web editor at the same time, the desktop version will show the data sync conflicts icon beside the avatar.*
--	*Click the icon the conflicts dialog box will open, and you have to choose which side data you want, otherwise your local changes will not sync to the server, and the gerber output will not generate from the latest PCB of the desktop version too.*
--	*If you choose the cloud version and has applied it, you have to colse the document and open it again for implement changes if  the confilct document was opened. Otherwise when you keeping edit and save, the cloud version will be overwritten.*
-![](images/285_Introduction_DesktopVersionSyncConflict.png)
 
 # Updated Instructions
 
