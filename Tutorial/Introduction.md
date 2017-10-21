@@ -1136,17 +1136,16 @@ If those two steps don't work, you may need to clear your browser's cache:
 -  Look for easyeda.com and click “Remove”  
 
 -  Reload easyeda again.  
-    ![](images/044_Introduction_Upgrade_RemoveChromeCache.png)  
+   ![](images/044_Introduction_Upgrade_RemoveChromeCache.png)  
 
--  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.
-  ![](images/005_Introduction_Upgrade_RemoveChromeCache_2.png) 
+-  Or you can use **Ctrl+shift+Delete** to delete Chrome caches.  
+   ![](images/005_Introduction_Upgrade_RemoveChromeCache_2.png) 
 
 ## How To Get Help
 
 It is easy to ask for help for any problem with EasyEDA. Please ask your questions in English or Chinese and don't worry if your English is not good! (Or your Chinese!)
 
--	just click on **Let's Chat**, and then complete and Submit the Support request:
-
+-	just click on **Let's Chat**, and then complete and Submit the Support request:  
 ![](images/004_Introduction_Help_Lets-Chat.png)  
 
 -	About editor usage and skill, please read this tutorial, you only need to view it's contents and you will find what you want mostly.
