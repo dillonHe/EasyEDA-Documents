@@ -37,3 +37,39 @@ Via **"Parts" > "Search Part/My Parts/LCSC Parts/System Components/User Contribu
 
 when you finish and save , it will be saved to your personal libraries "My Parts" and become your personal libraries.
 ​ 
+And you can add a tag for your PCBLib:
+
+**"Parts" > "My Parts" > Select Package > Right Click > Modify**
+
+About the tag suggest that using as below:
+Through-Hole:
+	AXIAL: AXIAL-0.3 etc.
+	RAD：Radial
+	HEADER：Headers, connectors
+	DIP：Dual-In-Line components
+	SDIP：small dual in-line package
+	SIP: single in-line package
+	ZIP: zig-zag in-line package
+	TO-92: Transistor Outline 92
+	TO-220: Transistor Outline 220
+Gull-wing：
+	QFP,MQFP,PQFP: Quad Flat Pack
+	TQFP：Thin Quad Flat Pack
+	VQFP: Very Fine Quad Flat Pack
+	PSOP: Plastic Small Outline Pack
+	SOIC: Small Outline IC, narrow/wide
+	VSSOP,SOIC: Miniature small Outline IC
+	SOD123,SOD323,SOD523: Small Outline Diode
+	SOT23,SOT223,SOT3X3,SOT523,SOT563: Small Outline Transistor
+	TSOT,TSSOP: Thin Small Outline Package
+	SSOP: Shrink Small Outline Package
+	DFN,SON: Dual Flat No-lead
+	QFN: Quad Flat No-lead
+	TQFN: Thin Quad Flat No-lead
+J-lead:
+	SOJ: Small Outline IC, J-lead
+	PLCC: Plastic Leaded Chip Carrier
+	JLCC: J-Lead Chio Carrier
+Other:
+	SMD: Chip resister, Chip capacitor
+	MELF: Metal Electrode Leadless
