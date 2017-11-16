@@ -26,8 +26,8 @@
 -	立创EDA目前提供立创商城元器件销售；PCB打样与批量订单，PCB贴片服务；未来还会为企业用户提供付费服务。    
 
 -	如果你想支持立创EDA更好的发展，你可以：
-	-	在立创商城([www.szlcsc.com](www.szlcsc.com))购买元件；
-	-	在立创EDA的兄弟公司嘉立创进行PCB打样与贴片([www.sz-jlc.com](www.sz-jlc.com))；
+	-	在立创商城([www.szlcsc.com](http://www.szlcsc.com))购买元件；
+	-	在立创EDA的兄弟公司嘉立创进行PCB打样与贴片([www.sz-jlc.com](http://www.sz-jlc.com))；
 	-	使用立创EDA创建个人的库文件和公开的工程；
 	-	向朋友推荐立创EDA。
 
@@ -43,7 +43,7 @@
 -	实时团队协作
 -	在线共享
 -	大量的开源项目
--	整合[PCB制造](www.sz-jlc.com)和[元器件购买](www.szlcsc.com)供应链
+-	整合[PCB制造](http://www.sz-jlc.com)和[元器件购买](http://www.szlcsc.com)供应链
 -	提供API
 -	支持脚本
 -	原理图绘制
@@ -1230,7 +1230,7 @@ PCB的封装查找与原理图的库文件查找一致，在“元件库”中�
 
 邮件：3001956291@qq.com   
 
-QQ：3001956291<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3001956291&site=qq&menu=yes"><img border="0" src="images/292_Introduction_Help_QQTalk.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>  
+QQ：3001956291<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3001956291&site=qq&menu=yes"><img border="0" src="images/292_Introduction_Help_QQTalk.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>  (请直接在QQ留言你的问题，看到会尽快回复，请不要使用“在吗”等问候语~)
 
 立创EDA技术交流群：229233498 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=1d01843167614c68d008c02046f1a37f603f1351e27f724998a7e78845599483"><img border="0" src="images/292_Introduction_Help_QQGroup.png" alt="立创EDA交流群" title="立创EDA交流群"></a>（为防止广告需要验证注册邮箱）
 

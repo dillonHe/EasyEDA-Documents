@@ -220,6 +220,10 @@ Lastly, don't forget to click the button Rebuild Copper Area to **rebuild** t
 1.  Hotkey `Shift+B` to build all of the copper areas.
 2.  Hotkey `Shift+M` to clear all of the copper areas.
 
+**Notice:**
+
+*EasyEDA don't support inner copper pour now, but we will support that in the future, if you want to pour the inner area, please use Solid Region.*
+
 ### Solid Region
 
 EasyEDA has added a new tool Solid Region for PCB design
