@@ -23,6 +23,25 @@ Any questions, please contact our technical support via support@easyeda.co
 
 # Updated Instructions
 
+**What is new in v4.11.5**
+
+2017.11.17:
+
+-	Improvement:
+	-	Fixed the connect pad to pad function of the PCB tool.
+	-	Fixed when copy and paste the pads the pad number doesn't increase issue.
+	-	Fixed the footprint manager will show red issue when the footprint has the same pad number.
+	-	Fixed when autoroute or change the track layer will cause the double via issue.
+	-	Improved mutil-layer pad change to single layer experience. 
+	-	Fixed when measure the pad inside don't show the result issue.
+	-	New [KiCAD](http://kicad-pcb.org/) SCH Libs and PCB Libs.
+	-	Improved the annotate function.
+	-	Fixed some special situations will cause the copper area function don't work properly issue.
+	-	Improved when close the snap the wire did not connect correctly issue.
+	-	Remove shortcut key `G` and `ctrl+shift+v`.
+	-	Fixed when the PCB import change with the no pad footprint will make the excursion issue.
+	
+
 **What is new in v4.10.3**
 
 2017.10.20:
