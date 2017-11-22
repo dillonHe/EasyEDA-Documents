@@ -23,6 +23,15 @@ Any questions, please contact our technical support via support@easyeda.co
 
 # Updated Instructions
 
+**What is new in v4.11.9**
+
+2017.11.22:
+
+-	Improvement:
+
+	-	Fixed copper area can't generate the clearance issue.
+	-	Fixed simulation can't run issue.
+
 **What is new in v4.11.5**
 
 2017.11.17:
