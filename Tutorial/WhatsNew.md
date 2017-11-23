@@ -47,7 +47,7 @@ Any questions, please contact our technical support via support@easyeda.co
 	-	Improved the annotate function.
 	-	Fixed some special situations will cause the copper area function don't work properly issue.
 	-	Improved when close the snap the wire did not connect correctly issue.
-	-	Remove shortcut key `G` and `ctrl+shift+v`.
+	-	Remove shortcut key `G`(Avoid to close the Snap function by accidentally, that will make the wire to detach the PIN) and `ctrl+shift+v`(Invalid function).
 	-	Fixed when the PCB import change with the no pad footprint will make the excursion issue.
 	
 
