@@ -609,6 +609,11 @@ It will open a webpage to you, and you can download the gerber as a zipfile.
 
 **Notice:** 
 *Before order your PCB, Please read [Essential Check Before Placing a PCB Order](./PCBOrder.htm/#Essential-Check-Before-Placing-a-PCB-Order) section!!*
+Before generating the Gerber files or save to cart:
+   1.Please check the packages size and polarity carefully;
+   2.Please check the DRC error in Design Manager;
+   3.Please rebuild the copper area after modifying tracks and packages.
+   4.Please click the Gerber View button to preview the gerber whether conforms to the design requirements.
 
 
 

@@ -23,6 +23,21 @@ Any questions, please contact our technical support via support@easyeda.co
 
 # Updated Instructions
 
+**What is new in v5.1.3**
+
+2018.01.22:
+
+-	Improvement:
+
+	-	Solved the auto router will remove the existing tracks when disable the "Remove the Existing Tracks" option issue, we change this option to "Skip the Routed Nets".
+	-	Fixed the script can't be saved issue.
+	-	Fixed Chrome 62 and greater version the SVG preview doesn't work issue.
+	-	Fixed the global delete can't delete the arc track issue.
+
+-	Forecast：
+    -	What's new of the next major release? please refer to: [https://easyeda.com/forum/topic/ForecastWhats_new_of_the_major_version_v5_3_X-BGO60icuM](https://easyeda.com/forum/topic/ForecastWhats_new_of_the_major_version_v5_3_X-BGO60icuM)
+	
+	
 **What is new in v4.11.9**
 
 2017.11.22:
