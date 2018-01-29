@@ -18,9 +18,9 @@ Collaboration           |  Y                 |  Y                          |  Y
 Forum Support           |  Y                 |  Y                          |  Y
 Email Support           |  Y(48hours)        |  Y(24hours)                 |  Y(12 hours)
 Phone Support           |  N                 |  N                          |  Y
-PCB order discount      |  N                 |  5%                        |  10%
+PCB order discount      |  N                 |  5%                         |  10%
 Advertisement(?)        |  Y                 |  N                          |  N
-Cloud Auto router (Coming soon)  |  Unknown    |  Unknown                     |  Unknown
+Cloud Auto router       |  Y                 |  Y                          |  Y
 Cloud spice simulation  |  Y                 |  Y                          |  Y
 API  |  Y                 |  Y                          |  Y
 On-Premises Hosting      |  N                 |  N                          |  Y
@@ -59,6 +59,3 @@ However, you can earn more private project space via:
 We hate terrible advertisements too: this is why you can't see any Ads in the clean EasyEDA but at some time, if we can find some tasteful and helpful Ads, you can get lots of useful information from them.
 
 If not, then maybe EasyEDA will be advertisement free forever :)
-
-### Why is the status of a Cloud Auto router shown as `Unknown`?
-This function is under development but a really effective, efficient and super fast Auto router will cost lots of CPU resource, so we will have to evaluate this. That said, we can confirm that almost all of the great hardware projects are actually manually routed.
