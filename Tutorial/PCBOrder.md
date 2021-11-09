@@ -118,7 +118,7 @@ or using a 3rd party Gerber viewer such as the free and open source gerbv:
 
 [http://gerbv.sf.net/](http://gerbv.sf.net/)  
 [http://flatcam.org/](http://flatcam.org/)  
-[http://kicad-pcb.org/](http://kicad-pcb.org/)  
+[http://kicad.org/](http://kicad.org/)  
 [http://www.gerber-viewer.com/](http://www.gerber-viewer.com/)
 
 30) Check the order options such as number of boards, copper finish, silkscreen colour, solder mask colour, panellisation, any solder paste mask requirement and so on;
